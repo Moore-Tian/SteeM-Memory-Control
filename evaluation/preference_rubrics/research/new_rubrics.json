@@ -1,0 +1,915 @@
+{
+  "domain": "research",
+  "tasks": [
+    {
+      "task_id": "plan_design",
+      "task_name": "Plan/Design",
+      "query_template": "Please propose the next-stage goals and a plan/method for the [target].",
+      "preference_dimensions": [
+        {
+          "dimension_id": "content_axis",
+          "dimension_name": "Content axis (project-internal materials vs general external content)",
+          "definition": "To what extent the proposed goals, sub-goals, and task clusters are selected and justified based on project-internal materials (project goals, current plan, method scheme, experimental results, constraints, similar-project briefs), as opposed to being mainly driven by problem-centric or field-generic content that would largely stand even without access to this specific project trajectory."
+        },
+        {
+          "dimension_id": "pattern_axis",
+          "dimension_name": "Pattern axis (continuation of existing route vs reconstruction from general structure)",
+          "definition": "To what extent the organization of the plan and the reasoning path for \"what to do next\" follow and extend the existing project route (timeline, milestones, prior decision patterns), as opposed to being rebuilt from a general research-design structure or abstract decomposition with only weak continuity to the historical route and constraints."
+        },
+        {
+          "dimension_id": "style_axis",
+          "dimension_name": "Style axis (internal project-planning voice vs external/generalized planning voice)",
+          "definition": "To what extent the tone, register, choice of terminology, and structuring habits continue the internally established project-planning discourse for this project, including the user’s previously exhibited stylistic preferences in phrasing, level of formality, and segmentation of work streams, as opposed to adopting an external, generalized planning voice that explains assumptions and route design as if to an outsider or for a broadly reusable design document."
+        }
+      ],
+      "regimes": [
+        {
+          "regime_id": 1,
+          "regime_label": "More conservative (strong path orientation)",
+          "preference_summary": "The user wants the next-stage plan to advance as much as possible along the project’s existing trajectory, and—when appropriate—to directly reuse proven execution patterns from similar tasks in other sessions. The primary planning objective is to “move to the next step on the current roadmap,” rather than reconstructing a new roadmap from scratch.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "Core goals, sub-goals, and task clusters are developed almost entirely from project-internal materials such as research_goals, the current research_plan, method_scheme, experiment_results, and known constraints; if these materials were removed, the main content and prioritization of the plan would be hard to justify.",
+                "Similar-project briefs or cross-session playbooks, when mentioned, are treated as concrete project-internal patterns (for example, a stable cadence or established module ordering) that directly shape what is proposed next, rather than as abstract examples or general trends."
+              ],
+              "low_score_signals": [
+                "Most goals and stages can be explained purely from a generic description of the problem or a standard research-process template; a reader could reconstruct a very similar plan without seeing this project’s history or specific evidence.",
+                "Project-specific observations (for example, failure modes, partial successes, reviewer remarks) appear only as light decoration or motivation and do not materially influence which directions are proposed or how strongly they are emphasized."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The plan’s structure follows the existing project route: it explicitly takes earlier milestones, completed experiments, and prior decisions as the starting point, and derives the next steps as natural continuations or local refinements of that route.",
+                "Where similar-task playbooks exist, the plan reuses their sequencing of steps and module boundaries in a largely isomorphic way, only inserting small adjustments to adapt to this project’s specific conditions without reconstructing the overall path."
+              ],
+              "low_score_signals": [
+                "The organization is driven mainly by an external checklist or general framework (for example, a fixed \"data → model → ablation\" pipeline), into which the current project is only slotted post hoc, making the original route difficult to recover from the final plan.",
+                "The plan repartitions phases or redefines the roadmap in such a way that previous stage boundaries, decision points, and iteration structure no longer provide the main skeleton for the next-stage design."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The tone presupposes an internal audience already familiar with project history: it reuses internal shorthand for experiments, modules, and baselines, and refers to earlier rounds as shared context rather than fully explaining them from scratch.",
+                "Wording and labels for stages, work streams, and risks are consistent with prior internal planning documents or similar-task briefs, giving the impression of “the next page of the same internal roadmap” rather than a newly authored public plan.",
+                "Where the user has previously adopted characteristic ways of naming phases, milestones, or parallel \"tracks\" in this project, the plan retains these naming and phrasing habits rather than replacing them with entirely generic labels."
+              ],
+              "low_score_signals": [
+                "The plan reads like a stand-alone proposal to an external committee: it re-explains basic project context at length, replaces internal shorthand with generic formulations, and avoids assuming shared project knowledge even where it clearly exists.",
+                "Stage names and descriptions adopt generic field terminology or reviewer-oriented phrasing, with little continuity to previous planning notes or cross-session internal templates."
+              ]
+            }
+          ]
+        },
+        {
+          "regime_id": 2,
+          "regime_label": "Somewhat conservative, limited exploration (moderately-high path orientation)",
+          "preference_summary": "The user wants to largely follow the current project path and proven patterns from similar projects, but allows limited exploratory branches or variants at a few key nodes. Exploration must be explicitly labeled, tightly bounded in scope, and supported by project evidence or analogous-task experience.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "The main body of the plan remains anchored in project-internal materials: existing goals, plans, method choices, and experimental findings still determine the backbone of goals and sub-goals, while exploration is tied to specific pain points, bottlenecks, or open questions visible in the current evidence.",
+                "Similar-project briefs and cross-session experience are used to identify a small number of well-motivated alternative tasks or variants at concrete points on the route (for example, two realistic options for improving a specific module), rather than generating an open-ended list of speculative directions."
+              ],
+              "low_score_signals": [
+                "The plan leans heavily on generic field-wide problem decompositions or trend topics, with weak or only superficial references to the current project’s concrete state and evidence when choosing what to emphasize.",
+                "Alternatively, the plan almost mechanically repeats the existing route without identifying specific locations where exploration could address observable weaknesses, effectively reverting to a purely conservative regime."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The plan exhibits a clear mainline–sideline pattern: the mainline continues the existing project route, while 1–2 explicitly marked exploratory branches are attached at identifiable nodes (for example, \"if X fails, try Y\" or \"in parallel, run a small-scale variant Z\"), with the mainline remaining the primary organizational axis.",
+                "Exploratory branches are defined as local detours or short sub-routes whose entry and exit points in the existing timeline are clearly specified, and whose scope is bounded so that they do not silently replace the main route."
+              ],
+              "low_score_signals": [
+                "Either no exploratory branches are present at all (the plan is indistinguishable from a purely conservative continuation), or many loosely defined branches are proposed without a clear mainline or prioritization, making the route appear as a set of parallel, unstructured alternatives.",
+                "Exploration is suggested in a free-floating way (for example, \"we could also try…\") without precise attachment to specific positions on the existing project route."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The textual register remains predominantly that of an internal planning document, but shifts briefly into a slightly more external or analytical tone when describing exploratory branches—for example, explicitly marking them as \"experimental add-ons\" or \"optional variants\" tested in similar projects.",
+                "The plan signals, through wording and qualifiers, which parts are stable commitments on the internal roadmap and which parts are controlled experiments, so that a project member can distinguish between continuation and bounded exploration without external guidance.",
+                "In describing the mainline, the writing continues to resemble how this user and the system have previously documented plans for this project (for example, typical bulleting or section headings), rather than resetting to a completely neutral style."
+              ],
+              "low_score_signals": [
+                "Exploratory suggestions are written in the same undifferentiated internal tone as core commitments, or in a generic speculative voice detached from the concrete project, making it difficult to see how they relate to the existing path.",
+                "The document alternates between internal shorthand and external proposal language without clear cues, so that the relative status (mainline vs side branch) of different sections is not obvious from the wording."
+              ]
+            }
+          ]
+        },
+        {
+          "regime_id": 3,
+          "regime_label": "Balanced: stability and exploration equally important (medium path orientation)",
+          "preference_summary": "The user wants to continue the current project path and experience patterns while also introducing complementary or alternative routes derived from the problem’s intrinsic structure and general frameworks. The two route types should be developed in parallel as coherent systems, with clear priorities, triggers, and resource allocation.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "The plan explicitly draws on three types of material: project-internal information (current goals, plans, results), analogous-project patterns, and the intrinsic structure of the research problem (for example, hypothesis space, decomposable subquestions, evaluation axes), and uses them jointly to decide what content belongs to each route.",
+                "Both project-specific constraints and general problem-structure considerations are visible in how goals and sub-goals are grouped: some tasks are framed as \"completing the existing line\" while others are framed as \"reorganizing work under a more general decomposition,\" and this distinction is clear in the content of the tasks."
+              ],
+              "low_score_signals": [
+                "Content is almost entirely driven by one source: either by project history and established routines with almost no reference to the problem’s intrinsic structure, or by abstract problem decomposition with only superficial mention of the project’s concrete state and prior experience.",
+                "The plan does not distinguish which tasks are meant to consolidate the existing path and which are meant to explore alternative structures; everything is presented as a homogeneous list."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The plan is organized into at least two clearly labeled lines, such as a continuation line following the existing timeline and a reorganization line built from a general structural decomposition, with explicit statements of how the two lines interact (for example, shared checkpoints, possible merge points, or precedence relations).",
+                "The reasoning explains when and how the project might switch attention from the continuation line to the reorganization line (or run them in parallel), using triggers such as specific evaluation thresholds, risk patterns, or resource availability rather than ad hoc decisions."
+              ],
+              "low_score_signals": [
+                "New ideas and route fragments are added as isolated items around the existing route without any structured line-based organization, making it difficult to see them as coherent alternative routes.",
+                "Alternatively, a new structural skeleton is proposed and largely replaces the old route as the organizational backbone without clearly preserving or mapping the prior path, effectively collapsing into a more exploratory regime."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The writing explicitly shifts between an internal-project voice (when discussing continuation steps and existing commitments) and a more external, design-space-oriented voice (when describing alternative routes), and marks these shifts so that the reader can see which mode is active.",
+                "Route labels, section headers, and descriptive phrases help a project member and an external reviewer alike understand both how the plan fits the current trajectory and how it situates that trajectory within a broader design space.",
+                "Within internal-project segments, wording and organizational cues remain compatible with how this user has previously written or discussed the project path, so that the continuation line feels like a natural extension of earlier planning documents."
+              ],
+              "low_score_signals": [
+                "The text is written in a single, undifferentiated voice that either assumes internal context everywhere or adopts a fully external frame everywhere, making it unclear which parts are grounded in project commitments and which parts reflect general design considerations.",
+                "Transitions between project-specific discussion and general framework discussion happen without stylistic cues or signposting, which makes the underlying dual structure of the plan hard to perceive."
+              ]
+            }
+          ]
+        },
+        {
+          "regime_id": 4,
+          "regime_label": "Exploration-leaning, with key constraints retained (moderately-low path orientation)",
+          "preference_summary": "The user wants to construct the next-stage plan primarily from the problem’s intrinsic structure and general research-design principles, treating the project path and analogous-task experience as instances to be compared and calibrated. However, a small number of objective, unavoidable hard constraints (e.g., data source, budget, time checkpoints) must still be preserved.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "Most of the content is organized around an explicit problem-structure view: decomposition of goals, hypotheses, confounders, and evaluation dimensions is described in general terms first, and only then is the current project mapped into this space to locate its starting point and emphasize or deprioritize certain branches.",
+                "Analogous-project briefs are used selectively as calibration material—for example, to illustrate typical risks of particular route families or to clarify which kinds of branches usually fail—not as primary anchors determining what the plan contains."
+              ],
+              "low_score_signals": [
+                "The plan remains dominated by \"we did X, so next we do Y\" reasoning and by reuse of earlier decisions, with only surface-level mentions of problem-structure concepts; a reader could not reconstruct a general design space from the text.",
+                "Content selection is strongly shaped by past commitments and habitual patterns, and general decomposition or cross-route comparison plays little role in what is proposed."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The organizational skeleton is obtained by first laying out a general roadmap or design space for this type of problem (for example, several route families with distinct assumptions and evaluation strategies), and next locating the current project within this structure to decide which family to follow or compare.",
+                "The historical route is described as one candidate instance within this general structure: it is compared, pruned, or reweighted relative to other route families, and is not treated as the default mainline in the way the plan is structured."
+              ],
+              "low_score_signals": [
+                "The order of sections simply mirrors the project timeline or a familiar internal playbook, and any references to general design space are inserted as side remarks rather than as the main organizational frame.",
+                "Alternative route families are not explicitly laid out as such; at most, small variants of the existing path are listed without embedding them within a broader structural comparison."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The tone is closer to that of a general research-design note or tutorial: it uses relatively neutral, broadly applicable language to describe route families and trade-offs, while mentioning project-specific details mainly to illustrate or parameterize parts of the general structure.",
+                "Descriptions of hard constraints (data sources, deadlines, non-negotiable requirements) are clearly signposted as such, and the rest of the text treats project settings as adjustable, which is reflected in the cautious, comparative language used for them."
+              ],
+              "low_score_signals": [
+                "The voice remains that of an internal planning log heavily tied to past decisions, focusing on continuity with internal commitments and rarely stepping back to explain the design space in general terms.",
+                "Alternatively, the tone shifts into strongly prescriptive methodological language without referencing project realities, suggesting radical changes while ignoring or underplaying hard constraints."
+              ]
+            }
+          ]
+        },
+        {
+          "regime_id": 5,
+          "regime_label": "More exploratory (weak path orientation)",
+          "preference_summary": "The user wants to build the next-stage plan almost entirely from the problem’s intrinsic structure, general theory, and methodology, treating the current project path and analogous-task experience as optional reference instances. The focus is on constructing multiple competing routes and their applicability conditions, rather than continuing an existing roadmap.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "The main content is a systematic decomposition of the design space: route families, their assumptions, expected benefits, and limitations are described in a way that would remain useful even if the current project were replaced by another project with a similar problem type.",
+                "Project history and analogous-task experience are used only at a high level, for example to explain why certain route families might be prioritized or to provide a small number of illustrative cases, but do not drive what is included or how strongly it is emphasized."
+              ],
+              "low_score_signals": [
+                "Key proposed steps are intelligible only with detailed knowledge of this project’s route and prior decisions; without that history, the plan would not make sense or would lack clear rationale.",
+                "The majority of tasks are phrased as follow-ups to earlier project events, and general design-space content is sparse or fragmentary."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The plan is organized as an abstract roadmap over route families and scenario conditions: it first defines the problem and candidate families, then positions the current project as one instance among many, and finally discusses how to move within or between families based on conditions.",
+                "The historical project route is treated as one point or trajectory in this roadmap; it is not the starting point of the exposition, and it does not dictate the order of sections or the main segmentation of stages."
+              ],
+              "low_score_signals": [
+                "The narrative structure still takes the current project story as the backbone (for example, by marching through past experiments and then appending a few general remarks), rather than structuring the text around the general route-space and mapping the project into it.",
+                "Alternative routes, if mentioned, are treated as local tweaks to the existing path rather than as distinct route families within a larger map."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The style is that of a broadly reusable method-planning note or survey-like design document: assumptions are stated explicitly, terms are defined without relying on internal shorthand, and route families are described in a way intelligible to readers with no exposure to this specific project.",
+                "Project-specific references are brief and clearly marked as examples, and do not shape the overall rhetorical stance; the text would still read naturally if those references were removed."
+              ],
+              "low_score_signals": [
+                "The writing repeatedly presupposes knowledge of this project’s internal history, uses local shorthand and unexplained labels, and frames evaluations primarily in terms of internal feasibility rather than general design principles.",
+                "Even when broad concepts are mentioned, they are wrapped tightly around project-specific anecdotes and are not described at a level that would be reusable for a new project."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "task_id": "revise",
+      "task_name": "Revise",
+      "query_template": "Please revise the current [target].",
+      "notes": {
+        "target_variants": ["paper_paragraph", "method_scheme", "experiment_results", "research_plan"],
+        "schema_requirement": "Rubric text must refer to 'target object/target artifact' instead of only 'paragraph'."
+      },
+      "preference_dimensions": [
+        {
+          "dimension_id": "content_axis",
+          "dimension_name": "Content axis (project-internal function vs external-facing content structure)",
+          "definition": "To what extent the revision choices about what to add, remove, highlight, or downplay are anchored in the target object’s role within this project (its claims, facts, and interfaces to methods and results), as opposed to being primarily driven by a generic external-facing narrative or publication structure that could apply to many projects."
+        },
+        {
+          "dimension_id": "pattern_axis",
+          "dimension_name": "Pattern axis (following existing narrative vs restructuring from general templates)",
+          "definition": "To what extent the revision strategy follows and locally patches the existing narrative path and internal structure of the target object, as opposed to reorganizing it from a general argument or writing template with weaker continuity to the original organization."
+        },
+        {
+          "dimension_id": "style_axis",
+          "dimension_name": "Style axis (internal project register vs external publication-style register)",
+          "definition": "To what extent the revised wording, tone, terminology, and micro-structuring maintain the internal project voice and conventions used in related artifacts, including the user’s previously exhibited stylistic preferences for this project, as opposed to adopting a generalized, external publication-style or reviewer-facing register that is less tied to the existing project discourse."
+        }
+      ],
+      "regimes": [
+        {
+          "regime_id": 1,
+          "regime_label": "More conservative (strong path orientation)",
+          "preference_summary": "The user wants revisions to function primarily as “internal patching” of the target object’s role within this project trajectory: improve precision and reduce misinterpretation, but do not change its project function, structure, or position in the roadmap, and do not proactively migrate to external templates.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "After revision, the target object’s topic, core claims or conclusions, project goals served, and its role in the internal reasoning chain remain stable; it is recognizable as essentially the same object with clearer wording and better alignment to neighboring project materials.",
+                "Additions and deletions focus on clarifying internal facts, qualifiers, and interfaces (for example, conditions under which a result holds, or how a method connects to a previous component), rather than changing what the artifact fundamentally tries to assert or document."
+              ],
+              "low_score_signals": [
+                "The revision substantially shifts the central message, emphasis, or scope of the target object, so that it reads like a different type of artifact (for example, from an internal plan fragment into a general abstract), with the original project function partially lost.",
+                "Project-specific details and interfaces are removed or heavily compressed in order to make the text match a broader external narrative, even when those details are important for the artifact’s internal role."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "Edits operate mainly at the local level: sentences, phrases, and transitions are adjusted for precision and coherence, but the existing order of major steps or paragraphs and the existing argumentative skeleton are preserved.",
+                "Where structure is touched, changes are minimal and traceable (for example, splitting one overloaded sentence into two, or inserting a short clarifying sentence), so that a reader familiar with the original version can easily align old and new structures."
+              ],
+              "low_score_signals": [
+                "The main sequence of steps, paragraphs, or sections is substantially rearranged or replaced by the skeleton of an external writing template, such that the reader can no longer clearly map the original structure onto the new one.",
+                "The revision discards the artifact’s original narrative path in favor of a fresh structure defined by general components such as \"motivation → contribution → evaluation\" without explicit justification in terms of internal project needs."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The tone, terminology, and notational conventions remain close to those used in adjacent internal documents (for example, method notes, experiment logs, or draft sections), so that project members experience the revised artifact as the same internal voice made clearer.",
+                "Any borrowings from external publication-style language are localized and used only when they help clarify meaning for internal readers, without turning the entire artifact into a formal paper-like piece.",
+                "Characteristic turns of phrase, level of formality, and preferred ways of structuring information that the user has repeatedly used in this project are largely preserved, as long as they do not conflict with comprehensibility for project collaborators."
+              ],
+              "low_score_signals": [
+                "The revision replaces internal project phrasing with generic, paper-like or formal stylistic patterns throughout, even in places where internal readers would expect the established shorthand or informal clarifications.",
+                "The text reads as if primarily written for anonymous reviewers or a broad audience, rather than for project collaborators who already share substantial background."
+              ]
+            }
+          ]
+        },
+        {
+          "regime_id": 2,
+          "regime_label": "Somewhat conservative, limited exploration (moderately-high path orientation)",
+          "preference_summary": "The user wants to keep the target aligned with project goals, facts, and conclusions, while allowing a moderate degree of structural and expression optimization, including limited borrowing of successful styles/organization patterns. However, the target should not be globally migrated into an external template, nor should its project-internal functional positioning be changed.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "Project-specific claims, conclusions, and roles of the target object are preserved, but the revision introduces a limited amount of additional context or contrast (for example, brief mention of related baselines or constraints) in ways that clarify its role to both internal and semi-external readers.",
+                "Borrowed content patterns from similar tasks (for example, how to summarize a result or phrase a limitation) are used to make internal information more legible, not to replace project-specific messages with generic ones."
+              ],
+              "low_score_signals": [
+                "Large segments of internal factual content are removed or replaced to align with a generalized narrative, so that the artifact becomes more like an external exposition and less like a project-specific component.",
+                "Conversely, only superficial wording changes are made with almost no improvement in how the artifact’s project role is expressed, making the revision indistinguishable from a purely conservative patch."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "Moderate reordering and grouping are allowed: for example, moving related sentences into a clearer cluster, splitting a long paragraph into logical sub-blocks, or making an implicit structure more explicit, while still preserving the main step order and internal function.",
+                "Small-scale structures inspired by successful internal or external templates (such as a short \"setup → key result → implication\" pattern within a paragraph) are adopted locally, but the overall macro-structure remains recognizable."
+              ],
+              "low_score_signals": [
+                "The revision effectively embeds the artifact into a new macro-template such that original grouping and step boundaries are lost, going beyond limited exploration.",
+                "Alternatively, structure changes are so minimal that known issues with ordering and grouping remain, suggesting a purely conservative approach closer to Regime 1."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The style mainly retains the project’s internal voice, but incorporates selected phrasing, sentence patterns, or connective devices that have been effective in internal or published artifacts, especially at known pain points (for example, explaining a subtle assumption).",
+                "These stylistic enhancements are blended so that the artifact still reads as a coherent part of the same project documentation, not as a patchwork of internal and external voices.",
+                "Within internal-facing portions, the revision continues to respect the user’s established preferences for how similar artifacts in this project are usually written (for example, typical paragraph length or summarizing sentences), rather than fully overwriting them."
+              ],
+              "low_score_signals": [
+                "The revision introduces external-sounding fragments (for example, copied reviewer-oriented formulations) that stand out sharply from the surrounding internal text, leading to style inconsistency.",
+                "Or the revision intentionally avoids using more standard or precise phrasing even when it would help internal comprehension, relying only on idiosyncratic internal expressions and missing the allowed degree of stylistic optimization."
+              ]
+            }
+          ]
+        },
+        {
+          "regime_id": 3,
+          "regime_label": "Balanced: stability and exploration equally important (medium path orientation)",
+          "preference_summary": "The user wants revisions to achieve both: accurately present this project’s facts and claims, and significantly align the organization to a field-standard external-facing narrative structure. This is neither mere polishing nor wholesale copying of an external template; rather, it is a disciplined reorganization that retains key facts while improving external readability.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "Key project-specific facts, claims, and constraints remain present and accurate, but the revision reorganizes and restates them so that they fit into a clearer external-facing conceptual frame (for example, making contributions, assumptions, and limitations legible to an informed outsider).",
+                "Where necessary, internal details that are not central to the artifact’s external function are compressed, while missing externally relevant information (for example, what is novel relative to common baselines) is added, without distorting the project’s actual status."
+              ],
+              "low_score_signals": [
+                "The artifact remains heavily inward-looking: revision improves wording locally but leaves the content organized in a way that would be hard for an external reader to interpret without prior knowledge.",
+                "Or the revision over-abstracts the content, reducing project-specific claims to generic statements and thus weakening the signal of what this particular project is doing."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The revision maps the original content into a more standard external structure (for example, problem–approach–evidence–implications) while keeping a clear, explainable correspondence between original segments and their new positions.",
+                "Reordering is significant enough that an external reader can clearly see the logical progression, but constrained enough that project collaborators can still recover how this object sits within the internal reasoning chain."
+              ],
+              "low_score_signals": [
+                "Only very small local structure changes are made, leaving a cluttered or non-standard organization that does not benefit from general templates.",
+                "Alternatively, the artifact is reordered so aggressively around an external template that the mapping from internal reasoning steps to the new structure becomes opaque, effectively discarding the original path rather than balancing it."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The style is deliberately positioned between internal and external: it is explicit enough for external readers or reviewers, yet still preserves project-specific terminology, references, and nuances needed for internal coordination.",
+                "Transitions, signposting phrases, and comparative language are improved so that both collaborators and external readers can follow the argument, without fully erasing internal idioms that encode project history.",
+                "Where the user’s prior drafts in this project reveal a characteristic balance between informality and formality, the revision maintains a similar balance while making the underlying argument easier to follow for outsiders."
+              ],
+              "low_score_signals": [
+                "The text remains almost entirely in an internal note style, with elliptical references and shortcuts that make it hard for an external reader to reconstruct the argument without additional context.",
+                "Or it shifts fully into a generalized, reviewer-facing style with little trace of internal discourse, suggesting a much weaker attachment to the project path than this regime intends."
+              ]
+            }
+          ]
+        },
+        {
+          "regime_id": 4,
+          "regime_label": "Exploration-leaning, with key constraints retained (moderately-low path orientation)",
+          "preference_summary": "The user wants revisions to be primarily driven by external-facing narrative structures and typical high-quality writing patterns, with substantial reorganization of the target object, drawing heavily from strong external exemplars and successful similar-task cases. However, key project facts, key conclusions, and a small number of immutable constraints must still be preserved.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "The revision prioritizes externally salient content: information that clearly supports central claims, contribution framing, and evaluative arguments for external readers is brought to the foreground, while many local details and internal-side remarks are compressed or relegated.",
+                "Project-specific details are preserved mainly where they are necessary for factual correctness or to illustrate key points; other details are treated as replaceable or optional from the perspective of the new external structure."
+              ],
+              "low_score_signals": [
+                "The artifact still functions primarily as an internal record, with a large amount of local detail preserved and little sign that content has been filtered or reshaped according to general external narrative needs.",
+                "The revision adds external-looking language but does not change which information is emphasized, leaving the underlying content focus almost identical to the original."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The target object is substantially reorganized to follow a widely used external pattern (for example, a canonical argument flow for method description or result discussion), with the original structure only faintly visible as the source of factual material.",
+                "Sections or logical segments are split, merged, or newly created so that they align with standard roles in external writing, even if this means discarding the original path as the primary organizational reference."
+              ],
+              "low_score_signals": [
+                "Major structural features of the original artifact remain unchanged; the revision mainly rephrases within existing paragraphs, with limited realignment to external templates.",
+                "The text continues to follow the old internal step order, and any introduced headings or sections only label existing blocks rather than restructuring them."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The style clearly shifts toward publication or reviewer-facing discourse: it uses field-standard phrasing for contributions, limitations, and evidence, and tones down local in-group shorthand, while still ensuring that core project facts are correctly conveyed.",
+                "References to internal history appear mainly as brief, contextual remarks embedded in an otherwise externalized narrative, rather than as dominant framing devices."
+              ],
+              "low_score_signals": [
+                "The artifact continues to sound like an internal log or note, with extended use of project-internal labels and narrative conventions that are unlikely to be transparent to outsiders.",
+                "Conversely, the style becomes so generic and abstract that, although external-sounding, it no longer makes clear which concrete project this artifact belongs to, indicating a drift beyond the intended retention of key project constraints."
+              ]
+            }
+          ]
+        },
+        {
+          "regime_id": 5,
+          "regime_label": "More exploratory (weak path orientation)",
+          "preference_summary": "The user wants to “rewrite a better version of the target object from scratch” from the perspective of external readers and field norms. General structure and successful exemplars dominate the rewrite; the original version mainly provides factual material. Apart from must-preserve facts and key conclusions, historical wording and structure can be entirely discarded.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "The revised artifact is constructed mainly from a general external-facing blueprint: it focuses on clearly stating the problem, contribution, main evidence, and caveats in a way that would suit a typical expert reader, with project-specific details serving primarily as fact-level support.",
+                "If one were given only the project facts and the external blueprint (but not the original text), one could reconstruct almost the same revised artifact; the original content selection exerts little constraint beyond factual correctness."
+              ],
+              "low_score_signals": [
+                "The content still tracks the original artifact closely: the same details, side remarks, and internal emphases dominate, and external structure plays a minor role in deciding what is present or highlighted.",
+                "The revision primarily aims to \"clean up\" the old text, rather than to re-decide content from a generalized external perspective."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The artifact follows a standard high-level pattern (for example, problem–gap–idea–method–evidence–limitation) or a similarly recognizable field-specific structure; the original ordering of points has little visible influence on the new arrangement.",
+                "Readers familiar with the original would perceive the new version as an essentially new draft into which factual material has been reinserted, rather than as a modified version of the old draft."
+              ],
+              "low_score_signals": [
+                "The overall structure remains largely identical to the original: most paragraphs or logical steps appear in the same order and with similar relationships, indicating that restructuring has been minimal.",
+                "Any applied external pattern is only partial or superficial (for example, by adding a heading or two), without changing where key pieces of information occur."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The style is that of an external artifact written for a field audience: it follows field norms for structuring arguments, introduces all necessary assumptions explicitly, and avoids relying on project-internal shorthand or undocumented context.",
+                "Original wording and internal narrative devices are replaced wherever they do not serve external-oriented exposition or alignment with common argumentative patterns; respect for the historical version is reflected only in factual accuracy, not in stylistic continuity."
+              ],
+              "low_score_signals": [
+                "The revision retains substantial stretches of original wording, tone, and internal references, with only local clean-up, so that the overall voice remains that of the earlier internal artifact.",
+                "The text appears written primarily to satisfy internal readers, with occasional external phrases added, rather than fully adopting an external perspective as the organizing stylistic principle."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "task_id": "critique",
+      "task_name": "Critique",
+      "query_template": "Please review the following research proposal: whether the contributions are valid, the fit to research goals, method suitability and potential failure modes, adequacy of experimental design, executability and risks; finally provide 5 actionable improvement suggestions ranked by priority. Proposal: {method}",
+      "preference_dimensions": [
+        {
+          "dimension_id": "content_axis",
+          "dimension_name": "Content axis (project-internal evaluation vs general review standards)",
+          "definition": "To what extent the critique criteria, focal points, and identified issues are anchored in project-internal goals, trajectory, and constraints, as opposed to being primarily framed in terms of external, general review standards and cross-project patterns that would apply similarly to many proposals."
+        },
+        {
+          "dimension_id": "pattern_axis",
+          "dimension_name": "Pattern axis (following project decision trail vs external review framework)",
+          "definition": "To what extent the critique is organized along the project’s own decision trail and proposal structure, as opposed to being structured by an external review framework whose main sections and ordering are independent of the project’s historical path."
+        },
+        {
+          "dimension_id": "style_axis",
+          "dimension_name": "Style axis (internal retrospective voice vs external reviewer report voice)",
+          "definition": "To what extent the tone and phrasing resemble an internal retrospective or coaching discussion among project members, continuing the style that has been used in prior project discussions with this user, as opposed to an external reviewer report addressed to authors from the standpoint of general field expectations."
+        }
+      ],
+      "regimes": [
+        {
+          "regime_id": 1,
+          "regime_label": "More conservative (strong path orientation)",
+          "preference_summary": "The user wants the review to start from an internal project perspective, treating the current proposal as a natural continuation of the existing trajectory and performing a stage-wise retrospective with tightened risk control, rather than re-evaluating and rewriting the route from idealized field standards or external benchmarks.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "The critique evaluates the proposal mainly with respect to this project’s stated research_goals, current stage, prior decisions, and resource constraints, asking whether each component is appropriate and robust for \"where we are now\" rather than whether it matches an ideal SOTA design.",
+                "External standards (for example, top-venue expectations) are invoked only to the extent that they help interpret internal concerns (such as whether a missing ablation is critical given past results), rather than as independent benchmarks that override project context."
+              ],
+              "low_score_signals": [
+                "Judgments are framed almost entirely in terms of external ideals: SOTA comparisons, canonical experimental setups, and generic contribution checklists dominate, while project-specific goals and constraints play a minor role.",
+                "The critique treats the proposal as if it could be arbitrarily redesigned to meet external expectations, paying little attention to how it fits the existing trajectory or internal commitments."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The organization closely follows the project’s own decision trail or proposal structure: it examines the initial goals, then each major design or experiment choice in the order they were made, and comments on risks, gaps, and next checks at each step.",
+                "Similar-task briefs or internal review routines, when referenced, are used to shape the ordering of concerns (for example, \"first check A at this stage, then B\"), thereby reinforcing the sense of a structured internal retrospective."
+              ],
+              "low_score_signals": [
+                "The critique is structured according to a generic review template (for example, \"1. Novelty 2. Correctness 3. Clarity 4. Significance\") with only occasional back-references to how the project actually progressed.",
+                "Sections and comments jump across the proposal in a way that reflects the external framework rather than the project’s own narrative, making the internal path difficult to recover from the review."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The tone resembles internal coaching: it refers directly to \"our\" previous experiments, decisions, and discussions, and uses familiar project-specific terminology and shorthand when pointing out risks or suggesting checks.",
+                "The language emphasizes constructive internal improvements (for example, \"we should double-check…\", \"given our previous failure on…\") rather than adopting a distant, judgmental stance.",
+                "Phrasing and rhetorical habits are consistent with how this user and the assistant have previously discussed this project’s progress and risks, so that the critique feels like a continuation of the same internal conversation."
+              ],
+              "low_score_signals": [
+                "The critique reads like an external reviewer report: it addresses \"the authors\" in the third person, avoids internal first-person language, and relies on generic formulations that could be sent to any team.",
+                "Project-internal expressions and shared knowledge are largely absent, and comments are phrased as if the reviewer had no long-term involvement in the project."
+              ]
+            }
+          ]
+        },
+        {
+          "regime_id": 2,
+          "regime_label": "Somewhat conservative, limited exploration (moderately-high path orientation)",
+          "preference_summary": "The user wants the review to remain centered on this project’s goals and path, but to introduce limited external viewpoints and cross-project experience when identifying shortcomings, proposing a small number of controlled alternative/supplementary suggestions. Exploratory suggestions should be secondary side branches with clear evidence and boundaries.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "The primary evaluative lens remains \"is this proposal appropriate and robust for our current project stage and constraints\", while external standards and cross-project patterns are used to calibrate seriousness of issues and to motivate limited additional checks or small alternatives.",
+                "Similar-task briefs are used to highlight concrete, limited adjustments (for example, one extra diagnostic experiment or a small change in data handling) in areas where internal evidence and external experience jointly indicate risk, rather than to call for wholesale redesign."
+              ],
+              "low_score_signals": [
+                "External field expectations are allowed to dominate the evaluation, producing recommendations that are difficult to map back to project-specific trade-offs and priorities.",
+                "Alternatively, the critique stays completely inside the internal frame, mentioning no external benchmarks or cross-project experience at all, effectively collapsing back into a purely conservative regime."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The overall organization still follows the project proposal structure, but at a small number of identified points, the critique inserts short, structured external perspectives (for example, a brief comparison to standard practice) to motivate limited alternative or supplementary steps.",
+                "These externally motivated suggestions are explicitly marked as local branches or optional enhancements, preserving the internal retrospective as the main organizing pattern."
+              ],
+              "low_score_signals": [
+                "The review is either fully dominated by an external template or is purely a project-timeline walk-through with no structured insertion points for external viewpoints, rather than the intended hybrid.",
+                "Exploratory suggestions appear as scattered comments without clear attachment to specific positions in the internal decision trail."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The style remains that of an internal conversation, but periodically shifts to a slightly more formal or general tone when bringing in external experiences or benchmarks, then clearly returns to the internal voice when formulating actionable next steps.",
+                "Language such as \"in similar projects we saw…\" or \"under general review standards this would be considered…\" is used sparingly and always linked to concrete internal implications.",
+                "In its internal-mode passages, the critique retains the same kind of direct address, shorthand, and level of informality that the user has previously used in project discussions, so that suggestions are easy to interpret operationally."
+              ],
+              "low_score_signals": [
+                "External-style commentary appears in blocks that sound disconnected from the surrounding internal discussion, as if pasted from a separate review, making it difficult to see how it should inform the team’s decisions.",
+                "Alternatively, even when referencing cross-project lessons, the style remains so local and informal that the distinction between internal experience and broader evidence is blurred."
+              ]
+            }
+          ]
+        },
+        {
+          "regime_id": 3,
+          "regime_label": "Balanced: stability and exploration equally important (medium path orientation)",
+          "preference_summary": "The user wants the review to balance internal project reasonableness and general cross-project standards: systematically audit via external frameworks while mapping conclusions back to project goals and constraints. Recommendations should include both within-path optimizations and structural adjustments to negotiable settings.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "The critique explicitly considers three content anchors: fit to this project’s concrete goals and constraints, alignment with general scientific rigor standards, and patterns observed in analogous tasks or prior projects, and discusses how each issue looks under each anchor.",
+                "Issues are labeled or explained in terms that make clear whether they are primarily project-specific misalignments, violations of general standards, or mismatches with known cross-project patterns, rather than collapsing them into a single category."
+              ],
+              "low_score_signals": [
+                "Only project-feasibility concerns are discussed (for example, resource and timeline fit) without systematically relating them to general standards or cross-project experience.",
+                "Or judgments are made solely from the standpoint of external standards without explicitly reconciling them with project-specific feasibility and constraints."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The critique alternates between two perspectives in an organized way: it may perform an external-criteria audit and then map those findings back to the project path, or it may start from an internal retrospective and then re-evaluate the same points under an external framework.",
+                "Recommendations are grouped into categories such as \"within-path adjustments\" and \"structural changes to negotiable settings\", reflecting the dual organization of the review."
+              ],
+              "low_score_signals": [
+                "Comments from different perspectives are intermixed without clear structure, leaving it ambiguous which standard is being applied to which point.",
+                "The critique effectively sticks to a single organizational perspective, treating either the external framework or the project path as the only structuring reference."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The style makes it clear when the reviewer is \"speaking as an internal collaborator\" and when \"speaking as an external reviewer\" by using different framing phrases, levels of explanation, and vantage points, without becoming inconsistent or confusing.",
+                "The overall tone suggests that the same person is both deeply familiar with the project and mindful of general field standards, making the review simultaneously actionable internally and informative from a broader perspective.",
+                "Across passages written in the internal voice, the critique continues to employ ways of addressing and structuring feedback that are consistent with earlier exchanges with this user, while external-voice passages adopt a more neutral and generalized formulation."
+              ],
+              "low_score_signals": [
+                "The voice is either consistently internal (for example, heavy use of \"we\" and project shorthand) even when discussing general standards, or consistently external and detached even when practical internal decisions are at stake.",
+                "Switches between internal and external viewpoints happen abruptly, without clear stylistic cues, so that the reader cannot easily tell \"who\" is speaking in each passage."
+              ]
+            }
+          ]
+        },
+        {
+          "regime_id": 4,
+          "regime_label": "Exploration-leaning, with key constraints retained (moderately-low path orientation)",
+          "preference_summary": "The user wants the review to primarily use general review frameworks and cross-project experience as yardsticks, offering more aggressive structural improvement suggestions. Project goals and path are still considered, but more as settings to explain and potentially adjust, retaining only a small number of hard constraints.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "The critique systematically applies general review dimensions (for example, originality, methodological soundness, validity of experiments, scope of claims) and cross-project benchmarks, and only then discusses how the current proposal fares under these dimensions given its current goals and constraints.",
+                "Project-specific goals are treated as adjustable settings when evaluating issues, and the critique explicitly considers whether alternative goals or problem formulations might better satisfy general standards."
+              ],
+              "low_score_signals": [
+                "The discussion remains focused on whether the proposal is \"good enough for this project\" and does not seriously interrogate it against external standards or cross-project patterns.",
+                "Mentions of general standards are sporadic and not used as the main content basis for determining which issues are serious."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The review is organized along an external framework—for example, going through contribution, method, experiments, risks, and executability—and within each section, the current proposal is compared to a broader family of possible setups seen across projects.",
+                "The project plan is treated as an object inserted into this review structure; the internal path provides examples and explanations but does not dictate the order of critique sections."
+              ],
+              "low_score_signals": [
+                "The critique still tracks the project’s own narrative order, making only occasional reference to external categories, rather than using them as the primary organizer.",
+                "Structural alternatives and redesign possibilities are scattered rather than emerging naturally from the external review structure."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The tone is close to that of a detailed external reviewer report: it references typical practices, field norms, and representative works, and uses relatively neutral, third-person language when assessing the proposal, while still acknowledging hard constraints where relevant.",
+                "Internal language appears mostly when specifying constraints that genuinely cannot be changed (for example, non-negotiable data sources), not as the main framing vocabulary."
+              ],
+              "low_score_signals": [
+                "The critique sounds predominantly like an internal team discussion, with extensive first-person plural language and local shorthand, even when aiming to justify stronger, exploration-leaning changes.",
+                "Alternatively, the style becomes abstract and prescriptive without sufficient acknowledgement of actual constraints, undermining the regime’s intent to preserve a small number of hard boundaries."
+              ]
+            }
+          ]
+        },
+        {
+          "regime_id": 5,
+          "regime_label": "More exploratory (weak path orientation)",
+          "preference_summary": "The user wants the review to start almost entirely from the field landscape and general standards, treating the current proposal as one instance among many possible settings. The focus is on alternative space for problem setups, method families, and route design. Except for a few external hard constraints, the project’s internal settings can be rewritten wholesale.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "The main content of the critique is a mapping of the proposal into a broader space of possible problem formulations, method families, and experimental regimes, highlighting where this instance sits relative to more reasonable or more promising families under general standards.",
+                "Project-specific goals and historical path are discussed primarily to explain how the current instance was chosen, rather than as reasons to keep it; the emphasis is on what would be a good setup class in general."
+              ],
+              "low_score_signals": [
+                "The critique continues to treat alignment with this project’s historical direction as the main evaluation criterion, with little explicit discussion of alternative setup families or route spaces.",
+                "External standards are used only to justify minor adjustments around the current configuration instead of to frame the larger alternative space."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The review is organized as a journey through candidate setup families and design options: it first describes this space, then positions the current proposal as one specific point, and then systematically explores neighboring or superior points.",
+                "Recommendations are framed as moves in this space (for example, shifting to another family or combining patterns), rather than as local tweaks along the existing route."
+              ],
+              "low_score_signals": [
+                "The current proposal is treated as the central object and the default end point; the review mostly lists small local issues without embedding them in a larger map of alternatives.",
+                "Any mention of alternative setups is fragmented, not presented as part of a structured space, and appears as isolated \"what if\" remarks."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The style is that of a high-level comparative review or conceptual design note: it speaks mainly in terms of classes, configurations, and trade-offs that would remain intelligible in other projects, while using the current proposal only as an example.",
+                "Personal or project-local language is minimal and clearly separated from the general comparative discussion; sunk cost or internal inertia are not used rhetorically to privilege the current configuration."
+              ],
+              "low_score_signals": [
+                "The review continues to speak as an internal stakeholder weighing costs of changing the current plan, rather than as an analyst of the broader design space.",
+                "It emphasizes preserving the current route due to prior investment or familiarity, rather than evaluating it impartially against alternatives."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "task_id": "concept_explanation",
+      "task_name": "Concept Explanation",
+      "query_template": "Please explain the concept/method: {concept}. Requirements: (1) definition and intuition; (2) key mechanisms/steps or pseudocode; (3) applicable scenarios and inapplicability boundaries; (4) a minimal example; (5) differences from related concepts (at least 2).",
+      "preference_dimensions": [
+        {
+          "dimension_id": "content_axis",
+          "dimension_name": "Content axis (project-specific instantiation vs general conceptual structure)",
+          "definition": "To what extent the explanation’s definitions, mechanisms, examples, applicability discussion, and comparisons are anchored in this project’s specific usage, data, and decisions, as opposed to being organized around the general conceptual structure, taxonomy, and relations of the concept/method independent of the project."
+        },
+        {
+          "dimension_id": "pattern_axis",
+          "dimension_name": "Pattern axis (project introduction/usage order vs general pedagogical structure)",
+          "definition": "To what extent the order and framing of the explanation follow how the concept/method was introduced and used in this project (for example, via tasks, experiments, or design decisions), as opposed to following a general pedagogical or theoretical outline that would be appropriate for explaining the concept to any reader."
+        },
+        {
+          "dimension_id": "style_axis",
+          "dimension_name": "Style axis (internal project explanation style vs generic conceptual exposition)",
+          "definition": "To what extent the style of explanation (tone, terminology, analogies) reflects the internal project explanation style and discourse conventions that have been established in prior interactions with this user, as opposed to adopting a generic conceptual exposition style that assumes no shared project context and aims at broad reusability."
+        }
+      ],
+      "regimes": [
+        {
+          "regime_id": 1,
+          "regime_label": "More conservative (strong path orientation)",
+          "preference_summary": "The user wants the explanation to stay tightly coupled to the current project context and current usage, explaining the concept/method as “how we use it in this project.”",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "The explanation foregrounds the concept’s role in this project: it starts from the project’s task, data, and pipeline, describes when and how the concept is invoked in the method_scheme, and uses project-specific failure modes or observations to motivate its definition and mechanisms.",
+                "Examples, applicability boundaries, and comparisons to related concepts are primarily expressed in terms of this project’s configuration and known issues (for example, when a specific variant of the method works or fails under the project’s constraints)."
+              ],
+              "low_score_signals": [
+                "The content remains largely at the level of an abstract textbook entry, stating general definitions, mechanisms, and comparisons without tying them closely to how the concept is actually used in the project.",
+                "Project-specific phenomena, such as observed behaviors or engineering constraints, appear only as brief illustrations and do not shape the main explanatory narrative."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The explanation follows the order in which the concept appeared in the project: for example, it may start from a specific problem the team faced, then show how the concept was introduced into the pipeline, and finally explain its internal configuration and checks in the current system.",
+                "Historical project milestones or experiments frame the flow: the explanation makes clear how understanding of the concept evolved along the project timeline and how the current interpretation is grounded in that history."
+              ],
+              "low_score_signals": [
+                "The structure follows a generic teaching script (for example, theoretical definition → toy example → generic applications) that does not reflect how, or at what point, the concept actually emerged in this project.",
+                "The order of sections could be used verbatim in a different course or project without modification, suggesting weak dependence on the project’s path."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The style mirrors internal project explanations: it uses the same terminology, informal labels, and ways of referring to the concept that have been used in prior internal documents or discussions, assuming shared knowledge of the project’s context.",
+                "Analogies and intuitions are drawn from project-specific experiences (for example, previously discussed experiments or internal metaphors) rather than from general textbook analogies.",
+                "When the user has coined or repeatedly used particular analogies, nicknames, or phrasings for this concept in the project, the explanation reuses these where appropriate, instead of replacing them wholesale with generic formulations."
+              ],
+              "low_score_signals": [
+                "The explanation adopts a formal, neutral textbook style that avoids internal shorthand, informal labels, or references to earlier project-specific ways of talking about the concept.",
+                "It appears written for an anonymous external learner, with no sign that the author has been involved in internal discussions or has absorbed the project’s existing explanatory conventions."
+              ]
+            }
+          ]
+        },
+        {
+          "regime_id": 2,
+          "regime_label": "Somewhat conservative, limited exploration (moderately-high path orientation)",
+          "preference_summary": "The user wants the explanation to primarily clarify the current project usage, while modestly lifting to a general definition and overview, clearly locating the project version within the concept family. External general content should be short and functional—used for contrast and positioning, not to replace the project mainline.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "The explanation first makes clear how the concept is instantiated in this project (settings, data, purpose), and then briefly situates this instantiation within a general definition or taxonomy, explicitly stating which variant the project is using.",
+                "Content about general mechanisms and boundaries is concise and oriented toward helping the reader understand why the project chose this particular variant, rather than toward fully covering the general concept space."
+              ],
+              "low_score_signals": [
+                "Most of the content is spent on the general concept, with the project-specific usage reduced to a simple example or end-of-text remark.",
+                "Alternatively, the explanation does not provide any general positioning at all, leaving readers with only the project-specific description and no sense of where it sits in the broader family."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The explanation primarily follows the project-based narrative, but inserts a short, clearly delimited excursion to give the general definition or variant classification, then returns to the project variant and its implications.",
+                "The structure makes the project usage the main organizing backbone and uses general content as a secondary, supporting layer rather than as the primary outline."
+              ],
+              "low_score_signals": [
+                "The explanation reorders itself around the general conceptual outline (for example, concept family first, then only later the project instantiation), making the project path feel secondary.",
+                "Transitions between project-specific and general parts are weakly marked, so that readers may lose track of which layer they are currently reading."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The style remains mostly project-internal, but temporary shifts into a slightly more general explanatory tone when briefly summarizing the standard definition or the variant taxonomy, then clearly returns to the familiar internal way of speaking.",
+                "Phrasing borrowed from more formal or external sources is limited to those short general passages and is adjusted to fit the project’s existing discourse."
+              ],
+              "low_score_signals": [
+                "General explanatory passages are written in a markedly different style (for example, very formal or textbook-like) that clashes with the surrounding project-based prose.",
+                "Alternatively, the explanation does not take advantage of more precise or standard formulations when helpful, remaining entirely in local colloquial style."
+              ]
+            }
+          ]
+        },
+        {
+          "regime_id": 3,
+          "regime_label": "Balanced: stability and exploration equally important (medium path orientation)",
+          "preference_summary": "The user wants the explanation to provide both a reusable general conceptual account and concrete project/analogous-task grounding details, developed at the same level and mutually mapped. The reader should be able to understand the concept itself independently and also understand the motivation and implications of the project-specific variant.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "The explanation dedicates substantial space both to a general account of the concept (definitions, mechanisms, applicability, nearby concepts) and to explaining how it is instantiated in this project, with explicit links between the two.",
+                "Examples and error patterns include both canonical or textbook-like cases and project-specific or analogous-task cases, making clear which aspects reflect the general concept and which are due to project-specific constraints."
+              ],
+              "low_score_signals": [
+                "Content either stays almost entirely at the project-specific level, leaving the general conceptual picture underdeveloped, or remains mainly at the general level, with only superficial mention of how the project actually uses the concept.",
+                "The relationship between general properties and project-specific behavior is left implicit or vague, so that a reader cannot see how the two levels connect."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The structure clearly separates and connects a \"general layer\" and a \"project layer\": for example, the explanation might present a general definition and mechanisms, then a project instantiation section, then a side-by-side discussion of boundaries and variants in both levels.",
+                "Within each required part of the query (definition, mechanisms, applicability, example, comparisons), the explanation alternates between general and project-specific content in a predictable, signposted way."
+              ],
+              "low_score_signals": [
+                "General and project-specific elements are intermixed without clear segmentation or ordering principles, making it hard to tell which statements are meant to be general.",
+                "The explanation effectively follows only one organizational layer (either general or project-specific), with the other appearing as scattered or unstructured remarks."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The style alternates smoothly between a more general, didactic voice (when speaking about theory, taxonomy, or cross-project behavior) and a more informal, internal voice (when referring to project-specific choices and experiences), while indicating these shifts through cues and transitions.",
+                "Both voices are calibrated so that the text can be read by a collaborator and by a knowledgeable external reader without major confusion about which parts refer to this project and which parts generalize beyond it."
+              ],
+              "low_score_signals": [
+                "The explanation remains in a single voice that is either strongly internal (making the general account feel under-developed) or strongly external (making the project account feel detached), instead of balancing the two.",
+                "Switches between internal and external styles occur without clear signals, causing possible misinterpretation of whether a claim is meant to be project-specific or general."
+              ]
+            }
+          ]
+        },
+        {
+          "regime_id": 4,
+          "regime_label": "Exploration-leaning, with key constraints retained (moderately-low path orientation)",
+          "preference_summary": "The user wants the explanation to be driven primarily by the general theoretical structure of the concept/method, presented from a general pedagogical perspective. The project and analogous tasks appear only as needed for examples or constraint notes. The project specialization is treated as one comparable instantiation rather than the main explanatory backbone.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "The explanation devotes most of its content to the general concept: definitions, mechanisms or pseudocode, typical applicability and failure boundaries, and differences from related concepts are developed at a level that would apply to many projects.",
+                "The project’s instantiation is presented as one example or special case, used to illustrate how general ideas manifest under concrete constraints, but it does not dictate what aspects of the concept are explained."
+              ],
+              "low_score_signals": [
+                "Project-specific details and usage remain the main focus of the explanation, with only minimal or incidental mention of the broader conceptual structure.",
+                "The explanation does not clearly separate which parts of the description are tied to the project setup and which parts are intended to be generally valid."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The structure follows a standard conceptual outline (for example, general definition and intuition → general mechanisms or pseudocode → general applicability and boundaries → canonical minimal example → comparisons to related concepts), and only later maps the project case into this outline.",
+                "Project content appears mainly in sections intended for examples or specializations, rather than in the core definition or mechanism sections."
+              ],
+              "low_score_signals": [
+                "The explanation primarily follows the project’s historic order of encounters with the concept, with general conceptual sections inserted ad hoc, rather than using a common pedagogical structure.",
+                "The project appears early as the backbone of the exposition, and general conceptual points are described only as adjustments to that backbone."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The style resembles a general conceptual lecture or tutorial: it avoids relying on internal project shorthand, introduces terminology explicitly, and uses broadly understandable analogies or examples.",
+                "When project-specific constraints are mentioned, they are framed as instantiations of more general ideas, and the overall tone remains neutral and general rather than internal and conversational."
+              ],
+              "low_score_signals": [
+                "The explanation continues to rely heavily on project-internal language, analogies, and abbreviations that would be opaque to readers outside the project.",
+                "Alternatively, the style becomes highly technical or research-paper-like in ways that exceed the learner’s current level, rather than focusing on conceptual clarity as intended by the query."
+              ]
+            }
+          ]
+        },
+        {
+          "regime_id": 5,
+          "regime_label": "More exploratory (weak path orientation)",
+          "preference_summary": "The user wants the explanation to be almost entirely panoramic and reusable across projects: the concept family position, variants, theoretical relations, and systematic boundaries are central. The current project and analogous tasks are optional, secondary illustrations.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "The explanation aims to cover the concept’s role in the broader field: it elaborates its position in a family of methods, important variants, theoretical relationships to nearby ideas, and systematic applicability and failure boundaries, in a way that would be useful for many projects.",
+                "Examples and comparisons are drawn from multiple contexts (for example, classic papers, canonical toy problems, or different application domains) to illustrate the breadth of the concept’s use; the current project may appear as just one among several such contexts."
+              ],
+              "low_score_signals": [
+                "Most of the explanation remains tied to this project’s particular tasks and experiences, with minimal attention to other contexts or to a more comprehensive conceptual landscape.",
+                "Variants, theoretical relationships, and broader roles are barely mentioned or are only hinted at without systematic treatment."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The explanation is organized according to a general taxonomy or historical-conceptual evolution, possibly including explicit classification of variants and structured comparisons with related concepts, and is not shaped by the order in which this project encountered the concept.",
+                "The current project, if used at all, appears briefly in sections devoted to examples or applications of the general taxonomy, without determining the main flow."
+              ],
+              "low_score_signals": [
+                "The organizational logic still follows the project’s introduction and usage of the concept, with only occasional general remarks, making the explanation difficult to reuse in another project without substantial modification.",
+                "Different variants or related concepts are discussed in an ad hoc order driven by project anecdotes rather than by a clear conceptual structure."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The style is that of a stand-alone conceptual overview: assumptions are stated, terms are defined in a generally accepted way, and the text avoids references that presuppose knowledge of any particular project.",
+                "Cross-project and cross-course perspectives are explicit: for example, the explanation notes how different textbooks treat the concept, or how different subfields adopt different variants, in a way that is independent of the current project."
+              ],
+              "low_score_signals": [
+                "The explanation repeatedly assumes familiarity with this project’s history, uses local labels without defining them, or frames its points primarily in terms of project needs and experiences.",
+                "Even when general ideas are mentioned, the style remains strongly anchored in the project’s narrative, providing limited value as a reusable conceptual resource."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

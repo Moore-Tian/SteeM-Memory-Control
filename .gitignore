@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.log
+.env
+.DS_Store
+output/
+evaluation/test_set/
+framework_data/**/output/
+framework_data/**/test/
+UPLOAD_GUIDE.md

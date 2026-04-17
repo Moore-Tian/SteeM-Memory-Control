@@ -1,0 +1,394 @@
+{
+  "domain": "research",
+  "score_scale": {
+    "min": 1,
+    "max": 5,
+    "labels": {
+      "1": "Clearly non-compliant",
+      "2": "Partially non-compliant",
+      "3": "Basically compliant / Medium",
+      "4": "Well compliant",
+      "5": "Highly compliant"
+    }
+  },
+  "tasks": {
+    "plan_design": {
+      "task_name": "Plan / Design (propose next-stage objectives and plans/methods)",
+      "query_template": "Please propose the next-stage objectives and plans/methods for the specified [target].",
+      "input_contract": {
+        "available_artifacts": [
+          "research_goals",
+          "research_plan",
+          "experiment_results",
+          "method_scheme"
+        ],
+        "target_artifacts": [
+          "method_scheme",
+          "research_plan",
+          "paper_paragraph"
+        ],
+        "notes": "Assume that the current project goals and progress are provided either in the query or as given context. This task requires proposing a concrete plan specifically for the next stage."
+      },
+      "dimensions": [
+        {
+          "id": "task_fulfillment",
+          "name": "Task fulfillment",
+          "global_definition": "Whether the response genuinely completes the task required by the query, rather than merely providing background, restating existing information, or deviating from the task type. For Plan / Design scenarios, the focus is on whether clear next-stage objectives and executable plans are provided, rather than purely conceptual discussion.",
+          "task_specific_expectations": {
+            "checklist": [
+              "Clearly states the overall objective of the next stage, rather than repeating the current-stage objective or using vague statements (e.g., specifying which hypotheses to validate, which metrics to improve, or which stage of paper development to reach).",
+              "Provides a structured breakdown of the next-stage work into major work packages or sub-tasks (e.g., 2–5 key steps or workflows), rather than a single generic item.",
+              "For each work package, includes sufficiently concrete planning details such as methodological ideas, data or resource requirements, and key design choices, instead of generic phrases like \"continue optimizing the model\" or \"run more experiments.\"",
+              "Within a reasonable scope, specifies validation or evaluation arrangements (e.g., main experimental designs, key comparisons, or planned checkpoints), reflecting consideration of plan verifiability.",
+              "The overall description is aligned with the [target] specified in the query (e.g., method design, experimental extension, or paper-writing progress), rather than expanding into unrelated research directions."
+            ]
+          },
+          "score_guidelines": {
+            "5": "Fully satisfies all key requirements: clearly articulates next-stage objectives and presents 2–5 well-structured work packages; each package includes concrete methodological or design ideas, expected inputs/outputs, relation to the current project state, and basic validation arrangements. The response is tightly aligned with the query’s [target], with no notable omissions or digressions.",
+            "4": "Largely meets the task requirements: provides clear next-stage objectives and a reasonably structured work breakdown; most work packages include method ideas and validation plans, though some elements are slightly coarse or under-specified. Overall, the plan remains executable.",
+            "3": "Partially completes the task: presents some form of a next-stage plan, but at least one major component is missing (e.g., objectives are too vague, key steps lack concrete method cues, or validation plans are very rough or absent). The response can inform planning but requires additional elaboration before direct use.",
+            "2": "Poor task alignment: the response mainly consists of general advice or background restatement, with only scattered references to next-stage planning and no clear stage objectives or work structure.",
+            "1": "Essentially fails to complete the task: does not distinguish between the current stage and the next stage, or provides almost no concrete plan, instead offering content that is irrelevant or overly generic."
+          }
+        },
+        {
+          "id": "substantive_correctness",
+          "name": "Substantive correctness",
+          "global_definition": "Without considering path orientation, evaluates whether the research logic, methodological reasoning, experimental design, and interpretation involved in the response are reasonable and credible; whether there are clear statistical errors, methodological misuse, logical contradictions, or conflicts with given facts.",
+          "task_specific_expectations": {
+            "checklist": [
+              "The proposed next-stage methods and experimental designs do not exhibit clear logical contradictions with the current project goals or known results (e.g., applying a method in a clearly inapplicable setting).",
+              "Descriptions of research methods, models, or metrics are reasonable within common research practice and do not rely on pseudo-concepts or erroneous terminology.",
+              "If statistical analysis or experimental planning is introduced (e.g., control groups, data splits, evaluation metrics), the basic setup is logically coherent and does not clearly violate fundamental experimental-design principles.",
+              "If inferences or hypotheses are proposed based on current results, the strength of conclusions broadly matches the available evidence and avoids severe over-extrapolation."
+            ]
+          },
+          "score_guidelines": {
+            "5": "The reasoning chain is rigorous and self-consistent, with no major methodological or logical errors identified; the proposed plan is reasonable and feasible in context, and uncertainties are clearly acknowledged or conservatively phrased.",
+            "4": "Generally correct; may include minor conceptual imprecision or simplifying assumptions, but these do not materially undermine the reliability of the main conclusions.",
+            "3": "Contains several identifiable reasoning gaps or underspecified methodological details, but major risks can be mitigated with limited revision; the response still has reference value.",
+            "2": "Includes clear conceptual confusion, methodological misuse, or inappropriate experimental design that could lead to invalid conclusions if executed directly; some isolated ideas may still be useful.",
+            "1": "Severely incorrect or unreliable at the methodological or reasoning level, with multiple errors or inconsistencies, rendering the proposal largely unusable."
+          }
+        },
+        {
+          "id": "structure_clarity",
+          "name": "Structure & clarity",
+          "global_definition": "Evaluates whether the response is clearly structured, appropriately segmented, and well organized, enabling the reader to quickly grasp the core content and logical order, while avoiding severe verbosity, information entanglement, or abrupt jumps.",
+          "task_specific_expectations": {
+            "checklist": [
+              "The hierarchical relationship between stage-level objectives and specific work packages is clear, allowing readers to understand what should be done first and what follows.",
+              "The text uses reasonable paragraphing or list structures, avoiding long unmarked blocks that mix multiple logically independent goals or steps.",
+              "Information at the same hierarchical level has roughly comparable granularity, preventing important decisions from being buried in scattered locations.",
+              "Basic transitional cues are provided between sections (e.g., \"based on current results, the next step is…\"), so readers are not forced to infer execution order."
+            ]
+          },
+          "score_guidelines": {
+            "5": "Clear and well-layered structure; readers can quickly grasp the main plan and relationships among sub-tasks, with no serious logical jumps or information mixing.",
+            "4": "Generally well organized; a few sections may be roughly labeled or segmented, but overall understanding is not affected and only minor refinement is needed.",
+            "3": "Basically readable, but includes several mixed or poorly organized segments; readers must reorganize information themselves to form a clear picture.",
+            "2": "Confusing or overly verbose structure with insufficient segmentation; readers struggle to identify relationships among components and require substantial extra effort.",
+            "1": "Essentially lacks structure; information is heavily piled together, making the plan difficult to understand or extract actionable elements from."
+          }
+        },
+        {
+          "id": "usefulness_actionability",
+          "name": "Usefulness & actionability",
+          "global_definition": "Evaluates whether the response can serve as a direct basis or strong reference for next-step actions, rather than remaining at the level of abstract principles or vague discussion; whether it provides sufficient concreteness, priority signals, or constraints to support real planning.",
+          "task_specific_expectations": {
+            "checklist": [
+              "It is possible to infer which work packages are high-priority and essential versus optional or deferrable (even if priorities are implicit rather than explicitly numbered).",
+              "Each work package includes at least a basic description of inputs, expected outputs, or success criteria, clarifying what constitutes completion.",
+              "There is at least rough consideration of resources, time, or collaboration needs (e.g., additional data, compute, or collaborators), avoiding a purely idealized plan.",
+              "Overall, a reader following the plan could begin scheduling concrete work or experiments without needing to rewrite the entire plan."
+            ]
+          },
+          "score_guidelines": {
+            "5": "Highly actionable: the plan can be directly converted into a task list or project schedule; key tasks, dependencies, and success criteria are sufficiently explicit.",
+            "4": "Generally actionable: most tasks have clear execution paths, with only a few elements requiring user-side detail filling or light rewriting.",
+            "3": "Moderately actionable: provides directional guidance, but lacks execution-level detail in key areas and requires substantial concretization by the user.",
+            "2": "Low actionability: content is mostly principle-level or abstract, with insufficient detail to guide real execution; direct implementation carries high risk.",
+            "1": "Essentially not actionable: the response cannot be translated into concrete actions or points to unrealistic or infeasible plans."
+          }
+        }
+      ]
+    },
+    "revise": {
+      "task_name": "Revise (revise an existing target: paragraph / plan / scheme, etc.)",
+      "query_template": "Please revise the current [target].",
+      "input_contract": {
+        "available_artifacts": [
+          "paper_paragraph",
+          "method_scheme",
+          "experiment_results"
+        ],
+        "target_artifacts": [
+          "paper_paragraph",
+          "method_scheme",
+          "research_plan"
+        ],
+        "notes": "The object to be revised may be a paper paragraph, method description, or research plan. If the original text is not provided in context, it must be included in the query. The task requires revising or improving the content while preserving its core intent."
+      },
+      "dimensions": [
+        {
+          "id": "task_fulfillment",
+          "name": "Task fulfillment",
+          "global_definition": "Evaluates whether the response genuinely focuses on revising the given target, rather than producing an unrelated text or only providing high-level suggestions.",
+          "task_specific_expectations": {
+            "checklist": [
+              "Includes a clear revised version of the target, not merely a list of suggestions.",
+              "The revised version maintains a recognizable correspondence with the original target in terms of core content and claims, rather than being an unrelated new text or plan.",
+              "If the query specifies concrete revision requirements (e.g., \"clearer,\" \"more concise,\" \"emphasize experimental results\"), the revised version visibly responds to those requirements.",
+              "If revision rationales or comparisons are provided, they supplement rather than replace the revised text itself."
+            ]
+          },
+          "score_guidelines": {
+            "5": "Strictly completes the task: provides a high-quality revised text that clearly builds on and improves the original while satisfying the specific revision requirements in the query.",
+            "4": "Basically complete: provides a clear revised version closely related to the original; some specific instructions may be addressed less fully.",
+            "3": "Partially complete: some form of revision is present, but either the revised text is incomplete, weakly aligned with the original, or insufficiently responsive to revision instructions.",
+            "2": "Poor task alignment: mainly offers abstract advice or commentary, with little usable revised text; or the revision is weakly connected to the original.",
+            "1": "Essentially fails the task: no identifiable revised version is provided, or the generated content is largely unrelated to the original target."
+          }
+        },
+        {
+          "id": "substantive_correctness",
+          "name": "Substantive correctness",
+          "global_definition": "Evaluates whether the revision introduces new factual or reasoning errors, or unreasonably distorts the original conclusions.",
+          "task_specific_expectations": {
+            "checklist": [
+              "The revised text does not alter original experimental results, numerical values, or method settings without justification.",
+              "Descriptions of methods, assumptions, and conclusions remain logically consistent with the original content and provided context, without introducing contradictions.",
+              "If the logical structure is reorganized, the reasoning chain remains coherent and does not break due to deletion or reordering."
+            ]
+          },
+          "score_guidelines": {
+            "5": "Fully correct at the factual and reasoning level, highly consistent with context, and introduces no new errors; may also correct minor issues in the original.",
+            "4": "Generally correct, with only minor imprecision that has negligible impact on conclusion reliability.",
+            "3": "Contains some localized issues (e.g., wording that may cause ambiguity or slightly overstates conclusions), but remains broadly correct.",
+            "2": "Introduces clear conceptual or factual deviations, such as altered key values, misdescribed methods, or new logical inconsistencies.",
+            "1": "Severely incorrect in substance, rendering the revision unreliable or seriously misaligned with the original intent."
+          }
+        },
+        {
+          "id": "structure_clarity",
+          "name": "Structure & clarity",
+          "global_definition": "Evaluates whether the revised text provides a substantive improvement in structure and clarity relative to the original, facilitating reader understanding of key points and argumentative flow.",
+          "task_specific_expectations": {
+            "checklist": [
+              "Sentence structure, paragraphing, and information order are more readable than, or at least not worse than, the original.",
+              "Key information (e.g., motivation, method highlights, results, conclusions) is more appropriately positioned and less likely to be buried in irrelevant detail.",
+              "Avoids excessive verbosity or filler, ensuring each sentence serves a clear purpose."
+            ]
+          },
+          "score_guidelines": {
+            "5": "Clearly superior structure and expression: logical, focused, and fluent, requiring little to no further editing for formal use.",
+            "4": "Noticeable clarity improvement, though minor redundancy or awkward phrasing remains; overall readability is good.",
+            "3": "Readable with some improvement over the original, but significant optimization potential remains (e.g., long sentences or uneven information density).",
+            "2": "Revision degrades or fails to improve clarity; structure is confusing or in some respects worse than the original.",
+            "1": "Severely harms readability; structure is fragmented or expression is overly obscure."
+          }
+        },
+        {
+          "id": "usefulness_actionability",
+          "name": "Usefulness & actionability",
+          "global_definition": "Evaluates whether the revision can be directly used to replace the original text, or at least serve as a reliable basis for further manual editing.",
+          "task_specific_expectations": {
+            "checklist": [
+              "The revised text matches the expected length, style, and technical depth of its intended use (e.g., paper paragraph vs. project plan).",
+              "If revision rationales or annotations are provided, they assist subsequent editing decisions rather than creating confusion.",
+              "Overall, the user can integrate the revised text into the existing document with limited additional work."
+            ]
+          },
+          "score_guidelines": {
+            "5": "Highly usable: can directly replace the original text with minimal formatting adjustments; accompanying explanations also support iteration.",
+            "4": "Generally usable: most sections can be adopted directly, with only minor manual refinement needed.",
+            "3": "Moderately usable: requires non-trivial editing and selection, but still provides a valuable starting point.",
+            "2": "Low usability: the revision has many issues, limiting adoption to isolated phrases or ideas.",
+            "1": "Essentially unusable: the revision cannot be practically adopted and requires rewriting from scratch."
+          }
+        }
+      ]
+    },
+    "critique": {
+      "task_name": "Critique (review a proposal and provide prioritized improvement suggestions)",
+      "query_template": "Please review the following research proposal: validity of contributions, alignment with research goals, methodological suitability and potential failure modes, adequacy of experimental design, executability and risks; finally provide five actionable improvement suggestions ranked by priority. Proposal: {method}",
+      "input_contract": {
+        "available_artifacts": [
+          "method_scheme",
+          "research_goals"
+        ],
+        "notes": "If the proposal is not provided in method_scheme, it must be included in the query. This task requires multi-dimensional review and five actionable improvement suggestions with explicit priority ordering."
+      },
+      "dimensions": [
+        {
+          "id": "task_fulfillment",
+          "name": "Task fulfillment",
+          "global_definition": "Evaluates whether the response genuinely completes the compound task of review plus five prioritized, actionable improvement suggestions, rather than merely summarizing or providing generic commentary.",
+          "task_specific_expectations": {
+            "checklist": [
+              "Provides substantive review on most of the following aspects: contribution validity, alignment with research goals, methodological suitability and failure modes, adequacy of experimental design, executability and risks.",
+              "The review includes concrete reasoning and evidence cues, not only binary judgments.",
+              "Provides exactly five improvement suggestions that are actionable (pointing to concrete modifications or additions), rather than abstract slogans.",
+              "The five suggestions have a clear priority order (e.g., numbered with explicit priority meaning or wording that clearly signals precedence)."
+            ]
+          },
+          "score_guidelines": {
+            "5": "Fully achieves the task: the review covers all core dimensions with well-reasoned analysis and provides five clear, actionable suggestions with explicit priorities.",
+            "4": "Largely complete: review content is mostly sufficient, with one dimension somewhat brief; suggestion count, actionability, and priority signaling are largely adequate.",
+            "3": "Partially complete: some key dimensions are reviewed, but coverage or depth is insufficient; suggestions may be fewer than five or lack clear actionability or priority expression.",
+            "2": "Poor task alignment: mainly restates the proposal or provides vague evaluation; suggestions are overly abstract or clearly insufficient in number.",
+            "1": "Essentially fails the task: provides little substantive review and no structured improvement suggestions."
+          }
+        },
+        {
+          "id": "substantive_correctness",
+          "name": "Substantive correctness",
+          "global_definition": "Evaluates whether the review and suggestions are methodologically and logically sound, without considering path orientation.",
+          "task_specific_expectations": {
+            "checklist": [
+              "Judgments about contributions, method suitability, and failure modes are reasonable under the given context and general research practice.",
+              "Critiques of experimental adequacy are grounded in basic principles such as sample size, controls, and evaluation metrics.",
+              "Suggested improvements do not point toward clearly incorrect or infeasible directions."
+            ]
+          },
+          "score_guidelines": {
+            "5": "Accurate and well-grounded review perspective; judgments align with rigorous research practice and suggested improvements are methodologically sound.",
+            "4": "Generally correct; some judgments may be coarse or conservative, but do not constitute substantive errors.",
+            "3": "Contains debatable judgments or simplified reasoning, but still offers reference value.",
+            "2": "Includes clear misunderstandings or incorrect critiques, and suggestions may point in problematic directions.",
+            "1": "Severely incorrect or unreliable in substance, with evaluations and suggestions that deviate markedly from sound research practice."
+          }
+        },
+        {
+          "id": "structure_clarity",
+          "name": "Structure & clarity",
+          "global_definition": "Evaluates whether the review text is reasonably organized, allowing readers to distinguish review dimensions and improvement suggestions and understand their logical relationships.",
+          "task_specific_expectations": {
+            "checklist": [
+              "The review is grouped by dimensions or themes (e.g., contributions, methods, experiments), rather than being fully intermixed.",
+              "Improvement suggestions are numbered or listed, making all five easy to identify and preventing priority information from being obscured.",
+              "Avoids long passages that mix critique and suggestions in a way that hinders decomposition."
+            ]
+          },
+          "score_guidelines": {
+            "5": "Clear structure with well-separated review and suggestion sections; readers can quickly locate each critique and its corresponding improvement direction.",
+            "4": "Generally well organized; some local mixing exists but does not impede understanding.",
+            "3": "Has basic structure but contains notable mixing or overly long paragraphs, requiring extra reader effort.",
+            "2": "Poor structure: critiques and suggestions are interwoven without clear markers, making key points hard to extract.",
+            "1": "Essentially unstructured; reads as a stream of unorganized comments."
+          }
+        },
+        {
+          "id": "usefulness_actionability",
+          "name": "Usefulness & actionability",
+          "global_definition": "Evaluates whether the review and suggestions can directly guide the next iteration of the proposal, rather than remaining at an abstract evaluative level.",
+          "task_specific_expectations": {
+            "checklist": [
+              "Improvement suggestions point to concrete actions (e.g., which experiments to add, which method components to adjust, which sections to rewrite), not vague calls to \"do more\" or \"improve robustness.\"",
+              "The priority ordering is reasonable and helps researchers decide what to address first under limited resources.",
+              "Problem descriptions are sufficiently specific to clarify what is wrong and why change is needed."
+            ]
+          },
+          "score_guidelines": {
+            "5": "Highly actionable: a team can directly plan the next iteration based on the five suggestions with minimal further decomposition.",
+            "4": "Generally actionable: most suggestions have clear implementation paths, with only minor clarification needed.",
+            "3": "Moderately actionable: suggestions provide direction but require substantial breakdown into concrete actions.",
+            "2": "Low actionability: suggestions are overly abstract or broad, making direct translation into tasks difficult.",
+            "1": "Essentially not actionable: evaluation remains at the level of value judgment without practical modification paths."
+          }
+        }
+      ]
+    },
+    "concept_explanation": {
+      "task_name": "Concept Explanation (explain a concept / method)",
+      "query_template": "Please explain the concept/method: {concept}. Requirements: (1) definition and intuition; (2) key mechanisms/steps or pseudocode; (3) applicable and non-applicable scenarios; (4) minimal example; (5) distinctions from at least two related concepts.",
+      "input_contract": {
+        "available_artifacts": [
+          "method_scheme"
+        ],
+        "notes": "If no dedicated concept note is available, relevant information may be drawn from method_scheme or paper_paragraph. This task requires a complete five-part structured explanation."
+      },
+      "dimensions": [
+        {
+          "id": "task_fulfillment",
+          "name": "Task fulfillment",
+          "global_definition": "Evaluates whether the explanation genuinely completes the structured explanation required by the query, rather than offering only a brief definition or unstructured description.",
+          "task_specific_expectations": {
+            "checklist": [
+              "Clearly provides the definition and intuitive explanation of the concept or method.",
+              "Describes key mechanisms, steps, or pseudocode so readers understand how it operates or is executed.",
+              "Explains applicable scenarios and non-applicable boundaries, not merely typical use cases.",
+              "Provides at least one minimal example to support understanding in a simplified setting.",
+              "Compares the concept with at least two related concepts, identifying similarities and differences rather than listing names only."
+            ]
+          },
+          "score_guidelines": {
+            "5": "Fully covers all five components with substantive content; readers can systematically understand the concept from this explanation.",
+            "4": "Covers all five components in a recognizable manner, with one component slightly brief; overall task completion is adequate.",
+            "3": "Covers only three to four components or covers some components at a very shallow level; still provides partial assistance but falls short of task requirements.",
+            "2": "Insufficient coverage, addressing only one to two components; fails to deliver a structured explanation.",
+            "1": "Essentially fails the task: severely off-topic or provides only a very short, unstructured explanation."
+          }
+        },
+        {
+          "id": "substantive_correctness",
+          "name": "Substantive correctness",
+          "global_definition": "Evaluates whether the concept explanation itself is correct: whether definitions align with common usage, mechanisms are reasonably described, and examples and boundaries are consistent with established understanding.",
+          "task_specific_expectations": {
+            "checklist": [
+              "Core definitions and intuitions are not clearly incorrect or severely misaligned with mainstream understanding.",
+              "Mechanism or step descriptions reflect actual behavior in research practice and do not mislead readers.",
+              "Applicability and non-applicability boundaries align with common understanding and do not imply universal applicability.",
+              "Examples and related-concept comparisons are factually correct."
+            ]
+          },
+          "score_guidelines": {
+            "5": "Highly accurate at both factual and reasoning levels; suitable as a standard reference explanation.",
+            "4": "Generally correct, with only minor imprecision or simplification that does not mislead.",
+            "3": "Some imprecision or ambiguity exists and may require cross-checking with other sources, but the main understanding is largely correct.",
+            "2": "Contains clear errors or major misconceptions, such as incorrect boundaries or conflation with related concepts.",
+            "1": "Severely incorrect in definitions or mechanisms, rendering the explanation unreliable."
+          }
+        },
+        {
+          "id": "structure_clarity",
+          "name": "Structure & clarity",
+          "global_definition": "Evaluates whether the explanation is well structured and clearly segmented, supporting a gradual understanding path from intuition to formalization, application, and comparison.",
+          "task_specific_expectations": {
+            "checklist": [
+              "The five required components are clearly marked (e.g., via headings or lists) rather than merged into a single long paragraph.",
+              "Information order is reasonable, progressing from motivation/intuition to formalization, application, and comparison.",
+              "Language is clear and terminology is used consistently, avoiding excessive unexplained symbols or jargon."
+            ]
+          },
+          "score_guidelines": {
+            "5": "Very clear structure with distinct layers; readers can smoothly follow the explanation to build understanding.",
+            "4": "Generally good structure; some sections may be slightly dense or order could be mildly optimized, but comprehension is not impaired.",
+            "3": "Basically readable, but noticeable information stacking or minor jumps require additional reader effort.",
+            "2": "Poor structure: components are mixed and hard to distinguish; understanding requires significant extra effort.",
+            "1": "Essentially unstructured; reads as disorganized text and is unsuitable for teaching or self-study."
+          }
+        },
+        {
+          "id": "usefulness_actionability",
+          "name": "Usefulness & actionability",
+          "global_definition": "In teaching and research contexts, evaluates whether the explanation can be directly used to understand and apply the concept or method, rather than remaining purely abstract.",
+          "task_specific_expectations": {
+            "checklist": [
+              "Provides sufficient information for readers to attempt basic application in simple settings (e.g., implement a basic version or correctly identify applicability).",
+              "Minimal examples and related-concept comparisons help resolve practical questions about when to use the concept and how it differs from alternatives.",
+              "Overall, the explanation can serve as a draft teaching handout or self-study material without major restructuring."
+            ]
+          },
+          "score_guidelines": {
+            "5": "Highly useful: readers can directly apply or teach the concept based on this explanation; minimal examples and comparisons are clear and effective.",
+            "4": "Generally useful: minor supplementation may be needed before practical use, but operational cues are largely present.",
+            "3": "Moderately useful: assists understanding to some extent, but readers still need additional resources or substantial inference.",
+            "2": "Low usefulness: largely abstract description or definition stacking, offering limited support for actual use.",
+            "1": "Essentially no practical value: even with comprehension, the explanation does not support research or learning activities."
+          }
+        }
+      ]
+    }
+  }
+}
