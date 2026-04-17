@@ -1,0 +1,348 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Electric circuits described verbally and qualitatively",
+    "subject": "Physics",
+    "event_type": "objective_clarification",
+    "description": "Initial diagnostic session with the learner to understand their background in physics, specific goals for understanding electric circuits qualitatively, and any time constraints. The learner wants to be able to verbally explain how simple circuits work without complex math.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "As the first event in the timeline, it is essential to establish the learner's goals and background. This objective clarification step provides the necessary foundation for creating a tailored study plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Electric circuits described verbally and qualitatively",
+    "subject": "Physics",
+    "event_type": "plan_milestones",
+    "description": "Based on the clarified objectives, the tutor creates a structured study plan. The plan outlines key milestones, starting with foundational concepts like voltage, current, and resistance, and then moving to analyzing simple series and parallel circuits.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learning objectives defined in the previous session (e_01), creating a structured study plan is the logical next step. This plan provides a clear roadmap for the upcoming lessons and practice sessions, ensuring the tutoring is targeted and efficient."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Electric circuits described verbally and qualitatively",
+    "subject": "Physics",
+    "event_type": "lesson",
+    "description": "The tutor conducts the first lesson as outlined in the study plan, focusing on the foundational concepts of voltage, current, and resistance. The lesson uses analogies like the water-pipe system to help the learner build a strong qualitative and intuitive understanding.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the creation of the study plan (e_02), the next logical step is to begin instruction. This lesson directly addresses the first milestone in the plan, establishing the core concepts needed for all subsequent topics."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Electric circuits described verbally and qualitatively",
+    "subject": "Physics",
+    "event_type": "practice",
+    "description": "The tutor assigns practice questions to test the learner's grasp of the concepts from the first lesson. The learner is asked to verbally describe the relationships between voltage, current, and resistance in simple scenarios, and their responses are recorded.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing foundational concepts in the lesson (e_03), a practice session is the natural next step to check for understanding. This allows the learner to actively apply their new knowledge, and the recorded attempts will form the basis for the upcoming review session."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Electric circuits described verbally and qualitatively",
+    "subject": "Physics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's recorded responses from the practice session. It is noted that the learner frequently confuses the concepts of voltage (pressure) and current (flow), a common misconception. The tutor prepares a summary of these errors and provides clear, actionable feedback.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session (e_04), a review is the necessary next step to evaluate the learner's understanding and identify specific areas of difficulty. The generated feedback summary will guide the next phase of instruction, ensuring that misconceptions are addressed before new material is introduced."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Electric circuits described verbally and qualitatively",
+    "subject": "Physics",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback from the review, the tutor revises the teaching notes on foundational concepts. They add a new section explicitly contrasting voltage and current, strengthening the water-pipe analogy to better distinguish between 'pressure' and 'flow rate', and adding a 'Common Pitfalls' section.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in event e_05 identified a specific, common misconception. A logical next step is to improve the teaching materials to directly address this confusion, making them more effective for reteaching and for future learners. This revision incorporates the actionable insights from the feedback summary."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Electric circuits described verbally and qualitatively",
+    "subject": "Physics",
+    "event_type": "practice",
+    "description": "To reinforce the concepts after the materials revision, the tutor assigns a new, targeted practice set. These questions focus specifically on scenarios that require distinguishing between voltage and current, asking the learner to explain their reasoning based on the revised analogies.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After identifying a misconception (e_05) and revising the teaching materials to address it (e_06), a targeted practice session is the logical next step. This allows the learner to apply the clarified concepts and lets the tutor assess if the confusion has been resolved before introducing new material."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Electric circuits described verbally and qualitatively",
+    "subject": "Physics",
+    "event_type": "review",
+    "description": "The tutor reviews the attempts from the second, more targeted practice session. This review confirms that the learner is now correctly distinguishing between voltage and current, and their qualitative explanations have improved significantly.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted practice session (e_07) designed to correct a misconception, a review is critical to verify that the learner's understanding has improved. This step confirms the effectiveness of the remediation cycle (e_05 to e_07) and provides the green light to proceed to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Electric circuits described verbally and qualitatively",
+    "subject": "Physics",
+    "event_type": "lesson",
+    "description": "Now that the learner has a solid grasp of the foundational concepts, the tutor moves to the next topic in the study plan: series circuits. The lesson explains how current remains constant and voltage divides across components in a series circuit, continuing to use the water-pipe analogy.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_08) confirmed that the learner has mastered the foundational concepts. According to the study plan (e_02), the next milestone is analyzing simple circuits, so introducing series circuits is the logical next step in the curriculum."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Electric circuits described verbally and qualitatively",
+    "subject": "Physics",
+    "event_type": "practice",
+    "description": "Following the lesson on series circuits, the tutor assigns practice tasks. The learner is asked to verbally describe what happens to the brightness of bulbs in a series circuit when another bulb is added, and their reasoning is recorded for review.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the new concept of series circuits in the lesson (e_09), a targeted practice session is the logical next step to assess comprehension. This allows the learner to actively apply the new rules and provides the tutor with specific attempts to analyze in the next review session."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Electric circuits described verbally and qualitatively",
+    "subject": "Physics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's explanations about series circuits. The learner correctly states that the bulbs will get dimmer but struggles to explain *why*, indicating a weak link between adding a resistor, increasing total resistance, and decreasing the overall current. The tutor prepares feedback to solidify this causal chain.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on series circuits (e_10), a review is essential to assess the learner's reasoning. This step allows the tutor to pinpoint specific gaps in understanding—in this case, the connection between total resistance and current—and prepare targeted feedback before moving on."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Electric circuits described verbally and qualitatively",
+    "subject": "Physics",
+    "event_type": "materials_revision",
+    "description": "In response to the review findings, the tutor revises the teaching notes for series circuits. They add a new section that explicitly breaks down the causal chain: adding a bulb -> increases total resistance -> decreases overall current -> all bulbs become dimmer.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_11) identified that the learner struggled to explain the 'why' behind their correct observations. Revising the teaching materials to explicitly detail this causal reasoning directly addresses the identified gap and prepares a better resource for reteaching or future practice."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Electric circuits described verbally and qualitatively",
+    "subject": "Physics",
+    "event_type": "practice",
+    "description": "To reinforce the lesson on series circuits, the tutor runs another practice session using the revised materials. The learner is specifically prompted to explain the step-by-step causal logic for why adding a resistor to a series circuit decreases the current.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching notes (e_12) to address a specific weakness in the learner's reasoning identified in the last review (e_11), a targeted practice session is the logical next step. This allows the learner to apply the newly clarified causal chain and allows the tutor to verify that the concept is now understood."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Electric circuits described verbally and qualitatively",
+    "subject": "Physics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's explanations from the targeted practice on series circuits. The review confirms that the learner can now clearly articulate the causal chain: adding a resistor increases total resistance, which decreases the overall current, making the bulbs dimmer. The concept is now considered mastered.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted practice session (e_13) designed to correct a specific reasoning gap, a review is the logical next step to verify that the remediation was successful. This confirms the learner's understanding before moving to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Electric circuits described verbally and qualitatively",
+    "subject": "Physics",
+    "event_type": "lesson",
+    "description": "With series circuits mastered, the tutor introduces the next topic from the study plan: parallel circuits. The lesson explains how voltage remains constant across parallel branches while the current splits, using an extended water-pipe analogy to illustrate.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_14) confirmed that the learner has mastered series circuits. According to the study plan (e_02), the next milestone is to understand parallel circuits, making this lesson the logical next step in the curriculum."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Electric circuits described verbally and qualitatively",
+    "subject": "Physics",
+    "event_type": "practice",
+    "description": "Following the lesson on parallel circuits, the tutor assigns practice tasks. The learner is asked to verbally describe what happens to the brightness of existing bulbs when a new bulb is added in a parallel branch, and their verbal explanation is recorded for review.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the concepts of parallel circuits in the lesson (e_15), a practice session is the logical next step to check for understanding. This allows the learner to actively apply the new material and creates a record of their reasoning for the upcoming review session."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Electric circuits described verbally and qualitatively",
+    "subject": "Physics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's practice on parallel circuits. The learner incorrectly predicted that adding a bulb in parallel would dim the other bulbs, applying series circuit logic. The feedback prepared highlights that each parallel branch has a direct, independent connection to the voltage source, so the voltage (and thus brightness) for existing bulbs remains unchanged.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a practice session on a new and counter-intuitive topic like parallel circuits (e_16), a review is critical to identify and correct misconceptions. This step allows the tutor to diagnose specific errors in reasoning before they become ingrained and to prepare targeted feedback."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Electric circuits described verbally and qualitatively",
+    "subject": "Physics",
+    "event_type": "materials_revision",
+    "description": "In response to the learner's confusion between series and parallel circuits, the tutor revises the teaching notes. A new section is added that explicitly contrasts the two, including a summary table comparing the effects of adding a new bulb on total resistance, total current, and the brightness of existing bulbs.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_17) identified a fundamental error where the learner misapplied series circuit rules to a parallel circuit. A logical next step is to revise the teaching materials to directly address this confusion by explicitly contrasting the two circuit types, making the notes a more effective tool for the upcoming reteaching and practice."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Electric circuits described verbally and qualitatively",
+    "subject": "Physics",
+    "event_type": "practice",
+    "description": "Using the newly revised teaching notes that contrast series and parallel circuits, the tutor assigns a mixed practice set. The learner must first identify if a circuit is series or parallel and then explain the effect of adding a new component, specifically referencing the comparison table from the notes.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials (e_18) to address the learner's confusion between series and parallel circuits, a targeted practice session is crucial. This event forces the learner to actively use the new comparison tools to differentiate between the circuit types, providing a clear way to assess if the misconception has been resolved."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Electric circuits described verbally and qualitatively",
+    "subject": "Physics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's attempts from the mixed practice session. The review shows the learner can now consistently identify the circuit type (series vs. parallel) and correctly apply the appropriate qualitative rules from the revised notes to predict the effect of adding a new component.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the mixed practice session (e_19) designed to resolve confusion between circuit types, a review is the necessary next step to assess whether the learner has successfully integrated the concepts. This confirms mastery of the final core topic in the study plan and determines if the primary learning objectives have been met."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "Electric circuits described verbally and qualitatively",
+    "subject": "Physics",
+    "event_type": "end",
+    "description": "Final session to confirm that all learning objectives have been met. The learner can now confidently and correctly explain the behavior of simple series and parallel circuits, fulfilling the initial goal of the tutoring engagement.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The last review (e_20) confirmed the learner's mastery of all topics outlined in the study plan, including differentiating between series and parallel circuits. With the primary learning objectives successfully achieved and performance stable, the tutoring process is now complete."
+  }
+]

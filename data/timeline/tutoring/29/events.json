@@ -1,0 +1,338 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Building solution templates for recurring problem types",
+    "subject": "Math",
+    "event_type": "objective_clarification",
+    "description": "Conducted an initial diagnostic session with the learner to understand their goals for building solution templates. Discussed their current workflow, recurring problem types they face, and desired outcomes like increased speed and consistency.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "As this is the first session, the immediate priority is to establish a clear understanding of the learner's goals and context. This foundational step is necessary before creating a structured study plan or delivering any lessons."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Building solution templates for recurring problem types",
+    "subject": "Math",
+    "event_type": "plan_milestones",
+    "description": "Based on the clarified objectives, the tutor and learner collaborated to create a staged study plan. The plan outlines key milestones, starting with identifying a suitable recurring problem, then deconstructing its solution, and finally building a generalized template.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learning objectives established in the previous session, the next logical step is to create a structured roadmap. This study plan translates the high-level goals into an actionable sequence of milestones, setting clear expectations for the tutoring process."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Building solution templates for recurring problem types",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "Delivered the first lesson as per the study plan, focusing on the principles of deconstructing a problem. The session covered how to identify key components, variables, and logical steps from a solved example, preparing the learner to create a generalized template.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a study plan established, the next logical step is to begin instruction. This lesson directly addresses the first milestone in the plan, providing the learner with the foundational concepts needed before they can attempt to practice building a template on their own."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Building solution templates for recurring problem types",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "Assigned a specific math problem for the learner to practice the deconstruction method taught in the previous lesson. The learner attempted to identify variables, constants, and logical steps, and their work was recorded for later review.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on problem deconstruction, this practice session is the essential next step for the learner to apply the new concepts. It provides a concrete attempt that can be analyzed in a future review session, directly progressing the goals outlined in the study plan."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Building solution templates for recurring problem types",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviewed the learner's practice attempt at deconstructing a problem. The review identified that while the learner correctly listed variables, they struggled to articulate the sequence of logical steps, leading to an incomplete deconstruction.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner's practice attempt was recorded in the previous step, a review is necessary to assess their understanding and provide targeted feedback. This review closes the initial 'lesson-practice' loop and produces a feedback summary to guide the next session."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Building solution templates for recurring problem types",
+    "subject": "Math",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback from the last review, the tutor updated the teaching notes. The revision adds a more explicit framework for articulating the logical sequence of steps in a problem solution, including sentence starters and a worked example.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in the previous event revealed the learner struggled to articulate logical steps. Revising the teaching notes to explicitly address this gap is a crucial step before re-teaching or assigning more practice, ensuring the learner has better support material."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Building solution templates for recurring problem types",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "The tutor conducted a targeted lesson using the recently revised teaching notes. The session focused specifically on the framework for articulating logical steps, walking the learner through the new worked example and clarifying their understanding.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the materials revision, this targeted lesson is necessary to actively teach the improved method for articulating logical steps, directly addressing the weakness identified in the last review. This ensures the learner understands the new framework before attempting another practice problem."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Building solution templates for recurring problem types",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "The learner was assigned a new practice problem to apply the revised framework for deconstruction. They were specifically tasked with using the new method for articulating logical steps, and their attempt was recorded for the next review session.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the targeted lesson on articulating logical steps (e_07), this practice session is essential to assess whether the learner can now apply the improved method independently. It directly addresses the weakness identified in the previous review (e_05) and creates a new performance record to evaluate progress."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Building solution templates for recurring problem types",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviewed the learner's second practice attempt, focusing on their application of the revised framework for articulating logical steps. The review confirmed that the learner showed significant improvement and was now able to clearly sequence the solution steps.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner's second, targeted practice attempt in the previous event (e_08), a review is essential to assess their progress. This step closes the feedback loop initiated in e_05, confirming whether the remedial lesson and materials revision were successful before moving on."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Building solution templates for recurring problem types",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "With the deconstruction skill now solid, the tutor delivered a lesson on the next phase: generalization. The session focused on how to transform the identified components and logical steps into a reusable solution template with placeholders and clear instructions.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_09) confirmed the learner's mastery of the deconstruction step. Following the study plan (e_02), the next logical step is to teach the process of generalization, which builds directly upon the deconstruction skill to create the final template."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Building solution templates for recurring problem types",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "Following the lesson on generalization, the learner was tasked with creating their first solution template. Using a problem they had previously deconstructed successfully, they attempted to build a generalized template with placeholders and instructions, and their work was recorded.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on generalization (e_10), this practice session is the essential next step for the learner to apply the new skill. It directly follows the study plan and creates a concrete artifact (the attempted template) that can be evaluated in the next review session."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Building solution templates for recurring problem types",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviewed the learner's first attempt at creating a solution template from the previous practice session. The review noted that while the structure was good, the placeholders were too specific to the example problem, and the instructions lacked clarity for a new user.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner's first attempt at creating a full solution template (e_11), a review is the necessary next step to evaluate their application of the generalization concept. This review will identify specific areas for improvement and generate actionable feedback before moving forward."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Building solution templates for recurring problem types",
+    "subject": "Math",
+    "event_type": "materials_revision",
+    "description": "Based on the review of the learner's first template, the tutor revised the teaching notes on generalization. The update includes a checklist for creating truly general placeholders and provides examples of 'good' vs. 'bad' instructional phrasing to improve clarity.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_12) identified that the learner's template was not general enough. Revising the teaching notes to provide more explicit guidance on creating generic placeholders and clear instructions is a necessary step to address this specific weakness before the learner attempts another practice session."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Building solution templates for recurring problem types",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "The tutor conducted a follow-up lesson using the revised teaching notes on generalization. The session focused on the new checklist for creating abstract placeholders and practiced writing clear, user-agnostic instructions, directly addressing the issues from the last review.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After revising the materials in the previous step (e_13) to address specific weaknesses found in the review (e_12), a targeted lesson is necessary to ensure the learner understands the new, more explicit guidance before attempting to practice again."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Building solution templates for recurring problem types",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "The learner was tasked with creating a new solution template for a different problem type. They were explicitly instructed to use the revised checklist and examples from the teaching notes to ensure their placeholders were general and instructions were clear. The resulting template was recorded for review.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the remedial lesson on generalization (e_14), this practice session is the critical next step to evaluate if the learner can apply the improved techniques independently. It directly addresses the issues identified in the last review (e_12) and creates a new performance record for assessment."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Building solution templates for recurring problem types",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviewed the learner's second attempt at creating a solution template, specifically checking against the revised checklist. The review found that the learner successfully created a general-purpose template with abstract placeholders and clear, actionable instructions, demonstrating mastery of the concept.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the learner's targeted practice attempt (e_15), a review is essential to validate their understanding and application of the revised generalization concepts. This step confirms whether the remedial loop was successful and if the learner has now mastered the core skill of creating a reusable template."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Building solution templates for recurring problem types",
+    "subject": "Math",
+    "event_type": "plan_milestones",
+    "description": "With the learner's mastery of template creation confirmed, the tutor and learner revised the study plan. They marked the core instructional milestones as complete and outlined a final phase focused on independent application, where the learner will build a small portfolio of templates for their own recurring problems.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "The previous review confirmed the learner has mastered the core skill, meeting the main training objective. Revising the study plan is the logical next step to formally conclude the instructional phase and transition the learner towards independent application, ensuring they can apply the skill in their own work."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Building solution templates for recurring problem types",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "Kicking off the independent application phase outlined in the revised study plan, the learner selected a personal, recurring math problem and created a solution template for it. This is the first entry for their planned portfolio, and the resulting template was recorded for a final review.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "With the study plan now focused on independent application, this practice session is the first step in that phase. It requires the learner to apply their skills to a self-selected problem, testing their ability to transfer their learning and beginning the portfolio-building process outlined in the previous step."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Building solution templates for recurring problem types",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor conducted a final review of the learner's first independently created solution template. The review aimed to validate their ability to apply the learned skills to a self-selected problem, checking for correct deconstruction, generalization, and clarity of instructions.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the first independent practice session of the portfolio phase (e_18), a final review is essential to confirm the learner's autonomy. This step validates their ability to transfer the skills to their own context and provides a final round of feedback before concluding the tutoring."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Building solution templates for recurring problem types",
+    "subject": "Math",
+    "event_type": "end",
+    "description": "The tutoring engagement concluded. The learner successfully met all objectives, demonstrating the ability to independently identify, deconstruct, and create high-quality solution templates for their own recurring problems, and was equipped to continue building their portfolio on their own.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The final review (e_19) confirmed the learner's ability to apply the learned skills autonomously, fulfilling the core learning objectives set out in e_01 and the revised study plan from e_17. With the learner's performance stable and their independence validated, the formal tutoring process is complete."
+  }
+]

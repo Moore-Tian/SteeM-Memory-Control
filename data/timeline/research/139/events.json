@@ -1,0 +1,293 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Catalytic efficiency analysis",
+    "subject": "Chemistry",
+    "event_type": "proposal",
+    "description": "Initial project kickoff meeting to formalize the research questions and create a high-level plan. The core idea is to develop a new computational model to predict catalytic efficiency for a specific class of metal-organic frameworks (MOFs).",
+    "required_artifacts": [
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "Every research project begins with an initial idea. This event represents the formalization of that pre-existing concept (the initial 'research_goals') into a more concrete set of objectives and a structured 'research_plan', officially kicking off the project."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Catalytic efficiency analysis",
+    "subject": "Chemistry",
+    "event_type": "scheme_design",
+    "description": "The team begins designing the computational methodology based on the established goals. This involves selecting the specific density functional theory (DFT) parameters, defining the set of MOF structures for the initial study, and outlining the reaction pathway to model for catalysis.",
+    "required_artifacts": [
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "After establishing the high-level `research_plan` and `research_goals` in the kickoff event (e_01), the logical next step is to translate these ideas into a concrete technical approach. This `scheme_design` event creates the initial `method_scheme` which is necessary before any experiments can be run."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Catalytic efficiency analysis",
+    "subject": "Chemistry",
+    "event_type": "pilot_experiments",
+    "description": "A pilot study is conducted on a single, well-known MOF structure (e.g., ZIF-8) to test the computational feasibility and correctness of the designed DFT method. The goal is to ensure the simulations converge properly and the calculated properties are within expected ranges before scaling up.",
+    "required_artifacts": [
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With the initial `method_scheme` defined in e_02, a pilot experiment is the logical next step. This allows the team to validate the computational approach on a small scale, identify potential issues, and generate initial `experiment_results` before committing to the resource-intensive main experiments."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Catalytic efficiency analysis",
+    "subject": "Chemistry",
+    "event_type": "analysis",
+    "description": "The team analyzes the results from the pilot study. The analysis confirms that the DFT simulations converged successfully and the calculated structural properties of ZIF-8 match well with experimental literature values. This validates the chosen computational parameters and methodology.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the pilot experiments (e_03), it is crucial to analyze the generated `experiment_results` to validate the `method_scheme`. This analysis confirms the approach is sound, providing the confidence needed before scaling up to more resource-intensive main experiments. The `experiment_results` artifact is updated to reflect this validated understanding."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Catalytic efficiency analysis",
+    "subject": "Chemistry",
+    "event_type": "main_experiments",
+    "description": "With the methodology validated, the team initiates the main computational experiments. The DFT simulations are run on the full, predefined set of 20 different MOF structures to calculate their catalytic properties for the target reaction.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The successful pilot study (e_03) and its validation in the subsequent analysis (e_04) confirmed the soundness of the `method_scheme`. The logical next step is to execute the `main_experiments` as outlined in the original `research_plan` to generate the core dataset for the project's analysis."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Catalytic efficiency analysis",
+    "subject": "Chemistry",
+    "event_type": "analysis",
+    "description": "The team performs a comprehensive analysis of the main experimental data. This involves calculating catalytic turnover frequencies from the DFT-derived activation energies for all 20 MOFs and correlating these with structural descriptors like pore size and metal center coordination.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "Following the completion of the resource-intensive `main_experiments` (e_05), a detailed `analysis` of the resulting data is the essential next step. This process aims to interpret the raw `experiment_results` in the context of the original `research_goals`, identify key scientific findings, and produce initial text for the results section of the paper."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Catalytic efficiency analysis",
+    "subject": "Chemistry",
+    "event_type": "scheme_design",
+    "description": "The analysis of the main results revealed that two MOFs with bulky organic linkers were significant outliers, showing much lower activity than the model predicted. The team hypothesizes this is due to steric hindrance effects not captured by the initial model. They decide to revise the computational scheme to incorporate a more accurate description of the transition state geometry and steric hindrance.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The comprehensive analysis in e_06, while successful overall, identified specific shortcomings in the predictive power of the current `method_scheme`. To create a more robust and accurate model that aligns with the project's `research_goals`, it is necessary to revisit the design phase and refine the methodology to account for these newly observed effects. This iterative loop is a realistic part of scientific discovery."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Catalytic efficiency analysis",
+    "subject": "Chemistry",
+    "event_type": "writing",
+    "description": "While the new computations for the outlier MOFs are being set up, a team member begins drafting the 'Methods' section of the paper. This draft describes the initial DFT approach and details the subsequent revisions made to account for steric hindrance, justifying the changes based on the analysis of the first set of main experiments.",
+    "required_artifacts": [
+      "method_scheme",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the revised `method_scheme` finalized in e_07, it is an opportune moment to document the methodology in detail for the paper. This `writing` task can be done in parallel with setting up new computations, making efficient use of project time and ensuring the rationale for the model revision is captured while it's fresh."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Catalytic efficiency analysis",
+    "subject": "Chemistry",
+    "event_type": "main_experiments",
+    "description": "The team executes the revised computations for the two outlier MOFs identified earlier. These simulations are run using the updated method that accounts for steric hindrance, with the goal of generating more accurate catalytic activity predictions for these specific structures.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the `method_scheme` in e_07 to address outliers from the initial main experiments, the logical next step is to apply this new method. This targeted `main_experiments` event re-runs the calculations for the problematic cases to generate new `experiment_results`, directly testing the hypothesis about steric hindrance before proceeding with further analysis or writing."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Catalytic efficiency analysis",
+    "subject": "Chemistry",
+    "event_type": "analysis",
+    "description": "The team analyzes the new computational results for the two outlier MOFs. The analysis shows that the revised method, which accounts for steric hindrance, yields catalytic activity predictions that are now in excellent agreement with the overall trend, resolving the previous discrepancy.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "Following the targeted re-computation of the outlier MOFs in e_09, an `analysis` event is necessary to evaluate the success of the revised `method_scheme`. This step directly assesses whether the new `experiment_results` align better with the project's `research_goals`, and the positive outcome justifies drafting a key part of the paper's results section."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Catalytic efficiency analysis",
+    "subject": "Chemistry",
+    "event_type": "writing",
+    "description": "With the core scientific question resolved, the team focuses on writing a complete draft of the 'Results and Discussion' section. This involves synthesizing the data from both the initial and revised experiments to build a clear narrative: the initial model's success, the identification of outliers, the methodological refinement, and the final validation.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The analysis in e_10 confirmed the success of the revised model, providing a complete story arc for the research. The logical next step is to consolidate all the findings from the various `experiment_results` into a cohesive narrative for the paper, significantly expanding the existing `paper_paragraph` drafts into a full results section."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Catalytic efficiency analysis",
+    "subject": "Chemistry",
+    "event_type": "proposal",
+    "description": "The team holds a review meeting to assess the project's status against its original goals. Given the strong, cohesive narrative developed, they decide to refine the project's scope to focus exclusively on publishing these findings. The plan is updated to prioritize finalizing the manuscript over exploring additional MOF classes as initially considered.",
+    "required_artifacts": [
+      "research_plan",
+      "research_goals",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "research_plan",
+      "research_goals"
+    ],
+    "reason": "With the core 'Results and Discussion' section drafted (e_11), the project has reached a major milestone. This is a natural point to revisit the high-level `research_plan` and `research_goals` to make a strategic decision. This `proposal` event refines the project's scope, officially shifting the focus from discovery to publication, which is a common and realistic transition in a research project's lifecycle."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Catalytic efficiency analysis",
+    "subject": "Chemistry",
+    "event_type": "writing",
+    "description": "Following the decision to finalize the manuscript, the team writes the remaining major sections of the paper: the Introduction and Conclusion. The Introduction is drafted to frame the research problem using the project's goals, and the Conclusion summarizes the key findings and their implications.",
+    "required_artifacts": [
+      "research_plan",
+      "research_goals",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The previous event (e_12) updated the `research_plan` to prioritize completing the manuscript. With the core 'Methods' and 'Results' sections already drafted, the logical next step is to write the surrounding narrative sections—the Introduction and Conclusion—to assemble a complete first draft of the paper, building upon the existing `paper_paragraph`."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Catalytic efficiency analysis",
+    "subject": "Chemistry",
+    "event_type": "analysis",
+    "description": "The team focuses on generating publication-quality figures and tables from the finalized dataset. This includes creating correlation plots, energy profile diagrams for the catalytic cycle, and structural visualizations of the key MOFs, which will form the core visual evidence in the manuscript.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With a full draft of the paper written (e_13), the next critical step is to create the professional figures and tables that will visually communicate the research findings. This analysis and visualization step translates the numerical `experiment_results` into the clear graphical evidence needed to support the arguments made in the `paper_paragraph` draft."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Catalytic efficiency analysis",
+    "subject": "Chemistry",
+    "event_type": "writing",
+    "description": "The team integrates the newly created figures and tables into the manuscript draft. They write figure captions, compile a bibliography, and conduct a full internal review of the complete paper for clarity, consistency, and scientific accuracy before seeking external feedback.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With a complete text draft (e_13) and final figures/tables prepared (e_14), the next logical step is to assemble these components into a polished, pre-submission manuscript. This `writing` event represents the final internal push to refine the paper, ensuring all parts are cohesive and aligned with the publication-focused `research_plan` before it's shared with a wider audience."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Catalytic efficiency analysis",
+    "subject": "Chemistry",
+    "event_type": "writing",
+    "description": "Based on the feedback from the internal review, the team makes final revisions to the manuscript. This includes sharpening the language in the abstract and introduction, improving the flow between sections, and ensuring all claims are robustly supported by the final data.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After conducting a full internal review (e_15), it is a standard and crucial step to incorporate the collected feedback. This final `writing` event polishes the `paper_paragraph` artifact into a submission-ready state, ensuring its claims are fully consistent with the `experiment_results` before the project concludes with submission."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Catalytic efficiency analysis",
+    "subject": "Chemistry",
+    "event_type": "end",
+    "description": "The team submits the finalized manuscript, 'Computational Prediction of Catalytic Efficiency in Metal-Organic Frameworks,' to a high-impact chemistry journal. This action marks the completion of the core research and writing phases of the project.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached a natural conclusion. The methodology has been validated (e_10), the results tell a complete and compelling story (e_11), and the manuscript has been written, internally reviewed, and revised to a submission-ready state (e_16). Submitting the paper for peer review is the final step of this research cycle."
+  }
+]

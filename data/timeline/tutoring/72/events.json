@@ -1,0 +1,290 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Causal language and limits of observational data",
+    "subject": "DataScience",
+    "event_type": "objective_clarification",
+    "description": "Initial meeting with the learner to discuss their background in statistics, goals for understanding causal inference, and any specific constraints. The learner is a data analyst aiming to better interpret statistical results and avoid making unsupported causal claims from observational data.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "As the first step in the tutoring process, it is essential to understand the learner's objectives and background. This diagnostic session establishes the foundation for all subsequent planning and instruction."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Causal language and limits of observational data",
+    "subject": "DataScience",
+    "event_type": "plan_milestones",
+    "description": "Based on the learner's goals, the tutor outlines a multi-stage study plan. The plan starts with foundational concepts like 'correlation vs. causation', progresses to identifying confounding variables, and concludes with interpreting results from observational studies.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learning objectives clearly defined in the previous step, creating a structured study plan is the logical next action. This plan provides a roadmap for the tutoring sessions and sets clear expectations for the learner."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Causal language and limits of observational data",
+    "subject": "DataScience",
+    "event_type": "lesson",
+    "description": "The tutor delivers the first lesson according to the study plan, focusing on the core distinction between correlation and causation. The lesson uses real-world examples to illustrate how two variables can be strongly correlated without a causal link, introducing concepts like spurious correlation.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a study plan in place, the next logical step is to begin instruction with the first topic. This lesson directly addresses the foundational milestone of distinguishing correlation from causation, creating the first set of teaching notes for the topic."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Causal language and limits of observational data",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "The tutor assigns practice exercises based on the previous lesson. The learner is asked to analyze several scenarios and data visualizations, determining whether the described relationships are simply correlational or if a causal claim might be plausible, and to justify their reasoning.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on correlation vs. causation, it is crucial for the learner to apply these new concepts. This practice session will assess their ability to distinguish between the two and will create a record of their performance for subsequent review."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Causal language and limits of observational data",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's submissions from the practice session. The review focuses on identifying misconceptions, such as confusing the mechanism of a spurious correlation with a direct causal link, and prepares a summary of feedback.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the practice exercises (e_04), the next logical step is to review their work. This review of the 'practice_record' is critical for identifying specific misunderstandings and generating actionable feedback, which will guide the next lesson or a follow-up practice."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Causal language and limits of observational data",
+    "subject": "DataScience",
+    "event_type": "materials_revision",
+    "description": "Based on the review, the tutor identifies that the examples used to explain spurious correlations might have been ambiguous. The tutor revises the teaching notes to include a clearer, more explicit example and adds a section on common pitfalls when interpreting correlational data.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The feedback summary from the previous review (e_05) highlighted specific learner misconceptions. A logical next step is to improve the instructional materials to directly address these weak points, making the concepts clearer before assigning more practice or moving to a new topic."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Causal language and limits of observational data",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "To reinforce the concepts after the materials revision, the tutor assigns a new, more focused set of practice problems. These exercises are specifically designed around the previously identified area of difficulty: distinguishing spurious correlations from plausible causal relationships.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials (e_06) based on feedback from the last review (e_05), it is crucial to check if the learner's understanding has improved. A targeted practice session allows the learner to apply the clarified concepts and provides a new basis for assessment before advancing to the next topic."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Causal language and limits of observational data",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's submissions from the second, more focused practice session. The goal is to confirm that the learner now correctly distinguishes between spurious correlations and plausible causal links, and to decide if they are ready for the next topic.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed a targeted practice session (e_07) to address previously identified weaknesses, the next logical step is to review their new work. This review will assess their progress and determine whether the remediation was successful, informing the decision to either provide more support on this topic or advance to the next milestone in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Causal language and limits of observational data",
+    "subject": "DataScience",
+    "event_type": "lesson",
+    "description": "The tutor delivers a lesson on confounding variables, the next topic in the study plan. The lesson defines what a confounder is (a variable that influences both the dependent and independent variables, causing a spurious association) and uses diagrams and examples to illustrate the concept.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_08) confirmed the learner's mastery of the initial topic. According to the study plan, the next step is to introduce confounding variables. This lesson moves the learner forward in their curriculum, building on the established foundation."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Causal language and limits of observational data",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "The tutor assigns exercises where the learner must identify potential confounding variables in various scenarios. For example, given the correlation between ice cream sales and crime rates, the learner is asked to identify 'temperature' as a confounder and explain why.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on confounding variables (e_09), it is essential for the learner to apply this new concept. This practice session will assess their ability to identify confounders in given scenarios and will generate a record of their attempts for the next review."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Causal language and limits of observational data",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's attempts to identify confounding variables from the previous practice session. The review shows the learner can identify simple confounders but struggles with more complex scenarios where the confounding relationship is less obvious.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the practice exercises on confounding variables (e_10), the next logical step is to review their work. This review is essential to assess their grasp of the new concept, identify any difficulties, and generate feedback to guide the next phase of instruction."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Causal language and limits of observational data",
+    "subject": "DataScience",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback from the last review, the tutor revises the teaching notes on confounding variables. The revision adds more complex examples and a step-by-step guide for systematically brainstorming potential confounders in a given research question.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_11) identified that the learner struggles with complex confounding scenarios. A logical next step is to improve the teaching materials to directly address this weakness before assigning more practice, ensuring the learner has better resources to build their skills."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Causal language and limits of observational data",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "To test the effectiveness of the revised materials, the tutor assigns a new set of practice scenarios. These problems are more complex and require the learner to use the new systematic guide to identify potential confounders in nuanced research contexts.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials (e_12) to address the learner's difficulty with complex confounders, the next logical step is to provide targeted practice. This session will gauge the effectiveness of the revised notes and check if the learner's ability to identify confounders has improved before moving on."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Causal language and limits of observational data",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's performance on the complex confounding variable scenarios. The review assesses whether the learner correctly applied the systematic guide from the revised notes and can now confidently identify confounders in nuanced situations.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice session (e_13), the essential next step is to review the learner's work. This review will validate whether the revised materials and additional practice have resolved the learner's previous difficulties, clearing the way to advance to the next topic."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Causal language and limits of observational data",
+    "subject": "DataScience",
+    "event_type": "lesson",
+    "description": "With the learner now proficient in identifying confounders, the tutor moves to the final topic in the study plan: interpreting and communicating results from observational data. The lesson covers best practices for using cautious and precise language, contrasting causal claims (e.g., 'X causes Y') with associational descriptions (e.g., 'X is associated with Y').",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_14) confirmed the learner's understanding of confounding variables. Based on the study plan, the next logical step is to teach the final core topic, which synthesizes previous concepts to guide the proper interpretation of observational data."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Causal language and limits of observational data",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "The tutor assigns a final set of practice exercises based on the last lesson. The learner is given several mock research findings based on observational data and is asked to write a summary for each, using precise and cautious language that avoids making unsupported causal claims.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on interpreting and communicating results (e_15), it is critical to assess the learner's ability to apply these principles in a practical context. This practice session directly tests a core learning objective and will generate a final performance record for review."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Causal language and limits of observational data",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's written summaries from the final practice session. The review assesses whether the learner effectively used cautious, precise language to describe findings from observational data, successfully avoiding unsupported causal claims.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the final practice session (e_16), the essential next step is to review the learner's work. This review serves as a final assessment to confirm that the learner has mastered the key skill of communicating observational findings appropriately, which was a core learning objective."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Causal language and limits of observational data",
+    "subject": "DataScience",
+    "event_type": "end",
+    "description": "Final session to wrap up the tutoring engagement. The tutor and learner review the progress made, confirming that the initial learning objectives have been met and the learner is now confident in their ability to critically interpret and communicate findings from observational data.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The previous review (e_17) confirmed the learner's mastery of the final topic, successfully meeting all milestones outlined in the study plan. With the core learning objectives achieved and proficiency demonstrated across all topics, the tutoring process is now complete."
+  }
+]

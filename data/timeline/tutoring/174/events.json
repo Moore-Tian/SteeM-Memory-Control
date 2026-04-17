@@ -1,0 +1,286 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Institutions, checks and balances, and accountability",
+    "subject": "PoliticalScience",
+    "event_type": "objective_clarification",
+    "description": "Initial diagnostic session with the learner to discuss their goals for understanding U.S. government institutions, checks and balances, and accountability. The learner is a high school student preparing for an AP exam and wants to improve their ability to write free-response answers.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first session. It is essential to start by clarifying the learner's specific goals, prior knowledge, and desired outcomes before creating a study plan or beginning instruction."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Institutions, checks and balances, and accountability",
+    "subject": "PoliticalScience",
+    "event_type": "plan_milestones",
+    "description": "Based on the learning objectives, the tutor and learner co-create a study plan. The plan breaks down the broad topic into three key milestones: 1) The Three Branches of Government, 2) Checks and Balances in Action, and 3) Mechanisms of Accountability.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learning objectives clearly defined in the previous session, the logical next step is to structure the tutoring process. Creating a study plan with clear milestones provides a roadmap for the upcoming lessons and ensures both tutor and learner are aligned on the path forward."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Institutions, checks and balances, and accountability",
+    "subject": "PoliticalScience",
+    "event_type": "lesson",
+    "description": "The tutor delivers the first lesson as outlined in the study plan, focusing on Milestone 1: The Three Branches of Government. The lesson covers the distinct roles, powers, and structures of the legislative, executive, and judicial branches.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a study plan in place, the next logical step is to begin instruction. This lesson addresses the first milestone, providing the foundational knowledge needed for subsequent topics like checks and balances."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Institutions, checks and balances, and accountability",
+    "subject": "PoliticalScience",
+    "event_type": "practice",
+    "description": "The tutor assigns a practice exercise to test the learner's understanding of the first lesson on the three branches of government. The exercise consists of short-answer questions requiring the learner to describe the primary functions and powers of the legislative, executive, and judicial branches.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the foundational lesson, it is important to check for understanding and application. This practice session directly assesses the learner's grasp of the material covered in the lesson on the three branches of government, providing a basis for future review and feedback."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Institutions, checks and balances, and accountability",
+    "subject": "PoliticalScience",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's short-answer responses from the practice session. The review focuses on identifying any inaccuracies or confusion regarding the distinct powers and functions of the legislative, executive, and judicial branches.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session, a review is necessary to assess the learner's comprehension and provide targeted feedback. By analyzing the practice_record, the tutor can identify specific areas of weakness and prepare corrective guidance before proceeding to the next lesson on checks and balances."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Institutions, checks and balances, and accountability",
+    "subject": "PoliticalScience",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback summary, the tutor notices the learner consistently confuses the specific powers of the House and Senate. The tutor revises the teaching notes to include a clearer comparison table and a 'Common Misconceptions' section to address this specific point of confusion.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in the previous step revealed a specific, recurring error. Before moving to the next topic, it is effective to revise the teaching materials to directly address this confusion, reinforcing the correct concepts and improving the resource for future study."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Institutions, checks and balances, and accountability",
+    "subject": "PoliticalScience",
+    "event_type": "practice",
+    "description": "To reinforce the previous feedback, the tutor assigns a targeted practice exercise focusing specifically on the distinct powers of the House and Senate. This drill uses a matching format to ensure the learner can correctly associate specific enumerated powers with the correct legislative chamber.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching notes to address a specific point of confusion, it is crucial to verify that the learner has corrected their misunderstanding. This targeted practice directly assesses the concept from the previous review cycle before moving on to the next milestone in the study plan."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Institutions, checks and balances, and accountability",
+    "subject": "PoliticalScience",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's answers from the targeted matching exercise on House and Senate powers. The goal is to verify that the learner can now correctly differentiate between the powers of the two legislative chambers and is ready to move on.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted practice session (e_07) designed to correct a specific misunderstanding, reviewing the learner's performance is the necessary next step. This review confirms whether the remediation was successful before advancing to the next milestone in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Institutions, checks and balances, and accountability",
+    "subject": "PoliticalScience",
+    "event_type": "lesson",
+    "description": "With the learner's understanding of the three branches confirmed, the tutor proceeds to the second milestone from the study plan: 'Checks and Balances in Action.' The lesson explains how the branches interact and limit each other's power, using examples like presidential vetoes, judicial review, and impeachment.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review confirmed the learner has mastered the foundational concepts of the first milestone. Following the study plan, the next logical step is to begin the lesson for the second milestone, which builds directly upon the now-solidified knowledge of the three branches."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Institutions, checks and balances, and accountability",
+    "subject": "PoliticalScience",
+    "event_type": "practice",
+    "description": "To assess understanding of the second milestone, the tutor assigns a scenario-based practice exercise. The learner must analyze short prompts describing interactions between branches of government and identify the specific check and balance being demonstrated, which helps build skills for free-response questions.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on checks and balances, it is crucial to move from conceptual understanding to practical application. This practice session directly assesses the learner's ability to apply the concepts from the lesson, which is a necessary step before moving to the final milestone or reviewing their performance."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Institutions, checks and balances, and accountability",
+    "subject": "PoliticalScience",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's responses to the scenario-based exercise on checks and balances. The review assesses whether the learner can accurately identify the specific constitutional checks being applied in different situations, a key skill for AP free-response questions.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on checks and balances (e_10), a review is necessary to evaluate the learner's ability to apply the concepts. This step provides crucial feedback and determines if the learner is ready to proceed to the final milestone or if further reinforcement is needed."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Institutions, checks and balances, and accountability",
+    "subject": "PoliticalScience",
+    "event_type": "lesson",
+    "description": "The tutor moves to the final milestone in the study plan: 'Mechanisms of Accountability.' The lesson covers how non-governmental entities and processes, such as elections, the media, and public opinion, hold the branches of government accountable.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_11) confirmed the learner's solid grasp of checks and balances. Following the study plan, it is now appropriate to begin the lesson for the third and final milestone, which connects the governmental structure to broader societal accountability."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Institutions, checks and balances, and accountability",
+    "subject": "PoliticalScience",
+    "event_type": "practice",
+    "description": "Following the lesson on accountability, the tutor assigns a practice free-response question (FRQ) outline. The learner is asked to describe how two mechanisms, such as elections and media scrutiny, can be used to hold a specific branch of government accountable.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After completing the lesson on the final milestone (e_12), it is essential to assess the learner's ability to apply these concepts. This practice task directly targets the content of the last lesson and aligns with the learner's goal of improving their FRQ skills."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Institutions, checks and balances, and accountability",
+    "subject": "PoliticalScience",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's practice FRQ outline. The review focuses on the logical structure of the argument, the accuracy of the examples provided, and how well the outline addresses the prompt regarding accountability mechanisms.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session where the learner outlined an FRQ (e_13), the natural next step is to review that work. This is critical for providing feedback on their ability to synthesize information from the final lesson and structure a complex answer, which directly addresses their primary goal of improving FRQ performance."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Institutions, checks and balances, and accountability",
+    "subject": "PoliticalScience",
+    "event_type": "practice",
+    "description": "To synthesize all learned concepts, the tutor assigns a comprehensive free-response question that requires the learner to connect the powers of the branches, the system of checks and balances, and public accountability. This full FRQ practice is designed to mimic the complexity of an actual AP exam question.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Having completed and reviewed practice for all individual milestones, the next logical step is a cumulative practice exercise. This full FRQ task assesses the learner's ability to synthesize information across all three topics, directly addressing their primary goal of improving performance on complex exam questions."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Institutions, checks and balances, and accountability",
+    "subject": "PoliticalScience",
+    "event_type": "review",
+    "description": "The tutor conducts a final, comprehensive review of the learner's full free-response question. The feedback assesses the synthesis of all three milestones: the branches of government, checks and balances, and accountability mechanisms, judging the response against AP exam scoring guidelines.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a comprehensive practice task that simulates an exam question, a detailed review is the necessary next step. This allows the tutor to provide holistic feedback on the learner's ability to synthesize information across all topics and determines if the primary learning objective of improving FRQ performance has been met."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Institutions, checks and balances, and accountability",
+    "subject": "PoliticalScience",
+    "event_type": "end",
+    "description": "The tutoring process concludes as the final comprehensive review confirmed the learner has met their objectives. The learner demonstrated proficiency in analyzing and constructing free-response answers covering the branches of government, checks and balances, and accountability, fulfilling the initial goals set for AP exam preparation.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "All milestones in the study plan have been successfully covered, practiced, and assessed. The final review of the cumulative FRQ (e_16) confirmed that the learner can synthesize the material effectively, meeting the primary learning objective and bringing the tutoring for this topic to a natural conclusion."
+  }
+]

@@ -1,0 +1,339 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "File and directory automation in Python",
+    "subject": "Programming",
+    "event_type": "objective_clarification",
+    "description": "Initial diagnostic session to understand the learner's goals. The learner, a data analyst, wants to automate the process of organizing downloaded report files into a structured directory tree based on date and report type.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first event in the timeline. A tutoring process must begin by clarifying the learner's specific goals, background, and success criteria to ensure all subsequent activities are well-aligned."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "File and directory automation in Python",
+    "subject": "Programming",
+    "event_type": "plan_milestones",
+    "description": "Based on the clarified objectives, the tutor and learner co-create a high-level study plan. The plan breaks the project into three milestones: 1) Reading and listing files in a directory, 2) Parsing filenames to extract metadata, and 3) Creating new directories and moving files.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With clear learning objectives established in the previous session (e_01), the next logical step is to create a structured study plan. This plan provides a roadmap for the tutoring, breaking the overall goal into manageable milestones and ensuring both parties are aligned on the path forward."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "File and directory automation in Python",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "Tutor delivers a lesson on the first milestone: how to use Python's `os` and `pathlib` modules to list files in a directory. Key concepts covered include the current working directory, absolute vs. relative paths, and iterating over directory contents.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the study plan (e_02) established, the next logical step is to begin instruction. This lesson directly addresses the first milestone—'Reading and listing files'—by teaching the foundational concepts and Python modules needed to interact with the file system."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "File and directory automation in Python",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "The learner is assigned a practice task to apply the concepts from the previous lesson. The task is to write a Python script that lists all files in a predefined 'downloads' directory, reinforcing the use of the `pathlib` module.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on file system interaction (e_03), it is crucial for the learner to apply their new knowledge. This targeted practice exercise solidifies understanding of the first milestone and creates a concrete work product (the practice record) that can be evaluated in the next session."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "File and directory automation in Python",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's script from the practice task. The review finds that the learner successfully used `pathlib` to list directory contents, but their script also included subdirectories, not just files. The tutor prepares feedback on how to filter for files only.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the practice task in the previous event (e_04), the essential next step is to review their work. This review assesses their comprehension of the lesson's concepts, identifies specific issues like the subdirectory filtering, and produces actionable feedback to guide their next attempt."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "File and directory automation in Python",
+    "subject": "Programming",
+    "event_type": "materials_revision",
+    "description": "Based on the learner's mistake identified in the last review, the tutor realizes the teaching notes lacked clarity on filtering directory contents. The tutor updates the notes to explicitly include how to use `path.is_file()` to differentiate files from directories, adding a clear code example and highlighting it as a common pitfall.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in the previous event (e_05) revealed a specific gap in the original teaching materials. Revising the 'teaching_notes' to address this issue directly makes the material more effective for the learner's immediate needs and improves it for future use, demonstrating a responsive and reflective tutoring process."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "File and directory automation in Python",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "The learner is asked to revise their previous script based on the feedback provided. The goal is to correctly filter the directory listing to include only files, using the `path.is_file()` method, confirming their understanding before moving to the next topic.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes",
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After receiving specific feedback (e_05) and having the teaching materials clarified (e_06), the most effective next step is for the learner to apply the correction. This follow-up practice closes the feedback loop and solidifies the concept before moving on."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "File and directory automation in Python",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's revised script from the follow-up practice. The script now correctly uses `path.is_file()` to list only the files in the directory, confirming the learner has successfully addressed the feedback and mastered this concept.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner submitted a corrected script in the previous event (e_07), a review is essential to verify their understanding and close the feedback loop. This confirmation ensures the learner is ready to move on to the next milestone in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "File and directory automation in Python",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "With the first milestone successfully completed, the tutor delivers a lesson on the second milestone: parsing filenames to extract metadata. The lesson covers using string methods like `.split()` and slicing to extract date and report type information from filenames, which is crucial for the learner's goal of automated organization.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_08) confirmed the learner's mastery of the first milestone. According to the study plan (e_02), the next logical step is to begin instruction on the second milestone, 'Parsing filenames to extract metadata', to continue making progress toward the overall learning objective."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "File and directory automation in Python",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "The learner is given a practice task for the second milestone: write a script that takes a list of filenames (e.g., '2023-10-26_sales_report.csv') and extracts the date and report type from each one. This reinforces the string manipulation concepts from the previous lesson.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on parsing filenames (e_09), it is essential for the learner to apply these new string manipulation skills through targeted practice. This task directly addresses the second milestone in the study plan and creates a new practice record for subsequent review."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "File and directory automation in Python",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's script for parsing filenames. The review reveals that while the learner correctly used `.split('_')`, their code fails when filenames have unexpected formats (e.g., '2023-10-27_urgent_sales_report.csv'). The tutor prepares feedback on how to build more robust parsing logic.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner submitted their script for parsing filenames in the previous event (e_10), a review is necessary to evaluate their application of string manipulation techniques. This review provides crucial feedback on their attempt and identifies new challenges, such as handling inconsistent data, which is a key part of the learning process."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "File and directory automation in Python",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "In response to the parsing issues, the tutor introduces a more robust tool: regular expressions. The lesson covers the basics of regex syntax and demonstrates how to use Python's `re` module to reliably extract structured data from filenames with variable formats.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_11) showed that simple string methods were insufficient for handling filename variations. A new lesson on a more powerful technique like regular expressions is the logical next step to equip the learner with the right tools to solve the problem robustly, directly addressing the feedback."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "File and directory automation in Python",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "The tutor assigns a new practice task to apply the lesson on regular expressions. The learner is asked to refactor their previous filename parsing script, this time using the `re` module to robustly extract metadata even from inconsistently formatted filenames.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on a new, more powerful technique (regular expressions in e_12), it is crucial for the learner to apply this knowledge immediately. This practice task directly addresses the shortcomings identified in the previous review (e_11) and allows the learner to demonstrate their ability to solve the problem more robustly, creating a new artifact for review."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "File and directory automation in Python",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's refactored script that uses regular expressions. The script now correctly handles filename variations and reliably extracts metadata, so the tutor confirms the learner has mastered the second milestone.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner submitted their refactored script using regular expressions in the previous event (e_13), a review is essential to verify their understanding. This step confirms that the core issue from the earlier review (e_11) is resolved and that the learner is ready to proceed to the final milestone of the study plan."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "File and directory automation in Python",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "With the first two milestones complete, the tutor delivers a lesson on the final milestone: creating directories and moving files. The lesson covers how to use `pathlib` to create nested directories (`mkdir(parents=True, exist_ok=True)`) and how to move files using `pathlib.Path.rename()`.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_14) confirmed the learner's mastery of the second milestone. Following the study plan (e_02), the next step is to introduce the concepts for the final milestone, equipping the learner with the tools to create directories and move files to complete their project."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "File and directory automation in Python",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "The tutor assigns a final, capstone practice task that integrates all three milestones. The learner must write a script that reads files from a directory, parses their names for metadata, creates corresponding subdirectories, and moves the files into them, completing their original automation goal.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on the final milestone (e_15), a comprehensive practice task is essential for the learner to synthesize all the skills they have acquired. This capstone project directly addresses their original learning objective and creates a final work product for review."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "File and directory automation in Python",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's final capstone script. The script successfully integrates all three milestones, but it does not handle cases where a file's name doesn't match the regex pattern, causing an error. The tutor prepares feedback on adding error handling to make the script more robust.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the capstone practice task (e_16), a final, comprehensive review is required. This step evaluates their ability to integrate all learned skills to solve the original problem, assesses the robustness of their solution, and provides final feedback to ensure they have fully met the learning objectives."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "File and directory automation in Python",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "The learner is asked to revise their final capstone script to include error handling, as per the last review's feedback. They should add logic to gracefully handle files whose names do not match the expected pattern, preventing the script from crashing.",
+    "required_artifacts": [
+      "feedback_summary",
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "The previous review (e_17) identified a critical weakness in the capstone script: a lack of error handling. This targeted practice allows the learner to apply the final piece of feedback, ensuring they can produce a robust and reliable automation script that fulfills the initial project goal."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "File and directory automation in Python",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's revised capstone script, which now includes error handling. The script correctly uses a try-except block to gracefully skip files with non-matching names, confirming the solution is robust and fully meets the initial learning objectives.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner submitted a revised capstone script in the previous event (e_18), this final review is essential to confirm that the feedback on error handling was correctly implemented. This step validates that the learner has produced a robust, complete solution and has met all the project's requirements."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "File and directory automation in Python",
+    "subject": "Programming",
+    "event_type": "end",
+    "description": "The tutor and learner hold a final session to confirm that the initial learning objectives have been fully met. The learner now has a complete, robust script for their automation task, and the tutor concludes the engagement.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The previous review (e_19) confirmed the learner's final script is complete and robust, successfully meeting all milestones outlined in the study plan (e_02) and fulfilling the initial learning objectives (e_01). With the primary goal achieved, the tutoring process for this topic is concluded."
+  }
+]

@@ -1,0 +1,419 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Reaction rates and factors influencing change",
+    "subject": "Chemistry",
+    "event_type": "objective_clarification",
+    "description": "Conducted an initial diagnostic session to understand the student's current knowledge of chemical kinetics, their learning goals for reaction rates, and any specific difficulties they've faced. The student mentioned struggling with how concentration and temperature affect reaction speed.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first session, so it is essential to establish the student's learning goals and assess their prior knowledge before creating a study plan or starting lessons. This diagnostic step ensures the tutoring will be tailored to the student's specific needs."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Reaction rates and factors influencing change",
+    "subject": "Chemistry",
+    "event_type": "plan_milestones",
+    "description": "Based on the student's goals, a study plan was created. The plan outlines a sequence of topics, starting with the fundamentals of collision theory, followed by dedicated lessons on the effects of concentration and temperature, and finally introducing catalysts and surface area.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "After clarifying the student's objectives in the initial session, the logical next step is to create a structured plan. This `study_plan` provides a clear roadmap for future lessons and ensures the tutoring process is organized and targeted towards the student's specific areas of difficulty."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Reaction rates and factors influencing change",
+    "subject": "Chemistry",
+    "event_type": "lesson",
+    "description": "Delivered the first lesson as outlined in the study plan, focusing on the fundamentals of collision theory. The lesson explained the conditions necessary for a reaction to occur: particles must collide with sufficient energy (activation energy) and in the correct orientation.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a study plan established, the next logical step is to begin instruction. This lesson addresses the first milestone in the plan—collision theory—which is a prerequisite for understanding how factors like concentration and temperature influence reaction rates."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Reaction rates and factors influencing change",
+    "subject": "Chemistry",
+    "event_type": "practice",
+    "description": "Assigned a set of practice questions to test the student's understanding of collision theory. The questions required the student to apply the concepts of sufficient energy and correct orientation to explain why some collisions lead to a reaction while others do not.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on the foundational concept of collision theory, this practice session is designed to reinforce learning and assess the student's comprehension before moving on. Creating a `practice_record` is essential for tracking progress and identifying specific areas of difficulty for the upcoming review session."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Reaction rates and factors influencing change",
+    "subject": "Chemistry",
+    "event_type": "review",
+    "description": "Reviewed the student's completed practice questions on collision theory. The student correctly identified that collisions are necessary but struggled to consistently explain the roles of activation energy and molecular orientation in determining if a collision is 'effective'.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following a practice session, it is critical to review the student's work to identify and address misconceptions. This review of the `practice_record` provides targeted feedback, which will be summarized to guide the student's corrections and prepare for the next topic."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Reaction rates and factors influencing change",
+    "subject": "Chemistry",
+    "event_type": "materials_revision",
+    "description": "In response to the student's difficulty with 'effective collisions', the teaching notes on collision theory were revised. The updated notes now include a new analogy and a diagram to more clearly illustrate the distinct roles of activation energy and molecular orientation.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review session identified a key misconception regarding the conditions for an effective collision. Revising the `teaching_notes` based on the `feedback_summary` is a proactive step to create clearer, more effective materials before re-addressing the topic with the student."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Reaction rates and factors influencing change",
+    "subject": "Chemistry",
+    "event_type": "lesson",
+    "description": "Held a brief follow-up lesson using the newly revised teaching notes to specifically address the student's confusion around 'effective collisions'. The tutor walked through the new diagram and analogy, reinforcing the distinct roles of activation energy and correct molecular orientation.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review identified a gap in understanding, and the teaching materials were revised accordingly. This targeted lesson uses the improved `teaching_notes` to directly address the misconception noted in the `feedback_summary` before proceeding with the study plan."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Reaction rates and factors influencing change",
+    "subject": "Chemistry",
+    "event_type": "practice",
+    "description": "Assigned a new set of practice problems to confirm the student's understanding of effective collisions. The questions specifically require differentiating between the roles of activation energy and molecular orientation, based on the recent remedial lesson.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a targeted lesson (e_07) addressed a specific misconception, this follow-up practice is essential to verify the student's comprehension. It ensures the foundational concept of collision theory is solid before advancing to the next topic outlined in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Reaction rates and factors influencing change",
+    "subject": "Chemistry",
+    "event_type": "review",
+    "description": "Reviewed the student's second set of practice problems on effective collisions. The student successfully differentiated between the roles of activation energy and molecular orientation, indicating that the remedial lesson was effective.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice session (e_08), this review is crucial to confirm that the student has overcome their previous misconception. Generating a new feedback summary confirms the student's mastery of this foundational concept, allowing the tutoring to advance to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Reaction rates and factors influencing change",
+    "subject": "Chemistry",
+    "event_type": "lesson",
+    "description": "With the student's understanding of collision theory solidified, the tutor delivered a lesson on the effect of concentration on reaction rates, as per the study plan. The lesson explained that increasing concentration increases the number of particles per unit volume, leading to more frequent collisions and a higher rate of reaction.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review confirmed the student is ready to advance. This lesson addresses the next topic in the `study_plan`—the effect of concentration—which was one of the student's originally stated areas of difficulty. The `teaching_notes` are updated with this new content."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Reaction rates and factors influencing change",
+    "subject": "Chemistry",
+    "event_type": "practice",
+    "description": "Assigned practice problems focused on the effect of concentration on reaction rates. The student was asked to explain, using collision theory, why increasing the concentration of reactants leads to a faster reaction, and to solve simple qualitative problems.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on concentration (e_10), this practice session is the logical next step to reinforce the new concept. It allows the student to apply their knowledge, and the resulting `practice_record` will provide the basis for the subsequent review session to assess their understanding."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Reaction rates and factors influencing change",
+    "subject": "Chemistry",
+    "event_type": "review",
+    "description": "Reviewed the student's practice problems on the effect of concentration. The student correctly explained that higher concentration leads to more frequent collisions but sometimes forgot to explicitly link this to an increase in the frequency of *effective* collisions over time.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on concentration (e_11), a review is necessary to assess comprehension and provide feedback. This step identifies a minor but important nuance in the student's explanation, allowing for correction before introducing the next factor influencing reaction rates."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Reaction rates and factors influencing change",
+    "subject": "Chemistry",
+    "event_type": "materials_revision",
+    "description": "Based on the student's minor mistake identified in the last review, the teaching notes on concentration were updated. A sentence was added to explicitly state that an increased collision frequency leads to a proportional increase in the frequency of 'effective' collisions, which is the direct cause of the faster reaction rate.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_12) revealed a subtle but important gap in the student's explanation. Proactively revising the `teaching_notes` to address this point of confusion improves the clarity of the instructional materials and helps reinforce the correct causal chain before moving to the next topic."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Reaction rates and factors influencing change",
+    "subject": "Chemistry",
+    "event_type": "lesson",
+    "description": "Proceeding with the study plan, the tutor delivered a lesson on how temperature affects reaction rates. The lesson explained that increasing temperature not only increases collision frequency but, more significantly, increases the kinetic energy of particles, resulting in a higher proportion of collisions meeting the activation energy requirement.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After reviewing the student's work on concentration and updating the materials, it is time to progress to the next topic in the study plan. This lesson addresses the effect of temperature, another key area of difficulty the student initially reported, and updates the `teaching_notes` with this new content."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Reaction rates and factors influencing change",
+    "subject": "Chemistry",
+    "event_type": "practice",
+    "description": "Assigned practice problems on the effect of temperature on reaction rates. The questions required the student to explain both effects of temperature (increased collision frequency and higher average kinetic energy) and to differentiate its impact from that of concentration.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After delivering the lesson on temperature's effect on reaction rates (e_14), this practice session is the logical next step to allow the student to apply and solidify their understanding. Creating a `practice_record` is essential to evaluate their grasp of this complex topic, which involves two distinct factors, before moving on."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Reaction rates and factors influencing change",
+    "subject": "Chemistry",
+    "event_type": "review",
+    "description": "Reviewed the student's practice on the effect of temperature. The student correctly explained that higher temperature leads to more energetic collisions but did not clearly distinguish the greater importance of this factor compared to the secondary effect of increased collision frequency.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on temperature (e_15), this review is essential for assessing the student's grasp of a complex, dual-factor concept. Generating a `feedback_summary` captures the specific nuance the student is missing, allowing for targeted clarification before moving to the final topics in the study plan."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Reaction rates and factors influencing change",
+    "subject": "Chemistry",
+    "event_type": "materials_revision",
+    "description": "To address the student's confusion from the last review, the teaching notes on temperature were revised. The updated notes now explicitly state that the increased proportion of particles exceeding the activation energy is the primary cause of the rate increase, with increased collision frequency being a secondary, less impactful effect.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_16) identified a specific nuance the student was missing regarding the effects of temperature. Revising the `teaching_notes` based on the `feedback_summary` is a proactive step to improve the clarity of the instructional materials before concluding the topic or moving on."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Reaction rates and factors influencing change",
+    "subject": "Chemistry",
+    "event_type": "lesson",
+    "description": "Held a brief clarification lesson focusing on the dual effects of temperature. Using the revised teaching notes, the tutor emphasized that the increase in the proportion of particles exceeding the activation energy is the primary reason for the rate increase, with increased collision frequency being a less significant, secondary effect.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_16) identified a subtle misconception, and the teaching materials were updated in response (e_17). This targeted lesson uses the revised `teaching_notes` to directly address the point of confusion from the `feedback_summary`, ensuring the concept is fully understood before moving on."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Reaction rates and factors influencing change",
+    "subject": "Chemistry",
+    "event_type": "practice",
+    "description": "Assigned a focused practice set to confirm the student's understanding of the dual effects of temperature, following the clarification lesson. The questions required the student to explicitly identify that the increased proportion of particles exceeding activation energy is the primary reason for the rate increase.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a targeted remedial lesson (e_18) on the effects of temperature, this practice session is essential to verify that the student has corrected their misconception. Creating a `practice_record` will allow the tutor to formally assess their understanding before moving on to the final topics in the study plan, such as catalysts."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Reaction rates and factors influencing change",
+    "subject": "Chemistry",
+    "event_type": "review",
+    "description": "Reviewed the student's focused practice on temperature effects. The student successfully explained that the primary reason for the rate increase is the greater proportion of particles exceeding the activation energy, demonstrating a solid understanding after the remedial lesson.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted practice session (e_19), this review is crucial to confirm that the student has overcome their previous misconception about the dual effects of temperature. Generating a `feedback_summary` validates their understanding, allowing the tutoring to confidently proceed to the final topics in the study plan."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "Reaction rates and factors influencing change",
+    "subject": "Chemistry",
+    "event_type": "lesson",
+    "description": "Proceeding to the next topic in the study plan, the tutor introduced the concept of catalysts. The lesson explained that catalysts increase reaction rates by providing an alternative reaction pathway with a lower activation energy, without being consumed in the process.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review confirmed the student's mastery of temperature effects, one of their initial key difficulties. According to the `study_plan`, the next topic is catalysts. This lesson introduces this new concept, moving the student closer to completing their learning objectives."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "tutoring",
+    "topic": "Reaction rates and factors influencing change",
+    "subject": "Chemistry",
+    "event_type": "practice",
+    "description": "Assigned practice problems focused on the role of catalysts. The student was asked to explain how catalysts increase reaction rates by lowering the activation energy and to sketch energy profile diagrams for catalyzed vs. uncatalyzed reactions.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on catalysts (e_21), this practice session is the logical next step to reinforce the new concept. It allows the student to apply their knowledge, and the resulting `practice_record` will provide the basis for the subsequent review session to assess their understanding before moving to the final topic."
+  },
+  {
+    "event_id": "e_23",
+    "time_index": 23,
+    "domain": "tutoring",
+    "topic": "Reaction rates and factors influencing change",
+    "subject": "Chemistry",
+    "event_type": "review",
+    "description": "Reviewed the student's practice on catalysts. The student correctly sketched the energy profile diagrams showing a lower activation energy but struggled to articulate that a catalyst provides an entirely new reaction pathway, instead just saying it 'lowers the barrier' without explaining the mechanism.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on catalysts (e_22), this review is necessary to assess the student's understanding and identify any misconceptions. Generating a `feedback_summary` captures the specific area for improvement, ensuring the concept is fully grasped before addressing the final topic in the study plan."
+  },
+  {
+    "event_id": "e_24",
+    "time_index": 24,
+    "domain": "tutoring",
+    "topic": "Reaction rates and factors influencing change",
+    "subject": "Chemistry",
+    "event_type": "materials_revision",
+    "description": "Based on the student's struggle to articulate how catalysts work, the teaching notes were revised. The update adds a clear explanation that a catalyst introduces a completely different reaction pathway or mechanism, which has a lower overall activation energy, rather than just vaguely 'lowering the barrier'.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_23) pinpointed a specific conceptual gap regarding catalysts. Revising the `teaching_notes` based on the `feedback_summary` is a crucial step to improve the instructional materials, ensuring this nuance is clearly explained before re-teaching the concept or moving to the final topic."
+  },
+  {
+    "event_id": "e_25",
+    "time_index": 25,
+    "domain": "tutoring",
+    "topic": "Reaction rates and factors influencing change",
+    "subject": "Chemistry",
+    "event_type": "lesson",
+    "description": "Held a brief clarification lesson on catalysts using the revised teaching notes. The tutor explicitly explained that a catalyst provides a completely new reaction mechanism or pathway, which is what has the lower activation energy, reinforcing the concept from the last review.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_23) identified a specific misconception about catalysts, and the teaching materials were revised in response (e_24). This targeted lesson uses the improved `teaching_notes` to directly address the point of confusion from the `feedback_summary`, ensuring the concept is fully understood before moving to the final topic."
+  }
+]

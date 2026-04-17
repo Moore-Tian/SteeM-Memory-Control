@@ -1,0 +1,297 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Renewable energy system modeling",
+    "subject": "Engineering",
+    "event_type": "proposal",
+    "description": "Define the initial research scope for a project on modeling renewable energy systems. The focus is on developing a new optimization model for grid integration of solar and wind power, establishing the primary goals and a high-level project plan.",
+    "required_artifacts": [
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "As the foundational step, the project must start by defining its direction. This event formalizes the initial, abstract ideas into a concrete 'research_goals' artifact and creates the first 'research_plan', which will guide subsequent work. It requires the abstract notion of a goal to produce the tangible artifact."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Renewable energy system modeling",
+    "subject": "Engineering",
+    "event_type": "scheme_design",
+    "description": "Based on the research goals, design the initial mathematical formulation for the optimization model. This involves defining decision variables, the objective function (e.g., minimizing operational costs), and key constraints related to power generation and grid stability.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "With the high-level goals and plan established in the 'proposal' (e_01), the next logical step is to develop a concrete technical approach. This event translates the abstract 'research_goals' into a tangible 'method_scheme', creating the first version of the optimization model that will be tested in subsequent stages."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Renewable energy system modeling",
+    "subject": "Engineering",
+    "event_type": "pilot_experiments",
+    "description": "Run a small-scale pilot study using the initial optimization model. The experiment uses a simplified, publicly available dataset for a single region over a 24-hour period to validate the model's solvability and check if the output power dispatch schedule is plausible.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With the initial 'method_scheme' developed in e_02, a pilot experiment is the logical next step to perform a sanity check. This test validates the model's basic functionality on a small scale before committing resources to larger main experiments, generating the first set of 'experiment_results'."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Renewable energy system modeling",
+    "subject": "Engineering",
+    "event_type": "analysis",
+    "description": "The pilot experiment results are analyzed. The analysis confirms the model is computationally feasible but reveals that the deterministic approach fails to capture the volatility of wind power, leading to unrealistic, overly optimistic cost savings.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the pilot experiment (e_03), a formal analysis is essential to interpret the raw 'experiment_results'. This step evaluates the performance of the 'method_scheme' and identifies its weaknesses, providing the critical insights needed before deciding whether to proceed, refine the method, or change the plan."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Renewable energy system modeling",
+    "subject": "Engineering",
+    "event_type": "scheme_design",
+    "description": "In response to the pilot study's findings, the methodological approach is revised. The deterministic optimization model is extended to a two-stage stochastic programming model to explicitly account for the uncertainty of wind power generation.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis in e_04 revealed that the initial 'method_scheme' was too simplistic. A direct and logical next step is to return to the design stage to address this specific shortcoming. This event revises the model based on the insights from the 'experiment_results', creating an improved 'method_scheme' before committing to larger experiments."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Renewable energy system modeling",
+    "subject": "Engineering",
+    "event_type": "pilot_experiments",
+    "description": "A second pilot study is conducted using the revised two-stage stochastic model. This experiment uses the same simplified dataset as the first pilot to directly compare performance and validate that the new model produces more robust and realistic cost estimates under uncertainty.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After significantly revising the model to a stochastic formulation in e_05, it is crucial to validate this new approach before committing to large-scale experiments. This second pilot experiment serves as a critical check on the revised 'method_scheme', ensuring it effectively addresses the weaknesses identified in the previous analysis (e_04)."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Renewable energy system modeling",
+    "subject": "Engineering",
+    "event_type": "analysis",
+    "description": "Analyze the results from the second pilot study. The comparison confirms that the two-stage stochastic model produces more conservative and realistic cost estimates by hedging against wind power volatility, validating the revised approach.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After conducting a second pilot experiment (e_06) with the revised model, a formal analysis is the critical next step. This event evaluates the new 'experiment_results' to confirm that the updated 'method_scheme' successfully addresses the issues found in the previous analysis (e_04), thus validating the method before proceeding to larger-scale experiments."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Renewable energy system modeling",
+    "subject": "Engineering",
+    "event_type": "main_experiments",
+    "description": "With the stochastic model validated, the main experiments are launched. This involves applying the model to a comprehensive, year-long dataset for a larger, multi-region power grid to assess its performance, scalability, and economic impact under realistic conditions.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The successful validation of the revised stochastic model in the second pilot study (e_07) provides the confidence to proceed with the core part of the research. This event scales up the experimentation from a small pilot to the full-scale analysis outlined in the 'research_plan', aiming to generate the primary results needed to answer the 'research_goals'."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Renewable energy system modeling",
+    "subject": "Engineering",
+    "event_type": "analysis",
+    "description": "Perform a comprehensive analysis of the main experiment results. The analysis focuses on quantifying the economic benefits of the stochastic model over a full year, evaluating its computational scalability with the large dataset, and summarizing key performance trade-offs.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After running the large-scale main experiments in e_08, a thorough analysis is the necessary next step to interpret the complex results. This event processes the raw output to generate key findings that directly address the 'research_goals' and produces the first draft of text for the paper ('paper_paragraph') summarizing these findings."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Renewable energy system modeling",
+    "subject": "Engineering",
+    "event_type": "writing",
+    "description": "Draft the core sections of the research paper, specifically the 'Methodology' and 'Results'. This involves formally describing the final two-stage stochastic model and presenting the key quantitative findings from the main experiments, including tables and figures summarizing the performance and economic benefits.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The main experiments have been conducted (e_08) and comprehensively analyzed (e_09), yielding the core findings of the project. It is now the appropriate time to transition from analysis to dissemination. This event transforms the validated 'method_scheme' and final 'experiment_results' into a structured written narrative for the research paper."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Renewable energy system modeling",
+    "subject": "Engineering",
+    "event_type": "main_experiments",
+    "description": "During the writing process, it becomes clear that a direct comparison against a simpler, commonly used method is needed to strengthen the paper's claims. A new set of experiments is designed and run to compare the two-stage stochastic model against a rolling-horizon deterministic model, using the same large-scale dataset.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After drafting the initial results section (e_10), the team identified a potential weakness: the lack of a comparative baseline. To bolster the paper's contribution, this event runs new main experiments to benchmark the sophisticated 'method_scheme' against a simpler, standard industry practice, generating crucial comparative 'experiment_results'."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Renewable energy system modeling",
+    "subject": "Engineering",
+    "event_type": "analysis",
+    "description": "Analyze the results of the comparative experiments. The analysis confirms that the two-stage stochastic model provides an average of 15% cost savings over the rolling-horizon deterministic model, albeit with a higher computational burden, and quantifies the trade-offs.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "Following the execution of comparative experiments in e_11, a dedicated analysis is essential to interpret the new data. This step directly compares the performance of the proposed method against the baseline, generating the quantitative evidence needed to strengthen the paper's claims and producing new content for the 'paper_paragraph' artifact."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Renewable energy system modeling",
+    "subject": "Engineering",
+    "event_type": "writing",
+    "description": "Revise the 'Results' and 'Methodology' sections of the paper to integrate the findings from the comparative analysis. This involves adding new tables and text that directly contrast the performance of the two-stage stochastic model against the rolling-horizon deterministic baseline.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After conducting and analyzing the critical comparative experiments (e_11, e_12), the immediate next step is to update the paper draft. This event incorporates the new, stronger evidence into the 'paper_paragraph', significantly improving the 'Results' section and making the paper's contribution more compelling."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Renewable energy system modeling",
+    "subject": "Engineering",
+    "event_type": "writing",
+    "description": "Draft the 'Conclusion' section of the paper. This involves summarizing the key contributions, reiterating the finding that the stochastic model outperforms the deterministic baseline, and discussing the practical implications, limitations, and potential future work.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the core 'Methodology' and 'Results' sections revised and strengthened (e_13), drafting the 'Conclusion' is a logical next step in completing the manuscript. This section synthesizes the key findings from the 'experiment_results' and frames the project's contribution in the context of the original 'research_goals'."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Renewable energy system modeling",
+    "subject": "Engineering",
+    "event_type": "writing",
+    "description": "Draft the 'Introduction' and 'Abstract' for the paper. This involves contextualizing the problem of renewable energy integration, clearly stating the paper's contribution, and summarizing the methods and key findings from the comparative analysis.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the core 'Results' and 'Conclusion' sections (e_13, e_14) complete, the paper's narrative is now clear. The logical next step is to write the 'Introduction' and 'Abstract', which frame the research problem and summarize the paper's contributions, drawing upon the established 'research_goals' and the content of the existing 'paper_paragraph'."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Renewable energy system modeling",
+    "subject": "Engineering",
+    "event_type": "writing",
+    "description": "The complete draft of the paper is internally reviewed by the research team. Feedback points to a need for better flow between the methodology and results sections, and a clearer statement of the novelty in the introduction, leading to a round of revisions.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With a full first draft of the paper assembled (e_15), the next logical step in a real research project is internal review and revision. This event represents the polishing phase, where the entire manuscript is refined for clarity, coherence, and impact based on team feedback before being considered for submission."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Renewable energy system modeling",
+    "subject": "Engineering",
+    "event_type": "end",
+    "description": "The research manuscript has been fully drafted, internally reviewed, and revised. With the main findings consolidated and the paper ready for submission to a peer-reviewed journal, the core research activities for this project are concluded.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has successfully progressed from the initial proposal to a complete, internally-vetted manuscript (e_16). The research goals have been met, the methodology is stable, and the comparative results are conclusive. This marks a natural conclusion of the research cycle, with the primary outcome being a paper ready for submission."
+  }
+]

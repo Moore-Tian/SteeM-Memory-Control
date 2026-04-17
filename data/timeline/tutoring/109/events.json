@@ -1,0 +1,295 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Communicating symptoms and concerns to professionals",
+    "subject": "Health",
+    "event_type": "objective_clarification",
+    "description": "Initial diagnostic session with the learner to understand their goals and challenges in communicating symptoms to professionals. We discussed their past experiences, specific situations they find difficult (e.g., describing pain, expressing mental health concerns), and what successful communication would look like for them.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "As this is the first session in the tutoring timeline, it is essential to first clarify the learner's goals, background, and specific needs. This diagnostic step provides the foundation for creating a relevant and effective study plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Communicating symptoms and concerns to professionals",
+    "subject": "Health",
+    "event_type": "plan_milestones",
+    "description": "Based on the learning objectives, we collaborated to create an initial study plan. The plan breaks down the broad topic into key milestones: (1) Preparing for an appointment, (2) Describing physical symptoms (like pain) using a framework, and (3) Articulating mental health concerns and asking clarifying questions.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learner's goals clearly defined in the 'learning_objectives' artifact from the first session, the next logical step is to structure the tutoring process. Creating a 'study_plan' provides a roadmap with clear milestones, ensuring that sessions are focused and build upon each other systematically."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Communicating symptoms and concerns to professionals",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "Conducted the first lesson based on the study plan, focusing on 'Preparing for an appointment'. The lesson covered how to gather relevant health information, organize symptoms and concerns logically, and prepare a concise list of questions for the professional.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the study plan established, the next logical step is to begin instruction on the first milestone. This lesson introduces the foundational skill of preparation and generates 'teaching_notes' that can be used for future review and practice sessions."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Communicating symptoms and concerns to professionals",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "To reinforce the concepts from the lesson, the learner was given a practice scenario about experiencing recurring headaches. They were tasked with creating a preparation sheet for a doctor's visit, including a symptom log and a list of questions, applying the framework discussed.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson, it is crucial for the learner to apply the new knowledge in a practical context. This practice session directly builds on the previous 'lesson' on appointment preparation and generates a 'practice_record' that can be used for targeted feedback in the next step."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Communicating symptoms and concerns to professionals",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "Reviewed the learner's practice submission from the headache scenario. We went through their symptom log and list of questions together, identifying strengths (like noting symptom frequency) and areas for improvement (like using more descriptive language for pain quality).",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session, it is essential to provide feedback on the learner's performance. This review step uses the 'practice_record' to analyze their work against the principles in the 'teaching_notes', allowing for the creation of a 'feedback_summary' with actionable advice for improvement."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Communicating symptoms and concerns to professionals",
+    "subject": "Health",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback from the review, the teaching notes were updated to better support the learner. A new section was added with a list of descriptive adjectives for pain (e.g., sharp, dull, throbbing, burning) and examples of how to incorporate them into a symptom description.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review session identified that the learner struggled with using descriptive language for pain. This materials revision directly addresses that feedback by enhancing the teaching notes, providing a more robust resource for the learner before they attempt another practice session."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Communicating symptoms and concerns to professionals",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "To reinforce the previous feedback, a second practice session was assigned. The learner was given a new scenario involving a sudden knee injury and asked to write a symptom description, focusing on using the specific pain adjectives added to the teaching notes.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials to address a specific weakness identified in the last review, it is crucial for the learner to practice that skill again. This targeted practice allows the learner to apply the feedback and new materials, reinforcing the concept before moving on to the next milestone in the study plan."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Communicating symptoms and concerns to professionals",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "Reviewed the learner's second practice attempt on describing a knee injury. The review confirmed that the learner successfully used the new descriptive adjectives from the revised teaching notes, creating a much clearer and more effective symptom description.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice session, a review is necessary to assess the learner's progress. By evaluating the new 'practice_record' against the revised 'teaching_notes', we can confirm whether the previous feedback was successfully integrated and the skill has been mastered before moving on."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Communicating symptoms and concerns to professionals",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "With the first milestone mastered, we proceeded to the second milestone from the study plan. This lesson introduced a structured framework for describing symptoms, the OPQRST mnemonic (Onset, Provocation/Palliation, Quality, Region/Radiation, Severity, Timing), to ensure all key details are communicated.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review confirmed the learner's proficiency in using descriptive language for pain. According to the study plan, the next step is to learn a comprehensive framework for describing symptoms, so this lesson introduces the OPQRST model to build on their existing skills and advance to the next learning milestone."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Communicating symptoms and concerns to professionals",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "The learner was assigned a practice task to apply the OPQRST framework taught in the previous lesson. The scenario involved describing a persistent cough, and they were required to structure their description using each element of the mnemonic.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the OPQRST mnemonic in the previous lesson, it is essential for the learner to apply this new structured framework to a concrete example. This practice session will help solidify their understanding and generate a 'practice_record' for assessment in the next review."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Communicating symptoms and concerns to professionals",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "We reviewed the learner's application of the OPQRST framework to the persistent cough scenario. The review highlighted their good use of 'Quality' and 'Timing', but noted they missed opportunities to describe 'Provocation' (what makes it worse) and 'Radiation' (if the symptom is felt elsewhere).",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a practice session applying the OPQRST framework, it is crucial to review the learner's work. This review uses the 'practice_record' from the previous step to assess their comprehension of the 'teaching_notes', provide specific feedback, and identify any remaining gaps in their understanding before proceeding."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Communicating symptoms and concerns to professionals",
+    "subject": "Health",
+    "event_type": "materials_revision",
+    "description": "Based on the review, the learner had trouble with the 'Provocation' and 'Radiation' components of the OPQRST framework. The teaching notes were updated to include more concrete examples for each, such as 'Provocation: symptoms get worse when lying down' and 'Radiation: the pain starts in the lower back and travels down the leg.'",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review identified specific gaps in the learner's application of the OPQRST framework. This materials revision directly addresses the feedback by enhancing the teaching notes with clearer examples, better preparing the learner for their next practice attempt and reinforcing the difficult concepts."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Communicating symptoms and concerns to professionals",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "To reinforce the difficult concepts from the OPQRST framework, the learner was assigned a new practice scenario about lower back pain. They were specifically prompted to focus on describing 'Provocation' (what makes the pain worse/better) and 'Radiation' (if the pain travels), using the updated examples in the teaching notes.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials to add more examples for 'Provocation' and 'Radiation', the next logical step is another practice session. This allows the learner to apply the specific feedback from the previous review and use the enhanced materials to solidify their understanding of the complete OPQRST framework."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Communicating symptoms and concerns to professionals",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "Reviewed the learner's practice on the lower back pain scenario. The review confirmed that the learner successfully incorporated the 'Provocation' and 'Radiation' elements, demonstrating a solid grasp of the entire OPQRST framework.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice on the OPQRST framework, a review is essential to verify that the learner has mastered the difficult concepts. This step assesses the latest 'practice_record' against the revised 'teaching_notes' to confirm proficiency before moving to the next milestone."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Communicating symptoms and concerns to professionals",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "We moved on to the third milestone in the study plan: articulating mental health concerns. The lesson focused on strategies for describing subjective feelings, explaining the impact on daily life, and phrasing questions to open a dialogue about mental well-being with a professional.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review confirmed the learner's mastery of the second milestone. According to the study plan, the next logical step is to begin instruction on the third and final milestone, which addresses the distinct challenge of communicating mental health concerns."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Communicating symptoms and concerns to professionals",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "To apply the strategies for discussing mental health, the learner was given a practice scenario. They were asked to prepare a script for talking to a doctor about persistent feelings of anxiety and its impact on their daily life, such as sleep and work.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on communicating mental health concerns, a practice session is the logical next step to help the learner apply the concepts in a simulated context. This creates a 'practice_record' that will be used for evaluation and feedback in the subsequent review."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Communicating symptoms and concerns to professionals",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "Reviewed the learner's practice script for discussing anxiety with a doctor. The feedback focused on their strong description of the impact on daily life and identified an opportunity to phrase their concerns more as open-ended questions to invite discussion.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner practiced applying concepts from the lesson on mental health communication, a review is the necessary next step. This allows for assessment of their practice attempt, provides targeted feedback, and helps determine if the final milestone of the study plan has been successfully met."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Communicating symptoms and concerns to professionals",
+    "subject": "Health",
+    "event_type": "end",
+    "description": "Final session to summarize progress and conclude the tutoring. We reviewed the learner's journey from the initial objectives to successfully applying frameworks for both physical and mental health communication, and determined the primary learning goals have been met.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has successfully progressed through all three milestones in the study plan, demonstrating proficiency in each area through practice and review. With the core objectives met and the learner equipped with the necessary tools and frameworks, the formal tutoring engagement is concluded."
+  }
+]

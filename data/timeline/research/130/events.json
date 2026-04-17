@@ -1,0 +1,313 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Nuclear measurement analysis",
+    "subject": "Physics",
+    "event_type": "proposal",
+    "description": "The project begins by formalizing the initial research idea, which is to improve the accuracy of gamma-ray spectroscopy for spent nuclear fuel characterization. This involves defining specific research questions and outlining a high-level project roadmap.",
+    "required_artifacts": [
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the first event, establishing the project's foundation. The initial, abstract research idea is treated as a prerequisite (an informal 'research_goals' artifact) which is then formalized into a concrete set of goals and a tangible 'research_plan'. This step is necessary before any methodological design can begin."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Nuclear measurement analysis",
+    "subject": "Physics",
+    "event_type": "scheme_design",
+    "description": "Based on the research goals, the team designs a novel signal processing algorithm for analyzing gamma-ray spectra. The proposed method aims to improve peak deconvolution and background subtraction, which are critical for accurately quantifying isotopic compositions in spent fuel.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the establishment of the project's goals and plan in e_01, the next logical step is to develop a concrete technical approach. This event translates the high-level 'proposal' into a specific 'method_scheme' that can be tested in subsequent experiments."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Nuclear measurement analysis",
+    "subject": "Physics",
+    "event_type": "pilot_experiments",
+    "description": "A pilot study is conducted to test the new signal processing algorithm. The team applies the method to a set of well-characterized, simulated gamma-ray spectra to assess its performance in a controlled environment before using real experimental data.",
+    "required_artifacts": [
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing the theoretical method in e_02, a pilot experiment is the logical next step to validate its basic functionality and feasibility. Using simulated data allows for a quick and cost-effective initial test of the 'method_scheme' before committing to more complex and expensive main experiments."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Nuclear measurement analysis",
+    "subject": "Physics",
+    "event_type": "analysis",
+    "description": "The results from the pilot study are formally analyzed. The team compares the algorithm's performance on the simulated spectra against the known ground-truth data, quantifying the accuracy of peak identification and background estimation.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After generating preliminary data in the pilot study (e_03), a dedicated analysis step is necessary to formally evaluate the performance of the new method. This analysis provides the critical feedback needed to decide whether the current 'method_scheme' is effective enough to proceed with or if it requires revision."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Nuclear measurement analysis",
+    "subject": "Physics",
+    "event_type": "scheme_design",
+    "description": "The analysis from the pilot study indicated that while the background subtraction was effective, the algorithm struggled with resolving closely spaced gamma-ray peaks. The team revises the deconvolution component of the method, incorporating a more robust peak-fitting model to better handle these complex spectral features.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The pilot study analysis (e_04) revealed specific weaknesses in the initial algorithm. It is a common and logical step in research to return to the design phase to refine the 'method_scheme' based on these findings before proceeding to more resource-intensive main experiments."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Nuclear measurement analysis",
+    "subject": "Physics",
+    "event_type": "main_experiments",
+    "description": "With the improved algorithm, the team proceeds with the main experiments. They use a high-purity germanium (HPGe) detector to collect gamma-ray spectra from actual spent nuclear fuel samples with varying burnup and cooling times. This step aims to generate a comprehensive dataset to validate the method's performance under realistic conditions.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The previous pilot study and analysis (e_04) led to a crucial refinement of the algorithm in e_05. With a more robust 'method_scheme' now in place, it is the opportune time to advance from simulated data to real-world application by conducting the main experiments as outlined in the 'research_plan'."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Nuclear measurement analysis",
+    "subject": "Physics",
+    "event_type": "writing",
+    "description": "While the main experimental data is being processed, the team begins drafting the methodology section for the future publication. This initial draft details the refined signal processing algorithm and the experimental setup involving the HPGe detector, ensuring a clear description of the work performed.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the refinement of the method (e_05) and completion of the main experiments (e_06), the methodology is now stable. It is an efficient and common practice in research to start writing the descriptive parts of a paper, such as the methods section, while the detailed analysis of the newly collected data is underway. This step introduces the first formal written artifact of the project."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Nuclear measurement analysis",
+    "subject": "Physics",
+    "event_type": "analysis",
+    "description": "The team performs a comprehensive analysis of the data from the main experiments. The refined algorithm is applied to the real spent fuel spectra, and its performance in quantifying key isotopes is rigorously compared against benchmark data obtained from destructive analysis. This analysis aims to definitively validate the method's accuracy and improvements over existing techniques.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After collecting a comprehensive dataset from the main experiments in e_06, the most critical next step is to perform a detailed analysis. This event directly addresses the project's core goals by evaluating the final performance of the refined 'method_scheme' on real-world data, which will form the basis for the project's conclusions."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Nuclear measurement analysis",
+    "subject": "Physics",
+    "event_type": "writing",
+    "description": "With the successful validation of the method, the team drafts the results and discussion sections of the research paper. This involves creating figures to show the improved spectral deconvolution and tables to quantify the accuracy improvements against the benchmark data from destructive analysis.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The comprehensive analysis in e_08 produced the final, conclusive results of the project. The next logical step is to document these findings for publication. This event builds directly on the analyzed 'experiment_results' and expands the existing 'paper_paragraph' (which previously only contained the methodology) to include the core results of the research."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Nuclear measurement analysis",
+    "subject": "Physics",
+    "event_type": "proposal",
+    "description": "While reviewing the drafted results, the team identifies an unexpected but significant finding: the algorithm's performance strongly correlates with the fuel's cooling time. They decide to refine the project's scope to formally investigate and model this relationship, which was not a primary initial goal. The research goals are updated to reflect this new focus.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "The analysis and writing process (e_08, e_09) has uncovered a new, compelling research question. It is a realistic and common occurrence in research to refine the 'research_goals' late in a project to incorporate and explore significant, unexpected findings. This adds depth to the final paper and leverages the rich 'experiment_results' to push the boundaries of the initial inquiry."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Nuclear measurement analysis",
+    "subject": "Physics",
+    "event_type": "analysis",
+    "description": "To address the newly defined research goal, the team performs a targeted statistical analysis of the existing main experiment data. They develop a quantitative model that correlates the algorithm's performance with the fuel's cooling time, seeking to explain the unexpected observation from the initial analysis.",
+    "required_artifacts": [
+      "research_goals",
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After refining the project's scope in e_10 to investigate the impact of cooling time, the immediate next step is to conduct the analysis that was planned. This event uses the existing 'experiment_results' to directly address the updated 'research_goals', turning an unexpected observation into a formal, quantitative finding."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Nuclear measurement analysis",
+    "subject": "Physics",
+    "event_type": "writing",
+    "description": "The team integrates the new findings about the cooling time correlation into the manuscript. They add a new subsection to the results and discussion, presenting the quantitative model and discussing the physical reasons why cooling time impacts the algorithm's performance, thereby strengthening the paper's overall contribution.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the targeted analysis in e_11 that addressed the updated research goals from e_10, the logical next step is to incorporate these new, significant findings into the research paper. This event updates the 'paper_paragraph' to reflect the completed analysis, moving the project closer to a final, comprehensive manuscript."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Nuclear measurement analysis",
+    "subject": "Physics",
+    "event_type": "writing",
+    "description": "The team completes the full draft of the research paper. They write the introduction, which frames the problem and the proposed solution, and the conclusion, which summarizes the key findings, including the unexpected correlation with cooling time. The abstract is also drafted to provide a concise overview of the entire project.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the methodology, results, and discussion sections largely complete (e_12), the next logical step is to finalize the manuscript. This involves writing the framing sections—the introduction and conclusion—which require the finalized 'research_goals' and the body of the 'paper_paragraph' to be coherent. This event marks the transition from generating content to creating a complete, submittable draft."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Nuclear measurement analysis",
+    "subject": "Physics",
+    "event_type": "writing",
+    "description": "The complete draft of the paper is circulated among the research team for an internal review. Feedback focuses on improving the narrative flow, clarifying the technical descriptions, and strengthening the discussion of the results' implications. The team revises the manuscript accordingly to create a more polished, pre-submission version.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After producing a full draft of the manuscript in e_13, the immediate and standard next step is an internal review and revision cycle. This collaborative polishing is crucial for ensuring the paper's quality, clarity, and impact before it is sent for external review or submission to a journal."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Nuclear measurement analysis",
+    "subject": "Physics",
+    "event_type": "main_experiments",
+    "description": "The internal review highlighted that the model for cooling time correlation, while promising, was based on a limited range of data. To strengthen this key finding, the team conducts a supplementary experiment, measuring a few additional spent fuel samples specifically chosen for their very short and very long cooling times.",
+    "required_artifacts": [
+      "research_plan",
+      "research_goals",
+      "method_scheme",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After the internal review (e_14), it became clear that the paper's most novel claim required stronger empirical support. Instead of submitting a potentially weaker paper, the team decides to proactively collect more data to bolster their conclusions, a common step to increase the robustness and impact of research before publication."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Nuclear measurement analysis",
+    "subject": "Physics",
+    "event_type": "analysis",
+    "description": "The team analyzes the data from the supplementary experiments. This new data, covering extreme cooling times, is integrated with the main dataset to refine and validate the quantitative model correlating algorithm performance with fuel cooling time.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Having conducted supplementary experiments in e_15 to strengthen a key finding, the logical next step is to analyze this new data. This analysis is crucial for validating the model of cooling time correlation, directly addressing the revised 'research_goals' and preparing the definitive results for the final paper."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Nuclear measurement analysis",
+    "subject": "Physics",
+    "event_type": "writing",
+    "description": "The team revises the manuscript to incorporate the analysis of the supplementary data. The section on the cooling time correlation is updated with the refined model and new figures, making the paper's key contribution much more robust and definitive.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After analyzing the supplementary data in e_16, the crucial next step is to integrate these new, stronger results into the manuscript. This event updates the 'paper_paragraph' to reflect the final, validated findings, significantly strengthening the paper's main argument before submission."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "Nuclear measurement analysis",
+    "subject": "Physics",
+    "event_type": "end",
+    "description": "The project concludes with the final polished manuscript ready for submission to a peer-reviewed journal. The research has successfully developed and validated a novel analysis method, addressed its initial goals, and thoroughly investigated a significant secondary finding, resulting in a comprehensive and robust body of work.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached a natural conclusion. The methodology is stable, the results have been validated with main and supplementary experiments (e_15, e_16), and the manuscript has been extensively drafted and revised (e_17) to incorporate all findings. With a complete and robust paper ready for submission, the active research and development phase of this project is complete."
+  }
+]

@@ -1,0 +1,403 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Goal setting and milestone planning for long projects",
+    "subject": "LifeSkills",
+    "event_type": "objective_clarification",
+    "description": "Initial session with the learner to understand their long-term project goal, which is to write a 15-page research paper for a conference submission. We discussed the topic, a 3-month timeline, and their self-assessed weaknesses in structuring large documents and maintaining motivation.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first event in the tutoring timeline. The logical first step is to clarify the learner's goals, constraints, and background to establish a foundation for all future planning and instruction."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Goal setting and milestone planning for long projects",
+    "subject": "LifeSkills",
+    "event_type": "plan_milestones",
+    "description": "Based on the learner's goal of writing a research paper in three months, we broke the project down into major milestones. We created an initial study plan outlining key phases like 'Literature Review', 'Outline Creation', 'Drafting Sections', and 'Revision', with weekly checkpoints to maintain momentum.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "After establishing the high-level learning objectives in the previous session, the next logical step is to translate those goals into a structured, actionable plan. This event uses the `learning_objectives` to create a `study_plan` with clear milestones, directly addressing the learner's stated weakness in structuring large projects."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Goal setting and milestone planning for long projects",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "Tutor delivered a lesson on the 'task decomposition' technique, showing the learner how to break down the first major milestone ('Literature Review') into smaller, concrete, and actionable sub-tasks. We created reusable teaching notes with examples on how to define tasks that can be completed in a single session.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the high-level study plan established, the immediate next step is to teach the learner the specific skills needed to tackle the first milestone. This lesson directly addresses the learner's weakness in structuring large projects by providing a practical method for breaking down work, using the 'Literature Review' phase from the study plan as a concrete example."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Goal setting and milestone planning for long projects",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The learner was asked to apply the 'task decomposition' technique from the recent lesson to the first milestone, 'Literature Review'. The learner attempted to break it down into a list of weekly sub-tasks, and this attempt was recorded for review.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson on a specific technique, the most logical next step is to have the learner practice it. This event allows the learner to apply the 'task decomposition' method from the teaching notes to the first milestone in their study plan, creating a concrete practice record that can be assessed in a future session."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Goal setting and milestone planning for long projects",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor reviewed the learner's task decomposition from the practice session. The review identified that some sub-tasks were still too large (e.g., 'read 10 papers') and provided specific feedback on how to break them down further into actionable steps (e.g., 'find 5 relevant papers', 'read abstract and conclusion of paper X').",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice event (e_04), a review is the necessary next step to assess the learner's application of the taught concept. By analyzing the `practice_record` against the principles in the `teaching_notes`, the tutor can provide targeted, actionable feedback, which is captured in the `feedback_summary`."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Goal setting and milestone planning for long projects",
+    "subject": "LifeSkills",
+    "event_type": "materials_revision",
+    "description": "Based on the learner's difficulty in the last practice session, the tutor revised the 'task decomposition' teaching notes. The notes were updated to include a clearer checklist for defining an 'actionable task' and added more contrastive examples of 'too big' vs. 'just right' tasks.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in the previous event (e_05) highlighted a specific gap in the learner's understanding that the original teaching materials didn't fully address. Revising the `teaching_notes` using the `feedback_summary` is a logical step to improve the material's clarity before asking the learner to practice again, thereby increasing the chance of success."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Goal setting and milestone planning for long projects",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The learner re-attempts the 'task decomposition' exercise for the 'Literature Review' milestone, using the revised teaching notes and the feedback from the previous review. This new attempt is recorded for a subsequent review.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After receiving targeted feedback (e_05) and having the instructional materials improved (e_06), it is essential for the learner to re-apply the skill. This second practice attempt allows the tutor to assess if the feedback and revised materials were effective in closing the identified learning gap before moving forward."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Goal setting and milestone planning for long projects",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor reviewed the learner's second attempt at task decomposition. This attempt showed significant improvement, with most sub-tasks being specific and achievable. The feedback affirmed the learner's progress and provided minor suggestions to further refine a few remaining items.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a second practice attempt (e_07), a review is necessary to formally assess if the learner has successfully incorporated the previous feedback and mastered the skill. This step validates their understanding based on the `practice_record` and allows the tutoring to progress to the next stage of the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Goal setting and milestone planning for long projects",
+    "subject": "LifeSkills",
+    "event_type": "plan_milestones",
+    "description": "With the 'task decomposition' skill now established, the tutor and learner formally updated the study plan. They integrated the successful, fine-grained sub-tasks for the 'Literature Review' milestone into the main plan, replacing the original high-level entry.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "After the successful review in e_08 confirmed the learner's ability to decompose a milestone, the logical next step is to update the master `study_plan` with this new, detailed breakdown. This makes the plan a living document, reflects concrete progress, and solidifies the plan for the first phase before moving on to the next major milestone."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Goal setting and milestone planning for long projects",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "Tutor delivered a lesson on structuring a research paper outline, introducing the standard IMRaD (Introduction, Methods, Results, and Discussion) format. The lesson covered the purpose of each section and how they logically connect, creating new teaching notes on the topic.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Now that the first project milestone is fully planned, the tutoring shifts focus to the next milestone from the study plan: 'Outline Creation'. This lesson provides the necessary conceptual scaffolding (the IMRaD structure) before the learner attempts to apply planning skills to this new phase of the project."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Goal setting and milestone planning for long projects",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The learner was asked to create a draft outline for their research paper using the IMRaD structure taught in the previous lesson. Their attempt, which maps their specific research topic onto the IMRaD sections, was recorded for review.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on the IMRaD structure (e_10), the natural next step is for the learner to apply this knowledge. This practice session requires them to create an outline based on the `teaching_notes`, targeting the 'Outline Creation' milestone from the `study_plan` and producing a `practice_record` for future review."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Goal setting and milestone planning for long projects",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor reviewed the learner's draft research paper outline. The feedback focused on ensuring each section's content was correctly aligned with the IMRaD model and suggested strengthening the connection between the proposed Methods and the research question in the Introduction.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner created a draft outline in the previous practice event (e_11), a review is the necessary next step to provide feedback. This review assesses the learner's application of the IMRaD structure from the `teaching_notes` to their `practice_record`, ensuring the plan for the paper is sound before proceeding."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Goal setting and milestone planning for long projects",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The learner revises their draft outline based on the feedback from the previous review. The focus is on strengthening the logical connection between the Introduction's research question and the proposed Methods section, and this revised version is recorded.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After receiving specific feedback on their draft outline (e_12), the most effective next step is for the learner to practice incorporating that feedback. This event allows the learner to revise their work, reinforcing the lesson on structure and ensuring the outline is solid before moving to the drafting phase."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Goal setting and milestone planning for long projects",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor reviewed the learner's revised outline, confirming that the feedback was successfully incorporated. The learner strengthened the logical flow between the research question and methods, resulting in a solid plan for the paper's structure.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner submitted a revised outline in the previous practice event (e_13), a review is necessary to confirm that they have successfully addressed the feedback from e_12. This step validates their understanding and finalizes the 'Outline Creation' milestone before the project moves into the drafting phase."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Goal setting and milestone planning for long projects",
+    "subject": "LifeSkills",
+    "event_type": "plan_milestones",
+    "description": "With the paper's outline finalized, the tutor and learner focused on the 'Drafting Sections' milestone. They applied the task decomposition skill to the approved outline, breaking down each IMRaD section into a sequence of weekly writing goals and updating the main study plan with this detailed schedule.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "After the successful review of the revised outline (e_14), the paper's structure is now solid. The next logical step is to plan the execution of the 'Drafting Sections' milestone from the `study_plan`. This event applies the previously mastered task decomposition skill to this new phase, creating an actionable writing schedule."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Goal setting and milestone planning for long projects",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "To address the learner's self-reported weakness in maintaining motivation, the tutor delivered a lesson on implementing a weekly review cycle. The lesson covered how to check progress against the study plan's weekly goals, identify upcoming obstacles, and make minor adjustments to the plan to stay on track.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a detailed drafting schedule now in the `study_plan`, the next challenge is execution and maintaining momentum. This lesson proactively teaches a method for self-monitoring and plan adaptation, directly supporting the learner's ability to stick to the upcoming writing phase and addressing a key initial concern."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Goal setting and milestone planning for long projects",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "At the end of the first week of the 'Drafting' phase, the learner applied the weekly review technique. They compared their writing progress to the goals set in the study plan, identified a minor delay, and documented their self-assessment and proposed plan for the next week.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson on the weekly review cycle (e_16), the next logical step is for the learner to practice this new self-management skill. This event provides a concrete application of the technique using the detailed `study_plan`, generating a `practice_record` that will allow the tutor to assess how well the learner can self-monitor and adapt."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Goal setting and milestone planning for long projects",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor reviewed the learner's first weekly self-assessment from the 'Drafting' phase. The feedback affirmed the learner's accurate identification of a minor delay and praised their proposed realistic adjustments for the upcoming week, reinforcing the self-monitoring process.",
+    "required_artifacts": [
+      "practice_record",
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner practiced the weekly review cycle in e_17, a review is the necessary next step to evaluate their self-assessment skills. By analyzing the `practice_record` against the `study_plan` goals and `teaching_notes`, the tutor can provide feedback to solidify this crucial self-management habit for maintaining motivation."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Goal setting and milestone planning for long projects",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "At the end of the second week of the 'Drafting' phase, the learner conducted their weekly self-review. They compared their writing output against the updated study plan, confirmed they had caught up from the previous week's delay, and documented their plan for the third week.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the successful first weekly review (e_18), it is crucial for the learner to repeat the process to build a consistent self-management habit. This second practice event reinforces the skill of self-monitoring and adaptation, which is essential for maintaining motivation and progress through the long drafting phase."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Goal setting and milestone planning for long projects",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor reviewed the learner's second weekly self-review. The feedback confirmed the learner's assessment that they were back on track and praised their consistent use of the self-monitoring process to maintain momentum during the drafting phase.",
+    "required_artifacts": [
+      "practice_record",
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the learner's second practice of the weekly review cycle (e_19), a review is necessary to provide reinforcement and ensure the self-management habit is becoming stable. This feedback loop is critical for maintaining motivation and progress through the lengthy drafting phase of the project."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "Goal setting and milestone planning for long projects",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "As the drafting phase is now proceeding steadily, the tutor delivered a lesson to prepare for the final 'Revision' milestone. The lesson distinguished between macro-level revision (argument, structure, flow) and micro-level revision (grammar, style) and introduced a strategy for tackling them separately.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the drafting process and self-monitoring habits stabilized, the tutoring proactively shifts to the next major milestone in the study plan: 'Revision'. This lesson provides the conceptual framework for the final stage of the project, preparing the learner with new skills before they are immediately needed."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "tutoring",
+    "topic": "Goal setting and milestone planning for long projects",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The learner is asked to apply the macro-level revision strategy from the previous lesson to their first completed draft section. They perform a structural review of their 'Introduction' section, creating self-revision notes on argument, flow, and clarity, which are recorded for review.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on revision strategies (e_21), the logical next step is for the learner to practice this skill. This event requires the learner to apply the macro-revision concepts from the `teaching_notes` to a real piece of their work, creating a `practice_record` that demonstrates their ability to self-critique structure before the final revision phase."
+  },
+  {
+    "event_id": "e_23",
+    "time_index": 23,
+    "domain": "tutoring",
+    "topic": "Goal setting and milestone planning for long projects",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor reviewed the learner's self-revision notes on their 'Introduction' section. The feedback confirmed the learner's ability to spot structural issues like a weak thesis statement connection but noted they missed an opportunity to improve the transition to the next paragraph.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner practiced macro-level revision in e_22, a review is the necessary next step to evaluate their self-critique abilities. This review of the `practice_record` provides targeted feedback, ensuring the learner can effectively apply the revision strategies from the `teaching_notes` before tackling the full draft."
+  },
+  {
+    "event_id": "e_24",
+    "time_index": 24,
+    "domain": "tutoring",
+    "topic": "Goal setting and milestone planning for long projects",
+    "subject": "LifeSkills",
+    "event_type": "end",
+    "description": "In this final session, the tutor and learner reviewed the overall progress. The learner has successfully learned and applied techniques for task decomposition, outlining, self-monitoring, and revision, fulfilling the initial learning objectives. The tutoring concludes with the learner now equipped to independently manage the remainder of their research paper project.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has demonstrated proficiency in all core skills related to goal setting and milestone planning for their long-term project. They have successfully moved from high-level planning to detailed execution and self-monitoring, addressing their initial weaknesses. With the project on track and the final revision process successfully initiated, the formal tutoring objectives have been met."
+  }
+]

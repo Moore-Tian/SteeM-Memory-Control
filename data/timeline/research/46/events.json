@@ -1,0 +1,314 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Dialogue safety evaluation",
+    "subject": "CS-NLP",
+    "event_type": "proposal",
+    "description": "The project begins by formalizing the initial, high-level idea of evaluating dialogue safety. The team refines this concept into concrete research questions and a structured research plan to move beyond simple keyword-based metrics.",
+    "required_artifacts": [
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "As the first formal step, this event translates a nascent research idea into a concrete plan. It requires an initial 'research_goals' concept to be refined and results in the first official 'research_plan' and a more clearly defined set of 'research_goals' for the project."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Dialogue safety evaluation",
+    "subject": "CS-NLP",
+    "event_type": "scheme_design",
+    "description": "Based on the defined research goals, the team designs the initial methodological scheme. This involves creating an annotation taxonomy for different types of unsafe dialogue, designing the data collection process, and outlining the guidelines for human evaluators.",
+    "required_artifacts": [
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "With a clear `research_plan` and `research_goals` established in the previous proposal stage (e_01), the natural next step is to design the specific methodology to achieve these goals. This event translates the high-level plan into a concrete `method_scheme` that can be tested in a pilot study."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Dialogue safety evaluation",
+    "subject": "CS-NLP",
+    "event_type": "pilot_experiments",
+    "description": "The team conducts a small-scale pilot study to test the initial annotation taxonomy and evaluator guidelines. A small set of dialogue examples are collected and annotated by a few evaluators to identify ambiguities in the method scheme and assess inter-annotator agreement.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the design of the `method_scheme` in e_02, a pilot study is the logical next step to validate the methodology before committing to a large-scale experiment. This will generate preliminary `experiment_results` to check the feasibility of the annotation process and the clarity of the guidelines."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Dialogue safety evaluation",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "The team formally analyzes the results from the pilot study. The analysis reveals low inter-annotator agreement on subtle forms of unsafe content, indicating that the initial annotation taxonomy and guidelines in the method scheme are ambiguous and require revision.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After generating preliminary data in the pilot study (e_03), a formal analysis is the necessary next step. This event uses the pilot's `experiment_results` to evaluate the viability of the current `method_scheme` and identify specific weaknesses before committing to a larger-scale study."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Dialogue safety evaluation",
+    "subject": "CS-NLP",
+    "event_type": "scheme_design",
+    "description": "Based on the analysis of the pilot study, the team revises the method scheme. They refine the annotation taxonomy by adding more detailed sub-categories and providing more concrete examples in the evaluator guidelines to address the identified ambiguities and improve inter-annotator agreement.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous analysis (e_04) revealed that the initial `method_scheme` was ambiguous, leading to poor pilot results. It is therefore necessary to redesign the scheme, using the insights from the pilot's `experiment_results` to create a more robust and clearer set of guidelines before attempting further data collection."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Dialogue safety evaluation",
+    "subject": "CS-NLP",
+    "event_type": "pilot_experiments",
+    "description": "To validate the revised guidelines, the team conducts a second, focused pilot study. This study uses a new set of challenging dialogue snippets and specifically measures if the updated annotation taxonomy and clearer examples have improved inter-annotator agreement.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the `method_scheme` in e_05 to address poor pilot results, a second pilot is necessary to confirm the fixes are effective. This validation step is critical before committing to the resource-intensive main experiments, ensuring the new guidelines produce reliable data."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Dialogue safety evaluation",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "The team formally analyzes the results from the second pilot study. The analysis confirms a significant improvement in inter-annotator agreement, validating that the revised annotation taxonomy and guidelines are now sufficiently clear and robust for the main study.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After running a second pilot experiment (e_06) with a revised `method_scheme`, a formal analysis is the critical next step. This event validates whether the changes were successful before committing resources to the full-scale main experiments."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Dialogue safety evaluation",
+    "subject": "CS-NLP",
+    "event_type": "writing",
+    "description": "With the methodology now finalized and validated, the team begins drafting the 'Methodology' section of the paper. This section details the finalized annotation taxonomy and the evaluator training process, based on the successful revised scheme from the pilot studies.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The analysis in e_07 confirmed the `method_scheme` is robust, making this the perfect time to formally document it for the paper. Writing the methods section now, while the details are fresh and before the main experiment results are available, is an efficient use of project time."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Dialogue safety evaluation",
+    "subject": "CS-NLP",
+    "event_type": "main_experiments",
+    "description": "With the methodology validated, the team launches the main data collection phase. A large-scale annotation effort is initiated, applying the finalized method scheme to a diverse set of dialogue data to generate the primary experimental results.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the successful validation of the `method_scheme` in the second pilot study (e_07) and the initial drafting of the methods section (e_08), the project is now ready to proceed with the main, large-scale experiments. This step is crucial for gathering the substantial data required to address the core `research_goals`."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Dialogue safety evaluation",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "The team performs a comprehensive analysis of the data collected from the main experiments. This includes calculating final inter-annotator agreement metrics, summarizing the prevalence of different safety violation types, and identifying key patterns and correlations in the dataset.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After completing the large-scale data collection in the main experiments (e_09), a thorough analysis is the essential next step. This event processes the raw `experiment_results` to extract the core findings needed to address the project's `research_goals` and forms the basis for the results section of the paper."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Dialogue safety evaluation",
+    "subject": "CS-NLP",
+    "event_type": "writing",
+    "description": "The team drafts the 'Results' section of the paper, summarizing the key findings from the main experiment analysis. This includes presenting the final inter-annotator agreement scores, the distribution of safety issues found in the data, and the key patterns identified.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the comprehensive analysis of the main experiments completed in e_10, the logical next step is to document these findings for publication. This event translates the structured `experiment_results` into a narrative form for the paper's results section, which complements the previously drafted methods section."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Dialogue safety evaluation",
+    "subject": "CS-NLP",
+    "event_type": "proposal",
+    "description": "After analyzing the main experimental results, the team realizes that the initial research goals were too focused on explicit safety violations. The findings highlight the significant prevalence of more subtle, implicit harms, prompting a revision of the project's core goals to include a deeper exploration of these nuanced issues.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "The analysis of the main experiments (e_10) provided a much richer understanding of the problem space. This new insight requires revisiting and broadening the original `research_goals` to accurately reflect the project's key contributions, which will in turn guide the final interpretation and writing of the paper."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Dialogue safety evaluation",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "To address the revised research goals, the team performs a targeted qualitative analysis on the main experiment data. They focus on the instances of subtle, implicit harms, developing a more detailed typology and extracting illustrative examples to better characterize these nuanced safety issues.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The previous event (e_12) updated the `research_goals` to focus on subtle harms. This analysis is the direct next step, re-examining the existing `experiment_results` through this new lens to generate deeper insights required to fulfill the project's expanded scope before proceeding with final writing."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Dialogue safety evaluation",
+    "subject": "CS-NLP",
+    "event_type": "writing",
+    "description": "The team drafts a new subsection for the paper, focusing on the results of the targeted qualitative analysis. This section elaborates on the typology of subtle, implicit harms and includes illustrative examples to support the project's revised research goals.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the targeted qualitative analysis in e_13, which was prompted by the revised `research_goals` from e_12, the next logical step is to document these new, nuanced findings. This event integrates the latest `experiment_results` into the manuscript, significantly strengthening the paper's contribution."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Dialogue safety evaluation",
+    "subject": "CS-NLP",
+    "event_type": "writing",
+    "description": "The team now drafts the 'Discussion' and 'Conclusion' sections of the paper. This involves synthesizing the quantitative and qualitative findings, reflecting on how they address the revised research goals, and discussing the broader implications of the work for the field of dialogue safety.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With all analyses complete (e_10, e_13) and the corresponding results sections drafted (e_11, e_14), the next logical step is to interpret these findings in a broader context. This event brings together all the project's insights to form a cohesive argument, guided by the final `research_goals`, before assembling the full paper."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Dialogue safety evaluation",
+    "subject": "CS-NLP",
+    "event_type": "writing",
+    "description": "The team assembles the first full draft of the paper by integrating all previously written sections, adding an introduction and abstract. The complete draft is then circulated for an internal review to check for overall coherence, narrative flow, and alignment with the final research goals.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the core analysis and writing of individual sections complete (e_10 through e_15), the next step is to synthesize these parts into a full manuscript. This event focuses on creating a cohesive first draft and performing an internal review, which is a crucial step before finalizing the paper for submission."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Dialogue safety evaluation",
+    "subject": "CS-NLP",
+    "event_type": "writing",
+    "description": "Based on feedback from the internal review, the team revises the full paper draft. This involves refining the introduction to better motivate the revised research goals, strengthening the connection between the results and discussion sections, and improving the overall narrative clarity and coherence.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After circulating a full draft for internal review (e_16), incorporating feedback is the standard next step. This revision process is crucial for improving the paper's quality, ensuring the narrative is cohesive, and clearly articulating how the `experiment_results` support the final `research_goals` before submitting for external peer review."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "Dialogue safety evaluation",
+    "subject": "CS-NLP",
+    "event_type": "end",
+    "description": "The project concludes with a final, polished version of the research paper ready for submission. After multiple rounds of experiments, analysis, writing, and a full internal review cycle, the team has produced a comprehensive manuscript that fulfills the project's refined goals.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached a natural conclusion. The methodology is stable, the results are comprehensive and have been analyzed from multiple perspectives, and a full paper draft has been written and revised based on internal feedback (e_17). With a complete manuscript ready for submission, the active research phase is complete."
+  }
+]

@@ -1,0 +1,414 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Cost-benefit thinking for policy and personal choices",
+    "subject": "Economics",
+    "event_type": "objective_clarification",
+    "description": "Initial session with the learner to understand their background, goals, and constraints. The learner wants to apply cost-benefit thinking to both personal finance decisions and understanding public policy debates. They have a basic understanding of economics but no formal training in policy analysis.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first event in the tutoring timeline. It is essential to start by clarifying the learner's objectives, background, and success criteria to create a tailored and effective study plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Cost-benefit thinking for policy and personal choices",
+    "subject": "Economics",
+    "event_type": "plan_milestones",
+    "description": "Based on the defined learning objectives, the tutor and learner create an initial study plan. The plan outlines key milestones, starting with foundational concepts like opportunity cost and moving towards applying cost-benefit analysis frameworks to simple case studies.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learner's goals established in the previous `objective_clarification` event, the next logical step is to create a structured `study_plan`. This plan provides a roadmap for achieving the `learning_objectives` by breaking them down into manageable milestones."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Cost-benefit thinking for policy and personal choices",
+    "subject": "Economics",
+    "event_type": "lesson",
+    "description": "The tutor delivers the first lesson as outlined in the study plan, focusing on the foundational concept of 'opportunity cost'. The lesson defines the term, explains its central role in cost-benefit analysis, and uses simple examples like choosing between a job and further education.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the creation of the `study_plan`, the next logical step is to begin instruction. This lesson addresses the first milestone in the plan, ensuring the learner builds a solid foundation before moving to more complex topics."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Cost-benefit thinking for policy and personal choices",
+    "subject": "Economics",
+    "event_type": "practice",
+    "description": "The tutor assigns practice exercises based on the recent lesson on opportunity cost. The learner is asked to identify the opportunity cost in several personal and simple policy scenarios, such as choosing a university major or a city's land use decision. The learner's responses and thought processes are recorded.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the concept of opportunity cost in the previous 'lesson' event, the next logical step is to have the learner apply this knowledge. This 'practice' event solidifies understanding, checks for comprehension, and generates a 'practice_record' that can be used for a future 'review' session."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Cost-benefit thinking for policy and personal choices",
+    "subject": "Economics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's responses from the opportunity cost practice exercises. The review reveals that the learner correctly identifies the direct monetary trade-offs but struggles to account for non-monetary or secondary opportunity costs (e.g., time, experience). The tutor compiles specific feedback with corrected examples.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the `practice` event where the learner's work was recorded, a `review` is the necessary next step. This allows the tutor to analyze the `practice_record`, identify specific areas of misunderstanding, and create a `feedback_summary` to guide the next phase of learning."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Cost-benefit thinking for policy and personal choices",
+    "subject": "Economics",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback from the review session, the tutor revises the teaching notes on opportunity cost. The revision adds more explicit explanations and examples of non-monetary costs (e.g., time with family, stress) and secondary effects to help the learner grasp the full scope of the concept.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The `review` event revealed a specific gap in the learner's understanding. Before re-teaching or assigning more practice, it is effective for the tutor to first improve the core `teaching_notes` based on the `feedback_summary`, ensuring the material is clearer and more comprehensive for the next instructional step."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Cost-benefit thinking for policy and personal choices",
+    "subject": "Economics",
+    "event_type": "lesson",
+    "description": "The tutor holds a short, targeted lesson to address the learner's difficulty with non-monetary opportunity costs. Using the revised teaching notes, the tutor walks through new examples, like the career impact of taking a gap year versus starting a job immediately, to solidify the concept.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review identified a key misconception, and the teaching notes were revised accordingly. A targeted follow-up lesson is the most direct way to address the learner's specific difficulty using the improved materials before moving on to new practice or topics."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Cost-benefit thinking for policy and personal choices",
+    "subject": "Economics",
+    "event_type": "practice",
+    "description": "To verify the effectiveness of the remedial lesson, the tutor assigns a new set of practice problems. These exercises specifically target the learner's previous weakness by focusing on identifying non-monetary and secondary opportunity costs in more complex scenarios. The learner's responses are recorded for a follow-up review.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a targeted `lesson` (e_07) to correct a specific misunderstanding, the next logical step is to conduct a `practice` session to confirm mastery. This validates that the remedial instruction was successful before moving on to new topics in the study plan, and it creates a new `practice_record` for assessment."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Cost-benefit thinking for policy and personal choices",
+    "subject": "Economics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's second set of practice problems. The review confirms that the learner now successfully identifies non-monetary and secondary costs, demonstrating a solid grasp of the concept. The tutor prepares a brief summary confirming mastery and outlining the next topic from the study plan.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted `practice` session (e_08) to reinforce a difficult concept, a `review` is essential to formally assess whether the learner has achieved mastery. This step closes the remedial loop and provides the basis for deciding to move forward with the `study_plan`."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Cost-benefit thinking for policy and personal choices",
+    "subject": "Economics",
+    "event_type": "lesson",
+    "description": "With the concept of opportunity cost mastered, the tutor proceeds to the next topic in the study plan: marginal analysis. The lesson introduces the concepts of marginal benefit and marginal cost, explaining the principle of making decisions 'at the margin' with examples like 'should I study one more hour?'.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous `review` event (e_09) confirmed the learner's mastery of the foundational topic. In accordance with the `study_plan`, it is now appropriate to introduce the next core concept, building upon the established knowledge base and advancing the curriculum."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Cost-benefit thinking for policy and personal choices",
+    "subject": "Economics",
+    "event_type": "practice",
+    "description": "The tutor assigns practice problems based on the lesson on marginal analysis. The exercises require the learner to identify and compare marginal costs and marginal benefits in various decision-making scenarios, such as a business deciding whether to hire one more employee or a student deciding how many hours to study for an exam.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the concept of marginal analysis in the previous `lesson`, a `practice` session is the logical next step. This allows the learner to actively apply the new theory, which helps reinforce the learning and creates a `practice_record` for future review and feedback."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Cost-benefit thinking for policy and personal choices",
+    "subject": "Economics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's solutions to the marginal analysis problems. The review shows the learner understands the core principle but sometimes confuses total cost/benefit with marginal cost/benefit. The tutor prepares feedback highlighting this specific distinction with corrected examples.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the `practice` on marginal analysis (e_11), the essential next step is a `review`. This allows the tutor to assess the `practice_record`, pinpoint specific misunderstandings like confusing total vs. marginal values, and create targeted feedback to correct them."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Cost-benefit thinking for policy and personal choices",
+    "subject": "Economics",
+    "event_type": "materials_revision",
+    "description": "Based on the review showing the learner confused total vs. marginal values, the tutor updates the teaching notes on marginal analysis. The revision adds a new section with a comparative table and targeted examples to explicitly differentiate between making decisions based on marginal changes versus total amounts.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous `review` (e_12) identified a specific conceptual error. Following the pattern of a successful remedial loop (e_05-e_07), the best next step is to improve the `teaching_notes` based on the `feedback_summary` to address this weakness before re-teaching or assigning new practice."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Cost-benefit thinking for policy and personal choices",
+    "subject": "Economics",
+    "event_type": "lesson",
+    "description": "The tutor conducts a targeted lesson using the revised teaching notes to explicitly address the learner's confusion between total and marginal values. The session focuses on the new comparative examples to reinforce the principle of making decisions at the margin.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After revising the `teaching_notes` (e_13) to address a specific error identified during `review` (e_12), a focused `lesson` is the most direct way to deliver the corrected instruction. This ensures the learner grasps the difficult concept before attempting practice again."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Cost-benefit thinking for policy and personal choices",
+    "subject": "Economics",
+    "event_type": "practice",
+    "description": "To confirm understanding after the remedial lesson, the tutor assigns new practice exercises. These problems are specifically designed to make the learner differentiate between total and marginal values in decision-making scenarios, addressing the confusion identified in the previous review.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the remedial `lesson` (e_14) on total vs. marginal values, a new `practice` session is essential to assess whether the learner can now correctly apply the concept. This step serves as a check for understanding before progressing with the study plan and generates a new `practice_record` for evaluation."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Cost-benefit thinking for policy and personal choices",
+    "subject": "Economics",
+    "event_type": "review",
+    "description": "The tutor reviews the latest practice submissions on marginal analysis. The review confirms that the learner now correctly distinguishes between total and marginal values in their calculations and reasoning, demonstrating mastery of the concept.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted practice session (e_15) designed to correct a specific misunderstanding, a `review` is the necessary next step to formally assess mastery. This validates the effectiveness of the remedial lesson and provides the green light to proceed with the study plan."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Cost-benefit thinking for policy and personal choices",
+    "subject": "Economics",
+    "event_type": "lesson",
+    "description": "Now that the foundational concepts are mastered, the tutor introduces a structured framework for conducting a full Cost-Benefit Analysis (CBA). The lesson covers steps like identifying all stakeholders, listing and quantifying costs and benefits, and applying the decision rule, integrating the previously learned concepts of opportunity cost and marginal analysis.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_16) confirmed the learner's mastery of the prerequisite concepts. Following the `study_plan`, the next logical step is to introduce a comprehensive framework that integrates these individual concepts, moving the learner towards the goal of applying CBA to complex scenarios."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Cost-benefit thinking for policy and personal choices",
+    "subject": "Economics",
+    "event_type": "practice",
+    "description": "The tutor assigns a guided practice exercise where the learner must apply the full Cost-Benefit Analysis framework to a simple case study. The case is a personal finance decision, like 'deciding whether to buy a new car vs. repairing an old one,' requiring the learner to follow the newly taught steps. The learner's step-by-step analysis is recorded.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the comprehensive CBA framework in the previous `lesson`, it is crucial for the learner to apply it through a `practice` exercise. This will test their ability to integrate all the concepts learned so far and will generate a `practice_record` for the tutor to review their performance."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Cost-benefit thinking for policy and personal choices",
+    "subject": "Economics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's first attempt at a full CBA case study. The review shows the learner correctly followed the structural steps of the framework but struggled to consistently quantify non-monetary factors (e.g., convenience, safety) and integrate them into the final decision.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner applied the full CBA framework in a `practice` session (e_18), a `review` is essential to evaluate their performance. This step assesses their ability to integrate multiple concepts, identifies specific challenges like quantifying non-monetary factors, and produces a `feedback_summary` to guide subsequent instruction."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Cost-benefit thinking for policy and personal choices",
+    "subject": "Economics",
+    "event_type": "materials_revision",
+    "description": "In response to the review finding that the learner struggled with non-monetary factors, the tutor revises the teaching notes on the CBA framework. The revision adds a new section explaining different techniques for handling intangible costs and benefits, such as qualitative scoring, proxy valuation, and contingent valuation.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous `review` (e_19) identified a specific, advanced difficulty: quantifying non-monetary factors. A `materials_revision` is the logical next step to improve the `teaching_notes` based on this `feedback_summary`, creating better instructional material before a follow-up lesson on this topic."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "Cost-benefit thinking for policy and personal choices",
+    "subject": "Economics",
+    "event_type": "lesson",
+    "description": "Using the revised teaching notes, the tutor delivers a focused lesson on methods for evaluating non-monetary factors in a CBA. The lesson covers qualitative scoring and the concept of using proxy variables to estimate value for things like time saved or increased safety.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After revising the `teaching_notes` (e_20) to address the learner's difficulty with non-monetary factors, a targeted `lesson` is the necessary next step. This directly addresses the issue identified in the `feedback_summary` (e_19) using the improved instructional materials."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "tutoring",
+    "topic": "Cost-benefit thinking for policy and personal choices",
+    "subject": "Economics",
+    "event_type": "practice",
+    "description": "To assess understanding after the remedial lesson, the tutor assigns a new case study. The exercise requires the learner to apply the CBA framework to another personal decision but with a strong emphasis on using the new techniques for evaluating non-monetary factors like safety and environmental impact.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following a remedial `lesson` on evaluating non-monetary factors (e_21), a targeted `practice` session is the essential next step. This will verify if the learner can now apply these specific techniques correctly, creating a new `practice_record` for assessment before moving to more complex policy applications."
+  },
+  {
+    "event_id": "e_23",
+    "time_index": 23,
+    "domain": "tutoring",
+    "topic": "Cost-benefit thinking for policy and personal choices",
+    "subject": "Economics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's practice on the case study involving non-monetary factors. The analysis shows the learner now competently uses qualitative scoring and proxy variables to account for intangibles like safety and environmental impact, indicating a solid grasp of the technique.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted `practice` session (e_22), a `review` is the essential next step to validate the learner's understanding. This confirms that the remedial instruction on handling non-monetary factors was successful, clearing the way to apply these skills to the more complex policy scenarios outlined in the study plan."
+  },
+  {
+    "event_id": "e_24",
+    "time_index": 24,
+    "domain": "tutoring",
+    "topic": "Cost-benefit thinking for policy and personal choices",
+    "subject": "Economics",
+    "event_type": "lesson",
+    "description": "Having confirmed the learner's ability to perform CBA on personal decisions, the tutor moves to the second major learning objective: applying CBA to public policy. This lesson introduces complexities common in policy analysis, such as defining 'standing' (whose costs/benefits count), discounting future effects, and considering distributional impacts.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_23) confirmed the learner's competence with the CBA framework in a personal context. To address the second major learning objective, this lesson bridges the gap to public policy analysis by introducing more advanced concepts, thus progressing along the `study_plan`."
+  },
+  {
+    "event_id": "e_25",
+    "time_index": 25,
+    "domain": "tutoring",
+    "topic": "Cost-benefit thinking for policy and personal choices",
+    "subject": "Economics",
+    "event_type": "practice",
+    "description": "The tutor assigns the first public policy case study, such as evaluating the construction of a new public library. The exercise requires the learner to apply the full CBA framework, explicitly considering standing, discounting future benefits, and distributional effects. The learner's step-by-step analysis is recorded.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the complexities of public policy CBA in the previous `lesson` (e_24), a `practice` session is the necessary next step. This allows the learner to apply these advanced concepts to a concrete case, which is essential for developing practical skill and generating a `practice_record` for review."
+  }
+]

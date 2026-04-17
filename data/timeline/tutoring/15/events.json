@@ -1,0 +1,410 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Coordinate geometry through equations and constraints",
+    "subject": "Math",
+    "event_type": "objective_clarification",
+    "description": "Tutor and learner have an initial meeting to discuss the learner's goals, current understanding of coordinate geometry, and any specific difficulties. They establish the scope of the tutoring, focusing on translating geometric descriptions into algebraic equations and constraints.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives",
+      "study_plan"
+    ],
+    "reason": "This is the first session, so the logical starting point is to understand the learner's needs and establish clear learning objectives. A preliminary study plan is drafted to provide an initial structure for the tutoring engagement."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Coordinate geometry through equations and constraints",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "The tutor begins with the first topic from the study plan: representing lines with equations. The lesson covers the slope-intercept form (y = mx + c) and the point-slope form, explaining how to derive the equation of a line from two points or from a point and a slope.",
+    "required_artifacts": [
+      "learning_objectives",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the initial planning in e_01, the first instructional step is to deliver a lesson on a foundational topic. This lesson directly addresses the core objective of translating geometric descriptions (lines) into algebraic forms (equations) and generates reusable teaching notes for this key concept."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Coordinate geometry through equations and constraints",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "The tutor provides a set of practice problems based on the recent lesson. The learner is asked to derive equations of lines from various given conditions (e.g., two points, a point and a slope, a point and a parallel line). The learner's work and solutions are collected.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on line equations in e_02, the natural next step is for the learner to apply this knowledge through practice. This helps solidify understanding and generates a record of the learner's work, which is essential for the upcoming review and feedback stage."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Coordinate geometry through equations and constraints",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's solutions from the practice session on line equations. The review focuses on identifying common errors in applying slope-intercept and point-slope formulas, as well as any algebraic mistakes, to prepare targeted feedback.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the practice session (e_03) produced a `practice_record`, the logical next step is to review the learner's work. This allows the tutor to assess understanding, identify misconceptions about line equations, and generate a `feedback_summary` to guide the next phase of learning."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Coordinate geometry through equations and constraints",
+    "subject": "Math",
+    "event_type": "materials_revision",
+    "description": "Based on the review of the learner's practice attempts, the tutor updates the teaching notes for line equations. The revision adds a 'Common Pitfalls' section, highlighting frequent mistakes like sign errors in slope calculation and incorrect substitution into formulas, and includes a new worked example to clarify the process.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The `feedback_summary` from e_04 revealed specific, recurring errors in the learner's work. Revising the `teaching_notes` to explicitly address these pitfalls makes the material more effective for this learner's review and improves the resource for future use, demonstrating a responsive teaching cycle."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Coordinate geometry through equations and constraints",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "The tutor assigns a follow-up practice set focused on line equations, specifically targeting the types of problems where the learner previously struggled. The learner uses the feedback from the last review and the updated notes to attempt these new problems.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After providing feedback (e_04) and revising materials (e_05), it's essential to check if the learner can apply the corrections. This targeted practice session closes the feedback loop on the topic of line equations before moving on to a new concept in the study plan."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Coordinate geometry through equations and constraints",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's second set of practice problems on line equations. The goal is to verify that the previous misconceptions have been corrected and that the learner can now consistently apply the formulas correctly.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice in e_06, a review is necessary to confirm whether the learner has overcome the initial difficulties with line equations. This step assesses the effectiveness of the feedback loop (e_04, e_05, e_06) and determines if the student is ready to move on to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Coordinate geometry through equations and constraints",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "Having confirmed the learner's proficiency with line equations, the tutor introduces the next topic from the study plan: circles. The lesson covers the standard form of a circle's equation, (x - h)^2 + (y - k)^2 = r^2, explaining how the center (h, k) and radius (r) define the equation.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in e_07 confirmed that the learner has mastered line equations. Following the study plan, the next logical step is to introduce a new concept. This lesson on circles continues to build the learner's skills in representing geometric shapes with algebraic equations."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Coordinate geometry through equations and constraints",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "The tutor assigns practice problems based on the lesson on circles. The tasks require the learner to write the equation of a circle given its center and radius, and conversely, to identify the center and radius from a given equation. The learner's attempts are recorded.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on circle equations in e_08, the most logical next step is for the learner to apply this new knowledge through practice. This session will solidify their understanding of the standard circle equation and generate a `practice_record` for the tutor to review, continuing the established learn-practice-review cycle."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Coordinate geometry through equations and constraints",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's practice work on circle equations. The review checks for correctness in identifying the center and radius from an equation, and in constructing the equation from given parameters, preparing targeted feedback.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed practice on circle equations in e_09, the logical next step is to review their work. This review assesses their initial understanding, identifies any misunderstandings (e.g., sign errors for the center coordinates), and generates a `feedback_summary` to guide the next steps, continuing the established learn-practice-review cycle."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Coordinate geometry through equations and constraints",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "Based on the review, the tutor anticipates the next level of difficulty and introduces a more advanced topic related to circles. The lesson explains how to convert a circle's equation from the general form (x² + y² + Dx + Ey + F = 0) to the standard form by using the 'completing the square' method.",
+    "required_artifacts": [
+      "feedback_summary",
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in e_10 showed the learner understands the basic circle equation. To proactively address the next logical challenge and deepen their skills, this lesson introduces a necessary technique for handling more complex problems, extending the existing `teaching_notes` on circles."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Coordinate geometry through equations and constraints",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "The tutor assigns practice problems where the learner must convert the general form of a circle's equation (x² + y² + Dx + Ey + F = 0) to the standard form. The exercises require applying the 'completing the square' method taught in the previous lesson, and the learner's work is recorded.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on converting circle equations via 'completing the square' (e_11), the natural next step is to have the learner apply this new technique. This practice session solidifies their procedural skills and creates a `practice_record` for the tutor to assess their ability to handle more complex algebraic manipulations."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Coordinate geometry through equations and constraints",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's work on converting circle equations from general to standard form. The review focuses on identifying any errors in the 'completing the square' process, such as incorrect grouping of terms, calculation mistakes, or failing to balance the equation.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner practiced a complex algebraic method in e_12, a review is critical to assess their understanding and accuracy. This step analyzes the `practice_record` to pinpoint specific difficulties with 'completing the square' and produces a `feedback_summary` to guide correction and reinforcement."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Coordinate geometry through equations and constraints",
+    "subject": "Math",
+    "event_type": "plan_milestones",
+    "description": "Now that the learner has covered the foundational topics of lines and circles, the tutor initiates a mid-point check-in. They review the progress made against the original study plan, discuss the learner's confidence with the topics covered, and refine the plan for the next set of topics, such as regions defined by inequalities and systems of equations.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "Having completed two major topics (lines and circles), this is a natural point to pause and review the overall plan. This check-in ensures the tutoring remains aligned with the learner's pace and confidence, as informed by recent feedback, and allows for adjustments to future milestones, making the process more adaptive."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Coordinate geometry through equations and constraints",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "Following the revised study plan, the tutor introduces the next topic: representing regions with linear inequalities. The lesson explains how an inequality like y > mx + c defines a half-plane, covering how to draw the boundary line (solid vs. dashed) and how to use a test point to determine the shaded region.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After refining the `study_plan` in e_14, the next logical step is to begin the next milestone. This lesson introduces linear inequalities, which directly builds upon the learner's established understanding of linear equations and moves into the topic of representing regions, as outlined in the revised plan."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Coordinate geometry through equations and constraints",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "The tutor assigns practice problems based on the lesson on linear inequalities. The learner is asked to graph several inequalities, correctly indicating the boundary line (solid or dashed) and shading the appropriate half-plane region. The learner's attempts are collected for review.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on linear inequalities in e_15, the essential next step is for the learner to apply these new concepts through practice. This session reinforces the procedure for graphing inequalities and generates a `practice_record` that will allow the tutor to assess understanding in the next review session."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Coordinate geometry through equations and constraints",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's graphs of linear inequalities from the previous practice session. The review focuses on checking the correctness of the boundary line (solid vs. dashed), the choice of test point, and the accuracy of the shaded region.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on linear inequalities (e_16), a review is the logical next step to assess the learner's comprehension. This process identifies specific errors in graphing, such as boundary line type or shading, and generates a `feedback_summary` to provide targeted corrections."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Coordinate geometry through equations and constraints",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "Building on the previous lesson, the tutor introduces systems of inequalities. The lesson explains how to find the solution region that satisfies multiple constraints simultaneously, such as the intersection of a half-plane and the interior of a circle.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in e_17 confirmed the learner's understanding of single linear inequalities. Following the study plan, the next logical step is to increase complexity by introducing systems of inequalities, which integrates previously learned concepts (lines, circles, inequalities) and directly addresses the goal of representing regions defined by multiple constraints."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Coordinate geometry through equations and constraints",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "The tutor assigns practice problems requiring the learner to graph the solution region for systems of inequalities. The problems involve combinations of linear and circular constraints, testing the concepts from the previous lesson.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on combining constraints to define regions (e_18), the logical next step is to have the learner apply this integrative skill. This practice is essential for building proficiency and generates a `practice_record` needed for the tutor to assess the learner's ability to handle multi-step problems."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Coordinate geometry through equations and constraints",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's practice on systems of inequalities. The review assesses the learner's ability to combine multiple constraints, checking the accuracy of boundary lines, individual shaded regions, and the final intersection area.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner practiced combining multiple constraints in e_19, a thorough review is necessary. This step is crucial for assessing their ability to synthesize different concepts and for providing detailed feedback on a complex, multi-step problem, which is a core learning objective."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "Coordinate geometry through equations and constraints",
+    "subject": "Math",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback from the systems of inequalities review, the tutor revises the teaching notes. The update adds a detailed worked example of finding the solution region for a mixed system (a linear inequality and a circular inequality), highlighting common pitfalls like shading the wrong intersection.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in e_20 likely identified specific difficulties with the complex task of solving systems of inequalities. Updating the teaching notes to include a more complex example and address common errors consolidates the tutor's feedback into a reusable resource, reinforcing the learning and improving the materials for future use."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "tutoring",
+    "topic": "Coordinate geometry through equations and constraints",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "The tutor assigns a targeted follow-up practice set on systems of inequalities, using problems similar to those the learner found difficult. The learner uses the newly revised teaching notes and the previous feedback to attempt these problems, focusing on correctly identifying the final solution region.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials in e_21 to address specific errors, a targeted practice session is the logical next step. This allows the learner to apply the new, clearer examples and reinforces the feedback, providing a way to assess if the misunderstanding about systems of inequalities has been resolved."
+  },
+  {
+    "event_id": "e_23",
+    "time_index": 23,
+    "domain": "tutoring",
+    "topic": "Coordinate geometry through equations and constraints",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's second attempt at solving systems of inequalities. The review is to confirm that the learner has now grasped how to correctly identify the intersection of multiple constraint regions, especially for mixed systems involving lines and circles.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice in e_22, a review is necessary to validate whether the learner has overcome their difficulties with systems of inequalities. This step assesses the effectiveness of the recent feedback and materials revision, and will determine if the learning objectives for this final topic have been met."
+  },
+  {
+    "event_id": "e_24",
+    "time_index": 24,
+    "domain": "tutoring",
+    "topic": "Coordinate geometry through equations and constraints",
+    "subject": "Math",
+    "event_type": "end",
+    "description": "The final review in the previous session confirmed the learner's solid understanding of all topics, including the most complex systems of inequalities. The tutor and learner agree that the initial learning objectives have been successfully met, and they conclude the tutoring sessions.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has demonstrated proficiency across all planned topics, from basic line and circle equations to complex systems of inequalities, as confirmed by the final review (e_23). With the learning objectives from e_01 fully achieved, the tutoring process has reached its natural conclusion."
+  }
+]

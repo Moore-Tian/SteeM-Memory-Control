@@ -1,0 +1,396 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Intelligent assistant usability testing",
+    "subject": "CS-HCI",
+    "event_type": "proposal",
+    "description": "The project is initiated with a high-level proposal to investigate the usability of conversational intelligent assistants. The initial focus is on comparing task-based vs. open-ended interaction models and defining key usability metrics.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "research_plan",
+      "research_goals"
+    ],
+    "reason": "This is the first event of the project, establishing the initial research direction, goals, and a high-level plan. No prior artifacts are required as this marks the project's inception."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Intelligent assistant usability testing",
+    "subject": "CS-HCI",
+    "event_type": "scheme_design",
+    "description": "Based on the initial goals, a detailed experimental scheme is designed. This includes defining specific user tasks for both task-based and open-ended scenarios, selecting two commercial intelligent assistants for comparison, and choosing a set of quantitative (e.g., System Usability Scale - SUS, task completion time) and qualitative (e.g., post-session interviews) metrics.",
+    "required_artifacts": [
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the high-level proposal, the next logical step is to create a concrete experimental design. This process operationalizes the research goals into a testable methodology, resulting in a detailed method scheme that will guide the subsequent pilot studies."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Intelligent assistant usability testing",
+    "subject": "CS-HCI",
+    "event_type": "pilot_experiments",
+    "description": "A small-scale pilot study is conducted with a handful of participants (n=3) to test the experimental procedure. The primary goal is to validate the clarity of the task instructions, check the difficulty of the tasks, and ensure the data collection tools (e.g., screen recording, SUS questionnaire) are working correctly.",
+    "required_artifacts": [
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing the experimental protocol in the previous step (e_02), conducting a pilot study is the logical next action. This allows for a practical test of the 'method_scheme' to identify and rectify any unforeseen issues before committing the resources required for the main experiments. The findings from this pilot will inform refinements to the methodology."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Intelligent assistant usability testing",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "The pilot study results are formally analyzed. The analysis confirms that the data collection tools are functional but reveals that the open-ended tasks are too ambiguous, leading to high variability and participant confusion. A summary of findings highlights the need to refine the task descriptions and potentially add more qualitative measures.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After conducting the pilot experiments (e_03), a formal analysis of the collected 'experiment_results' is the necessary next step. This analysis synthesizes the findings and provides a clear basis for making informed decisions on how to improve the 'method_scheme' before committing to the larger main experiments."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Intelligent assistant usability testing",
+    "subject": "CS-HCI",
+    "event_type": "scheme_design",
+    "description": "Based on the findings from the pilot study analysis, the experimental protocol is revised. The open-ended tasks are rewritten to provide clearer scenarios and constraints, aiming to reduce ambiguity. Additionally, a think-aloud protocol is formally added to the methodology to capture richer qualitative data on user confusion and decision-making.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis in the previous event (e_04) identified critical flaws in the experimental tasks. The logical next step is to go back and refine the 'method_scheme' to correct these issues. This revision ensures that the subsequent main experiments will be based on a more robust and validated protocol, directly addressing the shortcomings discovered during the pilot phase."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Intelligent assistant usability testing",
+    "subject": "CS-HCI",
+    "event_type": "main_experiments",
+    "description": "With the revised experimental protocol from the pilot study feedback, the main experiment is launched. A larger cohort of participants (n=24) is recruited to interact with the two selected intelligent assistants. Data collection proceeds using the full set of instruments, including screen recordings, task completion metrics, SUS questionnaires, and the newly added think-aloud protocol.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After refining the 'method_scheme' in e_05 based on pilot study findings, the logical next step is to execute the full-scale main experiment. This phase uses the improved protocol to collect the primary data required to address the project's 'research_goals'."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Intelligent assistant usability testing",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "The data from the main experiment (n=24) is systematically analyzed. Quantitative data, such as SUS scores and task completion times, are subjected to statistical tests, while qualitative data from the think-aloud protocols and interviews are coded to identify recurring themes and usability issues. The goal is to compare the performance and user perception of the two assistants across the different interaction models.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the completion of the main data collection in e_06, the essential next step is to analyze the comprehensive 'experiment_results'. This analysis will synthesize the collected data to derive findings that directly address the project's 'research_goals' and evaluate the effectiveness of the 'method_scheme'."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Intelligent assistant usability testing",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "With the main analysis complete, the team begins drafting the research paper. The initial focus is on writing the 'Methods' section, detailing the revised experimental protocol and participant demographics, and the 'Results' section, summarizing the key quantitative and qualitative findings.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the main analysis (e_07) complete, the project has produced its core findings. The next logical step is to begin documenting this work for publication. Drafting the methods and results sections translates the finalized 'method_scheme' and 'experiment_results' into a paper format, marking the beginning of the dissemination phase."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Intelligent assistant usability testing",
+    "subject": "CS-HCI",
+    "event_type": "proposal",
+    "description": "While reviewing the initial drafts of the results, the team realizes the most significant findings relate not to the task-based vs. open-ended comparison, but to how users recover from conversational errors. The research goals are consequently revised to place a stronger emphasis on analyzing error rates and repair strategies as primary usability indicators.",
+    "required_artifacts": [
+      "research_goals",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "The process of writing (e_08) forces a re-evaluation of the research narrative. The drafted 'paper_paragraph's, when read against the initial 'research_goals', revealed that the core story in the 'experiment_results' was about error recovery. This pivot is a natural part of research, where findings guide the final framing of the project's contribution, necessitating an update to the 'research_plan' and goals."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Intelligent assistant usability testing",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "Guided by the new research goals, the team performs a secondary analysis of the main experiment data. This involves a detailed re-coding of the qualitative data to specifically identify, categorize, and quantify conversational errors and user repair strategies. The goal is to produce new metrics and thematic findings centered on conversational resilience.",
+    "required_artifacts": [
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After the project's focus pivoted to error recovery (e_09), the original analysis is no longer sufficient. This targeted re-analysis of the existing 'experiment_results' is necessary to generate the specific findings and evidence required to support the new 'research_goals' and provide substance for the revised paper."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Intelligent assistant usability testing",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "The team revises the paper draft to reflect the new focus on conversational error recovery. The Results section is rewritten to present the findings from the secondary analysis, and the Introduction and Discussion sections are updated to align with the revised research goals and interpret the new findings.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After the targeted secondary analysis in e_10 produced new findings, the next logical step is to integrate them into the manuscript. This event involves updating the existing 'paper_paragraph' drafts to reflect the new 'experiment_results' and ensure the paper's narrative is consistent with the revised 'research_goals' from e_09."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Intelligent assistant usability testing",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "While refining the discussion section of the paper, the team realizes the need to explicitly link the new error recovery findings to the original usability metrics. A new round of statistical analysis is performed to investigate the correlation between specific error types and the collected SUS scores and task completion times.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After rewriting the paper to focus on error recovery (e_11), it becomes crucial to substantiate the importance of this new focus. This analysis directly addresses that need by connecting the qualitative error categories to the quantitative usability outcomes from the 'experiment_results', thereby strengthening the paper's central argument before finalization."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Intelligent assistant usability testing",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "The new correlational findings are integrated into the paper. The Results section is updated with the statistical links between error types and usability metrics, and the Discussion section is substantially revised to interpret these connections and strengthen the paper's overall argument about the importance of error recovery.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After conducting a new correlational analysis in e_12 to link error types with usability metrics, the logical next step is to incorporate these compelling 'experiment_results' into the manuscript. This finalizes the evidence supporting the revised 'research_goals' and strengthens the narrative in the 'paper_paragraph' before submission."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Intelligent assistant usability testing",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "The team conducts a final review of the complete manuscript. This involves proofreading the entire paper, checking for consistency, formatting it according to a target journal's guidelines, and writing the final abstract and conclusion to create a submission-ready draft.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After the last major content revision in e_13, the paper's narrative and results are complete. The logical next step is to perform a final, comprehensive polish of the entire document, turning the collection of 'paper_paragraph' drafts into a single, coherent, submission-ready manuscript."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Intelligent assistant usability testing",
+    "subject": "CS-HCI",
+    "event_type": "proposal",
+    "description": "After an internal review of the submission-ready draft, the team decides to strengthen the paper before submission. They identify a potential weakness: the study only covers two specific commercial assistants. The project's goals are expanded to include a follow-up experiment on a third, structurally different assistant to test the generalizability of the error-recovery findings.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_plan",
+      "research_goals"
+    ],
+    "reason": "After producing a complete draft (e_14), it's common for a research team to critically re-evaluate their work before submission. This event represents a strategic decision to proactively address a potential limitation, which requires revising the 'research_plan' and 'research_goals' to incorporate a new validation study, thereby strengthening the future publication."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Intelligent assistant usability testing",
+    "subject": "CS-HCI",
+    "event_type": "scheme_design",
+    "description": "To prepare for the newly planned follow-up study, the team adapts the existing experimental protocol for the third, structurally different assistant. This involves adjusting some tasks to fit the new assistant's capabilities and refining the data collection setup to ensure comparability with the previous experiments while capturing any unique interaction modalities.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "After expanding the project scope in e_15 to test a third assistant, the immediate practical step is to design the protocol for this new experiment. This involves updating the 'method_scheme' based on the revised 'research_goals' to ensure the new study is both comparable to the old one and appropriate for the new system being tested."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Intelligent assistant usability testing",
+    "subject": "CS-HCI",
+    "event_type": "pilot_experiments",
+    "description": "A small pilot study (n=2) is run with the third assistant using the newly adapted protocol. The goal is to verify that the adjusted tasks are feasible on this new platform and that the data collection tools capture the interactions correctly before committing to a larger follow-up study.",
+    "required_artifacts": [
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After adapting the 'method_scheme' for the third assistant in e_16, a pilot study is a crucial risk-mitigation step. It validates the new protocol on a small scale before launching a larger, more resource-intensive follow-up experiment, ensuring the new study will be effective."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "Intelligent assistant usability testing",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "The team analyzes the data from the small pilot study on the third assistant. The analysis confirms the adapted tasks are appropriate and the data collection is working, but suggests minor tweaks to the wording of one think-aloud prompt to better elicit feedback on the new assistant's unique features.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the pilot study in e_17, a formal analysis of its 'experiment_results' is required. This step serves to validate the adapted 'method_scheme' and identify any final, minor adjustments needed before committing resources to the full-scale follow-up experiment."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "research",
+    "topic": "Intelligent assistant usability testing",
+    "subject": "CS-HCI",
+    "event_type": "scheme_design",
+    "description": "Based on the analysis of the pilot for the third assistant, the team makes a final, minor adjustment to the experimental protocol. The wording of a specific think-aloud prompt is refined to better elicit comments on the new assistant's unique error-handling capabilities.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis in e_18 identified a small but important refinement for the follow-up study protocol. This event implements that refinement in the 'method_scheme', ensuring the protocol is fully optimized before running the resource-intensive main follow-up experiment."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "research",
+    "topic": "Intelligent assistant usability testing",
+    "subject": "CS-HCI",
+    "event_type": "main_experiments",
+    "description": "The main follow-up experiment is conducted with the third intelligent assistant. A new cohort of participants (n=12) is recruited to perform the tasks using the finalized protocol. The goal is to collect data to validate and test the generalizability of the error-recovery findings from the first study.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After finalizing the protocol for the follow-up study in e_19, the logical next step is to execute the main experiment. This action directly addresses the revised 'research_goals' from e_15 by collecting the necessary data to assess the generalizability of the initial findings."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "research",
+    "topic": "Intelligent assistant usability testing",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "The team analyzes the data from the follow-up experiment on the third assistant. The analysis focuses on applying the error-recovery framework to this new data and comparing the results (error types, frequencies, repair strategies) with those from the initial two assistants to assess generalizability.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After collecting data from the follow-up experiment in e_20, the essential next step is to analyze these new 'experiment_results'. This analysis will determine if the findings generalize as per the revised 'research_goals' and will provide the final piece of evidence needed for the paper."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "research",
+    "topic": "Intelligent assistant usability testing",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "The team integrates the findings from the follow-up study into the manuscript. The Methods section is updated to describe the second experiment, the Results section is expanded with the comparative analysis of all three assistants, and the Discussion is rewritten to address the generalizability of the error-recovery framework.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the analysis of the follow-up study complete (e_21), the critical next step is to incorporate these new 'experiment_results' into the paper. This writing phase consolidates all research findings into a single, cohesive narrative that aligns with the updated 'research_goals', significantly strengthening the manuscript for eventual submission."
+  },
+  {
+    "event_id": "e_23",
+    "time_index": 23,
+    "domain": "research",
+    "topic": "Intelligent assistant usability testing",
+    "subject": "CS-HCI",
+    "event_type": "end",
+    "description": "The research project concludes with a finalized manuscript ready for submission. The paper successfully presents a novel framework for analyzing conversational error recovery, validated across three different intelligent assistants, and is submitted to a major HCI conference.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached a natural conclusion. It has progressed from initial proposal to a mature state with a validated methodology (method_scheme), robust findings from multiple experiments (experiment_results), a clear contribution (research_goals), and a comprehensively revised manuscript (paper_paragraph). All major research objectives have been met."
+  }
+]

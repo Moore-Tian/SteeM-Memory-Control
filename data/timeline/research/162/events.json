@@ -1,0 +1,295 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Robot manipulation evaluation",
+    "subject": "Engineering",
+    "event_type": "proposal",
+    "description": "Initial brainstorming session to define the core research questions and scope for a new project on evaluating robot manipulation skills. The focus is on creating a standardized benchmark that measures generalization and robustness. A high-level plan is drafted to guide the initial phase of the research.",
+    "required_artifacts": [
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the first step of the project, establishing a foundation for future work. It takes the initial, high-level idea about creating a new manipulation benchmark (represented as initial 'research_goals') and formalizes it into concrete goals and a structured research plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Robot manipulation evaluation",
+    "subject": "Engineering",
+    "event_type": "scheme_design",
+    "description": "Based on the initial research plan, the team designs the first version of the manipulation benchmark. This includes defining a set of core tasks (e.g., pick, place, insert), selecting a diverse object set, and specifying the hardware setup and evaluation metrics (e.g., success rate, completion time).",
+    "required_artifacts": [
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the initial proposal (e_01) that produced the research plan and goals, the next logical step is to translate these high-level ideas into a concrete experimental design. This event creates the initial 'method_scheme', which is essential before any pilot experiments can be conducted."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Robot manipulation evaluation",
+    "subject": "Engineering",
+    "event_type": "pilot_experiments",
+    "description": "The team conducts a small-scale pilot study to test the feasibility of the designed benchmark. A single robot arm and a baseline policy are used to attempt the defined tasks with a subset of the object set. The goal is to identify any major flaws in the task definitions, hardware setup, or data logging procedures.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With a concrete `method_scheme` designed in e_02, it is crucial to validate its feasibility before investing in large-scale experiments. This pilot study serves as a sanity check, providing initial `experiment_results` that will inform whether the current scheme is viable or needs revision."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Robot manipulation evaluation",
+    "subject": "Engineering",
+    "event_type": "analysis",
+    "description": "The team analyzes the results from the pilot study. The analysis reveals that the baseline policy succeeded on the tasks much more easily than expected, suggesting the tasks lack sufficient difficulty. Additionally, the data indicates that the chosen object set is not diverse enough to meaningfully test for generalization.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After conducting a pilot study (e_03), the essential next step is to analyze the collected 'experiment_results'. This analysis is crucial for identifying flaws in the current 'method_scheme' before investing resources in full-scale experiments. The findings from this analysis will guide the necessary revisions to the benchmark design."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Robot manipulation evaluation",
+    "subject": "Engineering",
+    "event_type": "scheme_design",
+    "description": "Based on the pilot analysis, the team revises the benchmark design to address its shortcomings. Task difficulty is increased by adding stricter constraints and environmental variations, and the object set is significantly expanded with more diverse geometries and materials to properly test generalization.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis in e_04 concluded that the initial 'method_scheme' was flawed (tasks too easy, objects not diverse). The logical next step is to return to the design phase to revise the scheme based on the insights from the pilot 'experiment_results'. This iterative refinement is critical for developing a meaningful and challenging benchmark before committing to large-scale experiments."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Robot manipulation evaluation",
+    "subject": "Engineering",
+    "event_type": "pilot_experiments",
+    "description": "The team conducts a second pilot study using the revised and more challenging benchmark design. This experiment uses the same baseline policy from the first pilot but tests it against the new tasks and the expanded object set. The goal is to verify that the revisions have successfully increased the benchmark's difficulty and its ability to test for generalization.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the 'method_scheme' in e_05, it is crucial to validate that the changes have solved the problems identified in the first pilot study. Running another pilot experiment is a prudent step before committing to resource-intensive main experiments, ensuring the revised benchmark is sound and provides a meaningful evaluation."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Robot manipulation evaluation",
+    "subject": "Engineering",
+    "event_type": "analysis",
+    "description": "The team analyzes the results of the second pilot study. The analysis confirms that the revised benchmark is appropriately difficult for the baseline policy, with success rates dropping significantly. Furthermore, the performance varies widely across the expanded object set, indicating the benchmark is now suitable for testing generalization.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After conducting a second pilot study (e_06) with the revised method, a thorough analysis of the new 'experiment_results' is the essential next step. This analysis is required to validate that the design changes from e_05 were successful and that the benchmark is finally ready for large-scale main experiments."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Robot manipulation evaluation",
+    "subject": "Engineering",
+    "event_type": "writing",
+    "description": "With the benchmark design finalized and validated, the team begins drafting the 'Methods' section of the research paper. This initial draft describes the task definitions, object set, hardware configuration, and the evaluation metrics defined in the final method scheme.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The analysis in e_07 confirmed the validity of the current 'method_scheme'. Since the methodology is now stable, it is an opportune time to start documenting it for the final paper. This allows writing to proceed in parallel with the upcoming main experiments."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Robot manipulation evaluation",
+    "subject": "Engineering",
+    "event_type": "main_experiments",
+    "description": "The team launches the full-scale main experiments using the validated benchmark. Multiple state-of-the-art robot manipulation policies are evaluated, including both learning-based and classical approaches, to generate a comprehensive dataset for comparison. A large number of trials are run for each policy across the entire object set to ensure statistical significance.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With the benchmark methodology finalized and validated in the second pilot study (e_07), the project is ready to move to the main data collection phase. These experiments are essential for gathering the core evidence needed to address the research goals and will produce the primary dataset for the final analysis and paper."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Robot manipulation evaluation",
+    "subject": "Engineering",
+    "event_type": "analysis",
+    "description": "The team performs a comprehensive analysis of the data from the main experiments. This involves statistical comparisons of all evaluated policies, generating performance plots, and identifying key trends, such as which policy types excel at which tasks or show better generalization.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the large-scale data collection in the main experiments (e_09), a thorough analysis is the necessary next step. This process will convert the raw 'experiment_results' into structured findings and conclusions, directly addressing the project's 'research_goals' and providing the substance for the results section of the paper."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Robot manipulation evaluation",
+    "subject": "Engineering",
+    "event_type": "writing",
+    "description": "The team drafts the 'Results' section of the paper, summarizing the key findings from the main experiment analysis. This involves creating tables and figures to visualize the comparative performance of the evaluated policies and highlighting the main trends regarding generalization and task success.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the main analysis completed in e_10, the next critical step is to document the findings. This writing phase translates the analyzed 'experiment_results' into a narrative for the paper, ensuring the results directly address the 'research_goals' and logically follow the 'Methods' section already drafted (e_08)."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Robot manipulation evaluation",
+    "subject": "Engineering",
+    "event_type": "analysis",
+    "description": "While writing the results, the team identifies an unexpected pattern: learning-based policies consistently fail on tasks involving transparent objects. This event initiates a deeper, follow-up analysis focused on these specific failure cases to understand the root cause, such as limitations in the policies' visual perception modules.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The process of writing the results section (e_11) often reveals gaps or unexplained phenomena in the initial analysis (e_10). This follow-up analysis is a natural and critical step to deepen the understanding of the 'experiment_results', ensuring the paper's narrative is robust and the conclusions are well-supported before finalizing the discussion and conclusion."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Robot manipulation evaluation",
+    "subject": "Engineering",
+    "event_type": "writing",
+    "description": "Building on the specific analysis of failure cases (e_12), the team drafts the 'Discussion' section of the paper. This section interprets the unexpected findings regarding transparent objects, hypothesizes that the visual encoders in learning-based policies are the primary point of failure, and discusses the implications for future research in robot perception and policy learning.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The follow-up analysis in e_12 provided a crucial insight into the limitations of current methods. The logical next step is to synthesize and interpret these findings in the 'Discussion' section of the paper, connecting the specific 'experiment_results' back to the broader 'research_goals' and suggesting avenues for future work."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Robot manipulation evaluation",
+    "subject": "Engineering",
+    "event_type": "proposal",
+    "description": "The team convenes to discuss the project's main contributions in light of the findings about transparent objects. They decide to reframe the paper's narrative to emphasize the discovery of this common failure mode, rather than solely focusing on the benchmark itself. The research goals are updated to explicitly include 'identifying and analyzing limitations of current policies' as a primary contribution.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "The significant, unexpected findings from the follow-up analysis (e_12) and the subsequent discussion draft (e_13) prompted a re-evaluation of the project's core message. Revising the 'research_goals' and 'research_plan' at this stage is a crucial step to align the paper's narrative with its strongest contribution, ensuring the final paper has maximum impact before proceeding to write the introduction and conclusion."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Robot manipulation evaluation",
+    "subject": "Engineering",
+    "event_type": "writing",
+    "description": "With the reframed narrative and updated goals, the team drafts the Introduction and Conclusion sections of the paper. The Introduction is written to motivate the problem of evaluating modern policies and highlights the importance of identifying common failure modes. The Conclusion summarizes the key findings, emphasizing the discovered weakness of learning-based policies with transparent objects.",
+    "required_artifacts": [
+      "research_goals",
+      "paper_paragraph",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After refining the project's core message and 'research_goals' in e_14, the next logical step is to write the framing sections of the paper (Introduction and Conclusion). This ensures the entire manuscript is consistent with the new, stronger narrative before final revisions and submission."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Robot manipulation evaluation",
+    "subject": "Engineering",
+    "event_type": "writing",
+    "description": "The team assembles the drafted Introduction, Methods, Results, Discussion, and Conclusion sections into a single, complete manuscript. A thorough internal review is conducted to revise the entire paper for clarity, flow, and narrative consistency, ensuring all claims are well-supported by the data and align with the updated research goals.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After drafting all individual sections of the paper (e_08, e_11, e_13, e_15) and refining the core message (e_14), the next essential step is to integrate these parts into a cohesive manuscript. This comprehensive revision ensures the paper is polished and internally consistent before being considered for submission."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Robot manipulation evaluation",
+    "subject": "Engineering",
+    "event_type": "end",
+    "description": "The team submits the complete manuscript to a top-tier robotics conference. The submission package includes the paper, supplementary materials with detailed results, and videos of the experiments. This marks the culmination of the research effort for this project cycle.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached a natural conclusion. The research has progressed from initial proposal through multiple cycles of design, experimentation, and analysis, resulting in significant findings. A complete paper has been written, internally reviewed, and revised to present a cohesive narrative, making submission the final step of this research cycle."
+  }
+]

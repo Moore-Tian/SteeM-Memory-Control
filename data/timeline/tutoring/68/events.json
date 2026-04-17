@@ -1,0 +1,356 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Evaluation metrics matched to real objectives",
+    "subject": "DataScience",
+    "event_type": "objective_clarification",
+    "description": "Initial meeting with the learner, a product manager, to understand their goals. The learner wants to be able to choose appropriate evaluation metrics for their team's ML models and justify those choices to stakeholders.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "As this is the first session, the primary goal is to establish the learner's objectives. This initial clarification is essential for creating a relevant and effective study plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Evaluation metrics matched to real objectives",
+    "subject": "DataScience",
+    "event_type": "plan_milestones",
+    "description": "Based on the learner's goals, the tutor outlines a multi-stage study plan. The plan starts with foundational concepts (e.g., business context vs. model performance), moves to specific metric families (classification, regression), and culminates in case-study-based application.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learning objectives defined in the previous step, the logical next action is to create a structured study plan. This plan will serve as a roadmap for future lessons and practice, ensuring the tutoring is aligned with the learner's goals."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Evaluation metrics matched to real objectives",
+    "subject": "DataScience",
+    "event_type": "lesson",
+    "description": "The tutor delivers the first lesson as per the study plan, focusing on the foundational concept of translating business objectives into measurable technical outcomes. The session covers the distinction between business success (e.g., user retention, revenue) and model performance metrics (e.g., accuracy).",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a study plan in place, the next logical step is to begin instruction. This lesson addresses the first milestone in the plan and generates the first set of teaching notes, which can be refined and reused later."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Evaluation metrics matched to real objectives",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "To reinforce the previous lesson, the tutor assigns a practice exercise. The learner is given a business scenario about a subscription service wanting to reduce customer churn and is asked to articulate the business objective and then propose a set of technical metrics that could be used to evaluate a predictive model.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following a conceptual lesson, it is crucial to have the learner apply the knowledge to a concrete problem. This practice session directly tests the concepts from the previous lesson (e_03) and creates a record of the learner's attempt, which is necessary for the upcoming review and feedback cycle."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Evaluation metrics matched to real objectives",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's submission for the churn scenario. The learner correctly identified the business objective, but proposed only 'accuracy' as a metric, overlooking the issue of class imbalance. The tutor prepares feedback explaining why accuracy is misleading in this context and introduces the concepts of precision and recall.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed a practice task (e_04), the logical next step is to review their work. This allows the tutor to identify specific misconceptions—in this case, over-reliance on accuracy—and generate targeted, actionable feedback to correct them before moving on to new concepts."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Evaluation metrics matched to real objectives",
+    "subject": "DataScience",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback from the last review, the tutor realizes the initial teaching notes were missing a crucial point. The tutor revises the notes to explicitly cover the pitfalls of using accuracy with imbalanced datasets and adds clear definitions and examples for precision and recall.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in e_05 revealed a critical gap in the learner's understanding that the original teaching notes failed to prevent. Revising the materials to incorporate this new information (the importance of precision/recall in imbalanced cases) is essential before re-teaching or moving on, ensuring the core concepts are more robust."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Evaluation metrics matched to real objectives",
+    "subject": "DataScience",
+    "event_type": "lesson",
+    "description": "Following up on the previous review, the tutor delivers a focused lesson on precision and recall. Using the revised teaching notes, the tutor explains the concepts with the churn scenario as a running example and discusses the trade-off between the two metrics.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in e_05 revealed a key misconception, and the materials were revised in e_06 to address it. A dedicated lesson is the logical next step to formally teach the concepts of precision and recall, ensuring the learner understands the feedback before attempting to practice again."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Evaluation metrics matched to real objectives",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "To solidify understanding of precision and recall, the tutor assigns a new practice task. The learner is asked to revisit the original churn prediction scenario, critique their initial choice of 'accuracy', and now propose whether to prioritize precision or recall, providing a justification based on business impact.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a targeted lesson (e_07) on precision and recall to correct a misconception identified during the first review (e_05), it is essential to have the learner re-apply the concept. This practice serves to verify that the remedial instruction was successful and the learner can now correctly choose metrics based on context before moving on."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Evaluation metrics matched to real objectives",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's second attempt on the churn problem. The learner successfully critiqued their earlier use of accuracy and correctly argued for prioritizing recall to minimize missed churners, accepting the trade-off of potentially offering unnecessary discounts. The tutor prepares feedback affirming the correct reasoning and setting the stage for the next topic.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the targeted practice in e_08, a review is essential to validate the learner's understanding. This step confirms that the feedback from e_05 and the remedial lesson in e_07 were effective, allowing the tutor to close this learning loop and confidently proceed with the study plan."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Evaluation metrics matched to real objectives",
+    "subject": "DataScience",
+    "event_type": "lesson",
+    "description": "With the learner's grasp of the precision-recall trade-off confirmed, the tutor proceeds to the next topic as outlined in the study plan. This lesson introduces metrics that summarize the trade-off, specifically the F1-score and the concept of the AUC-ROC curve.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The successful review in e_09 confirmed the learner's mastery of the previous topic. Following the study plan, it is now appropriate to introduce more advanced classification metrics that build directly upon the concepts of precision and recall, thereby progressing to the next learning milestone."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Evaluation metrics matched to real objectives",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "To apply the concepts from the previous lesson, the tutor assigns a practice problem. The learner is given two churn models with different precision and recall scores and is asked to calculate their F1-scores and explain which model might be better. They are also asked to conceptually describe how the AUC-ROC would help in comparing these models.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on F1-score and AUC-ROC (e_10), it is crucial for the learner to apply these new metrics in a practical context. This practice task directly assesses their understanding of how to use summary metrics for model comparison, solidifies the learning, and generates a record of their work for the upcoming review cycle."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Evaluation metrics matched to real objectives",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's practice submission. The learner correctly calculated the F1-scores but gave a vague explanation of AUC-ROC. The tutor prepares feedback that confirms the F1-score logic and provides a more intuitive analogy for what AUC-ROC represents (i.e., the probability that the model ranks a random positive instance higher than a random negative one).",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session in e_11, a review is the logical next step to assess understanding and provide targeted feedback. This review identifies a specific area of weakness (conceptual grasp of AUC-ROC) that needs reinforcement before moving to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Evaluation metrics matched to real objectives",
+    "subject": "DataScience",
+    "event_type": "materials_revision",
+    "description": "Based on the weakness identified in the last review, the tutor revises the teaching notes for AUC-ROC. The tutor adds the more intuitive analogy from the feedback summary, clarifying that AUC represents the model's ability to correctly rank positive and negative instances, making the concept less abstract.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in e_12 revealed that the existing teaching notes on AUC-ROC were not effective enough. Revising the materials to include the clearer analogy from the feedback is a crucial step to improve the resource before asking the learner to practice with the concept again."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Evaluation metrics matched to real objectives",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "To confirm the learner's understanding of AUC-ROC, the tutor provides a short practice task. The learner is asked to explain in their own words when a high AUC is more important than a high F1-score, using the new analogy from the revised notes as a guide.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the review in e_12 identified a weakness in understanding AUC-ROC and the teaching notes were revised in e_13, a targeted practice session is needed. This will verify that the improved explanation was effective before moving on to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Evaluation metrics matched to real objectives",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's explanation from the previous practice task. The learner correctly explains that AUC is valuable when the ranking of predictions is more important than a specific probability threshold, successfully using the revised analogy. The tutor's feedback confirms this understanding and signals readiness for the next topic.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice in e_14, a review is essential to confirm that the learner has overcome their previous difficulty with AUC-ROC. This step validates the effectiveness of the revised teaching materials from e_13 and ensures the learner is ready to progress to the next stage of the study plan."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Evaluation metrics matched to real objectives",
+    "subject": "DataScience",
+    "event_type": "lesson",
+    "description": "Now that classification metrics are well understood, the tutor moves to the next module in the study plan: regression metrics. The lesson introduces Mean Absolute Error (MAE), Mean Squared Error (MSE), and R-squared, explaining how each penalizes errors differently and how they relate to business goals like forecast accuracy.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The successful review in e_15 confirmed the learner's mastery of classification metrics. According to the original study plan (e_02), the next topic is regression metrics. This lesson initiates that module, progressing the learner's knowledge to a new category of models and objectives."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Evaluation metrics matched to real objectives",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "To apply the concepts from the lesson on regression, the tutor assigns a practice exercise. The learner is given a scenario about predicting house prices for a real estate company and asked to decide whether MAE or MSE would be a more appropriate primary metric, justifying their choice based on the business's tolerance for large prediction errors.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson on regression metrics (e_16), the logical next step is to assign a practice task. This allows the learner to apply their new knowledge in a concrete scenario, solidifying their understanding of the trade-offs between different regression metrics and creating an artifact for the next review session."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Evaluation metrics matched to real objectives",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's submission on the house price prediction task. The learner correctly argued that MSE would be more appropriate than MAE because the business wants to heavily penalize large, outlier errors. The tutor's feedback affirms this correct reasoning and signals that the learner is ready for the final case study.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on regression metrics (e_17), a review is the natural next step to check for understanding. This review confirms the learner can correctly apply the concepts from the lesson, ensuring they are ready to move on to the final, more comprehensive part of the study plan."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Evaluation metrics matched to real objectives",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "To synthesize all learned concepts, the tutor presents a final capstone case study as outlined in the study plan. The learner is given a business goal to 'improve customer value' and must decide whether to frame it as a regression problem (predicting lifetime value) or a classification problem (identifying high-value customers), then select and justify the corresponding evaluation metrics.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "The learner has successfully mastered individual topics on classification and regression metrics. As per the study plan, a final capstone practice is necessary to assess their ability to synthesize these concepts and apply them to a complex, ambiguous business problem, which directly aligns with their original learning objective."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Evaluation metrics matched to real objectives",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's submission for the capstone case study. The learner successfully framed the ambiguous problem, chose to approach it as a classification task, and correctly justified prioritizing recall to identify as many high-value customers as possible. The tutor prepares final feedback confirming the learner's comprehensive understanding and ability to meet their original goals.",
+    "required_artifacts": [
+      "practice_record",
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the capstone practice session (e_19), a final review is essential to provide a comprehensive assessment of the learner's ability to synthesize all topics. This step validates whether the primary learning objectives have been met and provides final, summative feedback, setting the stage for concluding the tutoring engagement."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "Evaluation metrics matched to real objectives",
+    "subject": "DataScience",
+    "event_type": "end",
+    "description": "Final wrap-up session. The tutor and learner review the progress made against the original learning objectives. Both agree that the learner has successfully demonstrated the ability to choose and justify evaluation metrics for different business scenarios, concluding the tutoring engagement.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The successful completion and review of the capstone project (e_19, e_20) confirmed that the learner has met their core objectives. The learning cycle is complete, and the learner has demonstrated the target skills, making this a natural point to end the tutoring timeline."
+  }
+]

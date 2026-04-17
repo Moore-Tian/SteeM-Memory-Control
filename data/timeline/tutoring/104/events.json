@@ -1,0 +1,344 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Understanding common health information and claims",
+    "subject": "Health",
+    "event_type": "objective_clarification",
+    "description": "Initial meeting with the learner to discuss their goals. The learner wants to get better at critically evaluating health claims they see online and understanding nutritional information on food packaging.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives",
+      "study_plan"
+    ],
+    "reason": "This is the first session, so the primary goal is to understand the learner's objectives and create a preliminary study plan. This establishes the foundation for all future tutoring activities."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Understanding common health information and claims",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "First lesson focusing on a core skill: how to read and interpret a standard Nutrition Facts label. The session covers key components like serving size, calories, macronutrients (fat, carbs, protein), and percent Daily Value (%DV).",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the learning objectives and study plan established, the next logical step is to begin instruction on the first topic. This lesson addresses a foundational part of the learner's goal (understanding nutritional information) and generates teaching notes for future reference and practice."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Understanding common health information and claims",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "The learner is given several examples of Nutrition Facts labels from common food products. They are asked to identify specific information for each, such as serving size, calories per serving, and grams of added sugar, to apply the concepts from the previous lesson.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on nutrition labels, this practice session allows the learner to apply their new knowledge in a hands-on way. This step is essential for reinforcing learning and for generating a record of the learner's performance, which can be assessed in the next session."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Understanding common health information and claims",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's completed practice on reading Nutrition Facts labels. The review focuses on identifying common errors, such as confusing serving size with total package contents or misinterpreting the %DV.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session (e_03), a review is necessary to assess the learner's understanding and provide targeted feedback. This step uses the practice_record to identify specific areas of difficulty, producing a feedback_summary that will guide the next lesson or practice round."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Understanding common health information and claims",
+    "subject": "Health",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback from the previous review, the tutor revises the teaching notes on Nutrition Facts labels. The notes are updated to include a new section on 'Common Pitfalls,' with specific examples for calculating total package nutrients and clarifying the meaning of %DV.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review (e_04) highlighted specific areas of confusion for the learner. Revising the teaching materials based on this feedback is a crucial step to create clearer, more effective resources before moving on to further practice or the next topic."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Understanding common health information and claims",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "A follow-up practice session where the learner uses the revised notes to analyze a new set of Nutrition Facts labels. The tasks specifically target the previously identified areas of confusion, such as calculating total nutrients for an entire package and explaining the meaning of a high vs. low %DV.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After identifying difficulties (e_04) and revising the teaching materials to address them (e_05), it is crucial to conduct another practice session. This allows the learner to apply the new explanations and solidify their understanding before moving to the next topic, generating a new practice record to assess their progress."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Understanding common health information and claims",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor reviews the second round of practice on Nutrition Facts labels. The goal is to check if the learner has successfully overcome the previous issues with serving size calculations and %DV interpretation, as highlighted in the earlier feedback.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted practice session (e_06) designed to correct specific misunderstandings, a review is essential to verify if the remediation was successful. This step assesses the new practice_record against the previous feedback to see if the learner is ready to move on to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Understanding common health information and claims",
+    "subject": "Health",
+    "event_type": "plan_milestones",
+    "description": "After successfully completing the first topic on Nutrition Facts labels, the tutor and learner review the overall study plan. Seeing that the first topic required extra practice, they decide to adjust the timeline for the next milestone, 'Evaluating Online Health Claims,' to build in more time for practice and review activities.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "The review in e_07 confirmed the learner has mastered the first topic, but the process took a remedial loop. Before starting the next major topic, it is a good practice to revisit the study plan to adjust pacing and expectations based on the learner's demonstrated learning rate, ensuring the plan remains realistic."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Understanding common health information and claims",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "Begin the new module on 'Evaluating Online Health Claims.' This lesson introduces a framework for assessing the credibility of health information, focusing on identifying the source (e.g., government agency, university, commercial site), the author's credentials, and the date of publication.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the first topic mastered and the study plan updated (e_08), the next logical step is to begin instruction on the next milestone. This lesson starts the 'Evaluating Online Health Claims' module by teaching foundational concepts for source evaluation, generating new teaching notes for this topic."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Understanding common health information and claims",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "The learner is given several links to online articles making health claims. They are tasked with applying the framework from the last lesson to identify the source, author's credentials, and publication date for each article, creating a record of their findings.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on evaluating source credibility (e_09), a practice session is the logical next step. This allows the learner to apply the new concepts to real-world examples, which reinforces the lesson and generates a practice record for the tutor to assess their understanding in the next session."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Understanding common health information and claims",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's practice attempts at evaluating online health articles. The learner correctly identified sources and publication dates, but had difficulty distinguishing between journalists reporting on a study and the actual researchers who conducted it.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on evaluating sources (e_10), a review is necessary to assess understanding and identify any misconceptions. This step uses the practice_record to provide targeted feedback, which will inform whether the next step should be more practice or a new lesson."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Understanding common health information and claims",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "The tutor provides a follow-up lesson clarifying the difference between primary sources (e.g., a scientific study) and secondary sources (e.g., a news article reporting on it). The session includes strategies for finding the original study linked in an article to verify the credentials of the actual researchers.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_11) revealed a specific misconception about source authors. This targeted lesson directly addresses that issue, as outlined in the feedback summary, and enhances the existing teaching notes before the learner attempts more practice on this topic."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Understanding common health information and claims",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "The learner is given another set of online health articles. They are specifically tasked with applying the recent lesson on primary vs. secondary sources by identifying both the author of the article and, where possible, the authors of the original research study being discussed.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the targeted lesson on primary vs. secondary sources (e_12), this practice session is crucial for the learner to apply that specific clarification. It directly addresses the issue noted in the previous feedback_summary and will generate a new practice_record to assess their improved understanding."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Understanding common health information and claims",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor reviews the second practice attempt on identifying primary vs. secondary sources. The goal is to confirm that the learner can now correctly distinguish between the author of a news report and the researchers of the underlying study.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted practice session (e_13) designed to correct a specific misconception, a review is essential to verify if the remediation was successful. This step assesses the new practice_record to determine if the learner is now ready to build on this skill or if more clarification is needed."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Understanding common health information and claims",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "Assuming the previous review was successful, the tutor moves to the next topic in the module. This lesson focuses on identifying potential bias in health claims, covering concepts like conflicts of interest (e.g., funding sources) and emotionally charged language.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in e_14 confirmed the learner's understanding of source identification. Based on the study plan, the logical next step is to introduce a new, related skill. This lesson on identifying bias builds directly on the previous topic and adds to the teaching notes for this module."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Understanding common health information and claims",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "The learner is given a set of health articles, some from commercial websites and some from non-profits. They are asked to apply the concepts from the lesson on bias to identify potential conflicts of interest and find examples of emotionally charged language.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on identifying bias (e_15), this practice session is necessary for the learner to apply these new analytical skills to real-world examples. This reinforces the concepts and creates a record of their performance for the upcoming review."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Understanding common health information and claims",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's practice on identifying bias. The review assesses how well the learner identified conflicts of interest (e.g., article on a supplement company's website) and emotionally charged or sensational language.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the practice session on identifying bias (e_16), a review is the necessary next step to assess the learner's ability to apply these new, more subjective concepts. This review generates a feedback summary that will determine if the learner is ready to move on or needs further clarification on this topic."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Understanding common health information and claims",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "To consolidate skills, the learner is assigned a capstone practice task for the 'Evaluating Online Health Claims' module. They are given several articles and asked to perform a full evaluation, assessing the source, author credentials, potential bias, and the distinction between primary and secondary sources, and then write a summary of each claim's credibility.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After covering several sub-topics on evaluating claims, a comprehensive practice session is needed to ensure the learner can synthesize these skills. This capstone task serves as a final check of their abilities on this major topic, generating a practice record that reflects their overall competence before concluding the tutoring."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Understanding common health information and claims",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor conducts a final review of the capstone practice task. The assessment focuses on the learner's ability to synthesize all the evaluation skills (source credibility, author credentials, bias, primary vs. secondary sources) into a coherent summary of a health claim's trustworthiness.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the comprehensive capstone practice (e_18), a final review is essential to assess the learner's overall mastery of the 'Evaluating Online Health Claims' module. This step synthesizes feedback on all components and determines if the learning objectives have been successfully met, paving the way for concluding the tutoring."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Understanding common health information and claims",
+    "subject": "Health",
+    "event_type": "end",
+    "description": "Final session to review the learner's overall progress. The tutor and learner agree that the initial learning objectives have been met, and the learner now feels confident in their ability to critically assess nutrition labels and online health claims independently.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has successfully completed both major modules, demonstrating mastery through a final capstone practice and review (e_18, e_19). With the core learning objectives from the initial session (e_01) successfully achieved, the formal tutoring process is now complete."
+  }
+]

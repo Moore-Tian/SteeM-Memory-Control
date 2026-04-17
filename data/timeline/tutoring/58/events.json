@@ -1,0 +1,286 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Software documentation that supports users",
+    "subject": "Programming",
+    "event_type": "objective_clarification",
+    "description": "Initial meeting with the learner to understand their background and learning goals for software documentation. The learner, a junior developer, wants to write clearer internal API documentation to reduce support questions from their team. We defined specific outcomes, such as creating a complete documentation set for a sample API.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first session, so the immediate priority is to establish the learner's goals, context, and success criteria. This clarification is the foundational step required before creating a structured study plan or starting any lessons."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Software documentation that supports users",
+    "subject": "Programming",
+    "event_type": "plan_milestones",
+    "description": "Based on the defined objectives, we created a staged study plan. The plan outlines key milestones, starting with understanding the principles of effective API documentation, then moving to practical application on a sample project, and concluding with a review and refinement cycle.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learning objectives established in the previous session, the next logical step is to create a structured plan. This study plan provides a clear roadmap for the tutoring, breaking the overall goal into manageable milestones and setting expectations for upcoming lessons and practice."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Software documentation that supports users",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "Conducted the first lesson as outlined in the study plan, focusing on the core principles of effective API documentation. We covered topics like audience analysis, structuring documentation for different user needs (e.g., tutorials, how-to guides, reference), and using clear, consistent language.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a study plan in place, the next logical step is to begin instruction. This first lesson directly addresses the initial milestone of the plan, which is to understand the foundational principles of good documentation, and creates teaching notes for future reference."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Software documentation that supports users",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "Assigned a practice task to apply the principles from the first lesson. The learner was asked to draft an outline for the documentation of a small, sample API, identifying the target audience and proposing a structure that includes a quick-start guide and endpoint reference sections.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson introducing theoretical concepts, the next logical step is to have the learner apply them. This practice task directly reinforces the topics of audience analysis and document structure, and the resulting work will provide a concrete basis for review and feedback."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Software documentation that supports users",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "Reviewed the learner's draft documentation outline from the practice session. The review focused on the clarity of the proposed structure and the appropriateness for the identified audience. Feedback was provided on how to better separate tutorial content from reference material.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice task where the learner created a documentation outline, the next logical step is to review their work. This review provides targeted feedback, identifies misconceptions, and creates a summary of actionable next steps, ensuring the learner can effectively iterate on their draft."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Software documentation that supports users",
+    "subject": "Programming",
+    "event_type": "materials_revision",
+    "description": "Based on the review, it was clear the distinction between tutorial and reference documentation needed reinforcement. The teaching notes were updated to include a side-by-side comparison table and clearer examples for each type of content.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review identified a specific misconception. Revising the teaching materials to explicitly address this point of confusion is a proactive step that will better support the learner in their next practice attempt and improve the reusability of the lesson content."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Software documentation that supports users",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "Assigned a follow-up practice task where the learner revises their initial documentation outline. Using the feedback from the last review and the updated teaching notes, the learner will refine the structure to better distinguish between tutorial and reference content.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After reviewing the learner's first attempt and revising the teaching materials to address a key misconception, the next logical step is a follow-up practice session. This allows the learner to apply the specific feedback and the improved concepts, reinforcing their understanding before moving on to new topics."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Software documentation that supports users",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "Reviewed the learner's revised documentation outline from the second practice attempt. The new outline successfully separates tutorial content from reference material, showing a clear understanding based on the previous feedback. The feedback summary confirms this and greenlights moving to the next topic.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "The learner just completed a targeted practice session (e_07) to apply specific feedback. The immediate next step is to review their revised work to confirm that the previous misconception has been resolved. This review is essential to validate their progress before proceeding to the next lesson in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Software documentation that supports users",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "Conducted the next lesson according to the study plan, focusing on writing detailed content for API endpoints. Key topics included documenting parameters, return values, error states, and providing effective code examples.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_08) confirmed the learner's understanding of documentation structure. As per the study plan, it is now appropriate to proceed to the next lesson, which covers the specifics of writing content for API endpoints."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Software documentation that supports users",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "Assigned a practice task to apply the concepts from the latest lesson. The learner is asked to select one endpoint from their sample API and write the full reference documentation for it, including details on parameters, return values, potential errors, and a complete code example.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on writing detailed endpoint documentation, the natural next step is for the learner to apply these new skills. This practice task requires them to create concrete documentation content, moving from a high-level outline to detailed implementation, which provides a tangible artifact for the next review."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Software documentation that supports users",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "Reviewed the learner's first draft of the API endpoint documentation. The review highlighted that while the parameter descriptions were good, the code example was too complex and didn't clearly illustrate a common use case. Feedback was provided on simplifying the example and better documenting potential error codes.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the practice task of writing endpoint documentation (e_10), the logical next step is to review their work. This review provides specific, actionable feedback on their first attempt at detailed content creation, which is essential for them to learn and iterate effectively."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Software documentation that supports users",
+    "subject": "Programming",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback from the last review, the teaching notes were updated to better guide the creation of code examples. A new section was added with a checklist for creating 'minimal, complete, and verifiable' examples, and the part on documenting error codes was expanded.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_11) revealed that the learner struggled to create a simple, effective code example. Revising the teaching materials to explicitly address this common pitfall will better prepare the learner for their next practice attempt and makes the course materials more robust."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Software documentation that supports users",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "Assigned a follow-up practice task for the learner to revise their API endpoint documentation. Based on the recent review and the updated teaching notes, the learner will focus on simplifying their code example and expanding the documentation for error codes.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary",
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After reviewing the learner's first draft (e_11) and revising the teaching materials to address weaknesses (e_12), the next logical step is a follow-up practice session. This allows the learner to directly apply the new feedback and revised guidance, reinforcing their understanding of how to create effective code examples and document errors before moving on."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Software documentation that supports users",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "Reviewed the learner's revised API endpoint documentation from the follow-up practice. The new draft shows significant improvement, with a much clearer and more focused code example and more thorough descriptions of potential error codes, demonstrating a solid grasp of the feedback.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the learner's revised practice submission (e_13), the immediate next step is to review their work. This review is essential to confirm that they have successfully incorporated the previous feedback (from e_11) and are now ready to move to the next stage of the study plan."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Software documentation that supports users",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "With proficiency demonstrated on a single endpoint, a larger practice task is assigned. The learner will now document the remaining endpoints of the sample API, aiming to create a complete and consistent reference documentation set for the entire project.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a successful review (e_14) confirming the learner's grasp of documenting a single endpoint, the next step is to apply these skills at a larger scale. This comprehensive practice task aligns with the study plan's goal of creating a complete documentation set and ensures the learner can maintain quality and consistency across a full project."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Software documentation that supports users",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "Conducted a final review of the complete documentation set for the sample API. The review assessed the overall consistency, clarity, and completeness of the documentation across all endpoints. The learner's work was high-quality, demonstrating a strong ability to apply all the concepts from the lessons.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the large-scale practice of documenting a full API (e_15), the essential next step is to conduct a final review. This comprehensive assessment validates their ability to consistently apply all learned concepts to a complete project, which directly addresses the primary learning objective in the study plan."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Software documentation that supports users",
+    "subject": "Programming",
+    "event_type": "end",
+    "description": "Final session to wrap up the tutoring. We reviewed the learner's journey from the initial objectives to the successful creation of a complete API documentation set, confirming that their goals have been met.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has successfully completed the capstone practice task (e_15) and the final review (e_16) confirmed their high-quality work, meeting the initial learning objectives. With the primary goals achieved and proficiency demonstrated, the formal tutoring process is concluded."
+  }
+]

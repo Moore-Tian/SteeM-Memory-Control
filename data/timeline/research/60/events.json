@@ -1,0 +1,282 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Multilingual lexicon induction",
+    "subject": "CS-NLP",
+    "event_type": "proposal",
+    "description": "Initial project proposal to investigate multilingual lexicon induction by leveraging cross-lingual word embeddings. The core idea is to explore unsupervised methods for aligning monolingual embedding spaces for multiple languages simultaneously.",
+    "required_artifacts": [
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the first event, initiating the research project. It formalizes a pre-existing, abstract research idea into a concrete set of goals and a high-level plan, which are essential first steps before any methodological design or experimentation can begin."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Multilingual lexicon induction",
+    "subject": "CS-NLP",
+    "event_type": "scheme_design",
+    "description": "A detailed methodological scheme is designed based on the initial proposal. The scheme specifies using an adversarial training approach to align the embedding spaces of three languages (English, Spanish, German) simultaneously. It also outlines the data sources (pre-trained fastText embeddings) and the evaluation metric (precision@k on a standard dictionary-based test set).",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the high-level proposal in event e_01, the next logical step is to create a concrete technical plan. This 'scheme_design' event translates the abstract research goals into a specific, actionable 'method_scheme' which is a prerequisite for running any experiments."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Multilingual lexicon induction",
+    "subject": "CS-NLP",
+    "event_type": "pilot_experiments",
+    "description": "A small-scale pilot experiment is conducted using the designed adversarial scheme for just two languages (English and Spanish) with a reduced vocabulary size. The goal is to verify the implementation and check for any immediate issues. Initial results are promising, showing some alignment, but the training process appears unstable and sensitive to hyperparameter settings.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With a concrete 'method_scheme' defined in e_02, the logical next step is to run a small-scale pilot experiment. This serves as a sanity check to validate the feasibility of the proposed approach and identify potential problems (like training instability) before investing time and resources into full-scale 'main_experiments'."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Multilingual lexicon induction",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "A detailed analysis of the pilot experiment results is performed. The analysis focuses on the reported training instability, involving plotting loss curves for the generator and discriminator, and observing the discriminator's accuracy over time. The findings indicate that the discriminator becomes too powerful early in training, leading to vanishing gradients for the generator.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The pilot experiment in e_03 revealed significant training instability. Before redesigning the method or running more experiments, a systematic analysis of the pilot results is crucial to diagnose the root cause. This analysis provides the necessary insights (i.e., the discriminator overpowering the generator) to guide the subsequent revision of the method scheme."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Multilingual lexicon induction",
+    "subject": "CS-NLP",
+    "event_type": "scheme_design",
+    "description": "The adversarial training scheme is revised to address the training instability identified in the pilot study. Based on the analysis that the discriminator was overpowering the generator, a gradient penalty term is added to the discriminator's loss function. This modification is intended to enforce the Lipschitz constraint and stabilize the training dynamics.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous analysis (e_04) diagnosed a specific technical problem—an overly powerful discriminator—with the initial method (e_02). Therefore, the immediate next step is to go back to the design phase and revise the 'method_scheme' to solve this problem. This iterative refinement is crucial before attempting more resource-intensive 'main_experiments'."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Multilingual lexicon induction",
+    "subject": "CS-NLP",
+    "event_type": "pilot_experiments",
+    "description": "A second pilot experiment is conducted to validate the revised adversarial scheme. Using the same reduced English-Spanish setup as the first pilot, this experiment tests the effectiveness of the new gradient penalty. The results confirm that the training process is now significantly more stable, and the alignment quality has markedly improved.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the 'method_scheme' in e_05 to fix a specific problem (training instability), the immediate next step is to test that revision. Running another pilot experiment is a cost-effective way to validate that the fix works as intended before committing to full-scale 'main_experiments'. This iterative cycle of design-test-analyze is central to research progress."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Multilingual lexicon induction",
+    "subject": "CS-NLP",
+    "event_type": "main_experiments",
+    "description": "The full-scale experiments are conducted using the validated adversarial scheme. This involves simultaneously aligning the full fastText embedding spaces for all three target languages (English, Spanish, German) and evaluating the resulting lexicons on the standard test set. The experiments are run to completion to collect the final performance metrics.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The revised 'method_scheme' was successfully validated in the second pilot experiment (e_06), confirming its stability and improved performance. With a robust method now in place, the logical next step is to execute the 'main_experiments' as defined in the original 'research_plan' to gather the core results needed to address the 'research_goals'."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Multilingual lexicon induction",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "A comprehensive analysis of the main experiment results is conducted. The final precision@1 scores are 91% for English-Spanish, 85% for Spanish-German, and 78% for English-German. The analysis concludes that the method is highly effective for closely related languages but its performance degrades slightly with more distant language pairs, likely due to larger structural differences in their embedding spaces.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After generating the core results in the main experiments (e_07), a detailed analysis is the critical next step. This analysis interprets the raw performance numbers in the context of the research goals, identifies the strengths and weaknesses of the method, and produces the key conclusions that will form the basis of the research paper."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Multilingual lexicon induction",
+    "subject": "CS-NLP",
+    "event_type": "writing",
+    "description": "The first full draft of the paper's core sections is written. The 'Methodology' section is drafted describing the final adversarial scheme with the gradient penalty. The 'Results' section is written to present the final precision scores and discuss the performance difference between related and distant language pairs.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After conducting the main experiments (e_07) and performing a comprehensive analysis (e_08), the project has produced its core findings. The most logical next step is to formalize this work by drafting the main sections of a research paper. This 'writing' event uses the finalized 'method_scheme' and the conclusive 'experiment_results' to produce a coherent description of the work, moving the project towards publication."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Multilingual lexicon induction",
+    "subject": "CS-NLP",
+    "event_type": "scheme_design",
+    "description": "To strengthen the experimental validation, the team decides to add a strong baseline for comparison. A standard, non-adversarial method based on iterative Procrustes alignment is chosen. The scheme is designed to use the exact same data, languages, and evaluation protocol as the main experiments to ensure a fair comparison.",
+    "required_artifacts": [
+      "research_plan",
+      "research_goals",
+      "paper_paragraph",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "method_scheme",
+      "research_plan"
+    ],
+    "reason": "With the core results drafted (e_09), a critical step towards publication is to contextualize the method's performance against established baselines. This event defines the experimental scheme for a baseline comparison, which is necessary to demonstrate the novel contribution of the adversarial approach. It revises the overall research plan to include this new set of experiments."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Multilingual lexicon induction",
+    "subject": "CS-NLP",
+    "event_type": "main_experiments",
+    "description": "The baseline experiments are run using the non-adversarial Procrustes alignment method. The method is applied to the same English-Spanish, Spanish-German, and English-German language pairs to generate a new set of precision@k scores for direct comparison against the project's primary adversarial method.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing the experimental scheme for a baseline comparison in e_10, the logical and necessary next step is to execute those experiments. This 'main_experiments' event generates the comparative results needed to contextualize the performance of the main adversarial method, which is a critical step in strengthening the paper's claims before final analysis and writing."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Multilingual lexicon induction",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "The results from the Procrustes baseline are compared against the main adversarial method's results. The analysis reveals that our adversarial method significantly outperforms the baseline across all language pairs, with the largest improvement seen for the more distant English-German pair. This confirms the hypothesis that the adversarial approach is more robust for aligning structurally different embedding spaces.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After running the baseline experiments in e_11, the immediate next step is to analyze these new results by comparing them against the primary method's performance (from e_07). This comparative analysis is essential to validate the contribution of the proposed method, which was the motivation for adding the baseline (e_10), and it generates the final key arguments for the research paper."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Multilingual lexicon induction",
+    "subject": "CS-NLP",
+    "event_type": "writing",
+    "description": "The paper draft is updated to incorporate the new baseline comparison results. The 'Results' section is revised to present the comparative performance, and the 'Conclusion' section is written to summarize the key findings, emphasizing the superiority of the adversarial method over the Procrustes baseline, especially for distant language pairs.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The comparative analysis in e_12 provided the final, crucial evidence of the method's strength. With all experimental work and analysis complete, the next logical step is to integrate these definitive findings into the research paper. This event finalizes the narrative of the paper by updating the results and writing the conclusion, moving the project toward submission."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Multilingual lexicon induction",
+    "subject": "CS-NLP",
+    "event_type": "writing",
+    "description": "The 'Introduction' and 'Related Work' sections of the paper are drafted. The introduction frames the problem of multilingual lexicon induction and summarizes the paper's key contributions. The related work section situates the adversarial approach in the context of prior methods, including Procrustes-based and other adversarial techniques.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the core methodology, results, and conclusion already drafted (e_13), the experimental phase is complete. The logical next step is to finalize the manuscript for submission by writing the framing sections. The 'Introduction' and 'Related Work' are written last, as they require a full understanding of the project's final results and contributions to properly motivate the work and position it within the field."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Multilingual lexicon induction",
+    "subject": "CS-NLP",
+    "event_type": "writing",
+    "description": "The team reviews the complete draft of the paper. Based on internal feedback, the 'Results' section is enhanced with visualizations. Tables are created for a clear side-by-side comparison of the adversarial and baseline methods, and t-SNE plots are generated to visually demonstrate the quality of the embedding space alignment.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With all textual sections of the paper drafted (e_09, e_13, e_14), the next logical step is to polish the manuscript for submission. This involves an internal review and the creation of figures and tables from the final 'experiment_results' to make the paper's arguments clearer and more compelling. This represents the final stage of paper preparation before submission."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Multilingual lexicon induction",
+    "subject": "CS-NLP",
+    "event_type": "end",
+    "description": "The research project is concluded as the paper has been finalized and is ready for submission to a top-tier NLP conference. The project successfully developed and validated a novel adversarial method for multilingual lexicon induction, demonstrating its superiority over a standard baseline.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached a natural conclusion. The research goals have been met, the proposed method has been iteratively designed and validated against a strong baseline, and the results are conclusive. A complete paper draft, including all sections and visualizations, has been prepared and polished, marking the completion of this research cycle."
+  }
+]

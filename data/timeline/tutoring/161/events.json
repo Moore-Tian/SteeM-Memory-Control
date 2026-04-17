@@ -1,0 +1,365 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Comparing historical periods through themes",
+    "subject": "History",
+    "event_type": "objective_clarification",
+    "description": "The tutor and learner hold an initial diagnostic session. The learner needs help preparing for a history essay comparing the late Roman Empire and Han China, focusing on political, social, and economic themes. The tutor asks questions to gauge the learner's current understanding and define the scope of the project.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first session, so the logical starting point is to clarify the learner's goals, background, and specific needs. This 'objective_clarification' event establishes the foundation for creating a structured study plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Comparing historical periods through themes",
+    "subject": "History",
+    "event_type": "plan_milestones",
+    "description": "Based on the clarified objectives, the tutor works with the learner to create a high-level study plan. The plan breaks down the essay preparation into key milestones: foundational knowledge building for each empire, thematic comparison, thesis development, and essay outlining.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learning objectives established in the previous session (e_01), the next logical step is to create a structured roadmap. This 'plan_milestones' event translates the goals into an actionable 'study_plan', ensuring both tutor and learner are aligned on the steps needed to complete the essay."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Comparing historical periods through themes",
+    "subject": "History",
+    "event_type": "lesson",
+    "description": "The tutor begins the first instructional phase outlined in the study plan. This lesson focuses on the foundational knowledge of the late Roman Empire, covering key aspects of its political structure (e.g., the Dominate), social hierarchies, and economic challenges.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a 'study_plan' in place from e_02, the next logical step is to execute the first milestone: knowledge building. This 'lesson' starts the instructional process and creates reusable 'teaching_notes' on the first topic, which will support future practice and review."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Comparing historical periods through themes",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "To reinforce the previous lesson, the tutor assigns a practice task. The learner is asked to create a structured summary outlining the key political, social, and economic features of the late Roman Empire, using the provided teaching notes as a reference.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a content-heavy lesson (e_03), it is crucial to check for comprehension before moving forward. This 'practice' event allows the learner to actively recall and structure the information, generating a 'practice_record' that the tutor can use to assess understanding and provide targeted feedback."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Comparing historical periods through themes",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's structured summary from the practice session. The tutor checks for accuracy and identifies a few gaps in the learner's understanding of the economic challenges in the late Roman Empire, preparing specific feedback.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the 'practice' event (e_04) that produced a 'practice_record', the logical next step is to 'review' the learner's work. This allows the tutor to assess comprehension, provide targeted corrections, and generate a 'feedback_summary' before proceeding to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Comparing historical periods through themes",
+    "subject": "History",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback from the last session, the tutor realizes the teaching notes on Roman economic challenges were not detailed enough. The tutor revises the notes, adding specific examples of hyperinflation, taxation issues, and the breakdown of trade networks to improve clarity.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in e_05 identified a specific knowledge gap, which was captured in the 'feedback_summary'. A good tutor often reflects on whether their own materials contributed to the confusion. This 'materials_revision' event is a logical step to improve the 'teaching_notes' before asking the learner to review the topic, ensuring the resource is more effective for the next practice attempt."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Comparing historical periods through themes",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "The tutor provides the feedback summary and the revised teaching notes to the learner. The learner is then tasked with correcting their initial summary of the late Roman Empire, with a specific focus on the economic challenges identified as a weak point.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "practice_record",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After identifying a weakness (e_05) and improving the teaching materials (e_06), it is crucial for the learner to actively correct their previous work. This targeted 'practice' event closes the feedback loop by having the learner use the 'feedback_summary' and revised 'teaching_notes' to produce an improved 'practice_record', solidifying their understanding before new content is introduced."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Comparing historical periods through themes",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor examines the learner's revised summary on the late Roman Empire. The tutor confirms that the learner has successfully incorporated the feedback and the details from the revised notes, especially regarding the economic challenges, and provides positive reinforcement.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the corrective 'practice' in e_07, a 'review' is necessary to confirm that the learner has successfully addressed the previously identified weaknesses. This step validates the learner's understanding of the Roman Empire material before moving on to the next major topic, Han China, as outlined in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Comparing historical periods through themes",
+    "subject": "History",
+    "event_type": "lesson",
+    "description": "Having confirmed the learner's understanding of the late Roman Empire, the tutor proceeds to the next part of the study plan. This lesson introduces the foundational knowledge of Han China, covering its political system (e.g., bureaucracy, emperor's role), social structure (e.g., scholar-gentry), and key economic features.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_08) successfully concluded the learning block on the Roman Empire. Following the 'study_plan' from e_02, the next logical step is to begin the second knowledge-building milestone: Han China. This 'lesson' event starts this new block and expands the 'teaching_notes' artifact to cover the new content."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Comparing historical periods through themes",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "Following the lesson on Han China, the tutor assigns a practice task mirroring the one for Rome. The learner is asked to create a structured summary of Han China's key political, social, and economic features, using the newly updated teaching notes.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson introducing new content on Han China (e_09), the logical next step is a 'practice' session to reinforce learning and check comprehension. This follows the established pattern from the Roman Empire module (e_03 followed by e_04) and creates a new 'practice_record' for the tutor to assess."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Comparing historical periods through themes",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's summary of Han China's political, social, and economic features. The tutor assesses the summary for accuracy and depth, noting a good grasp of the political and social structures but some vagueness on economic details like the salt and iron monopolies.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the 'practice' event (e_10) where the learner summarized Han China, the logical next step is to 'review' that work. This allows the tutor to assess comprehension of the second major topic, generate a 'feedback_summary', and ensure the learner is ready for the next milestone in the 'study_plan': thematic comparison."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Comparing historical periods through themes",
+    "subject": "History",
+    "event_type": "lesson",
+    "description": "Instead of a full practice-review cycle, the tutor holds a brief mini-lesson to directly address the vagueness on Han China's economy noted in the previous review. The tutor verbally explains the salt and iron monopolies, using a whiteboard to map out their economic impact, and updates the teaching notes with this clarification in real-time.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_11) identified a minor weakness. Rather than repeating a full practice cycle, which might be excessive, a targeted 'lesson' is a more efficient way to patch this specific knowledge gap. This addresses the 'feedback_summary' directly and improves the 'teaching_notes' before moving to the next major milestone in the 'study_plan', which is thematic comparison."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Comparing historical periods through themes",
+    "subject": "History",
+    "event_type": "lesson",
+    "description": "With the foundational knowledge for both empires covered, the tutor introduces the next phase from the study plan: thematic comparison. This lesson focuses on the methodology of comparative analysis, teaching the learner how to structure comparative points, identify significant similarities and differences, and use evidence to support claims within the political, social, and economic themes.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous events (up to e_12) successfully completed the knowledge-building milestone for both empires. According to the 'study_plan', the next logical step is to move from content acquisition to analytical skills. This 'lesson' on comparative methodology directly addresses that milestone and prepares the learner for the upcoming practice of comparing the two historical periods."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Comparing historical periods through themes",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "To apply the newly learned comparative methodology, the tutor assigns a practice task. The learner is asked to create a comparative table that directly contrasts the political, social, and economic structures of the late Roman Empire and Han China, using the compiled teaching notes.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson on the methodology of comparison (e_13), the logical next step is to have the learner apply this skill. This 'practice' event transitions from learning the 'how' to actually 'doing' the comparison, generating a 'practice_record' that will show the tutor if the learner can synthesize information and structure a comparative argument."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Comparing historical periods through themes",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's comparative table from the previous session. The tutor assesses the quality of the comparisons, noting that while the learner successfully identified key points, the analysis lacks depth in explaining the significance of the similarities and differences, which will be crucial for the essay's argument.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the 'practice' event where the learner created a comparative table (e_14), the logical next step is a 'review'. This allows the tutor to assess the learner's ability to synthesize information from both empires and generate a 'feedback_summary' that will guide the learner toward developing a strong, analytical thesis, the next major milestone in the study plan."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Comparing historical periods through themes",
+    "subject": "History",
+    "event_type": "lesson",
+    "description": "To address the lack of analytical depth identified in the last review, the tutor holds a lesson on explaining 'historical significance'. Using the learner's comparative table as a source of examples, the tutor models how to move beyond listing similarities and differences to analyzing their impact and importance, effectively answering the 'so what?' question for each comparative point.",
+    "required_artifacts": [
+      "feedback_summary",
+      "practice_record",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_15) revealed that the learner needs to develop deeper analytical skills. This targeted 'lesson' directly addresses the feedback by teaching the crucial skill of explaining historical significance. This moves the learner beyond simple comparison and prepares them for the next milestone in the study plan: developing a strong essay thesis."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Comparing historical periods through themes",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "To put the previous lesson into action, the tutor tasks the learner with drafting a thesis statement for the comparative essay. The learner is also asked to write one supporting topic sentence for each theme (political, social, economic) that explains the significance of a key comparison, directly applying the 'so what?' framework.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary",
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson on explaining historical significance (e_16), the next logical step is to have the learner apply this high-level skill. This 'practice' event challenges the learner to move from simple comparison to argumentation by drafting a thesis and topic sentences, generating a 'practice_record' that will reveal their ability to build a coherent historical argument."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Comparing historical periods through themes",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's draft thesis statement and topic sentences. The tutor evaluates the strength of the argument, the clarity of the thesis, and whether the topic sentences effectively link evidence to the main claim while demonstrating historical significance.",
+    "required_artifacts": [
+      "practice_record",
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the critical practice of drafting a thesis (e_17), a 'review' is essential to evaluate the core argument before proceeding to the final essay outline. This step assesses if the learner has successfully synthesized the content and skills taught, and the resulting 'feedback_summary' will provide the final guidance needed before structuring the full essay."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Comparing historical periods through themes",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "Building on the feedback from the previous review, the tutor tasks the learner with creating a full essay outline. The outline must incorporate the revised thesis statement and topic sentences, and then flesh out each body paragraph with specific historical evidence and analysis points drawn from the teaching notes.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "practice_record",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After reviewing and refining the core argument (thesis and topic sentences) in e_18, the final step in the study plan before writing is to structure the entire essay. This 'practice' event requires the learner to create a detailed outline, synthesizing all content and skills into a coherent plan, and producing a final 'practice_record' for a last check."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Comparing historical periods through themes",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor performs a final review of the learner's complete essay outline. The tutor checks for logical flow between paragraphs, the quality of the selected evidence, and the overall coherence of the argument, providing minor suggestions for strengthening the conclusion.",
+    "required_artifacts": [
+      "practice_record",
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner created a comprehensive essay outline in e_19, a final 'review' is the logical capstone event. This step provides a crucial quality check on the entire essay structure before the learner commits to writing, ensuring all previous lessons and feedback have been successfully integrated."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "Comparing historical periods through themes",
+    "subject": "History",
+    "event_type": "end",
+    "description": "The tutor and learner hold a final session to confirm the learner feels confident with the complete essay outline. With the structure and argument finalized, the learner is now fully prepared to write the essay. The tutoring for this specific objective is concluded.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The tutoring process has successfully guided the learner from initial diagnosis to the creation of a comprehensive and well-structured essay outline (e_20). With the core analytical skills taught and the essay's argument fully planned, the initial learning objectives have been met. The learner is now equipped to complete the final writing task independently, making this a natural conclusion to the tutoring engagement."
+  }
+]

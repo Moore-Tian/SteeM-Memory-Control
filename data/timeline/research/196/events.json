@@ -1,0 +1,316 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Corpus-based linguistic evolution",
+    "subject": "Humanities",
+    "event_type": "proposal",
+    "description": "Define the initial research questions and a high-level plan for the project. The core idea is to track diachronic semantic change of specific lexical items by analyzing their distributional properties in large historical text corpora.",
+    "required_artifacts": [
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "Every research project begins with an initial concept. This first event formalizes that initial, broad idea (represented as the input 'research_goals' artifact) into a more concrete set of questions and a high-level strategic plan, setting a clear direction for the project."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Corpus-based linguistic evolution",
+    "subject": "Humanities",
+    "event_type": "scheme_design",
+    "description": "Design the initial methodological scheme based on the research plan. This involves selecting specific historical corpora (e.g., Corpus of Historical American English), choosing a word embedding model (e.g., time-sliced Word2Vec), and defining the metric for measuring semantic shift (e.g., cosine distance between vectors across time periods).",
+    "required_artifacts": [
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the initial proposal (e_01), which established the high-level goals and plan, the next step is to design a concrete methodology. This 'scheme_design' phase translates the abstract research questions into a specific, replicable experimental procedure, creating the 'method_scheme' needed for implementation."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Corpus-based linguistic evolution",
+    "subject": "Humanities",
+    "event_type": "pilot_experiments",
+    "description": "Run a small-scale pilot study to test the feasibility of the designed method. The experiment is run on a single test word ('gay') over a limited time span (1920-2000) to validate the data processing pipeline and the embedding model's ability to capture known semantic shifts.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing the methodology in e_02, it is crucial to validate its technical feasibility and preliminary effectiveness before committing to large-scale computation. This pilot experiment serves as a sanity check for the 'method_scheme', providing initial 'experiment_results' that will inform whether the main experiments can proceed or if the scheme needs revision."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Corpus-based linguistic evolution",
+    "subject": "Humanities",
+    "event_type": "analysis",
+    "description": "Analyze the results from the pilot study. The analysis confirms that the vector for the test word 'gay' shows a significant semantic shift from meanings related to 'joyful' to meanings related to 'homosexual' after the mid-20th century, aligning with known linguistic history. This successful validation indicates the chosen method is viable.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After conducting the pilot experiment in e_03, the immediate next step is to analyze the generated 'experiment_results'. This analysis is critical to validate the 'method_scheme' against the project's 'research_goals' before investing resources into full-scale experiments. The positive outcome provides the confidence needed to proceed to the main study."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Corpus-based linguistic evolution",
+    "subject": "Humanities",
+    "event_type": "main_experiments",
+    "description": "Begin the main experiments by applying the validated method to a larger set of 20 target words known to have undergone semantic change. The process involves training the time-sliced Word2Vec model on the complete Corpus of Historical American English for each decade from 1810 to 2000.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the successful validation of the methodology in the pilot study (e_03, e_04), the project is now ready to proceed to the main experimental phase. This event scales up the research from a single test case to the full set of target phenomena defined in the 'research_plan', using the validated 'method_scheme' to generate comprehensive results."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Corpus-based linguistic evolution",
+    "subject": "Humanities",
+    "event_type": "writing",
+    "description": "With the methodology now finalized and the main experiments underway, begin drafting the 'Methods' section of the research paper. This involves detailing the corpus selection, the data preprocessing steps, the specifics of the time-sliced Word2Vec model, and the semantic shift metric used.",
+    "required_artifacts": [
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The methodology was validated in the pilot study (e_04) and is now being applied in the main experiments (e_05). Since the method is now stable, it is an opportune and efficient time to formally document it for the final paper, creating the first draft of the 'paper_paragraph' describing the experimental setup."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Corpus-based linguistic evolution",
+    "subject": "Humanities",
+    "event_type": "analysis",
+    "description": "Analyze the comprehensive results from the main experiments on the 20 target words. The analysis reveals that while 15 of the words show clear, interpretable semantic shifts as hypothesized, 5 words yield noisy or ambiguous vector trajectories, suggesting potential limitations of the current method or corpus.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With the main experiments (e_05) completed, a thorough analysis of the resulting 'experiment_results' is the critical next step. This event moves the project from data generation to interpretation, evaluating the findings against the original 'research_goals' and setting the stage for discussing the method's effectiveness and limitations."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Corpus-based linguistic evolution",
+    "subject": "Humanities",
+    "event_type": "scheme_design",
+    "description": "The mixed results from the main experiment prompt a revision of the methodology. The analysis suggests that simple vector comparison across independently trained time-slices is too noisy for some words. The method is updated to incorporate an alignment technique (e.g., Orthogonal Procrustes analysis) to stabilize the vector spaces across time periods before measuring semantic shift.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis in e_07 revealed that the current 'method_scheme' is not robust enough for all cases. A common research practice when facing mixed results is to refine the methodology. This event addresses the specific weakness identified (vector space instability) by creating an improved 'method_scheme', demonstrating a crucial iterative loop in the research process."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Corpus-based linguistic evolution",
+    "subject": "Humanities",
+    "event_type": "main_experiments",
+    "description": "Re-run the main experiments using the revised methodology that now includes vector space alignment. The updated method is applied to the full set of 20 target words to determine if the alignment technique resolves the noise and ambiguity observed in the initial results for the 5 problematic words.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After identifying weaknesses in the initial results (e_07) and subsequently revising the methodology to address them (e_08), the immediate next step is to apply this new 'method_scheme'. Re-running the 'main_experiments' is essential to generate a new set of 'experiment_results' and validate whether the methodological improvement was successful."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Corpus-based linguistic evolution",
+    "subject": "Humanities",
+    "event_type": "analysis",
+    "description": "Analyze the new results from the re-run main experiments. The analysis confirms that the vector space alignment technique has successfully stabilized the models, and now all 20 target words, including the 5 previously problematic ones, exhibit clear and interpretable diachronic semantic shifts.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After re-running the main experiments with an improved method in e_09, the crucial next step is to analyze the new 'experiment_results'. This analysis is necessary to validate whether the methodological revision from e_08 fixed the noise issues identified in e_07, thus confirming the robustness of the final findings."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Corpus-based linguistic evolution",
+    "subject": "Humanities",
+    "event_type": "writing",
+    "description": "With successful results from the revised method now confirmed, the focus shifts to documenting the findings. The 'Methods' section draft is updated to include the vector space alignment technique, and a new 'Results' section is drafted, presenting the clear diachronic shifts for all 20 target words with supporting visualizations.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The successful analysis in e_10 provides the final, stable results for the project. It is a natural and critical next step to write up these findings for publication, which involves updating the 'Methods' section to reflect the final 'method_scheme' (from e_08) and drafting the 'Results' section based on the definitive 'experiment_results' (from e_10)."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Corpus-based linguistic evolution",
+    "subject": "Humanities",
+    "event_type": "proposal",
+    "description": "Based on the robust results from the revised method, the team revisits the initial project goals. The scope is expanded from merely confirming known semantic shifts to a broader exploratory analysis, aiming to discover previously undocumented changes and identify general patterns of linguistic evolution across a larger vocabulary.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "The successful validation of the refined method (e_10) and the initial write-up (e_11) mark a major milestone. It is common at such a point to leverage this success to ask more ambitious questions. This event represents a strategic expansion of the project, using the now-proven methodology to move from validation to novel discovery, thus requiring a revision of the original 'research_goals' and 'research_plan'."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Corpus-based linguistic evolution",
+    "subject": "Humanities",
+    "event_type": "scheme_design",
+    "description": "To support the new exploratory goals, the methodology is refined for large-scale analysis. The team incorporates an automated process to screen a large vocabulary (e.g., 5,000 most frequent nouns) and calculate a 'semantic shift score' for each word. This will allow them to automatically rank and identify candidate words that have undergone significant, previously undocumented change.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "After the project's scope was expanded from validation to discovery in e_12, the existing 'method_scheme' is no longer optimal. This event is a necessary adaptation, modifying the methodology to handle the new large-scale, exploratory nature of the updated 'research_plan', making it possible to discover change rather than just verify it."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Corpus-based linguistic evolution",
+    "subject": "Humanities",
+    "event_type": "main_experiments",
+    "description": "The team executes the new large-scale exploratory analysis. The automated screening method is applied to the 5,000 most frequent nouns in the corpus, generating a ranked list of candidate words based on their calculated semantic shift scores across the time periods.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing a new methodology for large-scale discovery in e_13 to fulfill the expanded research goals from e_12, the logical next step is to execute it. This 'main_experiments' event applies the new automated 'method_scheme' to generate a large-scale set of 'experiment_results', shifting the project's new discovery phase from planning to execution."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Corpus-based linguistic evolution",
+    "subject": "Humanities",
+    "event_type": "analysis",
+    "description": "Analyze the ranked list of 5,000 candidate words from the large-scale experiment. The team performs a qualitative evaluation on the top 100 highest-scoring words, examining their usage contexts over time to confirm that the high scores correspond to genuine, interesting, and previously undocumented semantic shifts.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After generating a large-scale ranked list of candidate words in e_14, the crucial next step is to analyze and validate these results. This analysis is necessary to interpret the quantitative scores, confirm the discovery of novel semantic changes as per the updated 'research_goals' (from e_12), and identify the most compelling findings for the final paper."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Corpus-based linguistic evolution",
+    "subject": "Humanities",
+    "event_type": "writing",
+    "description": "Incorporate the findings from the large-scale exploratory analysis into the paper. This involves a final revision of the 'Methods' section to describe the automated screening process, and a significant expansion of the 'Results' section to present the newly discovered semantic shifts, including case studies of the most interesting words identified.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The analysis in e_15 confirmed the discovery of novel findings, which represent the project's main contribution. It is now essential to document this work by updating the 'paper_paragraph' to reflect the final, large-scale 'method_scheme' and its compelling 'experiment_results', preparing the manuscript for completion."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Corpus-based linguistic evolution",
+    "subject": "Humanities",
+    "event_type": "writing",
+    "description": "Draft the 'Discussion' and 'Conclusion' sections of the paper. This involves interpreting the significance of the findings, connecting them back to the broader field of historical linguistics, discussing the limitations of the study, and suggesting avenues for future research.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the Methods and Results sections now drafted (e_16), the next logical step in writing the paper is to synthesize and interpret these findings. Drafting the Discussion and Conclusion connects the specific 'experiment_results' back to the overarching 'research_goals', contextualizes the project's contribution, and completes the main narrative of the manuscript."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "Corpus-based linguistic evolution",
+    "subject": "Humanities",
+    "event_type": "end",
+    "description": "With a complete manuscript draft encompassing the revised methods, final results, and a full discussion, the core research project is concluded. The team now moves to the final stages of preparing the paper for submission to a peer-reviewed journal.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has successfully navigated a full research cycle, from initial proposal to methodology refinement (e_08, e_13), large-scale discovery (e_15), and the drafting of a complete paper (e_17). As the primary research questions have been answered and the findings documented, the project has reached a natural conclusion."
+  }
+]

@@ -1,0 +1,285 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Building resilience and recovering from setbacks",
+    "subject": "LifeSkills",
+    "event_type": "objective_clarification",
+    "description": "Initial meeting with the learner to discuss their goals for building resilience. The learner, a young professional, expressed a desire to better handle work-related stress and bounce back from project failures without losing motivation.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "As this is the first session, the primary goal is to understand the learner's needs and establish clear learning objectives. This foundational step is crucial before creating a structured study plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Building resilience and recovering from setbacks",
+    "subject": "LifeSkills",
+    "event_type": "plan_milestones",
+    "description": "Based on the established goals, the tutor and learner co-created a high-level study plan. The plan outlines key milestones, such as 'Identifying Cognitive Distortions,' 'Practicing Reframing Techniques,' and 'Developing a Post-Setback Action Plan.'",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learning objectives clearly defined in the previous session, the next logical step is to structure the learning journey. Creating a study plan with concrete milestones provides a roadmap for both the learner and the tutor."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Building resilience and recovering from setbacks",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "The tutor delivers the first lesson based on the study plan, focusing on 'Identifying Cognitive Distortions.' The session covers common patterns like catastrophizing and black-and-white thinking, using workplace-specific examples to make the concepts relatable for the learner.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a study plan in place, the next logical step is to begin instruction. This lesson directly addresses the first milestone, 'Identifying Cognitive Distortions,' and creates foundational teaching notes on the topic that can be referenced in future practice and review sessions."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Building resilience and recovering from setbacks",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The tutor assigns a practice exercise where the learner must analyze recent, minor work-related setbacks. The learner is asked to use a provided template to journal about the events and identify any cognitive distortions that might have influenced their emotional response, referencing the concepts from the previous lesson.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson on a new concept, immediate practice is essential to reinforce learning and check for understanding. This exercise directly applies the 'Identifying Cognitive Distortions' lesson to the learner's personal context, generating a record of their application that can be used for a targeted review in the next session."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Building resilience and recovering from setbacks",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's journal entries from the practice session. Together, they analyze the identified cognitive distortions, with the tutor providing specific feedback on correct identifications and guiding the learner to spot missed opportunities or misinterpretations.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session (e_04), a review is the essential next step to assess the learner's application of the concepts. By analyzing the practice_record, the tutor can provide targeted feedback and corrections, ensuring the learner has a solid grasp of identifying cognitive distortions before moving to the next topic."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Building resilience and recovering from setbacks",
+    "subject": "LifeSkills",
+    "event_type": "materials_revision",
+    "description": "Based on the review session, the tutor noticed the learner had trouble distinguishing between similar cognitive distortions. The tutor refines the teaching notes, adding a comparison table and more specific examples to better differentiate concepts like 'catastrophizing' and 'overgeneralization'.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_05) highlighted specific areas of confusion. This revision directly addresses those issues by improving the clarity of the teaching materials, which will support the learner's consolidation of the topic and prevent similar mistakes in future practice."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Building resilience and recovering from setbacks",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "The tutor introduces the next topic from the study plan: 'Practicing Reframing Techniques.' The lesson explains how to challenge and replace identified cognitive distortions with more balanced and constructive thoughts, building directly on the previous topic.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Now that the learner has practiced identifying cognitive distortions and the teaching materials have been refined (e_06), it's time to progress to the next milestone in the study plan. This lesson builds on the previous foundation by teaching the learner what to do after identifying a distortion, which is a critical step in building resilience."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Building resilience and recovering from setbacks",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The tutor assigns a new practice exercise focused on applying reframing techniques. The learner revisits the scenarios from their previous journal, and for each identified cognitive distortion, they must write down two alternative, more balanced thoughts.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on reframing techniques (e_07), it is crucial for the learner to practice this new skill. This exercise directly applies the new concept to the learner's own experiences recorded in the previous practice session, reinforcing the learning and generating a new practice record for the upcoming review."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Building resilience and recovering from setbacks",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor and learner review the reframing practice from the previous session. They discuss the alternative thoughts the learner generated, focusing on whether they are realistic and constructive. The tutor provides feedback to help refine the learner's reframing skills and avoid toxic positivity.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner practiced applying reframing techniques in the previous step (e_08), a review is essential to evaluate their understanding and provide corrective feedback. This ensures the learner can effectively challenge their cognitive distortions before moving on to more complex resilience strategies."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Building resilience and recovering from setbacks",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "Moving to the next milestone, the tutor delivers a lesson on 'Developing a Post-Setback Action Plan.' The session covers creating a structured checklist of actions to take after a professional setback, such as analyzing the situation objectively, seeking feedback, and defining the next concrete step.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the learner demonstrating competence in cognitive reframing (e_09), it is appropriate to advance to the next milestone in the study plan. This lesson builds on cognitive skills by teaching a behavioral framework, moving the learner from reacting to thoughts to proactively managing setbacks."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Building resilience and recovering from setbacks",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The tutor assigns a practice exercise for the learner to create their own 'Post-Setback Action Plan' based on a recent work challenge. The learner is asked to use a template from the teaching notes to structure their plan, including objective analysis, potential feedback sources, and next steps.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on developing a post-setback action plan (e_10), it is crucial for the learner to apply this new behavioral framework. This practice session moves from theory to application, creating a tangible plan that can be reviewed and refined in the next session."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Building resilience and recovering from setbacks",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor and learner review the 'Post-Setback Action Plan' created in the previous session. They assess the plan's realism, specificity, and whether it effectively incorporates principles of objective analysis. The tutor provides feedback to make the plan more concrete and less overwhelming.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session where the learner drafted a personal action plan (e_11), a review is the essential next step. This allows the tutor to evaluate the learner's application of the framework, provide corrective feedback, and ensure the plan is a practical and effective tool for future use."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Building resilience and recovering from setbacks",
+    "subject": "LifeSkills",
+    "event_type": "plan_milestones",
+    "description": "The tutor and learner review the progress made across all initial milestones. Having covered identifying distortions, reframing, and action planning, they agree to update the study plan to focus on integrating these skills into a single, fluid process for handling a significant professional challenge.",
+    "required_artifacts": [
+      "learning_objectives",
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "After completing the review of the final initial milestone (e_12), it is a natural point to assess overall progress and plan the next phase. Updating the study plan ensures the tutoring will now focus on integrating the learned skills, moving from discrete concepts to a holistic application, which aligns with the learner's ultimate goal."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Building resilience and recovering from setbacks",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "To address the new milestone of integration, the tutor delivers a synthesis lesson. The session focuses on how to combine identifying distortions, reframing, and action planning into a cohesive response to a significant setback, using a detailed case study as a walkthrough.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the revision of the study plan in e_13 to focus on skill integration, a dedicated lesson on this topic is the logical next step. This provides the learner with a clear model for combining the separate skills before they are asked to apply them in a more complex practice scenario."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Building resilience and recovering from setbacks",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The tutor assigns a comprehensive practice exercise that requires the learner to apply the integrated resilience process. The learner is given a complex case study of a major project failure and must document their analysis, including identifying cognitive distortions, performing reframing, and outlining a complete post-setback action plan.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the synthesis lesson on integrating skills (e_14), the most effective next step is for the learner to practice the entire process. This capstone-style exercise will test their ability to combine the individual techniques in a realistic scenario, generating a detailed record for a final review."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Building resilience and recovering from setbacks",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor and learner conduct a final review of the comprehensive practice exercise. They analyze the learner's integrated response to the case study, evaluating the identification of distortions, the quality of the reframing, and the practicality of the action plan.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the capstone practice session (e_15), a final review is essential to assess the learner's ability to integrate all the skills taught. This provides a comprehensive evaluation of their progress against the learning objectives and generates a final feedback summary before concluding the tutoring."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Building resilience and recovering from setbacks",
+    "subject": "LifeSkills",
+    "event_type": "end",
+    "description": "In the final session, the tutor and learner summarize the key skills learned and review the learner's progress against their original goals. The learner expresses confidence in their ability to apply the integrated resilience process to future challenges, and the tutoring engagement is formally concluded.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has successfully completed all milestones, including a final comprehensive practice exercise that demonstrated their ability to integrate all learned skills (e_15, e_16). With the initial learning objectives met and the learner feeling equipped for future challenges, the tutoring process has reached its natural and successful conclusion."
+  }
+]

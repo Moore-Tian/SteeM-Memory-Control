@@ -1,0 +1,314 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Resource-aware model deployment",
+    "subject": "CS-Systems",
+    "event_type": "proposal",
+    "description": "Initial proposal for the project. The goal is to develop a framework for deploying large models on resource-constrained devices by dynamically selecting model components based on available memory and latency budgets.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the first event of the research project. A proposal is necessary to establish the initial research goals and a high-level plan that will guide the subsequent work."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Resource-aware model deployment",
+    "subject": "CS-Systems",
+    "event_type": "scheme_design",
+    "description": "Initial design of the methodological scheme. This involves creating a profiler to measure the latency and memory of different model sub-components (e.g., layers or blocks) and an optimizer that solves a knapsack-like problem to select the best configuration under a given resource budget.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "With the high-level research goals and plan from the initial proposal (e_01) established, the next logical step is to design the concrete technical approach. This event translates the abstract goals into a specific methodological scheme for profiling and optimization."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Resource-aware model deployment",
+    "subject": "CS-Systems",
+    "event_type": "pilot_experiments",
+    "description": "Run small-scale pilot experiments to validate the core ideas. This involves implementing a prototype of the profiler and optimizer and testing them on a single model (e.g., a small vision transformer) on a representative edge device to check if the profiling is accurate and the optimization is feasible.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the initial design of the method in e_02, conducting pilot experiments is a crucial step to validate the feasibility of the proposed profiler and optimizer. This sanity check on a small scale helps identify potential implementation issues and provides early data before committing to large-scale main experiments."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Resource-aware model deployment",
+    "subject": "CS-Systems",
+    "event_type": "analysis",
+    "description": "Analysis of the pilot experiment results. The findings indicate that while the component profiler is accurate, the knapsack-based optimizer is too computationally expensive for on-the-fly decisions on edge devices. This performance bottleneck makes the current optimization scheme impractical for real-time deployment scenarios.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "research_plan"
+    ],
+    "reason": "After conducting pilot experiments (e_03), a detailed analysis of the results is the logical next step. This analysis is crucial for evaluating the feasibility of the initial method design (e_02) and identifying critical issues, such as the optimizer's high latency. The outcome revises the research plan to address this newly discovered challenge."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Resource-aware model deployment",
+    "subject": "CS-Systems",
+    "event_type": "scheme_design",
+    "description": "Revising the methodological scheme to address the optimizer's performance bottleneck. The new design replaces the computationally expensive knapsack solver with a lightweight greedy algorithm that iteratively selects model components with the highest accuracy-per-resource-cost ratio, making it suitable for on-device execution.",
+    "required_artifacts": [
+      "research_plan",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous analysis (e_04) revealed that the original optimization method was too slow for practical use. Following the updated research plan, this event redesigns the core optimization component to create a more efficient and feasible solution, directly addressing the critical issue found in the pilot experiments."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Resource-aware model deployment",
+    "subject": "CS-Systems",
+    "event_type": "pilot_experiments",
+    "description": "Run a new set of pilot experiments to validate the revised greedy optimization algorithm. The goal is to compare its execution time and the quality of the selected model configurations (in terms of accuracy vs. resource usage) against the previous, slower knapsack-based approach.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the redesign of the optimization algorithm in e_05, a new round of pilot experiments is necessary. This step will validate whether the new greedy approach successfully addresses the performance bottleneck identified in e_04 and will measure the trade-off in solution quality before committing to large-scale main experiments."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Resource-aware model deployment",
+    "subject": "CS-Systems",
+    "event_type": "analysis",
+    "description": "Analysis of the second round of pilot experiments. The results confirm that the new greedy algorithm is significantly faster than the knapsack solver, making it suitable for on-device execution. The accuracy of the model configurations selected by the greedy approach is only marginally lower than those from the optimal knapsack solution, validating its effectiveness.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After validating the revised greedy algorithm with new pilot experiments in e_06, the next logical step is to analyze these results. This analysis is essential to confirm that the performance and accuracy trade-offs are acceptable before proceeding to the more resource-intensive main experiments. Documenting these positive findings in a paper paragraph is a good first step towards writing the final paper."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Resource-aware model deployment",
+    "subject": "CS-Systems",
+    "event_type": "main_experiments",
+    "description": "Begin the main experiments by scaling up the evaluation. The validated greedy algorithm is now applied to a diverse set of models (e.g., Vision Transformers, BERT variants) and deployed on multiple hardware targets (e.g., Raspberry Pi, Jetson Nano) to collect comprehensive performance data under various resource constraints.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With the revised greedy algorithm validated in pilot experiments (e_06, e_07), the project is ready to move to the main experimental phase. This step is crucial for gathering robust evidence of the method's effectiveness and generalizability across different models and hardware, which will form the core of the final paper's evaluation."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Resource-aware model deployment",
+    "subject": "CS-Systems",
+    "event_type": "analysis",
+    "description": "Analysis of the initial results from the main experiments. The data confirms the greedy algorithm's effectiveness across most model/hardware combinations. However, an anomaly is found: for large language models like BERT, the actual memory consumption during inference sometimes spikes, exceeding the profiler's static estimates and causing crashes on memory-constrained devices.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_plan"
+    ],
+    "reason": "After collecting initial data from the main experiments (e_08), a thorough analysis is necessary to validate the findings at scale. This step confirms the general success of the method but also uncovers a critical limitation regarding memory estimation for certain models, which necessitates an update to the research plan to address this new challenge."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Resource-aware model deployment",
+    "subject": "CS-Systems",
+    "event_type": "scheme_design",
+    "description": "Revise the method scheme to address the memory estimation issue. The new approach incorporates a dynamic memory profiling stage, where the model is run with sample inputs to capture peak memory usage, creating a more realistic and conservative budget for the greedy optimizer to prevent runtime crashes.",
+    "required_artifacts": [
+      "research_plan",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous analysis (e_09) identified a critical flaw where static memory profiling caused crashes on certain models. Following the updated research plan, this event redesigns the methodological scheme to incorporate dynamic memory analysis, which is a necessary fix before the main experiments can be successfully completed."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Resource-aware model deployment",
+    "subject": "CS-Systems",
+    "event_type": "main_experiments",
+    "description": "Resume the main experiments, re-running the tests for large language models using the newly designed dynamic memory profiler. The goal is to verify that the new profiling method prevents runtime crashes and to collect the full set of performance data across all models and hardware targets.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The previous method redesign (e_10) was a direct response to the memory-related crashes discovered during the main experiments (e_09). It is now crucial to resume the main experiments with the updated scheme to confirm that the fix is effective and to finally gather the comprehensive results needed to evaluate the project's goals."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Resource-aware model deployment",
+    "subject": "CS-Systems",
+    "event_type": "analysis",
+    "description": "Final analysis of the complete main experiment results. The findings confirm that the dynamic memory profiler successfully prevents runtime crashes for large models, and the greedy selection algorithm consistently achieves a good balance between model accuracy and resource usage across all tested hardware and model types.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph",
+      "research_plan"
+    ],
+    "reason": "Following the successful re-run of the main experiments in e_11, a comprehensive analysis is required to consolidate all findings. This step is critical to confirm that the revised method (e_10) works across all scenarios, synthesize the final results for the paper, and update the research plan to focus on the writing phase."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Resource-aware model deployment",
+    "subject": "CS-Systems",
+    "event_type": "writing",
+    "description": "Draft the 'Main Results' section of the research paper. This involves creating tables and figures to summarize the performance of the resource-aware deployment framework across different models and hardware, and writing the accompanying text to highlight the key findings from the final analysis.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the final analysis of the main experiments completed and validated in e_12, the project's focus logically shifts to dissemination. Following the updated research plan, drafting the core results section of the paper is the next step to formally document and present the successful outcomes of the research."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Resource-aware model deployment",
+    "subject": "CS-Systems",
+    "event_type": "writing",
+    "description": "Draft the 'Methodology' section of the paper. This section details the final design of the framework, including the dynamic component profiler and the greedy selection algorithm, explaining how they work together to achieve resource-aware deployment.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After drafting the main results in e_13, the next logical step in assembling the paper is to describe the methodology that produced them. This requires the final, validated method scheme from e_10 and the overall research goals to frame the technical contribution."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Resource-aware model deployment",
+    "subject": "CS-Systems",
+    "event_type": "writing",
+    "description": "Draft the 'Introduction' and 'Abstract' sections of the paper. These sections synthesize the project's motivation, the problem statement (resource-constrained deployment), the proposed solution (dynamic profiling and greedy selection), and the key results, providing a concise overview of the entire work.",
+    "required_artifacts": [
+      "research_goals",
+      "paper_paragraph",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the core 'Methodology' (e_14) and 'Results' (e_13) sections drafted, the next logical step is to write the 'Introduction' and 'Abstract'. These sections frame the paper's narrative, state the contributions clearly, and summarize the key findings for the reader, using the established research goals and documented results."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Resource-aware model deployment",
+    "subject": "CS-Systems",
+    "event_type": "writing",
+    "description": "Draft the 'Conclusion' and 'Related Work' sections of the paper. The conclusion summarizes the key contributions and discusses future work, while the related work section contextualizes the project by comparing it against existing techniques for efficient model deployment.",
+    "required_artifacts": [
+      "research_goals",
+      "method_scheme",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the core sections of the paper drafted (e_13, e_14, e_15), the next logical step is to complete the manuscript by writing the 'Conclusion' to summarize the work and the 'Related Work' to provide context. This moves the paper draft closer to a submittable state."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Resource-aware model deployment",
+    "subject": "CS-Systems",
+    "event_type": "writing",
+    "description": "After assembling the full draft from all written sections, the team conducts an internal review. Based on feedback, the entire paper is revised to improve clarity, strengthen the narrative, and ensure consistency across sections. This involves refining the introduction's motivation and sharpening the claims made in the conclusion.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With a complete first draft assembled from the previous writing stages (e_13-e_16), the next critical step is a holistic review and revision. This process integrates the separate sections into a coherent manuscript, addresses internal feedback, and refines the overall narrative, moving the project closer to a submittable final version."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "Resource-aware model deployment",
+    "subject": "CS-Systems",
+    "event_type": "end",
+    "description": "The project concludes with a complete and internally reviewed paper ready for submission to a top-tier systems conference. The research has successfully developed and validated a novel framework for resource-aware model deployment, addressing key challenges discovered during the project's lifecycle.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached a natural conclusion. The research goals have been met, the methodology has been validated through extensive experiments, critical issues have been resolved, and a full paper draft has been written and revised (e_17). The work is now ready for external dissemination."
+  }
+]

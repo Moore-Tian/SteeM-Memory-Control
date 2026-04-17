@@ -1,0 +1,298 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Causal inference in economic policy",
+    "subject": "Economics",
+    "event_type": "proposal",
+    "description": "Define the initial research question: how to reliably estimate the causal impact of a new minimum wage policy on local employment using synthetic control methods. Create a high-level project plan outlining the main stages of literature review, method development, simulation, and a case study.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the first step of the research project. It is essential to establish the core research questions and a high-level plan before diving into methodological details or experiments."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Causal inference in economic policy",
+    "subject": "Economics",
+    "event_type": "scheme_design",
+    "description": "Based on the research goals, design the initial methodological scheme. This involves specifying the data requirements (e.g., county-level employment data), defining the 'donor pool' of untreated units, and selecting the specific algorithm for constructing the synthetic control group.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "With the high-level research goals and plan established in the proposal (e_01), the logical next step is to design the concrete methodology. This event translates the abstract goals into a specific, testable scheme for the synthetic control analysis."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Causal inference in economic policy",
+    "subject": "Economics",
+    "event_type": "pilot_experiments",
+    "description": "Run a small-scale pilot study to validate the synthetic control methodology. The experiment uses a well-known public dataset (e.g., California's Proposition 99 tobacco tax data) to check if the implemented scheme can replicate established findings and to debug the code.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing the initial method scheme (e_02), conducting a pilot experiment is a crucial next step. It allows for a low-cost sanity check of the methodology and implementation before committing to the larger, more resource-intensive main experiments."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Causal inference in economic policy",
+    "subject": "Economics",
+    "event_type": "analysis",
+    "description": "Analyze the results from the pilot experiment. The analysis confirms the feasibility of the synthetic control approach but reveals that the pre-intervention fit is poor for certain volatile economic indicators. This suggests the model may be misspecified or requires additional predictor variables.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After running a pilot experiment (e_03), a dedicated analysis step is crucial to formally evaluate the performance of the initial method_scheme. This analysis provides the necessary insights to decide whether to proceed to main experiments, revise the methodology, or even reconsider the research goals."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Causal inference in economic policy",
+    "subject": "Economics",
+    "event_type": "scheme_design",
+    "description": "Revise the methodological scheme to address the poor pre-intervention fit identified in the pilot analysis. The revision focuses on incorporating additional economic covariates, such as industry composition and demographic trends, to better match the treated unit before the policy change.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous analysis (e_04) of the pilot results showed that the initial method was flawed. It is therefore necessary to return to the design stage and revise the `method_scheme` to correct for the observed model misspecification before attempting further experiments."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Causal inference in economic policy",
+    "subject": "Economics",
+    "event_type": "main_experiments",
+    "description": "Feeling confident in the revised method, the team proceeds to the main experiment. This involves collecting county-level employment and economic data surrounding a recent, real-world minimum wage increase and applying the updated synthetic control model to generate the primary estimate of the policy's causal effect.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The methodological scheme was revised (e_05) to address weaknesses found in the pilot study (e_04). The next logical step is to apply this improved method to the primary dataset to answer the core research question, thus moving the project from the pilot phase to the main experimental phase."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Causal inference in economic policy",
+    "subject": "Economics",
+    "event_type": "analysis",
+    "description": "Perform a detailed analysis of the main experiment's results. The findings indicate a small, statistically significant negative impact on employment in the treated county. The team also conducts a series of placebo tests and sensitivity analyses to check the robustness of this primary finding.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "Following the execution of the main experiment (e_06), it is crucial to thoroughly analyze the collected data. This step aims to formally interpret the results, assess their statistical significance and robustness, and provide the core findings that will form the basis of the research paper."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Causal inference in economic policy",
+    "subject": "Economics",
+    "event_type": "writing",
+    "description": "With the main analysis complete, the team begins drafting the research paper. This initial writing phase focuses on structuring the paper and writing the 'Methodology' and 'Results' sections, detailing the revised synthetic control model and presenting the key findings on the employment impact.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The main experiment has been run and the results robustly analyzed (e_07). The logical progression is to start disseminating these findings. This writing event formalizes the methodology and results into a draft paper, building directly on the final method scheme and analysis artifacts."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Causal inference in economic policy",
+    "subject": "Economics",
+    "event_type": "analysis",
+    "description": "While writing the discussion section, the team identifies a potential alternative explanation for the results: a regional shock that affected the treated county but not the synthetic control. To address this, they decide to run a new robustness check using a Difference-in-Differences (DiD) model with nearby, unaffected counties as a control group.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The process of writing (e_08) often reveals gaps or potential critiques in the analysis. This new analysis step is a direct response to such a realization, aiming to strengthen the paper's conclusions by testing the primary finding against an alternative methodology (DiD) and ruling out a key potential confounder."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Causal inference in economic policy",
+    "subject": "Economics",
+    "event_type": "writing",
+    "description": "Incorporate the results of the Difference-in-Differences (DiD) robustness check into the paper. The DiD analysis confirms the direction and magnitude of the original synthetic control findings, which strengthens the paper's central claim. The 'Results' section is updated with a new subsection, and the 'Discussion' is revised to reflect this increased confidence.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After running a new robustness check (e_09) in response to a potential critique, the immediate next step is to integrate these new findings into the paper draft (e_08). This action strengthens the paper's argument by showing the main result is robust to an alternative analytical approach."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Causal inference in economic policy",
+    "subject": "Economics",
+    "event_type": "writing",
+    "description": "With the core empirical sections drafted, the team focuses on writing the framing sections of the paper. This involves drafting the 'Introduction' to motivate the study and the 'Discussion' to interpret the findings, place them in the context of existing literature, and discuss policy implications.",
+    "required_artifacts": [
+      "research_goals",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After solidifying the results and robustness checks in the paper draft (e_10), the next logical step is to complete a full version of the manuscript. Writing the introduction and discussion sections frames the empirical contribution and moves the project closer to a submittable paper."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Causal inference in economic policy",
+    "subject": "Economics",
+    "event_type": "proposal",
+    "description": "After reviewing the full paper draft, the team decides the project's scope is too narrow. They revise the research goals to include an investigation into the heterogeneous effects of the minimum wage policy across different industries (e.g., hospitality vs. manufacturing). This requires updating the research plan to include a new analysis phase focused on subgroup analysis.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "With a full paper draft complete (e_11), the team has a clear view of their contribution and its limitations. Broadening the research goals to explore heterogeneous effects is a natural extension that significantly increases the paper's impact and policy relevance, justifying a return to the proposal stage to formally update the project's scope."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Causal inference in economic policy",
+    "subject": "Economics",
+    "event_type": "analysis",
+    "description": "Following the revised research plan, the team performs the new subgroup analysis. They disaggregate the county-level employment data by industry sector and re-run the synthetic control analysis for each subgroup (e.g., hospitality, manufacturing, retail) to estimate heterogeneous treatment effects.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan",
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The previous event (e_12) expanded the project's scope to include heterogeneous effects, updating the research goals and plan. The logical next step is to execute this new analytical task by applying the established method to subgroups of the existing data, which will generate the results needed to address the new research questions."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Causal inference in economic policy",
+    "subject": "Economics",
+    "event_type": "writing",
+    "description": "Update the paper draft to incorporate the new findings from the heterogeneous effects analysis. This involves creating new tables and figures for the subgroup results, revising the 'Results' section, and expanding the 'Discussion' to consider the policy implications of why the minimum wage impact varies across industries.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The subgroup analysis in the previous step (e_13) generated crucial new results to meet the expanded research goals (e_12). The logical next action is to integrate these findings into the paper draft, creating a more comprehensive manuscript that reflects the full scope of the research."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Causal inference in economic policy",
+    "subject": "Economics",
+    "event_type": "analysis",
+    "description": "During an internal review of the complete paper draft, a concern is raised about the potentially ad-hoc selection of covariates. To bolster the paper's robustness, the team performs a new sensitivity analysis, using a cross-validation procedure to systematically select the optimal set of predictor variables for the synthetic control model.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With a near-final paper draft (e_14), the focus shifts to pre-empting reviewer critiques. This analysis addresses a key methodological choice (covariate selection) that was updated in e_05, ensuring the main conclusions are robust and not an artifact of a specific model specification."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Causal inference in economic policy",
+    "subject": "Economics",
+    "event_type": "writing",
+    "description": "The team updates the paper draft to include the results from the cross-validation sensitivity analysis. The 'Methodology' section is revised to detail the covariate selection procedure, and an appendix is added to show that the main findings are robust to this systematic selection, solidifying the paper's claims.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the latest sensitivity analysis (e_15), it is essential to incorporate these findings into the manuscript. This writing step documents the final robustness check, ensuring the paper is comprehensive and transparent about its methodological choices before being considered complete and ready for submission."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Causal inference in economic policy",
+    "subject": "Economics",
+    "event_type": "end",
+    "description": "The research project concludes. The initial research questions have been answered, the scope was successfully expanded to include heterogeneous effects, and multiple rounds of analysis and writing have addressed potential critiques, leading to a comprehensive manuscript ready for submission to a peer-reviewed journal.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached a natural conclusion. The research goals have been met, the methodology is stable, the results are supported by extensive robustness checks, and a complete paper has been drafted and revised. The core research is finished, and the project is ready for dissemination."
+  }
+]

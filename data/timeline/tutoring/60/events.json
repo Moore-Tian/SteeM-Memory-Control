@@ -1,0 +1,365 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "From questions to datasets and measurable outcomes",
+    "subject": "DataScience",
+    "event_type": "objective_clarification",
+    "description": "Initial diagnostic session to discuss the learner's goal of turning vague questions into testable hypotheses and measurable outcomes for data projects. We covered their current skills, project context, and defined what success would look like.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives",
+      "study_plan"
+    ],
+    "reason": "As the first session, the primary goal is to establish a clear understanding of the learner's needs and goals. This produces the initial learning objectives and a draft study plan, which will guide all subsequent tutoring activities."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "From questions to datasets and measurable outcomes",
+    "subject": "DataScience",
+    "event_type": "lesson",
+    "description": "Conducted the first lesson based on the study plan, focusing on the 'Problem Framing' stage. We covered techniques for deconstructing ambiguous business questions into specific, answerable components and identifying initial assumptions.",
+    "required_artifacts": [
+      "learning_objectives",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the learning objectives and study plan established in the initial session (e_01), the next logical step is to begin instruction. This first lesson addresses the foundational topic in the plan and produces the initial set of teaching notes for this concept."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "From questions to datasets and measurable outcomes",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "Assigned a practice exercise based on the recent lesson. The learner was given a vague business problem ('How can we improve user engagement?') and asked to apply the 'Problem Framing' techniques to break it down into specific, measurable questions.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson (e_02), the next logical step is to have the learner apply the concepts to solidify their understanding. This practice session directly tests the skills covered in the 'Problem Framing' lesson, and the output is captured in a practice_record for subsequent review."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "From questions to datasets and measurable outcomes",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "Reviewed the learner's practice attempt at breaking down the 'user engagement' problem. I assessed their proposed questions for specificity and measurability, identifying a tendency to jump to solutions rather than defining the problem space first.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session (e_03), a review is necessary to evaluate the learner's application of the concepts. By analyzing the practice_record, we can identify misconceptions and provide targeted, actionable feedback, which is captured in the new feedback_summary artifact to guide the next steps."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "From questions to datasets and measurable outcomes",
+    "subject": "DataScience",
+    "event_type": "materials_revision",
+    "description": "Based on the review, I updated the 'Problem Framing' teaching notes. I added a new section explicitly warning against the common pitfall of 'solutionizing' and contrasted a good problem-focused question with a poor solution-oriented one.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_04) highlighted a specific, common error. Revising the teaching notes to explicitly address this pitfall directly incorporates the feedback, making the material more robust and better tailored to prevent the same mistake in future practice."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "From questions to datasets and measurable outcomes",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "Following the review and materials update, a second practice session was assigned. The learner was asked to re-attempt the 'Problem Framing' exercise with a new scenario ('How can we reduce customer churn?'), explicitly guided by the revised teaching notes and previous feedback to focus on problem definition.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After identifying a key misconception in the first practice attempt (e_04) and revising the teaching materials (e_05), it is essential for the learner to re-apply the concept. This targeted practice allows them to incorporate the feedback and use the improved notes, reinforcing the learning loop before moving to a new topic."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "From questions to datasets and measurable outcomes",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "Reviewed the learner's second practice attempt on 'Problem Framing' for the 'customer churn' scenario. This time, the learner successfully avoided 'solutionizing' and produced well-defined, problem-focused questions, demonstrating a clear grasp of the feedback and revised notes.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted re-practice session (e_06), a review is necessary to confirm that the learner has successfully overcome the misconception identified in the first review (e_04). This step closes the remediation loop and verifies the learner's readiness to proceed to the next topic."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "From questions to datasets and measurable outcomes",
+    "subject": "DataScience",
+    "event_type": "lesson",
+    "description": "With 'Problem Framing' mastered, we moved to the next topic in the study plan: 'Defining Metrics and Identifying Data Sources'. This lesson focused on translating the well-defined questions from the previous stage into specific, quantifiable metrics and brainstorming potential data sources to measure them.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_07) confirmed the learner's mastery of the first topic. It is therefore appropriate to proceed to the next module outlined in the study plan. This lesson builds directly on the prior skill, connecting well-defined questions to the tangible data and metrics required to answer them."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "From questions to datasets and measurable outcomes",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "Assigned a practice exercise for the new topic, 'Defining Metrics and Identifying Data Sources'. The learner was asked to take their previously formulated 'customer churn' questions and propose specific, measurable metrics for each, along with potential internal or external data sources.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on defining metrics (e_08), the logical next step is to apply these new skills. This practice session directly builds upon the learner's successful work from the previous topic, reinforcing the connection between well-defined questions and the metrics needed to answer them."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "From questions to datasets and measurable outcomes",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "Reviewed the practice attempt on defining metrics and data sources. The learner correctly linked metrics to their questions, but some proposed metrics were vague 'vanity metrics' and the feasibility of acquiring the proposed data was not considered.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session (e_09), a review is essential to evaluate the learner's ability to apply the new concepts. This step assesses the quality and feasibility of the proposed metrics, providing targeted feedback to address subtle misconceptions before moving forward."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "From questions to datasets and measurable outcomes",
+    "subject": "DataScience",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback from the last review, I revised the teaching notes for 'Defining Metrics'. I added a new section contrasting actionable metrics with 'vanity metrics' and included a simple checklist for evaluating the feasibility of proposed data sources.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_10) revealed specific gaps in the learner's understanding regarding metric quality and data feasibility. Revising the teaching notes to explicitly address these points improves the learning materials and sets the learner up for a more successful re-practice attempt, following the effective pattern established in events e_04-e_06."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "From questions to datasets and measurable outcomes",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "Assigned a second practice task for 'Defining Metrics', asking the learner to refine their previous attempt. Using the revised teaching notes and feedback, they focused on converting their 'vanity metrics' for customer churn into actionable metrics and evaluating the feasibility of the required data sources.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the review (e_10) identified weaknesses and the teaching materials were improved (e_11), a targeted re-practice is the logical next step. This allows the learner to directly apply the feedback and use the revised notes to correct their earlier misconceptions before moving on."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "From questions to datasets and measurable outcomes",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "Reviewed the learner's second practice attempt on defining metrics. The learner successfully refined their previous work, replacing 'vanity metrics' with actionable ones and providing a realistic feasibility assessment for the required data sources, showing they've internalized the feedback.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted re-practice session (e_12), a review is critical to confirm that the learner has successfully addressed the issues identified in the previous review (e_10). This step verifies mastery of the current topic and signals that the learner is ready to progress to the next module in the study plan."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "From questions to datasets and measurable outcomes",
+    "subject": "DataScience",
+    "event_type": "plan_milestones",
+    "description": "Held a checkpoint session to review progress after completing the first two modules. We discussed the learner's pace and confidence, and adjusted the upcoming milestones in the study plan to allocate more time for the 'Experiment Design' phase, which the learner identified as a potential area of difficulty.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "Having successfully completed two major topics, this is a natural point to review the overall study plan. This event allows for adjusting the plan based on the learner's actual progress and feedback, ensuring the upcoming milestones are realistic and well-paced before starting the next module."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "From questions to datasets and measurable outcomes",
+    "subject": "DataScience",
+    "event_type": "lesson",
+    "description": "Began the next module as per the revised study plan: 'Introduction to Experiment Design'. The lesson covered the core principles of A/B testing, including defining a hypothesis, establishing control and treatment groups, and setting a clear success metric for an experiment.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the milestone planning session (e_14) that confirmed readiness and adjusted the schedule, the next logical step is to begin the new module on 'Experiment Design'. This lesson introduces the foundational concepts required for the topic, directly building upon the previously mastered skills of defining questions and metrics."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "From questions to datasets and measurable outcomes",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "Assigned a practice exercise on 'Experiment Design'. The learner was tasked with designing a hypothetical A/B test to reduce customer churn, requiring them to formulate a clear hypothesis, define the control and treatment groups, and specify the primary success metric they would use to evaluate the outcome.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on experiment design (e_15), the immediate next step is for the learner to apply these new theoretical concepts. This practice exercise directly connects the new topic to the ongoing 'customer churn' scenario, reinforcing the entire workflow from question to testable hypothesis and generating a record for review."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "From questions to datasets and measurable outcomes",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "Reviewed the learner's A/B test design for the customer churn problem. While the hypothesis was well-formed and linked to a clear metric, the definition of the control group was weak, and potential confounding variables (like seasonality or concurrent marketing campaigns) were not considered.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the first practice session on a new, complex topic (e_16), a review is crucial to identify and correct misunderstandings early. By analyzing the practice_record, the tutor can provide specific feedback on the nuances of experiment design, which is captured in the feedback_summary to guide the next steps."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "From questions to datasets and measurable outcomes",
+    "subject": "DataScience",
+    "event_type": "materials_revision",
+    "description": "Based on the last review, I updated the 'Experiment Design' teaching notes. I added a new section on defining robust control groups and a checklist for identifying potential confounding variables like seasonality or concurrent campaigns.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_17) highlighted critical but common mistakes in experiment design. Updating the teaching notes to explicitly address control group definition and confounding variables directly incorporates this feedback, improving the material to help the learner avoid these pitfalls in their next practice attempt."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "From questions to datasets and measurable outcomes",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "Assigned a revised practice exercise on 'Experiment Design'. The learner was asked to refine their previous A/B test design, focusing specifically on defining a robust control group and listing potential confounding variables, using the updated teaching notes and feedback.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the previous review (e_17) identified key weaknesses and the teaching materials were improved (e_18), a targeted re-practice session is the logical next step. This allows the learner to directly apply the feedback and use the revised notes to correct their earlier misconceptions, reinforcing the learning loop."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "From questions to datasets and measurable outcomes",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "Reviewed the learner's refined A/B test design. The learner successfully incorporated the feedback, defining a much stronger control group and listing several relevant potential confounding variables, demonstrating a solid understanding of practical experiment design.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted re-practice session (e_19), a review is essential to confirm that the learner has successfully overcome the issues identified in the previous review (e_17). This step validates their understanding of the complex topic of experiment design and closes the learning loop for this module, signaling readiness for a final review or conclusion."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "From questions to datasets and measurable outcomes",
+    "subject": "DataScience",
+    "event_type": "end",
+    "description": "Final wrap-up session to review the learner's journey from problem framing to experiment design. We confirmed that the initial learning objectives have been met, and the learner now possesses a solid framework for translating business questions into measurable data projects. We briefly discussed potential next steps for independent learning.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has successfully completed all modules outlined in the study plan, demonstrating mastery in each area after targeted practice and review. With the core learning objectives met and performance stable, the formal tutoring process has reached its natural conclusion."
+  }
+]

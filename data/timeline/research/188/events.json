@@ -1,0 +1,300 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Policy impact assessment",
+    "subject": "PoliticalScience",
+    "event_type": "proposal",
+    "description": "The project begins with an initial proposal to assess the economic impact of a new environmental regulation. The core research questions are defined, focusing on employment effects and business compliance costs. A high-level project roadmap is drafted, outlining major phases like data collection, model development, and analysis.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the first event, establishing the foundational research goals and a high-level plan. Since no prior work exists, no artifacts are required, and the initial proposal generates the first set of guiding documents for the project."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Policy impact assessment",
+    "subject": "PoliticalScience",
+    "event_type": "scheme_design",
+    "description": "Based on the research goals, the team designs a quasi-experimental method. They decide to use a difference-in-differences (DiD) approach, comparing industries affected by the regulation with similar, unaffected industries before and after the policy's implementation. This involves defining the treatment and control groups and identifying potential data sources.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "With the initial research goals and plan established in the proposal (e_01), the next logical step is to design the specific methodology for the study. This event translates the high-level goals into a concrete analytical framework, the difference-in-differences model, which will guide subsequent data collection and experiments."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Policy impact assessment",
+    "subject": "PoliticalScience",
+    "event_type": "pilot_experiments",
+    "description": "The team conducts a pilot study using a subset of publicly available data. The goal is to test the feasibility of the difference-in-differences (DiD) approach and check the crucial 'parallel trends' assumption for the selected treatment and control groups. This small-scale test helps identify potential issues with data quality and model specification before a full-scale data collection effort.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing the analytical framework in e_02, a pilot experiment is a crucial next step to validate the chosen method. It allows the team to test the assumptions of the DiD model with real data on a small scale, reducing the risk of major problems during the main experiments. This generates the first set of preliminary results."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Policy impact assessment",
+    "subject": "PoliticalScience",
+    "event_type": "analysis",
+    "description": "The team analyzes the pilot experiment results. The analysis confirms that while the data collection process is viable, the simple difference-in-differences model is flawed because the 'parallel trends' assumption does not hold for the chosen control group. This finding invalidates the current methodological approach and necessitates a redesign of the experimental scheme.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following a pilot experiment (e_03), a formal analysis of the results is the necessary next step to evaluate the method's validity. The pilot's purpose was to identify issues, and this analysis formalizes the findings—specifically, the failure of a key assumption. This step is critical before proceeding, as it prevents the team from wasting resources on a flawed main experiment and provides the justification for the inevitable method redesign."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Policy impact assessment",
+    "subject": "PoliticalScience",
+    "event_type": "scheme_design",
+    "description": "In response to the failed pilot, the team revises the methodology. They abandon the simple difference-in-differences approach and instead design a synthetic control method. This new scheme involves constructing a weighted combination of control units to create a more suitable counterfactual for the treated group, which should better satisfy the parallel trends assumption.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis in e_04 proved that the initial methodological scheme was invalid due to the violation of the parallel trends assumption. Therefore, the immediate and necessary next step is to return to the design phase to develop a more robust method. Adopting a synthetic control approach is a direct and logical response to the specific problem identified in the pilot data."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Policy impact assessment",
+    "subject": "PoliticalScience",
+    "event_type": "pilot_experiments",
+    "description": "The team re-runs the pilot study, this time applying the new synthetic control method. Using the same initial dataset, they construct a weighted 'synthetic' control group and test whether it exhibits parallel pre-treatment trends with the regulated industries. This serves as a validation step for the revised methodology.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing a new method in e_05 to overcome the failures of the first pilot (e_04), it is crucial to validate this new approach before a full-scale study. Running a second pilot experiment is a standard, risk-mitigating step to confirm that the synthetic control method effectively solves the parallel trends problem, justifying the move to the main experiments."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Policy impact assessment",
+    "subject": "PoliticalScience",
+    "event_type": "analysis",
+    "description": "The team analyzes the results of the second pilot study. The analysis shows that the synthetic control group's pre-treatment trends closely match those of the treated group, validating the new methodology. This positive result provides the confidence needed to proceed with a full-scale data collection and analysis.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After running a new pilot experiment (e_06) with the revised synthetic control method, the essential next step is to analyze the results. This analysis serves to formally confirm whether the methodological issues identified in e_04 have been resolved. A successful outcome here is the final checkpoint before committing resources to the main experiments."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Policy impact assessment",
+    "subject": "PoliticalScience",
+    "event_type": "main_experiments",
+    "description": "With the synthetic control method validated, the team proceeds to the main experiment. This involves collecting the full, comprehensive dataset and applying the validated method to estimate the policy's impact on employment and compliance costs. This step represents the core data-intensive phase of the project.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The successful analysis of the second pilot (e_07) confirmed the validity of the revised synthetic control methodology. Therefore, the logical next step is to scale up from the pilot to the main experiment, applying the now-trusted method to the full dataset to answer the core research questions."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Policy impact assessment",
+    "subject": "PoliticalScience",
+    "event_type": "analysis",
+    "description": "The team conducts a comprehensive analysis of the main experiment's results. This includes calculating the estimated impact of the policy, performing statistical significance tests, and running a series of robustness checks (e.g., placebo tests) to ensure the findings are sound. The primary findings suggest a modest negative impact on employment in the short term.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Having completed the main experiments in e_08, the crucial next step is to formally analyze the comprehensive dataset. This analysis translates the raw experimental output into interpretable findings that directly address the research questions, providing the substantive core of the project's conclusions."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Policy impact assessment",
+    "subject": "PoliticalScience",
+    "event_type": "writing",
+    "description": "With the main findings established, the team begins to draft the research paper. They focus on writing the methodology section, describing the synthetic control approach, and the results section, presenting the estimated policy impact and the outcomes of the robustness checks.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After completing the comprehensive analysis of the main experiments in e_09, the logical next step is to start documenting the findings for publication. Writing the methodology and results sections is a crucial first step in translating the analytical work into a shareable research artifact, and it requires the finalized method scheme and experiment results."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Policy impact assessment",
+    "subject": "PoliticalScience",
+    "event_type": "analysis",
+    "description": "While drafting the discussion section, the team realizes the 'modest negative impact' might obscure different effects across firm sizes. They decide to perform a heterogeneity analysis, splitting the data into small and large firms and re-running the synthetic control model for each subgroup. This new analysis aims to provide a more nuanced understanding of the policy's impact.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The process of writing (e_10) often forces researchers to confront the limitations or nuances of their initial analysis (e_09). Realizing that the aggregate result might be misleading is a common insight. A follow-up heterogeneity analysis is a logical next step to add depth to the findings before finalizing the paper."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Policy impact assessment",
+    "subject": "PoliticalScience",
+    "event_type": "writing",
+    "description": "The team revises the paper to incorporate the findings from the heterogeneity analysis. The results section is updated to show that the negative employment impact is concentrated entirely within small firms, while large firms show no significant effect. This more nuanced finding is then used to enrich the discussion section of the paper.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The heterogeneity analysis in e_11 was conducted specifically to address a question that arose during the writing process. With the new results available, the immediate and logical next step is to integrate this more detailed finding into the manuscript, thereby strengthening the paper's core argument and conclusions."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Policy impact assessment",
+    "subject": "PoliticalScience",
+    "event_type": "proposal",
+    "description": "As the paper draft matures, the team reviews the overall narrative and realizes the heterogeneity finding is the most significant contribution. They decide to refine the primary research goals to explicitly highlight the differential impact of the regulation on small versus large firms. This reframes the study's main thrust from a general impact assessment to a more nuanced investigation.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "After the heterogeneity analysis (e_11) and subsequent paper revisions (e_12), the project's most compelling story has emerged. It is a common and effective research practice to revisit the high-level proposal to align the stated goals with the actual key findings. This sharpens the paper's focus and ensures the introduction and conclusion strongly frame the most important contribution."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Policy impact assessment",
+    "subject": "PoliticalScience",
+    "event_type": "writing",
+    "description": "The team performs a major revision of the paper, focusing on the introduction and conclusion sections. They rewrite these parts to align with the refined research goals, framing the study's primary contribution as the discovery of heterogeneous policy effects across firms of different sizes.",
+    "required_artifacts": [
+      "research_goals",
+      "paper_paragraph",
+      "experiment_results",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After the research goals were reframed in e_13 to emphasize the key heterogeneity finding, it is essential to update the paper's narrative. This writing step ensures that the introduction, conclusion, and overall story of the manuscript are consistent with the newly defined primary contribution of the research."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Policy impact assessment",
+    "subject": "PoliticalScience",
+    "event_type": "analysis",
+    "description": "After an internal review of the paper draft, a colleague suggests that the results might be sensitive to the choice of predictor variables used to construct the synthetic control. The team decides to conduct an additional robustness check by re-running the analysis with an alternative set of predictors to ensure the main findings hold.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With a mature paper draft (e_14), seeking internal feedback is a standard step before submission. This feedback often uncovers potential weaknesses or areas for improvement, such as the need for additional robustness checks. This new analysis directly responds to such a challenge, strengthening the study's conclusions before wider dissemination."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Policy impact assessment",
+    "subject": "PoliticalScience",
+    "event_type": "writing",
+    "description": "The robustness check confirms that the main findings hold even with an alternative set of predictors. The team writes up this result and adds it to the appendix of the paper, including a table comparing the estimates. This serves to strengthen the credibility of the main conclusions.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After running a new analysis for a robustness check (e_15), the logical next step is to incorporate the results into the manuscript. Documenting this successful check is crucial for demonstrating the reliability of the findings and preempting potential reviewer critiques, moving the paper closer to a submittable state."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Policy impact assessment",
+    "subject": "PoliticalScience",
+    "event_type": "end",
+    "description": "With the main findings confirmed, the heterogeneity analysis incorporated, the paper's narrative refined, and key robustness checks completed and documented, the research project is considered complete. The final manuscript is now ready for submission to a peer-reviewed journal.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached a natural conclusion. The research questions have been addressed with a validated and robust methodology, the key findings are well-supported, and the paper has undergone multiple revisions to produce a cohesive final draft, making it ready for dissemination."
+  }
+]

@@ -1,0 +1,273 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Energy and conservation principles in reasoning problems",
+    "subject": "Physics",
+    "event_type": "objective_clarification",
+    "description": "Initial meeting with the learner to discuss their goals, current understanding of energy principles from their physics course, and specific difficulties with conservation of energy problems. The aim is to establish clear learning targets and a preliminary roadmap.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives",
+      "study_plan"
+    ],
+    "reason": "This is the first event in the tutoring timeline. An initial objective clarification session is necessary to understand the learner's needs and create a foundational plan before any teaching or practice can begin."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Energy and conservation principles in reasoning problems",
+    "subject": "Physics",
+    "event_type": "lesson",
+    "description": "The tutor delivers the first lesson, focusing on the foundational concepts of Work, Kinetic Energy, and the Work-Energy Theorem. This session aims to establish a solid conceptual base before moving on to more complex conservation laws, using simple examples to illustrate the connections between force, displacement, and changes in energy.",
+    "required_artifacts": [
+      "learning_objectives",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the initial planning in event e_01, the first logical step is to begin instruction as outlined in the study plan. This foundational lesson on Work and Kinetic Energy directly addresses the prerequisites for the learner's goal of mastering energy conservation, and it generates the first set of reusable teaching notes."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Energy and conservation principles in reasoning problems",
+    "subject": "Physics",
+    "event_type": "practice",
+    "description": "The tutor assigns a set of targeted problems focusing on the Work-Energy Theorem. The problems require the learner to calculate work done by constant and variable forces and relate it to changes in kinetic energy, checking their application of the concepts from the previous lesson.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a foundational lesson (e_02), it is crucial to assess the learner's comprehension through application. This targeted practice session allows the learner to solidify their understanding of the Work-Energy Theorem and provides the tutor with concrete data on their progress before introducing more complex topics."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Energy and conservation principles in reasoning problems",
+    "subject": "Physics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's submitted work from the practice session. The analysis focuses on identifying patterns in errors, such as sign conventions for work done by friction or incorrect application of the net work concept, in order to provide targeted feedback.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following a practice session (e_03), a review is the logical next step to assess comprehension and identify misconceptions. By analyzing the learner's attempts documented in the practice_record, the tutor can create a feedback_summary that will guide the next phase of instruction or remediation."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Energy and conservation principles in reasoning problems",
+    "subject": "Physics",
+    "event_type": "materials_revision",
+    "description": "The tutor revises the teaching notes on the Work-Energy Theorem. Based on the feedback from the review, they add a new section explicitly detailing how to handle negative work done by non-conservative forces like friction, and provide a clearer worked example distinguishing 'net work' from the work done by individual forces.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After the review (e_04) identified specific errors related to friction and net work, it is prudent to refine the teaching materials to address these weak points directly. Updating the teaching notes makes them more effective for future lessons and review, ensuring the identified misconceptions are explicitly corrected in the core reference material before moving on."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Energy and conservation principles in reasoning problems",
+    "subject": "Physics",
+    "event_type": "lesson",
+    "description": "The tutor introduces the concepts of Potential Energy (gravitational and elastic) and the Principle of Conservation of Mechanical Energy. This lesson builds on the Work-Energy theorem, explaining how conservative forces lead to storable potential energy and simplifying problem-solving when non-conservative forces are absent.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After reviewing practice (e_04) and revising materials on the Work-Energy Theorem (e_05), the foundational concepts are now more solid. The next logical step according to the study plan is to introduce Potential Energy, which directly builds upon the concept of work done by conservative forces. The existing teaching notes are updated to include this new, central topic."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Energy and conservation principles in reasoning problems",
+    "subject": "Physics",
+    "event_type": "practice",
+    "description": "The tutor assigns practice problems focused on the Conservation of Mechanical Energy. The problems involve scenarios like pendulums, objects sliding down frictionless ramps, and spring-mass systems, requiring the learner to apply the principle KE_i + PE_i = KE_f + PE_f.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on potential energy and conservation of mechanical energy (e_06), it is crucial for the learner to apply these new concepts. This targeted practice session assesses their ability to set up and solve conservation equations in idealized (frictionless) scenarios, solidifying their understanding before more complex topics are introduced."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Energy and conservation principles in reasoning problems",
+    "subject": "Physics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's solutions to the conservation of mechanical energy problems. The analysis checks for common mistakes, such as incorrectly defining the system, mixing up initial and final states, or errors in calculating gravitational or elastic potential energy.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on conservation of mechanical energy (e_07), a review is the essential next step to assess understanding and diagnose any new misconceptions. Analyzing the `practice_record` allows the tutor to provide targeted feedback before introducing problems that combine conservative and non-conservative forces."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Energy and conservation principles in reasoning problems",
+    "subject": "Physics",
+    "event_type": "lesson",
+    "description": "The tutor conducts a lesson on the generalized conservation of energy principle, incorporating non-conservative forces. The session starts by clarifying how to define initial/final states based on the last review, then introduces the equation W_nc = ΔKE + ΔPE to solve problems involving friction or other external forces.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After reviewing practice on idealized conservation problems (e_08), the next logical step is to introduce the more general principle that includes non-conservative forces. This lesson directly follows the study plan, uses the feedback_summary to address recent difficulties, and builds upon all previous concepts to tackle more complex, realistic scenarios."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Energy and conservation principles in reasoning problems",
+    "subject": "Physics",
+    "event_type": "practice",
+    "description": "The tutor assigns a set of complex problems requiring the use of the generalized conservation of energy principle. These problems involve scenarios with friction, air resistance, or external pushes, forcing the learner to apply the equation W_nc = ΔKE + ΔPE from the previous lesson.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on the generalized conservation of energy (e_09), the immediate next step is to apply this comprehensive principle through targeted practice. This session will test the learner's ability to integrate all concepts learned so far and provide concrete data for the next review cycle."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Energy and conservation principles in reasoning problems",
+    "subject": "Physics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's work on the complex problems involving non-conservative forces. The analysis focuses on the correct application of the W_nc = ΔKE + ΔPE formula, checking for systematic errors in calculating work done by friction or in setting up the initial and final energy states.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on generalized energy conservation (e_10), a review is the necessary next step to evaluate the learner's mastery of this final core concept. Analyzing the `practice_record` is crucial for identifying any persistent errors and generating a `feedback_summary` to guide the final stages of tutoring on this topic."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Energy and conservation principles in reasoning problems",
+    "subject": "Physics",
+    "event_type": "plan_milestones",
+    "description": "The tutor and learner review the progress made on the topic of energy conservation. Given that all core concepts have now been covered, they update the study plan to schedule a final cumulative practice test and a concluding review session to assess overall mastery of the topic.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "After completing the lesson-practice-review cycle for the most advanced sub-topic (e_11), it is a natural point to review the overall progress. Updating the study plan to include a final assessment formally marks the completion of the learning phase and sets a clear goal for demonstrating mastery."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Energy and conservation principles in reasoning problems",
+    "subject": "Physics",
+    "event_type": "practice",
+    "description": "The tutor administers a cumulative practice test that includes a mix of problems covering the Work-Energy Theorem, conservation of mechanical energy, and generalized energy conservation with non-conservative forces. This test assesses the learner's ability to synthesize concepts and select the appropriate problem-solving strategy.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "As scheduled in the updated study plan from the previous milestone review (e_12), this cumulative practice session is the next logical step. It serves as a final assessment of the learner's ability to apply all the concepts covered in the tutoring sessions, generating a comprehensive practice record for a final review."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Energy and conservation principles in reasoning problems",
+    "subject": "Physics",
+    "event_type": "review",
+    "description": "The tutor conducts a final, comprehensive review of the cumulative practice test. The focus is on assessing overall mastery, particularly the learner's ability to correctly identify which energy principle to apply in different scenarios, to determine if the learning objectives have been met.",
+    "required_artifacts": [
+      "practice_record",
+      "learning_objectives",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After administering a cumulative practice test (e_13), the essential next step is to review the results. This final review provides a summative assessment of the learner's mastery across all topics, checking against the learning objectives and generating a final feedback summary to conclude the learning process."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Energy and conservation principles in reasoning problems",
+    "subject": "Physics",
+    "event_type": "materials_revision",
+    "description": "Based on the final review of the cumulative test, the tutor makes final updates to the teaching notes. They add a summary flowchart to help students decide which energy principle to apply (Work-Energy Theorem, Conservation of Mechanical Energy, or Generalized Conservation) based on the forces present in a problem, directly addressing the main challenge identified in the final assessment.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After the final review (e_14) identified that the main remaining difficulty was strategy selection, it is a valuable final step to revise the teaching materials to explicitly address this. Creating a decision-making flowchart in the `teaching_notes` captures this key insight and improves the materials for future use, representing a final refinement based on the complete tutoring cycle."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Energy and conservation principles in reasoning problems",
+    "subject": "Physics",
+    "event_type": "end",
+    "description": "The tutor and learner have a final wrap-up meeting. They confirm that the learning objectives have been met, and the learner now feels confident in tackling energy conservation problems, concluding the tutoring engagement for this topic.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The tutoring process has reached a logical conclusion. The learning objectives have been met, a cumulative assessment has demonstrated the learner's mastery, and all feedback has been incorporated into refined teaching materials, signifying a successful end to the engagement."
+  }
+]

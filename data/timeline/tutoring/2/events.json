@@ -1,0 +1,359 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Ratios, rates, and proportional thinking",
+    "subject": "Math",
+    "event_type": "objective_clarification",
+    "description": "Conducted an initial diagnostic session to understand the learner's goals, constraints, and self-reported background with ratios and proportional thinking. The learner wants to improve their confidence for an upcoming standardized test and feels weak in word problems involving rates.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first event in the tutoring timeline. The logical starting point is to clarify the learner's objectives and current knowledge to establish a foundation for all subsequent planning and instruction."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Ratios, rates, and proportional thinking",
+    "subject": "Math",
+    "event_type": "plan_milestones",
+    "description": "Based on the learner's goals, an initial study plan is created. The plan outlines three key milestones: understanding basic ratios and proportions, solving rate problems, and applying these concepts to multi-step word problems similar to those on standardized tests.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "Following the initial diagnostic session (e_01) where learning objectives were established, creating a structured study plan is the logical next step. This provides a clear roadmap for the tutoring, addressing the learner's specific needs and breaking down the topic into manageable milestones."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Ratios, rates, and proportional thinking",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "Delivered a lesson on the fundamentals of ratios, including how to write them, simplify them, and understand the relationship between part-to-part and part-to-whole ratios. This lesson addresses the first milestone of the study plan.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the study plan (e_02) in place, the next logical step is to begin instruction. This lesson targets the first milestone, 'understanding basic ratios and proportions,' and creates reusable teaching notes for the topic."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Ratios, rates, and proportional thinking",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "Assigned a set of practice problems focused on the fundamentals of ratios, based on the recent lesson. The problems require the learner to write, simplify, and interpret part-to-part and part-to-whole ratios.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After delivering a lesson on basic ratios (e_03), the next logical step is to have the learner apply these concepts. This practice session will check for understanding and generate a record of the learner's work for future review."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Ratios, rates, and proportional thinking",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "Reviewed the learner's attempts from the practice session on basic ratios. The review identifies that while the learner can simplify ratios correctly, they occasionally confuse part-to-part and part-to-whole relationships when setting up ratios from word problems.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed practice (e_04), the logical next step is to review their work. This allows the tutor to assess understanding, identify specific misconceptions, and generate actionable feedback before moving on to more complex topics."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Ratios, rates, and proportional thinking",
+    "subject": "Math",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback from the last review, the teaching notes for basic ratios are revised. The revision adds more explicit examples and a visual guide to help distinguish between part-to-part and part-to-whole relationships in word problems.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in e_05 identified a specific misconception. Before moving to new practice, it is effective to refine the teaching materials to directly address this confusion, making the explanation clearer and improving the reusable notes for future lessons."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Ratios, rates, and proportional thinking",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "A new, targeted practice set is assigned to the learner. The problems are specifically designed to reinforce the distinction between part-to-part and part-to-whole ratios, based on the recent materials revision and feedback.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After identifying a misconception (e_05) and revising the teaching materials to address it (e_06), it is crucial to have the learner practice again. This targeted practice will verify if the remediation was successful before advancing to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Ratios, rates, and proportional thinking",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "Reviewed the targeted practice attempts from the previous session. The learner successfully distinguished between part-to-part and part-to-whole ratios in all problems, confirming that the earlier misconception is resolved.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After assigning targeted practice (e_07) to address a specific weakness, the next logical step is to review that work. This confirms whether the remediation was successful and ensures the learner is ready to move on to the next milestone in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Ratios, rates, and proportional thinking",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "Delivered a lesson on the second milestone from the study plan: rates and unit rates. The lesson covered how to set up and solve proportions to find unknown quantities in rate problems, such as speed, distance, and time.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_08) confirmed that the learner has mastered the first topic. According to the study plan (e_02), the next logical step is to begin instruction on the second milestone, which is solving rate problems."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Ratios, rates, and proportional thinking",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "Assigned a set of practice word problems involving rates, unit rates, and proportions. The problems require the learner to apply the methods taught in the previous lesson to calculate speed, cost per item, and other common rate scenarios.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on rates and proportions (e_09), it is essential for the learner to apply these concepts through practice. This session will gauge their initial understanding of the second milestone and provide concrete examples of their work for the upcoming review."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Ratios, rates, and proportional thinking",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "Reviewed the learner's solutions for the rate problems. The learner correctly identified the quantities to compare but struggled with consistently setting up the proportions, especially when units were mixed (e.g., minutes and hours).",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner practiced solving rate problems (e_10), a review is the necessary next step. This allows the tutor to assess the learner's ability to apply the new concepts, identify specific points of difficulty like unit conversion, and create targeted feedback."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Ratios, rates, and proportional thinking",
+    "subject": "Math",
+    "event_type": "materials_revision",
+    "description": "Following the review that identified issues with mixed units, the teaching notes on rates and proportions are updated. The revision adds a new section on the importance of unit consistency and includes a step-by-step guide for converting units (e.g., minutes to hours) before setting up a proportion.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_11) highlighted a specific, recurring error with unit conversions. Before assigning more practice, it is effective to revise the teaching materials to explicitly address this weakness, improving the clarity of the instructional content."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Ratios, rates, and proportional thinking",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "Assigned a new practice set focused on rate problems that require unit conversions (e.g., converting minutes to hours, or inches to feet). This set is designed to directly assess the skill addressed in the recent materials revision.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials (e_12) to specifically address issues with unit conversion identified in the previous review (e_11), it is necessary to provide targeted practice. This will determine if the student has overcome the difficulty before proceeding to more complex problems."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Ratios, rates, and proportional thinking",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The learner's work on the targeted practice set (e_13) is reviewed. The review shows that the learner is now consistently converting units correctly before setting up proportions, indicating the previous difficulty has been resolved.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed targeted practice on unit conversions (e_13), the necessary next step is to review their work. This confirms that the remediation from e_12 was effective and the learner has mastered the skill, clearing the way to advance to the final milestone of the study plan."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Ratios, rates, and proportional thinking",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "Delivered a lesson on the final milestone: solving multi-step word problems. The lesson focused on strategies for deconstructing complex problems, setting up intermediate calculations involving both ratios and rates, and ensuring the final answer addresses the question asked.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_14) confirmed the learner's mastery of rate problems including unit conversions. With the first two milestones of the study plan (e_02) completed, the next logical step is to begin instruction on the third and final milestone, which integrates all previously learned skills."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Ratios, rates, and proportional thinking",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "Assigned a set of complex, multi-step word problems that require the learner to combine their knowledge of ratios, rates, and proportions. These problems are similar in format to those found on standardized tests, aligning with the final milestone of the study plan.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on solving multi-step problems (e_15), it is crucial for the learner to practice applying these integrated skills. This practice session directly targets the final milestone of the study plan and will provide a clear picture of the learner's readiness for standardized test-level questions."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Ratios, rates, and proportional thinking",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "Reviewed the learner's performance on the complex, multi-step word problems. The learner successfully solved most problems but made occasional errors in the initial problem setup or in final calculations, indicating a need for more practice on problem decomposition and careful execution.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner practiced applying all learned skills to complex problems (e_16), a comprehensive review is necessary. This step assesses the learner's overall mastery of the topic, identifies any final, subtle difficulties, and provides feedback to build confidence and accuracy for the standardized test."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Ratios, rates, and proportional thinking",
+    "subject": "Math",
+    "event_type": "materials_revision",
+    "description": "Based on the review of complex problems, the teaching notes for multi-step problems are revised to include a structured problem-solving checklist. This checklist guides the learner through decomposing the problem, tracking units, and double-checking final calculations to reduce setup and execution errors.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_17) revealed that the learner makes occasional errors in problem setup and calculation. This step revises the instructional materials to provide a concrete tool (a checklist) to help the learner improve their process and consistency before a final practice round."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Ratios, rates, and proportional thinking",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "Assigned a final comprehensive practice set of multi-step word problems. The learner is instructed to use the new problem-solving checklist from the revised teaching notes to guide their work and double-check their answers for accuracy.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials to introduce a problem-solving checklist (e_18), a final practice session is needed to see if this new tool helps the learner reduce setup and calculation errors. This serves as a final validation of their skills before concluding the tutoring."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Ratios, rates, and proportional thinking",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "Reviewed the learner's performance on the final comprehensive practice set. The learner successfully applied the problem-solving checklist, leading to a significant reduction in setup and calculation errors, and demonstrating strong competence with multi-step problems.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the final practice session (e_19), a concluding review is necessary to confirm that the learner has mastered the material. This review validates the effectiveness of the new checklist and confirms the learner has met the objectives for the final milestone."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "Ratios, rates, and proportional thinking",
+    "subject": "Math",
+    "event_type": "plan_milestones",
+    "description": "Held a final session to review the learning journey against the study plan. All three milestones were marked as complete, and the learner's significant progress and new confidence in tackling complex word problems were acknowledged and documented in the plan.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the final review (e_20) confirming mastery of all topics, this event serves to formally close out the learning path. Updating the study plan to reflect completion provides the learner with a clear sense of accomplishment and officially confirms that the initial learning objectives have been met, setting the stage for concluding the tutoring."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "tutoring",
+    "topic": "Ratios, rates, and proportional thinking",
+    "subject": "Math",
+    "event_type": "end",
+    "description": "The tutoring engagement is formally concluded. The learner has met all the initial learning objectives and demonstrated consistent competence in solving complex ratio and rate problems, fulfilling the goals set out in the study plan.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The previous event (e_21) confirmed that all milestones in the study plan have been successfully completed. Multiple cycles of practice and review have resolved all identified misconceptions, and the learner has demonstrated mastery. As the initial objectives have been met, it is appropriate to end the tutoring timeline."
+  }
+]

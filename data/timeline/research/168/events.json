@@ -1,0 +1,281 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Fault diagnosis for mechanical systems",
+    "subject": "Engineering",
+    "event_type": "proposal",
+    "description": "Define the initial research goals and create a high-level plan for the project. The project will focus on using deep learning for fault diagnosis in mechanical systems based on vibration sensor data.",
+    "required_artifacts": [
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the first step of the research project, formalizing the initial, abstract research idea into a concrete set of goals and a high-level plan. It establishes the foundation for subsequent method design and experimentation."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Fault diagnosis for mechanical systems",
+    "subject": "Engineering",
+    "event_type": "scheme_design",
+    "description": "Design the initial methodological scheme. This involves selecting a specific deep learning architecture (e.g., a 1D Convolutional Neural Network) suitable for time-series vibration data and defining the data preprocessing pipeline.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "With the high-level goals and plan established in e_01, the next logical step is to design the concrete technical method. This creates the initial 'method_scheme' which is a prerequisite for running any experiments."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Fault diagnosis for mechanical systems",
+    "subject": "Engineering",
+    "event_type": "pilot_experiments",
+    "description": "Run a small-scale pilot experiment to test the feasibility of the designed 1D CNN. The experiment uses a subset of a public bearing fault dataset (e.g., CWRU) to verify the data loading, preprocessing, and model training pipeline.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With a methodological scheme designed in e_02, the next logical step is to conduct a pilot experiment. This serves as a sanity check to validate the feasibility of the proposed method and debug the implementation before committing to resource-intensive main experiments."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Fault diagnosis for mechanical systems",
+    "subject": "Engineering",
+    "event_type": "analysis",
+    "description": "Analyze the results from the pilot experiment. The analysis shows the 1D CNN model achieves a promising baseline accuracy on the clean public dataset, validating the general approach. However, it also reveals a significant drop in performance when even low levels of simulated noise are introduced to the input signals.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_plan"
+    ],
+    "reason": "After conducting a pilot experiment (e_03), the essential next step is to formally analyze the results to understand the method's performance relative to the project goals (e_01). This analysis provides critical insights—in this case, identifying model robustness as a key challenge—which informs an update to the research plan and guides the subsequent research direction."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Fault diagnosis for mechanical systems",
+    "subject": "Engineering",
+    "event_type": "scheme_design",
+    "description": "Revise the methodological scheme to address the poor performance on noisy data. The new design incorporates data augmentation by adding synthetic noise to the training vibration signals, aiming to improve the model's robustness.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis in e_04 revealed a critical weakness of the initial method: its sensitivity to noise. Based on the updated research plan, the next logical step is to go back and revise the method scheme (e_02) to explicitly tackle this robustness issue before proceeding with more experiments."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Fault diagnosis for mechanical systems",
+    "subject": "Engineering",
+    "event_type": "pilot_experiments",
+    "description": "Run a new pilot experiment to test the revised method. This experiment specifically evaluates the 1D CNN trained with noise augmentation on the same noisy test data that caused poor performance previously, to see if robustness has improved.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the methodological scheme in e_05 to include data augmentation, the logical next step is to conduct another pilot experiment. This serves to validate whether the implemented change successfully addresses the noise sensitivity issue identified in the analysis of e_04, before committing to larger-scale experiments."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Fault diagnosis for mechanical systems",
+    "subject": "Engineering",
+    "event_type": "analysis",
+    "description": "Analyze the results from the second pilot experiment (e_06). The analysis confirms that training with noise augmentation significantly improves the model's robustness on noisy test data, validating the revised methodological approach.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the validation experiment in e_06, a formal analysis is required to confirm that the noise sensitivity issue has been resolved. Since the results are positive and the core methodology is now stable, it is an opportune time to begin documenting the work by drafting the methods section of the paper."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Fault diagnosis for mechanical systems",
+    "subject": "Engineering",
+    "event_type": "main_experiments",
+    "description": "Run the main, large-scale experiments using the validated method. This involves training and evaluating the 1D CNN on the full public dataset across all operating conditions and comparing its performance against a traditional baseline method (e.g., SVM with handcrafted features).",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The pilot experiments (e_06) and subsequent analysis (e_07) have successfully validated the revised noise-robust method. The logical next step is to conduct the main experiments to gather comprehensive results, which will form the core evidence for the final paper and demonstrate the method's effectiveness relative to the research goals."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Fault diagnosis for mechanical systems",
+    "subject": "Engineering",
+    "event_type": "analysis",
+    "description": "Conduct a detailed analysis of the main experiment results. This involves statistical comparison of the proposed 1D CNN against the SVM baseline, visualizing performance with confusion matrices, and interpreting the model's effectiveness across different fault conditions.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After running the main experiments in e_08, the most critical next step is to analyze the comprehensive results. This analysis will determine the final conclusions of the study by evaluating the method's performance against the research goals and baselines. The findings will then be used to draft the results section of the paper."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Fault diagnosis for mechanical systems",
+    "subject": "Engineering",
+    "event_type": "writing",
+    "description": "Draft the first complete version of the research paper. This involves writing the introduction, abstract, and conclusion, and integrating the previously drafted methods (e_07) and results (e_09) sections into a cohesive manuscript.",
+    "required_artifacts": [
+      "research_goals",
+      "method_scheme",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the main experimental results analyzed (e_09) and the core findings established, the next logical step is to synthesize all the project's components into a full paper draft. This step builds upon the existing method and result descriptions to create a complete manuscript for review and submission."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Fault diagnosis for mechanical systems",
+    "subject": "Engineering",
+    "event_type": "analysis",
+    "description": "After an internal review of the first full paper draft, the team decides the paper needs a stronger contribution. They perform a new analysis to investigate model interpretability, using a technique like Grad-CAM to visualize which parts of the vibration signal the CNN focuses on for different faults.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "Reviewing the complete paper draft (e_10) often reveals weaknesses or opportunities for improvement. Instead of just editing text, a common reaction is to strengthen the core results. Adding an interpretability analysis elevates the paper from simply showing *that* the method works to explaining *how* it works, which is a significant enhancement before submission."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Fault diagnosis for mechanical systems",
+    "subject": "Engineering",
+    "event_type": "writing",
+    "description": "Revise the full paper draft to incorporate the new interpretability analysis. This involves adding a new subsection with the Grad-CAM visualizations to the results section and updating the abstract, introduction, and conclusion to highlight these findings.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The previous analysis (e_11) generated new, important results on model interpretability. The logical next step is to integrate these findings into the existing paper draft (e_10) to create a more comprehensive and impactful manuscript, strengthening the overall contribution of the work."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Fault diagnosis for mechanical systems",
+    "subject": "Engineering",
+    "event_type": "main_experiments",
+    "description": "To further strengthen the paper and demonstrate the method's generalizability, the team runs new experiments on a second, more challenging dataset. This dataset is from a different machine (e.g., a gearbox instead of only bearings) and has distinct noise characteristics, providing a robust test of the method's applicability.",
+    "required_artifacts": [
+      "method_scheme",
+      "paper_paragraph",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After reviewing the revised paper draft (e_12), the team identifies that validating the method on a single public dataset is a potential weakness. To preempt reviewer criticism regarding generalizability, they decide to run a new set of main experiments on a different dataset before finalizing the manuscript for submission."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Fault diagnosis for mechanical systems",
+    "subject": "Engineering",
+    "event_type": "analysis",
+    "description": "Analyze the results from the generalizability experiments on the new gearbox dataset. The analysis shows that the method works reasonably well but requires some minor hyperparameter tuning to achieve optimal performance on this new type of data, confirming its general applicability but also highlighting the need for slight adaptation.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After conducting a new set of main experiments (e_13) on a different dataset to test generalizability, the essential next step is to analyze these new results. This analysis will determine the extent of the method's applicability and provide the final major piece of evidence for the paper, the findings of which will be drafted for inclusion in the manuscript."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Fault diagnosis for mechanical systems",
+    "subject": "Engineering",
+    "event_type": "writing",
+    "description": "Integrate the generalizability experiment results into the full paper. This involves adding the new analysis from the gearbox dataset (e_14) to the results section, updating figures, and revising the abstract and conclusion to reflect the method's proven robustness across different machine types.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the analysis of the generalizability experiments in e_14, the final piece of evidence is now available. The logical next step is to incorporate these significant findings into the paper draft (last revised in e_12), producing a feature-complete manuscript that makes a much stronger case for the method's real-world applicability."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Fault diagnosis for mechanical systems",
+    "subject": "Engineering",
+    "event_type": "end",
+    "description": "The paper has been thoroughly revised to include all experimental results, including the interpretability and generalizability analyses. The manuscript is now considered complete and is submitted to a relevant engineering journal for peer review, concluding the primary research and development phase of the project.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has successfully progressed from an initial idea to a validated, robust, and well-understood method. With comprehensive results from multiple datasets and a feature-complete paper draft (e_15), the core research objectives have been met, and the work is ready for external evaluation via submission. This marks a natural conclusion to the research cycle."
+  }
+]

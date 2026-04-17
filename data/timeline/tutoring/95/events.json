@@ -1,0 +1,286 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Negotiating deadlines and scope changes",
+    "subject": "LifeSkills",
+    "event_type": "objective_clarification",
+    "description": "Initial meeting to understand the learner's goals for improving their negotiation skills, specifically around project deadlines and scope changes. The tutor asks about their current role, typical challenges, and what a successful outcome would look like for them.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first session, so the primary goal is to establish a clear understanding of the learner's needs and objectives. This foundational step is necessary before creating a tailored study plan or beginning any lessons."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Negotiating deadlines and scope changes",
+    "subject": "LifeSkills",
+    "event_type": "plan_milestones",
+    "description": "Based on the established objectives, the tutor and learner collaborate to outline a staged study plan. They define key milestones, such as 'Identifying negotiation levers,' 'Practicing assertive communication,' and 'Role-playing common scenarios,' and set a tentative timeline.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learner's goals captured in the 'learning_objectives' artifact, the next logical step is to structure the tutoring process. This event creates a 'study_plan' that provides a clear roadmap for achieving those objectives, ensuring both tutor and learner are aligned on the path forward."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Negotiating deadlines and scope changes",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "The tutor conducts the first lesson based on the study plan, focusing on 'Identifying negotiation levers.' Key concepts like understanding stakeholder priorities, identifying tradable concessions, and establishing a BATNA (Best Alternative to a Negotiated Agreement) are introduced.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a study plan established, the next logical step is to deliver the first lesson. This event directly addresses the initial milestone in the 'study_plan' and creates foundational 'teaching_notes' on the core concepts, ensuring the lesson is aligned with the learner's overall objectives."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Negotiating deadlines and scope changes",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "To reinforce the concepts from the lesson, the tutor provides the learner with a hypothetical scenario involving a last-minute scope change request from a client. The learner is tasked with identifying potential negotiation levers and defining their BATNA, and their analysis is captured.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson introducing new concepts, immediate application is crucial for retention. This practice session directly builds on the recent 'lesson' and its 'teaching_notes', allowing the learner to apply theoretical knowledge to a concrete problem and generating a 'practice_record' for subsequent review."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Negotiating deadlines and scope changes",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's analysis from the practice scenario. The feedback highlights that while the learner correctly identified several negotiation levers, their BATNA was not specific enough and could be strengthened by quantifying the costs of walking away.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following a practice session, the most logical next step is to review the learner's work. This event uses the 'practice_record' to identify specific areas for improvement, referencing the original 'teaching_notes' to ensure alignment, and produces a 'feedback_summary' with actionable advice."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Negotiating deadlines and scope changes",
+    "subject": "LifeSkills",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback about the learner's weak BATNA, the tutor revises the 'Identifying negotiation levers' teaching notes. They add a concrete, worked example of how to quantify the costs of walking away from a negotiation, including time, resources, and reputational impact.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The 'feedback_summary' from the last review highlighted a specific gap in the learner's understanding. Before asking the learner to practice again, it's effective for the tutor to improve the instructional materials ('teaching_notes') to directly address this weakness, making the concept clearer for future sessions."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Negotiating deadlines and scope changes",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "To check for understanding after the materials revision, the tutor gives the learner a new practice scenario focused specifically on defining a strong BATNA. The learner is asked to use the revised notes to quantify the costs and benefits of their best alternative in a negotiation about a delayed project.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the revision of the 'teaching_notes' to address a specific weakness identified in the 'feedback_summary', the next logical step is to have the learner practice again. This targeted practice allows the learner to apply the new, more detailed guidance, and the resulting 'practice_record' will show if the intervention was successful."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Negotiating deadlines and scope changes",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's second attempt at defining a BATNA. The analysis shows the learner successfully used the revised notes to quantify the costs of walking away, resulting in a much stronger and more realistic BATNA.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted practice session (e_07), a review is necessary to evaluate if the learner has overcome the previously identified weakness. This event assesses the new 'practice_record' against the updated 'teaching_notes' and provides a 'feedback_summary' confirming the learner's improved understanding."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Negotiating deadlines and scope changes",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "Now that the learner has demonstrated a solid grasp of identifying negotiation levers, the tutor moves to the next milestone in the study plan: 'Practicing assertive communication.' The lesson introduces frameworks for expressing needs and boundaries clearly and respectfully, such as the 'I-statement' method.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review's 'feedback_summary' confirmed the learner's mastery of the first topic. Therefore, it is appropriate to advance to the next milestone outlined in the 'study_plan'. This lesson introduces the next core skill, 'assertive communication', and generates new 'teaching_notes' for it."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Negotiating deadlines and scope changes",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The tutor sets up a role-playing exercise where the learner must respond to a manager adding a new task without adjusting the deadline. The learner is instructed to use the 'I-statement' framework from the recent lesson to communicate their concerns and propose a negotiation. The interaction is captured for review.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the concept of assertive communication in the previous lesson, the most effective next step is to have the learner apply the new skill. This practice session directly uses the concepts from the latest 'teaching_notes' and creates a 'practice_record' of the learner's performance for the upcoming review."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Negotiating deadlines and scope changes",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor reviews the recording of the role-play exercise. They note that the learner successfully used the 'I-statement' structure, but the delivery was hesitant and could be more confident and concise to have a greater impact on the listener.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a practice session (e_10), a review is the natural next step to evaluate the learner's application of the new skill. This event analyzes the 'practice_record' using the 'teaching_notes' as a benchmark, leading to a new 'feedback_summary' with specific, targeted advice for improvement."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Negotiating deadlines and scope changes",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The tutor has the learner repeat the role-playing exercise, focusing specifically on delivering the 'I-statement' with a more confident and concise tone. This session is designed to directly address the feedback on hesitant delivery from the previous review.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "The previous review's 'feedback_summary' highlighted an issue with delivery, not content. A targeted practice session is the most direct way to address this performance-based feedback, allowing the learner to immediately apply the advice and build confidence."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Negotiating deadlines and scope changes",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor and learner review the second role-playing attempt. The tutor confirms that the learner's delivery was significantly more confident and direct, effectively addressing the feedback from the previous review.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted practice session (e_12) designed to fix a specific performance issue noted in the prior 'feedback_summary', a review is essential. This event evaluates the new 'practice_record' to confirm that the learner has successfully incorporated the feedback and improved their delivery."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Negotiating deadlines and scope changes",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The tutor creates a complex role-playing scenario that requires integrating the skills learned so far. The learner must analyze a situation with an unexpected scope change, prepare a negotiation strategy including levers and a BATNA, and then use assertive communication to negotiate a new plan with a stakeholder.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "The previous review confirmed mastery of assertive communication delivery. Following the 'study_plan', this event combines that skill with the earlier topic of identifying negotiation levers, moving the learner into a more comprehensive application of their skills as outlined in the milestone 'Role-playing common scenarios'."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Negotiating deadlines and scope changes",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor and learner review the comprehensive role-playing exercise. They analyze how effectively the learner integrated their preparation (identifying levers and BATNA) with their execution (using assertive communication), noting both strengths and areas for final polish.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the complex, integrative practice session (e_14), a thorough review is the necessary next step. This event assesses the learner's ability to synthesize multiple skills by analyzing the 'practice_record' against the consolidated 'teaching_notes', producing a comprehensive 'feedback_summary' that evaluates their overall proficiency."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Negotiating deadlines and scope changes",
+    "subject": "LifeSkills",
+    "event_type": "plan_milestones",
+    "description": "The tutor and learner review the original study plan and learning objectives to confirm all goals have been met. They discuss strategies for applying the skills in the learner's actual work environment and update the study plan with a section on self-guided practice and reflection.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "After the last review (e_15) confirmed the learner's ability to integrate skills, this session serves as a final check-in against the original goals. Updating the 'study_plan' with strategies for independent practice provides a valuable takeaway and formally concludes the structured learning phase."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Negotiating deadlines and scope changes",
+    "subject": "LifeSkills",
+    "event_type": "end",
+    "description": "This is the final event of the tutoring series. The tutor and learner have confirmed that all initial learning objectives have been met, and the learner now has a plan for self-guided practice to continue their development.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The previous session confirmed that all milestones in the study plan were achieved and the learner demonstrated proficiency in the final comprehensive practice. With the learner's objectives met and a plan for independent application in place, the formal tutoring process has reached its natural conclusion."
+  }
+]

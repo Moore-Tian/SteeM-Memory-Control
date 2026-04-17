@@ -1,0 +1,417 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "File handling and structured text formats",
+    "subject": "Programming",
+    "event_type": "objective_clarification",
+    "description": "Initial session to discuss the learner's background, goals, and constraints. The learner, a data analyst with basic Python skills, wants to learn how to read and write structured text files like CSV and JSON for data processing tasks.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first interaction in the tutoring timeline. The primary goal is to establish a clear understanding of the learner's needs and background before creating a study plan or starting any lessons."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "File handling and structured text formats",
+    "subject": "Programming",
+    "event_type": "plan_milestones",
+    "description": "Based on the defined objectives, the tutor and learner create a staged study plan. They agree to start with CSV file handling (reading, then writing), followed by an introduction to JSON, and finally a small project combining both formats.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learning objectives established in the previous session, the next logical step is to create a structured roadmap. This event translates the high-level goals into a concrete study plan, ensuring both tutor and learner are aligned on the path forward before starting the first lesson."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "File handling and structured text formats",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "The tutor delivers the first lesson as per the study plan, focusing on reading data from CSV files. Key concepts include using the 'with' statement for file safety, creating a csv.reader object, and iterating over rows to access data.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the creation of the study plan, the next logical step is to begin instruction on the first topic. This lesson directly addresses the first milestone (CSV file reading) and generates teaching notes that can be used for future reference and practice."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "File handling and structured text formats",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "The tutor assigns a practice exercise to apply the concepts from the lesson on reading CSV files. The task is to read a sample sales data CSV, calculate the total sales, and print the result, requiring the learner to handle data type conversion.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson on a new concept, immediate practice is essential for reinforcement. This event directly applies the knowledge from the previous lesson (e_03) on reading CSVs and creates a record of the learner's work, which is necessary for the subsequent review and feedback cycle."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "File handling and structured text formats",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's code from the practice session. The review reveals that the learner correctly opened the file and iterated through it but struggled with converting sales figures from strings to numbers, resulting in a TypeError.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following a practice session (e_04), a review is essential to assess the learner's understanding and provide targeted feedback. This event uses the generated 'practice_record' to identify specific issues, creating a 'feedback_summary' that will guide the learner in correcting their mistakes."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "File handling and structured text formats",
+    "subject": "Programming",
+    "event_type": "materials_revision",
+    "description": "Based on the learner's struggle with data types, the tutor revises the teaching notes on CSV reading. A new section is added explaining that all data read from a CSV is initially a string and must be explicitly converted to numbers (e.g., using int() or float()) before performing mathematical operations.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in e_05 pinpointed a specific, common error not directly related to file handling itself. Improving the teaching notes to address this pitfall is a proactive step that not only helps the current learner but also enhances the materials for future use, making the tutoring process more efficient."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "File handling and structured text formats",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "The tutor asks the learner to re-attempt the previous practice exercise after reviewing the feedback and updated notes. The task is to once again read the sales data CSV, but this time correctly convert the string data to numbers before calculating the total sales.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After identifying a specific error (e_05) and revising the materials to address it (e_06), the most effective next step is to have the learner re-apply the concept. This targeted practice will confirm they have understood the feedback and can correct the data type conversion error, solidifying their learning before moving to the next topic."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "File handling and structured text formats",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's second attempt from the re-practice session. The review confirms that the learner successfully implemented the feedback, correctly converting string values to numbers and achieving the correct total sales calculation.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted re-practice session (e_07), a review is necessary to confirm that the learner has successfully addressed the previously identified error. This step validates their understanding and provides closure on the topic of data type conversion before progressing to the next milestone in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "File handling and structured text formats",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "Now that the learner has mastered reading CSV files, the tutor delivers the next lesson from the study plan on writing data to CSV files. The lesson covers opening a file in write mode, creating a `csv.writer` object, and using `writerow()` to write a header and data rows.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_08) confirmed the learner's mastery of reading CSV files. According to the study plan (e_02), the next topic is writing to CSV files. This lesson directly addresses that milestone, building upon the learner's established knowledge of file handling and updating the teaching notes for the next practice cycle."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "File handling and structured text formats",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "To reinforce the lesson on writing CSVs, the tutor assigns a practice task. The learner must read the original sales data file, calculate a new 'tax' column for each row, and write the complete data (including the new column) to a new output CSV file.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on writing CSV files (e_09), a practical exercise is the natural next step to solidify understanding. This task requires the learner to apply the new writing skills while also reinforcing their previously mastered reading skills, creating a record of their attempt for the next review."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "File handling and structured text formats",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's practice code for writing a new CSV file. The learner successfully read the data and wrote the new column, but the output file contains extra blank rows between each data row, a common issue related to how file opening and the csv module handle newlines.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session that combined reading and writing CSVs (e_10), a review is critical to assess the learner's integrated skills. This step uses the 'practice_record' to identify subtle errors, like the newline issue, and generate specific feedback to refine the learner's technique before moving on."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "File handling and structured text formats",
+    "subject": "Programming",
+    "event_type": "materials_revision",
+    "description": "In response to the feedback from the last review, the tutor updates the teaching notes on writing CSVs. A specific section is added to explain the newline issue and to recommend using `open(filename, 'w', newline='')` to prevent extra blank rows from being written.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_11) identified a common but subtle technical issue with writing CSV files. Updating the teaching materials to explicitly address this pitfall is a crucial step to improve the clarity of the instructions and prevent similar errors in the future, directly addressing the generated feedback."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "File handling and structured text formats",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "The tutor asks the learner to re-attempt the CSV writing exercise, specifically applying the correction for the newline issue. The task is to read the source file, calculate the tax column, and write the result to a new CSV without any extra blank rows.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After identifying a specific error (e_11) and revising the materials to explain the solution (e_12), the most effective next step is to have the learner re-apply the concept. This targeted practice will confirm they have understood the feedback on the `newline=''` parameter and can produce a correctly formatted CSV file."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "File handling and structured text formats",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's corrected code for writing a CSV file. The review confirms that the learner successfully applied the fix by including `newline=''` when opening the file, resulting in a correctly formatted output file with no extra blank rows.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted re-practice session (e_13) to fix a specific formatting issue, a review is essential to confirm the learner's understanding. This event validates that the learner can now produce a correctly formatted CSV file, providing closure on the CSV module before advancing to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "File handling and structured text formats",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "With the CSV module mastered, the tutor introduces the next topic from the study plan: handling JSON files. The lesson covers the basics of JSON syntax, its similarities to Python dictionaries, and how to use the `json.load()` function to parse a JSON file into a Python object.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_14) successfully concluded the CSV portion of the curriculum. Following the roadmap laid out in the 'study_plan', this lesson introduces the next major topic, JSON, and updates the 'teaching_notes' with foundational concepts for this new format."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "File handling and structured text formats",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "The tutor assigns a practice exercise for reading JSON files. The task is to read a sample JSON file containing a list of user objects and print the email address of the first user in the list, applying the concepts of `json.load()` and dictionary/list access.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the introductory lesson on reading JSON (e_15), a targeted practice exercise is the most effective way to reinforce learning. This task requires the learner to apply the new concepts directly, and it will generate a 'practice_record' that allows the tutor to assess their understanding in the next step."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "File handling and structured text formats",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's submission for the JSON reading practice. The code successfully loads the JSON file and correctly accesses the nested data (the user's email), demonstrating a good grasp of parsing JSON into Python objects and navigating them.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on reading JSON (e_16), a review is the logical next step to assess the learner's comprehension. This event uses the 'practice_record' to verify that the learner can correctly parse and access data from a JSON file, confirming their readiness for the next topic."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "File handling and structured text formats",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "Following the successful review of JSON reading, the tutor delivers the next lesson on writing data to JSON files. The lesson covers how to use the `json.dump()` function to serialize a Python dictionary or list into a JSON formatted string and write it to a file.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_17) confirmed the learner's ability to read and parse JSON. According to the study plan, the next logical step is learning to write JSON files. This lesson completes the core instruction on JSON handling and updates the teaching notes with this new material."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "File handling and structured text formats",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "To apply the concepts from the lesson on writing JSON, the tutor assigns a practice task. The learner is asked to create a Python dictionary with some configuration data and then write this dictionary to a new file named 'config.json' using the `json.dump()` function.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on writing to JSON files (e_18), a practical exercise is essential for reinforcement. This task requires the learner to apply the new `json.dump()` skill, creating a record of their attempt that will be used for the subsequent review and feedback cycle."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "File handling and structured text formats",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's practice code for writing a JSON file. The code works correctly, but the tutor notes the output is not human-readable. The feedback suggests using the `indent` parameter in `json.dump()` to create a nicely formatted file.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the practice session on writing JSON (e_19), a review is essential to check for correctness and introduce best practices. This review confirms the learner's understanding of `json.dump()` while also providing feedback on producing human-readable output, a crucial aspect of working with structured text formats."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "File handling and structured text formats",
+    "subject": "Programming",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback about creating human-readable JSON, the tutor updates the teaching notes. A new point is added to the section on `json.dump()`, explaining the use of the `indent` parameter to 'pretty-print' the output for better readability.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_20) identified a best practice for writing JSON files. Incorporating this tip about the `indent` parameter into the permanent teaching notes improves the material for future reference and directly addresses the feedback provided to the learner."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "tutoring",
+    "topic": "File handling and structured text formats",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "The tutor asks the learner to re-do the JSON writing exercise, applying the feedback from the last review. The task is to write the same configuration dictionary to 'config.json', but this time using the `indent` parameter to ensure the output file is well-formatted and human-readable.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the last review (e_20) introduced a best practice (pretty-printing JSON) and the teaching materials were updated (e_21), a targeted re-practice is necessary. This step ensures the learner can apply the feedback and produce well-formatted files, a key skill for working with structured text."
+  },
+  {
+    "event_id": "e_23",
+    "time_index": 23,
+    "domain": "tutoring",
+    "topic": "File handling and structured text formats",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's second attempt at writing a JSON file. The review confirms the learner successfully used the `indent` parameter, producing a well-formatted, human-readable JSON file.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a re-practice session (e_22) focused on applying specific feedback, a review is essential to confirm the learner's understanding. This event validates that the learner can now produce well-formatted JSON files, marking the successful completion of the JSON module and preparing them for the final project."
+  },
+  {
+    "event_id": "e_24",
+    "time_index": 24,
+    "domain": "tutoring",
+    "topic": "File handling and structured text formats",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "The tutor assigns the final project from the study plan, which integrates all previously learned skills. The learner is tasked with reading data from a CSV file, performing a data aggregation task, and writing the final summary results into a well-formatted JSON file.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "With all individual CSV and JSON skills successfully demonstrated in previous reviews, it is now time to tackle the final project outlined in the study plan. This practice event serves as a capstone, requiring the learner to integrate multiple skills and providing a comprehensive record of their ability for the final review."
+  },
+  {
+    "event_id": "e_25",
+    "time_index": 25,
+    "domain": "tutoring",
+    "topic": "File handling and structured text formats",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "The tutor reviews the final project submission. The learner's code successfully reads the CSV, correctly aggregates the data, and writes the results to a clean, well-formatted JSON file, demonstrating a comprehensive understanding of all topics covered.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the capstone practice project (e_24), a final review is necessary to assess the learner's integrated skills. This event evaluates their ability to combine CSV reading, data manipulation, and JSON writing, providing a final summary of their performance against the learning objectives before concluding the tutoring."
+  }
+]

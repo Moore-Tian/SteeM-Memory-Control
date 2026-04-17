@@ -1,0 +1,302 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Evaluating health advice sources and credibility",
+    "subject": "Health",
+    "event_type": "objective_clarification",
+    "description": "Initial meeting with the learner to discuss their goals for evaluating health advice sources. We covered their current habits, what kind of health information they encounter online, and their desire to confidently distinguish credible sources from misinformation.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives",
+      "study_plan"
+    ],
+    "reason": "This is the first session, so the primary goal is to understand the learner's needs and establish clear learning objectives. Creating an initial study plan provides a roadmap for the tutoring process from the outset."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Evaluating health advice sources and credibility",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "Conducted the first lesson based on the study plan, introducing a foundational framework for source evaluation. We covered key criteria like authorship, publication type (e.g., academic journal vs. news article), date of publication, and the importance of citations.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the initial objective clarification and planning, the next logical step is to begin instruction. This foundational lesson directly addresses the core learning objectives and creates the initial set of teaching notes that will be used for future practice and review."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Evaluating health advice sources and credibility",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "Assigned the learner a set of three online health articles with varying levels of credibility. The task was to apply the evaluation criteria from the previous lesson (author, publication type, date, citations) to each article and make an initial assessment.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the foundational concepts in the lesson (e_02), the next logical step is for the learner to apply them. This practice session provides a concrete opportunity to use the evaluation framework, and the generated practice_record will capture their work for a future review session."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Evaluating health advice sources and credibility",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "Reviewed the learner's assessments from the practice session. We discussed their analysis of each article, focusing on where their application of the evaluation criteria was strong and where it could be improved, particularly in judging the authority of the authors.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session (e_03), it is essential to review the learner's work. This allows for the identification of misconceptions and provides targeted feedback, which is captured in the new feedback_summary artifact, ensuring the learner understands the concepts before moving on."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Evaluating health advice sources and credibility",
+    "subject": "Health",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback from the last review, the teaching notes were revised to add more detail on evaluating author authority. New content includes a checklist for vetting credentials and examples of how to spot conflicts of interest.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_04) identified a specific weakness in the learner's ability to judge author authority. Before assigning more practice, it is effective to refine the teaching materials to better address this gap, ensuring the concepts are clearer for the next lesson or practice session."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Evaluating health advice sources and credibility",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "Assigned a new practice task focused specifically on the area of difficulty identified in the last review. The learner used the revised teaching notes and checklist to evaluate the author credentials and potential conflicts of interest for two new articles.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials (e_05) to address the learner's difficulty with author evaluation, it is crucial to provide another opportunity for targeted practice. This reinforces the new concepts and allows the tutor to assess if the intervention was successful before moving to a new topic."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Evaluating health advice sources and credibility",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "Reviewed the learner's second practice attempt, focusing on author evaluation. The learner successfully used the revised checklist to identify author credentials and potential conflicts of interest, showing significant improvement over the first attempt.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the targeted practice in e_06, a review is necessary to assess the learner's progress on the specific area of difficulty. This step confirms that the materials revision and focused practice were effective, allowing us to close the loop on this sub-topic before introducing new concepts from the study plan."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Evaluating health advice sources and credibility",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "Moved to the next topic in the study plan: identifying bias and misleading language. This lesson covered common red flags in health content, such as appeals to emotion, the use of anecdotal evidence over scientific data, and identifying content designed to sell a product.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_07) confirmed that the learner has successfully grasped the foundational concepts of source evaluation. It is now appropriate to advance to the next module in the study plan, introducing more nuanced skills for analyzing the content itself and updating the teaching notes accordingly."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Evaluating health advice sources and credibility",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "Gave the learner a new set of articles, including a blog post promoting a specific supplement and a news report with emotionally charged language. The task was to identify instances of bias, anecdotal evidence, and other red flags discussed in the previous lesson.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on bias and misleading language (e_08), this practice session provides a direct opportunity for the learner to apply these new skills. Creating a practice_record is essential for capturing their analysis, which will be the basis for the subsequent review session."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Evaluating health advice sources and credibility",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "Reviewed the learner's practice on identifying bias and misleading language. The learner did well at spotting overt sales tactics and anecdotal evidence but struggled to consistently identify more subtle emotionally charged language.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on identifying bias (e_09), a review is the natural next step to assess the learner's application of the new concepts. This feedback loop is critical for identifying specific areas of difficulty, like recognizing subtle emotional appeals, before moving forward."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Evaluating health advice sources and credibility",
+    "subject": "Health",
+    "event_type": "materials_revision",
+    "description": "Updated the teaching notes on identifying bias by adding a new section dedicated to subtle emotionally charged language. This revision includes side-by-side comparisons of neutral versus loaded phrasing and a list of common 'weasel words' to watch for.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_10) revealed a specific weakness in identifying subtle emotional language. Following the effective pattern from e_05, revising the teaching materials to provide more explicit guidance and examples is the best way to address this gap before assigning further practice."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Evaluating health advice sources and credibility",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "Assigned a targeted practice exercise using the newly revised teaching notes. The learner was asked to analyze two health news articles and specifically highlight examples of subtle emotionally charged language and 'weasel words'.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials in e_11 to address the learner's difficulty with subtle language, the logical next step is a focused practice session. This allows the learner to apply the new, more detailed guidance and enables the tutor to assess if the intervention was successful."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Evaluating health advice sources and credibility",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "Reviewed the learner's analysis of subtle language from the targeted practice session. The learner demonstrated a strong improvement, successfully using the revised teaching notes to highlight examples of loaded phrasing and 'weasel words' in the articles.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the focused practice in e_12, this review is essential to determine if the materials revision was effective. Confirming the learner's improved ability to identify subtle language allows us to close this learning loop and prepare to move on to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Evaluating health advice sources and credibility",
+    "subject": "Health",
+    "event_type": "plan_milestones",
+    "description": "Held a checkpoint session to review progress against the original study plan. Having successfully covered source evaluation and bias detection, we agreed to add a new capstone milestone: a project where the learner researches a health topic using multiple sources and presents a synthesized, evidence-based summary.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "After successfully completing two major learning modules and confirming mastery in the last review (e_13), it's a good time to reflect on the overall plan. This event updates the study plan to include a more complex, integrative task, reflecting the learner's growing competence and moving towards a final assessment of their skills."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Evaluating health advice sources and credibility",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "Taught a lesson on how to synthesize information from multiple sources, a key skill for the new capstone project. The lesson covered how to compare findings, note areas of scientific consensus or debate, and structure an evidence-based summary.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After adding a capstone synthesis project to the study plan (e_14), the immediate next step is to teach the skills required to complete it. This lesson provides the necessary instruction on synthesis before the learner attempts the project, which will serve as a comprehensive practice activity."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Evaluating health advice sources and credibility",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "Assigned the capstone project as outlined in the revised study plan. The learner will select a health topic of their choice, find and evaluate at least three different sources, and produce a synthesized summary of the evidence, applying all skills learned to date.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the concept of synthesis in the previous lesson (e_15), it is time for the learner to apply all their skills in the capstone project. This comprehensive practice serves as a final assessment of their ability to evaluate and synthesize health information independently."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Evaluating health advice sources and credibility",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "Conducted a comprehensive review of the learner's capstone project. The learner successfully evaluated multiple sources, identified biases, and synthesized the information into a coherent, evidence-based summary, demonstrating mastery of all key learning objectives.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the capstone project (e_16), a final, comprehensive review is essential. This step serves as the ultimate assessment of their integrated skills and provides final, summative feedback before concluding the tutoring."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Evaluating health advice sources and credibility",
+    "subject": "Health",
+    "event_type": "end",
+    "description": "Final session with the learner to confirm that all learning objectives have been met. We reviewed their successful capstone project and discussed strategies for applying these critical evaluation skills independently in the future, officially concluding the tutoring.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The previous review (e_17) confirmed the learner's mastery of all key objectives, as demonstrated in the comprehensive capstone project. With the learning goals achieved and the learner equipped for independent application, the tutoring process is now complete."
+  }
+]

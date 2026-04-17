@@ -1,0 +1,286 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Signal denoising algorithms",
+    "subject": "Engineering",
+    "event_type": "proposal",
+    "description": "Defined the initial research scope for a new project on signal denoising. The focus is on developing a novel deep learning-based algorithm that can outperform traditional wavelet-based methods, particularly for non-stationary signals like biomedical data.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the first step of the research project. It is essential to establish clear goals and a high-level plan before proceeding with any specific methodological design or experimentation."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Signal denoising algorithms",
+    "subject": "Engineering",
+    "event_type": "scheme_design",
+    "description": "Designed the initial methodological scheme. The proposed algorithm will be based on a U-Net architecture, trained on a synthetic dataset of ECG signals with added Gaussian and baseline wander noise. The performance will be benchmarked against a standard discrete wavelet transform (DWT) method using Signal-to-Noise Ratio (SNR) as the primary metric.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the establishment of the research goals and plan in e_01, the next logical step is to design a concrete method and experimental setup. This event translates the high-level proposal into a specific technical approach, creating the `method_scheme` needed for implementation and pilot testing."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Signal denoising algorithms",
+    "subject": "Engineering",
+    "event_type": "pilot_experiments",
+    "description": "Conducted a pilot study to validate the U-Net based denoising approach. The model was trained for a limited number of epochs on a small subset of the synthetic ECG data. Initial results show the model is capable of learning to reduce noise, achieving a marginal improvement in SNR over the DWT baseline on a few test samples, which validates the general approach.",
+    "required_artifacts": [
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With the `method_scheme` defined in e_02, a pilot experiment is the logical next step to test the feasibility and implementation of the proposed U-Net model. This small-scale test provides initial `experiment_results` and helps identify potential issues before launching the full-scale main experiments."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Signal denoising algorithms",
+    "subject": "Engineering",
+    "event_type": "analysis",
+    "description": "Performed a detailed analysis of the pilot experiment results. While the U-Net showed a slight average SNR improvement, qualitative analysis and visual inspection revealed that the model tends to over-smooth sharp, diagnostically important features of the ECG signal (e.g., the QRS complex). This suggests the current loss function is insufficient for preserving critical signal morphology.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The pilot study (e_03) produced initial `experiment_results` suggesting the approach is viable but not optimal. A detailed analysis is a critical next step to understand the model's limitations before committing to large-scale experiments. This analysis identifies a key weakness (feature smoothing) and the findings are used to draft an initial `paper_paragraph` for the results section, setting the stage for method refinement."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Signal denoising algorithms",
+    "subject": "Engineering",
+    "event_type": "scheme_design",
+    "description": "Revised the methodological scheme to address the over-smoothing issue identified in the pilot study analysis. The plan is to augment the standard Mean Squared Error (MSE) loss function with a perceptual loss term, calculated on the frequency domain representation of the signal, to penalize the suppression of sharp, diagnostically important features.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis in e_04 revealed that the initial method over-smooths critical signal features. Before running large-scale experiments, it is crucial to redesign the method to address this shortcoming. This revision of the `method_scheme` directly responds to the findings from the pilot study, aiming to improve performance on the key project goal of preserving signal morphology."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Signal denoising algorithms",
+    "subject": "Engineering",
+    "event_type": "pilot_experiments",
+    "description": "Conducted a second pilot experiment using the revised method with the augmented loss function. The U-Net was retrained on the same small dataset to specifically test if the new perceptual loss term reduces the over-smoothing of sharp ECG features. The results are intended to quickly validate the methodological revision before proceeding to larger-scale experiments.",
+    "required_artifacts": [
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the `method_scheme` in e_05 to address the over-smoothing issue, a new pilot experiment is the most efficient way to validate the fix. This step directly tests the efficacy of the new loss function before committing the significant resources required for the main experiments, representing a crucial sanity-check in the iterative research cycle."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Signal denoising algorithms",
+    "subject": "Engineering",
+    "event_type": "analysis",
+    "description": "Analyzed the results from the second pilot study. The augmented loss function successfully reduced the over-smoothing of sharp ECG features, as confirmed by both visual inspection and quantitative metrics on feature preservation. The overall SNR improvement was also maintained, validating the revised approach as superior to the initial design.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the second pilot experiment in e_06, a detailed analysis is necessary to confirm if the revised method from e_05 solved the identified over-smoothing problem. This analysis validates the new approach, providing the confidence needed to proceed with the resource-intensive main experiments and allowing for a draft of the improved method's results in a `paper_paragraph`."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Signal denoising algorithms",
+    "subject": "Engineering",
+    "event_type": "main_experiments",
+    "description": "Launched the main experiments using the validated U-Net model with the augmented loss function. The model was trained on the full synthetic dataset for a substantial number of epochs. Evaluation was performed on a large, held-out test set, comparing its performance against both the traditional DWT baseline and the initial U-Net model (MSE loss only) to comprehensively quantify the improvements.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After the analysis in e_07 confirmed the success of the revised method, the project is ready to scale up from pilot studies to the main experiments. This step is crucial for generating the comprehensive and robust results needed to support the research claims, directly building on the validated `method_scheme`."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Signal denoising algorithms",
+    "subject": "Engineering",
+    "event_type": "writing",
+    "description": "Began drafting the 'Methods' section of the research paper. This involved formally describing the final U-Net architecture, the data synthesis process, and the specific formulation of the augmented loss function. The description is based on the validated scheme used for the main experiments.",
+    "required_artifacts": [
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the methodological development finalized (e_05) and the main experiments completed (e_08), it is an opportune time to formally document the final `method_scheme`. Drafting the methods section now ensures all technical details are captured accurately for the paper, creating a key `paper_paragraph` for the manuscript before moving on to analyze the main results in detail."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Signal denoising algorithms",
+    "subject": "Engineering",
+    "event_type": "analysis",
+    "description": "Conducted a comprehensive analysis of the main experiment results. The analysis confirmed that the final model with the augmented loss function significantly outperforms both the DWT baseline and the initial U-Net model across all metrics, including SNR and a new metric for morphological preservation. The results strongly support the primary research hypothesis.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After running the main experiments in e_08, the immediate next step is to perform a detailed analysis of the collected `experiment_results`. This analysis is critical to validate the research hypotheses against the `research_goals`, quantify the performance of the final method, and generate the key findings that will form the core of the research paper."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Signal denoising algorithms",
+    "subject": "Engineering",
+    "event_type": "writing",
+    "description": "Drafted the 'Results' section of the paper, presenting the findings from the main experiments. This section includes tables and figures comparing the performance of the final model against the baselines, using both quantitative metrics (SNR, morphological preservation) and qualitative examples of denoised ECG signals.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the comprehensive analysis of the main experiments completed in e_10, the next logical step is to formally document these findings. This event translates the analyzed `experiment_results` into the 'Results' section of the manuscript, a critical step toward completing the research paper."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Signal denoising algorithms",
+    "subject": "Engineering",
+    "event_type": "scheme_design",
+    "description": "To test the model's generalizability after its success on synthetic data, the team decides to add a new evaluation on a real-world dataset. The methodological scheme is updated to incorporate the MIT-BIH Arrhythmia Database, including new data preprocessing steps.",
+    "required_artifacts": [
+      "research_goals",
+      "method_scheme",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "method_scheme",
+      "research_plan"
+    ],
+    "reason": "After success on synthetic data was confirmed in e_10, a logical next step is to test the model's generalizability on real-world data to strengthen the paper's claims. This event initiates a new experimental loop by updating the `method_scheme` and `research_plan` for this new validation phase."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Signal denoising algorithms",
+    "subject": "Engineering",
+    "event_type": "main_experiments",
+    "description": "Executed the generalizability study by applying the trained U-Net model to the real-world MIT-BIH Arrhythmia Database. The model's performance was evaluated on this new, more challenging dataset according to the updated experimental protocol. The goal was to gather results demonstrating the model's effectiveness outside of the synthetic training environment.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After updating the `method_scheme` and `research_plan` in e_12 to include a real-world data evaluation, the immediate next step is to run these experiments. This action directly implements the new plan and will generate crucial `experiment_results` to assess the model's generalizability, a key factor for strengthening the paper's conclusions."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Signal denoising algorithms",
+    "subject": "Engineering",
+    "event_type": "analysis",
+    "description": "Analyzed the results from the generalizability study on the MIT-BIH database. The analysis showed that while the model still outperforms the DWT baseline on real-world data, its performance is degraded compared to the synthetic test set, indicating a domain gap. The model is less effective against certain noise types not included in the original training data.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After conducting experiments on real-world data in e_13, a thorough analysis of the resulting `experiment_results` is the necessary next step. This analysis evaluates the model's generalization capabilities against the `research_goals` and identifies limitations that need to be discussed in the paper."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Signal denoising algorithms",
+    "subject": "Engineering",
+    "event_type": "writing",
+    "description": "Drafted the 'Discussion' section of the paper. The text interprets the combined results, highlighting the model's success on synthetic data while also frankly addressing the performance drop on the real-world dataset. This limitation is framed as a 'domain gap' problem, and potential future work involving domain adaptation or training on more diverse data is suggested.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The analysis in e_14 revealed a key limitation (domain gap) from the generalizability study. The next logical step is to write the 'Discussion' section to interpret this finding, acknowledge the limitations in the context of the original `research_goals`, and frame it as an avenue for future research. This integrates the final set of `experiment_results` into the narrative of the paper."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Signal denoising algorithms",
+    "subject": "Engineering",
+    "event_type": "writing",
+    "description": "Drafted the 'Introduction' and 'Conclusion' sections of the paper. The introduction frames the research problem and motivates the work based on the final results, while the conclusion summarizes the key contributions, limitations discussed in the 'Discussion' section, and the main takeaway message of the study.",
+    "required_artifacts": [
+      "research_goals",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the Methods, Results, and Discussion sections drafted (e_09, e_11, e_15), the next logical writing task is to complete the manuscript's narrative arc by drafting the Introduction and Conclusion. This step synthesizes the project's `research_goals` and key findings into a cohesive story, preparing the paper for final review and submission."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Signal denoising algorithms",
+    "subject": "Engineering",
+    "event_type": "end",
+    "description": "The research project is concluded. The final paper draft, detailing the novel denoising algorithm, its successful application on synthetic data, and its limitations on real-world data, is considered complete and ready for submission to a conference or journal.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached a natural conclusion. A full paper has been drafted covering the method, results, and discussion, including an honest assessment of limitations. The research goals have been met, and the findings constitute a complete, publishable story, making this an appropriate point to terminate the project timeline."
+  }
+]
