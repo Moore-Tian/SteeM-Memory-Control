@@ -39,7 +39,6 @@ This repository provides code and data for our paper on **controllable memory us
 | **Artifact evolution** | `framework_data/artifacts/` | Evolving artifact generation over time |
 | **Cross-session summaries** | `framework_data/cross-session/` | Task-specific cross-session preference summaries |
 | **Memory composition** | `framework_data/composed_memory/` | Compose intra-session, inter-session, and user-profile memory into unified snapshots |
-| **Query & persona config** | `framework_data/all_context_merge/` | Query rules and persona templates |
 | **Evaluation** | `evaluation/` | Job creation, memory-bank generation, query/rubric/answer generation, rubric resources |
 | **Timeline data** | `data/timeline/` | 388 released timelines (194 research + 194 tutoring) |
 
@@ -53,7 +52,6 @@ framework_data/
   artifacts/             # Artifact evolution
   cross-session/         # Cross-session summaries
   composed_memory/       # Intra-/inter-session + user-profile memory composition
-  all_context_merge/     # Query rules & persona templates
 evaluation/
   general_rubrics/       # Task-quality rubrics
   preference_rubrics/    # Memory-dependence rubrics
