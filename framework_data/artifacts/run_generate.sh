@@ -15,7 +15,6 @@ python "$SCRIPT_DIR/artifact_generator.py" \
   --model "${MODEL_RESEARCH:-gpt-4o-mini}" \
   --max_workers "${MAX_WORKERS_RESEARCH:-1}" \
   --sleep_s "${SLEEP_SECONDS_RESEARCH:-0.2}" \
-  --request_type openai \
   --skip_existing
 
 python "$SCRIPT_DIR/artifact_generator.py" \
@@ -24,5 +23,4 @@ python "$SCRIPT_DIR/artifact_generator.py" \
   --model "${MODEL_TUTORING:-gpt-4o-mini}" \
   --max_workers "${MAX_WORKERS_TUTORING:-1}" \
   --sleep_s "${SLEEP_SECONDS_TUTORING:-0.2}" \
-  --request_type openai \
   --skip_existing

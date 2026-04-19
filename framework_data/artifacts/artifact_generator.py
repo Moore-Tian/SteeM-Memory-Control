@@ -308,11 +308,8 @@ def generate_research_artifacts_for_run(
     run_dir: Path,
     output_dir: Optional[Path] = None,
     model: str = "gpt-5-mini",
-    request_type: str = "openai",
     response_format_json: bool = True,
     temperature: float = 0.7,
-    appid: Optional[str] = None,
-    appkey: Optional[str] = None,
     verbose: bool = False,
     sleep_s: float = 0.5,
 ) -> Dict[str, Any]:
@@ -433,11 +430,8 @@ def generate_research_artifacts_for_run(
                 content, prompt_tokens, completion_tokens, _total = make_api_request(
                     messages=messages,
                     model=model,
-                    request_type=request_type,
                     response_format_json=response_format_json,
                     temperature=temperature,
-                    appid=appid,
-                    appkey=appkey,
                 )
 
                 # JSON 解析和验证
@@ -576,11 +570,8 @@ def _run_single(
     run_dir: Path,
     output_dir: Optional[Path],
     model: str,
-    request_type: str,
     temperature: float,
     sleep_s: float,
-    appid: Optional[str],
-    appkey: Optional[str],
     skip_existing: bool,
     verbose: bool,
     lock: threading.Lock,
@@ -613,11 +604,8 @@ def _run_single(
             run_dir=run_dir,
             output_dir=output_dir,
             model=model,
-            request_type=request_type,
             temperature=temperature,
             sleep_s=sleep_s,
-            appid=appid,
-            appkey=appkey,
             verbose=verbose,
         )
 
@@ -686,25 +674,6 @@ if __name__ == "__main__":
         help="Maximum number of concurrent threads.",
     )
     parser.add_argument(
-        "--request_type",
-        type=str,
-        choices=["openai", "tencent"],
-        default="openai",
-        help="API request type.",
-    )
-    parser.add_argument(
-        "--appid",
-        type=str,
-        default=None,
-        help="Tencent API appid (required if request_type='tencent').",
-    )
-    parser.add_argument(
-        "--appkey",
-        type=str,
-        default=None,
-        help="Tencent API appkey (required if request_type='tencent').",
-    )
-    parser.add_argument(
         "--temperature",
         type=float,
         default=0.7,
@@ -740,10 +709,6 @@ if __name__ == "__main__":
     )
 
     args = parser.parse_args()
-
-    if args.request_type == "tencent":
-        if not args.appid or not args.appkey:
-            raise ValueError("--appid and --appkey are required when --request_type='tencent'")
 
     base = Path(args.input_dir)
     if not base.exists():
@@ -791,11 +756,8 @@ if __name__ == "__main__":
                 run_dir=rd,
                 output_dir=output_dir,
                 model=args.model,
-                request_type=args.request_type,
                 temperature=args.temperature,
                 sleep_s=args.sleep_s,
-                appid=args.appid,
-                appkey=args.appkey,
                 skip_existing=args.skip_existing,
                 verbose=args.verbose,
                 lock=lock,

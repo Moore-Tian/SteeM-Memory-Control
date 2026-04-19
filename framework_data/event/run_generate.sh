@@ -14,7 +14,6 @@ python "$SCRIPT_DIR/timeline_generator.py" research \
   --max_events "${MAX_EVENTS_RESEARCH:-8}" \
   --output_dir "${OUTPUT_DIR_RESEARCH:-$SCRIPT_DIR/output}" \
   --max_workers "${MAX_WORKERS_RESEARCH:-1}" \
-  --request_type openai \
   --start_from "${START_FROM_RESEARCH:-0}"
 
 python "$SCRIPT_DIR/timeline_generator.py" tutoring \
@@ -23,5 +22,4 @@ python "$SCRIPT_DIR/timeline_generator.py" tutoring \
   --max_events "${MAX_EVENTS_TUTORING:-8}" \
   --output_dir "${OUTPUT_DIR_TUTORING:-$SCRIPT_DIR/output}" \
   --max_workers "${MAX_WORKERS_TUTORING:-1}" \
-  --request_type openai \
   --start_from "${START_FROM_TUTORING:-0}"

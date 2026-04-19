@@ -22,10 +22,7 @@ def generate_concepts_for_timeline(
     events: List[Dict[str, Any]],
     domain: str = "research",
     model: str = "gpt-4o",
-    request_type: str = "openai",
     temperature: float = 0.7,
-    appid: Optional[str] = None,
-    appkey: Optional[str] = None,
     sleep_s: float = 0.5,
 ) -> Tuple[List[Dict[str, Any]], Dict[str, Any]]:
     """
@@ -35,10 +32,7 @@ def generate_concepts_for_timeline(
         events: List of event dictionaries
         domain: Domain type, either "research" or "tutoring"
         model: Model name to use
-        request_type: 'openai' or 'tencent'
         temperature: Temperature parameter
-        appid: Tencent API appid (required for tencent type)
-        appkey: Tencent API appkey (required for tencent type)
         sleep_s: Sleep seconds between API calls
     
     Returns:
@@ -59,11 +53,8 @@ def generate_concepts_for_timeline(
         content, prompt_tokens, completion_tokens, total_tokens = make_api_request(
             messages=messages,
             model=model,
-            request_type=request_type,
             response_format_json=True,
             temperature=temperature,
-            appid=appid,
-            appkey=appkey,
         )
         
         # Extract JSON from response
@@ -152,10 +143,7 @@ def _run_single(
     subdir: Path,
     domain: str,
     model: str,
-    request_type: str,
     temperature: float,
-    appid: Optional[str],
-    appkey: Optional[str],
     sleep_s: float,
     skip_existing: bool,
     output_dir: Optional[Path],
@@ -217,10 +205,7 @@ def _run_single(
             events=events,
             domain=domain,
             model=model,
-            request_type=request_type,
             temperature=temperature,
-            appid=appid,
-            appkey=appkey,
             sleep_s=sleep_s,
         )
         
@@ -296,10 +281,7 @@ def _run_single(
 def process_directory(
     base_dir: Path,
     model: str = "gpt-4o",
-    request_type: str = "openai",
     temperature: float = 0.7,
-    appid: Optional[str] = None,
-    appkey: Optional[str] = None,
     sleep_s: float = 0.5,
     skip_existing: bool = True,
     verbose: bool = False,
@@ -314,10 +296,7 @@ def process_directory(
     Args:
         base_dir: Base directory containing subdirectories with events.json files
         model: Model name to use
-        request_type: 'openai' or 'tencent'
         temperature: Temperature parameter
-        appid: Tencent API appid (required for tencent type)
-        appkey: Tencent API appkey (required for tencent type)
         sleep_s: Sleep seconds between API calls
         skip_existing: If True, skip directories that already have concepts.json
         verbose: If True, print progress for each directory
@@ -366,10 +345,7 @@ def process_directory(
                 subdir=subdir,
                 domain=domain,
                 model=model,
-                request_type=request_type,
                 temperature=temperature,
-                appid=appid,
-                appkey=appkey,
                 sleep_s=sleep_s,
                 skip_existing=skip_existing,
                 output_dir=output_dir,
@@ -427,25 +403,6 @@ if __name__ == "__main__":
         help="Model name to use.",
     )
     parser.add_argument(
-        "--request_type",
-        type=str,
-        default="openai",
-        choices=["openai", "tencent"],
-        help="API request type: 'openai' or 'tencent'.",
-    )
-    parser.add_argument(
-        "--appid",
-        type=str,
-        default=None,
-        help="Tencent API appid (required if request_type='tencent').",
-    )
-    parser.add_argument(
-        "--appkey",
-        type=str,
-        default=None,
-        help="Tencent API appkey (required if request_type='tencent').",
-    )
-    parser.add_argument(
         "--temperature",
         type=float,
         default=0.7,
@@ -494,10 +451,6 @@ if __name__ == "__main__":
     
     args = parser.parse_args()
     
-    if args.request_type == "tencent":
-        if not args.appid or not args.appkey:
-            raise ValueError("--appid and --appkey are required when --request_type='tencent'")
-    
     base_dir = Path(args.input_dir)
     if not base_dir.exists():
         raise ValueError(f"Input directory does not exist: {base_dir}")
@@ -516,10 +469,7 @@ if __name__ == "__main__":
     process_directory(
         base_dir=base_dir,
         model=args.model,
-        request_type=args.request_type,
         temperature=args.temperature,
-        appid=args.appid,
-        appkey=args.appkey,
         sleep_s=args.sleep_s,
         skip_existing=args.skip_existing,
         verbose=args.verbose,

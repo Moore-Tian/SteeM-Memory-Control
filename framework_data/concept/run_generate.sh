@@ -13,7 +13,6 @@ python "$SCRIPT_DIR/concept_generator.py" \
     --input_dir "${INPUT_DIR_RESEARCH:-$REPO_ROOT/examples/mix/research}" \
     --output_dir "${OUTPUT_DIR_RESEARCH:-$SCRIPT_DIR/output}" \
     --model "${MODEL_RESEARCH:-gpt-4o-mini}" \
-    --request_type openai \
     --sleep_s "${SLEEP_SECONDS_RESEARCH:-0.0}" \
     --max_workers "${MAX_WORKERS_RESEARCH:-2}" \
     --skip_existing
@@ -22,7 +21,6 @@ python "$SCRIPT_DIR/concept_generator.py" \
     --input_dir "${INPUT_DIR_TUTORING:-$REPO_ROOT/examples/mix/tutoring}" \
     --output_dir "${OUTPUT_DIR_TUTORING:-$SCRIPT_DIR/output}" \
     --model "${MODEL_TUTORING:-gpt-4o-mini}" \
-    --request_type openai \
     --sleep_s "${SLEEP_SECONDS_TUTORING:-0.0}" \
     --max_workers "${MAX_WORKERS_TUTORING:-2}" \
     --skip_existing

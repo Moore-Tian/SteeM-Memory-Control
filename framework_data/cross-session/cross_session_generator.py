@@ -63,10 +63,7 @@ def generate_cross_session_summary(
     task_description: str,
     preference_summary: str,
     model: str = "gpt-4o",
-    request_type: str = "openai",
     temperature: float = 0.7,
-    appid: Optional[str] = None,
-    appkey: Optional[str] = None,
     sleep_s: float = 0.5,
     num_interactions: int = 5,
 ) -> Tuple[Dict[str, Any], Dict[str, Any]]:
@@ -80,10 +77,7 @@ def generate_cross_session_summary(
         task_description: Description of the task
         preference_summary: Summary of user preference
         model: Model name to use
-        request_type: 'openai' or 'tencent'
         temperature: Temperature parameter
-        appid: Tencent API appid (required for tencent type)
-        appkey: Tencent API appkey (required for tencent type)
         sleep_s: Sleep seconds between API calls
         num_interactions: Number of interactions to generate
     
@@ -118,11 +112,8 @@ def generate_cross_session_summary(
             content, prompt_tokens, completion_tokens, total_tokens = make_api_request(
                 messages=messages,
                 model=model,
-                request_type=request_type,
                 response_format_json=True,
                 temperature=temperature,
-                appid=appid,
-                appkey=appkey,
             )
             
             # Extract JSON from response
@@ -216,11 +207,8 @@ def _run_single(
     mix_dir: Path,
     output_dir: Path,
     model: str,
-    request_type: str,
     temperature: float,
     sleep_s: float,
-    appid: Optional[str],
-    appkey: Optional[str],
     skip_existing: bool,
     verbose: bool,
     lock: threading.Lock,
@@ -312,10 +300,7 @@ def _run_single(
             task_description=task_description,
             preference_summary=preference_summary,
             model=model,
-            request_type=request_type,
             temperature=temperature,
-            appid=appid,
-            appkey=appkey,
             sleep_s=sleep_s,
             num_interactions=num_interactions,
         )
@@ -417,10 +402,7 @@ def process_domain(
     regimes_file: Path,
     output_dir: Path,
     model: str = "gpt-4o",
-    request_type: str = "openai",
     temperature: float = 0.7,
-    appid: Optional[str] = None,
-    appkey: Optional[str] = None,
     sleep_s: float = 0.5,
     skip_existing: bool = True,
     verbose: bool = False,
@@ -440,10 +422,7 @@ def process_domain(
         regimes_file: Path to all_pref_regimes.json file
         output_dir: Output directory for results
         model: Model name to use
-        request_type: 'openai' or 'tencent'
         temperature: Temperature parameter
-        appid: Tencent API appid (required for tencent type)
-        appkey: Tencent API appkey (required for tencent type)
         sleep_s: Sleep seconds between API calls
         skip_existing: If True, skip topics that already have output files
         verbose: If True, print progress for each topic
@@ -516,11 +495,8 @@ def process_domain(
                 mix_dir=mix_dir,
                 output_dir=output_dir,
                 model=model,
-                request_type=request_type,
                 temperature=temperature,
                 sleep_s=sleep_s,
-                appid=appid,
-                appkey=appkey,
                 skip_existing=skip_existing,
                 verbose=verbose,
                 lock=lock,
@@ -603,25 +579,6 @@ if __name__ == "__main__":
         help="Model name to use.",
     )
     parser.add_argument(
-        "--request_type",
-        type=str,
-        choices=["openai", "tencent"],
-        default="openai",
-        help="API request type.",
-    )
-    parser.add_argument(
-        "--appid",
-        type=str,
-        default=None,
-        help="Tencent API appid (required if request_type='tencent').",
-    )
-    parser.add_argument(
-        "--appkey",
-        type=str,
-        default=None,
-        help="Tencent API appkey (required if request_type='tencent').",
-    )
-    parser.add_argument(
         "--temperature",
         type=float,
         default=0.7,
@@ -670,10 +627,6 @@ if __name__ == "__main__":
     
     args = parser.parse_args()
     
-    if args.request_type == "tencent":
-        if not args.appid or not args.appkey:
-            raise ValueError("--appid and --appkey are required when --request_type='tencent'")
-    
     topics_file = Path(args.topics_file)
     if not topics_file.exists():
         raise ValueError(f"Topics file does not exist: {topics_file}")
@@ -701,10 +654,7 @@ if __name__ == "__main__":
         regimes_file=regimes_file,
         output_dir=output_dir,
         model=args.model,
-        request_type=args.request_type,
         temperature=args.temperature,
-        appid=args.appid,
-        appkey=args.appkey,
         sleep_s=args.sleep_s,
         skip_existing=args.skip_existing,
         verbose=args.verbose,

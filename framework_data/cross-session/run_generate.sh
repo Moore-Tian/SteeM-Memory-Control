@@ -15,7 +15,6 @@ python "$SCRIPT_DIR/cross_session_generator.py" \
   --regimes_file "$SCRIPT_DIR/all_pref_regimes.json" \
   --output_dir "${OUTPUT_DIR_RESEARCH:-$SCRIPT_DIR/output}" \
   --model "${MODEL_RESEARCH:-gpt-4o-mini}" \
-  --request_type openai \
   --sleep_s "${SLEEP_SECONDS_RESEARCH:-0.0}" \
   --skip_existing \
   --max_workers "${MAX_WORKERS_RESEARCH:-2}" \
@@ -28,7 +27,6 @@ python "$SCRIPT_DIR/cross_session_generator.py" \
   --regimes_file "$SCRIPT_DIR/all_pref_regimes.json" \
   --output_dir "${OUTPUT_DIR_TUTORING:-$SCRIPT_DIR/output}" \
   --model "${MODEL_TUTORING:-gpt-4o-mini}" \
-  --request_type openai \
   --sleep_s "${SLEEP_SECONDS_TUTORING:-0.0}" \
   --skip_existing \
   --max_workers "${MAX_WORKERS_TUTORING:-2}" \

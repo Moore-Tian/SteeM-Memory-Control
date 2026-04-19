@@ -17,10 +17,7 @@ from __future__ import annotations
 import json
 import os
 import re
-import hmac
-import hashlib
 import time
-import requests
 from dataclasses import dataclass, asdict
 from datetime import datetime
 from pathlib import Path
@@ -202,9 +199,6 @@ def generate_timeline_for_domain(
     output_dir: str = "output",
     run_id: int = 0,
     verbose: bool = False,
-    request_type: str = "openai",
-    appid: Optional[str] = None,
-    appkey: Optional[str] = None,
 ) -> tuple[List["Event"], Optional[Dict[str, str]]]:
     """
     Generate a timeline for a given domain.
@@ -254,11 +248,8 @@ def generate_timeline_for_domain(
                 content, prompt_tokens, completion_tokens, total_tokens = make_api_request(
                     messages=messages,
                     model=model,
-                    request_type=request_type,
                     response_format_json=response_format_json,
                     temperature=0.7,
-                    appid=appid,
-                    appkey=appkey,
                 )
 
                 # 暂停 1s
@@ -404,9 +395,6 @@ def generate_single_timeline(
     max_events: int,
     output_dir: str,
     lock: threading.Lock,
-    request_type: str = "openai",
-    appid: Optional[str] = None,
-    appkey: Optional[str] = None,
 ) -> Dict[str, Any]:
     """
     Generate a single timeline for a topic. This function is called by each thread.
@@ -426,9 +414,6 @@ def generate_single_timeline(
             output_dir=output_dir,
             run_id=run_id,
             verbose=False,
-            request_type=request_type,
-            appid=appid,
-            appkey=appkey,
         )
         
         result = {
@@ -514,31 +499,7 @@ if __name__ == "__main__":
         default=None,
         help="Limit the number of topics to process (for testing).",
     )
-    parser.add_argument(
-        "--request_type",
-        type=str,
-        choices=["openai", "tencent"],
-        default="openai",
-        help="API request type: 'openai' or 'tencent'.",
-    )
-    parser.add_argument(
-        "--appid",
-        type=str,
-        default=None,
-        help="Tencent API appid (required for tencent request type).",
-    )
-    parser.add_argument(
-        "--appkey",
-        type=str,
-        default=None,
-        help="Tencent API appkey (required for tencent request type).",
-    )
     args = parser.parse_args()
-    
-    # Validate tencent request type parameters
-    if args.request_type == "tencent":
-        if not args.appid or not args.appkey:
-            raise ValueError("--appid and --appkey are required when --request_type is 'tencent'")
 
     # Load topics from all_topics.py
     if args.domain == "research":
@@ -580,9 +541,6 @@ if __name__ == "__main__":
                 max_events=args.max_events,
                 output_dir=args.output_dir,
                 lock=print_lock,
-                request_type=args.request_type,
-                appid=args.appid,
-                appkey=args.appkey,
             )
             futures.append(future)
 
