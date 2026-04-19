@@ -6,7 +6,6 @@ SCRIPT_DIR=$(cd -- "$(dirname "$0")" && pwd)
 export PYTHONUNBUFFERED=1
 : "${OPENAI_API_KEY:?Please set OPENAI_API_KEY before running this script.}"
 export OPENAI_BASE_URL="${OPENAI_BASE_URL:-https://api.openai.com/v1}"
-export OPENAI_UID="${OPENAI_UID:-}"
 
 python "$SCRIPT_DIR/timeline_generator.py" research \
   --model "${MODEL_RESEARCH:-gpt-4o-mini}" \

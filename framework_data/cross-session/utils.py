@@ -1,8 +1,5 @@
 import os
 import time
-import hmac
-import hashlib
-import requests
 from typing import List, Dict, Any, Optional, Tuple
 import json
 import re
@@ -19,7 +16,6 @@ def get_openai_client():
 
     Optional environment variables:
     - OPENAI_BASE_URL: Custom base URL for the API
-    - OPENAI_UID: User ID to include in default_headers (for some API providers)
     - OPENAI_ORG
     - OPENAI_PROJECT
     """
@@ -37,33 +33,15 @@ def get_openai_client():
     if base_url:
         client_kwargs["base_url"] = base_url
     
-    # Add default_headers with uid if provided
-    uid = os.environ.get("OPENAI_UID")
-    if uid:
-        client_kwargs["default_headers"] = {"uid": uid}
-    
     client = OpenAI(**client_kwargs)
     return client
-
-
-def calc_authorization(source: str, appkey: str) -> Tuple[str, int]:
-    """
-    Calculate authorization signature for Tencent API.
-    """
-    timestamp = int(time.time())
-    sign_str = f"x-timestamp: {timestamp}\nx-source: {source}"
-    sign = hmac.new(appkey.encode('utf8'), sign_str.encode('utf8'), hashlib.sha256).digest()
-    return sign.hex(), timestamp
 
 
 def make_api_request(
     messages: List[Dict[str, str]],
     model: str,
-    request_type: str = "openai",
     response_format_json: bool = True,
     temperature: float = 0.7,
-    appid: Optional[str] = None,
-    appkey: Optional[str] = None,
 ) -> Tuple[str, int, int, int]:
     """
     Make API request and return content and token usage.
@@ -72,11 +50,8 @@ def make_api_request(
     Args:
         messages: List of message dicts with 'role' and 'content'
         model: Model name
-        request_type: 'openai' or 'tencent'
         response_format_json: Whether to request JSON format
         temperature: Temperature parameter
-        appid: Tencent API appid (required for tencent type)
-        appkey: Tencent API appkey (required for tencent type)
     
     Returns:
         Tuple of (content, prompt_tokens, completion_tokens, total_tokens)
@@ -91,67 +66,26 @@ def make_api_request(
     
     for attempt in range(max_retries + 1):  # 0, 1, 2, 3 (total 4 attempts)
         try:
-            if request_type == "openai":
-                client = get_openai_client()
-                kwargs: Dict[str, Any] = {
-                    "model": model,
-                    "messages": messages,
-                    "temperature": temperature,
-                }
-                if response_format_json:
-                    kwargs["response_format"] = {"type": "json_object"}
-                
-                completion = client.chat.completions.create(**kwargs)
-                content = completion.choices[0].message.content
-                if not content:
-                    raise RuntimeError("Empty content returned from the model.")
-                
-                # Extract token usage
-                prompt_tokens = getattr(completion.usage, "prompt_tokens", 0) if hasattr(completion, "usage") and completion.usage else 0
-                completion_tokens = getattr(completion.usage, "completion_tokens", 0) if hasattr(completion, "usage") and completion.usage else 0
-                total_tokens = getattr(completion.usage, "total_tokens", 0) if hasattr(completion, "usage") and completion.usage else 0
-                
-                return content, prompt_tokens, completion_tokens, total_tokens
+            client = get_openai_client()
+            kwargs: Dict[str, Any] = {
+                "model": model,
+                "messages": messages,
+                "temperature": temperature,
+            }
+            if response_format_json:
+                kwargs["response_format"] = {"type": "json_object"}
             
-            elif request_type == "tencent":
-                if not appid or not appkey:
-                    raise ValueError("appid and appkey are required for tencent request type")
-                
-                source = f'req-o1-{int(time.time())}'
-                auth, timestamp = calc_authorization(source, appkey)
-                header = {
-                    'X-AppID': appid,
-                    'X-Source': source,
-                    'X-Timestamp': str(timestamp),
-                    'X-Authorization': auth,
-                }
-                url = 'http://ichat.woa.com/api/chat_completions'
-                req: Dict[str, Any] = {
-                    'model': model,
-                    'messages': messages,
-                    'temperature': temperature,
-                }
-                
-                resp = requests.post(url, json=req, headers=header)
-                resp.raise_for_status()
-                resp_json = resp.json()
-                
-                # Extract content and token usage from Tencent response format
-                content = resp_json.get('response', '')
-                if not content:
-                    raise RuntimeError("Empty content returned from the model.")
-                
-                # Extract token usage from detail.usage
-                detail = resp_json.get('detail', {})
-                usage = detail.get('usage', {})
-                prompt_tokens = usage.get('prompt_tokens', 0)
-                completion_tokens = usage.get('completion_tokens', 0)
-                total_tokens = usage.get('total_tokens', 0)
-                
-                return content, prompt_tokens, completion_tokens, total_tokens
+            completion = client.chat.completions.create(**kwargs)
+            content = completion.choices[0].message.content
+            if not content:
+                raise RuntimeError("Empty content returned from the model.")
             
-            else:
-                raise ValueError(f"Unknown request_type: {request_type}. Must be 'openai' or 'tencent'.")
+            # Extract token usage
+            prompt_tokens = getattr(completion.usage, "prompt_tokens", 0) if hasattr(completion, "usage") and completion.usage else 0
+            completion_tokens = getattr(completion.usage, "completion_tokens", 0) if hasattr(completion, "usage") and completion.usage else 0
+            total_tokens = getattr(completion.usage, "total_tokens", 0) if hasattr(completion, "usage") and completion.usage else 0
+            
+            return content, prompt_tokens, completion_tokens, total_tokens
         
         except Exception as e:
             last_exception = e

@@ -7,7 +7,6 @@ REPO_ROOT=$(cd -- "$SCRIPT_DIR/../.." && pwd)
 export PYTHONUNBUFFERED=1
 : "${OPENAI_API_KEY:?Please set OPENAI_API_KEY before running this script.}"
 export OPENAI_BASE_URL="${OPENAI_BASE_URL:-https://api.openai.com/v1}"
-export OPENAI_UID="${OPENAI_UID:-}"
 
 python "$SCRIPT_DIR/artifact_generator.py" \
   --input_dir "${INPUT_DIR_RESEARCH:-$REPO_ROOT/examples/event_output/research}" \
