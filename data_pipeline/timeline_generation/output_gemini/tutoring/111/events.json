@@ -1,0 +1,264 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Understanding preventive care and routine checkups",
+    "subject": "Health",
+    "event_type": "objective_clarification",
+    "description": "Initial meeting with the learner to discuss their goals for understanding preventive care. The learner, a young adult with a new health insurance plan, wants to feel more confident discussing health topics with their doctor and understand what routine checkups are recommended for their age group.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first event in the tutoring timeline. It is essential to start by clarifying the learner's specific goals, context, and self-reported background to create a tailored and effective learning plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Understanding preventive care and routine checkups",
+    "subject": "Health",
+    "event_type": "plan_milestones",
+    "description": "The tutor and learner collaborate to create a structured study plan based on the initial objectives. The plan outlines key milestones, such as defining preventive care, identifying age-appropriate screenings, and learning how to prepare for a doctor's appointment.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "After clarifying the learner's goals in the first session, creating a study plan is the logical next step. This translates the high-level objectives into a concrete, actionable roadmap for the tutoring sessions, ensuring they are focused and goal-oriented."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Understanding preventive care and routine checkups",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "The tutor introduces the fundamental concept of preventive care. The lesson covers the definition of preventive care, its goals (e.g., preventing illness, early detection), and how it differs from diagnostic or reactive medical care.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a study plan in place, the next logical step is to begin instruction with the first topic. This lesson directly addresses the initial milestone of defining preventive care, and creating teaching notes makes the core concepts reusable for future review or practice."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Understanding preventive care and routine checkups",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "To solidify the concept from the previous lesson, the tutor assigns a practice activity. The learner is given several short medical scenarios and asked to classify them as either preventive care or reactive care, explaining their reasoning for each.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following a lesson on a core concept, a targeted practice session is essential to assess the learner's comprehension. This activity allows the learner to apply the definition of preventive care to concrete examples, and the resulting record will be used for review and feedback."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Understanding preventive care and routine checkups",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor analyzes the learner's responses from the practice activity, noting where the distinction between preventive and reactive care was applied correctly and where there was confusion. The feedback focuses on clarifying the 'why' behind each classification.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following a practice session, a review is critical to assess understanding and provide corrective feedback. By analyzing the `practice_record` against the concepts in the `teaching_notes`, the tutor can create a `feedback_summary` that addresses specific errors and reinforces learning before moving on."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Understanding preventive care and routine checkups",
+    "subject": "Health",
+    "event_type": "materials_revision",
+    "description": "Based on the learner's confusion identified in the review, the tutor revises the teaching notes on preventive care. The notes are updated to include a clearer comparison table contrasting 'preventive' vs. 'reactive' care and adds more nuanced examples based on the learner's specific mistakes.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review revealed specific points of confusion. Before moving forward, it's best practice to refine the instructional materials to address these weaknesses directly, ensuring the core concepts are fully understood and creating a better resource for future review."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Understanding preventive care and routine checkups",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "With the foundational concept clarified, the tutor moves to the next milestone in the study plan. This lesson focuses on identifying specific, age-appropriate preventive screenings for a young adult, such as blood pressure checks, cholesterol screenings, and relevant immunizations.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After confirming the learner's understanding of the basic definition of preventive care (solidified by the previous practice-review-revision cycle), it's logical to advance to the next topic outlined in the study plan. This lesson builds directly on the established foundation, moving from the 'what' to the 'which' of preventive care."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Understanding preventive care and routine checkups",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "To reinforce the lesson on age-appropriate screenings, the tutor provides a scenario of a person in their mid-20s. The learner is tasked with creating a list of recommended routine checkups and immunizations for this individual, using the information from the last lesson.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson introducing specific preventive screenings, a practice activity is necessary to assess the learner's ability to apply this new knowledge. This task requires them to recall and use the information from the teaching notes in a practical context, providing a clear basis for the next review session."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Understanding preventive care and routine checkups",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's list of recommended screenings from the previous practice session. The tutor compares the learner's answers to official guidelines and identifies any key screenings that were missed or any included that were not age-appropriate.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the practice task (e_08), a review is the essential next step to assess their comprehension and provide corrective feedback. Analyzing the practice record against the teaching notes allows the tutor to identify specific gaps in knowledge before proceeding to the next topic."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Understanding preventive care and routine checkups",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "Moving to the next milestone, the tutor teaches the learner how to prepare for a doctor's appointment. The lesson covers practical steps like compiling a list of questions, gathering personal and family health history, and knowing what documents to bring.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous practice-review cycle on screenings is complete, and the feedback from e_09 has been delivered. It's now appropriate to proceed to the next topic outlined in the study plan, which is preparing for an appointment, a key part of the learner's original goals."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Understanding preventive care and routine checkups",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "To apply the concepts from the previous lesson, the tutor assigns a role-playing exercise. The learner is asked to create a preparation checklist for a hypothetical annual checkup, including potential questions for the doctor and a list of documents to bring.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on how to prepare for an appointment, a practice activity is the logical next step to assess the learner's ability to apply this practical knowledge. This task directly addresses one of the learner's core goals, and the resulting record provides concrete material for review and feedback."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Understanding preventive care and routine checkups",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's preparation checklist from the role-playing exercise. The tutor provides feedback on the relevance of the questions for the doctor, the completeness of the gathered health information, and the list of necessary documents.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practical application exercise in e_11, a review is necessary to evaluate the learner's ability to prepare for an appointment. This step provides specific feedback on their checklist, reinforcing the lesson's key points and building the learner's confidence."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Understanding preventive care and routine checkups",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "To synthesize all learned concepts, the tutor assigns a comprehensive capstone exercise. The learner is tasked with preparing for and role-playing a full annual checkup, which involves identifying necessary screenings, creating a question list, and then simulating the appointment with the tutor.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "The learner has completed the individual learning milestones outlined in the study plan. A comprehensive practice session is the logical next step to integrate these separate skills, assess overall competence, and build confidence in a realistic, end-to-end scenario before concluding the tutoring."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Understanding preventive care and routine checkups",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor provides a final, summative review of the learner's performance in the capstone role-playing exercise. The feedback covers the accuracy of the identified screenings, the clarity of the questions prepared for the doctor, and the learner's overall confidence in applying the concepts.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a comprehensive capstone practice session, a final review is essential to provide summative feedback on the learner's integrated skills. This step evaluates their overall performance against the study plan's objectives and gives them final, actionable advice to build their confidence."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Understanding preventive care and routine checkups",
+    "subject": "Health",
+    "event_type": "plan_milestones",
+    "description": "The tutor and learner conduct a final review of the study plan, confirming that all milestones have been successfully completed. They discuss how the completed activities align with the learner's original goals, and the learner confirms they feel much more confident about managing their preventive care. The study plan is updated to mark all items as complete.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "After the final summative review (e_14), it is logical to formally conclude the tutoring by revisiting the original plan. This step allows both tutor and learner to verify that all objectives have been met, reinforcing the learner's progress and providing a clear sense of closure on the established goals."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Understanding preventive care and routine checkups",
+    "subject": "Health",
+    "event_type": "end",
+    "description": "The tutoring concludes with a final wrap-up session. The learner expresses satisfaction with their progress and feels equipped to manage their preventive healthcare proactively. The tutor provides some final encouragement and resources for future reference.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has successfully met all objectives outlined in the study plan, demonstrated competence in a final capstone exercise, and confirmed their confidence. The previous event formally closed out the study plan, making this the natural point to conclude the tutoring process."
+  }
+]

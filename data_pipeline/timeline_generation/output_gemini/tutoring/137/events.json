@@ -1,0 +1,257 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Citations, attribution, and avoiding plagiarism",
+    "subject": "Writing",
+    "event_type": "objective_clarification",
+    "description": "The tutor meets with the learner, an undergraduate student, to discuss their upcoming research paper assignment. They clarify the student's goals: understanding what constitutes plagiarism, learning the basics of APA citation style, and feeling confident in attributing sources correctly.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first event in the tutoring timeline. The logical first step is to establish the learner's goals, background, and specific needs before creating a plan or starting lessons. This session produces the foundational 'learning_objectives' artifact."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Citations, attribution, and avoiding plagiarism",
+    "subject": "Writing",
+    "event_type": "plan_milestones",
+    "description": "Based on the clarified objectives, the tutor outlines a multi-session study plan. The plan breaks down the learning process into manageable milestones: understanding plagiarism, mastering in-text citations, building a reference list, and finally, applying these skills to a draft of the student's paper.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "After establishing the student's goals in the initial session, the next logical step is to create a structured roadmap to achieve them. This event uses the 'learning_objectives' artifact to produce a 'study_plan', which will guide the upcoming lessons and practice sessions."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Citations, attribution, and avoiding plagiarism",
+    "subject": "Writing",
+    "event_type": "lesson",
+    "description": "The tutor conducts the first lesson, focusing on the foundational concept of plagiarism. The session covers the definition of plagiarism, discusses different forms (e.g., direct, mosaic, self-plagiarism), and introduces the concept of 'common knowledge' to help the student distinguish what needs a citation.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a study plan established, the next logical step is to begin instruction. This lesson addresses the first milestone in the 'study_plan'—understanding plagiarism. It creates 'teaching_notes' that capture the core concepts, which can be used for student review and future sessions."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Citations, attribution, and avoiding plagiarism",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "To reinforce the concepts from the lesson, the tutor provides the student with a set of short scenarios. Each scenario contains a source text and a student-written sentence. The student must identify whether each example represents plagiarism (e.g., improper paraphrase, missing citation) and explain their reasoning.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following a conceptual lesson, targeted practice is essential to check for understanding and begin applying the knowledge. This event uses the concepts from the 'teaching_notes' on plagiarism to create a 'practice_record' of the student's ability to identify potential issues, which can then be reviewed in the next session."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Citations, attribution, and avoiding plagiarism",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor reviews the student's responses from the plagiarism identification scenarios. They discuss each scenario, highlighting correct identifications and explaining any errors in the student's reasoning, particularly around the nuances of paraphrasing vs. quoting.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the student completed the practice exercises in the previous step, the logical next step is to review their work. This review uses the 'practice_record' to assess understanding, identify misconceptions, and provide specific, actionable feedback, which is captured in the new 'feedback_summary' artifact."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Citations, attribution, and avoiding plagiarism",
+    "subject": "Writing",
+    "event_type": "lesson",
+    "description": "The tutor moves to the next milestone in the study plan: APA in-text citations. Drawing on feedback from the last review, the lesson focuses on the practical mechanics of citing, including how to structure parenthetical citations for quotes versus paraphrases, and how to introduce source material effectively in a sentence.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the review of the student's practice, this lesson advances to the next milestone in the 'study_plan'. The lesson is tailored to address the specific issues with paraphrasing identified in the 'feedback_summary', connecting the 'why' of avoiding plagiarism to the 'how' of proper in-text citation."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Citations, attribution, and avoiding plagiarism",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "The tutor gives the student a set of source passages and prompts them to write sentences that paraphrase or directly quote the material, requiring them to correctly format the corresponding APA in-text citations. This exercise is designed to directly apply the rules covered in the previous lesson.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson on the mechanics of APA in-text citations, the most effective next step is immediate practice. This event allows the student to apply the rules from the recent lesson's 'teaching_notes' in a controlled exercise, generating a 'practice_record' that will serve as the basis for the next feedback and review session."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Citations, attribution, and avoiding plagiarism",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor reviews the student's practice sentences, checking the formatting of APA in-text citations for both paraphrases and direct quotes. They discuss common errors, such as incorrect punctuation placement and missing page numbers for quotes, providing corrections for each attempt.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the student completed the targeted practice on in-text citations (e_07), the immediate next step is to review their work. This event uses the 'practice_record' to assess the student's skill application, provide specific corrections, and generate a 'feedback_summary' to guide subsequent instruction."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Citations, attribution, and avoiding plagiarism",
+    "subject": "Writing",
+    "event_type": "materials_revision",
+    "description": "Based on the common citation errors identified in the last review, the tutor refines the teaching notes on APA in-text citations. They add a new 'Common Pitfalls' section with explicit examples addressing incorrect punctuation placement and the mandatory use of page numbers for direct quotes.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After identifying recurring mechanical errors in the student's practice (e_08), a logical next step is to improve the instructional materials to address these specific issues. This event uses the 'feedback_summary' to update the 'teaching_notes', making them a more effective reference for the student and improving their reusability for the tutor."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Citations, attribution, and avoiding plagiarism",
+    "subject": "Writing",
+    "event_type": "lesson",
+    "description": "Proceeding to the next milestone, the tutor teaches the student how to construct an APA reference list. The lesson covers the specific formatting rules for common source types like journal articles, books, and websites, and explains how each reference entry connects to the in-text citations covered previously.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After reviewing and reinforcing the student's understanding of in-text citations, the next logical step is to address the next topic in the 'study_plan': the reference list. This lesson builds upon the revised 'teaching_notes' to ensure the student understands how in-text citations and the reference list work together as a system."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Citations, attribution, and avoiding plagiarism",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "To apply the rules for creating a reference list, the tutor provides the student with information for several different source types (a book, a journal article, and a website). The student is tasked with creating a correctly formatted APA reference list entry for each source.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on constructing an APA reference list, the logical next step is for the student to practice applying these complex formatting rules. This targeted exercise uses the concepts from the latest 'teaching_notes' to create a 'practice_record' of the student's work, which is necessary for the upcoming review session."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Citations, attribution, and avoiding plagiarism",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor and student review the practice reference list entries. They identify and correct formatting mistakes, such as incorrect capitalization in article titles and the proper placement of italics for journal and book titles.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the student practiced creating reference list entries in the previous event, the logical next step is to review their work. This review uses the 'practice_record' to assess accuracy, correct formatting errors, and generate a 'feedback_summary' that consolidates the key learning points."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Citations, attribution, and avoiding plagiarism",
+    "subject": "Writing",
+    "event_type": "materials_revision",
+    "description": "Noticing the specific formatting errors from the last review, the tutor updates the teaching notes on APA reference lists. They add a 'Common Formatting Errors' section with side-by-side examples showing incorrect vs. correct capitalization and italicization for different source types.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the pattern from event e_09, this step uses the insights from the latest 'feedback_summary' to improve the instructional materials. By revising the 'teaching_notes' to explicitly address the student's recent mistakes, the tutor creates a better reference tool for the student before they move on to more complex application tasks."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Citations, attribution, and avoiding plagiarism",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "To synthesize the skills learned, the tutor asks the student to work on a sample paragraph. The student must integrate information from two different provided sources, using at least one quote and one paraphrase, add the correct APA in-text citations, and create a properly formatted reference list for the sources used.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Having covered in-text citations and reference lists in separate cycles, the next logical step according to the 'study_plan' is to integrate these skills. This practice event requires the student to apply all concepts from the 'teaching_notes' in a single, more complex task, generating a 'practice_record' that demonstrates their combined abilities."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Citations, attribution, and avoiding plagiarism",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor reviews the student's synthesis paragraph, providing comprehensive feedback. They check the integration of sources, the accuracy of the in-text citations and reference list entries, and the connection between them, ensuring all previously covered rules are applied correctly in one cohesive piece of writing.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the student completed an integrated practice task (e_14), the logical next step is a thorough review of their work. This event uses the 'practice_record' to assess how well the student can combine all the individual skills, generating a final 'feedback_summary' before they apply these skills to their actual assignment."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Citations, attribution, and avoiding plagiarism",
+    "subject": "Writing",
+    "event_type": "end",
+    "description": "The tutor and student hold a final check-in, concluding that the initial learning objectives have been met. The student confirms they feel confident in their ability to apply APA citation rules and avoid plagiarism in their research paper, and the formal tutoring concludes.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The tutoring process has systematically covered all milestones in the study plan, from foundational concepts to integrated application (e_14, e_15). With the student demonstrating proficiency and expressing confidence, and all teaching materials refined, the learning objectives are met and the tutoring can be formally concluded."
+  }
+]

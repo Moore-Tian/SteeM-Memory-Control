@@ -1,0 +1,310 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Battery material evaluation",
+    "subject": "Chemistry",
+    "event_type": "proposal",
+    "description": "Formulate initial research questions focusing on the comparative performance of new cathode materials for lithium-ion batteries. Develop a high-level research plan outlining the major phases of the project, from material synthesis to electrochemical testing.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the first event of the project. A proposal is necessary to establish the core research questions and a high-level plan, which will guide all subsequent activities like experimental design and execution."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Battery material evaluation",
+    "subject": "Chemistry",
+    "event_type": "scheme_design",
+    "description": "Design the detailed experimental methodology based on the research goals. This involves selecting specific candidate materials, defining the synthesis procedure, and outlining the electrochemical testing protocols like cyclic voltammetry and galvanostatic cycling.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "With the high-level goals and plan established in the proposal (e_01), the next logical step is to create a detailed experimental design. This 'method_scheme' provides the concrete procedures necessary to carry out the research and is a prerequisite for any lab work."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Battery material evaluation",
+    "subject": "Chemistry",
+    "event_type": "pilot_experiments",
+    "description": "Run a small-scale pilot study to synthesize a small batch of one candidate cathode material. Perform initial electrochemical tests to validate the experimental setup and protocols defined in the method scheme.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing the detailed experimental plan (method_scheme in e_02), a pilot study is a crucial and logical next step. It serves as a sanity check to validate the feasibility of the synthesis and testing protocols before committing to larger, more resource-intensive main experiments."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Battery material evaluation",
+    "subject": "Chemistry",
+    "event_type": "analysis",
+    "description": "Analyze the data from the pilot study. The analysis focuses on evaluating the initial capacity and cycling stability of the material, and checking for any procedural issues like high signal noise or inconsistent measurements in the electrochemical tests.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the pilot experiments (e_03), a formal analysis of the 'experiment_results' is the critical next step. This is necessary to validate the 'method_scheme' against the 'research_goals' and determine whether the project can proceed to main experiments or if the methodology needs to be revised first."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Battery material evaluation",
+    "subject": "Chemistry",
+    "event_type": "scheme_design",
+    "description": "Based on the analysis of the pilot study, which revealed high signal noise, the experimental protocol is revised. The team decides to modify the electrochemical cell setup and adjust the galvanostatic cycling parameters to improve measurement stability.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis of pilot results (e_04) identified key methodological weaknesses. Revising the 'method_scheme' is a necessary step to address these issues before committing to costly and time-consuming main experiments, thus increasing the chances of collecting reliable data."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Battery material evaluation",
+    "subject": "Chemistry",
+    "event_type": "pilot_experiments",
+    "description": "A second, focused pilot experiment is conducted using the revised method scheme from the previous step. The primary goal is to verify that the modifications to the cell setup and cycling parameters have successfully resolved the signal noise issue observed in the first pilot run.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the 'method_scheme' in e_05 to fix identified problems, a follow-up pilot experiment is the logical next step. This is necessary to validate that the changes were effective and that the measurement protocol is now robust enough for the main experiments."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Battery material evaluation",
+    "subject": "Chemistry",
+    "event_type": "analysis",
+    "description": "Analyze the results from the second pilot experiment. The analysis confirms that the revised protocol successfully eliminated the signal noise, yielding stable and reproducible measurements. The team concludes the method is now robust enough for the main experiments.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After conducting a second pilot experiment (e_06) to validate the revised 'method_scheme' from e_05, a formal analysis of the new 'experiment_results' is the critical next step. This confirms the fix was successful and provides the green light to proceed to the main experimental phase."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Battery material evaluation",
+    "subject": "Chemistry",
+    "event_type": "main_experiments",
+    "description": "With the methodology validated, the team initiates the main experiments. This involves synthesizing larger batches of all three candidate cathode materials and starting the comprehensive electrochemical testing (cyclic voltammetry and long-term galvanostatic cycling) according to the refined protocol.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The successful validation of the experimental protocol in the second pilot phase (e_06, e_07) provides the necessary confidence to proceed. It is now the logical time to execute the main experiments at scale to collect the comprehensive data required to address the project's core research goals."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Battery material evaluation",
+    "subject": "Chemistry",
+    "event_type": "writing",
+    "description": "While the long-term cycling experiments are running in the background, the team begins drafting the 'Experimental Methods' section for the future publication. This draft describes the finalized synthesis and electrochemical testing protocols based on the validated method scheme.",
+    "required_artifacts": [
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the main experiments (e_08) underway and the methodology now stable after the pilot revisions (e_05, e_07), it is an efficient use of project time to start writing the paper. Drafting the methods section is a logical first step as it does not depend on the final experimental outcomes."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Battery material evaluation",
+    "subject": "Chemistry",
+    "event_type": "analysis",
+    "description": "Perform an initial analysis of the data from the first 100 cycles of the ongoing main experiments. The analysis compares the specific capacity, coulombic efficiency, and initial capacity fade for the three candidate materials. One material shows significantly higher stability and capacity than the other two.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With the long-term main experiments (e_08) running, it is crucial to periodically analyze the incoming data. This initial analysis provides the first comparative assessment of the materials against the research goals, confirms the experiment is proceeding as planned, and offers early insights that will guide the remainder of the project."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Battery material evaluation",
+    "subject": "Chemistry",
+    "event_type": "proposal",
+    "description": "Based on the initial analysis showing one material is significantly outperforming the others, the team revises the project goals. The new focus is to conduct a deeper investigation into the structural and electrochemical properties of this single promising material to understand the mechanism behind its superior performance.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "The initial analysis of main experiments (e_10) revealed a clear front-runner material. It is a common and efficient research practice to pivot based on strong early results, refining the 'research_goals' and 'research_plan' to focus resources on the most promising avenue of investigation."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Battery material evaluation",
+    "subject": "Chemistry",
+    "event_type": "scheme_design",
+    "description": "To address the newly focused research goals, the team designs a supplementary experimental plan. This new scheme adds advanced characterization techniques, such as in-situ X-ray diffraction (XRD) to study structural changes during cycling and electrochemical impedance spectroscopy (EIS) to probe the material's charge-transfer kinetics.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "After pivoting the project's focus to a single promising material (e_11), the existing experimental protocol is no longer sufficient. This event is a necessary next step to design a more advanced 'method_scheme' that incorporates deeper characterization techniques required to answer the new, more specific research questions."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Battery material evaluation",
+    "subject": "Chemistry",
+    "event_type": "main_experiments",
+    "description": "The team begins the supplementary experiments on the single promising material. They set up the in-situ XRD measurements to monitor crystal structure changes during the first few cycles and conduct EIS tests at different states of charge to probe the material's charge-transfer kinetics.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing a new experimental scheme (e_12) to pursue the revised research goals (e_11), the logical next action is to execute these advanced experiments. This step is crucial for generating the specific, in-depth data needed to understand the superior performance of the selected material."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Battery material evaluation",
+    "subject": "Chemistry",
+    "event_type": "analysis",
+    "description": "Analyze the data from the advanced characterization experiments (in-situ XRD and EIS). The analysis of XRD data reveals minimal structural change during cycling, confirming high stability. The EIS results indicate low charge-transfer resistance, explaining the material's excellent rate capability.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the execution of supplementary experiments (e_13), a detailed analysis is the critical next step. This is necessary to interpret the complex data from the new techniques and directly address the revised research goals (e_11) concerning the mechanism of the material's superior performance."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Battery material evaluation",
+    "subject": "Chemistry",
+    "event_type": "writing",
+    "description": "With a complete set of results from both the comparative and advanced characterization studies, the team drafts the 'Results' and 'Discussion' sections of the paper. This involves preparing figures for the cycling data, XRD patterns, and EIS plots, and writing the narrative that connects the material's structural stability and low impedance to its superior performance.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The analysis of the supplementary experiments (e_14) provided the final key insights for the project's central story. Now that a complete scientific narrative exists—from initial comparison to mechanistic explanation—the logical next step is to synthesize these findings into the results and discussion sections of the research paper."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Battery material evaluation",
+    "subject": "Chemistry",
+    "event_type": "writing",
+    "description": "The team writes the 'Introduction' and 'Conclusion' sections and assembles all parts into a complete first draft of the manuscript. The introduction situates the work within the current state of battery research, while the conclusion summarizes the findings and suggests directions for future work.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the core 'Results' and 'Discussion' sections drafted (e_15), creating a full manuscript is the logical next step. This involves writing the framing sections (Introduction, Conclusion) and integrating all content into a single document, which is essential before seeking internal or external feedback."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Battery material evaluation",
+    "subject": "Chemistry",
+    "event_type": "writing",
+    "description": "The complete manuscript draft undergoes internal review by the research group and co-authors. Feedback leads to revisions, particularly strengthening the 'Discussion' section to better link the structural stability (from XRD) and low impedance (from EIS) to the observed long-term cycling performance. Figures are also polished for clarity.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After compiling a full first draft (e_16), internal peer review is a critical quality control step before journal submission. This revision cycle is essential for refining the scientific arguments, improving clarity, and ensuring the paper effectively communicates the research findings."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "Battery material evaluation",
+    "subject": "Chemistry",
+    "event_type": "end",
+    "description": "The manuscript is finalized after internal revisions and submitted to a peer-reviewed journal. The project is considered complete as the research questions have been answered and the findings have been compiled and written up for publication.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached a natural conclusion. A full research cycle has been completed: from initial proposal (e_01), through iterative experiments and analysis (e_03-e_14), to a focused re-scoping (e_11), and culminating in a complete, internally reviewed manuscript (e_17) ready for dissemination. The primary research goals have been met."
+  }
+]

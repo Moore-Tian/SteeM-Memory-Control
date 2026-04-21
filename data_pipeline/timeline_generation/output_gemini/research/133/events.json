@@ -1,0 +1,347 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Condensed matter structure inference",
+    "subject": "Physics",
+    "event_type": "proposal",
+    "description": "Formulate the initial research proposal for inferring condensed matter structures. The core idea is to develop a novel machine learning model that can predict crystal structures directly from experimental X-ray diffraction (XRD) data, aiming to outperform traditional refinement methods for complex materials.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the first step of the research project. It establishes the foundational research goals and a high-level plan, which are necessary before designing any specific methodology or conducting experiments."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Condensed matter structure inference",
+    "subject": "Physics",
+    "event_type": "scheme_design",
+    "description": "Design the initial methodological scheme for the machine learning model. The plan is to use a Graph Neural Network (GNN) to interpret the 1D XRD pattern as a graph of peak intensities and positions, and then decode this representation into a crystal lattice structure. This involves defining the specific GNN architecture and the data preprocessing pipeline for the XRD spectra.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the initial proposal (e_01), the next logical step is to translate the high-level goals into a concrete technical approach. This 'scheme_design' event creates the first version of the method, which is a prerequisite for any subsequent experiments."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Condensed matter structure inference",
+    "subject": "Physics",
+    "event_type": "pilot_experiments",
+    "description": "Run a small-scale pilot experiment to test the feasibility of the GNN approach. A simple dataset of simulated XRD patterns for common cubic crystal structures is used to train the initial model. The primary goal is to verify that the model can learn basic correlations between XRD peaks and lattice parameters, rather than achieving high predictive accuracy.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With a concrete method designed in e_02, a pilot study is the logical next step to validate its core assumptions before investing in large-scale data collection and computation. This small-scale test will produce the first set of 'experiment_results', indicating whether the GNN approach is viable."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Condensed matter structure inference",
+    "subject": "Physics",
+    "event_type": "analysis",
+    "description": "Analyze the results from the pilot experiment. The analysis reveals that the GNN model can successfully identify the lattice parameters for simple, well-separated XRD patterns. However, its performance degrades significantly when peaks overlap or with noisy data, indicating that the current graph representation is too simplistic.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After generating initial 'experiment_results' in the pilot study (e_03), a formal 'analysis' is the critical next step. This event assesses the viability of the current method against the 'research_goals' and identifies specific weaknesses, which will guide the subsequent refinement of the methodology."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Condensed matter structure inference",
+    "subject": "Physics",
+    "event_type": "scheme_design",
+    "description": "Revise the methodological scheme based on the pilot study analysis. The GNN's graph representation is enhanced to include peak width and relative intensity as node features, not just position. An attention mechanism is also added to the model architecture to better distinguish significant peaks from background noise.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis of pilot results (e_04) revealed critical weaknesses in the initial method (e_02), specifically its poor handling of noise and peak overlap. This event directly addresses those findings by returning to the 'scheme_design' stage to create a more robust model, which is a necessary step before attempting more complex experiments."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Condensed matter structure inference",
+    "subject": "Physics",
+    "event_type": "main_experiments",
+    "description": "Run the main experiments using the revised GNN model with the attention mechanism. The model is trained on a large-scale dataset of thousands of simulated XRD patterns from the Materials Project database, which includes a wide variety of crystal systems. The goal is to evaluate the model's accuracy on a diverse and challenging set of structures.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the method in e_05 to address the weaknesses identified in the pilot study (e_04), the next logical step is to test the improved model on a comprehensive, large-scale dataset. This 'main_experiments' event moves the project from the feasibility-testing phase to the core experimental phase, aiming to produce the primary results of the research."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Condensed matter structure inference",
+    "subject": "Physics",
+    "event_type": "analysis",
+    "description": "Analyze the results from the main experiments. The revised GNN model achieves high accuracy in predicting crystal systems and lattice parameters for most materials. However, its performance is weaker for low-symmetry structures (e.g., monoclinic), where it often fails to identify the correct space group.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After running the large-scale main experiments (e_06), a formal 'analysis' is essential to quantify the model's performance against the 'research_goals'. This step identifies the strengths and weaknesses of the current method, producing key findings that will form the basis of the results section of the paper."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Condensed matter structure inference",
+    "subject": "Physics",
+    "event_type": "writing",
+    "description": "Draft the 'Methods' section of the paper. This draft formally describes the revised GNN architecture, including the attention mechanism, and details the data sources and preprocessing pipeline used in the main experiments. It captures the successful components of the current methodology.",
+    "required_artifacts": [
+      "method_scheme",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After the successful main experiments (e_06) and subsequent analysis (e_07), a significant body of work has been validated. It is a good time to start documenting the successful methodology in a paper draft, building on the current 'method_scheme'. This allows the project to make progress on the writing front while simultaneously considering how to address the weaknesses identified in the analysis."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Condensed matter structure inference",
+    "subject": "Physics",
+    "event_type": "scheme_design",
+    "description": "To address the model's poor performance on low-symmetry structures, the method is redesigned again. The team proposes incorporating a symmetry-constrained loss function that penalizes predictions inconsistent with valid crystallographic space groups. This modification aims to guide the model towards physically plausible and symmetrically correct structures, especially for the challenging monoclinic cases.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis from the main experiments (e_07) revealed a critical flaw: the model's inability to handle low-symmetry structures. Instead of just documenting this failure, the logical next step is to attempt to fix it. This event revisits the 'scheme_design' stage to specifically target the identified weakness, representing a core cycle of iterative research: analyze results, identify problems, and refine the method."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Condensed matter structure inference",
+    "subject": "Physics",
+    "event_type": "main_experiments",
+    "description": "Run a targeted set of experiments with the updated model featuring the symmetry-constrained loss function. This experiment specifically focuses on the subset of low-symmetry materials (e.g., monoclinic, triclinic) where the previous model failed. The goal is to directly assess whether the new loss function improves space group identification for these challenging cases.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After proposing a specific solution (the symmetry-constrained loss in e_09) to a known problem (poor performance on low-symmetry structures from e_07), the necessary next step is to conduct experiments to test the effectiveness of this solution. This represents another iterative cycle of refinement and validation in the research process."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Condensed matter structure inference",
+    "subject": "Physics",
+    "event_type": "analysis",
+    "description": "Analyze the results from the targeted experiments on low-symmetry materials. The analysis confirms that the symmetry-constrained loss function significantly improves the model's ability to correctly identify space groups for these challenging structures. The error rate for monoclinic systems is reduced by over 50%, validating the design change.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After conducting targeted experiments in e_10 to test a specific methodological improvement, a formal 'analysis' is the crucial next step to evaluate its success. This event quantifies the improvement, confirming that the solution proposed in e_09 worked and generating a key positive result that can now be documented for the paper."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Condensed matter structure inference",
+    "subject": "Physics",
+    "event_type": "writing",
+    "description": "Update the 'Methods' section of the paper to include the final design with the symmetry-constrained loss function. Begin drafting the 'Results' section, presenting the successful outcomes from the targeted experiments and contrasting them with the initial model's performance to highlight the improvement.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the successful validation of the final model improvement in e_11, the research has reached a major milestone with a complete story. It is now the opportune time to write up these key findings, updating the paper draft to reflect the final methodology and presenting the compelling results."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Condensed matter structure inference",
+    "subject": "Physics",
+    "event_type": "main_experiments",
+    "description": "To validate the model's real-world applicability, a final set of experiments is conducted using experimental XRD data obtained from published literature and internal lab measurements. These datasets contain real-world noise and background signals not fully captured in the simulated data. The goal is to assess the model's robustness and performance on unseen, non-ideal data.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The model has proven highly successful on simulated data (e_11), and the corresponding methods and results have been drafted (e_12). The crucial next step is to validate its performance on real experimental data to ensure its practical utility and robustness, which is a key requirement for publication and addresses the original 'research_goals' in a more complete way."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Condensed matter structure inference",
+    "subject": "Physics",
+    "event_type": "analysis",
+    "description": "Analyze the performance of the model on the real experimental XRD data. The analysis reveals that while the model is generally robust, it requires a more sophisticated background subtraction preprocessing step to handle samples with high amorphous content, which was not an issue with the clean simulated data.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "Following the final validation experiments on real-world data in e_13, a thorough 'analysis' is the mandatory next step to evaluate the model's practical performance. This assessment is critical for determining the project's overall success against its 'research_goals' and identifying any remaining limitations before finalizing the paper."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Condensed matter structure inference",
+    "subject": "Physics",
+    "event_type": "scheme_design",
+    "description": "Refine the data preprocessing pipeline to better handle experimental data. A more advanced background subtraction algorithm, using a wavelet-based filter, is incorporated into the method scheme to more effectively remove the amorphous background signal identified as a problem in the previous analysis.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis of real experimental data (e_14) identified a key limitation regarding amorphous background signals. This 'scheme_design' event directly addresses that finding by improving the data preprocessing pipeline, which is a necessary step to enhance the method's real-world robustness before concluding the project."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Condensed matter structure inference",
+    "subject": "Physics",
+    "event_type": "main_experiments",
+    "description": "Re-run the validation experiments on the real experimental XRD data using the improved preprocessing pipeline that incorporates the wavelet-based background filter. The aim is to verify that the refined method can now robustly handle the noisy, amorphous-containing samples that were problematic in the previous attempt.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After refining the preprocessing method in e_15 to address a specific weakness found in real-world data (e_14), it is necessary to re-run the experiments to validate that the fix is effective. This step is crucial to confirm the model's robustness before finalizing the research and the paper."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Condensed matter structure inference",
+    "subject": "Physics",
+    "event_type": "analysis",
+    "description": "Analyze the results from the re-run experiments on real experimental data. The analysis confirms that the new wavelet-based filter successfully removes the amorphous background, leading to a significant improvement in prediction accuracy for these challenging samples. The model is now deemed robust for real-world application.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After re-running the validation experiments with the improved preprocessing method (e_16), it is essential to analyze the new results to confirm that the fix was effective. This 'analysis' step provides the final verdict on the model's real-world performance and generates the conclusive findings needed to finalize the paper."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "Condensed matter structure inference",
+    "subject": "Physics",
+    "event_type": "writing",
+    "description": "Consolidate all findings into a near-complete draft of the paper. This involves finalizing the 'Methods' and 'Results' sections with the details of the wavelet-based preprocessing and its performance on real experimental data. The 'Discussion' and 'Conclusion' sections are also drafted to interpret the model's significance and summarize the project's achievements.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the final, conclusive analysis of real-world data complete (e_17), the research phase has concluded successfully. The logical next step is to synthesize all methods and results into a comprehensive paper draft, which is essential for disseminating the work and bringing the project to a close."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "research",
+    "topic": "Condensed matter structure inference",
+    "subject": "Physics",
+    "event_type": "writing",
+    "description": "The paper draft is circulated among all co-authors for a final round of feedback. Minor revisions are made to the introduction and discussion sections to improve clarity and strengthen the claims. The paper is then formatted according to the target journal's guidelines, and a final version is prepared for submission.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the creation of a near-complete draft (e_18), obtaining feedback from all stakeholders and performing final polishing are the last crucial steps before the work can be disseminated. This event represents the finalization of the project's primary output—the research paper—and makes it ready for submission."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "research",
+    "topic": "Condensed matter structure inference",
+    "subject": "Physics",
+    "event_type": "end",
+    "description": "The research paper is submitted to a peer-reviewed condensed matter physics journal. With this submission, the active research and writing phase of the project is concluded, pending the outcomes of the peer review process.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has successfully navigated multiple iterative cycles of design, experimentation, and analysis, culminating in a robust method validated on real-world data. A complete paper has been drafted, revised, and finalized for submission (e_19), representing the successful completion of the project's primary goals. Therefore, it is appropriate to conclude the timeline."
+  }
+]

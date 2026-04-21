@@ -1,0 +1,309 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Conflict resolution and difficult conversations",
+    "subject": "LifeSkills",
+    "event_type": "objective_clarification",
+    "description": "Initial meeting with the learner to discuss their goals for improving conflict resolution skills. We explored their self-reported weaknesses, such as avoiding difficult conversations with colleagues, and identified a primary goal of learning to deliver constructive feedback without creating defensiveness.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "As this is the first session, the priority is to understand the learner's needs and establish clear goals. This `objective_clarification` step creates the foundational `learning_objectives` artifact that will guide the creation of a tailored study plan and all future lessons."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Conflict resolution and difficult conversations",
+    "subject": "LifeSkills",
+    "event_type": "plan_milestones",
+    "description": "Based on the learner's goals, we collaboratively outlined a multi-stage study plan. The plan starts with foundational concepts like 'I-statements' and the 'SBI' (Situation-Behavior-Impact) feedback model, then moves to role-playing scenarios, and finally to applying these skills in real-world situations with review.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the `learning_objectives` artifact from the first session, the next logical step is to create a concrete `study_plan`. This `plan_milestones` event translates the high-level goals into an actionable roadmap, providing structure and clear expectations for the upcoming lessons and practice sessions."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Conflict resolution and difficult conversations",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "Delivered the first lesson covering foundational concepts for constructive feedback, as outlined in the study plan. We focused on explaining the structure and purpose of 'I-statements' and the Situation-Behavior-Impact (SBI) model, using simple examples to illustrate each component.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the `study_plan`, the next logical step is to begin instruction with the first planned topic. This `lesson` introduces core concepts and creates the initial `teaching_notes` artifact, which will serve as a reference for future practice and review sessions."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Conflict resolution and difficult conversations",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "Conducted a practice session where the learner applied the SBI model to several hypothetical workplace scenarios. The learner was asked to write out their feedback for each scenario, focusing on using 'I-statements' and clearly defining the Situation, Behavior, and Impact.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the SBI model and 'I-statements' in the previous lesson, the next logical step is to have the learner apply these concepts in a controlled setting. This `practice` event solidifies understanding and creates a `practice_record` of the learner's attempts, which is essential for the upcoming review and feedback cycle."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Conflict resolution and difficult conversations",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "Reviewed the learner's written attempts from the practice session. The review focused on evaluating how well the learner applied the SBI model, specifically checking for judgmental language in the 'Behavior' component and ensuring the 'Impact' was framed as a personal perspective using 'I-statements'.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the exercises in the `practice` event (e_04), the logical next step is to analyze their work. This `review` event uses the `practice_record` to identify specific strengths and weaknesses in applying the SBI model, resulting in a `feedback_summary` with actionable advice for improvement."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Conflict resolution and difficult conversations",
+    "subject": "LifeSkills",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback from the last review, the teaching notes for the SBI model were updated. A new section was added to explicitly address the common pitfall of using judgmental language when describing 'Behavior', including contrasting examples of effective vs. ineffective phrasing.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The `review` (e_05) and its resulting `feedback_summary` highlighted a specific weakness in the learner's application of the SBI model. This `materials_revision` proactively updates the `teaching_notes` to better address this common pitfall, which will support the learner in their next practice round and improve the reusability of the materials."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Conflict resolution and difficult conversations",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "Conducted a second, targeted practice session following the recent review and materials update. The learner was asked to apply the SBI model to new scenarios, with a specific focus on incorporating the feedback to use neutral, observable language when describing behavior.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After identifying a specific weakness in the last `review` (e_05) and improving the `teaching_notes` to address it (e_06), the next logical step is to have the learner practice again. This `practice` event provides an immediate opportunity to apply the feedback and reinforce the correct technique, creating a new `practice_record` to assess their progress."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Conflict resolution and difficult conversations",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "Reviewed the learner's second round of practice attempts. The review confirmed that the learner successfully incorporated the previous feedback, using neutral and observable language to describe behavior in the SBI model. Progress was noted, and minor suggestions were made for improving the clarity of the 'Impact' statements.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted `practice` in e_07, the logical next step is to `review` the new `practice_record`. This allows the tutor to assess whether the learner has successfully addressed the issues from the previous `feedback_summary` (e_05) and to provide updated, affirming feedback, which will guide the next lesson or practice round."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Conflict resolution and difficult conversations",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "With the learner showing proficiency in the written SBI model, we proceeded to the next topic in the study plan. This lesson focused on transitioning from the written formula to a natural verbal delivery, and introduced active listening techniques to prepare for interactive role-playing.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous `review` (e_08) confirmed the learner has mastered the core SBI structure. According to the `study_plan`, the next logical step is to move towards conversational application. This `lesson` bridges that gap by teaching verbal delivery and active listening, updating the `teaching_notes` to prepare for the upcoming role-playing milestone."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Conflict resolution and difficult conversations",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "Engaged in the first interactive role-playing session based on the study plan. The learner practiced delivering verbal feedback using the SBI model in simulated conversations, while also trying to apply the active listening techniques introduced in the last lesson.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on verbal delivery and active listening (e_09), the next step according to the `study_plan` is interactive practice. This role-playing `practice` event allows the learner to apply the concepts from the `teaching_notes` in a dynamic setting, creating a `practice_record` that captures their conversational performance for the next review cycle."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Conflict resolution and difficult conversations",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "Reviewed the recording of the role-playing session, providing feedback on the learner's verbal delivery, tone, and use of active listening. While the SBI structure was well-applied, the learner struggled to manage the other person's emotional reactions, often reverting to a more defensive stance.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the first interactive `practice` (e_10), a `review` is critical to analyze the learner's performance in a dynamic setting. This event uses the `practice_record` to assess the application of conversational skills from the `teaching_notes`, producing a `feedback_summary` that identifies new challenges, such as managing emotional responses, for the next learning cycle."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Conflict resolution and difficult conversations",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "Delivered a new lesson focused on managing emotional reactions, a difficulty identified in the last role-play review. The lesson introduced concepts like 'acknowledging and validating emotions' and techniques for de-escalation, such as pausing and re-centering the conversation on shared goals.",
+    "required_artifacts": [
+      "feedback_summary",
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_11) and its `feedback_summary` highlighted the learner's difficulty with managing emotional responses. This targeted `lesson` directly addresses that skill gap by introducing new de-escalation techniques, expanding the `teaching_notes` to prepare the learner for more complex interactive practice."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Conflict resolution and difficult conversations",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "Conducted a second role-playing practice session, this time with scenarios designed to provoke an emotional response. The learner was tasked with delivering SBI feedback while actively using the de-escalation and validation techniques from the previous lesson to manage the conversation.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the targeted `lesson` on managing emotional reactions (e_12), the immediate next step is for the learner to apply these new skills. This `practice` event uses the updated `teaching_notes` and addresses the core issue from the last `feedback_summary` (e_11), creating a new `practice_record` to evaluate the learner's progress in handling more complex, interactive scenarios."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Conflict resolution and difficult conversations",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "Reviewed the recording of the second, more challenging role-playing session. We analyzed the learner's use of de-escalation and validation techniques, noting significant improvement in managing emotional reactions and maintaining a constructive tone compared to the previous attempt.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted role-play `practice` in e_13, the essential next step is to `review` that performance. This event assesses the learner's progress in applying the new de-escalation skills from the `teaching_notes`, providing an updated `feedback_summary` that confirms improvement and identifies the next learning focus."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Conflict resolution and difficult conversations",
+    "subject": "LifeSkills",
+    "event_type": "plan_milestones",
+    "description": "Given the learner's success in simulated role-plays, we reviewed and updated the study plan to focus on the final phase: real-world application. We defined the next milestone as identifying a low-stakes, real-life opportunity to provide feedback at work, and we planned for a debriefing session afterward.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "The previous review (e_14) confirmed the learner's proficiency in handling difficult conversations in a controlled setting. Referencing the original `learning_objectives`, the next logical step is to transition towards real-world application. This `plan_milestones` event updates the `study_plan` to create a structured, supported path for this final learning stage."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Conflict resolution and difficult conversations",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The learner reported back on their real-world application attempt, as planned in the updated study plan. They described the situation, what they said, how the other person reacted, and their own feelings during the conversation. This self-report was documented to serve as the basis for a final review and debriefing.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the updated `study_plan` (e_15) which tasked the learner with a real-world application, this session is dedicated to capturing their experience. This `practice` event creates a detailed `practice_record` based on the learner's self-report, which is essential for the planned debriefing and final review of their skills in a genuine context."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Conflict resolution and difficult conversations",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "Conducted a final debriefing session to review the learner's real-world application attempt from the previous session. We discussed the outcome, how they applied the learned techniques under pressure, and what they would do similarly or differently in the future. The feedback was overwhelmingly positive, validating their progress and confidence.",
+    "required_artifacts": [
+      "practice_record",
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the real-world `practice` (e_16), a final `review` and debriefing is the logical next step as outlined in the `study_plan`. This event allows for a comprehensive evaluation of the learner's ability to transfer skills from practice to reality, producing a final `feedback_summary` that consolidates all their learning and progress."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Conflict resolution and difficult conversations",
+    "subject": "LifeSkills",
+    "event_type": "end",
+    "description": "Final session concluding the tutoring program. The learner has successfully met their initial goals, demonstrated proficiency in both simulated and real-world scenarios, and expressed confidence in their ability to handle difficult conversations going forward.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has successfully progressed through all stages of the study plan, from foundational concepts to a successful real-world application (e_16, e_17). The final review confirmed that the initial learning objectives have been met, making this a natural and successful conclusion to the tutoring process."
+  }
+]

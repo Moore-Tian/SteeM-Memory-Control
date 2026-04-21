@@ -1,0 +1,426 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "First aid principles and emergency decision logic",
+    "subject": "Health",
+    "event_type": "objective_clarification",
+    "description": "Initial meeting with the learner to discuss their goals for learning first aid. We established their desire to feel confident responding to common household and outdoor emergencies, their lack of prior formal training, and a target timeline of three months.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives",
+      "study_plan"
+    ],
+    "reason": "This is the first session, so the logical starting point is to clarify the learner's objectives, background, and constraints. This foundational step allows for the creation of an initial, high-level study plan to guide the tutoring process."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "First aid principles and emergency decision logic",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "Conducted the first lesson, focusing on the foundational 'Check, Call, Care' framework for responding to emergencies. This provides a systematic approach that will be applied to all specific scenarios covered later.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the initial study plan in place, the next logical step is to begin instruction. This lesson introduces a core, high-level framework that serves as the foundation for all subsequent topics, directly addressing the learner's goal of building confidence through a structured approach."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "First aid principles and emergency decision logic",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "Ran a practice session with the learner using simple, hypothetical scenarios (e.g., finding someone collapsed, witnessing a minor kitchen burn). The learner was asked to walk through their immediate actions using the 'Check, Call, Care' framework.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the foundational 'Check, Call, Care' framework in the previous lesson, the next logical step is to have the learner practice applying it. This helps solidify their understanding and allows the tutor to assess comprehension before moving on to more complex topics."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "First aid principles and emergency decision logic",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "Reviewed the learner's application of the 'Check, Call, Care' framework from the practice session. The review focused on identifying points of hesitation, ensuring the 'Check' phase was thorough, and clarifying when to 'Call' emergency services versus providing immediate care.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session, a review is essential to analyze the learner's performance documented in the practice_record. This step allows for immediate, targeted feedback to correct misunderstandings and reinforce the core concepts from the lesson before introducing new material."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "First aid principles and emergency decision logic",
+    "subject": "Health",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback from the last review, the teaching notes for 'Check, Call, Care' were revised. A more detailed checklist for the 'Check' phase was added, along with a simple decision-tree diagram to help clarify the 'Call' vs. 'Care' logic.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review identified learner hesitation and confusion around specific parts of the 'Check, Call, Care' framework. Revising the teaching materials to add more detail and visual aids directly addresses these issues, providing a clearer resource for the learner before they attempt to practice the concept again."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "First aid principles and emergency decision logic",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "Conducted a follow-up practice session using the newly revised materials. The learner re-applied the 'Check, Call, Care' framework to a new set of scenarios, referencing the updated checklist and decision tree to guide their actions.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials to address specific weaknesses identified in the last review, it is crucial to have the learner practice again. This step verifies that the revisions were effective and that the learner has now solidified their understanding of the foundational framework before moving on to new content."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "First aid principles and emergency decision logic",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "Reviewed the learner's performance from the follow-up practice session. The review confirmed that the revised materials were effective, as the learner applied the 'Check, Call, Care' framework more confidently and accurately, with significantly less hesitation.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the second practice session, a review is essential to evaluate if the learner's previous difficulties have been resolved. This step provides positive reinforcement and confirms that the foundational concept is now solid enough to proceed to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "First aid principles and emergency decision logic",
+    "subject": "Health",
+    "event_type": "plan_milestones",
+    "description": "After confirming the learner's mastery of the foundational framework, we reviewed the study plan to detail the next module. The upcoming milestone will focus on life-threatening conditions, specifically severe bleeding and shock, breaking it down into distinct lessons and practice sessions.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "The learner has successfully mastered the initial foundational concept, as confirmed by the last review. This is a natural transition point to refine the study plan, define the next concrete learning milestone, and ensure alignment before introducing more advanced topics."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "First aid principles and emergency decision logic",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "Delivered a lesson on the first topic of the new module: managing severe bleeding. The session covered how to identify life-threatening bleeding, the critical importance of direct pressure, and the steps for applying a tourniquet as a last resort.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the milestone planning in the previous event, the next logical action is to deliver the first lesson of the new module. This lesson on severe bleeding directly addresses the updated study plan and introduces the next critical skill for the learner."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "First aid principles and emergency decision logic",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "Led a practice session focused on the severe bleeding scenarios discussed in the previous lesson. The learner described their response to simulated situations, such as a deep laceration from a kitchen knife and a limb injury from a fall, focusing on applying direct pressure correctly.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing a critical hands-on skill like managing severe bleeding in the last lesson, the immediate next step is to conduct a practice session. This allows the learner to apply the theoretical knowledge, helps build muscle memory for the procedures, and creates a record of their performance for review."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "First aid principles and emergency decision logic",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "Reviewed the learner's responses from the severe bleeding practice session. The feedback highlighted their correct application of direct pressure but also pointed out some uncertainty about when to escalate to using a tourniquet and the importance of calling for help early.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner practiced responding to severe bleeding scenarios in the previous event, a review is the logical next step. Analyzing the practice_record allows the tutor to provide specific, actionable feedback, correct any misunderstandings about critical steps, and ensure the concept is properly understood before moving forward."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "First aid principles and emergency decision logic",
+    "subject": "Health",
+    "event_type": "materials_revision",
+    "description": "Based on the review of the severe bleeding practice, the teaching notes were updated. A new section was added with explicit criteria for when to escalate to a tourniquet and a flowchart to integrate the 'Call' for help with bleeding control actions.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review revealed learner uncertainty about escalating care to tourniquet use. Directly revising the teaching notes to provide clearer decision-making criteria and a visual aid addresses this specific gap before further practice, mirroring the successful correction loop from events 5-7."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "First aid principles and emergency decision logic",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "Conducted a targeted practice session on severe bleeding, using the newly revised teaching notes. The learner was presented with scenarios that specifically tested the decision-making process for escalating from direct pressure to tourniquet application, referencing the new flowchart.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the revision of teaching materials in the previous step, a targeted practice session is necessary to validate whether the changes have resolved the learner's confusion about tourniquet escalation. This step ensures the learner's understanding is solid before proceeding to the next topic in the module."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "First aid principles and emergency decision logic",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "Reviewed the learner's performance on the targeted practice for severe bleeding. The review confirmed that the learner now correctly identifies the criteria for tourniquet use and can articulate the decision-making process clearly, referencing the revised flowchart.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the targeted practice session in the previous event, a review is necessary to confirm that the learner has overcome their earlier hesitation regarding tourniquet use. This step validates the effectiveness of the revised teaching materials and closes the loop on this specific skill before moving to the next topic."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "First aid principles and emergency decision logic",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "Delivered a lesson on recognizing and managing shock, the second topic in the 'life-threatening conditions' module. The session explained how shock can result from severe bleeding and covered key signs like pale/cool skin and rapid pulse, along with initial care steps like laying the person down and maintaining body temperature.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Having confirmed the learner's mastery of severe bleeding in the previous review, the next logical step is to teach the next topic outlined in the study plan: shock. This lesson builds directly on the previous topic, as severe bleeding is a primary cause of shock, and moves the learner forward in the current milestone."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "First aid principles and emergency decision logic",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "Conducted a practice session where the learner had to identify signs of shock in various scenarios, including one following severe bleeding. The learner described the immediate care steps, such as laying the person down, elevating their legs, and keeping them warm, while also emphasizing the need to call emergency services.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After teaching the signs and management of shock in the previous lesson, a practice session is the logical next step to assess the learner's ability to apply this new knowledge. This session creates a record of their performance which can be used for targeted feedback in the subsequent review."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "First aid principles and emergency decision logic",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "Reviewed the learner's performance from the practice session on shock. The review confirmed the learner can correctly identify key signs of shock and articulate the necessary care steps, such as positioning the person and maintaining warmth.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on managing shock, a review is the logical next step to assess comprehension and provide feedback. This review solidifies the learner's understanding of the second major life-threatening condition, completing the current module and preparing them to move on to a new set of topics."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "First aid principles and emergency decision logic",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "Ran a cumulative practice session that integrated the two topics from the 'life-threatening conditions' module. The scenario involved a victim with a severe leg injury who subsequently develops signs of shock, requiring the learner to manage bleeding control and shock treatment in sequence.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Having confirmed the learner's understanding of severe bleeding and shock in isolation, a cumulative practice session is essential to test their ability to integrate skills and manage a more complex, evolving scenario. This serves as a capstone for the module and assesses their holistic decision-making."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "First aid principles and emergency decision logic",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "Reviewed the learner's performance on the cumulative practice session that combined severe bleeding and shock. The review focused on the learner's ability to prioritize actions, manage both conditions simultaneously, and maintain a clear decision-making process throughout the evolving scenario.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following a cumulative practice session, a comprehensive review is essential to assess how well the learner can integrate multiple skills. This step evaluates their holistic decision-making and provides feedback on their ability to manage a complex, evolving emergency, thereby solidifying the learning from the entire module."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "First aid principles and emergency decision logic",
+    "subject": "Health",
+    "event_type": "plan_milestones",
+    "description": "Following the successful completion of the 'life-threatening conditions' module, the study plan was updated to outline the next milestone. The new module will focus on 'Common Household and Outdoor Injuries,' starting with choking and then moving to burns and fractures.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "The learner has demonstrated proficiency in managing severe bleeding and shock, as confirmed by the last cumulative review. It is therefore a logical transition point to update the study plan, detail the next module covering more common injuries, and ensure continued alignment with the learner's original goals."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "First aid principles and emergency decision logic",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "Began the 'Common Household and Outdoor Injuries' module with a lesson on choking. The session covered how to recognize the signs of choking in adults and children, and the steps for performing abdominal thrusts (Heimlich maneuver).",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the new module on common injuries planned in the previous event, the logical next step is to deliver the first lesson. This session on choking starts the new learning phase as outlined in the updated study plan, addressing a key component of the learner's original objectives."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "tutoring",
+    "topic": "First aid principles and emergency decision logic",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "Conducted a practice session on choking scenarios. The learner was asked to identify the signs of choking and describe the correct procedure for administering abdominal thrusts (Heimlich maneuver) on an adult.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on choking, the logical next step is to have the learner practice applying this critical skill. This session helps reinforce the steps and allows the tutor to assess the learner's comprehension and ability to act, creating a performance record for review."
+  },
+  {
+    "event_id": "e_23",
+    "time_index": 23,
+    "domain": "tutoring",
+    "topic": "First aid principles and emergency decision logic",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "Reviewed the learner's performance from the choking practice session. The review confirmed the learner could correctly identify the universal sign for choking and accurately describe the steps for administering abdominal thrusts.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following a practice session on a critical skill like choking response, a review is essential to assess accuracy and provide corrective feedback. This step confirms the learner has mastered the topic before proceeding to the next injury (burns) in the current module."
+  },
+  {
+    "event_id": "e_24",
+    "time_index": 24,
+    "domain": "tutoring",
+    "topic": "First aid principles and emergency decision logic",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "Delivered a lesson on managing burns, the second topic in the 'Common Household and Outdoor Injuries' module. The session covered identifying burn severity (first, second, third degree) and the immediate care steps for minor burns, such as cooling with water and covering.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After the learner demonstrated proficiency with choking response in the previous review, the next logical step according to the study plan is to teach the next topic in the module: burns. This lesson builds on the learner's foundational knowledge and addresses another key aspect of common household emergencies."
+  },
+  {
+    "event_id": "e_25",
+    "time_index": 25,
+    "domain": "tutoring",
+    "topic": "First aid principles and emergency decision logic",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "Conducted a practice session on managing burns. The learner was presented with scenarios of varying severity, such as a minor kitchen scald and a more serious sunburn, and was asked to describe the appropriate immediate care steps.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After delivering the lesson on burns, the logical next step is to have the learner apply that knowledge in practice scenarios. This allows the tutor to assess comprehension of burn severity and proper care, and it creates a performance record for the upcoming review."
+  }
+]

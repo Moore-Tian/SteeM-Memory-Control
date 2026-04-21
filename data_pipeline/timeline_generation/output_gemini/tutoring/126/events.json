@@ -1,0 +1,272 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Tone control for professional and academic contexts",
+    "subject": "Writing",
+    "event_type": "objective_clarification",
+    "description": "Initial meeting with the learner to discuss their goals for improving tone in professional and academic writing. The learner, a graduate student, wants to sound more authoritative in research papers and less abrupt in emails to collaborators.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "As the first event in the tutoring timeline, it is essential to establish the learner's goals, context, and success criteria. This 'objective_clarification' step provides the foundation for all subsequent planning and instruction."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Tone control for professional and academic contexts",
+    "subject": "Writing",
+    "event_type": "plan_milestones",
+    "description": "Based on the clarified objectives, the tutor and learner create a structured study plan. The plan prioritizes email communication first, then moves to academic writing, with milestones for analyzing examples, drafting, and revising for tone.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learner's goals documented in 'learning_objectives', the next logical step is to create a structured 'study_plan'. This ensures both parties have a clear roadmap, breaking the broader goal into manageable stages and setting expectations for the upcoming sessions."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Tone control for professional and academic contexts",
+    "subject": "Writing",
+    "event_type": "lesson",
+    "description": "Following the study plan, the tutor delivers a lesson on adjusting tone in professional emails. The session covers key strategies like using positive framing, modal verbs for politeness, and appropriate greetings/closings, preparing the learner for the first practice task.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a 'study_plan' in place that prioritizes email communication, the next logical step is to conduct a 'lesson' on this topic. This initial instruction provides the foundational knowledge the learner needs before moving to practice, and it generates 'teaching_notes' for future reference."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Tone control for professional and academic contexts",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "The tutor assigns a practice task where the learner must revise several sample emails that are too abrupt. The learner applies the strategies from the recent lesson to adjust the tone, and their rewritten versions are saved for review.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a 'lesson' introduces new concepts, the logical next step is 'practice' to apply them. This task directly addresses the first milestone in the 'study_plan' and uses the principles from the 'teaching_notes', creating a 'practice_record' for the tutor to assess."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Tone control for professional and academic contexts",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's revised emails from the practice session. The tutor identifies successful applications of the lesson's principles and notes areas for improvement, such as where politeness strategies were overused, potentially undermining the writer's authority.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following a 'practice' event that produced a 'practice_record', the logical next step is a 'review' to assess the learner's application of the concepts. This provides targeted feedback, captured in a 'feedback_summary', which will guide the next round of practice or instruction."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Tone control for professional and academic contexts",
+    "subject": "Writing",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback from the review, the tutor refines the teaching notes on email tone. A new section is added discussing the nuance of balancing politeness with authority, specifically warning against over-correction that can weaken the message.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The 'review' event produced a 'feedback_summary' that highlighted a specific learner misunderstanding (overuse of politeness). A logical next step is to perform 'materials_revision' to update the 'teaching_notes', making them more robust and addressing this observed pitfall for future reference."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Tone control for professional and academic contexts",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "The learner engages in a second practice session, this time focusing on the nuanced balance between politeness and authority. Using the revised teaching notes and specific feedback, they revise a new set of emails designed to challenge this specific skill.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After receiving targeted feedback ('feedback_summary') and having the 'teaching_notes' updated to address a specific misconception, a follow-up 'practice' event is necessary. This allows the learner to apply the refined guidance and demonstrate their ability to balance politeness and authority, creating a new 'practice_record' for assessment."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Tone control for professional and academic contexts",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor reviews the second practice attempt, assessing the learner's ability to balance politeness and authority. The tutor notes significant improvement and confirms that the learner has successfully applied the refined principles from the updated teaching notes.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted 'practice' session (e_07), a 'review' is necessary to assess whether the learner has overcome the specific issues identified in the previous 'feedback_summary'. This step validates the learner's progress and determines if they are ready to advance to the next milestone in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Tone control for professional and academic contexts",
+    "subject": "Writing",
+    "event_type": "plan_milestones",
+    "description": "With the email communication milestone successfully met, the tutor and learner review and update the study plan. They formally mark the first phase as complete and detail the upcoming milestones for the second objective: developing an authoritative tone in academic writing.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "The previous review confirmed the learner's mastery of the first topic. It is now logical to transition to the next topic from the original 'learning_objectives'. This 'plan_milestones' event updates the 'study_plan' to reflect progress and clearly outline the next phase of instruction, ensuring both parties are aligned."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Tone control for professional and academic contexts",
+    "subject": "Writing",
+    "event_type": "lesson",
+    "description": "Following the updated study plan, the tutor conducts a lesson on establishing an authoritative tone in academic writing. The session covers strategies such as using strong, precise verbs, managing hedging language effectively, and confidently positioning one's own research within the existing literature.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous event updated the 'study_plan' to focus on academic writing. The logical next step is a 'lesson' to introduce the core concepts for this new topic, providing the foundational knowledge needed before the learner can begin practicing."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Tone control for professional and academic contexts",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "The learner is tasked with revising a draft of a research paper's literature review section. The goal is to apply the principles of authoritative tone from the previous lesson, specifically by strengthening verb choices, reducing unnecessary hedging, and clarifying the author's contribution.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on authoritative academic tone (e_10), a 'practice' event is the essential next step to apply the new concepts. This task directly addresses the current milestone in the 'study_plan' and will create a 'practice_record' for the tutor to assess the learner's understanding and application of the material."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Tone control for professional and academic contexts",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's revised literature review from the practice session. The tutor assesses the application of authoritative tone strategies, providing specific feedback on verb choice, hedging, and the framing of the author's contribution.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed a 'practice' task (e_11) and created a 'practice_record', the necessary next step is a 'review'. This allows the tutor to evaluate the learner's work against the principles in the 'teaching_notes' and provide targeted guidance in a 'feedback_summary'."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Tone control for professional and academic contexts",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "Based on the feedback from the previous review, the learner engages in a more focused practice session. They revise specific paragraphs from their research paper's methods section, with a clear goal of applying the feedback on hedging and verb strength to sound more confident and authoritative.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After receiving targeted guidance in the recent 'feedback_summary' (e_12), a follow-up 'practice' event is the most effective way for the learner to apply that advice. This iterative cycle helps solidify the skill of adjusting academic tone and creates a new 'practice_record' to demonstrate progress."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Tone control for professional and academic contexts",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's revisions to the research paper's methods section. The tutor finds that the learner has successfully applied the feedback on hedging and verb strength, demonstrating a much more authoritative tone.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted 'practice' event (e_13), a 'review' is the essential next step to evaluate the learner's application of the previous 'feedback_summary'. This assessment creates a new 'feedback_summary' that confirms mastery of the skill and informs whether the learner is ready to conclude this topic."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Tone control for professional and academic contexts",
+    "subject": "Writing",
+    "event_type": "plan_milestones",
+    "description": "In this final session, the tutor and learner review the entire study plan against the original learning objectives. They confirm that all goals have been met, formally concluding the tutoring engagement and discussing strategies for the learner to maintain their skills independently.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "The previous review (e_14) confirmed the learner's mastery of the final topic. This 'plan_milestones' event serves as a capstone, formally closing out the 'study_plan' by verifying that all original 'learning_objectives' have been successfully met and providing closure to the tutoring relationship."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Tone control for professional and academic contexts",
+    "subject": "Writing",
+    "event_type": "end",
+    "description": "The tutoring engagement is formally concluded. All learning objectives have been met, and the learner has a clear plan for maintaining their skills independently.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The previous event served as a capstone session where the tutor and learner confirmed all learning objectives were met and the study plan was completed. With the successful conclusion of the tutoring relationship, the timeline formally ends."
+  }
+]

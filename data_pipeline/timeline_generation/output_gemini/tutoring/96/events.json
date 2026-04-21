@@ -1,0 +1,345 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Managing stress in demanding schedules",
+    "subject": "LifeSkills",
+    "event_type": "objective_clarification",
+    "description": "The first session focuses on understanding the learner's context, specifically their demanding schedule and sources of stress. The tutor and learner discuss desired outcomes, such as developing practical coping mechanisms and improving work-life balance, to establish clear learning goals.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives",
+      "study_plan"
+    ],
+    "reason": "As the first step in the tutoring process, it is essential to clarify the learner's goals and constraints. This diagnostic session establishes a shared understanding of the problem and desired outcomes, which will guide the creation of a tailored study plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Managing stress in demanding schedules",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "The tutor introduces the first core concept from the study plan: the 'Stress Cycle' and how to identify personal stress triggers. This lesson provides a foundational framework for understanding how stress manifests before moving on to management techniques.",
+    "required_artifacts": [
+      "learning_objectives",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the learning objectives and an initial study plan established, the next logical step is to deliver the first lesson. This session addresses a foundational topic outlined in the plan, providing the learner with the essential knowledge needed to begin tackling their goals. The creation of teaching notes formalizes the instructional material for this and future sessions."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Managing stress in demanding schedules",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "To apply the concepts from the recent lesson, the learner is tasked with keeping a 'stress diary' for a week. They will log situations that trigger stress, their immediate reactions, and how the stress cycle unfolds, as discussed in the teaching notes.",
+    "required_artifacts": [
+      "learning_objectives",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the theoretical lesson on the 'Stress Cycle,' this practical exercise is essential for the learner to internalize the concept by applying it to their own experiences. Creating a practice record of personal stress triggers is a critical step towards developing targeted management strategies, moving from abstract knowledge to actionable self-awareness."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Managing stress in demanding schedules",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor and learner review the 'stress diary' together. They analyze the logged entries to identify recurring stress triggers, common emotional and physical reactions, and how well the learner applied the 'Stress Cycle' framework. The session focuses on extracting personalized insights from the practice record.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner has completed the practical task of keeping a stress diary, the logical next step is to review the results. This review connects the theoretical concepts from the lesson to the learner's real-world experiences, provides an opportunity for targeted feedback, and generates a summary of findings that will guide subsequent lessons on management techniques."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Managing stress in demanding schedules",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "Based on the insights from the stress diary review, this lesson introduces a specific time management technique: the Eisenhower Matrix. The tutor explains how to categorize tasks by urgency and importance to help the learner prioritize their workload and reduce feelings of being overwhelmed, a key trigger identified in the feedback summary.",
+    "required_artifacts": [
+      "feedback_summary",
+      "study_plan",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the review of the stress diary, which identified feeling overwhelmed as a major trigger, the next logical step is to teach a targeted coping strategy. This lesson on prioritization directly addresses the findings in the feedback summary and equips the learner with a practical tool, advancing the goals outlined in the study plan."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Managing stress in demanding schedules",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The learner applies the Eisenhower Matrix to their current weekly task list. They are asked to categorize their professional and personal to-dos into the four quadrants (Urgent/Important, Important/Not Urgent, etc.) to practice the prioritization technique taught in the previous lesson.",
+    "required_artifacts": [
+      "teaching_notes",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on the Eisenhower Matrix, this practice event is crucial for applying the theoretical knowledge to the learner's actual workload. This hands-on application helps solidify the new skill and creates a concrete artifact for the upcoming review session, ensuring the learner moves from understanding to execution."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Managing stress in demanding schedules",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor and learner review the learner's application of the Eisenhower Matrix to their weekly task list. They analyze the categorization of tasks, discuss any challenges in distinguishing urgency from importance, and assess the technique's initial impact on the learner's sense of control over their schedule.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on the Eisenhower Matrix, a review is the necessary next step to assess the learner's understanding and application of the technique. This allows the tutor to provide targeted feedback, correct misconceptions, and determine if the method is effectively addressing the previously identified stress triggers, which will inform the next lesson or practice round."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Managing stress in demanding schedules",
+    "subject": "LifeSkills",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback from the last review, the tutor refines the teaching notes on the Eisenhower Matrix. The revision adds clearer definitions for 'urgent' vs. 'important' and includes specific, contrasting examples to help the learner avoid the common pitfall of miscategorizing tasks.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review revealed the learner's difficulty in distinguishing between urgency and importance. Revising the teaching materials to directly address this specific point of confusion is a necessary step to improve the clarity of the concept before the learner attempts to practice it again."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Managing stress in demanding schedules",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The learner is asked to re-apply the Eisenhower Matrix to a new set of tasks for the upcoming week, using the revised teaching notes that provide clearer definitions and examples. This second attempt aims to solidify their understanding and correct the categorization issues identified in the previous review.",
+    "required_artifacts": [
+      "teaching_notes",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials to address specific points of confusion with the Eisenhower Matrix, it is crucial for the learner to practice the skill again. This targeted re-practice allows them to apply the improved guidance immediately, reinforcing the concept and providing a new basis for assessing their mastery."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Managing stress in demanding schedules",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor and learner review the learner's second attempt at applying the Eisenhower Matrix, using the revised teaching notes. They assess whether the learner's understanding of 'urgency' versus 'importance' has improved and if the technique is now being used effectively.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted re-practice session (e_09) using revised materials (e_08), a review is essential to confirm that the learner has mastered the Eisenhower Matrix. This step validates the effectiveness of the remediation and determines readiness to move on to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Managing stress in demanding schedules",
+    "subject": "LifeSkills",
+    "event_type": "plan_milestones",
+    "description": "After the learner successfully mastered the Eisenhower Matrix, the tutor and learner review the overall progress against the initial study plan. They decide to prioritize the next milestone on 'Setting Healthy Boundaries' and adjust the timeline for the upcoming lessons and practice sessions.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the successful completion of the learning and remediation cycle on prioritization, this is a natural point to review the overall study plan. Revisiting the milestones ensures the tutoring remains aligned with the learner's progress and current needs, and allows for adjustments before starting the next major topic."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Managing stress in demanding schedules",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "Following the updated study plan, the tutor introduces the concept of 'Setting Healthy Boundaries'. The lesson covers the importance of boundaries for preventing burnout, provides examples of work-related boundaries (e.g., defining work hours, saying no to extra tasks), and introduces communication strategies for enforcing them.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After updating the study plan to prioritize 'Setting Healthy Boundaries' in the previous step, the next logical action is to deliver a lesson on this new topic. This session directly addresses the next milestone and equips the learner with foundational knowledge before moving to practical application."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Managing stress in demanding schedules",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "To put the theory of setting boundaries into practice, the learner is tasked with identifying two recent work situations where a boundary could have been set. They will then write out a script for how they could have communicated that boundary respectfully, using the strategies from the recent lesson.",
+    "required_artifacts": [
+      "teaching_notes",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on 'Setting Healthy Boundaries', this practice event is the logical next step to help the learner apply the abstract concepts to their own specific circumstances. Creating scripts for real-life situations moves the learner from passive knowledge to active skill-building, generating a concrete artifact for review."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Managing stress in demanding schedules",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor and learner review the practice scripts for setting boundaries. They analyze the tone, clarity, and effectiveness of the proposed communication, and the tutor provides feedback on how to make the statements more confident and less apologetic.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner has practiced writing scripts for setting boundaries (e_13), the immediate next step is to review this work. This review session is essential for providing corrective feedback, refining the learner's communication strategy, and ensuring they can apply the concept effectively in real-world scenarios."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Managing stress in demanding schedules",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "Based on the feedback from the last review, the learner is asked to revise their boundary-setting scripts. The goal is to rephrase the communication to be more direct and confident, and less apologetic, applying the specific advice given by the tutor.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes",
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the review identified a need for more confident communication, this follow-up practice session is a direct and necessary step. Having the learner revise their previous work using the fresh feedback helps to immediately reinforce the desired skill and correct the identified weakness before moving on to new scenarios."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Managing stress in demanding schedules",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor and learner review the revised boundary-setting scripts. They assess whether the new phrasing is more confident and direct, confirming that the feedback from the previous review has been successfully applied.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the learner's revision of their practice work, this review is the necessary step to close the feedback loop. It validates whether the learner has corrected their approach and mastered the skill of setting boundaries confidently, determining readiness to move on."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Managing stress in demanding schedules",
+    "subject": "LifeSkills",
+    "event_type": "materials_revision",
+    "description": "Reflecting on the last practice/review cycle, the tutor updates the teaching notes on 'Setting Healthy Boundaries'. They add a new section on common communication pitfalls, such as using an overly apologetic tone, and include revised script examples that demonstrate more confident and direct language.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review cycle highlighted a common difficulty in communicating boundaries confidently. Revising the teaching notes to explicitly address this pitfall improves the material's clarity and effectiveness for future use, consolidating the lessons learned from the recent interaction."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Managing stress in demanding schedules",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The learner is tasked with a capstone exercise: creating a holistic 'Personal Stress Management Plan' for the next month. This plan must integrate the Eisenhower Matrix for task management and explicitly state three work-life boundaries they commit to maintaining, using the confident communication scripts they practiced.",
+    "required_artifacts": [
+      "learning_objectives",
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After mastering individual techniques like prioritization and boundary setting, this capstone practice requires the learner to synthesize these skills into a cohesive, forward-looking personal plan. This is a critical step to ensure they can independently apply the learned concepts to manage stress proactively, fulfilling the core learning objectives."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Managing stress in demanding schedules",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor and learner conduct a final review of the capstone 'Personal Stress Management Plan'. They assess the plan's feasibility, how well it integrates the Eisenhower Matrix and boundary-setting techniques, and its alignment with the learner's overall goals.",
+    "required_artifacts": [
+      "practice_record",
+      "learning_objectives",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed a capstone exercise integrating all learned skills, a final review is the essential next step. This session serves to validate the learner's ability to apply the concepts holistically and independently, confirming that the core learning objectives have been met before concluding the tutoring engagement."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Managing stress in demanding schedules",
+    "subject": "LifeSkills",
+    "event_type": "end",
+    "description": "In this final session, the tutor and learner acknowledge the successful completion of the tutoring program. They recap the key skills learned, from identifying stress triggers to implementing management strategies, and confirm the learner feels confident in applying their personal stress management plan independently.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has successfully demonstrated mastery of the core concepts by creating and refining a comprehensive personal stress management plan. With all learning objectives met and a clear path for independent practice established, the formal tutoring process is now complete."
+  }
+]

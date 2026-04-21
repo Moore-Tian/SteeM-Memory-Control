@@ -1,0 +1,367 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Cross-lingual alignment learning",
+    "subject": "CS-NLP",
+    "event_type": "proposal",
+    "description": "Define the initial research scope for the cross-lingual alignment project. The primary goal is to investigate unsupervised methods for aligning word embeddings between high-resource and low-resource languages. A high-level plan is formulated, outlining the major milestones.",
+    "required_artifacts": [
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "As the first step of the project, this event formalizes the initial, broad research idea (represented by the required `research_goals` artifact) into a concrete set of objectives and a structured `research_plan`. This provides the necessary foundation for subsequent methodological design."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Cross-lingual alignment learning",
+    "subject": "CS-NLP",
+    "event_type": "scheme_design",
+    "description": "Based on the research goals, an initial methodological scheme is designed. The scheme proposes using an adversarial training approach to align monolingual embedding spaces without parallel data. The initial design specifies the model architecture, the choice of languages (English-German for high-resource, English-Yoruba for low-resource), and the evaluation metrics (Bilingual Lexicon Induction).",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the establishment of the `research_plan` and `research_goals` in e_01, the next logical step is to design a concrete technical approach. This event translates the high-level proposal into a tangible `method_scheme`, which is a prerequisite for any implementation or experimentation."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Cross-lingual alignment learning",
+    "subject": "CS-NLP",
+    "event_type": "pilot_experiments",
+    "description": "A small-scale pilot experiment is conducted to validate the adversarial alignment method. The experiment is run on the high-resource English-German language pair using a smaller vocabulary and fewer training epochs. The goal is to verify that the training process converges and to obtain a preliminary performance estimate on the Bilingual Lexicon Induction task.",
+    "required_artifacts": [
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With the `method_scheme` defined in e_02, the next logical step is to test its viability before committing to large-scale runs. This pilot experiment serves as a crucial sanity check, allowing for early identification of implementation bugs or fundamental flaws in the proposed adversarial approach, thus mitigating the risk of wasting resources on flawed main experiments."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Cross-lingual alignment learning",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "The results from the pilot experiment are analyzed. The analysis confirms that the adversarial training model converges on the English-German pair, but the alignment accuracy is lower than state-of-the-art baselines. The training process also appears unstable and highly sensitive to hyperparameter settings, such as the learning rate.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "research_plan"
+    ],
+    "reason": "After obtaining preliminary data in the pilot experiments (e_03), a formal analysis is necessary to interpret the findings and guide the next steps. The analysis reveals that the current method has significant stability issues, which were not accounted for in the initial `research_plan`. Therefore, the plan is updated to include a phase for method refinement before scaling up to main experiments."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Cross-lingual alignment learning",
+    "subject": "CS-NLP",
+    "event_type": "scheme_design",
+    "description": "To address the instability and low accuracy found in the pilot, the method scheme is revised. The new design incorporates spectral normalization in the discriminator to stabilize adversarial training. Additionally, a self-learning refinement step is added, where the model generates a synthetic parallel dictionary from its own predictions to iteratively improve the alignment.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis in e_04, based on the pilot `experiment_results`, revealed that the initial method was unstable and performed poorly. As per the updated `research_plan`, it is necessary to revise the `method_scheme` to address these issues before proceeding. This event directly tackles the identified weaknesses to improve the chances of success in the next experimental phase."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Cross-lingual alignment learning",
+    "subject": "CS-NLP",
+    "event_type": "pilot_experiments",
+    "description": "A second round of pilot experiments is conducted using the revised method scheme. The experiment is again run on the English-German pair to directly compare the performance and stability against the initial pilot run. The goal is to verify that the addition of spectral normalization and the self-learning step has resolved the instability and improved alignment accuracy.",
+    "required_artifacts": [
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the methodology in e_05 to address the shortcomings identified in the first pilot run (e_04), it is essential to validate that these changes are effective. Running another pilot experiment with the updated `method_scheme` before scaling up to main experiments is a crucial risk-mitigation step, allowing for a direct comparison to see if the stability and accuracy have improved."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Cross-lingual alignment learning",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "The results of the second pilot experiment are analyzed. The analysis confirms that the revised method with spectral normalization and self-learning significantly improves training stability and achieves alignment accuracy on par with state-of-the-art methods for the English-German pair. This positive outcome validates the new approach.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the second round of pilot experiments (e_06), an analysis is required to evaluate the effectiveness of the revised `method_scheme`. The positive findings from this analysis provide the confidence needed to proceed with the main experiments and justify starting the documentation of the methodology and preliminary results in a `paper_paragraph`."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Cross-lingual alignment learning",
+    "subject": "CS-NLP",
+    "event_type": "main_experiments",
+    "description": "With the revised method validated, the main experiments are launched. This involves running the full-scale alignment process for both the high-resource English-German pair and the challenging low-resource English-Yoruba pair. The experiments are run with the complete vocabulary and for the full number of training epochs to gather the final results for analysis.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The analysis in e_07 confirmed the success of the revised `method_scheme` in pilot studies. According to the `research_plan` and `research_goals`, the project can now confidently proceed to the `main_experiments` phase. This step is crucial for gathering the comprehensive data needed to evaluate the method on both high-resource and low-resource language pairs, a core objective of the project."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Cross-lingual alignment learning",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "A comprehensive analysis of the main experiment results is performed. The results for the English-German pair confirm the strong performance seen in the pilot. However, for the low-resource English-Yoruba pair, the alignment quality is significantly lower, though still superior to baselines, highlighting the remaining challenges in the low-resource setting.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After completing the main experiments in e_08, the next critical step is to analyze the collected `experiment_results`. This analysis is essential for evaluating the method's performance against the original `research_goals`, particularly the comparison between high-resource and low-resource scenarios, and for summarizing the key findings for the paper."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Cross-lingual alignment learning",
+    "subject": "CS-NLP",
+    "event_type": "writing",
+    "description": "Draft the 'Main Results' and 'Discussion' sections of the research paper. This draft details the strong performance on the English-German pair and contrasts it with the weaker results for the low-resource English-Yoruba pair. The discussion speculates on the reasons for this performance gap, linking it to the challenges of unsupervised learning in data-scarce scenarios.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the comprehensive analysis of the main experiments in e_09, a natural and crucial next step is to document these findings. This `writing` event synthesizes the final `experiment_results` into the core sections of the paper, framing the discussion around the project's original `research_goals` and building upon the existing `paper_paragraph` drafts."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Cross-lingual alignment learning",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "To provide concrete evidence for the discussion on the low-resource performance gap, a qualitative error analysis is performed on the English-Yoruba results. The analysis involves examining the nearest neighbors of specific words and categorizing common misalignment errors. The findings suggest that the model struggles most with words that have no direct one-to-one translation and are culturally specific.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The previous writing event (e_10) drafted a discussion that speculated on the reasons for poor low-resource performance. A logical next step is to conduct a more detailed `analysis` of the main `experiment_results` to turn that speculation into evidence-backed claims. This deepens the project's contribution and provides concrete findings to strengthen the `paper_paragraph` for the discussion section."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Cross-lingual alignment learning",
+    "subject": "CS-NLP",
+    "event_type": "writing",
+    "description": "The findings from the qualitative error analysis are integrated into the 'Discussion' section of the paper. This revision replaces earlier speculation with concrete evidence and examples of misalignment for culturally specific words. Additionally, a first draft of the 'Methodology' section is written, formally describing the final model architecture with spectral normalization and the self-learning refinement step.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "method_scheme",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After conducting the detailed qualitative analysis in e_11, the immediate next step is to incorporate these new, evidence-based insights into the existing `paper_paragraph` drafts. Simultaneously, with the core experiments and analysis complete, it is a good time to formally document the final `method_scheme` in the paper, ensuring all key components of the research are being written up."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Cross-lingual alignment learning",
+    "subject": "CS-NLP",
+    "event_type": "proposal",
+    "description": "Based on the qualitative analysis of low-resource performance, the research goals are refined to address the identified weaknesses. A new sub-goal is formulated: to investigate if alignment quality for low-resource languages can be significantly improved by injecting a small, targeted lexicon of culturally-specific or hard-to-align words. The research plan is updated to include a new phase for these targeted experiments.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "The detailed analysis in e_11 and writing in e_12 highlighted a specific, well-defined problem with the method in the low-resource setting. Instead of just concluding the project, this event represents a realistic pivot where researchers decide to tackle the newly discovered problem. Refining the `research_goals` and `research_plan` formalizes this new direction and sets the stage for a follow-up experimental cycle to strengthen the paper's overall contribution."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Cross-lingual alignment learning",
+    "subject": "CS-NLP",
+    "event_type": "scheme_design",
+    "description": "A new experimental scheme is designed to test the hypothesis from the refined research goals. The plan is to modify the existing alignment method to operate in a semi-supervised mode. The small, targeted lexicon of culturally-specific words will be used as anchor points to constrain the alignment mapping during the adversarial training phase for the English-Yoruba pair.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "After the project's goals were updated in e_13 to include investigating the impact of a small lexicon, the next logical step is to design the technical methodology for this new experiment. This event modifies the existing `method_scheme` to incorporate this semi-supervised approach, directly translating the new `research_plan` into an actionable experimental design."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Cross-lingual alignment learning",
+    "subject": "CS-NLP",
+    "event_type": "pilot_experiments",
+    "description": "A focused pilot experiment is conducted on the English-Yoruba pair using the new semi-supervised scheme. This small-scale run tests whether injecting a targeted lexicon of culturally-specific words as anchor points can effectively improve alignment quality. The goal is to quickly validate the hypothesis from the refined research goals before running a full set of experiments.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Having designed a new semi-supervised `method_scheme` in e_14 to address the new `research_goals`, the most logical and efficient next step is to run a pilot experiment. This serves as a critical sanity check to see if the proposed solution has the intended effect before committing more resources to a full-scale main experiment."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Cross-lingual alignment learning",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "The results from the semi-supervised pilot experiment are analyzed. The analysis shows a marked improvement in alignment accuracy for the English-Yoruba pair, particularly for the targeted culturally-specific words. This positive result validates the hypothesis that a small, targeted lexicon can effectively guide the alignment process in low-resource settings.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After conducting the pilot experiment (e_15) on the new semi-supervised method, a formal analysis of the `experiment_results` is the necessary next step. This event evaluates whether the modified `method_scheme` meets the new `research_goals`, and the positive findings provide crucial evidence to be documented in a `paper_paragraph` and justify proceeding with a final main experiment."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Cross-lingual alignment learning",
+    "subject": "CS-NLP",
+    "event_type": "main_experiments",
+    "description": "Following the successful pilot, the full-scale main experiment is run for the semi-supervised method on the English-Yoruba language pair. This experiment uses the complete vocabulary and the targeted lexicon as anchors for the full duration of training. The goal is to obtain the final, robust results that quantify the improvement gained from the semi-supervised approach.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The semi-supervised pilot experiment (e_15) and its analysis (e_16) validated the hypothesis that a targeted lexicon improves low-resource alignment. To provide conclusive evidence for the paper, it is now necessary to run the full-scale `main_experiments` as defined by the updated `research_plan` and `method_scheme`. This step will generate the final results needed to complete the research narrative."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "Cross-lingual alignment learning",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "A final comprehensive analysis is performed on the results from the semi-supervised main experiment. The results are compared directly against the unsupervised baseline for the English-Yoruba pair, showing a significant boost in alignment accuracy. The analysis confirms that the targeted lexicon successfully anchors the alignment and resolves many of the previously identified errors with culturally-specific words.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the final main experiment (e_17), this analysis step is crucial to formally evaluate the results against the project's refined `research_goals`. By comparing the new semi-supervised `experiment_results` with the previous unsupervised ones, this analysis provides the definitive conclusion for the research pivot and generates the key findings to be added to the `paper_paragraph`."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "research",
+    "topic": "Cross-lingual alignment learning",
+    "subject": "CS-NLP",
+    "event_type": "writing",
+    "description": "The paper draft is substantially revised to incorporate the results of the semi-supervised experiments. The 'Methodology' section is updated to detail the final semi-supervised scheme, the 'Results' section is expanded with a direct comparison between the unsupervised and semi-supervised outcomes for English-Yoruba, and the 'Discussion' is rewritten to frame the semi-supervised approach as a solution to the identified low-resource challenges.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the final analysis (e_18) complete, the next logical step is to integrate these conclusive findings into the paper. This writing phase consolidates all the research cycles, from the initial unsupervised approach to the final semi-supervised solution, into a coherent narrative, moving the project significantly closer to completion and submission."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "research",
+    "topic": "Cross-lingual alignment learning",
+    "subject": "CS-NLP",
+    "event_type": "writing",
+    "description": "The final sections of the paper, including the 'Introduction', 'Abstract', and 'Conclusion', are drafted. The entire manuscript is reviewed and polished for clarity, flow, and consistency, preparing it for submission to a conference.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With all experimental work and analysis complete and the core sections drafted (e_19), the logical final step before concluding the project is to complete the manuscript. This involves writing the framing sections (Introduction, Conclusion) that summarize the project's journey and impact, and polishing the entire document to create a submission-ready paper."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "research",
+    "topic": "Cross-lingual alignment learning",
+    "subject": "CS-NLP",
+    "event_type": "end",
+    "description": "The research project is concluded. The final manuscript, detailing the journey from an initial unsupervised method to a refined semi-supervised solution for low-resource cross-lingual alignment, is complete and ready for submission to a top-tier NLP conference.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has successfully navigated multiple research cycles, addressing initial method instability and pivoting to solve a key weakness in low-resource performance. With the final experiments and analysis complete and the entire paper drafted and polished (e_20), the research has reached a natural and successful conclusion, making this the appropriate time to end the timeline."
+  }
+]

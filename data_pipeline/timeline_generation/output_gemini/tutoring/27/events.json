@@ -1,0 +1,432 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Inequality techniques and bounding arguments",
+    "subject": "Math",
+    "event_type": "objective_clarification",
+    "description": "Conducted an initial diagnostic session to understand the learner's background, goals for learning inequality techniques, and time constraints. The learner is preparing for a competitive math exam and needs to master common bounding arguments.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "As this is the first session, the immediate priority is to establish the learner's goals, background, and constraints. This diagnostic step is essential for creating a relevant and effective study plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Inequality techniques and bounding arguments",
+    "subject": "Math",
+    "event_type": "plan_milestones",
+    "description": "Based on the clarified objectives from the initial session, a high-level study plan was drafted. The plan outlines key milestones, starting with foundational inequalities like AM-GM and Cauchy-Schwarz before moving to more advanced techniques.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learning objectives established in the previous event, the next logical step is to create a structured study plan. This plan provides a roadmap for the tutoring sessions and sets clear expectations for the learner."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Inequality techniques and bounding arguments",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "Delivered the first lesson as outlined in the study plan, focusing on the Arithmetic Mean-Geometric Mean (AM-GM) inequality. The session covered the formal statement, a standard proof, the conditions for equality, and several introductory examples.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a study plan in place, the next logical step is to begin instruction. This lesson on AM-GM directly follows the plan's first milestone and creates the initial set of teaching notes for this foundational topic."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Inequality techniques and bounding arguments",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "Assigned a set of practice problems focused on applying the AM-GM inequality. The problems ranged from straightforward applications to more complex scenarios requiring algebraic manipulation before AM-GM could be used.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on AM-GM (e_03), it is crucial for the learner to apply the concept to solidify their understanding. This targeted practice session is designed to test the learner's ability to recognize and use the inequality, creating a record of their attempts for future review."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Inequality techniques and bounding arguments",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "Reviewed the learner's submitted solutions for the AM-GM practice problems from the previous session. The review focused on identifying patterns in errors, such as incorrect application of the inequality conditions or difficulties with pre-problem algebraic manipulation.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session (e_04), a review of the learner's work is the natural next step to assess comprehension and identify specific difficulties. Analyzing the `practice_record` is essential for providing targeted feedback and deciding whether to proceed with new material or reinforce the current topic."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Inequality techniques and bounding arguments",
+    "subject": "Math",
+    "event_type": "materials_revision",
+    "description": "Based on the review of the learner's practice, the teaching notes on AM-GM were revised. The updated notes now include a new section on common algebraic manipulations required before applying the inequality and add more explicit examples about checking the conditions for equality.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_05) identified specific, recurring errors in the learner's work. Revising the teaching notes to directly address these common pitfalls is a logical next step to create better reference material for the learner before they attempt more practice."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Inequality techniques and bounding arguments",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "Assigned a second, follow-up set of AM-GM problems to reinforce the concepts and check if the difficulties identified in the previous review have been addressed. The problems specifically target algebraic manipulation and checking equality conditions, based on the recent feedback and revised notes.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After reviewing the learner's initial struggles (e_05) and revising the teaching materials to address them (e_06), this second practice session is essential to verify understanding. It provides an opportunity for the learner to apply the recent feedback before the tutor decides to move on to the next topic."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Inequality techniques and bounding arguments",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "Reviewed the learner's solutions for the second, targeted set of AM-GM problems. The learner demonstrated significant improvement, successfully applying the necessary algebraic manipulations and correctly checking equality conditions, indicating the previous feedback was effective.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the targeted follow-up practice in e_07, this review is essential to confirm that the learner has overcome their initial difficulties with AM-GM. Assessing this improvement is a critical checkpoint before advancing to the next topic outlined in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Inequality techniques and bounding arguments",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "With mastery of AM-GM confirmed, the next lesson introduces the Cauchy-Schwarz inequality, as per the study plan. The session covered its vector and algebraic forms, conditions for equality, and several illustrative examples to show its application.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_08) confirmed the learner's proficiency with AM-GM. Following the study plan (e_02), the next logical step is to introduce the next core topic, the Cauchy-Schwarz inequality, and create new teaching materials for it."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Inequality techniques and bounding arguments",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "Assigned a set of practice problems focused on applying the Cauchy-Schwarz inequality. The problems cover both the algebraic and vector forms of the inequality, starting with direct applications and moving to problems requiring more setup.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the Cauchy-Schwarz inequality in the previous lesson (e_09), it is essential for the learner to apply the concept to practice problems. This step solidifies their initial understanding and creates a record of their attempts for the upcoming review session."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Inequality techniques and bounding arguments",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "Reviewed the learner's submitted solutions for the Cauchy-Schwarz practice problems. The review checked for correct application of both algebraic and vector forms, and whether the learner could identify the conditions for equality.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on Cauchy-Schwarz (e_10), a review of the learner's work is the necessary next step to evaluate their comprehension and provide targeted feedback. This assessment is critical before deciding whether to reinforce this topic or move on to the next one."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Inequality techniques and bounding arguments",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "Assigned a mixed set of practice problems requiring the learner to choose between applying AM-GM and Cauchy-Schwarz. This session is designed to build strategic thinking and the ability to recognize problem patterns, a common difficulty when multiple techniques are available.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "The previous review (e_11) confirmed the learner can apply Cauchy-Schwarz in isolation. The next step in developing mastery is learning to decide which technique is appropriate for a given problem. This mixed practice session directly targets that strategic decision-making skill."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Inequality techniques and bounding arguments",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "Reviewed the learner's solutions for the mixed problem set involving both AM-GM and Cauchy-Schwarz. The analysis focused on the learner's ability to correctly identify which inequality was appropriate for each problem and the reasoning behind their strategic choices.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After assigning a practice session (e_12) that required strategic choices between different techniques, a review is the necessary next step. This review will assess the learner's decision-making process and determine if they can effectively differentiate between problem types before moving on."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Inequality techniques and bounding arguments",
+    "subject": "Math",
+    "event_type": "materials_revision",
+    "description": "Based on the review of the mixed problem set, the teaching notes were revised to include a new section on 'Strategic Selection'. This section provides heuristics and side-by-side comparisons to help the learner decide when to apply AM-GM versus Cauchy-Schwarz based on problem structure.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_13) revealed that the learner's primary difficulty is no longer applying a single inequality, but strategically choosing between them. Revising the teaching notes to explicitly address this higher-order skill is a targeted intervention to help the learner build a mental framework for problem-solving."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Inequality techniques and bounding arguments",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "Assigned a new set of mixed problems that require choosing between AM-GM and Cauchy-Schwarz. This practice serves as a follow-up to test the effectiveness of the recently revised 'Strategic Selection' guide in the teaching notes.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After identifying the learner's difficulty with strategic choice (e_13) and updating the teaching notes to provide explicit guidance (e_14), this follow-up practice is necessary to assess whether the learner can now apply this new strategic knowledge effectively."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Inequality techniques and bounding arguments",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "Reviewed the learner's solutions for the second mixed problem set. The analysis focused on how well the learner applied the new 'Strategic Selection' heuristics from the revised teaching notes to choose between AM-GM and Cauchy-Schwarz.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice in e_15, this review is essential to validate whether the revised materials and focused practice have successfully addressed the learner's difficulty with strategic decision-making. The outcome of this review will determine if the learner is ready for the next topic."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Inequality techniques and bounding arguments",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "Assuming the previous review was positive, the next lesson introduces Jensen's inequality as the next advanced topic in the study plan. The session covers the definition of convex functions, the formal statement of the inequality, and its geometric interpretation.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review cycle (e_13 to e_16) successfully addressed the learner's difficulty with strategic selection between AM-GM and Cauchy-Schwarz. With this foundational skill solidified, it is now appropriate to proceed to the next topic outlined in the study plan, which is a more advanced technique like Jensen's inequality."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Inequality techniques and bounding arguments",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "Assigned a set of practice problems for Jensen's inequality. The problems require identifying convex functions and applying the inequality in straightforward contexts to build foundational skill.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on Jensen's inequality (e_17), it is crucial for the learner to practice applying this new and more abstract concept. This practice session is designed to solidify their initial understanding and create a record of their work for the subsequent review."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Inequality techniques and bounding arguments",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "Reviewed the learner's solutions for the initial Jensen's inequality problem set. The review focused on the learner's ability to correctly identify convex functions and apply the basic form of the inequality.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the first practice session on Jensen's inequality (e_18), a review is necessary to assess the learner's initial grasp of the concept. This step is critical for providing immediate feedback on a more abstract topic and guiding the next steps, such as further practice or clarification."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Inequality techniques and bounding arguments",
+    "subject": "Math",
+    "event_type": "materials_revision",
+    "description": "Based on the review of the initial Jensen's inequality practice, the teaching notes were updated. The revision adds a more detailed section on proving function convexity, including examples using the second derivative test and graphical interpretations.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_19) identified learner difficulties with the concept of convexity, which is foundational for using Jensen's inequality. Revising the teaching notes to provide clearer explanations and more examples is a direct response to this feedback, aiming to solidify understanding before further practice."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "Inequality techniques and bounding arguments",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "Assigned a follow-up set of practice problems on Jensen's inequality. The problems are designed to reinforce the concept of convexity, requiring the learner to use the methods described in the recently revised teaching notes to prove a function is convex before applying the inequality.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching notes to better explain convexity (e_20), this targeted practice session is necessary to verify if the learner has overcome their initial difficulty. It allows the learner to apply the new material before the tutor assesses their understanding in a subsequent review."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "tutoring",
+    "topic": "Inequality techniques and bounding arguments",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "Reviewed the learner's solutions for the follow-up practice set on Jensen's inequality. The analysis confirmed that the learner can now successfully prove function convexity using the methods from the revised notes and apply the inequality correctly.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the targeted practice in e_21, this review is the necessary next step to confirm that the learner has overcome their identified difficulties with convexity. This check is crucial to validate the effectiveness of the recent materials revision and to ensure mastery before moving on."
+  },
+  {
+    "event_id": "e_23",
+    "time_index": 23,
+    "domain": "tutoring",
+    "topic": "Inequality techniques and bounding arguments",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "Assigned a cumulative practice set that includes problems solvable by AM-GM, Cauchy-Schwarz, or Jensen's inequality. The main goal is to test the learner's ability to synthesize their knowledge and strategically choose the most effective technique for a given problem.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "The learner has now demonstrated proficiency with three key inequalities after targeted practice and review cycles. This cumulative practice session is the next logical step to assess their ability to integrate these skills and make strategic choices in a mixed-problem environment, which is a critical skill for competitive exams."
+  },
+  {
+    "event_id": "e_24",
+    "time_index": 24,
+    "domain": "tutoring",
+    "topic": "Inequality techniques and bounding arguments",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "Reviewed the learner's solutions for the cumulative practice set covering AM-GM, Cauchy-Schwarz, and Jensen's inequality. The review focused on assessing the learner's strategic choice of technique and their ability to synthesize knowledge from all previous lessons.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a comprehensive practice session (e_23) that tested the integration of all learned techniques, a review is the necessary next step. This review will provide a final assessment of the learner's ability to strategically select and apply the correct inequality, which is a key goal for exam preparation."
+  },
+  {
+    "event_id": "e_25",
+    "time_index": 25,
+    "domain": "tutoring",
+    "topic": "Inequality techniques and bounding arguments",
+    "subject": "Math",
+    "event_type": "materials_revision",
+    "description": "Based on the final cumulative review, the 'Strategic Selection' section of the teaching notes was expanded. It now includes heuristics for choosing between all three learned techniques (AM-GM, Cauchy-Schwarz, and Jensen's), providing a comprehensive guide for problem-solving strategy.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The final cumulative review (e_24) provided insights into how the learner synthesizes knowledge across all topics. Consolidating these insights into the teaching notes creates a final, comprehensive study guide for future exam preparation, effectively concluding the main instructional part of the tutoring."
+  }
+]

@@ -1,0 +1,415 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Logic, statements, and proof-style explanations",
+    "subject": "Math",
+    "event_type": "objective_clarification",
+    "description": "Initial meeting with the learner to discuss their goals for learning logic. The learner wants to improve their ability to write clear, proof-style explanations for a university-level discrete mathematics course. We established their current comfort level with basic logical operators and their desire to focus on constructing valid arguments.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first session, so the primary goal is to understand the learner's needs, background, and objectives. This clarification is essential before creating a study plan or starting any lessons."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Logic, statements, and proof-style explanations",
+    "subject": "Math",
+    "event_type": "plan_milestones",
+    "description": "Based on the established learning objectives, we co-created a staged study plan. The plan prioritizes foundational topics like propositions and logical connectives, then progresses to rules of inference and basic proof structures (e.g., direct proof, proof by contraposition).",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learner's goals clearly defined in the `learning_objectives` artifact, the next logical step is to structure the tutoring process. Creating a `study_plan` provides a roadmap, sets expectations, and ensures that upcoming lessons are sequenced effectively to build on one another."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Logic, statements, and proof-style explanations",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "Conducted the first lesson as outlined in the study plan. We covered the foundational concepts of propositions, truth values, and the main logical connectives (negation, conjunction, disjunction). The session included creating truth tables for simple and compound statements.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a study plan in place, the next logical step is to begin instruction. This first lesson addresses the foundational topics identified in the plan and produces a set of `teaching_notes` that can be used for student review and future sessions."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Logic, statements, and proof-style explanations",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "Assigned a set of practice exercises based on the first lesson. The tasks included translating English sentences into propositional logic, determining the truth value of compound statements, and constructing truth tables for expressions with multiple connectives.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing foundational concepts in the previous lesson, it is crucial for the learner to apply them. This practice session provides the opportunity to solidify understanding and identify any initial difficulties. The resulting `practice_record` will serve as the basis for the upcoming review and feedback session."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Logic, statements, and proof-style explanations",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "Reviewed the learner's submissions from the practice session. The review focused on identifying common errors, such as confusion between the logical 'or' (inclusive) and the colloquial 'or' (exclusive), and minor mistakes in constructing truth tables for complex statements.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following a practice session, reviewing the learner's work is the critical next step to assess comprehension and provide targeted feedback. By analyzing the `practice_record` against the concepts from the `teaching_notes`, we can identify specific misconceptions and generate a `feedback_summary` to guide the learner's corrections and future study."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Logic, statements, and proof-style explanations",
+    "subject": "Math",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback from the recent review, the teaching notes on logical connectives were updated. A specific section was added to clarify the difference between inclusive 'or' (disjunction) and exclusive 'or', including side-by-side examples to prevent future confusion.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review session identified a key misconception regarding the 'or' connective. Revising the `teaching_notes` to explicitly address this common pitfall, using the insights from the `feedback_summary`, makes the material clearer for this learner and improves it for future reuse."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Logic, statements, and proof-style explanations",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "Continuing with the study plan, this lesson introduced the conditional (if-then) and biconditional (if and only if) statements. We discussed their truth tables, how to translate them from English, and the related concepts of converse, inverse, and contrapositive.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After reviewing and reinforcing the basic logical connectives, the next step according to the `study_plan` is to cover more complex connectives. This lesson on conditionals and biconditionals builds directly on the previous material and is essential groundwork for the upcoming topics of inference rules and proof structures."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Logic, statements, and proof-style explanations",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "Assigned practice problems focusing on the concepts from the previous lesson. The exercises required the learner to translate English sentences involving conditional and biconditional logic, and to write the converse, inverse, and contrapositive for given conditional statements.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on conditional and biconditional statements, this practice session is essential for the learner to apply and internalize these more complex logical structures. The resulting `practice_record` will be crucial for assessing their understanding before moving on to formal proof techniques."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Logic, statements, and proof-style explanations",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "Reviewed the learner's practice work on conditional statements. The learner correctly translated most sentences but showed some confusion between the converse and the contrapositive, occasionally mixing them up. Feedback was prepared to clarify this distinction with visual aids.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on conditionals (e_08), a review is the necessary next step to assess the learner's grasp of these crucial concepts. Analyzing the `practice_record` allows for the identification of specific issues, like the confusion between converse and contrapositive, which can then be addressed in the generated `feedback_summary` before moving on to formal proofs."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Logic, statements, and proof-style explanations",
+    "subject": "Math",
+    "event_type": "materials_revision",
+    "description": "Updated the teaching notes on conditional statements based on the recent review. Added a new table and visual diagram to explicitly contrast the converse, inverse, and contrapositive, highlighting how the contrapositive is logically equivalent to the original statement.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_09) revealed a specific confusion between the converse and contrapositive. Revising the `teaching_notes` using the insights from the `feedback_summary` directly addresses this issue, creating a clearer resource for the learner before they proceed to topics like proof by contraposition."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Logic, statements, and proof-style explanations",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "Proceeding with the study plan, this lesson introduces the fundamental rules of inference, such as Modus Ponens and Modus Tollens. We also cover the basic structure of a direct proof, using the rules of inference to build a logical chain from premises to a conclusion.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the foundational concepts of logical connectives solidified and recent confusions addressed, it is time to progress to the next milestone in the study plan. This lesson on inference rules and direct proof is the first step into constructing formal arguments, directly addressing the learner's primary goal."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Logic, statements, and proof-style explanations",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "Assigned a set of exercises for the learner to construct their first direct proofs. The problems provided a set of premises and a conclusion, and the learner was tasked with writing a step-by-step argument, justifying each step with a specific rule of inference.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the structure of direct proofs and rules of inference in the previous lesson, it is essential for the learner to apply these concepts immediately. This practice session allows them to actively construct arguments, which is a core learning objective, and the resulting `practice_record` will be vital for assessing their initial grasp of proof-writing."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Logic, statements, and proof-style explanations",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "Reviewed the learner's first attempts at constructing direct proofs. While the learner correctly identified the overall flow, they frequently omitted justifications for steps or mislabeled the rule of inference being used. The feedback prepared highlights the importance of citing a reason for every single logical step.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the learner's first practice with a complex skill like writing proofs (e_12), a detailed review is the most critical next step. Analyzing the `practice_record` allows the tutor to identify foundational mistakes in proof construction and generate a targeted `feedback_summary` before these habits become ingrained."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Logic, statements, and proof-style explanations",
+    "subject": "Math",
+    "event_type": "materials_revision",
+    "description": "In response to the review of the learner's first proofs, the teaching notes were updated. A new section was added with a template for writing two-column proofs, showing a 'Statement' column and a 'Justification' column, to reinforce the habit of justifying every step.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_13) showed that the learner struggled with the formal structure of proofs, specifically omitting justifications. Creating a clear template in the `teaching_notes` directly addresses this procedural issue identified in the `feedback_summary` and provides a concrete tool for the learner to use in subsequent practice."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Logic, statements, and proof-style explanations",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "A follow-up practice session was assigned, asking the learner to re-attempt a few direct proof problems using the new two-column proof template from the revised notes. The goal was to specifically focus on the process of writing a justification for every logical step.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the previous review (e_13) identified issues with justifying steps and the teaching notes were revised to include a template (e_14), immediate practice is needed. This allows the learner to apply the new tool and feedback directly, helping to correct the identified weakness before it becomes a fixed habit."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Logic, statements, and proof-style explanations",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "Reviewed the learner's follow-up practice on direct proofs. The learner successfully used the new two-column template, providing a justification for each step as required. The feedback confirmed this significant improvement and noted that the next step is to tackle more complex proofs.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted practice session (e_15) using a revised template, this review is essential to confirm that the learner has overcome the previous difficulty with justifying steps. Assessing the `practice_record` shows the intervention was successful, and the resulting `feedback_summary` provides positive reinforcement before moving to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Logic, statements, and proof-style explanations",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "Building on the learner's confirmed progress, this lesson introduces the next proof technique from the study plan: proof by contraposition. The session explains the logical foundation (an implication is equivalent to its contrapositive) and walks through examples of how to structure this type of proof.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_16) confirmed the learner's mastery of the direct proof structure. Following the `study_plan`, the next logical step is to introduce a new proof method. This lesson on proof by contraposition directly builds upon the learner's solid understanding of conditional statements and is the next major topic."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Logic, statements, and proof-style explanations",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "Assigned exercises requiring the learner to construct proofs by contraposition. The problems involved proving conditional statements where a direct approach is difficult but proving the contrapositive is more straightforward.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on proof by contraposition (e_17), this practice session is essential for the learner to actively apply the new technique. It allows them to internalize the process of negating and rearranging the statement before proceeding with a direct proof, and the resulting `practice_record` is crucial for the next review."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Logic, statements, and proof-style explanations",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "Reviewed the learner's attempts at proof by contraposition. The learner successfully identified when to use this technique but made some errors when negating the original statements to form the contrapositive. Feedback was prepared to reinforce the two-step process: first correctly state the contrapositive, then prove it directly.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner practiced a new proof technique in e_18, a review is the essential next step to assess comprehension and identify new types of errors. Analyzing the `practice_record` is necessary to provide targeted feedback in a `feedback_summary` before the learner moves on to another proof method."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Logic, statements, and proof-style explanations",
+    "subject": "Math",
+    "event_type": "materials_revision",
+    "description": "Based on the review of proofs by contraposition, the teaching notes were updated. A new section on 'Negating Compound Statements' was added, including examples using De Morgan's laws, to help the learner correctly formulate the contrapositive before starting the proof.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_19) identified a specific weakness in negating statements when forming a contrapositive. Revising the `teaching_notes` based on the `feedback_summary` directly addresses this gap, providing a clearer resource to help the learner master this crucial prerequisite step for the proof technique."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "Logic, statements, and proof-style explanations",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "A focused practice session was assigned to consolidate the concept of proof by contraposition. The learner was asked to work on a few problems where forming the contrapositive requires using De Morgan's laws, directly applying the material from the recently revised teaching notes.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching notes to address a specific weakness in negating statements (e_20), it is crucial to have the learner immediately practice that skill. This targeted practice helps solidify the correction and ensures the learner has mastered the prerequisite step for proof by contraposition before moving on to new material."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "tutoring",
+    "topic": "Logic, statements, and proof-style explanations",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "Reviewed the learner's work from the focused practice session on proof by contraposition. The learner now correctly applies De Morgan's laws when forming the contrapositive and successfully completes the proofs. The feedback confirms this improvement and signals readiness for the next topic.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted practice session (e_21) designed to address a specific weakness, this review is essential to verify that the learner has mastered the concept. Analyzing the `practice_record` confirms that the material revision and extra practice were successful, allowing the tutoring to proceed to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_23",
+    "time_index": 23,
+    "domain": "tutoring",
+    "topic": "Logic, statements, and proof-style explanations",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "With the learner showing proficiency in direct proofs and proofs by contraposition, this lesson introduces the next major technique from the study plan: proof by contradiction. The session covers the underlying logic of assuming the premise and the negation of the conclusion to derive a contradiction (p ∧ ¬q → F).",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_22) confirmed the learner's mastery of proof by contraposition. According to the `study_plan`, the natural progression is to introduce the next fundamental proof technique. This lesson on proof by contradiction builds on the learner's skills in negation and logical deduction."
+  },
+  {
+    "event_id": "e_24",
+    "time_index": 24,
+    "domain": "tutoring",
+    "topic": "Logic, statements, and proof-style explanations",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "Assigned practice problems that are well-suited for proof by contradiction. The exercises require the learner to assume the negation of the conclusion and show that this leads to a logical contradiction, thereby proving the original statement.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the theory of proof by contradiction in the previous lesson (e_23), this practice session is crucial for the learner to actively apply the technique. Creating a `practice_record` of their attempts is essential for assessing their understanding and identifying any difficulties in the next review."
+  },
+  {
+    "event_id": "e_25",
+    "time_index": 25,
+    "domain": "tutoring",
+    "topic": "Logic, statements, and proof-style explanations",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "Reviewed the learner's first attempts at proof by contradiction. The learner correctly set up the initial assumption (p ∧ ¬q) but struggled to identify a clear contradiction. In some cases, they stopped the proof prematurely without reaching a formal contradiction of the form 'R ∧ ¬R'.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner's first practice with proof by contradiction (e_24), a review is necessary to assess their understanding of this abstract technique. Analyzing the `practice_record` is crucial for pinpointing subtle errors, such as failing to derive a formal contradiction, and generating a `feedback_summary` to guide them."
+  }
+]

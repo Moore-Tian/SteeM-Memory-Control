@@ -1,0 +1,308 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Medical imaging segmentation",
+    "subject": "CS-CV",
+    "event_type": "proposal",
+    "description": "Formulated the initial research proposal to develop a novel deep learning model for 3D medical image segmentation. The primary goal is to improve segmentation accuracy for small, irregularly shaped tumors in CT scans. A high-level plan was drafted, outlining the major research phases.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the first event, initiating the research project. It is necessary to first define the research goals and create a high-level plan before proceeding to method design or experiments."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Medical imaging segmentation",
+    "subject": "CS-CV",
+    "event_type": "scheme_design",
+    "description": "Based on the research goals, a detailed methodological scheme was designed. This includes selecting a U-Net-based architecture with attention mechanisms, defining the data preprocessing pipeline for the CT scans, and outlining the loss function and training parameters. The LIDC-IDRI dataset was chosen for initial experiments.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "With the initial research goals and plan established in the proposal phase (e_01), the logical next step is to translate these high-level ideas into a concrete technical approach. This event designs the specific deep learning model and experimental setup, creating the `method_scheme` needed for future experiments."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Medical imaging segmentation",
+    "subject": "CS-CV",
+    "event_type": "pilot_experiments",
+    "description": "Conducted a pilot study to validate the designed method. The U-Net with attention was implemented and trained on a small subset (10%) of the LIDC-IDRI dataset. The primary goal was to ensure the model implementation is correct, the training pipeline works, and the model shows some learning capability.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing the initial method in e_02, a pilot experiment is the logical next step to test its feasibility and identify any major implementation issues before committing to full-scale experiments. This step uses the `method_scheme` to generate preliminary `experiment_results` for evaluation."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Medical imaging segmentation",
+    "subject": "CS-CV",
+    "event_type": "analysis",
+    "description": "Analyzed the results from the pilot study. The model demonstrated successful learning and produced reasonable segmentations on larger tumors, but struggled significantly with the smallest lesions, resulting in low Dice scores for that subset. This suggests the current attention mechanism may not be effective enough for the primary research goal.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the pilot experiments in e_03, a formal analysis is necessary to interpret the preliminary `experiment_results`. This step evaluates the performance of the initial method against the `research_goals` and identifies specific strengths and weaknesses, which will guide the decision on whether to proceed to main experiments or revise the methodology."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Medical imaging segmentation",
+    "subject": "CS-CV",
+    "event_type": "scheme_design",
+    "description": "Based on the analysis of pilot results, the methodological scheme is revised. The original attention mechanism is replaced with a more sophisticated multi-scale feature fusion module designed to enhance the model's sensitivity to small objects. The loss function is also adjusted to include a component that penalizes false negatives for small tumor regions more heavily.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis in e_04 revealed that the initial method failed on the project's primary objective: segmenting small tumors. Instead of proceeding with a flawed approach, the logical next step is to return to the design phase to address the identified weakness. This event uses the insights from the pilot `experiment_results` to create a revised `method_scheme` that is better aligned with the `research_goals`."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Medical imaging segmentation",
+    "subject": "CS-CV",
+    "event_type": "pilot_experiments",
+    "description": "A second round of pilot experiments was conducted using the revised method. The model with the multi-scale feature fusion module and adjusted loss function was trained on the same small subset of the LIDC-IDRI dataset. The goal was to directly assess whether the changes improved the segmentation of small tumors compared to the first pilot study.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the methodology in e_05 to address the shortcomings identified in the initial pilot analysis (e_04), it is essential to validate the new approach. Running another pilot experiment provides a quick and efficient way to verify if the revised `method_scheme` successfully improves performance on the key challenge before committing to resource-intensive main experiments."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Medical imaging segmentation",
+    "subject": "CS-CV",
+    "event_type": "analysis",
+    "description": "Analyzed the results from the second pilot study. The revised model with multi-scale feature fusion shows a significant improvement in segmenting small tumors, with the Dice score for this subset increasing by over 15%. The results are now promising enough to proceed with the main experiments.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After conducting a second pilot experiment (e_06) with a revised method, a thorough analysis is required to quantify the improvement and validate the new approach. This step compares the new `experiment_results` against the original `research_goals` to confirm the method's viability before committing to large-scale experiments."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Medical imaging segmentation",
+    "subject": "CS-CV",
+    "event_type": "main_experiments",
+    "description": "With the revised method validated, the main experiments are now conducted. The model is trained on the full LIDC-IDRI training set and evaluated on the held-out test set to collect final performance metrics. This includes comparisons against established baseline models to demonstrate the proposed method's superiority.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The successful analysis in e_07 confirmed the revised method's effectiveness, making it the right time to move from pilot studies to full-scale evaluation. This event executes the main part of the experimental plan (from the `research_plan`), using the validated `method_scheme` to generate the core `experiment_results` needed to address the `research_goals`."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Medical imaging segmentation",
+    "subject": "CS-CV",
+    "event_type": "writing",
+    "description": "With the main experiments complete and the methodology finalized, drafting of the paper begins. The 'Methods' section is written first, describing the final model architecture with its multi-scale feature fusion module, the dataset, and the experimental setup.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After completing the main experiments (e_08), the methodology is stable, making it an ideal time to start writing the paper. Documenting the final `method_scheme` is a logical first writing task that can be done while the detailed analysis of results begins, ensuring an efficient workflow."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Medical imaging segmentation",
+    "subject": "CS-CV",
+    "event_type": "analysis",
+    "description": "Performed a comprehensive analysis of the main experiment results. This involved calculating final performance metrics (e.g., Dice score, sensitivity, specificity) across all test cases, generating comparison tables against baseline models, and creating visualizations of segmentation outputs for both successful and failure cases.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the execution of main experiments in e_08, a detailed analysis is the critical next step. This process is necessary to interpret the final `experiment_results` in the context of the `research_goals` and baselines, providing the quantitative findings required for the subsequent writing phase."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Medical imaging segmentation",
+    "subject": "CS-CV",
+    "event_type": "writing",
+    "description": "Drafted the 'Results' section of the paper based on the comprehensive analysis. This involved creating tables to summarize the quantitative performance against baselines and selecting representative images to visualize the model's segmentation quality on both typical and challenging cases.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the comprehensive analysis of the main experiments completed in e_10, the next logical step is to document these findings. This event builds upon the initial writing started in e_09 by drafting the 'Results' section, directly translating the analyzed `experiment_results` into a crucial part of the final paper."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Medical imaging segmentation",
+    "subject": "CS-CV",
+    "event_type": "main_experiments",
+    "description": "While writing the paper, it became clear that an ablation study was needed to isolate the contributions of the new components. A new set of experiments was run, training two additional models: one without the multi-scale feature fusion module, and another with the original U-Net loss function. This will help quantify the impact of each specific modification.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After analyzing the main results (e_10) and drafting the results section (e_11), a crucial next step is to conduct an ablation study. This provides stronger evidence for the paper by demonstrating the individual importance of each component of the revised `method_scheme`, directly supporting the claims made about achieving the `research_goals`."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Medical imaging segmentation",
+    "subject": "CS-CV",
+    "event_type": "analysis",
+    "description": "Analyzed the results of the ablation study. The analysis confirms that both the multi-scale feature fusion module and the adjusted loss function contribute significantly to the model's performance, with the feature fusion being particularly impactful for small tumor segmentation.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After conducting the ablation study experiments in e_12, the logical next step is to analyze the new results. This analysis is crucial for quantifying the contribution of each model component, providing the evidence needed to justify the methodological choices in the paper and support the project's core claims."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Medical imaging segmentation",
+    "subject": "CS-CV",
+    "event_type": "writing",
+    "description": "The 'Results' section of the paper is revised to incorporate the findings from the ablation study. A new table and accompanying text are added to present the quantitative results of the ablation experiments, clearly demonstrating the individual contributions of the multi-scale feature fusion and the adjusted loss function.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the successful analysis of the ablation study in e_13, the logical next step is to integrate these critical findings into the manuscript. This writing event updates the existing `paper_paragraph` with the latest `experiment_results`, strengthening the paper's core argument by providing direct evidence for the impact of each methodological innovation."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Medical imaging segmentation",
+    "subject": "CS-CV",
+    "event_type": "writing",
+    "description": "With the core results and methods sections drafted, work begins on the 'Discussion' section of the paper. This involves interpreting the significance of the main and ablation study results, contextualizing the performance improvements, and discussing the limitations of the current study, such as its evaluation on a single dataset.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After finalizing the presentation of results in e_14, the next logical step in writing the manuscript is to interpret these findings. Drafting the 'Discussion' section allows the project to connect the `experiment_results` back to the original `research_goals`, explain the implications of the findings, and acknowledge limitations, which is crucial for a complete scientific paper."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Medical imaging segmentation",
+    "subject": "CS-CV",
+    "event_type": "writing",
+    "description": "Completed the first full draft of the manuscript by writing the 'Introduction', 'Conclusion', and 'Abstract' sections. These sections synthesize the research goals, methods, and key findings into a cohesive narrative, preparing the paper for internal review.",
+    "required_artifacts": [
+      "research_goals",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the core scientific sections (Methods, Results, Discussion) drafted and revised, the next logical step is to write the framing sections to create a complete first draft. This event integrates the established `research_goals` and `experiment_results` into the introduction and conclusion, producing a cohesive manuscript ready for review."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Medical imaging segmentation",
+    "subject": "CS-CV",
+    "event_type": "writing",
+    "description": "The first full draft of the manuscript underwent an internal review by research collaborators. Feedback indicated that the novelty of the multi-scale feature fusion should be more clearly articulated in the introduction and that the discussion should more directly address potential future work. The manuscript was revised to incorporate this feedback.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After completing a full draft (e_16), internal review is a critical step for quality assurance before external submission. This event represents the iterative process of refining a paper based on feedback, improving its clarity, and strengthening its arguments, moving the project closer to its final goal of publication."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "Medical imaging segmentation",
+    "subject": "CS-CV",
+    "event_type": "end",
+    "description": "The project is concluded as the main research goals have been met. A stable method has been developed, validated through extensive experiments, and a full manuscript has been drafted, revised, and is ready for submission to a peer-reviewed venue.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached a natural conclusion. The research cycle from proposal to a complete, internally reviewed paper (e_17) is finished, with stable methods, conclusive results, and a manuscript ready for external submission. This marks the successful completion of the project's defined scope."
+  }
+]

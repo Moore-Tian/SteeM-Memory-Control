@@ -1,0 +1,307 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Writing explanations of technical ideas for mixed audiences",
+    "subject": "Writing",
+    "event_type": "objective_clarification",
+    "description": "Initial meeting with the learner, a software engineer, to understand their goals for improving their technical writing. We discussed their desire to better explain complex software concepts to non-technical stakeholders like project managers and marketing teams.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first session, so the immediate priority is to understand the learner's background, needs, and specific goals. This diagnostic step is essential for creating a relevant and effective study plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Writing explanations of technical ideas for mixed audiences",
+    "subject": "Writing",
+    "event_type": "plan_milestones",
+    "description": "Based on the learning objectives, we co-created an initial study plan. The plan outlines three key milestones: 1) Identifying and defining the audience, 2) Using analogies and avoiding jargon, and 3) Structuring an explanation for different levels of detail.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learner's goals established in the previous session, the next logical step is to create a structured roadmap. This 'plan_milestones' event translates the high-level objectives into a concrete, actionable study plan with clear stages."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Writing explanations of technical ideas for mixed audiences",
+    "subject": "Writing",
+    "event_type": "lesson",
+    "description": "Conducted the first lesson, focusing on Milestone 1 from the study plan: 'Identifying and defining the audience.' We covered techniques for creating audience personas, mapping their existing knowledge, and identifying their specific information needs and goals.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a study plan in place, the next logical step is to begin instruction on the first milestone. This lesson directly addresses the initial stage of the plan, providing the foundational concepts the learner needs before they can practice."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Writing explanations of technical ideas for mixed audiences",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "Assigned a practice task to apply the concepts from the lesson on audience analysis. The learner was asked to choose a technical concept from their work (e.g., 'database indexing') and create two distinct audience personas: a non-technical project manager and a junior developer.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After learning the theory of audience analysis in the previous lesson, this 'practice' event is the essential next step for the learner to apply those concepts. Creating a tangible output (the personas) provides a concrete basis for review and feedback."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Writing explanations of technical ideas for mixed audiences",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "Reviewed the learner's submitted audience personas from the practice task. We analyzed the personas for the project manager and junior developer, focusing on how well they captured distinct knowledge gaps and motivations. Feedback highlighted the need for more specific detail on what each audience *needs to do* with the information.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the practice task, the immediate next step is to review their work. This 'review' event provides targeted feedback, assesses their understanding of the concepts from the lesson, and creates a 'feedback_summary' to guide their next steps and revisions."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Writing explanations of technical ideas for mixed audiences",
+    "subject": "Writing",
+    "event_type": "materials_revision",
+    "description": "Following the review, the tutor identified a weakness in the original lesson materials. The teaching notes on audience analysis are being updated to add a specific section on 'Defining Audience Goals and Actions,' prompted by the feedback that the learner needed to focus more on what the audience will *do* with the information.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review process highlighted a specific gap in the learner's understanding that was not sufficiently covered in the original lesson. This 'materials_revision' event uses the insights from the 'feedback_summary' to improve the 'teaching_notes', making the guidance more explicit and actionable for the learner's next attempt."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Writing explanations of technical ideas for mixed audiences",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "The learner revises their audience personas based on the feedback from the previous review. The task is to update the personas to include specific, action-oriented goals for each audience, applying the concepts from the revised teaching notes.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After reviewing the learner's first attempt and revising the teaching materials, it's crucial for the learner to re-apply the concepts. This second practice round reinforces the feedback, ensures the learner masters the concept of audience analysis, and provides a stronger foundation before moving to the next milestone."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Writing explanations of technical ideas for mixed audiences",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "Reviewed the learner's revised audience personas. The new versions successfully integrated the previous feedback by including specific, action-oriented goals for both the project manager and junior developer. The feedback confirmed the learner's understanding and readiness to proceed to the next milestone.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the learner's revised practice submission (e_07), this review is essential to verify that they have successfully applied the feedback and mastered the concept of audience analysis. Confirming this mastery allows us to confidently close the loop on this sub-skill and prepare to move on to the next topic."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Writing explanations of technical ideas for mixed audiences",
+    "subject": "Writing",
+    "event_type": "lesson",
+    "description": "Began the second milestone from the study plan: 'Using analogies and avoiding jargon.' The lesson focused on identifying core concepts that require simplification, brainstorming effective analogies that resonate with non-technical audiences, and strategies for replacing technical jargon with plainer language.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review confirmed the learner's mastery of the first milestone. Following the study plan, the next logical step is to start a lesson on the second milestone, which provides the foundational knowledge needed before practicing the new skill of using analogies and avoiding jargon."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Writing explanations of technical ideas for mixed audiences",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "Assigned a practice task for Milestone 2. The learner must now take the technical concept from the previous exercise ('database indexing') and write a short explanation for their non-technical project manager persona, focusing on using an effective analogy and avoiding jargon.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on analogies and jargon (e_09), this practice event is the essential next step for the learner to actively apply the new concepts. This task directly connects to the previous work on audience personas and provides a tangible output for the upcoming review session."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Writing explanations of technical ideas for mixed audiences",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "Reviewed the learner's explanation of 'database indexing' for the non-technical project manager. The feedback focused on the chosen analogy, noting it was effective but could be slightly simplified. The review also identified a few lingering jargon terms that could be replaced with plainer language.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the practice task in e_10, the immediate next step is to review their work. This 'review' event assesses their application of the concepts from the lesson on analogies and jargon, providing targeted feedback to help them refine their writing before moving on."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Writing explanations of technical ideas for mixed audiences",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "Based on the feedback from the last review, the learner is tasked with revising their explanation of 'database indexing'. The goal is to refine the analogy to be simpler and to eliminate the few remaining jargon terms that were identified.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "The previous review (e_11) provided specific, actionable feedback on the learner's writing. This follow-up 'practice' event allows the learner to immediately apply that feedback, which is a critical step for reinforcing the lesson and solidifying their understanding before moving on to a new concept."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Writing explanations of technical ideas for mixed audiences",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "Reviewed the learner's revised explanation of 'database indexing'. The changes successfully simplified the analogy and eliminated the remaining jargon. The feedback confirms the learner has a good grasp of Milestone 2 concepts and is ready to move to the final milestone.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner submitted a revised practice attempt in e_12, a review is necessary to close the feedback loop. This event assesses whether the previous feedback was successfully incorporated, confirming mastery of the skill before proceeding to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Writing explanations of technical ideas for mixed audiences",
+    "subject": "Writing",
+    "event_type": "lesson",
+    "description": "Introduced the third and final milestone from the study plan: 'Structuring an explanation for different levels of detail.' The lesson covered the concept of progressive disclosure and the 'pyramid principle,' where a high-level summary is presented first, followed by optional deeper dives.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_13) confirmed the learner's mastery of Milestone 2. Following the 'study_plan', the next logical step is to deliver a lesson on the final milestone, providing the necessary concepts before the learner begins practicing how to structure their explanations."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Writing explanations of technical ideas for mixed audiences",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "Assigned a cumulative practice task for the final milestone. The learner is to restructure their explanation of 'database indexing' using the pyramid principle, creating a high-level summary for the project manager persona, followed by a more detailed section for the junior developer persona.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on structuring explanations (e_14), this practice event is the essential next step for the learner to apply the new concept. This task integrates all three milestones (audience, simplification, and structure), providing a comprehensive piece of work to review."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Writing explanations of technical ideas for mixed audiences",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "Reviewed the learner's comprehensive explanation of 'database indexing' which was structured using the pyramid principle for two different audiences. The review assesses the integration of all three learned skills: audience analysis, simplification, and progressive disclosure.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a cumulative practice session (e_15) that integrates all course milestones, a comprehensive review is the critical next step. This event will evaluate the learner's ability to synthesize the skills and will provide final feedback on their progress toward the primary learning objectives."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Writing explanations of technical ideas for mixed audiences",
+    "subject": "Writing",
+    "event_type": "materials_revision",
+    "description": "After the final comprehensive review, the tutor synthesizes insights from the entire tutoring process. The study plan is annotated with notes on which exercises were most effective, and the teaching notes are updated to include the successful 'database indexing' analogy and pyramid structure example as a model case study.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "reason": "With the main learning arc complete, this event consolidates the lessons learned by the tutor. Revising the core materials based on the final review ensures that successful strategies and examples are captured, making the course materials more robust and reusable for the future, which is a natural final step before concluding the engagement."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Writing explanations of technical ideas for mixed audiences",
+    "subject": "Writing",
+    "event_type": "end",
+    "description": "Final session with the learner to summarize the progress made across all three milestones. We reviewed the initial learning objectives and confirmed they were met, concluding the formal tutoring engagement.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has successfully completed all milestones, demonstrated the ability to integrate the skills in a cumulative exercise, and received comprehensive feedback. The tutor has also finalized the teaching materials based on the engagement. With the learning objectives met and the process fully documented, the tutoring cycle can be formally concluded."
+  }
+]

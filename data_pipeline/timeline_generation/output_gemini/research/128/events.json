@@ -1,0 +1,377 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Material property prediction",
+    "subject": "Physics",
+    "event_type": "proposal",
+    "description": "Lay the groundwork for the project. The initial idea is to predict material properties using machine learning. This step defines a concrete research goal—predicting the electronic band gap of crystalline materials—and establishes a high-level research plan.",
+    "required_artifacts": [
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the foundational step of the research project. It takes an initial, high-level idea (represented as the input 'research_goals') and formalizes it into a concrete, documented goal and a strategic plan, which are necessary prerequisites for designing any methodology."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Material property prediction",
+    "subject": "Physics",
+    "event_type": "scheme_design",
+    "description": "Based on the research plan, the initial methodological scheme is designed. A graph neural network (GNN) is chosen as the model architecture, where atoms are represented as nodes and bonds as edges. The scheme specifies the input features (e.g., atomic numbers, electronegativity) and the target variable (band gap), and outlines the data preprocessing steps for converting crystal structures into graph representations.",
+    "required_artifacts": [
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "With the high-level goals and plan established in the initial proposal (e_01), the next logical step is to design a concrete technical method. This 'scheme_design' event translates the abstract plan into a specific machine learning approach, creating the 'method_scheme' needed for implementation and experimentation."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Material property prediction",
+    "subject": "Physics",
+    "event_type": "pilot_experiments",
+    "description": "A small-scale pilot experiment is conducted to test the feasibility of the GNN-based method. The model is implemented and trained on a small, curated subset of a public materials database to predict band gaps. This initial run aims to debug the data processing pipeline, verify the model implementation, and get a preliminary assessment of the model's learning capability.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the design of the methodological scheme (e_02), a pilot experiment is the logical next step. It serves as a sanity check for the proposed GNN approach on a small scale before investing resources in large-scale main experiments, generating the first set of 'experiment_results' to evaluate the design's viability."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Material property prediction",
+    "subject": "Physics",
+    "event_type": "analysis",
+    "description": "The results from the pilot experiment are formally analyzed. The team calculates the Mean Absolute Error (MAE) for band gap prediction, which is found to be promising but higher than desired for certain material classes. The analysis concludes that the GNN approach is viable but may require more complex features or a larger dataset to improve accuracy.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After conducting the pilot experiments (e_03), a formal analysis is the necessary next step to interpret the preliminary 'experiment_results'. This analysis evaluates the performance against the 'research_goals' and provides the critical insights needed to decide whether to proceed with main experiments or first refine the method."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Material property prediction",
+    "subject": "Physics",
+    "event_type": "scheme_design",
+    "description": "Based on the analysis of the pilot results, the team revises the methodological scheme. To improve prediction accuracy, the graph representation is enhanced to include not just atomic features but also information about bond angles and distances, aiming to provide the GNN with a more complete picture of the local chemical environment.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis in e_04 indicated that the initial model's performance was promising but insufficient. Instead of proceeding to main experiments with a flawed method, the logical next step is to return to the design phase to refine the approach. This event uses the insights from the pilot 'experiment_results' to create an improved 'method_scheme' that addresses the identified weaknesses."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Material property prediction",
+    "subject": "Physics",
+    "event_type": "main_experiments",
+    "description": "With the improved method scheme from the previous step, the main experiments are launched. The enhanced GNN model, now incorporating bond angles and distances, is trained on the full materials database. This large-scale experiment aims to generate a comprehensive set of results to robustly evaluate the model's performance.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After refining the method in e_05 based on pilot findings, the logical next step is to execute the main experiments. This event applies the improved 'method_scheme' at full scale, as envisioned in the original 'research_plan', to generate a definitive set of 'experiment_results' for the project."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Material property prediction",
+    "subject": "Physics",
+    "event_type": "analysis",
+    "description": "The comprehensive results from the main experiments are formally analyzed. The team calculates the Mean Absolute Error (MAE) on the full dataset, which shows a significant improvement over the pilot results. The analysis also includes a detailed error breakdown across different material classes, confirming that the enhanced features successfully addressed the weaknesses identified earlier.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the completion of the main experiments in e_06, a thorough analysis of the generated 'experiment_results' is the critical next step. This event evaluates the success of the improved 'method_scheme' against the project's 'research_goals' and provides the quantitative evidence needed to either proceed to writing the results section or identify further areas for improvement."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Material property prediction",
+    "subject": "Physics",
+    "event_type": "writing",
+    "description": "With the successful main experiment results analyzed, the team begins drafting the paper. The initial focus is on the 'Methods' section, describing the final GNN architecture and feature engineering, and the 'Results' section, presenting the key performance metrics like MAE and the error analysis across material classes.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After a successful cycle of main experiments (e_06) and analysis (e_07), the project has reached a milestone with solid findings. The logical next step is to start documenting this work for publication. This 'writing' event translates the validated 'method_scheme' and 'experiment_results' into the first draft of the paper, creating the initial 'paper_paragraph' artifact."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Material property prediction",
+    "subject": "Physics",
+    "event_type": "main_experiments",
+    "description": "While writing, the team realizes the paper would be stronger if the GNN's performance is compared against a non-graph baseline. A new experiment is run using a gradient boosting model on hand-crafted compositional features (e.g., average electronegativity, elemental fractions). This provides a standard baseline to better contextualize the GNN's advanced capabilities.",
+    "required_artifacts": [
+      "research_goals",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After analyzing the main results (e_07) and starting to write the paper (e_08), a common next step is to run additional experiments to strengthen the narrative. Creating a baseline comparison is a crucial part of demonstrating the value of a novel method, and the need for it often becomes apparent during the writing process."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Material property prediction",
+    "subject": "Physics",
+    "event_type": "analysis",
+    "description": "The results from the gradient boosting baseline experiment are analyzed. The MAE is calculated and compared directly with the performance of the GNN model from the main experiments. The analysis confirms that the GNN significantly outperforms the feature-based baseline, providing strong justification for its more complex architecture.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After running a new baseline experiment in e_09, the necessary next step is to analyze these new 'experiment_results'. This analysis compares the baseline's performance against the main GNN model, which is essential for contextualizing the findings and strengthening the paper's core argument."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Material property prediction",
+    "subject": "Physics",
+    "event_type": "writing",
+    "description": "The results from the baseline comparison are integrated into the paper. The 'Results' section is updated to present the performance of both the GNN and the gradient boosting model, highlighting the GNN's superior accuracy. This provides a clear, quantitative justification for the use of the more complex graph-based method.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After successfully running (e_09) and analyzing (e_10) the baseline experiment, the logical next step is to incorporate these crucial comparison results into the paper. This 'writing' event updates the existing 'paper_paragraph' to strengthen the narrative and demonstrate the value of the proposed GNN model over simpler alternatives."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Material property prediction",
+    "subject": "Physics",
+    "event_type": "main_experiments",
+    "description": "To provide deeper insight into why the model works, the team runs an ablation study. Two new versions of the GNN are trained: one with only bond angle features added, and one with only bond distance features added. This experiment aims to disentangle the performance contributions of the different geometric features introduced in the revised method.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After confirming the model's overall success and superiority over a baseline (e_10, e_11), a standard next step in machine learning research is to perform an ablation study. This provides a more nuanced understanding of the method's components, which is crucial for a strong discussion section in the paper and strengthens the scientific contribution."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Material property prediction",
+    "subject": "Physics",
+    "event_type": "analysis",
+    "description": "The results from the ablation study are analyzed. The team compares the performance of the full model against the models with only bond angles and only bond distances. The analysis reveals that both feature types contribute positively to the model's accuracy, but bond distances have a slightly larger impact on reducing prediction error.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After running the ablation experiments in e_12, the immediate next step is to analyze the outcomes. This 'analysis' event interprets the new 'experiment_results' to quantify the impact of each geometric feature, providing the insights needed to discuss the model's inner workings in the paper."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Material property prediction",
+    "subject": "Physics",
+    "event_type": "writing",
+    "description": "The findings from the ablation study are incorporated into the paper. The 'Results' section is updated to include a comparison of the full model with the ablated versions, and a new paragraph is added to the 'Discussion' to interpret these findings, explaining the relative importance of bond distances and angles for accurate band gap prediction.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After analyzing the ablation study in e_13, the logical next step is to integrate these important findings into the manuscript. This 'writing' event updates the existing 'paper_paragraph' to include the new results, which strengthens the paper's narrative by explaining not just that the model works, but also providing insight into why it works."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Material property prediction",
+    "subject": "Physics",
+    "event_type": "main_experiments",
+    "description": "While reviewing the draft paper, the team decides that an interpretability analysis is needed to strengthen the scientific contribution. They run a new set of experiments using techniques like saliency mapping to identify which atoms and bonds are most influential in the GNN's prediction for specific materials. This aims to move beyond predictive accuracy and provide insights into the model's learned physics.",
+    "required_artifacts": [
+      "method_scheme",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With a near-complete draft of the paper (e_14), a common step is to identify weaknesses or areas for improvement before submission. Adding an interpretability analysis addresses the 'black box' nature of the model, a frequent point of discussion for ML in science. This new experiment is motivated by the desire to produce a more insightful and compelling manuscript, directly enhancing the scientific story."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Material property prediction",
+    "subject": "Physics",
+    "event_type": "analysis",
+    "description": "The results of the interpretability experiments are analyzed. The team examines the saliency maps for several representative materials, identifying which atoms and bonds the GNN model deems most important for its predictions. The analysis shows that the model's attention patterns align well with established chemical intuition, providing qualitative support for the model's physical realism.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After running the interpretability experiments in e_15, the necessary next step is to analyze these new 'experiment_results'. This analysis interprets the model's focus, providing crucial qualitative insights that move beyond simple accuracy metrics and strengthen the scientific narrative of the paper."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Material property prediction",
+    "subject": "Physics",
+    "event_type": "writing",
+    "description": "The qualitative findings from the interpretability analysis are added to the paper. The 'Discussion' section is expanded to include examples of saliency maps, arguing that the model's learned attention patterns are consistent with chemical principles and provide further validation of the method's physical realism.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After analyzing the interpretability study in e_16, the crucial next step is to incorporate these qualitative insights into the manuscript. This 'writing' event updates the 'paper_paragraph' to connect the model's predictive accuracy with physically meaningful behavior, significantly strengthening the paper's scientific narrative before submission."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "Material property prediction",
+    "subject": "Physics",
+    "event_type": "writing",
+    "description": "The team focuses on finalizing the complete manuscript. This involves writing the Introduction, which motivates the problem and situates the work within the literature, and the Conclusion, which summarizes the contributions. The abstract is drafted, and the entire paper is revised for flow, clarity, and consistency before submission.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With all experimental and analytical work completed and documented in previous steps, the project is now in its final stage. This writing event consolidates all existing content ('paper_paragraph') into a complete, polished manuscript, using the original 'research_goals' and 'research_plan' to frame the introduction and conclusion, making it ready for submission."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "research",
+    "topic": "Material property prediction",
+    "subject": "Physics",
+    "event_type": "main_experiments",
+    "description": "After submitting the paper, the team receives peer review feedback. A key reviewer requests a comparison against a more recent, state-of-the-art GNN model from the literature to better situate the paper's contribution. The team decides to implement this competing model and run experiments on the same dataset to generate comparative results.",
+    "required_artifacts": [
+      "method_scheme",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The project, while seemingly complete after the first full draft (e_18), now enters the peer review cycle. Responding to reviewer feedback is a critical and realistic part of the research process, and running a requested comparison experiment is a common outcome that is necessary to strengthen the paper for publication."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "research",
+    "topic": "Material property prediction",
+    "subject": "Physics",
+    "event_type": "analysis",
+    "description": "The performance of the competing state-of-the-art model is analyzed and compared against the team's own GNN. The analysis shows that the team's model achieves a comparable, slightly lower MAE, confirming its competitive performance. This provides a strong, positive result to include in the revised manuscript.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After running the new comparative experiment in e_19 as requested by peer reviewers, the essential next step is to analyze the results. This analysis is crucial for formulating a response to the reviewers and determining how to revise the manuscript to incorporate the new comparison."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "research",
+    "topic": "Material property prediction",
+    "subject": "Physics",
+    "event_type": "writing",
+    "description": "The manuscript is revised based on the peer review feedback. The 'Results' section is updated to include the performance comparison with the state-of-the-art model, and the 'Discussion' is expanded to contextualize the team's model within the current landscape, addressing the reviewer's comments directly.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After analyzing the results of the experiment requested by peer reviewers (e_20), the necessary next step is to incorporate these findings into the manuscript. This 'writing' event directly addresses the feedback and prepares the revised paper for resubmission, which is a critical part of the publication process."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "research",
+    "topic": "Material property prediction",
+    "subject": "Physics",
+    "event_type": "end",
+    "description": "The revised manuscript, incorporating the SOTA comparison and addressing all peer review comments, has been resubmitted and subsequently accepted for publication. The project is now considered complete, having successfully achieved its research goals and contributed a new method to the field.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached its logical conclusion. The research goals have been met, a novel method has been developed and thoroughly validated through main experiments, baselines, ablations, and SOTA comparisons. The manuscript has successfully passed peer review and been accepted, marking the completion of the research cycle."
+  }
+]

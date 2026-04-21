@@ -1,0 +1,258 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Energy changes in reactions and interpretation",
+    "subject": "Chemistry",
+    "event_type": "objective_clarification",
+    "description": "Initial meeting with the student to discuss their learning goals for the topic of energy changes in chemical reactions. The student is preparing for an end-of-unit test and struggles with interpreting energy profile diagrams and calculating enthalpy change (ΔH).",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first event in the tutoring timeline. It is essential to start by clarifying the learner's objectives, background, and specific difficulties to create a tailored and effective study plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Energy changes in reactions and interpretation",
+    "subject": "Chemistry",
+    "event_type": "plan_milestones",
+    "description": "Based on the student's goals, the tutor outlines a multi-stage study plan. The plan prioritizes foundational concepts first, then moves to interpreting diagrams, and finally focuses on calculations, with practice and review checkpoints after each stage.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "After clarifying the student's learning objectives in the first session, the logical next step is to create a structured study plan. This plan uses the defined objectives to create a clear roadmap for the tutoring, ensuring that all topics are covered in a logical sequence."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Energy changes in reactions and interpretation",
+    "subject": "Chemistry",
+    "event_type": "lesson",
+    "description": "The tutor delivers the first lesson, focusing on the foundational concepts of energy changes. This includes defining key terms like enthalpy, exothermic, and endothermic reactions, and explaining the sign conventions for enthalpy change (ΔH).",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a study plan established, the next logical step is to begin instruction. This lesson addresses the first milestone in the plan: building a strong foundation in the core concepts before moving on to more complex applications like interpreting diagrams."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Energy changes in reactions and interpretation",
+    "subject": "Chemistry",
+    "event_type": "practice",
+    "description": "The tutor assigns practice problems to check the student's understanding of the foundational concepts from the previous lesson. The exercises involve identifying reactions as exothermic or endothermic based on given ΔH values and matching definitions to key terms.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the introductory lesson (e_03), it's essential to assess the student's comprehension before proceeding. This practice session allows the student to apply the new concepts, and the resulting practice record will provide concrete evidence of their understanding for the tutor to review."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Energy changes in reactions and interpretation",
+    "subject": "Chemistry",
+    "event_type": "review",
+    "description": "The tutor reviews the student's completed practice problems, analyzing the recorded attempts to check for understanding. The review focuses on identifying any misconceptions about the definitions of exothermic/endothermic reactions and the sign convention for ΔH.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a practice session (e_04), the logical next step is to review the student's work. This allows the tutor to assess comprehension, identify specific errors, and provide targeted feedback, which is essential before moving on to the next topic outlined in the study plan."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Energy changes in reactions and interpretation",
+    "subject": "Chemistry",
+    "event_type": "materials_revision",
+    "description": "Based on the review, the tutor identifies that the original teaching notes lacked a clear visual aid for the ΔH sign convention. The tutor updates the notes to include a simple table and a mnemonic device to help the student remember the difference between exothermic and endothermic processes.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_05) produced a feedback summary highlighting student misconceptions. A logical next step is to improve the teaching materials themselves to address these weak points directly, making them clearer and more effective before moving on or re-practicing. This revision makes the teaching notes more robust for future lessons."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Energy changes in reactions and interpretation",
+    "subject": "Chemistry",
+    "event_type": "lesson",
+    "description": "The tutor moves to the next topic in the study plan: interpreting energy profile diagrams. The lesson explains how to identify reactants, products, activation energy (Ea), and enthalpy change (ΔH) on a diagram, applying the recently revised notes on exothermic and endothermic conventions.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After remediating foundational concepts and updating the teaching materials (e_06), it is logical to proceed to the next milestone outlined in the study plan (e_02). This lesson builds on the solidified prior knowledge and introduces the next key skill, ensuring the student stays on track with their learning objectives."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Energy changes in reactions and interpretation",
+    "subject": "Chemistry",
+    "event_type": "practice",
+    "description": "The tutor gives the student a set of energy profile diagrams to label. The tasks include identifying the reactants, products, activation energy, and enthalpy change, as well as classifying each reaction as exothermic or endothermic based on the diagram's shape.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on interpreting energy profile diagrams (e_07), a practice session is the immediate next step. This allows the student to actively apply the new concepts, and the resulting record of their attempts will provide concrete data for the tutor to review and assess their understanding."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Energy changes in reactions and interpretation",
+    "subject": "Chemistry",
+    "event_type": "review",
+    "description": "The tutor reviews the student's labeled energy profile diagrams from the previous practice session. The analysis focuses on whether the student can correctly identify all components (reactants, products, Ea, ΔH) and distinguish between exothermic and endothermic diagrams.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on energy profile diagrams (e_08), a review is the essential next step. This allows the tutor to assess the student's mastery of this visual skill, provide corrective feedback, and determine if they are ready to move on to the final topic of calculations, as outlined in the study plan."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Energy changes in reactions and interpretation",
+    "subject": "Chemistry",
+    "event_type": "lesson",
+    "description": "The tutor introduces the final topic from the study plan: calculating enthalpy change (ΔH). The lesson covers using stoichiometry and given reaction enthalpies to calculate the energy released or absorbed for specific amounts of reactants or products.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_09) confirmed the student is ready to proceed. Following the study plan (e_02), the next step is to teach the final major topic, which is performing calculations with ΔH. This lesson builds on the foundational concepts and addresses the student's last remaining area of difficulty."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Energy changes in reactions and interpretation",
+    "subject": "Chemistry",
+    "event_type": "practice",
+    "description": "The tutor assigns a set of calculation-based problems. The student must use stoichiometric ratios from balanced chemical equations and given ΔH values to determine the total energy change for specific quantities of reactants or products.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on ΔH calculations (e_10), this practice session is the essential next step to solidify the student's understanding. It allows them to apply the new calculation methods, and the resulting practice record will provide the necessary data for the tutor to assess their competence and identify any remaining issues."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Energy changes in reactions and interpretation",
+    "subject": "Chemistry",
+    "event_type": "review",
+    "description": "The tutor reviews the student's answers to the calculation-based problems from the previous session. The analysis focuses on the correctness of the stoichiometric setup, the application of the given ΔH value, and the final answer's sign and units.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the student completed practice on ΔH calculations (e_11), a review is the necessary next step. This allows the tutor to assess the student's proficiency with the final topic, identify any remaining calculation errors, and provide targeted feedback before a final comprehensive review."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Energy changes in reactions and interpretation",
+    "subject": "Chemistry",
+    "event_type": "practice",
+    "description": "The tutor assigns a comprehensive practice set that mixes problems from all topics covered. This includes identifying reaction types, labeling and interpreting energy profile diagrams, and performing stoichiometric calculations involving ΔH to simulate a test environment.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After reviewing the final individual topic (e_12), the next logical step is to integrate all learned concepts. This comprehensive practice session addresses the student's overall goal of test preparation by mixing different problem types, ensuring they can apply their knowledge flexibly as they would on an exam."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Energy changes in reactions and interpretation",
+    "subject": "Chemistry",
+    "event_type": "review",
+    "description": "The tutor conducts a final review of the comprehensive practice set. The analysis focuses on the student's ability to correctly identify which skill to use for each problem and to execute the steps accurately in a mixed-problem environment.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a comprehensive practice session designed to simulate a test (e_13), a final review is the critical next step. This allows the tutor to assess the student's integrated knowledge, provide a final summary of strengths and weaknesses, and confirm their readiness for the upcoming test."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Energy changes in reactions and interpretation",
+    "subject": "Chemistry",
+    "event_type": "materials_revision",
+    "description": "Based on the final comprehensive review, the tutor creates a one-page 'Test-Prep Summary Sheet'. This document synthesizes key definitions, a labeled example of an energy profile diagram, and the main steps for ΔH calculations, highlighting common mistakes identified in the final feedback summary.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After the final review (e_14), creating a consolidated summary sheet is a valuable final step. It uses the insights from the last feedback summary to create a targeted revision tool, helping the student review effectively and build confidence before their test."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Energy changes in reactions and interpretation",
+    "subject": "Chemistry",
+    "event_type": "end",
+    "description": "Final session to confirm the student feels prepared for their test. The tutor and student briefly go over the 'Test-Prep Summary Sheet', and the tutor wishes the student luck. The tutoring for this topic is now complete as the objectives have been met.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The student has successfully completed all milestones in the study plan, demonstrated proficiency in all targeted skills through comprehensive practice, and received a final summary sheet for revision. The learning objectives have been met, making this a natural endpoint for the tutoring process."
+  }
+]

@@ -1,0 +1,332 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Evolution and adaptation as explanatory frameworks",
+    "subject": "Biology",
+    "event_type": "objective_clarification",
+    "description": "Initial meeting to discuss the learner's goals for understanding evolution. The learner, a high school student, needs to prepare for a final exam and wants to focus on natural selection, adaptation, and speciation.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "As this is the first session, the primary step is to understand the learner's background, goals, and constraints. This diagnostic conversation establishes the foundation for creating a tailored study plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Evolution and adaptation as explanatory frameworks",
+    "subject": "Biology",
+    "event_type": "plan_milestones",
+    "description": "Based on the learning objectives, the tutor and learner collaboratively outline a study plan. They decide to structure the sessions around three key milestones: 1) Natural Selection, 2) Adaptation and Evidence, and 3) Speciation, with checkpoints after each topic.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With clear goals established in the previous session, the next logical step is to create a structured plan. This event uses the 'learning_objectives' artifact to build a roadmap, ensuring both tutor and learner are aligned on the sequence and scope of topics."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Evolution and adaptation as explanatory frameworks",
+    "subject": "Biology",
+    "event_type": "lesson",
+    "description": "The tutor delivers the first lesson as per the study plan, focusing on the core principles of natural selection. Key concepts covered include variation, inheritance, differential survival, and reproduction, using the example of peppered moths.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a study plan established, the next logical step is to begin instruction on the first milestone. This lesson addresses 'Natural Selection' and creates foundational teaching notes on the topic for future reference and practice."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Evolution and adaptation as explanatory frameworks",
+    "subject": "Biology",
+    "event_type": "practice",
+    "description": "To reinforce the concepts from the lesson on natural selection, the tutor assigns a practice problem. The learner is asked to explain how a population of bacteria could develop antibiotic resistance, applying the principles of variation, inheritance, and differential survival.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson introducing new concepts, it is crucial to assess the learner's ability to apply them. This practice session directly builds on the recent 'lesson' and uses the 'teaching_notes', while generating a 'practice_record' of the learner's attempt for the upcoming review."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Evolution and adaptation as explanatory frameworks",
+    "subject": "Biology",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's explanation of antibiotic resistance. The tutor notes that the learner correctly identified variation and selection but struggled to articulate the role of inheritance in passing resistance to subsequent generations.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a practice attempt, a review is necessary to assess understanding and identify errors. This event uses the 'practice_record' to analyze the learner's work, leading to the creation of a 'feedback_summary' with actionable advice for improvement."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Evolution and adaptation as explanatory frameworks",
+    "subject": "Biology",
+    "event_type": "materials_revision",
+    "description": "Based on the learner's difficulty with inheritance, the tutor revises the teaching notes on natural selection. The notes are updated to include a clearer, more explicit explanation of how heritable traits are passed to offspring, reinforcing its role in population change over generations.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review session identified a specific gap in the learner's understanding. Before moving to more practice, it's effective to refine the teaching materials based on this feedback to prevent the same misconception from recurring. This makes the 'teaching_notes' a more robust resource for the next practice attempt."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Evolution and adaptation as explanatory frameworks",
+    "subject": "Biology",
+    "event_type": "practice",
+    "description": "To confirm the learner's understanding after the recent feedback and materials revision, the tutor assigns a second practice problem. The learner is asked to apply the principles of natural selection, including inheritance, to explain the evolution of long necks in giraffes.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After identifying a misconception in the last practice (e_05) and revising the teaching notes to address it (e_06), a new practice attempt is necessary. This step will verify if the learner has successfully integrated the feedback and can now correctly apply all components of natural selection before moving to the next topic."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Evolution and adaptation as explanatory frameworks",
+    "subject": "Biology",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's explanation of giraffe neck evolution from the second practice attempt. The learner successfully incorporates the role of inheritance, demonstrating that the previous feedback and materials revision were effective.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice in the previous session, a review is essential to confirm that the learner has overcome their earlier misconception. This event assesses the learner's latest attempt, provides final feedback on the topic of natural selection, and determines readiness to proceed to the next milestone."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Evolution and adaptation as explanatory frameworks",
+    "subject": "Biology",
+    "event_type": "lesson",
+    "description": "With the first topic mastered, the tutor proceeds to the second milestone in the study plan: 'Adaptation and Evidence'. This lesson defines adaptation, explores different types (structural, behavioral, physiological), and introduces evidence for evolution like the fossil record and homologous structures.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_08) confirmed the learner's mastery of natural selection. It is now appropriate to advance to the next topic as outlined in the 'study_plan'. This lesson introduces the second milestone, building directly on the established foundation."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Evolution and adaptation as explanatory frameworks",
+    "subject": "Biology",
+    "event_type": "practice",
+    "description": "To solidify the concepts from the lesson on adaptation, the tutor assigns a practice task. The learner is asked to identify the fin of a dolphin and the wing of a bat as homologous structures and explain what this suggests about their evolutionary history.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on adaptation and evidence for evolution (e_09), the next logical step is to have the learner apply these new concepts. This practice task directly assesses their understanding of homologous structures, creating a 'practice_record' for the upcoming review session."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Evolution and adaptation as explanatory frameworks",
+    "subject": "Biology",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's explanation of homologous structures. The learner correctly identifies the shared ancestry but incorrectly uses the term 'analogous' to describe them, revealing a confusion between homologous and analogous structures.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session (e_10), a review is essential to evaluate the learner's application of the new concepts. This review identifies a specific and common misconception, which is captured in the 'feedback_summary' to guide remediation in the next step."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Evolution and adaptation as explanatory frameworks",
+    "subject": "Biology",
+    "event_type": "materials_revision",
+    "description": "In response to the learner's confusion between homologous and analogous structures, the tutor revises the teaching notes. A new section is added with a side-by-side comparison table, providing clear definitions and distinct examples for both concepts (e.g., bat wing vs. bird wing as homologous; bat wing vs. insect wing as analogous).",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_11) identified a specific conceptual error. Revising the teaching materials to directly address this confusion is a crucial step to remediate the issue before re-assessing the learner's understanding. This improves the clarity of the core instructional materials."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Evolution and adaptation as explanatory frameworks",
+    "subject": "Biology",
+    "event_type": "practice",
+    "description": "To check understanding after the materials revision, the tutor provides a new practice question. The learner is asked to compare a bat wing to a butterfly wing and explain why they are analogous structures, not homologous, referencing both function and evolutionary origin.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the revision of teaching notes (e_12) to clarify a specific misconception identified in the last review (e_11), a targeted practice session is the logical next step. This allows the tutor to verify that the learner has grasped the distinction between homologous and analogous structures before proceeding."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Evolution and adaptation as explanatory frameworks",
+    "subject": "Biology",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's explanation of analogous structures. The learner correctly identifies that bat wings and butterfly wings have similar functions but different evolutionary origins, demonstrating a clear understanding of the concept and its distinction from homology.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted practice session (e_13) designed to address a specific misconception, a review is essential to confirm that the learner has successfully integrated the feedback and revised materials. This step validates their understanding before moving on to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Evolution and adaptation as explanatory frameworks",
+    "subject": "Biology",
+    "event_type": "lesson",
+    "description": "With the second topic mastered, the tutor proceeds to the third and final milestone in the study plan: Speciation. This lesson defines a species, introduces reproductive isolation mechanisms, and explains the processes of allopatric and sympatric speciation.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_14) confirmed the learner's mastery of the second milestone. It is now appropriate to advance to the final topic outlined in the 'study_plan', which is speciation, thereby continuing progress towards the overall learning objectives."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Evolution and adaptation as explanatory frameworks",
+    "subject": "Biology",
+    "event_type": "practice",
+    "description": "To assess understanding of the final topic, the tutor asks the learner to explain a hypothetical scenario of allopatric speciation involving a squirrel population separated by a newly formed canyon, leading to two distinct species over time.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson on a new topic (speciation), it is essential to have the learner apply the concepts to check for understanding. This practice task directly assesses their ability to explain speciation, creating a 'practice_record' for review before concluding the tutoring series."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Evolution and adaptation as explanatory frameworks",
+    "subject": "Biology",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's explanation of allopatric speciation. The tutor confirms that the learner correctly identified the roles of geographic isolation, genetic divergence, and the eventual development of reproductive isolation, demonstrating a solid grasp of the final topic.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on the final topic (e_16), a review is crucial to evaluate the learner's understanding. This event assesses the learner's ability to apply the concepts of speciation and provides final feedback, confirming that all major milestones of the study plan have now been successfully addressed."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Evolution and adaptation as explanatory frameworks",
+    "subject": "Biology",
+    "event_type": "practice",
+    "description": "To prepare for the final exam and ensure the learner can synthesize concepts, the tutor assigns a cumulative practice problem. The problem requires explaining the diversification of Darwin's finches on the Galapagos Islands, integrating concepts of natural selection, adaptation, and speciation.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "All individual topics in the study plan have been successfully covered and assessed. A final, cumulative practice session is a logical next step to ensure the learner can integrate all concepts together, which is a key skill required for a final exam."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Evolution and adaptation as explanatory frameworks",
+    "subject": "Biology",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's comprehensive explanation of the diversification of Darwin's finches. The review confirms that the learner successfully integrated the concepts of natural selection, adaptation, and speciation into a coherent and accurate explanation.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following a cumulative practice session (e_18), a final review is essential to assess the learner's ability to synthesize information across all topics. This provides a capstone assessment of their understanding and confirms their readiness for the final exam."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Evolution and adaptation as explanatory frameworks",
+    "subject": "Biology",
+    "event_type": "end",
+    "description": "The tutor and learner have a final wrap-up session. They agree that all learning objectives have been met and the learner is well-prepared for their final exam, successfully demonstrating the ability to integrate all key concepts.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has successfully mastered all topics outlined in the study plan, addressed initial misconceptions through targeted practice and review, and demonstrated the ability to synthesize all concepts in a final cumulative assessment (e_19). With the learning objectives met, the tutoring process is now complete."
+  }
+]

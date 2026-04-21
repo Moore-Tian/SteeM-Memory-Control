@@ -1,0 +1,409 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Reaction pathway modeling",
+    "subject": "Chemistry",
+    "event_type": "proposal",
+    "description": "The project begins by formalizing the initial research idea. The high-level objective of 'improving reaction pathway modeling' is refined into a concrete goal of developing a new graph-based model, and a preliminary research plan is drafted.",
+    "required_artifacts": [
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This foundational event translates an abstract research idea (represented as the initial `research_goals`) into a set of concrete, documented goals and an actionable `research_plan`. This is the necessary first step to provide structure and direction for the project."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Reaction pathway modeling",
+    "subject": "Chemistry",
+    "event_type": "scheme_design",
+    "description": "Based on the research plan, the team designs the initial architecture for the graph-based model. This involves defining how chemical species and reactions will be represented as nodes and edges, and outlining the core algorithm for searching and scoring potential reaction pathways.",
+    "required_artifacts": [
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "With the high-level `research_plan` and `research_goals` from e_01 in place, the logical next step is to design the specific methodology. This event translates the abstract goals into a concrete technical blueprint (`method_scheme`) that can be implemented and tested."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Reaction pathway modeling",
+    "subject": "Chemistry",
+    "event_type": "pilot_experiments",
+    "description": "A prototype of the graph-based model is implemented based on the designed scheme. It is tested on a small set of well-characterized chemical reactions, like the Diels-Alder reaction, to validate the core functionality and check for obvious flaws in the representation or search algorithm.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing the `method_scheme` in e_02, a pilot experiment is necessary to test its practical viability before committing to large-scale implementation. This step provides initial `experiment_results` that serve as a crucial sanity check on the proposed model."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Reaction pathway modeling",
+    "subject": "Chemistry",
+    "event_type": "analysis",
+    "description": "The results from the pilot study are systematically analyzed. The model successfully identified the main reaction pathway, but the analysis reveals that it overestimated the energy barriers and failed to identify a known minor side-product. This suggests the core graph representation is viable but the energy scoring function needs refinement.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "research_plan"
+    ],
+    "reason": "After generating initial `experiment_results` in e_03, a dedicated `analysis` event is necessary to evaluate the performance of the prototype against the `research_goals`. This analysis provides critical insights that inform the next steps, leading to a refined `research_plan` that now prioritizes improving the model's scoring function."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Reaction pathway modeling",
+    "subject": "Chemistry",
+    "event_type": "scheme_design",
+    "description": "In response to the analysis of pilot results, the team redesigns the model's energy scoring function. The original simplistic function is replaced with a more sophisticated hybrid quantum mechanics/machine learning (QM/ML) model, trained to better predict reaction energy barriers and identify low-energy intermediates.",
+    "required_artifacts": [
+      "research_plan",
+      "method_scheme",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis in e_04 identified the energy scoring function as the primary weakness of the initial `method_scheme`. This redesign step directly addresses that finding, as directed by the updated `research_plan`, creating a revised `method_scheme` before attempting more extensive experiments."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Reaction pathway modeling",
+    "subject": "Chemistry",
+    "event_type": "pilot_experiments",
+    "description": "A second pilot experiment is conducted, applying the revised method with the new QM/ML scoring function to the same Diels-Alder reaction test case. The objective is to specifically verify if the redesigned model can accurately predict the energy barrier and identify the minor side-product missed in the first pilot.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the redesign of the `method_scheme` in e_05, it is crucial to validate the changes. This targeted pilot experiment directly tests if the revised model addresses the specific shortcomings identified in the analysis of the first pilot run (e_04), using the previous `experiment_results` as a benchmark before committing to more extensive main experiments."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Reaction pathway modeling",
+    "subject": "Chemistry",
+    "event_type": "analysis",
+    "description": "The results from the second pilot experiment are analyzed. The analysis confirms that the revised model with the QM/ML scoring function now accurately predicts the energy barrier and successfully identifies the minor side-product for the Diels-Alder test case. This successful validation confirms the viability of the current method for broader application.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "research_plan"
+    ],
+    "reason": "Following the second pilot experiment (e_06), this analysis is critical to formally validate the revised `method_scheme`. The positive outcome confirms that the issues identified in e_04 have been resolved, providing the confidence needed to finalize the plan for the main experimental phase and update the `research_plan` accordingly."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Reaction pathway modeling",
+    "subject": "Chemistry",
+    "event_type": "main_experiments",
+    "description": "With the method validated, the team now applies the graph-based model to a large dataset of complex organometallic catalytic cycles. This phase aims to test the model's scalability and its ability to uncover novel, low-energy reaction pathways that are not immediately obvious from chemical intuition, generating the primary results for the study.",
+    "required_artifacts": [
+      "research_plan",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The successful validation of the revised `method_scheme` in the pilot phase (e_06, e_07) provides the necessary confidence to proceed to the main experimental phase. This step directly executes the updated `research_plan` to generate a comprehensive set of `experiment_results` on a challenging, real-world problem, aiming to achieve the project's core `research_goals`."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Reaction pathway modeling",
+    "subject": "Chemistry",
+    "event_type": "analysis",
+    "description": "The extensive results from the main experiments on organometallic catalytic cycles are systematically analyzed. The analysis confirms that the model consistently identifies known pathways with high accuracy and also proposes several novel, energetically plausible pathways that were previously undocumented. The scalability of the method is also confirmed, with computation times remaining manageable for large systems.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "research_plan"
+    ],
+    "reason": "After generating a comprehensive set of `experiment_results` in the main experiment (e_08), a thorough `analysis` is the essential next step. This event evaluates the success of the main experiments against the project's `research_goals` and confirms the method's performance, providing the final validation needed before proceeding to the writing phase."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Reaction pathway modeling",
+    "subject": "Chemistry",
+    "event_type": "writing",
+    "description": "With the main results analyzed and confirmed, the team begins drafting the research paper. The initial focus is on writing the 'Methods' section, detailing the final graph-based model and the QM/ML scoring function, and the 'Results' section, presenting the findings from the organometallic catalysis experiments.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After the comprehensive analysis in e_09 confirmed the success of the main experiments, the research has reached a major milestone. The logical next step is to begin disseminating the findings. This `writing` event starts the process of creating the paper by documenting the validated `method_scheme` and the compelling `experiment_results`."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Reaction pathway modeling",
+    "subject": "Chemistry",
+    "event_type": "analysis",
+    "description": "While drafting the paper, the team realizes a direct comparison against a standard baseline method is needed to quantify the model's improvement. They perform a new analysis on the main experiment dataset, running a traditional transition state search algorithm on the same organometallic catalytic cycles for comparison.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The process of writing the initial draft (e_10) revealed that the claims of improvement lacked a quantitative benchmark. This analysis event is a necessary step to generate comparative `experiment_results` by running a baseline against their main dataset, directly addressing a potential weakness in the paper before continuing the writing process."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Reaction pathway modeling",
+    "subject": "Chemistry",
+    "event_type": "writing",
+    "description": "The team incorporates the results of the baseline comparison into the paper. They update the 'Results' section to present a side-by-side comparison of their model against the traditional method, highlighting the improvements in speed and the ability to discover novel pathways. This strengthens the paper's central claims.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Event e_11 was performed to generate baseline data specifically for the paper. The logical next step is to integrate this comparative analysis into the manuscript (`paper_paragraph`), directly strengthening the claims being made and addressing the weakness identified during the initial drafting phase in e_10."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Reaction pathway modeling",
+    "subject": "Chemistry",
+    "event_type": "proposal",
+    "description": "During an internal review of the nearly complete paper draft, a senior researcher suggests that the claims of generalizability would be much stronger if the model were tested on a fundamentally different reaction class. The team agrees and decides to expand the project scope, revising the research goals to include validation on enzymatic reaction pathways.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "With a strong paper draft (`paper_paragraph`) nearly ready, seeking internal feedback is a common step. This feedback has revealed a significant opportunity to strengthen the paper's impact by expanding its scope. Revising the `research_goals` and `research_plan` at this stage is a strategic decision to address this feedback before submission, setting the stage for a final, crucial experiment."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Reaction pathway modeling",
+    "subject": "Chemistry",
+    "event_type": "pilot_experiments",
+    "description": "Following the revised research plan, the team conducts a pilot experiment applying their existing model to a well-characterized enzymatic reaction, such as chymotrypsin catalysis. This initial test aims to quickly assess the model's performance in a biological context and identify any immediate failures or necessary adaptations for handling the complexity of an enzyme active site.",
+    "required_artifacts": [
+      "research_plan",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After the project's scope was expanded in e_13 to include enzymatic reactions, a targeted pilot experiment is a crucial first step. It pragmatically tests the applicability of the current `method_scheme` on the new problem class defined in the updated `research_goals`, generating initial `experiment_results` that will determine if the method needs to be redesigned before a larger study."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Reaction pathway modeling",
+    "subject": "Chemistry",
+    "event_type": "analysis",
+    "description": "The results of the pilot experiment on the chymotrypsin enzyme are analyzed. The model correctly identifies the key catalytic steps but struggles to accurately model the influence of the surrounding protein active site, leading to inaccurate energy predictions. The analysis concludes that the graph representation needs to be extended to incorporate environmental effects.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "research_plan"
+    ],
+    "reason": "After conducting a pilot experiment (e_14) on the new class of enzymatic reactions, a detailed analysis of the `experiment_results` is the necessary next step. This analysis assesses the performance against the revised `research_goals` and identifies specific shortcomings in the current `method_scheme`, leading to an updated `research_plan` that prioritizes adapting the model for this new chemical environment."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Reaction pathway modeling",
+    "subject": "Chemistry",
+    "event_type": "scheme_design",
+    "description": "Responding to the analysis of the enzymatic pilot study, the team redesigns the model to handle complex biological environments. The graph representation is extended to include nodes for key active site residues, and a QM/MM (Quantum Mechanics/Molecular Mechanics) approach is integrated to better model the protein's steric and electrostatic influence.",
+    "required_artifacts": [
+      "research_plan",
+      "method_scheme",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous analysis (e_15) showed the current `method_scheme` failed on enzymatic reactions due to environmental effects. This `scheme_design` event directly addresses that finding, as guided by the updated `research_plan`, by creating a more sophisticated `method_scheme` capable of modeling the enzyme active site before re-testing."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Reaction pathway modeling",
+    "subject": "Chemistry",
+    "event_type": "pilot_experiments",
+    "description": "A new pilot experiment is run using the revised QM/MM method on the chymotrypsin test case. The goal is to verify if the extended graph representation and QM/MM approach can now accurately model the reaction within the enzyme active site, addressing the failures identified in the previous enzymatic pilot study.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After redesigning the model to include QM/MM capabilities in e_16, a pilot experiment is essential to validate this new `method_scheme`. This step directly tests whether the changes have fixed the problems identified in the previous analysis (e_15), providing crucial go/no-go results before expanding the enzymatic study."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "Reaction pathway modeling",
+    "subject": "Chemistry",
+    "event_type": "analysis",
+    "description": "The results from the QM/MM pilot study are analyzed. The analysis shows that the revised model now accurately predicts the reaction pathway and energies for the chymotrypsin test case, correctly accounting for the steric and electrostatic effects of the enzyme's active site. This successful validation greenlights the expansion of the study to a broader set of enzymes.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "research_plan"
+    ],
+    "reason": "After running a pilot experiment (e_17) with the new QM/MM method, this analysis is essential to determine if the redesigned `method_scheme` has successfully addressed the challenges of modeling enzymatic reactions. A positive outcome updates the `research_plan`, giving the team confidence to proceed with the main experiments for this expanded scope."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "research",
+    "topic": "Reaction pathway modeling",
+    "subject": "Chemistry",
+    "event_type": "main_experiments",
+    "description": "Building on the successful QM/MM pilot, the team now runs the expanded model on a broader set of enzymes. This main experiment phase is designed to test the method's generalizability across different classes of enzymatic reactions, generating the final set of key results for the project.",
+    "required_artifacts": [
+      "research_plan",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After the revised QM/MM `method_scheme` was validated in the enzymatic pilot study (e_18), the logical next step is to execute the main experiments as laid out in the updated `research_plan`. This step is crucial for gathering the comprehensive `experiment_results` needed to satisfy the expanded `research_goals` and demonstrate the method's generalizability."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "research",
+    "topic": "Reaction pathway modeling",
+    "subject": "Chemistry",
+    "event_type": "analysis",
+    "description": "The team performs a comprehensive analysis of the results from the main experiments on the broad set of enzymatic reactions. The analysis confirms that the QM/MM-enhanced model successfully generalizes, accurately predicting reaction pathways and energies across different enzyme classes. This fulfills the final, expanded research goal.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "research_plan"
+    ],
+    "reason": "After generating the final set of `experiment_results` in e_19, this `analysis` is the critical next step to validate them against the expanded `research_goals`. A successful analysis confirms the project's main claims and allows the `research_plan` to be updated to focus exclusively on finalizing the manuscript."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "research",
+    "topic": "Reaction pathway modeling",
+    "subject": "Chemistry",
+    "event_type": "writing",
+    "description": "The team integrates the successful results from the enzymatic reaction studies into the manuscript. This involves adding a new subsection to the 'Methods' detailing the QM/MM extension and a corresponding subsection to the 'Results' presenting the findings on the broad set of enzymes, showcasing the method's generalizability.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "paper_paragraph",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After successfully analyzing the main enzymatic experiments in e_20, the project's experimental phase is complete. The crucial next step is to incorporate these significant new findings into the `paper_paragraph`, bringing the manuscript closer to completion by documenting the method's proven generalizability as outlined in the final `research_plan`."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "research",
+    "topic": "Reaction pathway modeling",
+    "subject": "Chemistry",
+    "event_type": "writing",
+    "description": "The team focuses on finalizing the entire manuscript. This involves writing the Introduction to motivate the work, the Conclusion to summarize the findings and discuss future directions, and the Abstract. The complete paper draft is polished for clarity, consistency, and impact, preparing it for submission.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After integrating all experimental results into the paper (e_21), the next logical step is to complete the manuscript. This event involves writing the framing sections (Introduction, Conclusion, Abstract) and polishing the text, transforming the collection of methods and results into a single, cohesive scientific story ready for submission."
+  },
+  {
+    "event_id": "e_23",
+    "time_index": 23,
+    "domain": "research",
+    "topic": "Reaction pathway modeling",
+    "subject": "Chemistry",
+    "event_type": "end",
+    "description": "The manuscript is complete, all data has been analyzed and incorporated, and the research goals have been met and exceeded. The project concludes with the submission of the final paper to a high-impact chemistry journal, marking the successful completion of the research cycle.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached its logical conclusion. The research has progressed from an initial proposal through multiple cycles of design, experimentation, and analysis, successfully addressing challenges and expanding its scope. With a complete and polished manuscript (e_22) ready for submission, the primary objectives are fulfilled, making this a natural endpoint for the timeline."
+  }
+]

@@ -1,0 +1,306 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Integrals as accumulation and total change",
+    "subject": "Math",
+    "event_type": "objective_clarification",
+    "description": "Initial diagnostic session with the learner to discuss their background in calculus, identify specific difficulties with integrals, and establish clear learning goals related to accumulation and total change concepts. A high-level study plan is drafted based on this discussion.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives",
+      "study_plan"
+    ],
+    "reason": "This is the first event in the tutoring timeline. A diagnostic session is the necessary starting point to understand the learner's needs and create a foundational plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Integrals as accumulation and total change",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "The first lesson is conducted, introducing the concept of the definite integral as a tool for accumulating a rate of change. Key ideas like the relationship between a rate function (e.g., velocity) and the total accumulated quantity (e.g., displacement) are explained using graphical examples, and initial teaching notes are created.",
+    "required_artifacts": [
+      "learning_objectives",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After clarifying objectives and creating a plan in the first session, the logical next step is to deliver the first lesson. This event uses the plan and objectives to guide the teaching and produces the first set of teaching notes for the core concepts."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Integrals as accumulation and total change",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "The learner is assigned a set of practice problems based on the first lesson. These problems involve interpreting definite integrals as total change and calculating accumulated quantities from simple rate functions (e.g., constant or linear velocity). The learner's solutions and intermediate steps are recorded.",
+    "required_artifacts": [
+      "teaching_notes",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the introductory lesson (e_02), it is crucial for the learner to apply the concepts to solidify their understanding. This practice session directly assesses comprehension of the material covered in the lesson and generates a record of the learner's work, which is essential for the upcoming review and feedback cycle."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Integrals as accumulation and total change",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's submitted practice work. The review focuses on identifying common errors, such as confusing displacement with total distance or misinterpreting the units of the integral. Actionable feedback is compiled into a summary for the learner.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session (e_03), a review is the logical next step to assess the learner's understanding and identify specific areas of difficulty. This process uses the recorded practice attempts to generate a feedback summary, which is crucial for guiding the learner's corrections and reinforcing concepts."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Integrals as accumulation and total change",
+    "subject": "Math",
+    "event_type": "materials_revision",
+    "description": "Based on the review of the learner's practice, the tutor revises the teaching notes to address identified misconceptions. The notes are updated with clearer examples distinguishing displacement from total distance and a new section emphasizing how to interpret the units of an integral in context.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in the previous event (e_04) highlighted specific conceptual gaps. Revising the teaching materials is a crucial step to directly address these issues before moving forward, ensuring the foundational concepts are clearer for the learner in subsequent sessions."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Integrals as accumulation and total change",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "The learner is assigned a new set of targeted practice problems focusing on the specific areas of confusion identified in the previous review, namely the distinction between displacement and total distance. This practice session uses the revised teaching materials to reinforce the corrected concepts.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials (e_05) based on feedback (e_04), it is crucial to give the learner another opportunity to practice. This targeted session will verify if the misconceptions have been resolved before introducing more advanced concepts, thus completing the feedback loop."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Integrals as accumulation and total change",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's second, targeted practice session. The focus is on confirming whether the learner now correctly distinguishes between displacement and total distance. A new feedback summary is generated to confirm progress and determine if the student is ready for the next topic.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted practice session (e_06) designed to correct specific misconceptions, a review is essential to assess its effectiveness. This step uses the new practice record and the previous feedback to determine if the learner has mastered the concept and is ready to move on."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Integrals as accumulation and total change",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "With the foundational concepts solidified, the tutor introduces the next topic: using the Fundamental Theorem of Calculus to find total change. This lesson connects the concept of accumulation to the process of finding an antiderivative and evaluating it at the endpoints of an interval, updating the teaching notes with this new method.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_07) confirmed that the learner has mastered the initial concepts. Following the study plan, it is now appropriate to introduce the next level of complexity, which involves applying the Fundamental Theorem of Calculus as a computational tool for accumulation problems."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Integrals as accumulation and total change",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "Following the lesson on the Fundamental Theorem of Calculus (FTC), the learner is given practice problems that require applying it to find the net change. The problems involve finding antiderivatives of rate functions and evaluating them over specified intervals, and the learner's work is recorded.",
+    "required_artifacts": [
+      "teaching_notes",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the Fundamental Theorem of Calculus in the previous lesson (e_08), it is essential for the learner to practice applying this new computational method. This event provides that opportunity and generates a record of their work, which is necessary for the next review cycle."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Integrals as accumulation and total change",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's practice on applying the Fundamental Theorem of Calculus. The review checks for correctness in finding antiderivatives and evaluating them to find net change, and a feedback summary is created to highlight any algebraic or conceptual errors.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the practice session on the Fundamental Theorem of Calculus (e_09), a review is the necessary next step to evaluate the learner's computational skills. This review provides crucial feedback on their ability to apply the theorem before moving on to more complex, real-world applications."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Integrals as accumulation and total change",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "The tutor introduces how to solve accumulation problems that include an initial condition. The lesson explains the formula 'Final Amount = Initial Amount + Net Change' and demonstrates how to use the definite integral to calculate the net change part. This concept is applied to real-world scenarios, and the teaching notes are updated accordingly.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The learner has demonstrated proficiency with calculating net change using the FTC in the last practice/review cycle (e_09, e_10). The next logical step, according to the study plan, is to build on this skill by introducing problems that involve a starting value, which is a more complex and common application of accumulation."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Integrals as accumulation and total change",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "The learner is assigned practice problems based on the previous lesson, focusing on accumulation problems that include an initial value. These problems require setting up the 'Final Amount = Initial Amount + Net Change' equation and solving the definite integral part. The learner's attempts are recorded for review.",
+    "required_artifacts": [
+      "teaching_notes",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After learning how to handle accumulation problems with initial conditions in the previous lesson (e_11), the learner must immediately apply this knowledge through practice. This session is designed to solidify their understanding of this new, more complex problem type and will generate a record of their work for subsequent review."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Integrals as accumulation and total change",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's practice on accumulation problems with initial conditions. The review focuses on whether the learner correctly set up the 'Final Amount = Initial Amount + Net Change' structure and accurately calculated the integral. A new feedback summary is prepared.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on problems with initial conditions (e_12), a review is the necessary next step to assess comprehension. This event evaluates the learner's ability to apply the new formula and provides targeted feedback before moving to more complex applications."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Integrals as accumulation and total change",
+    "subject": "Math",
+    "event_type": "plan_milestones",
+    "description": "After reviewing the learner's consistent difficulty with setting up initial value problems, the tutor initiates a check-in to adjust the study plan. They agree to add a dedicated milestone for 'Translating Word Problems' and reallocate time from later topics to allow for more foundational practice.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "The feedback from the last review (e_13) indicates a more fundamental issue than a simple calculation error, suggesting the current pacing may be too fast. Adjusting the study plan is a necessary strategic step to address this learning bottleneck before proceeding with new material."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Integrals as accumulation and total change",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "Following the study plan revision, the tutor conducts a targeted lesson on strategies for translating word problems into integral expressions. The lesson focuses on identifying the rate of change, initial condition, and time interval from a problem's narrative, and updates the teaching notes with a new framework for problem setup.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous event (e_14) explicitly added a milestone to address the learner's difficulty with word problems. This lesson directly implements the revised plan, using the specific issues from the last feedback summary (e_13) to create and deliver targeted instruction on this foundational skill before re-attempting practice."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Integrals as accumulation and total change",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "The learner is given a new set of word problems that require setting up an integral with an initial condition. This practice is specifically designed to test the problem-translation framework introduced in the previous lesson. The learner's setup process and final answers are recorded.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the targeted lesson on translating word problems (e_15), it is essential for the learner to apply these new strategies through practice. This session directly assesses the effectiveness of the remedial instruction and will provide the data needed for the next review cycle."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Integrals as accumulation and total change",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's most recent practice on word problems. The focus is on assessing whether the learner correctly applied the new framework for translating problem narratives into integral setups with initial conditions. A feedback summary is created to confirm success or pinpoint any lingering issues.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted practice session (e_16) that followed a remedial lesson (e_15), a review is essential to determine if the learner's foundational weakness with word problems has been resolved. This step closes the feedback loop on the recent study plan adjustment and will determine if the learner is ready to proceed."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Integrals as accumulation and total change",
+    "subject": "Math",
+    "event_type": "end",
+    "description": "The tutoring engagement concludes as the learner has successfully met the learning objectives. The final review confirmed their ability to solve complex accumulation problems, including translating word problems and applying initial conditions, which was the final major hurdle.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The previous review (e_17) confirmed that the learner has overcome their main difficulty and can now consistently solve the target problem types. With the core learning objectives achieved and the learner demonstrating stable performance after a targeted intervention, the tutoring process has reached a successful and logical conclusion."
+  }
+]

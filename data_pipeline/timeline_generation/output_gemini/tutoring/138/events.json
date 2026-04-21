@@ -1,0 +1,285 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Consistency in terminology and definitions",
+    "subject": "Writing",
+    "event_type": "objective_clarification",
+    "description": "Initial meeting with the learner, a junior technical writer, to discuss their difficulties with maintaining consistent terminology and definitions across a large documentation suite. The goal is to establish clear learning objectives for the tutoring engagement.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first event in the tutoring timeline. It is essential to start by clarifying the learner's goals, context, and desired outcomes to create a foundation for all subsequent planning and instruction."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Consistency in terminology and definitions",
+    "subject": "Writing",
+    "event_type": "plan_milestones",
+    "description": "Based on the clarified objectives, the tutor and learner co-create a staged study plan. The plan includes milestones for developing a style guide, creating a master glossary, and practicing with revision exercises on sample documents.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learning objectives defined in the first session, the next logical step is to create a structured plan. This 'study_plan' will serve as a roadmap for future lessons and practice, ensuring the tutoring is targeted and progressive."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Consistency in terminology and definitions",
+    "subject": "Writing",
+    "event_type": "lesson",
+    "description": "The tutor conducts the first lesson based on the study plan, focusing on the principles of creating and maintaining a master glossary. The lesson covers how to identify core terms, write clear definitions, and set usage standards.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a study plan in place, the next logical step is to start instruction. This lesson directly addresses a key milestone from the 'study_plan' (creating a glossary) and generates 'teaching_notes' which will serve as a reference for future practice."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Consistency in terminology and definitions",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "The learner is assigned a practice task to apply the concepts from the recent lesson. They are given a sample technical document and asked to identify at least 10 core terms and create initial definitions for them, forming a draft glossary.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson on creating a glossary, the next logical step is to apply that knowledge through targeted practice. This event uses the 'teaching_notes' as a guide and generates a 'practice_record' of the learner's attempt, which is essential for the upcoming review and feedback cycle."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Consistency in terminology and definitions",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's draft glossary from the practice session. The review focuses on the relevance of the chosen terms and the clarity, accuracy, and consistency of their definitions, comparing them against the principles from the lesson.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the 'practice' event where the learner created a draft glossary, the essential next step is to 'review' that work. This allows the tutor to assess understanding, identify specific areas for improvement, and generate actionable feedback, which is captured in the 'feedback_summary'."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Consistency in terminology and definitions",
+    "subject": "Writing",
+    "event_type": "materials_revision",
+    "description": "Based on the review of the learner's practice, the tutor refines the 'teaching_notes' on creating a glossary. The revisions add more examples of strong vs. weak definitions and a simple checklist for self-assessment, directly addressing the issues identified in the feedback.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After reviewing the learner's work and providing feedback, it became clear that the original teaching materials could be improved. This 'materials_revision' step uses the insights from the 'feedback_summary' to create a more effective version of the 'teaching_notes', which will better support the learner in their next practice attempt."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Consistency in terminology and definitions",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "The learner is assigned a second practice task to reinforce the previous feedback. They will revise their initial draft glossary, using the specific points from the feedback summary and the improved checklist in the revised teaching notes to create a more polished and consistent set of definitions.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes",
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After receiving feedback and having the teaching materials updated, the next logical step is for the learner to apply what they've learned in another round of practice. This allows them to directly address their previous mistakes and solidifies the concepts before moving on to a new topic."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Consistency in terminology and definitions",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's revised glossary from the second practice session. The review confirms that the learner successfully incorporated the previous feedback and used the updated checklist from the revised teaching notes, leading to a much-improved set of definitions.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the learner's second practice attempt (e_07), a 'review' is the necessary next step to evaluate their progress. This allows the tutor to validate that the feedback was understood and correctly applied, confirming mastery of this skill before proceeding to the next milestone in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Consistency in terminology and definitions",
+    "subject": "Writing",
+    "event_type": "lesson",
+    "description": "Having confirmed the learner's ability to create a glossary, the tutor moves to the next milestone in the study plan: developing a style guide. This lesson introduces the purpose of a style guide, how it complements a glossary, and its core components like rules for tone, voice, and formatting.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review confirmed the learner has mastered creating a glossary. According to the 'study_plan', the next logical step is to begin instruction on the next major milestone, which is developing a style guide. This lesson introduces a new, related concept, and the resulting 'teaching_notes' will support the next practice cycle."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Consistency in terminology and definitions",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "The learner is assigned a practice task to draft key sections of a style guide based on the previous lesson. They are asked to define rules for tone of voice, capitalization, and formatting for a sample document, applying the principles from the teaching notes.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on style guides, the most logical next step is for the learner to apply that theoretical knowledge in a practical exercise. This 'practice' event directly builds on the last lesson's 'teaching_notes' and generates a 'practice_record' of the attempt, which is essential for the next review and feedback cycle."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Consistency in terminology and definitions",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's drafted style guide sections. The review assesses how well the learner applied the concepts of tone, voice, and formatting, comparing their work against the principles outlined in the teaching notes.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the 'practice' of drafting a style guide (e_10), the essential next step is to 'review' that work. This allows the tutor to evaluate the learner's application of the concepts, identify any misunderstandings, and produce a 'feedback_summary' with actionable advice."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Consistency in terminology and definitions",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "The learner is assigned a practice task to revise their draft style guide sections based on the tutor's feedback. They focus on making the rules for tone and formatting more specific and providing clear examples, directly addressing the points from the feedback summary.",
+    "required_artifacts": [
+      "feedback_summary",
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After receiving targeted feedback on their first attempt at drafting a style guide, the most logical next step is for the learner to apply those corrections. This second 'practice' event allows them to revise their previous work ('practice_record') using the 'feedback_summary', reinforcing the concepts before moving on."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Consistency in terminology and definitions",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's revised style guide sections from the second practice attempt. The goal is to confirm that the feedback was successfully incorporated and the rules for tone and formatting are now specific and clear.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner revised their work in the previous 'practice' event (e_12), the necessary next step is a 'review' to assess their progress. This allows the tutor to verify that the prior feedback was understood and applied correctly, confirming mastery before moving on to the next milestone."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Consistency in terminology and definitions",
+    "subject": "Writing",
+    "event_type": "lesson",
+    "description": "Now that the learner has mastered creating a glossary and a style guide, the tutor conducts a lesson on how to integrate and apply these tools. The lesson focuses on a systematic workflow for reviewing a document, using the glossary for term consistency and the style guide for tone, voice, and formatting.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review confirmed the learner's mastery of the style guide component. With both core skills established, the study plan indicates it's time to practice applying them. This lesson provides the necessary instruction on how to integrate these tools for a comprehensive document revision, preparing the learner for the final practice milestone."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Consistency in terminology and definitions",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "The learner is given a new sample technical document and tasked with performing a full review. They must use their previously created glossary and style guide to identify and correct inconsistencies in both terminology and style, applying the systematic workflow taught in the last lesson.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on integrating the glossary and style guide (e_14), the next step is to apply this comprehensive skill in a final practice exercise. This task aligns with the final milestone in the 'study_plan' and will generate a 'practice_record' of their full revision process for a final assessment."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Consistency in terminology and definitions",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor conducts a final review of the learner's comprehensive document revision from the capstone practice task. This review assesses the learner's ability to independently use their glossary and style guide to enforce consistency across a full document.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the comprehensive 'practice' event (e_15), a final 'review' is the necessary next step to provide a summative assessment of the learner's skills. This step will determine if the overall learning objectives have been met and will produce a final 'feedback_summary' outlining their performance and readiness."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Consistency in terminology and definitions",
+    "subject": "Writing",
+    "event_type": "end",
+    "description": "The final review confirmed the learner's successful application of the glossary and style guide in a comprehensive revision task. With all learning objectives met and the learner now capable of independently maintaining consistency, the tutoring engagement is formally concluded.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has successfully progressed through all milestones in the study plan, from creating individual tools to integrating them in a final capstone project. The final review (e_16) confirmed mastery of the core skills, making this a natural and successful conclusion to the tutoring process."
+  }
+]

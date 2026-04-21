@@ -1,0 +1,331 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Political ideologies and how arguments are framed",
+    "subject": "PoliticalScience",
+    "event_type": "objective_clarification",
+    "description": "Initial session to understand the learner's goals. We discussed their existing knowledge of political science, their interest in identifying ideological framing in media, and their desire to construct more persuasive arguments for their debate club.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "As this is the first session, it's essential to establish the learner's goals, background, and desired outcomes. This clarification provides the foundation for creating a structured and relevant study plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Political ideologies and how arguments are framed",
+    "subject": "PoliticalScience",
+    "event_type": "plan_milestones",
+    "description": "Based on the learning objectives, we drafted a study plan with three main milestones: 1) Understanding core political ideologies (liberalism, conservatism, socialism), 2) Identifying rhetorical and framing techniques, and 3) Applying these concepts to analyze media and construct arguments.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learner's goals clarified in the previous session, the next logical step is to structure the tutoring process. Creating a study plan translates the high-level objectives into a concrete roadmap with clear milestones, setting expectations and guiding future lessons."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Political ideologies and how arguments are framed",
+    "subject": "PoliticalScience",
+    "event_type": "lesson",
+    "description": "Conducted the first lesson, focusing on Milestone 1 of the study plan. We covered the core tenets, historical development, and key thinkers of liberalism, conservatism, and socialism.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the study plan established, the next logical step is to begin instruction. This lesson directly addresses the first milestone, providing the foundational conceptual knowledge required for later analysis and application."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Political ideologies and how arguments are framed",
+    "subject": "PoliticalScience",
+    "event_type": "practice",
+    "description": "Assigned a practice task to check understanding of the first lesson. The learner was given several short political statements and asked to identify which of the three ideologies (liberalism, conservatism, socialism) each statement best represents and to justify their choices.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following a foundational lesson, it is crucial to move from passive learning to active application. This practice session requires the learner to apply the concepts from the teaching notes, providing a tangible measure of their comprehension and creating a record for subsequent review."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Political ideologies and how arguments are framed",
+    "subject": "PoliticalScience",
+    "event_type": "review",
+    "description": "Reviewed the learner's submissions from the practice task. The review identified a common pattern of confusing social liberalism with socialism and noted difficulty in distinguishing between core conservative principles and their populist expressions. Feedback was prepared to address these specific points.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session (e_04), a review is the logical next step to assess the learner's understanding. Analyzing the 'practice_record' allows the tutor to identify specific misconceptions and generate actionable feedback, ensuring that foundational knowledge is solid before proceeding to the next topic."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Political ideologies and how arguments are framed",
+    "subject": "PoliticalScience",
+    "event_type": "materials_revision",
+    "description": "Based on the review, the teaching notes were revised to address the learner's confusion. A new section was added with a comparison table to clearly distinguish social liberalism from socialism, and more nuanced examples were included to separate core conservative principles from populist rhetoric.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in the previous event (e_05) highlighted specific conceptual difficulties. Revising the 'teaching_notes' to directly address these points is a crucial step to reinforce learning, correct misconceptions at their source, and provide the learner with a clearer reference before attempting practice again."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Political ideologies and how arguments are framed",
+    "subject": "PoliticalScience",
+    "event_type": "practice",
+    "description": "Conducted a follow-up practice session using the revised teaching notes. The learner was given a new set of political statements specifically designed to test their ability to distinguish between social liberalism and socialism, and to separate core conservative ideas from populist rhetoric.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After identifying specific misconceptions (e_05) and revising the teaching materials to address them (e_06), a targeted practice session is necessary. This step ensures the learner has successfully overcome their previous difficulties before advancing to new topics in the study plan."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Political ideologies and how arguments are framed",
+    "subject": "PoliticalScience",
+    "event_type": "review",
+    "description": "Reviewed the results of the follow-up practice session. The learner demonstrated a much stronger grasp of the material, correctly identifying the distinctions between social liberalism/socialism and conservatism/populism. The feedback summary confirmed this progress, marking Milestone 1 as complete.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted practice session (e_07), a review is essential to confirm that the learner's previous misconceptions have been resolved. This step validates the effectiveness of the revised materials and follow-up practice, ensuring the learner is on solid ground before moving to the next milestone in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Political ideologies and how arguments are framed",
+    "subject": "PoliticalScience",
+    "event_type": "lesson",
+    "description": "Began Milestone 2 of the study plan. This lesson introduced the concepts of framing theory and common rhetorical devices used in political discourse, such as ad hominem attacks, strawman arguments, and appeals to emotion.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_08) confirmed the learner's mastery of Milestone 1. Following the 'study_plan', the next logical step is to introduce the core concepts of Milestone 2, providing the theoretical foundation for identifying how political arguments are framed."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Political ideologies and how arguments are framed",
+    "subject": "PoliticalScience",
+    "event_type": "practice",
+    "description": "To reinforce the lesson on framing and rhetoric, the learner was given several excerpts from political speeches and op-eds. Their task was to identify instances of specific rhetorical devices (e.g., strawman, ad hominem) and describe the overall framing of the argument in each piece.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the theoretical lesson on framing and rhetoric (e_09), it is essential to move to practical application. This practice session requires the learner to actively identify these new concepts in real-world examples, creating a record of their attempt for the next review session."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Political ideologies and how arguments are framed",
+    "subject": "PoliticalScience",
+    "event_type": "review",
+    "description": "Reviewed the learner's analysis from the practice session on rhetoric. The learner successfully identified obvious rhetorical devices but had difficulty explaining the overall 'framing' of the arguments. Feedback was prepared to clarify the distinction between a specific device and the broader narrative frame.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session (e_10), a review is the logical next step to assess the learner's comprehension. Analyzing the 'practice_record' against the 'teaching_notes' allows the tutor to identify specific difficulties and generate targeted feedback, ensuring the concepts of Milestone 2 are fully understood before moving on."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Political ideologies and how arguments are framed",
+    "subject": "PoliticalScience",
+    "event_type": "materials_revision",
+    "description": "In response to the feedback from the last review, the teaching notes on framing were revised. A new section was added with an analogy (e.g., framing as the 'lens' through which an issue is viewed) and side-by-side examples to contrast a specific rhetorical device with the broader narrative frame it supports.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_11) revealed a specific gap in the learner's understanding of 'framing'. Directly revising the 'teaching_notes' to provide clearer definitions and more illustrative examples is a necessary step to address this misconception before re-assessing the learner's comprehension with further practice."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Political ideologies and how arguments are framed",
+    "subject": "PoliticalScience",
+    "event_type": "practice",
+    "description": "Conducted a targeted practice session using the newly revised teaching notes. The learner was given a new set of op-eds and asked to first identify the overall narrative frame for each article, and then list the specific rhetorical devices used to support that frame.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials (e_12) to address the learner's difficulty with the concept of 'framing', a targeted practice session is essential. This step will verify if the new materials have clarified the concept and allow the learner to apply their improved understanding before moving on."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Political ideologies and how arguments are framed",
+    "subject": "PoliticalScience",
+    "event_type": "review",
+    "description": "Reviewed the learner's submissions from the targeted practice on framing. The learner now correctly identifies the broader narrative frame of an argument and can list the specific rhetorical devices that support it. The feedback summary confirms this improved understanding, marking Milestone 2 as complete.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice session (e_13), a review is critical to confirm that the revised teaching materials (e_12) were effective. This step validates the learner's grasp of Milestone 2 concepts, ensuring they are ready to proceed to the final milestone of applying all learned concepts."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Political ideologies and how arguments are framed",
+    "subject": "PoliticalScience",
+    "event_type": "lesson",
+    "description": "Began Milestone 3, focusing on synthesis. This lesson teaches a structured method for analyzing political media by first identifying the underlying ideology (Milestone 1), then deconstructing the argument's frame and rhetorical devices (Milestone 2), and finally explaining how the latter serves the former.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With Milestones 1 and 2 successfully completed (confirmed in e_14), the next logical step according to the study plan is to begin Milestone 3. This lesson synthesizes the previously separate concepts, providing a clear methodology for the learner to apply in the upcoming final practice tasks."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Political ideologies and how arguments are framed",
+    "subject": "PoliticalScience",
+    "event_type": "practice",
+    "description": "Assigned a final, comprehensive practice task aligned with Milestone 3. The learner was given a recent op-ed and asked to write a full analysis, identifying the core ideology, the main argument frame, the specific rhetorical devices used, and explaining how these elements work together to create a persuasive piece.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on synthesis (e_15), this capstone practice task is the necessary next step. It requires the learner to integrate all skills from Milestones 1, 2, and 3, providing a practical demonstration of their overall competence before a final review."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Political ideologies and how arguments are framed",
+    "subject": "PoliticalScience",
+    "event_type": "review",
+    "description": "Reviewed the learner's comprehensive analysis from the capstone practice task. The learner successfully integrated concepts from all three milestones, correctly identifying the ideology, frame, and rhetorical devices, and explaining their interplay. Feedback was prepared to affirm their mastery of analysis and to introduce the final challenge: constructing an argument.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the capstone practice task (e_16), a final, comprehensive review is essential to evaluate the learner's ability to synthesize all the concepts taught. This review confirms their mastery of the analytical portion of their goals and provides the formal feedback needed to transition to the final objective of argument construction."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Political ideologies and how arguments are framed",
+    "subject": "PoliticalScience",
+    "event_type": "practice",
+    "description": "To address the final learning objective, the learner was tasked with constructing an argument. They were given a debate topic ('The role of government in regulating social media') and an ideological stance (e.g., classical liberal), and asked to write a short opening statement using a specific frame and rhetorical devices.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "The previous review (e_17) confirmed the learner's mastery of analysis. To fulfill the final objective of constructing arguments, the next logical step is a practical exercise in creation, applying all the learned concepts of ideology, framing, and rhetoric to address their debate club goals."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Political ideologies and how arguments are framed",
+    "subject": "PoliticalScience",
+    "event_type": "review",
+    "description": "Reviewed the learner's attempt at constructing an argument from the previous practice session. The tutor assessed the coherence of the ideological stance, the clarity of the chosen frame, and the appropriate use of rhetorical devices. Final feedback was prepared, highlighting strengths and areas for minor refinement.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practical exercise in argument construction (e_18), a review is the necessary next step to provide feedback. This final review evaluates the learner's ability to synthesize and apply all course concepts, directly addressing their primary objective of improving their debate skills."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Political ideologies and how arguments are framed",
+    "subject": "PoliticalScience",
+    "event_type": "end",
+    "description": "Final wrap-up session. We reviewed the learner's progress against the initial objectives, confirming that all milestones in the study plan have been successfully met. The learner is now confident in their ability to analyze political arguments and construct their own for their debate club.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has demonstrated mastery of all three milestones, including the final capstone tasks of analyzing and constructing arguments. With all learning objectives from e_01 met and performance validated through multiple practice-review cycles (e.g., e_18 and e_19), the formal tutoring process is now complete."
+  }
+]

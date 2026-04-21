@@ -1,0 +1,385 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Curriculum learning for foundation models",
+    "subject": "CS-AI/ML",
+    "event_type": "proposal",
+    "description": "Initial project proposal defining the core research questions and high-level goals. The project aims to investigate how curriculum learning can improve the efficiency and performance of training large-scale foundation models.",
+    "required_artifacts": [
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the first event of the project, establishing the foundational direction. It requires the conceptual need for research goals and formalizes them into the first concrete 'research_goals' artifact, while also creating an initial 'research_plan'."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Curriculum learning for foundation models",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "Based on the research goals, a detailed methodological scheme is designed. This includes selecting a specific foundation model architecture (e.g., a small-scale Transformer), defining the curriculum strategy (e.g., data difficulty based on perplexity), and outlining the evaluation metrics (e.g., downstream task performance vs. training steps).",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "With the high-level research goals and plan established in e_01, the next logical step is to design a concrete experimental methodology. This 'scheme_design' event translates the abstract ideas into a testable setup, creating the initial 'method_scheme' artifact needed for future experiments."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Curriculum learning for foundation models",
+    "subject": "CS-AI/ML",
+    "event_type": "pilot_experiments",
+    "description": "Small-scale pilot experiments are conducted to validate the designed curriculum strategy. This involves training the small Transformer model on a tiny data subset to ensure the data ordering mechanism functions correctly and to get a preliminary indication of its effect on learning speed compared to a random baseline.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing the experimental setup in e_02, it is crucial to run pilot experiments to validate the methodology and debug the implementation before committing to costly, large-scale runs. This step generates the first 'experiment_results', providing an initial signal on the viability of the proposed curriculum."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Curriculum learning for foundation models",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The results from the pilot experiments are analyzed. The analysis shows that the perplexity-based curriculum provides a small but noticeable improvement in convergence speed over the random baseline, but the effect is sensitive to the curriculum's pacing function. This suggests the approach is promising but requires careful tuning.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After conducting pilot experiments in e_03, a formal analysis is the logical next step to interpret the initial data. This analysis assesses the viability of the current method, identifies key sensitivities, and provides the necessary insights to decide whether to proceed to main experiments or revise the scheme."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Curriculum learning for foundation models",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "Based on the analysis of pilot results, the methodological scheme is revised. The revision specifically targets the curriculum's pacing function, designing a new set of experiments to compare several functional forms (e.g., linear, exponential, and step-wise) to systematically study their impact on model convergence.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous analysis (e_04) identified the pacing function as a critical but sensitive component of the curriculum. It is prudent to refine the experimental plan to explicitly investigate this variable before committing resources to large-scale main experiments. This represents a classic research loop of pilot-analysis-refine."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Curriculum learning for foundation models",
+    "subject": "CS-AI/ML",
+    "event_type": "main_experiments",
+    "description": "The main set of experiments is launched based on the revised scheme. This involves training the model with each of the different pacing functions (linear, exponential, step-wise) against the random baseline, using a larger dataset and more training steps to gather robust results on convergence and final performance.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After refining the experimental design in e_05 to specifically investigate pacing functions, the logical next step is to execute these main experiments. This moves the project from the pilot phase into the core data collection phase, aiming to produce the primary results needed to answer the research questions."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Curriculum learning for foundation models",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The results from the main experiments are comprehensively analyzed. The analysis reveals that the exponential pacing function provides the fastest convergence without sacrificing final model performance, outperforming both linear and step-wise functions. The random baseline is consistently the worst-performing, confirming the core hypothesis.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "Following the execution of main experiments in e_06, a detailed analysis is necessary to interpret the findings and answer the research questions. This step synthesizes the results, determines the most effective curriculum strategy among the tested variants, and begins to translate these findings into a narrative for the paper by generating the first 'paper_paragraph' summarizing the key result."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Curriculum learning for foundation models",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "With the main results and analysis from the pacing function experiments complete, the team begins drafting the core sections of the research paper. This involves writing a detailed description of the methodology and a comprehensive presentation of the results, including figures showing the performance curves for different pacing functions.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The main experiments and analysis (e_07) have yielded clear, positive results confirming the project's hypothesis. It is a natural and productive next step to begin formally documenting these findings by drafting the methodology and results sections of the paper, building on the initial paragraph already generated."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Curriculum learning for foundation models",
+    "subject": "CS-AI/ML",
+    "event_type": "proposal",
+    "description": "After successfully demonstrating the curriculum's effectiveness on a small model, the team revisits the initial research plan. To address the 'foundation model' aspect of the project more directly, they decide to expand the scope and add a new goal: verifying that the findings on pacing functions generalize to larger-scale models.",
+    "required_artifacts": [
+      "research_plan",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "research_plan",
+      "research_goals"
+    ],
+    "reason": "The strong results from e_07 provide confidence in the method but are limited to a small-scale setup. To make a more impactful contribution, it is a logical and common research practice to revise the plan and test if the findings scale. This event updates the project's high-level goals and plan to include experiments on a larger model, directly addressing the original ambition of the project."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Curriculum learning for foundation models",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "To address the new goal of testing scalability, the experimental scheme is updated. This involves selecting a larger foundation model (e.g., a 1B parameter Transformer), identifying a suitable pre-training dataset, and adapting the best-performing exponential pacing curriculum for the increased scale and computational budget.",
+    "required_artifacts": [
+      "research_plan",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the decision in e_09 to test the curriculum's effectiveness on larger models, the immediate next step is to design the corresponding experimental setup. This event adapts the previously successful methodology (the 'method_scheme') to the new scale, translating the updated 'research_goals' into a concrete and executable plan."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Curriculum learning for foundation models",
+    "subject": "CS-AI/ML",
+    "event_type": "pilot_experiments",
+    "description": "A pilot experiment is run for the large-scale setup. The 1B parameter model is trained for a small number of steps to sanity-check the implementation, validate the data pipeline at scale, and ensure there are no immediate memory or computational bottlenecks with the adapted curriculum.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing the large-scale experiment in e_10, running a pilot is a crucial risk-mitigation step. Before committing extensive computational resources to a full training run, this sanity check ensures the technical setup is sound and provides an early indication that the curriculum logic operates as expected at the new scale."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Curriculum learning for foundation models",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The results from the large-scale pilot run are analyzed. The analysis confirms the technical setup is stable: the data pipeline functions correctly, and no memory or computational bottlenecks were encountered. The initial learning curves, though short, show the curriculum-based model's loss decreasing slightly faster than the random baseline, providing a positive signal to proceed.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After running the technical pilot in e_11, a formal analysis is the necessary next step. This analysis validates the feasibility of the large-scale experimental design (from e_10) and provides the final green light before committing significant computational resources to the full main experiments."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Curriculum learning for foundation models",
+    "subject": "CS-AI/ML",
+    "event_type": "main_experiments",
+    "description": "The full-scale main experiments are launched for the 1B parameter model. Following the validated scheme, the model is trained from scratch using the exponential pacing curriculum and compared against a random data-ordering baseline over a long training run to assess the scalability of the findings.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With the large-scale experimental setup technically validated in the pilot run (e_11) and its analysis (e_12), the project now proceeds to the main data collection phase. This event executes the plan from e_09 to test the generalization of the curriculum learning benefits to a foundation-scale model."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Curriculum learning for foundation models",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "After the long-running experiments on the 1B parameter model complete, the team performs a detailed analysis. The results are surprising: while the curriculum-trained model shows faster initial convergence as expected, its final performance plateaus at a slightly worse perplexity than the random baseline, which eventually catches up and surpasses it. This suggests a potential trade-off between speed and final quality at scale.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After completing the large-scale main experiments in e_13, the essential next step is to analyze the collected data. This analysis is critical for determining if the curriculum's benefits generalized to the larger model, directly addressing the revised research goal from e_09. The unexpected negative result makes this analysis a pivotal moment in the project."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Curriculum learning for foundation models",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "To understand the surprising negative result at scale, the team hypothesizes that the pure curriculum starves the model of difficult examples late in training, hurting its final performance. A new hybrid curriculum scheme is designed that starts with the exponential pacing curriculum but gradually transitions to fully random data sampling in the final phase of training.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The unexpected negative result from the large-scale experiment (e_14) requires a direct response. Rather than abandoning the approach, the team formulates a hypothesis for the failure and designs a new methodological scheme to test a potential fix. This represents a critical problem-solving loop in the research process."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Curriculum learning for foundation models",
+    "subject": "CS-AI/ML",
+    "event_type": "pilot_experiments",
+    "description": "A small-scale pilot run is conducted using the new hybrid curriculum scheme on the 1B parameter model. The goal is to verify that the transition from curriculum-based to random sampling is implemented correctly and to get an early signal on whether this approach mitigates the performance degradation seen previously.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing a new hybrid curriculum scheme in e_15 to address a critical issue, a pilot experiment is the most logical and resource-efficient next step. It serves to validate the implementation of the new method and provide early evidence for its effectiveness before committing to a full-scale, expensive main experiment."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Curriculum learning for foundation models",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The results from the pilot run of the hybrid curriculum are analyzed. The analysis indicates that the hybrid approach successfully maintains the initial fast convergence of the pure curriculum, while its learning curve in the later stages trends more positively, suggesting it might avoid the performance plateau and eventually match or exceed the random baseline.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the pilot experiment of the new hybrid curriculum in e_16, a detailed analysis is crucial. This step evaluates the viability of the proposed fix before committing to another costly, full-scale experiment, providing the critical go/no-go signal for the next phase of research."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "Curriculum learning for foundation models",
+    "subject": "CS-AI/ML",
+    "event_type": "main_experiments",
+    "description": "Based on the promising pilot results for the hybrid curriculum, a full-scale main experiment is launched. The 1B parameter model is trained using the new hybrid scheme and compared against both the pure exponential curriculum and the random baseline to conclusively determine if it resolves the performance degradation issue.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The pilot analysis in e_17 was positive, suggesting the hybrid curriculum is a viable solution to the problem identified in e_14. The logical next step is to run a full main experiment to gather robust, conclusive evidence and confirm this hypothesis before proceeding to final writing."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "research",
+    "topic": "Curriculum learning for foundation models",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The conclusive results from the large-scale hybrid curriculum experiment are analyzed. The findings are highly positive: the hybrid approach successfully combines the benefits of both worlds, achieving the rapid initial convergence of the pure curriculum while also matching the strong final performance of the random baseline. This confirms the hypothesis that exposing the model to harder, random examples late in training is crucial for optimal performance at scale.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After completing the final set of main experiments in e_18, a comprehensive analysis is required to determine if the hybrid curriculum successfully resolved the performance issues at scale. This step is critical for validating the project's final proposed method and generating the key conclusions for the research paper."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "research",
+    "topic": "Curriculum learning for foundation models",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "The team dedicates a significant block of time to writing a full draft of the paper. This involves integrating the latest successful results from the hybrid curriculum, structuring the paper's narrative to include the initial scaling failure and the subsequent solution, and completing the introduction, abstract, and conclusion sections.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the final, conclusive results from the hybrid curriculum experiments analyzed in e_19, the main research story is complete. The most logical next step is to synthesize all the findings, including the intermediate challenges and solutions, into a comprehensive draft of the research paper."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "research",
+    "topic": "Curriculum learning for foundation models",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "The full paper draft undergoes an internal review cycle with all co-authors. Based on the feedback, the team revises the paper to improve clarity, strengthen the narrative, and better position the work relative to existing literature. Specific attention is given to polishing the abstract and introduction.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After producing a full draft (e_20), a crucial next step is internal review and revision to improve the quality and impact of the paper before considering submission. This event represents that iterative refinement process, moving the paper from a complete draft to a polished, submission-ready manuscript."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "research",
+    "topic": "Curriculum learning for foundation models",
+    "subject": "CS-AI/ML",
+    "event_type": "end",
+    "description": "The research project is concluded. The team has successfully developed and validated a hybrid curriculum learning strategy, analyzed the results, and produced a polished, internally reviewed manuscript that is ready for submission to a top-tier conference or journal.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached a natural conclusion. The initial research goals have been met, a significant and unexpected challenge was overcome with a revised method, conclusive results have been obtained, and a full paper draft has been written and revised. The core research cycle is complete, making this a logical endpoint for the timeline."
+  }
+]

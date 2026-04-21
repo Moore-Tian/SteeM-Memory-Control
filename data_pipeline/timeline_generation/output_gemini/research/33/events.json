@@ -1,0 +1,335 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Ethical risk assessment frameworks",
+    "subject": "CS-AI/ML",
+    "event_type": "proposal",
+    "description": "The project begins by outlining the initial research questions and creating a high-level plan. The core idea is to develop a new framework for assessing ethical risks in AI systems by comparing existing qualitative and quantitative methods.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the first event, so it has no prerequisite artifacts. A 'proposal' event is the most logical starting point for any research project, as it establishes the foundational 'research_goals' and a 'research_plan' that will guide all subsequent work."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Ethical risk assessment frameworks",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "Based on the initial plan, the team designs the core methodology. This involves selecting representative qualitative (e.g., ethics checklists) and quantitative (e.g., utility-based scoring) frameworks and defining the comparison criteria, such as comprehensiveness, actionability, and scalability.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "With the high-level 'research_goals' and 'research_plan' established in e_01, the next logical step is to design the specific experimental methodology. This 'scheme_design' event translates the abstract goals into a concrete 'method_scheme' that will guide the subsequent experiments."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Ethical risk assessment frameworks",
+    "subject": "CS-AI/ML",
+    "event_type": "pilot_experiments",
+    "description": "A small-scale pilot study is conducted to test the designed methodology. The team applies the selected qualitative and quantitative frameworks to a single, well-defined AI case study (e.g., a hypothetical hiring algorithm) to check the feasibility of the comparison criteria and uncover potential procedural issues.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the 'scheme_design' in e_02, running 'pilot_experiments' is a logical next step to validate the methodology before committing to a larger study. This sanity-check ensures the designed comparison is practical and generates initial 'experiment_results' that will inform the main experiments."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Ethical risk assessment frameworks",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The team formally analyzes the results from the pilot experiment. The analysis reveals that the quantitative framework is difficult to apply consistently, showing low inter-rater reliability, and the qualitative checklist fails to capture certain nuanced social biases.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After conducting 'pilot_experiments' (e_03), a formal 'analysis' is the necessary next step to interpret the findings. This event uses the initial 'experiment_results' to evaluate the 'method_scheme', and its output—a 'paper_paragraph' summarizing the pilot's limitations—justifies the need to revisit the methodology before starting the main experiments."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Ethical risk assessment frameworks",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "In response to the pilot study's findings, the team revises the experimental methodology. They decide to replace the problematic quantitative framework with a more structured multi-criteria decision analysis (MCDA) model and enhance the qualitative checklist with prompts for considering intersectional biases.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis in e_04 revealed critical flaws in the original 'method_scheme' based on pilot 'experiment_results'. It is therefore essential to return to the 'scheme_design' stage to revise the methodology. This iterative step addresses the identified weaknesses before committing resources to main experiments, ensuring the new plan is better aligned with the 'research_goals'."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Ethical risk assessment frameworks",
+    "subject": "CS-AI/ML",
+    "event_type": "pilot_experiments",
+    "description": "A second, more focused pilot study is conducted using the revised methodology. The team applies the new MCDA model and the enhanced qualitative checklist to the original case study to confirm that the previously identified issues (low inter-rater reliability and missed biases) are now resolved.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After significantly revising the 'method_scheme' in e_05, it is prudent to run another 'pilot_experiment' to validate the changes. This step ensures the new approach is sound and addresses the flaws found in the initial pilot's analysis (e_04) before committing to the larger, more resource-intensive main experiments."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Ethical risk assessment frameworks",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The team analyzes the results from the second pilot study. The findings are positive, confirming that the revised MCDA model shows significantly higher inter-rater reliability and the enhanced checklist successfully prompts the identification of previously missed intersectional biases.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After conducting a second 'pilot_experiment' (e_06) with a revised 'method_scheme', the immediate next step is to perform an 'analysis' of the new 'experiment_results'. This step is crucial to formally validate that the methodological revisions from e_05 were successful, thus justifying the decision to proceed with the main experiments."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Ethical risk assessment frameworks",
+    "subject": "CS-AI/ML",
+    "event_type": "main_experiments",
+    "description": "With the methodology validated, the team launches the main experiments. They apply the revised MCDA model and enhanced qualitative checklist across a diverse set of ten AI case studies, including autonomous vehicles, predictive policing, and medical diagnosis, to gather robust comparative data on their effectiveness.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The successful analysis of the second pilot study (e_07) confirmed the revised 'method_scheme' is effective. Therefore, the project can now progress from pilot testing to the 'main_experiments' phase, applying the validated methodology at scale as outlined in the 'research_plan' to generate the core 'experiment_results' for the study."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Ethical risk assessment frameworks",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The team begins a comprehensive analysis of the data gathered from the main experiments. This involves statistically comparing the performance of the MCDA and qualitative frameworks across the ten case studies, focusing on the predefined criteria of comprehensiveness, actionability, and scalability. The goal is to synthesize the findings and draw robust conclusions about the relative strengths of each approach.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "Having collected extensive data from the 'main_experiments' (e_08), the logical next step is a thorough 'analysis'. This event is crucial for interpreting the large-scale 'experiment_results' in the context of the 'method_scheme' and original 'research_goals', and for summarizing the core findings into a 'paper_paragraph' that will form the basis of the results section."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Ethical risk assessment frameworks",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "The team drafts the 'Results' section of the research paper. This draft details the comparative findings, highlighting that the MCDA model consistently produced more actionable and specific recommendations, while the qualitative checklist proved superior at identifying novel, unanticipated ethical risks not covered by predefined criteria.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the comprehensive analysis in e_09, which produced summary findings, a 'writing' event is the natural next step to formally document the results. This leverages the synthesized 'experiment_results' and previous 'paper_paragraph' summaries to create a detailed draft of a core section of the final paper, and it is the first time this event type appears."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Ethical risk assessment frameworks",
+    "subject": "CS-AI/ML",
+    "event_type": "proposal",
+    "description": "The analysis of the main experiments revealed that the qualitative and quantitative frameworks have complementary strengths. This insight prompts the team to revise the project's primary goal from simply comparing frameworks to proposing a novel hybrid model that integrates the strengths of both.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "The main 'experiment_results' (e_09) and the process of writing them up (e_10) highlighted a major finding that changes the project's trajectory. A 'proposal' event is necessary to formally update the 'research_goals' and 'research_plan' to focus on creating a new, superior hybrid framework, reflecting how research evolves based on emerging evidence."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Ethical risk assessment frameworks",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "Following the updated research goal, the team designs the new hybrid ethical risk assessment framework. The design specifies how to first use the qualitative checklist to identify and scope risks, which then serve as the criteria and inputs for the quantitative MCDA model, creating an integrated workflow.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan",
+      "method_scheme",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "After revising the 'research_goals' in e_11 to focus on creating a hybrid model, the immediate next step is 'scheme_design'. This event translates the new, more ambitious goal into a concrete 'method_scheme' for the proposed hybrid framework, drawing on lessons from the prior 'experiment_results'."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Ethical risk assessment frameworks",
+    "subject": "CS-AI/ML",
+    "event_type": "pilot_experiments",
+    "description": "The team conducts a pilot study to validate the newly designed hybrid framework. They apply the integrated workflow to two of the case studies from the main experiment (predictive policing and medical diagnosis) to assess its usability and whether it successfully combines the strengths of the separate approaches.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After creating a new 'method_scheme' for the hybrid model in e_12, the logical next step is to run 'pilot_experiments' to test its real-world viability. This step is crucial for validating the new integrated approach before a larger evaluation, using previous 'experiment_results' as a baseline for comparison."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Ethical risk assessment frameworks",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The team formally analyzes the results from the hybrid model pilot study. The analysis confirms that the integrated framework successfully leverages the qualitative checklist for broad risk identification and the MCDA model for structured, actionable prioritization, outperforming either method used in isolation on the selected case studies.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After conducting a pilot experiment on the new hybrid model (e_13), a formal 'analysis' of the 'experiment_results' is the necessary next step. This event validates whether the new 'method_scheme' achieves the updated 'research_goals', providing the critical evidence needed to either refine the model or proceed with writing up the final results."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Ethical risk assessment frameworks",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "With the hybrid model now validated, the team drafts the core 'Methodology' section of the paper. This draft describes the final proposed framework, detailing the two-stage process: first using the qualitative checklist for exploratory risk discovery, and then using those outputs to populate the criteria for the quantitative MCDA model.",
+    "required_artifacts": [
+      "method_scheme",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The analysis in e_14 successfully validated the new hybrid 'method_scheme'. The logical next step is to formally document this final, core contribution. This 'writing' event translates the validated 'method_scheme' into a key section of the paper, framing it with the updated 'research_goals' and integrating it with previously written 'paper_paragraph' sections."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Ethical risk assessment frameworks",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "The team writes the 'Discussion' section of the paper, synthesizing the entire project narrative. This section explains how the initial comparative analysis led to the key insight about complementary strengths, justifies the shift in research goals toward a hybrid model, and interprets the final pilot results as a successful proof-of-concept for the integrated framework.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the final methodology (e_15) and its validation (e_14) complete, the next logical step is to synthesize the project's full arc. Writing the 'Discussion' forces the team to connect the initial 'experiment_results' with the updated 'research_goals' and the final hybrid model, creating the overarching narrative that will frame the entire paper and articulate its core contribution."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Ethical risk assessment frameworks",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "The team now assembles a complete first draft of the paper. This involves writing the Introduction and Conclusion, integrating the previously drafted Methodology and Discussion sections, and revising the original Results section to serve as the motivation for the development of the final hybrid model.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With all major research activities complete and key sections like Methodology (e_15) and Discussion (e_16) drafted, the project is moving towards its conclusion. This 'writing' event is the logical next step, focusing on consolidating all existing 'paper_paragraph' artifacts and 'experiment_results' into a single, coherent document that tells the full story from the initial comparison to the final hybrid model, guided by the final 'research_goals'."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "Ethical risk assessment frameworks",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "The research team conducts an internal review of the complete first draft. Feedback focuses on improving the narrative flow, strengthening the connection between the initial comparative study and the final hybrid model, and clarifying the practical implications of the proposed framework in the Discussion and Conclusion.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After assembling a full draft (e_17), a crucial next step in the research process is internal review and revision. This 'writing' event ensures the various 'paper_paragraph' components are integrated into a single, polished, and coherent narrative, sharpening the paper's core arguments before seeking external feedback."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "research",
+    "topic": "Ethical risk assessment frameworks",
+    "subject": "CS-AI/ML",
+    "event_type": "end",
+    "description": "The research project concludes. The team has successfully developed and validated a novel hybrid ethical risk assessment framework, and a complete, internally-reviewed manuscript detailing the entire research journey and its findings is now ready for submission to a conference or journal.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached a natural conclusion. It has progressed from an initial comparative study to the creation and validation of a novel hybrid model, and a complete paper draft has been written and internally reviewed (e_18). With all research goals met and documented, the project is considered complete from a research and development perspective."
+  }
+]

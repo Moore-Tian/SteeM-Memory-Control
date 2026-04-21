@@ -1,0 +1,335 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Electrochemical system modeling",
+    "subject": "Chemistry",
+    "event_type": "proposal",
+    "description": "The project begins by defining its core questions and a high-level plan. The initial aim is to develop a predictive multi-scale model for degradation in lithium-ion batteries.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the first event of the research project. It starts from a conceptual idea to establish the foundational artifacts: the specific research goals and an initial research plan. No prior artifacts are required as this is the starting point."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Electrochemical system modeling",
+    "subject": "Chemistry",
+    "event_type": "scheme_design",
+    "description": "Based on the research goals, the team designs the initial methodological framework. The plan is to develop a coupled continuum model that links particle-scale stress mechanics with electrode-scale electrochemical processes to capture degradation phenomena.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "With the high-level research plan and goals established in the proposal (e_01), the natural next step is to design the specific technical approach. This 'scheme_design' event translates the abstract goals into a concrete methodological plan, creating the initial 'method_scheme' that will guide the subsequent modeling work."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Electrochemical system modeling",
+    "subject": "Chemistry",
+    "event_type": "pilot_experiments",
+    "description": "A simplified 1D version of the model is implemented to test the core coupling between stress mechanics and electrochemical processes on a single particle. This serves as a sanity-check to validate the numerical stability and physical plausibility of the proposed method.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing the theoretical method (e_02), it is crucial to test its feasibility and identify potential implementation issues early. This pilot experiment provides a low-cost way to validate the core concepts of the 'method_scheme' before proceeding to more complex and computationally expensive main experiments, generating initial 'experiment_results' for assessment."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Electrochemical system modeling",
+    "subject": "Chemistry",
+    "event_type": "analysis",
+    "description": "The team analyzes the results from the 1D pilot model. The analysis confirms the numerical scheme is stable and the model successfully captures the expected qualitative behavior of stress evolution, validating the core coupling concept proposed in the method scheme.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "research_plan"
+    ],
+    "reason": "Following the pilot experiments (e_03), a dedicated analysis is necessary to evaluate the initial 'experiment_results'. By comparing these results against the 'research_goals' and the 'method_scheme', the team can validate the feasibility of their approach. The positive outcome of this analysis allows for a refinement of the 'research_plan' to detail the next phase of main experiments."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Electrochemical system modeling",
+    "subject": "Chemistry",
+    "event_type": "main_experiments",
+    "description": "With the pilot model validated, the team proceeds with the main experiments. The model is extended to a 2D porous electrode geometry to simulate stress evolution and capacity fade over multiple charge-discharge cycles, as outlined in the updated research plan.",
+    "required_artifacts": [
+      "research_plan",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The successful pilot study (e_03) and its analysis (e_04) confirmed the feasibility of the modeling approach. Following the refined 'research_plan', the project now progresses to the main experiments to apply the 'method_scheme' to a more realistic system and generate comprehensive 'experiment_results' that address the core 'research_goals'."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Electrochemical system modeling",
+    "subject": "Chemistry",
+    "event_type": "analysis",
+    "description": "The team performs a detailed analysis of the simulation data from the 2D porous electrode model. The results demonstrate a clear correlation between localized mechanical stress and the rate of capacity fade, which qualitatively aligns with the project's primary hypothesis and experimental observations from literature.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the main experiments (e_05), a thorough analysis is required to interpret the new 'experiment_results'. Since the findings are significant and support the core 'research_goals', the team drafts a summary of this key result, creating the first 'paper_paragraph' for the results section of the manuscript."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Electrochemical system modeling",
+    "subject": "Chemistry",
+    "event_type": "writing",
+    "description": "Building on the successful analysis, the team drafts the 'Methods' section of the research paper. This section details the 2D porous electrode model, the governing equations for coupled mechanics and electrochemistry, and the simulation parameters used in the main experiments.",
+    "required_artifacts": [
+      "method_scheme",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After analyzing the main experiment results (e_06) and summarizing a key finding, a logical next step is to formally document the methodology that produced these results. Writing the 'Methods' section requires the detailed 'method_scheme' and ensures the paper's narrative is being built progressively, creating more 'paper_paragraph' content for the manuscript."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Electrochemical system modeling",
+    "subject": "Chemistry",
+    "event_type": "analysis",
+    "description": "The team performs a quantitative comparison of the simulation results against experimental data from the literature. The analysis reveals that while the model captures the correct qualitative trends, it significantly underestimates the total capacity fade, suggesting a key degradation mechanism is missing.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_plan"
+    ],
+    "reason": "After obtaining promising results (e_06) and starting to write (e_07), a rigorous quantitative validation is a critical next step. This analysis moves beyond qualitative success to test the model's predictive power against real-world data. Discovering a discrepancy is a pivotal moment that forces a re-evaluation of the model's assumptions, leading to an update of the 'research_plan' to address this new challenge."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Electrochemical system modeling",
+    "subject": "Chemistry",
+    "event_type": "scheme_design",
+    "description": "In response to the model's quantitative shortcomings, the team revises the method scheme. They hypothesize that stress-assisted Solid Electrolyte Interphase (SEI) layer growth is the missing mechanism and update the model's governing equations to include this phenomenon, coupling it with the existing mechanical stress calculations.",
+    "required_artifacts": [
+      "research_plan",
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous analysis (e_08) revealed a significant discrepancy between the model's predictions and experimental data, updating the 'research_plan' to address this. This event is a direct response, returning to the 'scheme_design' phase to revise the 'method_scheme' by incorporating a new physical mechanism. The goal is to create a more comprehensive model that can resolve the previously observed underestimation of capacity fade."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Electrochemical system modeling",
+    "subject": "Chemistry",
+    "event_type": "pilot_experiments",
+    "description": "The team runs a new pilot simulation using the revised model that incorporates stress-assisted SEI growth. This small-scale test focuses on a representative volume element to verify the numerical stability and physical plausibility of the new degradation mechanism.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the model in the previous 'scheme_design' phase (e_09), a pilot experiment is necessary to validate the new implementation. This step de-risks the project by testing the complex new mechanism in a controlled environment before committing to another round of full-scale main experiments, generating new 'experiment_results' for evaluation."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Electrochemical system modeling",
+    "subject": "Chemistry",
+    "event_type": "analysis",
+    "description": "The team analyzes the results from the new pilot simulation. The analysis shows that the revised model is numerically stable and the inclusion of stress-assisted SEI growth leads to a more pronounced degradation trend, which appears promising for closing the gap with experimental data.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_plan"
+    ],
+    "reason": "Following the latest pilot experiment (e_10) which tested the revised model, a dedicated analysis of the new 'experiment_results' is the necessary next step. This evaluation determines if the new 'method_scheme' is successful and informs the decision to proceed with full-scale simulations, thus justifying an update to the 'research_plan'."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Electrochemical system modeling",
+    "subject": "Chemistry",
+    "event_type": "main_experiments",
+    "description": "Following the successful pilot, the team runs the main simulations using the revised 2D model with stress-assisted SEI growth. The goal is to generate a new dataset that can be quantitatively compared against experimental data to see if the added mechanism resolves the previously observed underestimation of capacity fade.",
+    "required_artifacts": [
+      "research_plan",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The analysis of the revised pilot model (e_11) was positive, confirming its stability and potential. As outlined in the updated 'research_plan', the project now proceeds to the main experiments using the improved 'method_scheme' to generate comprehensive 'experiment_results' that can be rigorously validated against experimental data."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Electrochemical system modeling",
+    "subject": "Chemistry",
+    "event_type": "analysis",
+    "description": "The team conducts a rigorous quantitative analysis of the new simulation data, comparing it against the same experimental literature data from the earlier analysis. The results show that the revised model, which includes stress-assisted SEI growth, now provides an excellent quantitative match with the observed capacity fade, resolving the previous discrepancy.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph",
+      "research_plan"
+    ],
+    "reason": "After running the main experiments with the revised model (e_12), a detailed analysis is essential to validate the new approach. This event directly addresses the quantitative discrepancy identified in e_08 by comparing the new 'experiment_results' against the project's 'research_goals' and experimental benchmarks. The successful outcome justifies creating a new 'paper_paragraph' for the results and updating the 'research_plan' to focus on completing the manuscript."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Electrochemical system modeling",
+    "subject": "Chemistry",
+    "event_type": "writing",
+    "description": "With the model now quantitatively validated, the team focuses on writing the manuscript. They revise the 'Results and Discussion' section to narrate the full research arc: the initial model's qualitative success but quantitative failure, the hypothesis about the missing SEI growth mechanism, and the final model's successful validation against experimental data.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The previous analysis (e_13) successfully validated the revised model, achieving a key project goal and updating the 'research_plan' to focus on publication. This writing event is the direct execution of that plan, using the final 'experiment_results' and 'method_scheme' to update the existing 'paper_paragraph' drafts into a cohesive narrative for the manuscript."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Electrochemical system modeling",
+    "subject": "Chemistry",
+    "event_type": "writing",
+    "description": "The team drafts the 'Introduction' and 'Conclusion' sections to complete the first full version of the manuscript. The introduction frames the problem of battery degradation and the novelty of the coupled chemo-mechanical model, while the conclusion summarizes the findings and proposes future work, such as applying the model to different battery chemistries.",
+    "required_artifacts": [
+      "research_plan",
+      "research_goals",
+      "paper_paragraph",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the core 'Methods' and 'Results' sections drafted and validated (e_14), the project is nearing completion as per the 'research_plan'. The logical next step is to write the framing sections of the manuscript, the Introduction and Conclusion, which requires synthesizing the initial 'research_goals' and the final 'experiment_results' into a cohesive story, thus producing more 'paper_paragraph' content for the full draft."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Electrochemical system modeling",
+    "subject": "Chemistry",
+    "event_type": "analysis",
+    "description": "After reviewing the full manuscript draft, the team decides to perform a sensitivity analysis. They systematically vary the key parameters of the stress-assisted SEI growth model to quantify their impact on capacity fade, aiming to strengthen the paper's main conclusion.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "research_plan"
+    ],
+    "reason": "With a full draft complete (e_15), a critical review often reveals areas to strengthen the argument before submission. Performing a sensitivity analysis is a logical next step to add robustness to the findings, requiring the current manuscript (`paper_paragraph`) and model (`method_scheme`) to guide this final analytical push and updating the `research_plan` to incorporate it."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Electrochemical system modeling",
+    "subject": "Chemistry",
+    "event_type": "writing",
+    "description": "The team incorporates the findings from the sensitivity analysis into the manuscript. A new subsection is added to the 'Results and Discussion' detailing how parameter variations affect capacity fade, and the 'Methods' section is updated to describe the setup of the sensitivity analysis.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the sensitivity analysis in e_16, the essential next step is to integrate these new 'experiment_results' into the manuscript. This writing task, guided by the updated 'research_plan', adds robustness to the paper's conclusions and moves the 'paper_paragraph' content towards a final, complete draft."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "Electrochemical system modeling",
+    "subject": "Chemistry",
+    "event_type": "writing",
+    "description": "The team performs a final review and polish of the entire manuscript. This involves proofreading for clarity and grammar, standardizing figure formatting, and finalizing the list of references to prepare the paper for submission to a peer-reviewed journal.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After integrating all analyses into the manuscript (e_17), the project is in its final stage as per the 'research_plan'. This 'writing' event represents the crucial final polish of the complete 'paper_paragraph' draft, ensuring it is ready for submission and accurately reflects the project's 'research_goals' and findings."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "research",
+    "topic": "Electrochemical system modeling",
+    "subject": "Chemistry",
+    "event_type": "end",
+    "description": "The research paper is submitted to a high-impact journal in the field of electrochemistry. The project is considered complete, having successfully developed and validated a novel chemo-mechanical degradation model and produced a comprehensive manuscript detailing the findings.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached its conclusion. The initial research goals have been met, a revised model was successfully validated (e_13), a final sensitivity analysis was performed (e_16), and a complete manuscript has been drafted, revised, and polished for submission (e_18). Submitting the paper marks the end of this research cycle."
+  }
+]

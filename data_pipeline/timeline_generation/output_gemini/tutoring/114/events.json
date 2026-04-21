@@ -1,0 +1,308 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Work-life boundaries and recovery routines",
+    "subject": "Health",
+    "event_type": "objective_clarification",
+    "description": "Initial session to discuss the learner's challenges with work-life boundaries, such as working late and difficulty disconnecting. The conversation focuses on identifying specific goals, like establishing clear end-of-day routines and protecting personal time, leading to a first draft of learning objectives.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "As the first step in the tutoring process, it's essential to understand the learner's specific needs and goals. This session establishes a shared understanding of the problem and desired outcomes, which will guide the creation of a study plan and subsequent lessons."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Work-life boundaries and recovery routines",
+    "subject": "Health",
+    "event_type": "plan_milestones",
+    "description": "Based on the defined objectives, the tutor and learner collaborate to create a structured study plan. The plan outlines key milestones, such as 'defining a shutdown ritual,' 'implementing a no-work-after-7pm rule,' and 'scheduling recovery activities,' and sets a timeline for the first few weeks.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learning objectives established in the previous session, the next logical step is to create a structured roadmap. This study plan translates the high-level goals into actionable milestones, providing a clear path for the upcoming tutoring sessions."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Work-life boundaries and recovery routines",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "The tutor delivers a lesson on the first milestone from the study plan: 'defining a shutdown ritual.' The lesson covers the psychological benefits of a clear end-of-day routine, provides a framework for creating one, and offers examples like tidying the workspace, reviewing the next day's schedule, and using a specific phrase to signal the end of work.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the creation of the study plan, the next step is to begin instruction on the first milestone. This lesson provides the conceptual foundation for 'defining a shutdown ritual,' equipping the learner with the knowledge needed for the subsequent practice phase."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Work-life boundaries and recovery routines",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "The learner is assigned the task of designing their own shutdown ritual based on the framework from the previous lesson. They are asked to implement this ritual for the next three workdays and keep a log of the steps they took, the time it was completed, and how they felt afterward.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson, the most effective next step is to apply the learned concepts. This practice session moves from theory to action, requiring the learner to create and test their own shutdown ritual. The resulting practice record will provide concrete data for the tutor to review and offer personalized feedback."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Work-life boundaries and recovery routines",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's practice log for their new shutdown ritual. The review analyzes the consistency of the ritual's implementation, the chosen components, and the learner's self-reported feelings, aiming to identify successes and areas for refinement.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner has completed the practice assignment and created a log, the natural next step is for the tutor to review this work. This allows the tutor to assess the learner's application of the concepts, provide specific feedback, and guide the next iteration of practice."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Work-life boundaries and recovery routines",
+    "subject": "Health",
+    "event_type": "materials_revision",
+    "description": "After reviewing the learner's first attempt, the tutor identifies that the original examples in the teaching notes were too generic. The tutor revises the notes to include a wider range of ritual examples and adds a new section on 'Common Pitfalls,' such as making rituals too complex or dependent on others.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review of the learner's practice revealed specific areas of difficulty not fully addressed by the initial lesson materials. Revising the teaching notes based on this feedback makes the material more effective and tailored, directly addressing the observed issues to better support the learner in their next practice attempt."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Work-life boundaries and recovery routines",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "Following the review and materials revision, the learner is tasked with refining their shutdown ritual. They will apply the feedback received and use the updated teaching notes to guide a second attempt at implementing the ritual over the next week, again logging their consistency and feelings.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a cycle of practice, review, and materials revision, it is crucial for the learner to apply the new insights. This second practice attempt allows them to incorporate the specific feedback and benefit from the improved teaching notes, reinforcing the learning loop and moving closer to mastering the first milestone."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Work-life boundaries and recovery routines",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's second practice log on their refined shutdown ritual. The analysis focuses on consistency, the effectiveness of the changes made, and the learner's self-reported feelings to determine if this milestone has been successfully achieved.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed a second, revised practice attempt, the necessary next step is to review their work. This review will assess the impact of the previous feedback and determine if the learner is ready to move on to the next milestone in the study plan or if further refinement is needed."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Work-life boundaries and recovery routines",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "The previous review confirmed the learner's success with their shutdown ritual, so the tutor proceeds to the next milestone. This lesson introduces the concept of 'time-based boundaries,' focusing on the 'no-work-after-7pm' rule from the study plan. The tutor explains strategies for communicating this boundary and tools for scheduling emails to be sent the next day.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Since the review of the second practice attempt was successful, the learner is ready to advance to the next milestone outlined in the study plan. A new lesson is the appropriate step to introduce the concepts and strategies needed for this next phase of learning."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Work-life boundaries and recovery routines",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "The learner is assigned the task of implementing the 'no-work-after-7pm' rule for the next five workdays. They are asked to log their end-of-work time each day and note any challenges or successes in enforcing this new boundary, creating a record for review.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on time-based boundaries, the logical next step is to put the theory into practice. This assignment requires the learner to apply the new strategies in their daily routine, and the resulting log will provide concrete data for the tutor to review and offer targeted feedback."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Work-life boundaries and recovery routines",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's log of their attempt to implement the 'no-work-after-7pm' rule. The analysis focuses on successes, challenges encountered (e.g., late requests from colleagues), and the learner's feelings about the boundary, in order to provide targeted feedback.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the practice assignment (e_10) and created a log, the necessary next step is to review their work. This review allows the tutor to assess the practical application of the time-based boundary, identify specific obstacles, and generate targeted feedback to help the learner improve."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Work-life boundaries and recovery routines",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "Based on the challenges identified in the last review, the tutor delivers a targeted lesson on assertive communication. The session covers how to politely but firmly decline late-day requests, provides example scripts, and discusses strategies for proactively managing colleagues' expectations.",
+    "required_artifacts": [
+      "feedback_summary",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_11) highlighted that the learner struggled with external pressures, specifically late requests from colleagues. This lesson directly addresses that feedback by teaching a new, necessary skill, ensuring the learner is better equipped for their next practice attempt at setting time-based boundaries."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Work-life boundaries and recovery routines",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "Equipped with new assertive communication strategies, the learner is tasked with again implementing the 'no-work-after-7pm' rule. They will continue to log their end-of-work time and specifically document any situations where they used the new scripts to handle late requests.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the targeted lesson on assertive communication (e_12), it is essential for the learner to apply these new skills in a real-world context. This practice session directly addresses the challenges identified in the previous review (e_11), completing the feedback loop and allowing the tutor to assess the effectiveness of the intervention."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Work-life boundaries and recovery routines",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor reviews the second practice log, focusing on the learner's application of assertive communication techniques to maintain the 'no-work-after-7pm' boundary. The review assesses whether the new strategies were effective and if this milestone is now considered stable.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner practiced applying the new assertive communication skills (e_13), the essential next step is to review their performance. This review will determine if the targeted intervention (e_12) was successful and whether the learner is ready to move to the next milestone in the study plan."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Work-life boundaries and recovery routines",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "With the previous milestone successfully achieved, the tutor moves to the next topic in the study plan: 'scheduling recovery activities.' The lesson explains the importance of proactive rest, differentiates between active and passive recovery, and helps the learner brainstorm activities that they find genuinely restorative.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_14) confirmed the learner has stabilized their time-based boundaries. According to the study plan (e_02), the next logical step is to begin instruction on the final major milestone, which is scheduling recovery activities."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Work-life boundaries and recovery routines",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "Following the lesson on recovery, the learner is tasked with planning and scheduling at least two recovery activities (one active, one passive) for the upcoming week. They are asked to log the activities they planned, whether they were completed, and their subjective energy levels before and after.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After learning about the importance of proactive rest, the most effective next step is to put this into practice. This task requires the learner to apply the concepts from the lesson to their own schedule, and the resulting practice record will provide concrete data to review their ability to integrate recovery into their routine."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Work-life boundaries and recovery routines",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor analyzes the learner's practice log on scheduling recovery activities. The review focuses on whether the planned activities were completed, the distinction between the chosen active and passive recovery, and the impact on the learner's reported energy levels.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner practiced scheduling and completing recovery activities (e_16), the necessary next step is to review their log. This allows the tutor to assess the practical application of the concept, evaluate the effectiveness of the chosen activities, and provide targeted feedback to solidify this final milestone."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Work-life boundaries and recovery routines",
+    "subject": "Health",
+    "event_type": "plan_milestones",
+    "description": "The tutor and learner hold a final review session to assess progress against the original study plan. They confirm that all major milestones—shutdown rituals, time boundaries, and recovery activities—have been successfully implemented and are stable. The study plan is updated with notes on long-term maintenance and strategies for handling future setbacks.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "After reviewing the final practice milestone, it's important to consolidate the learning and review the entire journey. This session formally assesses the achievement of the initial objectives, provides the learner with a forward-looking maintenance plan, and serves as a capstone before concluding the tutoring relationship."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Work-life boundaries and recovery routines",
+    "subject": "Health",
+    "event_type": "end",
+    "description": "A final wrap-up concluding the tutoring engagement. The tutor and learner acknowledge the significant progress made, review the long-term maintenance plan created in the previous session, and formally end the tutoring relationship.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "All learning objectives have been met and the corresponding skills have been successfully practiced and stabilized, as confirmed in the final milestone review (e_18). The learner is now equipped with a long-term maintenance plan, making this a natural and successful conclusion to the tutoring process."
+  }
+]

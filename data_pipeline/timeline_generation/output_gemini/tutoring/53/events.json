@@ -1,0 +1,294 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Working with APIs and parsing responses",
+    "subject": "Programming",
+    "event_type": "objective_clarification",
+    "description": "Conducted an initial diagnostic session to understand the learner's background with programming, their specific goals for working with APIs, and any time constraints. The learner wants to be able to fetch data from a public API (like a weather or news API) and display it in a simple web project.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "As the first event in the tutoring timeline, it is essential to first clarify the learner's goals and background. This `objective_clarification` step provides the foundation for all subsequent planning and teaching activities."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Working with APIs and parsing responses",
+    "subject": "Programming",
+    "event_type": "plan_milestones",
+    "description": "Based on the clarified objectives, a staged study plan was created. The plan outlines three main milestones: understanding HTTP requests, parsing JSON data, and integrating a live API into a simple front-end project.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learning objectives established in the previous session (e_01), the next logical step is to create a structured study plan. This `plan_milestones` event translates the high-level goals into an actionable sequence of learning activities, setting clear expectations for the learner."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Working with APIs and parsing responses",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "Delivered a lesson on the fundamentals of HTTP requests, covering concepts like GET/POST methods, request headers, and response status codes. This session focused on the first milestone outlined in the study plan.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the `study_plan` established in e_02, the next logical step is to begin instruction. This `lesson` event directly addresses the first milestone ('understanding HTTP requests'), creating reusable teaching notes and preparing the learner for subsequent practice."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Working with APIs and parsing responses",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "Assigned a hands-on practice task for the learner to make a GET request to a public test API, like JSONPlaceholder. The learner was asked to use a simple script or a command-line tool to fetch data and save the full response body.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the theoretical lesson on HTTP requests (e_03), this `practice` event is the logical next step to ensure the learner can apply the concepts. It provides a concrete task aligned with the study plan and generates a `practice_record` which is essential for the upcoming review and feedback session."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Working with APIs and parsing responses",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "Reviewed the learner's practice attempt at making a GET request. The review identified that while the learner successfully fetched the data, they were unsure how to interpret different HTTP status codes, such as the difference between 200 OK and 404 Not Found.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a `practice` session (e_04) generates a `practice_record`, the natural next step is to `review` the learner's work. This allows the tutor to assess comprehension, identify specific points of confusion, and provide targeted feedback, which is captured in the new `feedback_summary` artifact."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Working with APIs and parsing responses",
+    "subject": "Programming",
+    "event_type": "materials_revision",
+    "description": "Based on the learner's confusion identified during the review, the teaching notes on HTTP requests were revised. The updated notes now include a dedicated section explaining common HTTP status codes (e.g., 200, 404, 500) with clear, practical examples for each.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous `review` event (e_05) produced a `feedback_summary` that highlighted a specific gap in understanding. This `materials_revision` event is a direct response, improving the existing `teaching_notes` to address this weakness, ensuring the material is clearer for future reference and for the next learner."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Working with APIs and parsing responses",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "Assigned a follow-up practice task to solidify the learner's understanding of HTTP status codes. The learner was asked to intentionally query both a valid and a non-existent API endpoint, and then to explain the difference between the 200 and 404 status codes they received.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials (e_06) in response to feedback (e_05), it is crucial to verify that the learner's misconception has been corrected. This targeted `practice` event provides an opportunity for the learner to apply the corrected knowledge, and the resulting `practice_record` will confirm their understanding before moving on."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Working with APIs and parsing responses",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "Reviewed the learner's second practice attempt regarding HTTP status codes. The learner successfully distinguished between the 200 and 404 status codes and correctly explained what each one meant in the context of their API calls, confirming their understanding.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice in e_07, a `review` is necessary to confirm that the previous point of confusion has been resolved. This step validates the effectiveness of the revised materials and the follow-up practice, allowing the tutoring to progress to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Working with APIs and parsing responses",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "Delivered a lesson on the second milestone: parsing JSON data. The session covered what JSON is, its syntax (key-value pairs, arrays, nested objects), and how to use built-in functions in the learner's chosen programming language to convert a JSON string into a native data structure.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the learner's understanding of HTTP requests confirmed in the last review (e_08), the next logical step is to address the second milestone from the study plan: parsing JSON data. This lesson introduces the core concepts needed to work with the data returned from API calls."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Working with APIs and parsing responses",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "Assigned a practice task combining the first two milestones. The learner needs to fetch a list of items from a test API, parse the JSON response, and then programmatically access and print the 'title' of the first item in the list.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on JSON parsing (e_09), this `practice` event is the essential next step to ensure the learner can apply the theoretical knowledge. It requires them to combine the new skill with the previously mastered one (making HTTP requests), generating a `practice_record` for the next review cycle."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Working with APIs and parsing responses",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "Reviewed the learner's combined practice attempt from the previous session. The review showed that while the learner could fetch and parse the JSON response, they had difficulty correctly accessing a nested property within the resulting data structure (e.g., getting the 'title' from the first object in an array).",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the combined practice task in e_10, a `review` is the necessary next step to assess the learner's ability to integrate skills. This review identifies a specific point of confusion—navigating nested data structures—which must be addressed before moving to the final project milestone."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Working with APIs and parsing responses",
+    "subject": "Programming",
+    "event_type": "materials_revision",
+    "description": "In response to the last review, the teaching notes on JSON parsing were updated. A new section was added with detailed examples on how to access nested data, including accessing elements in an array of objects and properties within nested objects.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_11) generated a `feedback_summary` that identified a specific difficulty with nested data structures. This `materials_revision` event directly addresses that gap by improving the `teaching_notes`, ensuring the learner has a clear reference before attempting another practice task."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Working with APIs and parsing responses",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "Assigned a targeted follow-up practice task focused on accessing nested data. The learner was asked to fetch data from a test API and correctly extract a specific piece of information from a nested object within an array, based on the revised teaching notes.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the `teaching_notes` (e_12) to address the learner's difficulty with nested data identified in the last review (e_11), this targeted `practice` event is necessary. It allows the learner to apply the new, clearer examples and provides a `practice_record` to confirm that the misconception has been resolved before proceeding."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Working with APIs and parsing responses",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "Reviewed the learner's targeted practice attempt on accessing nested data. The learner was now able to correctly access the nested properties from the API response, confirming their understanding of the concept after using the revised notes.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted `practice` session (e_13), a `review` is the logical next step to verify if the learner has overcome the previously identified difficulty. This event confirms that the revised materials and follow-up practice were effective, allowing the tutor to confidently move on to the next milestone."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Working with APIs and parsing responses",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "Delivered a lesson on the third and final milestone: integrating API calls into a simple front-end project. The session covered how to use JavaScript to fetch data asynchronously, parse the JSON response, and then dynamically update the HTML DOM to display the results.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_14) confirmed the learner has mastered the second milestone. Following the `study_plan`, it is now time to address the final milestone. This `lesson` introduces the concepts needed to connect the back-end data fetching with a front-end user interface."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Working with APIs and parsing responses",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "Assigned a final capstone practice project that combines all three milestones. The learner is tasked with creating a simple webpage that fetches data from a public API upon a button click and displays the parsed information dynamically on the page.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the final lesson on front-end integration (e_15), this capstone `practice` event is the essential next step to assess if the learner can synthesize all the skills covered. It directly addresses the main learning objective from the start of the timeline and will produce a `practice_record` for the final review."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Working with APIs and parsing responses",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "Reviewed the learner's capstone practice project. The learner successfully created a webpage that fetches data, parses the response, and dynamically displays the information, demonstrating that they have successfully synthesized all the skills from the three milestones.",
+    "required_artifacts": [
+      "practice_record",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the capstone `practice` project (e_16), a final `review` is essential to formally assess whether the learner has met the original learning objectives. This step provides a conclusive evaluation of the learner's ability to apply all the concepts together and generates a final feedback summary."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Working with APIs and parsing responses",
+    "subject": "Programming",
+    "event_type": "end",
+    "description": "The tutoring engagement concluded as the learner successfully met all the initial learning objectives. They demonstrated proficiency by completing a capstone project that synthesized all the required skills, and a final review confirmed their understanding.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The previous review event (e_17) confirmed that the learner successfully completed the capstone project and met the original learning objectives. With all milestones achieved and no outstanding issues, the tutoring process for this topic has reached its natural and successful conclusion."
+  }
+]

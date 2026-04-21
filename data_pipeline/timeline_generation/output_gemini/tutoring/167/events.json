@@ -1,0 +1,388 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Industrialization and the modern world",
+    "subject": "History",
+    "event_type": "objective_clarification",
+    "description": "Initial session with the learner to discuss their goals for studying 'Industrialization and the modern world'. The tutor gathers information about the learner's current knowledge, target grade, and available study time to establish a baseline.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first interaction, so the primary goal is to understand the learner's needs and establish clear learning objectives. This step is essential before creating a study plan or starting any lessons."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Industrialization and the modern world",
+    "subject": "History",
+    "event_type": "plan_milestones",
+    "description": "The tutor uses the established learning objectives to outline a high-level study plan. This plan breaks the broad topic into manageable milestones, such as 'Causes of the First Industrial Revolution,' 'Key Inventions and Technologies,' and 'Social and Economic Consequences.'",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learner's goals defined in the 'learning_objectives' from the previous session, the logical next step is to create a structured 'study_plan'. This provides a clear roadmap for the upcoming lessons and ensures both the tutor and learner are aligned on the learning path."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Industrialization and the modern world",
+    "subject": "History",
+    "event_type": "lesson",
+    "description": "The tutor delivers the first lesson based on the study plan, focusing on the 'Causes of the First Industrial Revolution'. Key concepts covered include the Agricultural Revolution, the enclosure movement, and the availability of capital and natural resources in Britain.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the creation of the 'study_plan', the logical next step is to begin instruction with the first topic. This lesson directly addresses the initial milestone, and creating 'teaching_notes' provides a structured and reusable resource for this core concept."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Industrialization and the modern world",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "To reinforce the concepts from the first lesson, the tutor assigns a practice task consisting of short-answer questions about the causes of the Industrial Revolution. The learner completes the questions, and their responses are documented to check for understanding.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson, it is essential to assess comprehension and provide an opportunity for knowledge application. This practice session directly tests the material covered in the recent 'teaching_notes', and creating a 'practice_record' is necessary to facilitate a detailed review in the next step."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Industrialization and the modern world",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's answers from the practice session. The analysis focuses on identifying any misconceptions about the causes of the Industrial Revolution and assessing the clarity of the learner's explanations.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the 'practice' event, a 'review' is the natural next step to evaluate the learner's understanding. By analyzing the 'practice_record', the tutor can create a 'feedback_summary' that provides targeted corrections and guidance, ensuring concepts are properly absorbed before proceeding."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Industrialization and the modern world",
+    "subject": "History",
+    "event_type": "materials_revision",
+    "description": "Based on the review, the tutor identifies that the learner confused some key concepts. The tutor updates the teaching notes on the 'Causes of the First Industrial Revolution' to include a clearer comparison and specific examples to differentiate the concepts.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The 'feedback_summary' from the previous review revealed a specific point of confusion. This event directly addresses that confusion by improving the clarity of the 'teaching_notes', which makes the learning materials more effective for the student's future review and for the tutor's reuse."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Industrialization and the modern world",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "To ensure the previously identified misconceptions are resolved, the tutor assigns a new, targeted practice task. This task uses the revised teaching materials and focuses specifically on the areas of confusion highlighted in the last review.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the 'teaching_notes' based on the 'feedback_summary', it's crucial to verify that the learner's understanding has improved. This follow-up practice session serves as a check, creating a new 'practice_record' to confirm mastery before moving on to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Industrialization and the modern world",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's second practice attempt to confirm that the previous misconceptions have been resolved. The tutor assesses the new responses against the revised teaching materials and previous feedback to determine if the learner is ready to move to the next topic.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice in the previous step, a review is essential to verify that the learner has overcome their initial difficulties. Analyzing the new 'practice_record' allows the tutor to generate an updated 'feedback_summary', confirming mastery and clearing the way to proceed with the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Industrialization and the modern world",
+    "subject": "History",
+    "event_type": "lesson",
+    "description": "With the learner's understanding of the causes confirmed, the tutor proceeds to the next milestone in the study plan: 'Key Inventions and Technologies'. The lesson covers major innovations like the spinning jenny, steam engine, and their impact on production.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review cycle confirmed the learner's mastery of the first topic, as documented in the latest 'feedback_summary'. Therefore, the next logical step is to follow the 'study_plan' and begin the lesson on the second milestone."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Industrialization and the modern world",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "Following the lesson on key inventions, the tutor assigns a practice task where the learner must match inventions to their primary impact on industry. The learner's responses are recorded to evaluate their grasp of the new material.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson, it is standard practice to assign a task to reinforce learning and check for understanding. This practice session directly assesses the content of the most recent 'teaching_notes' and creates a 'practice_record' that will be essential for the upcoming review."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Industrialization and the modern world",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's answers from the matching task on key inventions and their industrial impacts. The review checks for correct associations and provides feedback on any misunderstandings before proceeding.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the 'practice' event on key inventions, a 'review' is the standard next step to evaluate learner performance. Analyzing the 'practice_record' is necessary to create a 'feedback_summary' that will guide the learner and determine if they are ready for the next topic."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Industrialization and the modern world",
+    "subject": "History",
+    "event_type": "lesson",
+    "description": "Following the successful review of key inventions, the tutor proceeds to the third milestone in the study plan: 'Social and Economic Consequences'. The lesson covers major societal shifts, including urbanization, the rise of the factory system, and the emergence of new social classes.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous 'feedback_summary' indicated the learner has a good grasp of the second topic. Therefore, it is appropriate to follow the 'study_plan' and begin the lesson on the next milestone, generating new 'teaching_notes' for this section."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Industrialization and the modern world",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "Following the lesson on social and economic consequences, the tutor assigns a practice task requiring the learner to write a short paragraph explaining the connection between urbanization and the factory system. The learner's response is documented for later review.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson on a complex topic like social and economic consequences, a 'practice' session is crucial to help the learner synthesize and apply the new information. This task directly uses the material from the recent 'teaching_notes' and creates a 'practice_record' for evaluation in the next step."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Industrialization and the modern world",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's short paragraph on urbanization and the factory system. The review assesses the learner's ability to form a coherent argument, use historical evidence correctly, and structure their writing logically.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed a written 'practice' task, the essential next step is a 'review' to evaluate their performance. Analyzing the 'practice_record' allows the tutor to create a 'feedback_summary' that assesses both content knowledge and analytical writing skills, which is crucial for history topics."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Industrialization and the modern world",
+    "subject": "History",
+    "event_type": "plan_milestones",
+    "description": "Having completed the initial topics, the tutor and learner review progress. They decide to update the study plan to include the next major phase, focusing on 'The Second Industrial Revolution' and 'Responses to Industrialization' like labor movements and political reforms.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "The initial three milestones of the 'study_plan' have been covered, and the last 'feedback_summary' confirmed the learner's readiness to proceed. It is a logical time to expand the plan, ensuring the next topics align with the original 'learning_objectives' and build upon the knowledge gained so far."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Industrialization and the modern world",
+    "subject": "History",
+    "event_type": "lesson",
+    "description": "Following the newly updated study plan, the tutor begins the next lesson on 'The Second Industrial Revolution'. The lesson covers key developments such as the Bessemer process for steel, the advent of electricity and chemicals, and the rise of new industrial powers like Germany and the US.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After expanding the 'study_plan' in the previous step, the logical action is to proceed with the first lesson of the new section. This begins the next phase of learning and generates new 'teaching_notes' for the topic of the Second Industrial Revolution."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Industrialization and the modern world",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "To consolidate the new information on the Second Industrial Revolution, the tutor assigns a comparative task. The learner is asked to create a table comparing the key technologies, energy sources, and leading countries of the First and Second Industrial Revolutions.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following a lesson on a new, complex topic, a 'practice' session is necessary to reinforce learning and assess comprehension. This task builds directly on the content of the recent 'teaching_notes' and will produce a 'practice_record' for the tutor to evaluate in the next step."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Industrialization and the modern world",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's comparative table of the First and Second Industrial Revolutions. The assessment focuses on the accuracy of the comparisons and the learner's ability to synthesize information from multiple lessons.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the comparative 'practice' task, a 'review' is essential to evaluate the learner's comprehension and ability to distinguish between the two phases of industrialization. Analyzing the 'practice_record' allows the tutor to generate a 'feedback_summary' to confirm mastery before moving to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Industrialization and the modern world",
+    "subject": "History",
+    "event_type": "lesson",
+    "description": "With the learner's understanding confirmed, the tutor proceeds to the next topic in the study plan: 'Responses to Industrialization'. The lesson covers the rise of labor unions, socialist movements, and government reforms like factory acts.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous 'feedback_summary' confirmed the learner's mastery of the Second Industrial Revolution. Therefore, it is appropriate to follow the 'study_plan' and begin the lesson on the next major topic, generating new 'teaching_notes' to support it."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Industrialization and the modern world",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "To assess understanding of the latest lesson, the tutor assigns a practice essay question asking the learner to explain the differences between the goals of early labor unions and socialist movements as responses to industrialization. The learner's written response is saved for review.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on 'Responses to Industrialization', a practice task is the logical next step to ensure the learner can apply and differentiate between complex new concepts. This creates a 'practice_record' which is necessary for the tutor to review the learner's analytical skills and content knowledge."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "Industrialization and the modern world",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor reviews the practice essay on responses to industrialization. The analysis focuses on the learner's ability to differentiate between the goals of labor unions and socialist movements and the quality of their historical argument.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed a complex essay in the 'practice' step, a 'review' is necessary to assess their analytical skills and content knowledge. Analyzing the 'practice_record' allows the tutor to create a detailed 'feedback_summary', providing crucial guidance before concluding the unit or moving on."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "tutoring",
+    "topic": "Industrialization and the modern world",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "To consolidate learning across the entire unit, the tutor assigns a comprehensive practice exam. The exam includes a mix of question types covering all topics from the First Industrial Revolution to the societal responses, testing both factual recall and analytical skills.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "The learner has successfully completed and been reviewed on all individual topics outlined in the study plan. A cumulative practice exam is the logical next step to assess their ability to synthesize knowledge across the entire subject before concluding the tutoring."
+  },
+  {
+    "event_id": "e_23",
+    "time_index": 23,
+    "domain": "tutoring",
+    "topic": "Industrialization and the modern world",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor conducts a final review of the learner's comprehensive practice exam. This assessment evaluates overall mastery of the topic, checking for synthesis of concepts across all milestones and identifying any remaining areas for improvement.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the cumulative 'practice' exam, a final 'review' is crucial to provide a comprehensive assessment of the learner's understanding across the entire unit. Analyzing the 'practice_record' allows the tutor to generate a final 'feedback_summary' that confirms whether the learning objectives have been met and provides concluding guidance."
+  },
+  {
+    "event_id": "e_24",
+    "time_index": 24,
+    "domain": "tutoring",
+    "topic": "Industrialization and the modern world",
+    "subject": "History",
+    "event_type": "end",
+    "description": "The final review of the comprehensive exam confirmed that the learner has met all learning objectives for the topic. The tutor and learner have a concluding session to summarize progress and discuss strategies for retaining the information.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has successfully completed all milestones, demonstrated mastery on a cumulative assessment, and received a final comprehensive feedback summary. With the primary learning objectives met and confirmed, the tutoring process for this unit is now complete."
+  }
+]

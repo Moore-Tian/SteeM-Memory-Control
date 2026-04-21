@@ -1,0 +1,365 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Generalization theory for overparameterized networks",
+    "subject": "CS-AI/ML",
+    "event_type": "proposal",
+    "description": "Initial brainstorming session to define the core research questions for the project on generalization in overparameterized networks. The main goal is set to be understanding 'benign overfitting' and its relationship with data properties.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "research_goals"
+    ],
+    "reason": "Every research project must start with a goal. This event establishes the foundational 'research_goals' artifact, which will guide all future planning and experimentation. As the inception of the project, it requires no prior artifacts."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Generalization theory for overparameterized networks",
+    "subject": "CS-AI/ML",
+    "event_type": "proposal",
+    "description": "A high-level research plan is formulated based on the initial goals. The plan outlines a two-pronged approach: a theoretical analysis of simplified linear models and an empirical study of deep neural networks on synthetic and real datasets to investigate benign overfitting.",
+    "required_artifacts": [
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_plan"
+    ],
+    "reason": "With the 'research_goals' established in e_01, the logical next step is to create a high-level 'research_plan' that outlines the strategy for achieving these goals. This provides a roadmap for the subsequent, more detailed design and experimentation phases."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Generalization theory for overparameterized networks",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "Focusing on the empirical part of the research plan, the team designs the initial experimental scheme. This involves selecting specific overparameterized models (e.g., MLPs, small ResNets), defining synthetic data generation processes with controllable noise, and choosing CIFAR-10 for real-world validation. Key metrics are defined, including training/test error and model norm, to track the onset of benign overfitting.",
+    "required_artifacts": [
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the high-level 'research_plan' from e_02, a concrete 'method_scheme' is necessary before any experiments can be run. This event translates the abstract goals into a specific, actionable experimental design, detailing the models, datasets, and metrics to be used for the empirical investigation."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Generalization theory for overparameterized networks",
+    "subject": "CS-AI/ML",
+    "event_type": "pilot_experiments",
+    "description": "Small-scale pilot experiments are conducted using the defined method scheme on the synthetic dataset. The goal is to verify the experimental code, test the data generation process, and ensure that the chosen model architectures can indeed achieve near-zero training error, which is a precondition for studying benign overfitting.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With a concrete 'method_scheme' designed in e_03, the next logical step is to run pilot experiments. This serves as a crucial sanity check to validate the implementation and experimental setup on a small scale before committing significant computational resources to the main experiments."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Generalization theory for overparameterized networks",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The team analyzes the results from the pilot experiments. The analysis confirms that the models successfully achieve zero training error, validating a key precondition. However, the test error behavior is noisy, and the expected 'benign overfitting' signature is not yet clear, suggesting the need for more systematic experiments or adjustments to the setup.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After obtaining initial data from the pilot study (e_04), a formal 'analysis' is the necessary next step to interpret the findings. This allows the team to assess the viability of the current approach against the 'research_goals' and decide whether to proceed to main experiments or if methodological adjustments are needed first."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Generalization theory for overparameterized networks",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "Based on the noisy results from the pilot study, the team revises the experimental scheme. They decide to increase the number of training samples for the synthetic data experiments and introduce a more controlled way to vary the 'task-relevant' vs 'task-irrelevant' features in the data, hoping this will produce a clearer signal for benign overfitting. The range of model widths to test is also expanded to better observe the double-descent curve.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis in e_05 revealed that the initial pilot experiments produced noisy results and did not clearly show the phenomenon of interest. It is therefore necessary to revisit and refine the 'method_scheme' to address these shortcomings before committing to larger-scale experiments. This iterative refinement of the methodology is a critical and common part of the research process."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Generalization theory for overparameterized networks",
+    "subject": "CS-AI/ML",
+    "event_type": "main_experiments",
+    "description": "With the revised experimental scheme in place, the team launches the main set of experiments on the synthetic dataset. This involves running multiple trials with different random seeds for each configuration of model width and data properties, as defined in the updated scheme. The goal is to collect robust data to clearly characterize the double-descent curve and the conditions for benign overfitting.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The experimental scheme was revised in e_06 to address issues found during the pilot study. The logical next step is to execute this improved plan by running the main experiments. This moves the project from the exploratory phase into the primary data collection phase, aiming to generate the core results needed to address the research goals."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Generalization theory for overparameterized networks",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The team performs a detailed analysis of the results from the main synthetic data experiments. The findings are promising, clearly showing the double-descent curve as model width increases. The analysis also confirms that benign overfitting is more pronounced when the data has a specific structure (e.g., a higher ratio of task-relevant features), which validates the revised experimental design.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After collecting extensive data from the main experiments in e_07, a thorough 'analysis' is the essential next step. This event processes the raw results to extract meaningful scientific findings, evaluate them against the 'research_goals', and determine if the revised 'method_scheme' from e_06 successfully addressed the earlier issues."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Generalization theory for overparameterized networks",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "With a clear set of positive results from the synthetic data experiments, the team begins drafting the corresponding sections of the research paper. The initial draft focuses on describing the revised experimental methodology and presenting the main results, including figures illustrating the double-descent phenomenon.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the successful analysis of the main synthetic data experiments in e_08, it is a logical and efficient step to start writing up these clear findings. This captures the results while they are fresh, creates the first draft of the paper, and introduces the 'paper_paragraph' artifact, which is essential for completing the project."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Generalization theory for overparameterized networks",
+    "subject": "CS-AI/ML",
+    "event_type": "main_experiments",
+    "description": "Having confirmed the key phenomena on synthetic data, the team now applies the refined experimental protocol to the CIFAR-10 dataset. The goal is to verify if the double-descent and benign overfitting trends generalize from the controlled synthetic environment to a more complex, real-world image classification task.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The original 'research_plan' (e_02) specified validating findings on a real dataset. With positive results from the synthetic experiments (e_08) and a working draft of those results (e_09), it is the right time to proceed with the planned CIFAR-10 experiments to check if the conclusions hold in a more realistic setting."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Generalization theory for overparameterized networks",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The team analyzes the results from the CIFAR-10 experiments. The results show a double-descent curve, but it is less pronounced than in the synthetic setting. Benign overfitting is observed, but the test error plateaus at a higher level, suggesting that while the core phenomena exist, real-world data complexity introduces new factors not captured by the initial theory.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the execution of main experiments on the CIFAR-10 dataset in e_10, a detailed 'analysis' is the necessary next step. This allows the team to interpret the real-world data, compare it against the findings from the synthetic experiments (e_08), and assess how well the results support the overall 'research_goals'."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Generalization theory for overparameterized networks",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "The team revises the paper draft to incorporate the results from the CIFAR-10 experiments. They add new paragraphs and figures for the real-data results and, crucially, write a discussion section that contrasts the findings from synthetic and real data, interpreting the less pronounced effects on CIFAR-10 as an important insight into the limits of the current model.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After analyzing the CIFAR-10 results in e_11, it is essential to integrate them into the paper. This event synthesizes the findings from both synthetic and real-world experiments, creating a more complete and nuanced narrative, which is a critical step in preparing the manuscript for publication."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Generalization theory for overparameterized networks",
+    "subject": "CS-AI/ML",
+    "event_type": "proposal",
+    "description": "The team discusses the discrepancy between synthetic and real-data results from event e_11. They decide to refine the project's goals to not just demonstrate benign overfitting, but also to investigate the specific factors (e.g., label noise, feature correlation) that modulate its behavior in complex datasets. This adds a new investigative thrust to the project.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "The analysis in e_11 revealed a significant gap between the synthetic and real-data results, a finding not fully anticipated by the initial goals. It is a critical and realistic step to formally revise the 'research_goals' and 'research_plan' to incorporate this new research question, which will guide the next phase of investigation."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Generalization theory for overparameterized networks",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "To address the newly refined research goals, the team designs a new set of experiments. The revised method scheme includes protocols for systematically injecting varying levels of label noise into the CIFAR-10 dataset and generating new synthetic datasets with controllable inter-feature correlation structures. This will allow for a targeted investigation into the factors that moderate benign overfitting.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "After updating the project's 'research_goals' in e_13 to investigate the gap between synthetic and real-data results, the next logical step is to design a new experimental protocol. This 'scheme_design' event translates the new abstract goals into a concrete, testable 'method_scheme' capable of isolating the effects of factors like label noise and feature correlation."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Generalization theory for overparameterized networks",
+    "subject": "CS-AI/ML",
+    "event_type": "pilot_experiments",
+    "description": "The team runs a small-scale pilot study using the new experimental scheme. They test the label noise injection mechanism on a subset of CIFAR-10 and generate a few examples of the new synthetic data with controlled feature correlations. The goal is to ensure the new experimental controls function as expected before launching a full-scale investigation.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing a new, more complex experimental scheme in e_14 to test specific hypotheses, running a pilot study is a crucial risk-mitigation step. It validates that the new experimental modifications (like label noise injection) work correctly before committing significant computational resources to another round of main experiments."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Generalization theory for overparameterized networks",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The team analyzes the results of the pilot study for the new experimental design. The analysis confirms that the label noise injection works as expected and that varying feature correlations in the synthetic data has a noticeable impact on the test error, validating the new experimental controls.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After conducting a pilot study (e_15) for the new experimental design, a formal 'analysis' is required to verify that the new controls are functioning correctly. This step is essential to de-risk the upcoming main experiments and confirm that the revised 'method_scheme' is capable of addressing the updated 'research_goals'."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Generalization theory for overparameterized networks",
+    "subject": "CS-AI/ML",
+    "event_type": "main_experiments",
+    "description": "With the new experimental controls validated, the team launches the full-scale main experiments. They systematically run trials varying the level of label noise in CIFAR-10 and the feature correlation structure in the synthetic data, collecting comprehensive results to test the new hypotheses.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The pilot study (e_15) and its analysis (e_16) confirmed that the new experimental design is sound. Therefore, the logical and necessary next step is to run the full 'main_experiments' to collect the data required to answer the refined 'research_goals' about what factors modulate benign overfitting."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "Generalization theory for overparameterized networks",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The team performs an in-depth analysis of the latest experimental results. The analysis focuses on quantifying how label noise and feature correlation impact the test error and the shape of the double-descent curve, directly addressing the refined research goals.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After running extensive main experiments in e_17 to investigate the factors modulating benign overfitting, a detailed 'analysis' is the mandatory next step. This event is crucial for interpreting the new data, answering the refined 'research_goals' from e_13, and determining the success of the latest experimental phase."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "research",
+    "topic": "Generalization theory for overparameterized networks",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "The team integrates the latest analysis from e_18 into the paper. This involves a major revision, adding new sections that detail the experiments on label noise and feature correlation, presenting the quantitative results, and rewriting the discussion and conclusion to reflect the now much deeper understanding of the factors modulating benign overfitting.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the conclusive analysis in e_18, which directly addressed the project's refined goals, the critical next step is to incorporate these new findings into the manuscript. This 'writing' event synthesizes the entire research narrative, from the initial observations to the targeted investigation, creating a nearly complete draft of the final paper."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "research",
+    "topic": "Generalization theory for overparameterized networks",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "With all results integrated, the team focuses on finalizing the manuscript. They write the abstract, introduction, and conclusion, ensuring the paper's narrative cohesively frames the research journey from initial questions to the final, nuanced understanding of benign overfitting. The entire paper is polished for clarity and flow, preparing it for submission.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After the major revision in e_19, the paper contains all the necessary technical content. This final writing phase is crucial for creating a compelling narrative, framing the contributions in the introduction and abstract, and producing a polished manuscript ready for review and submission. It represents the culmination of the research and writing effort."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "research",
+    "topic": "Generalization theory for overparameterized networks",
+    "subject": "CS-AI/ML",
+    "event_type": "end",
+    "description": "The project concludes with the submission of the finalized manuscript to a top-tier machine learning conference. The paper cohesively presents the investigation into benign overfitting, from initial findings to the deeper analysis of modulating factors like label noise and feature correlation.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached a natural conclusion. The research has progressed through multiple iterative cycles of experimentation, analysis, and goal refinement (e.g., e_13, e_17), leading to a comprehensive set of results. The final manuscript has been written and polished (e_19, e_20), and all research goals have been addressed, making it ready for submission and marking the end of this research cycle."
+  }
+]

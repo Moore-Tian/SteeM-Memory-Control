@@ -1,0 +1,406 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Common writing errors and self-editing checklists",
+    "subject": "Writing",
+    "event_type": "objective_clarification",
+    "description": "Conducted an initial diagnostic session to understand the learner's writing habits, self-perceived weaknesses, and goals. The learner wants to improve their academic writing, specifically focusing on clarity, conciseness, and avoiding common grammatical errors to prepare for university-level coursework.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "As this is the first session, the immediate priority is to establish a clear understanding of the learner's goals and needs. This diagnostic step is essential for creating a relevant and effective study plan in subsequent sessions."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Common writing errors and self-editing checklists",
+    "subject": "Writing",
+    "event_type": "plan_milestones",
+    "description": "Based on the clarified objectives, the tutor and learner co-created a high-level study plan. The plan outlines three main milestones: 1) Grammar and Punctuation Fundamentals, 2) Sentence Clarity and Conciseness, and 3) Developing a Self-Editing Checklist. Each milestone includes specific topics and a rough timeline.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learner's goals established in the previous session, creating a structured study plan is the logical next step. This translates the abstract objectives from the 'learning_objectives' artifact into a concrete roadmap, setting clear expectations and guiding the upcoming lessons."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Common writing errors and self-editing checklists",
+    "subject": "Writing",
+    "event_type": "lesson",
+    "description": "The tutor delivered the first lesson, focusing on 'Grammar and Punctuation Fundamentals' as outlined in the study plan. The session covered the identification and correction of two common errors: comma splices and run-on sentences, using examples from academic texts.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the roadmap established in the 'study_plan', the first lesson addresses the initial milestone of 'Grammar and Punctuation Fundamentals'. This begins the instructional phase of the tutoring process and creates 'teaching_notes' as a foundational resource for the learner to refer back to."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Common writing errors and self-editing checklists",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "The learner was assigned a set of practice exercises to identify and correct comma splices and run-on sentences in sample paragraphs. The learner completed the exercises and submitted their corrected sentences for review.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on comma splices and run-on sentences, this practice session is essential for the learner to apply the new concepts. It provides a practical application of the material covered in the 'teaching_notes' and generates a 'practice_record' that can be used for targeted feedback in a subsequent review session."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Common writing errors and self-editing checklists",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor reviewed the learner's submitted exercises from the practice session. The review focused on evaluating the accuracy of the corrections for comma splices and run-on sentences and identifying any patterns of misunderstanding.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner submitted their work in the previous practice session, a review is the necessary next step to assess their understanding. Analyzing the 'practice_record' allows the tutor to provide specific, actionable feedback, which will be captured in the 'feedback_summary' artifact."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Common writing errors and self-editing checklists",
+    "subject": "Writing",
+    "event_type": "materials_revision",
+    "description": "The review of the learner's practice revealed a persistent confusion between fixing run-on sentences with a period versus a semicolon. In response, the tutor updated the teaching notes to include a clear comparison chart and added more distinct examples for each correction method.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Based on the specific issues identified in the 'feedback_summary', it's clear the original 'teaching_notes' lacked sufficient clarity on a key point. Revising the materials is a crucial step to address the root of the misconception before asking the learner to practice again, ensuring the foundational knowledge is solid."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Common writing errors and self-editing checklists",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "The learner was assigned a new, targeted practice exercise focusing on correcting run-on sentences using periods, semicolons, and coordinating conjunctions. This exercise was designed to reinforce the concepts clarified in the revised teaching notes.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials to address a specific point of confusion, the next logical step is to provide targeted practice. This allows the learner to apply the clarified concepts from the updated 'teaching_notes' and provides a new 'practice_record' to verify that the misunderstanding has been resolved."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Common writing errors and self-editing checklists",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor reviewed the learner's second, more targeted practice on correcting run-on sentences. The analysis confirmed that the learner now correctly differentiates between using a period, a semicolon, or a coordinating conjunction, demonstrating a solid grasp of the revised concepts.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the targeted practice in the previous step, a review is necessary to validate the learner's understanding. Analyzing the latest 'practice_record' confirms that the intervention was successful and generates a new 'feedback_summary' to affirm the learner's progress and introduce the next topic."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Common writing errors and self-editing checklists",
+    "subject": "Writing",
+    "event_type": "lesson",
+    "description": "With the learner having mastered run-on sentences, the tutor moves to the next topic in the study plan: subject-verb agreement. The lesson explains the core rules and covers tricky cases like compound subjects, collective nouns, and phrases that separate the subject and verb.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review confirmed that the learner has mastered the initial topic. Following the progression outlined in the 'study_plan', this lesson introduces the next fundamental grammatical concept, building on the established momentum and expanding the learner's editing skills."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Common writing errors and self-editing checklists",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "To reinforce the lesson on subject-verb agreement, the learner is assigned a practice worksheet. The exercises require them to identify and correct agreement errors in sentences featuring compound subjects, collective nouns, and indefinite pronouns.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on subject-verb agreement, a dedicated practice session is the logical next step to ensure the learner can apply the new rules. This exercise uses the concepts from the latest 'teaching_notes' and will produce a 'practice_record' that allows the tutor to assess comprehension and provide targeted feedback."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Common writing errors and self-editing checklists",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor reviewed the learner's practice worksheet on subject-verb agreement. The review focused on the learner's ability to handle tricky cases like indefinite pronouns and collective nouns, noting a few minor errors but overall strong comprehension.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on subject-verb agreement, a review is the necessary next step to assess the learner's understanding. Analyzing the 'practice_record' allows the tutor to provide targeted feedback and determine if the topic has been mastered or if further clarification is needed."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Common writing errors and self-editing checklists",
+    "subject": "Writing",
+    "event_type": "lesson",
+    "description": "Given the learner's strong comprehension of the initial grammar topics, the tutor proceeds to the second milestone in the study plan: 'Sentence Clarity and Conciseness'. This lesson introduces strategies for reducing wordiness, such as eliminating redundant phrases and converting nominalizations (nouns made from verbs) back into active verbs.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review confirmed that the learner has a solid grasp of subject-verb agreement, effectively completing the main objectives of the first milestone. Following the 'study_plan', the logical next step is to begin the second milestone, shifting focus from grammatical correctness to stylistic improvement and clarity. This lesson introduces a new set of concepts and generates corresponding 'teaching_notes'."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Common writing errors and self-editing checklists",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "The learner is assigned a practice task where they must revise several verbose paragraphs. The goal is to apply the strategies for improving conciseness, such as eliminating redundant words, shortening phrases, and converting nominalizations back into active verbs.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on sentence clarity and conciseness, this practice session is the essential next step for the learner to apply these new stylistic editing skills. It directly builds on the concepts from the latest 'teaching_notes' and will generate a 'practice_record' to assess the learner's ability to move from theory to practical application."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Common writing errors and self-editing checklists",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor reviewed the learner's revised paragraphs, assessing their ability to apply conciseness strategies. The review noted that while the learner successfully eliminated redundant words, they struggled to consistently identify and convert nominalizations back into active verbs.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner practiced applying conciseness techniques, a review of their work is the necessary next step. Analyzing the 'practice_record' allows the tutor to evaluate comprehension, identify specific areas of difficulty (like nominalizations), and generate a 'feedback_summary' to guide the next instructional step."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Common writing errors and self-editing checklists",
+    "subject": "Writing",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback from the last review, the tutor revised the teaching notes on conciseness. The update adds a dedicated section for identifying nominalizations (e.g., words ending in -tion, -ment) and includes a clearer, step-by-step guide with more examples on converting them back into active verbs.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review identified a specific weakness in handling nominalizations, as noted in the 'feedback_summary'. Revising the 'teaching_notes' to provide more explicit instruction and examples is a direct response to this issue, aiming to clarify the concept before the learner attempts to practice it again."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Common writing errors and self-editing checklists",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "The learner is given a new set of exercises focused specifically on identifying and converting nominalizations into active verbs. This targeted practice is designed to build proficiency using the revised teaching notes that provide a clearer, step-by-step guide on this topic.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the 'teaching_notes' to address the specific weakness with nominalizations identified in the 'feedback_summary', a targeted practice session is the essential next step. This allows the learner to apply the newly clarified concepts and provides a new 'practice_record' to verify that the misunderstanding has been resolved."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Common writing errors and self-editing checklists",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor reviewed the learner's targeted practice on converting nominalizations. The results showed significant improvement, with the learner now able to consistently identify and rephrase sentences to use active verbs, demonstrating that the revised notes and focused practice were successful.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice session, a review is essential to verify if the learner's previous difficulty with nominalizations has been resolved. Analyzing the 'practice_record' provides the necessary data to confirm mastery and generate a 'feedback_summary' that can greenlight moving on to the next topic."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Common writing errors and self-editing checklists",
+    "subject": "Writing",
+    "event_type": "lesson",
+    "description": "The tutor initiates the third milestone from the study plan: 'Developing a Self-Editing Checklist'. This lesson explains the purpose of a personalized checklist and guides the learner in starting to draft one by reviewing all the topics covered so far, including grammar rules and conciseness strategies.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With Milestones 1 and 2 successfully covered, as confirmed by recent feedback, the tutoring process now advances to the final milestone outlined in the 'study_plan'. This lesson begins the consolidation phase, teaching the learner how to synthesize their knowledge into a practical, reusable self-editing tool."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Common writing errors and self-editing checklists",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "The learner is tasked with creating a first draft of their personalized self-editing checklist. They are instructed to synthesize all the topics covered (comma splices, subject-verb agreement, conciseness, nominalizations) into a practical, actionable list for use on their own writing.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on how to create a self-editing checklist, the logical next step is for the learner to practice by drafting their own. This task requires them to synthesize all prior lessons and feedback into a personalized tool, and the resulting draft (as a 'practice_record') can then be reviewed by the tutor."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Common writing errors and self-editing checklists",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's first draft of their personalized self-editing checklist. The feedback focuses on ensuring all learned concepts are included, the checklist items are phrased as clear, actionable questions, and the overall structure is logical for a real editing workflow.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner drafted their self-editing checklist in the previous practice session, a review is the essential next step. This allows the tutor to analyze the draft from the 'practice_record' and provide targeted feedback to help the learner refine it into a more effective and comprehensive tool."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "Common writing errors and self-editing checklists",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "The learner revises their personalized self-editing checklist, incorporating the tutor's feedback to make the items more actionable and the structure more logical. This revised version is submitted for final approval.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After receiving feedback on the first draft of their checklist, the logical next step is for the learner to apply that feedback in a revision. This iterative practice helps them refine the tool they will use for self-editing and demonstrates their ability to incorporate constructive criticism, moving them closer to the final goal of independent editing."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "tutoring",
+    "topic": "Common writing errors and self-editing checklists",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor performs a final review of the learner's revised self-editing checklist. The review confirms that all previous feedback has been incorporated, the checklist is comprehensive, and its structure is logical and ready for practical application.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner submitted a revised version of their checklist, a final review is necessary to approve the tool. This step validates that the feedback was implemented correctly and that the learner now possesses a high-quality, personalized resource for independent editing."
+  },
+  {
+    "event_id": "e_23",
+    "time_index": 23,
+    "domain": "tutoring",
+    "topic": "Common writing errors and self-editing checklists",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "To test the effectiveness of the new checklist and consolidate all learned skills, the learner is asked to edit a short piece of their own writing. They are instructed to use their finalized, personalized self-editing checklist to guide their revision process and submit both the original and revised versions for a final review.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Now that the learner has a finalized, tutor-approved self-editing checklist, the next logical step is to apply it in a realistic context. This practice session serves as a capstone task, moving from isolated exercises to holistic self-editing, and will demonstrate the learner's ability to independently improve their own writing."
+  },
+  {
+    "event_id": "e_24",
+    "time_index": 24,
+    "domain": "tutoring",
+    "topic": "Common writing errors and self-editing checklists",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor conducted a final review comparing the learner's original writing sample against the version they revised using their personalized checklist. The review assessed the successful application of all learned concepts, from grammar corrections to improvements in clarity and conciseness, confirming the learner's ability to self-edit effectively.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "This review is the culminating assessment, evaluating the learner's performance on the capstone practice task from the previous session. By analyzing the 'practice_record', the tutor can determine if the learner has successfully integrated all the skills into a practical self-editing process, thus meeting the overarching learning objectives."
+  },
+  {
+    "event_id": "e_25",
+    "time_index": 25,
+    "domain": "tutoring",
+    "topic": "Common writing errors and self-editing checklists",
+    "subject": "Writing",
+    "event_type": "end",
+    "description": "The tutor and learner hold a final session to wrap up the tutoring engagement. They review the progress made from the initial diagnostic to the successful application of the self-editing checklist, and discuss strategies for continued independent practice and improvement.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The final review confirmed that the learner has successfully met all learning objectives, demonstrating the ability to independently identify and correct common writing errors using their personalized checklist. With the core goals achieved and the learner equipped for self-guided improvement, the formal tutoring process is concluded."
+  }
+]

@@ -1,0 +1,423 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Revolutions and social transformation",
+    "subject": "History",
+    "event_type": "objective_clarification",
+    "description": "Initial diagnostic session to discuss the learner's goals and background in history. The learner wants to understand the key causes and consequences of major world revolutions for an upcoming university-level exam.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "As this is the first event in the tutoring timeline, the most logical step is to clarify the learner's goals, constraints, and prior knowledge. This 'objective_clarification' step establishes the foundation upon which all future planning and teaching will be built."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Revolutions and social transformation",
+    "subject": "History",
+    "event_type": "plan_milestones",
+    "description": "Based on the learning objectives, the tutor and learner create a high-level study plan. They agree to structure the lessons around three key revolutions: the American, French, and Russian Revolutions, with milestones for understanding the causes, key events, and long-term impacts of each.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learning objectives established in the previous session (e_01), the next logical step is to create a structured study plan. This 'plan_milestones' event translates the high-level goals into an actionable roadmap, ensuring both tutor and learner are aligned on the scope and sequence of topics."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Revolutions and social transformation",
+    "subject": "History",
+    "event_type": "lesson",
+    "description": "The tutor delivers the first lesson as per the study plan, focusing on the causes of the American Revolution. The lesson covers key ideological and economic factors, such as Enlightenment ideas, the impact of the Seven Years' War, and British colonial policies.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the creation of the 'study_plan' in e_02, the next logical step is to begin instruction with the first topic. This 'lesson' event starts the content delivery phase and produces 'teaching_notes' on the American Revolution, which can be used for future review and practice."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Revolutions and social transformation",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "To solidify the concepts from the first lesson, the tutor assigns a practice task. The learner is asked to write a short essay explaining the main causes of the American Revolution, drawing on the material covered.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After delivering a lesson (e_03), it is crucial to assess the learner's comprehension before moving forward. This 'practice' event allows the learner to apply their new knowledge, creating a 'practice_record' that will serve as the basis for the upcoming review and feedback session."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Revolutions and social transformation",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's practice essay on the causes of the American Revolution. The review focuses on the clarity of the argument, the use of historical evidence from the lesson, and the overall structure of the essay.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the practice task in e_04, the essential next step is to provide structured feedback. This 'review' event analyzes the 'practice_record' to identify misunderstandings and areas for improvement, generating a 'feedback_summary' that will guide corrections and future study."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Revolutions and social transformation",
+    "subject": "History",
+    "event_type": "materials_revision",
+    "description": "Based on the review of the learner's essay, the tutor identifies that the connection between Enlightenment philosophy and colonial grievances was weak. The tutor updates the teaching notes to include a table explicitly linking thinkers like John Locke to specific revolutionary slogans and documents.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The feedback from the previous 'review' event (e_05) revealed a specific area of misunderstanding. A 'materials_revision' is the logical next step to strengthen the 'teaching_notes' to address this gap, making the concepts clearer for the learner and improving the materials for future use."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Revolutions and social transformation",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "To reinforce the revised material, the tutor assigns a targeted follow-up task. The learner is asked to answer short-answer questions focusing specifically on the link between Enlightenment thinkers and key documents of the American Revolution, using the updated teaching notes.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After identifying a weakness in the last review (e_05) and revising the materials to address it (e_06), this targeted 'practice' event is necessary to confirm the learner's understanding. It closes the feedback loop and ensures the concept is mastered before progressing to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Revolutions and social transformation",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's answers to the short-answer questions. The review confirms that the learner can now clearly articulate the connection between Enlightenment philosophy and key revolutionary documents, showing that the previous intervention was successful.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the targeted practice in e_07, a 'review' is necessary to confirm that the learner has mastered the concept. This event assesses the new 'practice_record' to ensure the misunderstanding identified in e_05 has been resolved before proceeding with the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Revolutions and social transformation",
+    "subject": "History",
+    "event_type": "lesson",
+    "description": "Now that the learner has mastered the causes of the American Revolution, the tutor proceeds to the next topic in the study plan. This lesson covers the key events of the American Revolution, including the Declaration of Independence, major military turning points like the Battle of Saratoga, and the role of foreign intervention.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The successful review in e_08 confirmed the learner's understanding of the previous topic, making it appropriate to advance. Following the 'study_plan' from e_02, the next logical step is a 'lesson' on the key events of the American Revolution, continuing the progression through the first major module."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Revolutions and social transformation",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "Following the lesson on key events, the tutor assigns a practice task. The learner is asked to create a chronological timeline of the American Revolution, including brief descriptions of the significance of at least five key events covered in the lesson.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson (e_09) introduces new content, a 'practice' event is the logical next step to assess comprehension and application of knowledge. This task requires the learner to organize and synthesize the information from the recent 'teaching_notes', creating a 'practice_record' for the tutor to review."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Revolutions and social transformation",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's timeline of the American Revolution. The feedback assesses the chronological accuracy, the selection of key events, and the quality of the descriptions explaining their significance.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the 'practice' event (e_10), a 'review' is the necessary next step to evaluate the learner's work. This allows the tutor to check for comprehension of the sequence and significance of historical events, providing targeted feedback before moving to the next topic."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Revolutions and social transformation",
+    "subject": "History",
+    "event_type": "lesson",
+    "description": "The tutor moves to the final section on the American Revolution, delivering a lesson on its long-term impacts. The lesson covers the creation of the U.S. Constitution, the revolution's influence on subsequent revolutions like the French Revolution, and its global significance.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the review in e_11 concluding the topic of key events, the tutoring process can now advance. Following the sequence laid out in the 'study_plan', this 'lesson' covers the final part of the American Revolution module—its long-term impacts—before moving on to the next major revolution."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Revolutions and social transformation",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "To assess understanding of the final part of the American Revolution module, the tutor assigns a practice essay. The prompt asks the learner to analyze how the American Revolution influenced the development of democratic ideals and revolutionary movements globally.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on the long-term impacts of the American Revolution (e_12), a 'practice' event is the logical next step to ensure the learner can synthesize and apply this complex information. This task creates a 'practice_record' that will allow the tutor to assess the learner's overall comprehension of the entire American Revolution module before moving to the French Revolution."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Revolutions and social transformation",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's summative essay on the global impact of the American Revolution. The review assesses the learner's ability to synthesize information from the entire module and construct a coherent historical argument.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the comprehensive practice essay was assigned in e_13, a 'review' is the essential next step. This event evaluates the 'practice_record' to provide summative feedback on the entire American Revolution module, ensuring a solid foundation before proceeding to the next revolution outlined in the study plan."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Revolutions and social transformation",
+    "subject": "History",
+    "event_type": "lesson",
+    "description": "Having successfully completed the module on the American Revolution, the tutor begins the next section of the study plan: the causes of the French Revolution. The lesson focuses on the social structure of the Ancien Régime, the financial crisis of the French monarchy, and the influence of Enlightenment ideas.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_14) confirmed the learner's solid understanding of the American Revolution module. Following the 'study_plan' from e_02, the logical next step is to begin the next major topic with a 'lesson' on the causes of the French Revolution, starting the second milestone of the course."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Revolutions and social transformation",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "To reinforce the lesson on the causes of the French Revolution, the tutor assigns a comparative practice task. The learner is asked to create a chart comparing and contrasting the social, economic, and ideological causes of the American and French Revolutions.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the introductory lesson on the French Revolution (e_15), a 'practice' event is necessary to assess the learner's initial comprehension. This comparative task not only tests the new material but also encourages the learner to synthesize it with previously mastered content, creating a 'practice_record' for the next review session."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Revolutions and social transformation",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's comparative chart of the American and French Revolutions. The review assesses the accuracy of the causes listed for each revolution and the learner's ability to draw meaningful comparisons and contrasts.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the comparative practice task in e_16, a 'review' is the essential next step to evaluate the learner's ability to synthesize information across different revolutionary contexts. This provides crucial feedback on their understanding of the causes of the French Revolution before proceeding further into that module."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Revolutions and social transformation",
+    "subject": "History",
+    "event_type": "lesson",
+    "description": "With the causes of the French Revolution understood, the tutor delivers a lesson on its key events. The lesson covers the major phases from the storming of the Bastille and the Declaration of the Rights of Man, through the Reign of Terror, to the rise of Napoleon Bonaparte.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The successful review in e_17 confirmed the learner's grasp of the previous topic. Adhering to the 'study_plan', the next logical step is a 'lesson' covering the key events of the French Revolution, moving the learner into the second phase of this module."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Revolutions and social transformation",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "Following the lesson on the key events of the French Revolution, the tutor assigns a practice task. The learner is asked to create a flowchart sequencing the main phases of the revolution (e.g., National Assembly, Reign of Terror, Directory, Napoleonic era) and to identify a key turning point within each phase.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a content-heavy lesson (e_18), a 'practice' event is the logical next step to assess the learner's ability to organize and recall the complex sequence of events of the French Revolution. This task creates a 'practice_record' which will be essential for the upcoming review to diagnose any confusion about the revolution's progression."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Revolutions and social transformation",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's flowchart on the phases of the French Revolution. The review assesses the logical sequencing of the phases, the accuracy of the turning points identified, and the overall clarity of the diagram.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the 'practice' event (e_19), a 'review' is the necessary next step to evaluate the learner's work. This allows the tutor to check for comprehension of the complex progression of the French Revolution and provide targeted feedback before moving on."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "Revolutions and social transformation",
+    "subject": "History",
+    "event_type": "lesson",
+    "description": "Building on the learner's solid grasp of the French Revolution's timeline, the tutor delivers a lesson on its long-term consequences. Topics include the rise of nationalism in Europe, the spread of liberal and democratic ideals, the influence of the Napoleonic Code, and the eventual redrawing of the European map.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in e_20 confirmed the learner's understanding of the French Revolution's events. Following the structure of the 'study_plan', the next logical step is a 'lesson' covering the final part of the French Revolution module—its long-term impacts—which parallels the approach taken with the American Revolution."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "tutoring",
+    "topic": "Revolutions and social transformation",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "To conclude the module on the French Revolution, the tutor assigns a practice essay. The prompt asks the learner to analyze the most significant long-term consequences of the French Revolution on European politics and society, drawing on the previous lesson.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on the long-term impacts of the French Revolution (e_21), a 'practice' event is the logical next step to assess the learner's ability to synthesize this complex information. This summative task creates a 'practice_record' that will allow the tutor to evaluate the learner's overall comprehension of the French Revolution module before moving to the Russian Revolution."
+  },
+  {
+    "event_id": "e_23",
+    "time_index": 23,
+    "domain": "tutoring",
+    "topic": "Revolutions and social transformation",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's summative essay on the long-term consequences of the French Revolution. The review evaluates the learner's ability to construct a well-supported argument and synthesize information from the entire French Revolution module.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the summative practice essay was assigned in e_22, a 'review' is the essential next step. This event evaluates the 'practice_record' to provide comprehensive feedback on the entire French Revolution module, confirming mastery before advancing to the final section of the study plan."
+  },
+  {
+    "event_id": "e_24",
+    "time_index": 24,
+    "domain": "tutoring",
+    "topic": "Revolutions and social transformation",
+    "subject": "History",
+    "event_type": "lesson",
+    "description": "Having successfully completed the modules on the American and French Revolutions, the tutor begins the final section of the study plan: the causes of the Russian Revolution. The lesson covers long-term social tensions, the impact of industrialization, the 1905 revolution, and the strain of World War I.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_23) confirmed the learner's solid understanding of the French Revolution module. Following the 'study_plan' from e_02, the logical next step is to begin the final major topic with a 'lesson' on the causes of the Russian Revolution, starting the third milestone of the course."
+  },
+  {
+    "event_id": "e_25",
+    "time_index": 25,
+    "domain": "tutoring",
+    "topic": "Revolutions and social transformation",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "To check comprehension of the new material, the tutor assigns a practice task on the causes of the Russian Revolution. The learner is asked to write a short analysis explaining how long-term factors (like serfdom and autocracy) and short-term triggers (like WWI) combined to cause the revolution.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on the causes of the Russian Revolution (e_24), a 'practice' event is the logical next step to assess the learner's understanding. This task requires the learner to apply the concepts from the 'teaching_notes', creating a 'practice_record' for the subsequent review session."
+  }
+]

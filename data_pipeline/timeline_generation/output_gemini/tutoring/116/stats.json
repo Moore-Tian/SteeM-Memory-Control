@@ -1,0 +1,6 @@
+{
+  "total_prompt_tokens": 104008,
+  "total_completion_tokens": 30251,
+  "total_tokens": 134259,
+  "num_steps": 25
+}

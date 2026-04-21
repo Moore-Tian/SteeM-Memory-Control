@@ -1,0 +1,372 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Interview preparation and structured self-presentation",
+    "subject": "LifeSkills",
+    "event_type": "objective_clarification",
+    "description": "The first session is a diagnostic conversation to understand the learner's background, target roles (e.g., product manager), timeline (e.g., interviews in 3-4 weeks), and specific challenges with self-presentation.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "As the first event in the timeline, it is essential to start by clarifying the learner's goals and constraints. This initial diagnostic step provides the foundation for creating a relevant and effective study plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Interview preparation and structured self-presentation",
+    "subject": "LifeSkills",
+    "event_type": "plan_milestones",
+    "description": "Based on the defined objectives, the tutor and learner collaborate to create a high-level study plan. This plan outlines key milestones, such as mastering the STAR method, preparing stories for key behavioral questions, and running mock interviews.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learner's goals clarified in the previous diagnostic session (e_01), the next logical step is to structure the tutoring process. Creating a study plan provides a roadmap and sets clear expectations for the upcoming sessions."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Interview preparation and structured self-presentation",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "The tutor introduces the STAR method (Situation, Task, Action, Result) as a foundational technique for structuring answers to behavioral interview questions. The lesson covers the definition of each component, provides a simple example, and explains common pitfalls like focusing too much on the situation or neglecting the result.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the study plan established in e_02, the next logical step is to begin instruction on the first key topic. Teaching the STAR method directly addresses a core milestone from the plan and provides the learner with a concrete framework before moving on to practice."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Interview preparation and structured self-presentation",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The tutor asks the learner to apply the STAR method to a common behavioral question, such as 'Tell me about a time you faced a significant challenge.' The learner's first attempt at structuring a story is recorded for later analysis.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing a theoretical framework like the STAR method in the previous lesson (e_03), the immediate next step should be application. This practice session allows the learner to actively use the new skill, creating a concrete performance artifact that can be used for feedback and assessment."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Interview preparation and structured self-presentation",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's recorded attempt from the previous practice session. The feedback highlights that while the 'Situation' and 'Task' were clear, the 'Action' was vague and the 'Result' lacked quantifiable metrics, which is a common issue.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the initial practice attempt in e_04, a review is critical to provide specific, actionable feedback. By analyzing the practice_record against the principles in the teaching_notes, the tutor can identify misconceptions and guide the learner on how to improve their STAR storytelling."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Interview preparation and structured self-presentation",
+    "subject": "LifeSkills",
+    "event_type": "materials_revision",
+    "description": "Based on the review, the tutor realizes the teaching notes on the STAR method could be improved. They revise the notes to add more specific examples of strong 'Action' verbs and a checklist for creating quantifiable 'Results' (e.g., 'increased revenue by X%,' 'reduced processing time by Y hours').",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_05) identified a common weakness in describing 'Action' and 'Result'. Instead of just repeating practice, the tutor first improves the instructional materials to explicitly address this gap, making the concepts clearer and providing a better reference for the learner's next attempt."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Interview preparation and structured self-presentation",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The learner re-attempts the same behavioral question from the initial practice session, this time using the revised teaching notes. The goal is to focus specifically on describing strong 'Actions' and quantifiable 'Results', addressing the weaknesses identified in the previous review.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials in e_06 to address specific weaknesses found during the review in e_05, it is crucial for the learner to practice again. This targeted practice allows them to apply the new concepts and reinforced guidance, creating a new performance record to assess their progress."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Interview preparation and structured self-presentation",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's second practice attempt. The feedback confirms significant improvement in articulating strong 'Actions' and quantifiable 'Results', indicating the learner has successfully integrated the previous feedback and revised materials.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the targeted re-practice in e_07, a review is essential to assess whether the learner has overcome the specific weaknesses identified in the first review (e_05). This step validates the effectiveness of the revised materials and confirms the learner is ready to move on."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Interview preparation and structured self-presentation",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "Now that the learner has grasped the STAR method for a single story, the tutor introduces the concept of building a 'story bank'. This lesson covers how to identify common interview themes (like leadership, teamwork, and conflict resolution) and map personal experiences to them, preparing multiple STAR stories in advance.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After the learner demonstrated proficiency with the STAR method in e_08, it is time to scale up their preparation. This lesson moves from a single-example application to a strategic approach of preparing a portfolio of stories, directly addressing a key milestone in the original study plan."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Interview preparation and structured self-presentation",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The tutor tasks the learner with creating initial drafts for their story bank. The learner is asked to identify three key projects from their resume and outline them using the STAR method, preparing them to be adapted for themes like 'leadership' and 'teamwork'.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on building a story bank (e_09), it is essential for the learner to begin applying the concept. This practice session operationalizes the strategy, creating the first draft of the story bank which can then be reviewed and refined."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Interview preparation and structured self-presentation",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor reviews the three drafted stories from the story bank practice. The feedback focuses on the clarity of the STAR structure for each story and their potential to be adapted for different behavioral themes like 'leadership' or 'teamwork'.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session where the learner drafted their initial story bank (e_10), a review is the critical next step. This allows the tutor to assess the quality of the drafted stories against the lesson's principles and provide targeted feedback before the learner invests more time in building out the full bank."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Interview preparation and structured self-presentation",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "To bridge the gap between writing and speaking, the tutor asks the learner to verbally deliver one of the stories they drafted and refined for their story bank. The session is recorded to capture not just the content but also the delivery, pacing, and tone.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After reviewing the written content of the story bank drafts in e_11, the next logical step is to practice verbal delivery. This targeted practice focuses on translating the well-structured written story into a compelling spoken narrative before moving on to a full, more complex mock interview."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Interview preparation and structured self-presentation",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor analyzes the recorded verbal delivery of the story from the previous session. Feedback is provided on communication aspects like pacing, tone, confidence, and the use of filler words, comparing the spoken version to the strong written draft.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner practiced verbal delivery in e_12, a review is essential to provide feedback on communication skills beyond the written content. Analyzing the practice_record allows the tutor to identify issues with pacing, tone, and confidence, which are critical for interview success."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Interview preparation and structured self-presentation",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "In response to the feedback on verbal delivery, the tutor conducts a lesson on presentation skills. This lesson introduces specific techniques for managing filler words, controlling pace, and using vocal tone to convey confidence and engagement.",
+    "required_artifacts": [
+      "feedback_summary",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_13) identified weaknesses in the learner's verbal delivery, not just the story's content. A dedicated lesson on presentation skills is the logical next step to equip the learner with specific techniques to address these issues before they practice delivery again."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Interview preparation and structured self-presentation",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The learner practices delivering the same story again, consciously applying the techniques for managing pace, tone, and filler words from the recent lesson. This new attempt is recorded, allowing for a direct comparison with their previous delivery.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on presentation skills in e_14, it is crucial for the learner to immediately apply the new techniques. This targeted practice session allows them to work on the specific delivery weaknesses identified in the previous review (e_13) and creates a new performance artifact for evaluation."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Interview preparation and structured self-presentation",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's second attempt at verbal delivery, comparing the new recording against the previous one. The review focuses on whether the learner successfully applied the techniques for managing pace, tone, and filler words.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner practiced their delivery skills in e_15, a review is essential to provide feedback and assess their improvement. This step closes the feedback loop and confirms whether the learner has successfully integrated the techniques from the presentation skills lesson (e_14)."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Interview preparation and structured self-presentation",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "Having confirmed the learner's ability to structure and deliver a single story, the tutor runs a partial mock interview. The tutor asks 2-3 different behavioral questions to test the learner's ability to select appropriate stories from their story bank and deliver them effectively under pressure.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After mastering story structure and delivery for individual answers (confirmed in e_16), the next logical step is to integrate these skills in a more complex scenario. A mock interview directly addresses a key milestone from the study plan and tests the learner's ability to apply their knowledge in a simulated, real-world context."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Interview preparation and structured self-presentation",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor reviews the recording from the partial mock interview. The feedback assesses the learner's ability to select relevant stories from their story bank under pressure and maintain consistent delivery quality across multiple questions.",
+    "required_artifacts": [
+      "practice_record",
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a complex practice session like the partial mock interview in e_17, a detailed review is critical. This step provides holistic feedback on how the learner integrates various skills (story selection, adaptation, delivery) under simulated pressure, which is essential before moving to a full mock interview."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Interview preparation and structured self-presentation",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The tutor conducts a full-length mock interview, simulating a real 45-60 minute behavioral interview. This session tests the learner's stamina, ability to manage their story bank over multiple questions, and maintain consistent performance under sustained pressure.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After successfully completing a partial mock interview (e_17) and receiving feedback (e_18), the next step is to scale up to a full-length simulation. This tests endurance and the ability to apply all learned skills in a comprehensive, realistic scenario, which is a core objective of the tutoring."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Interview preparation and structured self-presentation",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor provides a comprehensive review of the full-length mock interview, assessing overall performance, stamina, and consistency in applying the STAR method and delivery skills across the entire session.",
+    "required_artifacts": [
+      "practice_record",
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After conducting a full-length mock interview in e_19, a comprehensive review is the critical next step. This provides a final, holistic assessment of the learner's readiness, evaluating their ability to integrate all learned skills under sustained pressure, which is the ultimate goal of the tutoring."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "Interview preparation and structured self-presentation",
+    "subject": "LifeSkills",
+    "event_type": "plan_milestones",
+    "description": "Following the comprehensive review of the full mock interview, the tutor and learner finalize the study plan. They mark all core milestones as 'complete' and add a new section with recommendations for self-directed practice and warm-up routines before actual interviews.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the core instruction and practice complete after the final mock interview review (e_20), this step transitions the learner from guided tutoring to independent preparation. Updating the study plan provides a clear, actionable guide for the final phase before their interviews, ensuring they continue to build on their progress."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "tutoring",
+    "topic": "Interview preparation and structured self-presentation",
+    "subject": "LifeSkills",
+    "event_type": "end",
+    "description": "This final event marks the conclusion of the formal tutoring engagement. The learner has successfully met their objectives, demonstrated proficiency in a full mock interview, and received a finalized plan for self-guided practice.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has progressed from foundational concepts to successful performance in a full simulation (e_19, e_20), and the study plan has been updated for self-study (e_21). With all objectives met and the learner equipped for independent preparation, the tutoring process is now complete."
+  }
+]

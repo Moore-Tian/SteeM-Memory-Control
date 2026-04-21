@@ -1,0 +1,344 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "RAG pipeline robustness",
+    "subject": "CS-AI/ML",
+    "event_type": "proposal",
+    "description": "Initial project kickoff. Defined the core research question about the robustness of Retrieval-Augmented Generation (RAG) pipelines and outlined a high-level plan to investigate it.",
+    "required_artifacts": [
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This first event bootstraps the project by turning an abstract idea into concrete artifacts. It requires the conceptual notion of 'research_goals' to generate the first official 'research_goals' artifact and a 'research_plan', thus satisfying the schema for the initial step."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "RAG pipeline robustness",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "Based on the initial plan, a detailed experimental scheme was designed. This involved selecting specific RAG models, identifying datasets (e.g., Natural Questions), and defining the types of perturbations to test robustness (e.g., adversarial paraphrasing, factual noise in documents).",
+    "required_artifacts": [
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "After establishing the high-level goals and plan in e_01, the logical next step is to translate these ideas into a concrete experimental methodology. This 'scheme_design' event creates the necessary 'method_scheme' artifact required to run any experiments."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "RAG pipeline robustness",
+    "subject": "CS-AI/ML",
+    "event_type": "pilot_experiments",
+    "description": "Conducted a small-scale pilot study to validate the experimental setup. A single perturbation type (adversarial paraphrasing) was applied to a small subset of the data to test the implementation of the method and the evaluation pipeline.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing the experimental scheme in e_02, running pilot experiments is a crucial next step. This allows for a sanity check of the methodology and technical implementation on a small scale before committing to costly, large-scale main experiments, ensuring the approach is viable and the tools work as expected."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "RAG pipeline robustness",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "Analyzed the results from the pilot study. The findings confirmed that the chosen RAG model is sensitive to adversarial paraphrasing and that the evaluation metrics effectively capture this degradation, validating the experimental setup.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After obtaining initial 'experiment_results' from the pilot study (e_03), a formal analysis is the necessary next step. This allows the team to interpret the preliminary findings, validate the methodology's effectiveness, and make an informed decision about proceeding to large-scale experiments. The analysis also produces a first draft of a results 'paper_paragraph'."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "RAG pipeline robustness",
+    "subject": "CS-AI/ML",
+    "event_type": "main_experiments",
+    "description": "Following the successful pilot, the main experiments were launched. This involved applying the full suite of defined perturbations (adversarial paraphrasing, factual noise, etc.) to the entire dataset to systematically collect data on the RAG pipeline's robustness.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The pilot study (e_03) and its analysis (e_04) confirmed the validity of the experimental setup. The logical next step is to proceed with the full-scale main experiments to gather the comprehensive data needed to address the research goals defined in the 'research_plan'."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "RAG pipeline robustness",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "Conducted a comprehensive analysis of the main experiment results. This involved quantifying the performance drop across all perturbation types and comparing their relative impact, revealing that factual noise in retrieved documents is a particularly critical vulnerability.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the data from the main experiments (e_05) collected, a thorough analysis is the necessary next step to interpret the findings in the context of the original research goals. This analysis synthesizes the raw results into key insights and provides the substance for the results section of the paper."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "RAG pipeline robustness",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "Inspired by the finding that factual noise is a major vulnerability, the team designs a mitigation strategy. The new scheme revises the RAG pipeline to include a 'verifier' module, designed to detect and down-weight potentially noisy retrieved documents before they are passed to the generator.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis in e_06 identified factual noise as a critical weakness. A logical next step in the research process is to move from diagnosis to intervention by designing a new method to mitigate this specific problem. This event revises the 'method_scheme' to incorporate a defense mechanism, setting the stage for follow-up experiments."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "RAG pipeline robustness",
+    "subject": "CS-AI/ML",
+    "event_type": "pilot_experiments",
+    "description": "A pilot experiment was run to test the new 'verifier' module. The experiment focused on the factual noise perturbation type to see if the new mitigation strategy is effective in a small-scale setting before committing to a full-scale evaluation.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing a new mitigation strategy and updating the 'method_scheme' in e_07, a pilot study is the logical next step. It allows the team to validate the implementation and effectiveness of the new 'verifier' module on a small scale before running another round of costly main experiments."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "RAG pipeline robustness",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "Analyzed the pilot results for the new 'verifier' module. The analysis showed that the verifier significantly improves robustness against factual noise, confirming the viability of the mitigation strategy.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After running a pilot experiment on the new mitigation strategy in e_08, a focused analysis is necessary. This step evaluates the effectiveness of the 'verifier' module and determines whether the approach is promising enough to warrant a full-scale main experiment."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "RAG pipeline robustness",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "With the new 'verifier' method validated by the pilot study, the team begins to formally write the 'Methodology' section of the paper. This section details the architecture of the verifier module and how it is integrated into the RAG pipeline to mitigate the effects of factual noise.",
+    "required_artifacts": [
+      "method_scheme",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The design of the new mitigation strategy ('verifier' module) is now stable and has been validated by a pilot study (e_08, e_09). It is an opportune time to formally document this new methodology for the paper while the details are fresh, ensuring a clear description of the novel contribution before running the next set of main experiments."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "RAG pipeline robustness",
+    "subject": "CS-AI/ML",
+    "event_type": "main_experiments",
+    "description": "With the 'verifier' module validated, a new round of main experiments is conducted. These experiments systematically evaluate the improved RAG pipeline against all perturbation types, directly comparing its performance to the baseline results from the initial experiments.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The pilot study (e_08) and its analysis (e_09) confirmed the effectiveness of the new 'verifier' module. The logical progression is to run full-scale main experiments to gather comprehensive data, allowing for a rigorous comparison between the original and the improved RAG pipelines across all conditions."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "RAG pipeline robustness",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "A detailed analysis of the second main experiment is performed. The results are compared against the baseline from the first experiment (e_06), quantifying the performance improvement from the 'verifier' module across all perturbation types and on clean data.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After collecting comprehensive data from the main experiments on the improved pipeline (e_11), the essential next step is to conduct a thorough analysis. This allows the team to definitively evaluate the effectiveness of the 'verifier' mitigation strategy and synthesize the key findings for the paper's results section."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "RAG pipeline robustness",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "With the final analysis complete, the team drafts the main 'Results' and 'Discussion' sections of the paper. This involves structuring the narrative around the comparison between the baseline and the improved pipeline, creating tables and figures from the analysis, and interpreting the broader implications of the findings.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The project's main experimental arc is complete, and the final results have been analyzed in e_12. The most logical next step is to synthesize these findings into the core sections of the research paper, leveraging the latest 'experiment_results' to build upon the existing 'paper_paragraph' drafts and frame the contribution in light of the original 'research_goals'."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "RAG pipeline robustness",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "The team writes the 'Introduction', 'Related Work', and 'Conclusion' sections to create a complete first draft of the paper. This involves contextualizing the research problem, positioning the work against existing literature, and summarizing the key contributions and future directions.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the core methodology and results sections drafted (e_10, e_13), the next step is to assemble a full paper draft. Writing the introduction, conclusion, and related work provides the necessary narrative frame, connecting the initial 'research_goals' to the final 'experiment_results' and creating a complete, coherent document ready for internal review."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "RAG pipeline robustness",
+    "subject": "CS-AI/ML",
+    "event_type": "proposal",
+    "description": "After an internal review of the complete paper draft, the team identifies a key weakness: the necessity of each component within the new 'verifier' module has not been experimentally justified. To strengthen the paper's claims, the research plan and goals are revised to include an ablation study on the verifier module's components.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_plan",
+      "research_goals"
+    ],
+    "reason": "With a full paper draft assembled (e_14), the project is mature enough for critical self-review. This review often reveals gaps in the argumentation, such as a lack of ablation studies. Revisiting the 'research_plan' and 'research_goals' at this stage to incorporate such experiments is a realistic step to preempt reviewer feedback and produce a more robust scientific contribution."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "RAG pipeline robustness",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "Following the decision to conduct an ablation study, the team designs the specific experimental setup. This involves defining the exact configurations for the study, such as running the pipeline with the 'verifier' module's noise detection component disabled but the down-weighting logic active, and vice-versa, to isolate the impact of each part.",
+    "required_artifacts": [
+      "research_plan",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous event (e_15) updated the 'research_plan' to include an ablation study. The logical and necessary next step is to design the specifics of this new experiment. This 'scheme_design' event modifies the existing 'method_scheme' to create a concrete plan for executing the ablation study, which is required before any new experiments can be run."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "RAG pipeline robustness",
+    "subject": "CS-AI/ML",
+    "event_type": "main_experiments",
+    "description": "The team executes the ablation study as designed. This involves running experiments on the improved RAG pipeline with key components of the 'verifier' module individually disabled, to isolate and quantify their contributions to the overall performance improvement.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the design of the ablation study in e_16, the logical next step is to run the experiments. This will produce the necessary 'experiment_results' to validate the necessity of each component in the proposed 'verifier' module, directly addressing the gap identified during the internal paper review (e_15)."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "RAG pipeline robustness",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The results of the ablation study are analyzed. The analysis confirms that both the noise detection and the down-weighting components of the 'verifier' module individually contribute to the overall robustness improvement, justifying the design.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After running the ablation study experiments in e_17, the necessary next step is to analyze the resulting data. This analysis provides the crucial evidence needed to address the gap identified in the internal review (e_15) and will directly inform the final revisions of the paper by generating new content for the results section."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "research",
+    "topic": "RAG pipeline robustness",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "The team revises the full paper draft to incorporate the results and analysis from the ablation study. This involves adding a new subsection to the 'Results' section with the ablation findings and updating the 'Discussion' and 'Conclusion' to reflect the stronger evidence for the proposed method's design.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The ablation study (e_17, e_18) was conducted to strengthen the paper's claims. The logical next step is to integrate these crucial findings into the existing paper draft, creating a more robust and complete manuscript that directly addresses the revised research goals from e_15."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "research",
+    "topic": "RAG pipeline robustness",
+    "subject": "CS-AI/ML",
+    "event_type": "end",
+    "description": "The revised paper, now including the ablation study, is finalized. The project's core research goals have been met, the proposed method has been validated, and the results are compiled into a comprehensive manuscript ready for submission to a conference.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached a natural conclusion. The research arc is complete, from initial experiments and problem diagnosis, to proposing a solution, validating it, and finally justifying its design with an ablation study. The final paper draft (e_19) incorporates all findings, marking the end of this research project's timeline."
+  }
+]

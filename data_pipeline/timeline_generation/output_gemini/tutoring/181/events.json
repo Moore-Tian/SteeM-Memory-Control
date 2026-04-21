@@ -1,0 +1,330 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Supply, demand, and how markets coordinate behavior",
+    "subject": "Economics",
+    "event_type": "objective_clarification",
+    "description": "The tutor and learner have their first meeting to discuss the learner's goals for understanding economics. The learner, a high school student, wants to master supply, demand, and market equilibrium for their AP Microeconomics course, with a focus on graphical analysis.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first event in the tutoring timeline. The initial step must be to clarify the learner's goals and background to establish a foundation for all future planning and instruction."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Supply, demand, and how markets coordinate behavior",
+    "subject": "Economics",
+    "event_type": "plan_milestones",
+    "description": "Based on the clarified objectives, the tutor creates a structured study plan. The plan is broken into three main milestones: understanding demand, understanding supply, and analyzing market equilibrium, with a specific focus on graphical representations for each.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learning objectives established in the first session, the next logical step is to create a structured plan to achieve them. This study plan will serve as a roadmap for the subsequent lessons and practice activities."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Supply, demand, and how markets coordinate behavior",
+    "subject": "Economics",
+    "event_type": "lesson",
+    "description": "The tutor delivers the first lesson, focusing on the concept of demand. The lesson covers the law of demand, the distinction between a change in quantity demanded versus a change in demand, and how to represent demand graphically.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the roadmap established in the study plan, the next logical step is to begin instruction with the first milestone. This lesson on 'demand' initiates the core teaching process and generates initial teaching notes for the topic."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Supply, demand, and how markets coordinate behavior",
+    "subject": "Economics",
+    "event_type": "practice",
+    "description": "To reinforce the concepts from the lesson, the tutor assigns practice problems on demand. The exercises involve drawing demand curves, differentiating between a change in demand and a change in quantity demanded, and analyzing scenarios that cause shifts in the demand curve.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on demand, the next logical step is to have the learner apply their knowledge through practice. This will test their understanding of the material and create a record of their work, which is necessary for the upcoming review and feedback session."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Supply, demand, and how markets coordinate behavior",
+    "subject": "Economics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's completed practice problems on demand. The review focuses on identifying any misconceptions, particularly the common error of confusing a shift in the demand curve with a movement along it, and prepares targeted feedback.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner has attempted practice problems, the next essential step is to review their work. This allows the tutor to assess understanding, identify specific errors, and provide corrective feedback before proceeding to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Supply, demand, and how markets coordinate behavior",
+    "subject": "Economics",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback from the last review, the tutor refines the teaching notes on demand. A new section is added with a comparison table and a clear example to explicitly contrast a 'change in quantity demanded' (movement along the curve) with a 'change in demand' (shift of the curve).",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review identified a key misconception. Before moving on or assigning more practice, it is effective to revise the core teaching materials to address this point of confusion directly, which improves the resource for both immediate review and future lessons."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Supply, demand, and how markets coordinate behavior",
+    "subject": "Economics",
+    "event_type": "practice",
+    "description": "To ensure the misconception has been resolved, the tutor assigns a new, targeted practice set. These problems specifically require the learner to differentiate between scenarios causing a 'change in quantity demanded' and a 'change in demand', referencing the revised teaching notes.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After identifying a specific error, providing feedback, and revising the materials, it's crucial to verify the learner's understanding. This targeted practice session serves as a check to ensure the concept is now solid before proceeding to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Supply, demand, and how markets coordinate behavior",
+    "subject": "Economics",
+    "event_type": "review",
+    "description": "The tutor reviews the second, targeted practice set on demand. The review confirms that the learner now correctly distinguishes between a movement along the demand curve and a shift of the curve, indicating the previous remediation was successful.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the targeted practice in the previous step (e_07), it is essential to review the learner's work to verify that the misconception has been resolved. This step provides closure on the 'demand' topic before moving on to the next milestone in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Supply, demand, and how markets coordinate behavior",
+    "subject": "Economics",
+    "event_type": "lesson",
+    "description": "Now that the concept of demand is solid, the tutor moves to the second milestone in the study plan: supply. This lesson introduces the law of supply, the difference between a change in quantity supplied and a change in supply, and the factors that shift the supply curve.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_08) confirmed the learner's mastery of demand. Following the study plan (e_02), the next logical step is to begin instruction on the second major topic, supply, which starts a new lesson-practice-review cycle."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Supply, demand, and how markets coordinate behavior",
+    "subject": "Economics",
+    "event_type": "practice",
+    "description": "Following the lesson on supply, the tutor assigns practice exercises. The problems focus on drawing supply curves and distinguishing between scenarios that cause a 'change in quantity supplied' versus a 'change in supply'.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the concept of supply in the previous lesson, the next logical step is for the learner to apply this knowledge through practice. This reinforces the material and creates a record of their work for subsequent review, mirroring the successful cycle used for the topic of demand."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Supply, demand, and how markets coordinate behavior",
+    "subject": "Economics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's practice work on supply. The analysis reveals the learner is making the same type of error as they did with demand, frequently confusing a 'change in quantity supplied' with a 'change in supply'.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed practice on supply (e_10), the next step is to review their work. This is essential to assess their understanding and identify any misconceptions before moving to the final topic of market equilibrium."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Supply, demand, and how markets coordinate behavior",
+    "subject": "Economics",
+    "event_type": "materials_revision",
+    "description": "Recognizing the recurring error pattern, the tutor updates the teaching notes to create a new, consolidated section. This section explicitly compares 'movement along' vs. 'shift of' a curve for both supply and demand, using parallel examples to highlight the common underlying principle.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in e_11 revealed the learner is struggling with a general concept ('movement' vs. 'shift'), not just a topic-specific one. Revising the teaching materials to address this abstract pattern directly is a more effective strategy than treating the 'supply' issue in isolation, building a stronger foundation for future topics."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Supply, demand, and how markets coordinate behavior",
+    "subject": "Economics",
+    "event_type": "practice",
+    "description": "To test the effectiveness of the revised teaching notes, the tutor assigns a mixed practice set. The problems require the learner to analyze scenarios for both supply and demand, forcing them to apply the general principle of 'movement along a curve' versus a 'shift of the curve'.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials (e_12) to address a recurring error pattern, the next step is to conduct targeted practice. This mixed problem set will verify if the learner understands the underlying concept and can apply it to both supply and demand before proceeding to the final milestone."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Supply, demand, and how markets coordinate behavior",
+    "subject": "Economics",
+    "event_type": "review",
+    "description": "The tutor reviews the mixed practice set on supply and demand. The review confirms that the learner now correctly applies the general principle, successfully distinguishing between movements along and shifts of the curve for both concepts.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After assigning a mixed practice set (e_13) to address a recurring conceptual error, the immediate next step is to review the work. This review is essential to verify that the learner has finally mastered the underlying principle before moving on to the third and final milestone of the study plan."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Supply, demand, and how markets coordinate behavior",
+    "subject": "Economics",
+    "event_type": "lesson",
+    "description": "With the concepts of supply and demand now mastered, the tutor delivers the lesson on the third milestone: market equilibrium. The lesson explains how to combine supply and demand curves to find the equilibrium price and quantity, and introduces the concepts of shortages and surpluses.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_14) confirmed mastery of both supply and demand concepts, completing the first two milestones. Following the study plan, the next logical step is to teach the final topic, market equilibrium, which synthesizes the previous two."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Supply, demand, and how markets coordinate behavior",
+    "subject": "Economics",
+    "event_type": "practice",
+    "description": "To solidify the final topic, the tutor assigns practice problems on market equilibrium. The exercises require the learner to combine supply and demand curves, identify equilibrium price and quantity, and analyze scenarios involving shortages and surpluses.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on market equilibrium (e_15), the next logical step is for the learner to apply these new, synthesized concepts through practice. This creates a record of their performance on the final milestone, which is necessary for the upcoming review."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Supply, demand, and how markets coordinate behavior",
+    "subject": "Economics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's practice on market equilibrium. The review focuses on whether the learner can correctly combine the supply and demand graphs, identify the equilibrium price and quantity, and correctly label shortages and surpluses.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on the final topic (e_16), a review is necessary to assess the learner's ability to synthesize supply and demand concepts. This evaluation is critical to determine if the core learning objectives have been met."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Supply, demand, and how markets coordinate behavior",
+    "subject": "Economics",
+    "event_type": "practice",
+    "description": "The tutor assigns a final, cumulative practice set covering all topics: demand, supply, and market equilibrium. The problems are more complex, often involving simultaneous shifts of both curves, to simulate the difficulty of an AP exam question and test the learner's ability to synthesize all concepts.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "The learner has demonstrated understanding of each topic in isolation. A final, cumulative practice session is necessary to assess their ability to synthesize these concepts and solve complex problems, which directly aligns with the goal of mastering the material for their AP exam."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Supply, demand, and how markets coordinate behavior",
+    "subject": "Economics",
+    "event_type": "review",
+    "description": "The tutor conducts a final review of the cumulative practice set. This comprehensive assessment checks the learner's ability to synthesize concepts, analyze complex scenarios with simultaneous shifts, and perform at the level required for their AP exam.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a final, cumulative practice session (e_18), a comprehensive review is the necessary next step. This serves as the final check to confirm that the learner has met all learning objectives and can apply their knowledge to complex, exam-style questions."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Supply, demand, and how markets coordinate behavior",
+    "subject": "Economics",
+    "event_type": "end",
+    "description": "The tutor and learner have a final meeting to wrap up the topic. The tutor confirms that the learner has successfully met all learning objectives, as demonstrated by their strong performance on the final cumulative assessment, and the tutoring on this topic concludes.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The previous event (e_19) was a final, comprehensive review that confirmed the learner's mastery of all concepts, including complex synthesis. Since the initial learning objectives have been met and performance is stable, the tutoring process for this topic is now complete."
+  }
+]

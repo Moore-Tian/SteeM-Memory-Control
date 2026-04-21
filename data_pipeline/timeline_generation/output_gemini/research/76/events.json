@@ -1,0 +1,297 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Diffusion-based image editing",
+    "subject": "CS-CV",
+    "event_type": "proposal",
+    "description": "Initial project proposal to explore diffusion-based image editing techniques that are guided by fine-grained, compositional instructions rather than a single text prompt. The high-level goal is to achieve more controllable and predictable edits.",
+    "required_artifacts": [
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the first event of the project, establishing the foundational direction. It formalizes the abstract, pre-existing research ideas into a concrete 'research_goals' artifact and lays out an initial 'research_plan' to guide the next steps."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Diffusion-based image editing",
+    "subject": "CS-CV",
+    "event_type": "scheme_design",
+    "description": "Based on the initial proposal, a technical scheme is designed. The core idea is to parse the compositional instructions into a structured representation, and then use this structure to guide the diffusion process by modulating the cross-attention maps at different timesteps.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the high-level proposal in e_01, this event translates the abstract 'research_goals' into a concrete technical approach. Creating an initial 'method_scheme' is a necessary prerequisite before any experimental work can begin."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Diffusion-based image editing",
+    "subject": "CS-CV",
+    "event_type": "pilot_experiments",
+    "description": "Small-scale pilot experiments are conducted to validate the core idea of modulating cross-attention maps. These experiments use a simplified dataset and basic compositional instructions (e.g., 'put a red cube on the left of a blue sphere') to check if the method can produce any meaningful, structured control over the image generation process.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With a 'method_scheme' defined in e_02, it is crucial to perform a sanity check before investing in large-scale computation. These pilot experiments serve to validate the fundamental viability of the proposed approach and will generate the first set of 'experiment_results', which will inform the next steps of the project."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Diffusion-based image editing",
+    "subject": "CS-CV",
+    "event_type": "analysis",
+    "description": "Analysis of the pilot experiment results reveals that while the attention modulation approach can influence object placement, it suffers from significant entanglement. For instance, attributes meant for one object often 'leak' to others, and spatial relationships are not always accurately rendered. This confirms the potential but highlights the need for a more refined control mechanism.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After obtaining initial 'experiment_results' from the pilot study (e_03), a dedicated analysis step is necessary to interpret the findings. By comparing the results against the original 'research_goals', we can assess the viability of the current method and make an informed decision about the next phase of the project, which will likely involve refining the method."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Diffusion-based image editing",
+    "subject": "CS-CV",
+    "event_type": "scheme_design",
+    "description": "The method is revised to address the issues found in the pilot study. To combat attribute leakage, the new design introduces separate attention mechanisms for object structure and appearance attributes. Additionally, an explicit spatial guidance term is added to the diffusion loss function to better enforce positional relationships.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis in e_04 identified critical flaws (attribute leakage, poor spatial control) in the initial method. It is necessary to go back to the design phase and revise the 'method_scheme' to address these specific problems. This step uses the insights from the 'experiment_results' to create a more robust technical approach before attempting more experiments."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Diffusion-based image editing",
+    "subject": "CS-CV",
+    "event_type": "pilot_experiments",
+    "description": "A second round of pilot experiments is conducted using the revised method. The experiments are specifically designed to test whether the new separate attention mechanisms reduce attribute leakage and if the spatial guidance term improves positional accuracy, using the same simplified dataset as before for direct comparison.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the 'method_scheme' in e_05 to address specific flaws, it is crucial to validate these changes. This new pilot study serves as a targeted test to confirm that the proposed solutions are effective before committing to resource-intensive main experiments. It directly follows the iterative research cycle of design, test, and analyze."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Diffusion-based image editing",
+    "subject": "CS-CV",
+    "event_type": "analysis",
+    "description": "The results from the second round of pilot experiments are analyzed. The comparison shows that the revised method with separate attention mechanisms significantly reduces attribute leakage. The spatial guidance term also yields a noticeable improvement in object placement, though some minor inaccuracies persist.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the second pilot study (e_06), a formal analysis is required to evaluate the effectiveness of the revised method. By comparing the new 'experiment_results' against the 'research_goals', this step confirms that the core technical challenges are largely solved, justifying a move towards larger-scale experiments."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Diffusion-based image editing",
+    "subject": "CS-CV",
+    "event_type": "main_experiments",
+    "description": "With the revised method validated, the main experiments are launched. This involves running the model on a large-scale, diverse dataset with complex compositional edits. The goal is to gather comprehensive results for quantitative metrics and to generate qualitative examples for comparison against state-of-the-art baselines.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The analysis in e_07 confirmed that the revised method is effective, successfully addressing the core issues found in the initial pilot study. It is now the appropriate time to move from small-scale validation to large-scale 'main_experiments' to rigorously evaluate the method's performance and gather the primary results needed for the final paper."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Diffusion-based image editing",
+    "subject": "CS-CV",
+    "event_type": "writing",
+    "description": "While the main experiments are running, the team begins drafting the methodology section of the paper. This section details the revised scheme, including the separate attention mechanisms for structure and appearance and the explicit spatial guidance loss term.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the main experiments (e_08) underway, which can be time-consuming, it is efficient to begin drafting parts of the paper that are already finalized. The method was stabilized in e_05 and validated in e_07, making the methodology section a prime candidate for writing. This parallelizes the research effort and introduces the first 'paper_paragraph' artifact."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Diffusion-based image editing",
+    "subject": "CS-CV",
+    "event_type": "analysis",
+    "description": "The main experiments have concluded, and the results are now being comprehensively analyzed. This involves calculating quantitative metrics (e.g., CLIP scores, user preference rates) and performing a qualitative review of the generated images, comparing them against baselines and identifying common failure modes.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With the main experiments from e_08 now complete, a dedicated analysis phase is the logical next step. This event processes the raw 'experiment_results' into summarized findings and insights, which are crucial for evaluating the project's success against its 'research_goals' and for preparing the results section of the paper."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Diffusion-based image editing",
+    "subject": "CS-CV",
+    "event_type": "writing",
+    "description": "Following the comprehensive analysis of the main experiments, the team drafts the results section of the paper. This includes creating tables for the quantitative metrics, selecting key qualitative examples for the figures, and writing the narrative that interprets these results in the context of the research goals and baselines.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the main experiments analyzed in e_10, the next logical step is to document these findings for the paper. This event builds directly on the summarized 'experiment_results' and adds to the existing 'paper_paragraph' (which so far only contains the methodology), moving the project closer to a complete manuscript."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Diffusion-based image editing",
+    "subject": "CS-CV",
+    "event_type": "main_experiments",
+    "description": "The analysis of the main experiments revealed that while the spatial guidance term improves placement, it can sometimes introduce visual artifacts. The team decides to run an ablation study, specifically evaluating the model's performance with and without this guidance term to better understand its trade-offs and strengthen the experimental section.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After analyzing the main results in e_10 and writing up the initial findings in e_11, a common next step is to conduct ablation studies to dissect the method's components. This new experiment is directly motivated by the 'experiment_results' and will provide deeper insights into the 'method_scheme', which is crucial for a robust paper."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Diffusion-based image editing",
+    "subject": "CS-CV",
+    "event_type": "analysis",
+    "description": "The results of the ablation study are analyzed. The findings confirm that the spatial guidance term is highly effective for positional accuracy but is also the primary source of occasional visual artifacts. This analysis provides a clear understanding of the trade-off, which will be crucial for the discussion section of the paper.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After conducting the ablation study in e_12 to investigate a specific component of the method, the logical next step is to formally analyze its results. This analysis is necessary to understand the trade-offs of the spatial guidance term and will provide critical data for refining the paper's claims and discussion."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Diffusion-based image editing",
+    "subject": "CS-CV",
+    "event_type": "writing",
+    "description": "The paper draft is updated to incorporate the findings from the ablation study. A subsection is added to the experiments detailing the ablation results, and the discussion section is started to explicitly address the trade-off between spatial accuracy and visual artifacts introduced by the guidance term.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the analysis of the ablation study completed in e_13, the immediate next step is to integrate these new insights into the paper. This strengthens the experimental evaluation and begins the crucial discussion of the method's limitations, building directly on the most recent 'experiment_results' to improve the 'paper_paragraph'."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Diffusion-based image editing",
+    "subject": "CS-CV",
+    "event_type": "proposal",
+    "description": "Based on the complete experimental results, including the ablation study, the research goals are slightly revised. The focus shifts from simply 'achieving' compositional control to 'presenting a method that offers a clear trade-off between spatial accuracy and artifact generation,' which is a more nuanced and defensible contribution. The research plan is updated to prioritize finalizing the paper for submission.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "The comprehensive analysis, particularly the ablation study results (e13), revealed a key trade-off in the method. It is a common and important step to refine the project's 'research_goals' and 'research_plan' at this late stage to align the paper's core claims with the actual evidence, ensuring a stronger and more honest final narrative before completing the manuscript."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Diffusion-based image editing",
+    "subject": "CS-CV",
+    "event_type": "writing",
+    "description": "With the research goals and narrative finalized, the team focuses on completing the paper draft. This involves writing the introduction, abstract, and conclusion sections, ensuring they align with the refined goals and clearly communicate the project's contributions, including the identified trade-offs.",
+    "required_artifacts": [
+      "research_goals",
+      "paper_paragraph",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After revising the high-level 'research_goals' in e_15 to match the experimental findings, the next logical step is to complete the manuscript. This writing phase integrates the final narrative into the introduction and conclusion, creating a cohesive story from the existing 'paper_paragraph' and 'experiment_results', moving the project towards submission."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Diffusion-based image editing",
+    "subject": "CS-CV",
+    "event_type": "end",
+    "description": "The research project is concluded. The method has been finalized, extensive experiments and ablations have been completed and analyzed, and a full paper draft has been written and revised to reflect the final, nuanced contributions of the work. The project is now ready for submission to a peer-reviewed venue.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached a natural conclusion. The research goals have been refined to match the conclusive experimental results, and a complete paper draft has been written. With no outstanding research questions or experimental loose ends, the core research phase is complete, making this an appropriate point to terminate the timeline."
+  }
+]

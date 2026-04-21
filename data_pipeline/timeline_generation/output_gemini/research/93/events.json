@@ -1,0 +1,345 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Accessibility technologies for low-vision users",
+    "subject": "CS-HCI",
+    "event_type": "proposal",
+    "description": "The project is initiated by defining its core objectives. The team decides to focus on improving web navigation for users with low vision, specifically by exploring dynamic text magnification techniques. Initial high-level goals and a rough project roadmap are outlined.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the first event of the project, so it establishes the foundational research goals and a high-level plan. No prior artifacts are required as this is the project's inception."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Accessibility technologies for low-vision users",
+    "subject": "CS-HCI",
+    "event_type": "scheme_design",
+    "description": "The team designs the specifics of the dynamic text magnification tool, focusing on hover-based activation and smooth transitions. They also outline a user study protocol to compare this new technique against the browser's default zoom functionality and a static magnifier.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the initial proposal (e_01), this step is necessary to translate the high-level research goals into a concrete, testable experimental design. The `research_plan` and `research_goals` provide the foundation for creating the detailed `method_scheme`."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Accessibility technologies for low-vision users",
+    "subject": "CS-HCI",
+    "event_type": "pilot_experiments",
+    "description": "The team runs a small-scale pilot study with three low-vision users to test the dynamic magnification prototype and the experimental protocol. The study reveals minor software bugs and suggests that the instructions for the tasks need to be clearer.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing the experimental protocol in e_02, a pilot study is a crucial step to validate the methodology and the custom-built tool in a real-world context before launching the full-scale main experiment. It helps identify unforeseen issues with the `method_scheme` and provides initial data."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Accessibility technologies for low-vision users",
+    "subject": "CS-HCI",
+    "event_type": "scheme_design",
+    "description": "Based on the findings from the pilot study, the team revises the experimental protocol. They fix the software bugs in the dynamic magnification prototype and rewrite the user task instructions to be more explicit and easier to understand.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The pilot study (e_03) revealed critical issues with the software and user instructions. It is crucial to refine the `method_scheme` to address these problems before launching the resource-intensive main experiments to ensure data validity and a smoother process for participants."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Accessibility technologies for low-vision users",
+    "subject": "CS-HCI",
+    "event_type": "main_experiments",
+    "description": "With the refined protocol and bug-free prototype, the team recruits a larger cohort of 20 low-vision users. They conduct the full-scale comparative study, collecting quantitative data (task time, error rate) and qualitative feedback for each of the three conditions: dynamic magnification, browser zoom, and a static magnifier.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After refining the experimental design in e_04 based on pilot feedback, the logical next step is to conduct the main experiment. This phase is crucial for collecting the definitive data needed to evaluate the research hypotheses outlined in the `research_goals` using the validated `method_scheme`."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Accessibility technologies for low-vision users",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "The team performs statistical analysis on the quantitative data (task completion times, error rates) and thematic analysis on the qualitative feedback from the main study. The initial findings suggest that the dynamic magnification tool significantly reduces task completion time compared to the other two methods for most tasks.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After successfully collecting a large dataset in the main experiments (e_05), the immediate next step is to analyze this raw data. This analysis is crucial for interpreting the `experiment_results` in the context of the original `research_goals` and drawing initial conclusions about the effectiveness of the new technique."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Accessibility technologies for low-vision users",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "With positive initial results from the analysis, the team begins drafting the research paper. They focus on writing the 'Methods' section, describing the design of the dynamic magnification tool and the user study protocol, as well as an initial draft of the 'Results' section to present the key statistical findings.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After analyzing the data in e_06 and confirming the effectiveness of the new technique, it is a natural and productive step to start documenting the work for publication. Drafting the methods and results sections while the details are fresh ensures accuracy and builds momentum for completing the paper."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Accessibility technologies for low-vision users",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "While reviewing the initial results draft, the team identifies a potential nuance: the dynamic tool's effectiveness might vary with the severity of a user's vision impairment. They decide to perform a more detailed sub-group analysis on the collected data, segmenting users by their self-reported visual acuity to investigate this hypothesis.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The initial analysis (e_06) and writing (e_07) revealed a promising main effect, but good research requires exploring nuances. This deeper analysis of the existing `experiment_results` is necessary to understand the boundary conditions of the findings and add critical depth before finalizing the paper."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Accessibility technologies for low-vision users",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "The team incorporates the results of the sub-group analysis into the paper. They update the 'Results' section to describe how the tool's effectiveness varies with vision impairment severity and begin drafting the 'Discussion' section to interpret these nuanced findings and their implications for the design of future accessibility tools.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After performing a more detailed analysis in e_08, the logical next step is to update the manuscript draft (started in e_07) to reflect these new, more nuanced results. Integrating the findings from the latest `experiment_results` into the `paper_paragraph` is crucial for accurately reporting the study's contribution and beginning the interpretation in the discussion."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Accessibility technologies for low-vision users",
+    "subject": "CS-HCI",
+    "event_type": "proposal",
+    "description": "While drafting the discussion, the team realizes the sub-group analysis reveals a fundamental limitation: a single magnification strategy is suboptimal. They decide to revise the project's scope, adding a new research goal to investigate an *adaptive* magnification system that could adjust its behavior based on user characteristics or task context.",
+    "required_artifacts": [
+      "research_goals",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "The nuanced analysis in e_08 and the writing of the discussion in e_09 led to a key insight that the current approach is incomplete. Instead of just publishing, the team revisits the high-level `research_goals` to incorporate this new, more ambitious direction, which is a realistic pivot in a long-term project when initial results open up new questions."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Accessibility technologies for low-vision users",
+    "subject": "CS-HCI",
+    "event_type": "scheme_design",
+    "description": "Following the revised project goals, the team begins to design the architecture for the new adaptive magnification system. They brainstorm potential input signals for adaptation, such as the user's pre-assessed visual acuity and real-time interaction patterns. A new experimental protocol is outlined to test if this adaptive approach outperforms the previous static one.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "After pivoting the project's focus in e_10 to an adaptive system, it is necessary to design the mechanics of this new approach. This `scheme_design` step translates the new, more ambitious `research_goals` into a concrete technical and experimental plan, using insights from previous `experiment_results` to inform the design."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Accessibility technologies for low-vision users",
+    "subject": "CS-HCI",
+    "event_type": "pilot_experiments",
+    "description": "The team implements a prototype of the new adaptive magnification system and runs a small pilot study with a few users. The goal is to verify that the adaptation logic functions correctly and to gather initial qualitative feedback on whether the automated adjustments feel helpful or intrusive.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing the complex new adaptive system in e_11, it is critical to conduct a pilot study. This serves as a sanity check for the technical implementation and user experience before committing to a larger, resource-intensive main experiment, repeating the successful design-then-pilot cycle from earlier in the project."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Accessibility technologies for low-vision users",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "The team analyzes the data from the adaptive system pilot. The analysis of technical logs confirms the adaptation logic is working, but qualitative feedback is mixed; some users found the automatic adjustments helpful, while others described them as 'jarring' and 'unpredictable'.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After conducting a pilot study on the new adaptive system (e_12), it is essential to analyze the collected `experiment_results`. This step is crucial for understanding the pilot's outcomes in the context of the `method_scheme` and `research_goals`, and will determine the necessary revisions before a larger study."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Accessibility technologies for low-vision users",
+    "subject": "CS-HCI",
+    "event_type": "scheme_design",
+    "description": "Based on the mixed pilot feedback, the team redesigns the adaptive system's behavior. They focus on making the changes less jarring by introducing smoother animation transitions for magnification adjustments and adding a user-configurable delay to make the system's responses more predictable.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis of the pilot study (e_13) revealed that while the adaptive logic worked, the user experience was poor ('jarring' and 'unpredictable'). It is therefore crucial to go back and refine the `method_scheme` to address these specific issues before proceeding with further experiments. This iterative design process is essential for developing a usable system."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Accessibility technologies for low-vision users",
+    "subject": "CS-HCI",
+    "event_type": "pilot_experiments",
+    "description": "To validate the recent design changes, the team conducts a second, smaller pilot study. They recruit a few users, including some from the previous pilot, to specifically evaluate if the smoother transitions and configurable delay have resolved the 'jarring' and 'unpredictable' user experience issues.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After redesigning the adaptive system in e_14 to address negative user feedback, it is critical to run another pilot experiment. This step is necessary to confirm that the user experience issues have been solved before committing resources to a large-scale main experiment."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Accessibility technologies for low-vision users",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "The team analyzes the data from the second pilot study. The qualitative feedback is now much more positive, with users confirming that the smoother transitions and configurable delay make the adaptive system feel more comfortable and less intrusive. The analysis confirms the design changes were successful.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After conducting a second pilot study (e_15) to validate the redesigned system, the crucial next step is to analyze the results. This analysis confirms that the user experience issues identified in the first pilot were successfully resolved by the redesign (e_14), giving the team confidence to proceed to a larger-scale experiment."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Accessibility technologies for low-vision users",
+    "subject": "CS-HCI",
+    "event_type": "main_experiments",
+    "description": "With the refined adaptive system validated, the team launches the second main experiment. They recruit a new cohort of 25 low-vision users to compare the performance and user satisfaction of the adaptive system against the original (non-adaptive) dynamic tool and the standard browser zoom.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The analysis of the second pilot (e_16) confirmed the user experience issues were resolved. It is now the right time to conduct a full-scale main experiment to rigorously evaluate the effectiveness of the new adaptive system, as defined by the updated `research_goals`, using the validated `method_scheme`."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "Accessibility technologies for low-vision users",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "The team conducts a comprehensive analysis of the data from the second main experiment. They use statistical methods to compare the adaptive system, the original dynamic tool, and the browser zoom on metrics like task completion time, error rates, and user satisfaction scores.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the completion of the second main experiment (e_17), a detailed analysis is the critical next step. This is necessary to evaluate the effectiveness of the new adaptive system against the original design and the baseline, directly addressing the updated `research_goals`."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "research",
+    "topic": "Accessibility technologies for low-vision users",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "The team integrates the conclusive results from the second main experiment into the research paper. They substantially revise the 'Methods' section to detail the final adaptive system and rewrite the 'Results' and 'Discussion' sections to present the comparative analysis and frame the overall contribution of both project phases.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After completing the final analysis in e_18, the most critical next step is to update the manuscript. This writing phase synthesizes the results from the entire project, including the initial tool and the final adaptive system, creating a cohesive narrative for publication."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "research",
+    "topic": "Accessibility technologies for low-vision users",
+    "subject": "CS-HCI",
+    "event_type": "end",
+    "description": "After successfully completing two major research cycles and integrating all findings into a comprehensive manuscript, the team concludes the project. The research has successfully progressed from an initial concept to a validated, adaptive system, with the results prepared for dissemination to the scientific community.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has a complete narrative arc, from the initial tool (e_01-e_09) to the more advanced adaptive system (e_10-e_18). With conclusive results from the final main experiment analyzed (e_18) and a comprehensive paper draft written (e_19), the research goals have been met, making this a natural point to conclude the project."
+  }
+]
