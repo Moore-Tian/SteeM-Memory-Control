@@ -1,0 +1,306 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Units, dimensions, and sanity checks in physics",
+    "subject": "Physics",
+    "event_type": "objective_clarification",
+    "description": "Initial meeting with the learner to discuss their background in physics, specific difficulties with units and dimensional analysis, and overall goals for the tutoring. The learner is a first-year university student who wants to build a solid foundation for their introductory mechanics course.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first event in the timeline. The tutoring process must begin by clarifying the learner's goals, needs, and background to establish a clear direction and scope for future sessions."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Units, dimensions, and sanity checks in physics",
+    "subject": "Physics",
+    "event_type": "plan_milestones",
+    "description": "Based on the clarified objectives, the tutor and learner co-develop a high-level study plan. They break down the topic into key milestones: 1) Base & Derived Units, 2) Dimensional Analysis, and 3) Sanity Checks using units. The plan sets a timeline for the next few sessions.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learner's goals established in the previous step (e_01), creating a structured study plan is the logical next action. This plan translates the abstract objectives into a concrete sequence of milestones, providing a roadmap for the upcoming tutoring sessions."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Units, dimensions, and sanity checks in physics",
+    "subject": "Physics",
+    "event_type": "lesson",
+    "description": "The tutor delivers the first lesson, focusing on Milestone 1 from the study plan: 'Base & Derived Units'. The lesson covers the fundamental SI base units (meter, kilogram, second, etc.) and explains how derived units (like Newtons for force or Joules for energy) are constructed from them.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the creation of the study plan in e_02, the logical next step is to begin instruction. This lesson directly addresses the first milestone, initiating the core teaching phase and creating reusable teaching notes for future reference."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Units, dimensions, and sanity checks in physics",
+    "subject": "Physics",
+    "event_type": "practice",
+    "description": "The learner is given a set of practice problems to apply the concepts from the recent lesson. The problems involve identifying the SI base units that make up various derived units (e.g., Pascals, Watts) and vice-versa. The learner's attempts and thought process are recorded.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson (e_03), it is crucial for the learner to apply the new knowledge to solidify their understanding. This practice session directly assesses their grasp of base and derived units, creating a record of their work that can be analyzed in a future review session."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Units, dimensions, and sanity checks in physics",
+    "subject": "Physics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's practice attempts from the previous session. The analysis reveals the learner is mostly successful but sometimes confuses related concepts like energy (Joules) and power (Watts). The tutor prepares a summary of these findings and specific feedback points.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed practice in e_04, the essential next step is to review their work. This allows the tutor to assess understanding, pinpoint specific misconceptions, and generate targeted feedback, which is captured in the new 'feedback_summary' artifact. This review is critical for guiding the next instructional decision."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Units, dimensions, and sanity checks in physics",
+    "subject": "Physics",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback from the review session, the tutor revises the teaching notes to address the learner's confusion between energy and power. A new section is added that explicitly contrasts Joules (energy/work) and Watts (power, or energy/time), including a practical example to clarify the distinction.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in e_05 identified a specific misconception, which was captured in the 'feedback_summary'. A crucial step in adaptive tutoring is to refine teaching materials based on observed difficulties. This revision directly addresses the learner's confusion and improves the 'teaching_notes' for future use."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Units, dimensions, and sanity checks in physics",
+    "subject": "Physics",
+    "event_type": "practice",
+    "description": "To reinforce the recent clarification, the tutor assigns a new, targeted practice set focusing specifically on the distinction between energy and power. The learner works through problems that require converting between Joules and Watts and identifying which unit is appropriate in different physical scenarios. The attempts are recorded.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After identifying a misconception in e_05 and revising the teaching materials in e_06 to address it, a targeted practice session is necessary. This step verifies if the learner has successfully overcome their confusion before the tutor proceeds to the next milestone in the study plan. A new practice record is generated to capture this focused attempt."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Units, dimensions, and sanity checks in physics",
+    "subject": "Physics",
+    "event_type": "review",
+    "description": "The tutor reviews the targeted practice attempts from the previous session. The analysis shows the learner has successfully grasped the distinction between energy and power, correctly applying the concepts in the new problems. The tutor prepares feedback confirming mastery of this point.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the targeted practice in e_07, a review is essential to verify that the remediation was successful and the learner's misconception is resolved. This step confirms readiness to move on to the next milestone outlined in the study plan, closing the loop on the first learning objective."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Units, dimensions, and sanity checks in physics",
+    "subject": "Physics",
+    "event_type": "lesson",
+    "description": "With the first milestone mastered, the tutor proceeds to the second milestone from the study plan: 'Dimensional Analysis'. The lesson introduces the concept of dimensions (e.g., [L], [M], [T]), the principle of dimensional homogeneity, and how to use it to check the validity of physics equations.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The successful review in e_08 confirmed that the learner has mastered the first topic. Following the study plan, it is now appropriate to begin the lesson on the second milestone, 'Dimensional Analysis', updating the teaching notes with this new material."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Units, dimensions, and sanity checks in physics",
+    "subject": "Physics",
+    "event_type": "practice",
+    "description": "The learner is assigned a set of practice problems based on the lesson on dimensional analysis. The tasks involve checking the dimensional consistency of various physics equations (e.g., v = v0 + at) and deriving the dimensions of physical constants. The learner's step-by-step work is recorded.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson on a new concept (e_09), the immediate next step is for the learner to apply that knowledge through practice. This session directly assesses their understanding of dimensional analysis and creates a new 'practice_record' that can be evaluated in the next review."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Units, dimensions, and sanity checks in physics",
+    "subject": "Physics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's work on the dimensional analysis problems. The review finds that the learner correctly checks equations but struggles to derive the dimensions of physical constants from formulas. A feedback summary is created to address this specific difficulty.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on dimensional analysis (e_10), a review is the logical next step to assess the learner's understanding. This review identifies a specific point of confusion, allowing the tutor to create targeted feedback before proceeding, ensuring that learning gaps are addressed promptly."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Units, dimensions, and sanity checks in physics",
+    "subject": "Physics",
+    "event_type": "materials_revision",
+    "description": "In response to the review findings, the tutor updates the 'Dimensional Analysis' section of the teaching notes. A new subsection is added with a clear, step-by-step guide on how to derive the dimensions of a constant by algebraically isolating it in an equation, complete with a worked example (e.g., finding the dimensions of G).",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_11) identified a specific learning gap. A logical and effective tutoring strategy is to refine the teaching materials to directly address this gap. This revision improves the clarity of the 'teaching_notes' before asking the learner to re-practice the difficult concept."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Units, dimensions, and sanity checks in physics",
+    "subject": "Physics",
+    "event_type": "practice",
+    "description": "The tutor provides a targeted practice set focusing on the specific skill of deriving the dimensions of physical constants from equations. This directly follows up on the weakness identified in the last review and the subsequent revision of the teaching notes. The learner's attempts are recorded for evaluation.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials (e_12) to address a weakness identified during review (e_11), a focused practice session is the logical next step. This will test whether the learner can now correctly derive the dimensions of constants, thus verifying the effectiveness of the remediation before proceeding."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Units, dimensions, and sanity checks in physics",
+    "subject": "Physics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's attempts on the targeted practice set. The analysis shows that the learner has successfully applied the revised method and can now correctly derive the dimensions of physical constants, indicating the remediation was effective. The tutor prepares a feedback summary to confirm this progress.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted practice session (e_13) designed to address a specific weakness, a review is necessary to assess its effectiveness. This step verifies that the learner has overcome the identified difficulty before the tutor moves on to the final milestone in the study plan, ensuring a solid foundation."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Units, dimensions, and sanity checks in physics",
+    "subject": "Physics",
+    "event_type": "lesson",
+    "description": "With the first two milestones successfully completed, the tutor delivers a lesson on the final milestone from the study plan: 'Sanity Checks using units'. The lesson focuses on practical application, teaching the learner how to use dimensional consistency to quickly verify the plausibility of an answer to a physics problem.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The successful review in e_14 confirmed that the learner has mastered the second topic. Following the study plan, it is now appropriate to begin the lesson on the third and final milestone, 'Sanity Checks', updating the teaching notes with this new material."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Units, dimensions, and sanity checks in physics",
+    "subject": "Physics",
+    "event_type": "practice",
+    "description": "To solidify the final topic, the learner is assigned a practice set on using units for sanity checks. The problems require them to evaluate the plausibility of given solutions to physics problems by checking dimensional consistency, a skill that integrates all concepts covered in the tutoring.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the final lesson (e_15) on 'Sanity Checks', a practice session is the logical next step to ensure the learner can apply the concept. This practice serves as a capstone, requiring the integration of all previous topics and generating a 'practice_record' for a final review of the learner's overall competence."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Units, dimensions, and sanity checks in physics",
+    "subject": "Physics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's performance on the capstone practice set for 'Sanity Checks'. The review confirms that the learner can successfully integrate all the concepts—base units, dimensional analysis, and sanity checks—to evaluate the plausibility of problem solutions. A final feedback summary is created to confirm overall mastery.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the capstone practice session in e_16, a comprehensive review is the final step to assess the learner's overall competence across all topics. This review validates whether the tutoring objectives have been fully met and generates a final feedback summary, setting the stage for concluding the tutoring."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Units, dimensions, and sanity checks in physics",
+    "subject": "Physics",
+    "event_type": "end",
+    "description": "Final wrap-up session. The tutor and learner review the progress made across all milestones, confirming that the initial learning objectives have been met. The learner now feels confident in applying dimensional analysis and sanity checks in their physics course.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The previous review (e_17) confirmed the learner's mastery of all topics outlined in the study plan. With all learning objectives successfully met and the learner's confidence restored, the tutoring process has reached its natural conclusion."
+  }
+]

@@ -1,0 +1,107 @@
+{
+  "instruct_set_name": "memory_dependence_control_instructs",
+  "domain": "memory_dependence",
+  "version": "v1.2_refined_instructs_v5_memory_reliance_tags",
+  "tag_scheme": {
+    "name": "Memory-Reliance Scale",
+    "level_tags": {
+      "1": "[Memory-Reliance: Minimal]",
+      "2": "[Memory-Reliance: Light]",
+      "3": "[Memory-Reliance: Moderate]",
+      "4": "[Memory-Reliance: Strong]",
+      "5": "[Memory-Reliance: Maximal]"
+    }
+  },
+  "levels": [
+    {
+      "level": 1,
+      "label": "Externalized / Generic Reconstruction",
+      "tag": "[Memory-Reliance: Minimal]",
+      "mode_intent": "Fresh-start outsider; standalone solution from general principles.",
+      "instructions": [
+        "[Memory-Reliance: Minimal] Treat this as a first-time request and answer with a standalone solution based on general principles.",
+        "[Memory-Reliance: Minimal] Respond like an independent expert with no shared project backstory; use a neutral, standard structure.",
+        "[Memory-Reliance: Minimal] Give a broadly reusable answer that reads like a general playbook for this task type.",
+        "[Memory-Reliance: Minimal] Solve from first principles and keep the response project-agnostic in both content and organization.",
+        "[Memory-Reliance: Minimal] Write as if this will be read outside the project; rely on common methods and conventional framing.",
+        "[Memory-Reliance: Minimal] Provide a generic solution path with standard decision criteria typical for the domain.",
+        "[Memory-Reliance: Minimal] Approach it as a clean slate: describe what usually works, without leaning on prior trajectory.",
+        "[Memory-Reliance: Minimal] Use widely understood terminology and a self-contained explanation style.",
+        "[Memory-Reliance: Minimal] Deliver guidance that would fit many similar users with similar queries.",
+        "[Memory-Reliance: Minimal] Answer as a standalone reference note rather than a continuation of an ongoing thread."
+      ]
+    },
+    {
+      "level": 2,
+      "label": "Lightly Contextualized / Ornamental Dependence",
+      "tag": "[Memory-Reliance: Light]",
+      "mode_intent": "Mostly generic; lightly situated to the current context.",
+      "instructions": [
+        "[Memory-Reliance: Light] Give a standard answer, lightly shaded to fit the current situation suggested by the context.",
+        "[Memory-Reliance: Light] Respond like an external advisor who has skimmed the background and adds a few situational touches.",
+        "[Memory-Reliance: Light] Use a generic plan, with small context-aware emphasis that makes it feel locally relevant.",
+        "[Memory-Reliance: Light] Write a conventional solution and let the context subtly influence examples and priorities.",
+        "[Memory-Reliance: Light] Deliver broadly reusable guidance, with a few nods that reflect the project setting.",
+        "[Memory-Reliance: Light] Keep the structure standard, but let the context gently steer what you highlight first.",
+        "[Memory-Reliance: Light] Answer in a mostly general style, adding light situational framing to improve fit.",
+        "[Memory-Reliance: Light] Provide a typical approach and weave in minor context cues where natural.",
+        "[Memory-Reliance: Light] Offer a general recommendation that sounds aware of the ongoing situation without being driven by it.",
+        "[Memory-Reliance: Light] Write as a generic playbook with a thin layer of project-specific color."
+      ]
+    },
+    {
+      "level": 3,
+      "label": "History-Aware / Integrated Dependence",
+      "tag": "[Memory-Reliance: Moderate]",
+      "mode_intent": "Collaborator mode; history filters choices and priorities; trajectory-aware.",
+      "instructions": [
+        "[Memory-Reliance: Moderate] Respond as a collaborator continuing the project trajectory, letting prior context shape priorities.",
+        "[Memory-Reliance: Moderate] Use the project history as a filter on what to recommend and what to deprioritize.",
+        "[Memory-Reliance: Moderate] Write as if you remember what has been tried and learned, and let that steer the next steps.",
+        "[Memory-Reliance: Moderate] Frame options as branches from the current trajectory rather than a generic menu.",
+        "[Memory-Reliance: Moderate] Organize the response around the project’s current momentum and bottlenecks implied by the history.",
+        "[Memory-Reliance: Moderate] Let prior outcomes and preferences guide sequencing: what comes first should feel trajectory-driven.",
+        "[Memory-Reliance: Moderate] Answer in a trajectory-aware stance, with decisions grounded in the ongoing path.",
+        "[Memory-Reliance: Moderate] Make the plan feel tailored to this project’s direction, not just the task category.",
+        "[Memory-Reliance: Moderate] Continue the thread with history-informed choices, using general expertise to justify moves.",
+        "[Memory-Reliance: Moderate] Write as an ongoing coordination note that carries forward what the history has established."
+      ]
+    },
+    {
+      "level": 4,
+      "label": "History-Driven / Structural Dependence",
+      "tag": "[Memory-Reliance: Strong]",
+      "mode_intent": "Route-following internal coordination; history provides the backbone and workflow.",
+      "instructions": [
+        "[Memory-Reliance: Strong] Respond in internal coordination mode and follow the established project route in your outline.",
+        "[Memory-Reliance: Strong] Write as if you are executing the next move within the project’s existing workflow and conventions.",
+        "[Memory-Reliance: Strong] Let prior plans and outcomes determine both the structure and the decision flow of the answer.",
+        "[Memory-Reliance: Strong] Organize the response the way this project typically runs: route-first, then actions and checks.",
+        "[Memory-Reliance: Strong] Treat the history as the backbone and extend it with the next concrete steps on the same route.",
+        "[Memory-Reliance: Strong] Frame alternatives as route-consistent adjustments anchored to the current path.",
+        "[Memory-Reliance: Strong] Continue with the project’s native decomposition and decision cadence, like an internal planning note.",
+        "[Memory-Reliance: Strong] Write as if you are building directly on established phases, checkpoints, and known failure patterns.",
+        "[Memory-Reliance: Strong] Keep the response tightly aligned with the project’s precedent and execution habits.",
+        "[Memory-Reliance: Strong] Produce an answer that reads like it belongs to this project’s established operating mode."
+      ]
+    },
+    {
+      "level": 5,
+      "label": "Continuation Mode / Deep Entrenchment",
+      "tag": "[Memory-Reliance: Maximal]",
+      "mode_intent": "Deep insider log-continuation; assume shared shorthand; next log step.",
+      "instructions": [
+        "[Memory-Reliance: Maximal] Continue as the next entry in the project log, assuming shared context and internal shorthand.",
+        "[Memory-Reliance: Maximal] Write in deep insider mode and proceed directly with the next context-locked decision.",
+        "[Memory-Reliance: Maximal] Respond as a seamless continuation of the established internal thread and naming conventions.",
+        "[Memory-Reliance: Maximal] Treat the history as assumed ground truth and advance the process one step forward.",
+        "[Memory-Reliance: Maximal] Write like an in-progress handoff note within the team’s log, focused on immediate next actions.",
+        "[Memory-Reliance: Maximal] Continue the chain without reintroducing background, using the project’s native structure as-is.",
+        "[Memory-Reliance: Maximal] Advance the existing control loop and checkpoints as the next step in the same routine.",
+        "[Memory-Reliance: Maximal] Answer as if the reader already tracks the project’s phases and prior outcomes in detail.",
+        "[Memory-Reliance: Maximal] Use dense internal referencing and proceed with the next action sequence on the same route.",
+        "[Memory-Reliance: Maximal] Produce a response that feels inseparable from the accumulated project path, like log continuation."
+      ]
+    }
+  ]
+}

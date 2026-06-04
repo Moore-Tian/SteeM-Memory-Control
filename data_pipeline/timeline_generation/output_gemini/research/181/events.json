@@ -1,0 +1,313 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Market prediction modeling",
+    "subject": "Economics",
+    "event_type": "proposal",
+    "description": "The initial project proposal is drafted. The core idea is to investigate whether incorporating social media sentiment data can improve the accuracy of stock market prediction models compared to models using only traditional financial indicators.",
+    "required_artifacts": [
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "As the foundational step of the project, this event formalizes an abstract research idea into a set of concrete goals and a high-level plan. This is essential before any methodological design or experimentation can begin."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Market prediction modeling",
+    "subject": "Economics",
+    "event_type": "scheme_design",
+    "description": "Based on the initial proposal, a detailed methodological scheme is developed. This includes selecting a specific sentiment analysis library (e.g., VADER), choosing a baseline model (e.g., ARIMA) for financial time-series prediction, and identifying data sources for historical stock prices and relevant social media feeds.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "With the high-level research goals and plan defined in the previous 'proposal' event, the immediate next step is to translate these ideas into a concrete, actionable experimental design. This 'scheme_design' phase is crucial for establishing the technical foundation before any pilot experiments can be run."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Market prediction modeling",
+    "subject": "Economics",
+    "event_type": "pilot_experiments",
+    "description": "A small-scale pilot experiment is conducted to test the feasibility of the designed scheme. Data for a single stock (e.g., S&P 500 index) over a three-month period is collected, sentiment scores are generated using the VADER library, and the baseline ARIMA model is run with and without the sentiment feature to check for any preliminary effect and to validate the data processing pipeline.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the 'scheme_design' in the previous step, running a pilot experiment is a crucial sanity check. It allows for testing the data collection and analysis pipeline on a small scale, identifying potential technical issues, and getting a preliminary sense of whether the method is viable before investing significant time and resources into the main experiments."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Market prediction modeling",
+    "subject": "Economics",
+    "event_type": "analysis",
+    "description": "The results from the pilot experiment are analyzed. The analysis indicates that while the data pipeline is functional, the raw sentiment score from VADER is extremely noisy and shows only a marginal, statistically insignificant correlation with next-day price movements. This suggests that the current feature engineering is too simplistic to capture a meaningful signal.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After conducting the 'pilot_experiments' (e_03), the logical next step is to formally analyze the collected data. This 'analysis' is critical for evaluating the initial method's performance and identifying its weaknesses before committing to larger-scale experiments or deciding on necessary revisions to the methodology."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Market prediction modeling",
+    "subject": "Economics",
+    "event_type": "scheme_design",
+    "description": "In response to the poor pilot results, the methodological scheme is revised. The team decides to replace the simple ARIMA model with a more complex Long Short-Term Memory (LSTM) network, which is better suited for learning from time-series data. Additionally, the feature engineering process is enhanced to include a 7-day moving average of the sentiment score to smooth out the noise identified in the analysis.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous 'analysis' (e_04) explicitly concluded that the initial method was too simplistic and the sentiment feature was too noisy. Therefore, revisiting the 'scheme_design' is a necessary and logical next step to address these identified weaknesses. This iterative refinement of the methodology based on empirical evidence is a crucial part of a realistic research workflow, preventing wasted effort on flawed main experiments."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Market prediction modeling",
+    "subject": "Economics",
+    "event_type": "pilot_experiments",
+    "description": "A second pilot experiment is run to validate the revised scheme. Using the same three-month S&P 500 dataset as the first pilot, the new LSTM model is trained with the 7-day moving average of sentiment scores as an input feature. The goal is to see if this more sophisticated approach can capture a stronger signal than the previous ARIMA model.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After the previous 'scheme_design' (e_05) updated the methodology to address the failures of the first pilot, it is crucial to validate this new approach. Running a new, small-scale 'pilot_experiments' allows the team to test the more complex LSTM model and new feature engineering before committing to the resource-intensive main experiments, ensuring the revisions are actually an improvement."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Market prediction modeling",
+    "subject": "Economics",
+    "event_type": "analysis",
+    "description": "The results of the second pilot experiment are analyzed. The findings show that the LSTM model, combined with the 7-day moving average of sentiment, achieves a statistically significant improvement in prediction accuracy over the baseline model without sentiment data. This positive result validates the revised methodology and suggests it is ready for larger-scale testing.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the second 'pilot_experiments' (e_06), a formal 'analysis' is the logical next step. This is essential to evaluate whether the revised methodology from e_05 was successful and to justify moving forward to the more resource-intensive main experiments, which now seem warranted by these positive preliminary findings."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Market prediction modeling",
+    "subject": "Economics",
+    "event_type": "main_experiments",
+    "description": "Building on the successful pilot, the main experiments are launched. The study is expanded to include a diverse portfolio of 50 stocks from the NASDAQ-100 index over a 5-year period. The validated LSTM model with the smoothed sentiment feature is trained and evaluated against the baseline for each stock to test the generalizability of the findings.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The previous analysis (e_07) confirmed the viability of the revised methodology in a pilot setting. The logical next step is to conduct the 'main_experiments' to test the method's effectiveness and generalizability on a much larger and more diverse dataset, which is crucial for establishing the robustness of the research findings."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Market prediction modeling",
+    "subject": "Economics",
+    "event_type": "analysis",
+    "description": "A comprehensive analysis of the main experiment results is performed. The analysis confirms that the LSTM model with sentiment data consistently outperforms the baseline across the majority of the 50 stocks, with an average reduction in prediction error of 5.7%. The team also notes that the performance boost is more pronounced in more volatile, consumer-facing technology stocks.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After completing the resource-intensive 'main_experiments' (e_08), a thorough 'analysis' is the critical next step. It is necessary to process the large volume of data, quantify the overall performance of the proposed method, and draw the primary conclusions that address the core 'research_goals'. This step transforms raw experimental output into meaningful scientific findings."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Market prediction modeling",
+    "subject": "Economics",
+    "event_type": "writing",
+    "description": "With the main results confirmed, the team begins drafting the core sections of the research paper. The 'Methodology' section is written, detailing the LSTM model architecture and the sentiment feature engineering. The 'Results' section is also drafted, presenting the key findings from the main experiments, including the 5.7% average error reduction and the observations about volatile stocks.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The previous 'analysis' (e_09) has produced the final, conclusive results for the project. Therefore, the logical progression is to shift focus to dissemination by starting the 'writing' phase. Documenting the successful methodology and the strong results is the primary task required to prepare the research for publication."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Market prediction modeling",
+    "subject": "Economics",
+    "event_type": "analysis",
+    "description": "The team performs a follow-up analysis to investigate the observation from e_09 that the model's performance boost is higher for volatile tech stocks. They conduct a sub-group analysis on the main experiment data, explicitly comparing performance gains between different market sectors and correlating them with historical volatility metrics for each stock.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "The analysis of the main experiments (e_09) revealed an important but unexplained secondary finding. Before continuing with the writing (e_10), it is a logical and common research practice to perform a deeper, targeted analysis on the existing data to understand this finding. This adds significant depth to the paper's conclusions."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Market prediction modeling",
+    "subject": "Economics",
+    "event_type": "writing",
+    "description": "The findings from the follow-up analysis are integrated into the paper. The 'Results' section is updated with a detailed breakdown of model performance by market sector and volatility. A new paragraph is also drafted for the 'Discussion' section to theorize why sentiment data is more predictive for volatile, consumer-facing stocks.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The previous event (e_11) was a targeted analysis that produced deeper insights into the main findings. The logical next step is to document these new, more nuanced results in the research paper draft. This 'writing' event incorporates the sub-group analysis, enriching the paper's narrative and moving it closer to a complete draft."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Market prediction modeling",
+    "subject": "Economics",
+    "event_type": "writing",
+    "description": "The team drafts the Introduction and Conclusion sections of the paper. The Introduction is framed to motivate the research by highlighting gaps in existing literature and stating the project's contributions. The Conclusion summarizes the main findings, discusses limitations of the study (e.g., using a single sentiment source), and suggests avenues for future work.",
+    "required_artifacts": [
+      "research_goals",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the Methodology and Results sections drafted and refined (e_10, e_12), the next logical step is to write the framing sections of the paper. The Introduction needs the original 'research_goals' to set the stage, and the Conclusion requires the final 'experiment_results' to summarize the project's outcomes, bringing the manuscript closer to a complete first draft."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Market prediction modeling",
+    "subject": "Economics",
+    "event_type": "scheme_design",
+    "description": "After reviewing the complete paper draft, the team identifies a need to strengthen their claims via an ablation study. They design two new experimental conditions to isolate the individual contributions of the model architecture versus the feature engineering: (1) the original ARIMA model with the new smoothed sentiment feature, and (2) the LSTM model with the original, noisy sentiment feature.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "With a full paper draft assembled (e_13), a critical review often reveals weaknesses. The current draft claims the LSTM and smoothed sentiment together are effective, but doesn't disentangle their effects. Designing an ablation study is a standard and rigorous next step to provide this evidence, strengthening the paper's core argument before seeking external review."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Market prediction modeling",
+    "subject": "Economics",
+    "event_type": "main_experiments",
+    "description": "The ablation study experiments are executed. Using the same 5-year dataset of 50 stocks, the team runs the two new conditions: the original ARIMA model with the smoothed sentiment feature, and the LSTM model with the original raw sentiment feature. This process generates results specifically designed to isolate the performance contributions of the model architecture versus the feature engineering.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The previous event (e_14) involved designing an ablation study to strengthen the paper's claims. The logical and necessary next step is to execute these experiments. Running this supplementary set of 'main_experiments' will generate the specific results needed for the ablation analysis, directly addressing the weaknesses identified during the paper review."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Market prediction modeling",
+    "subject": "Economics",
+    "event_type": "analysis",
+    "description": "The results of the ablation study are analyzed. The analysis compares the four conditions (ARIMA+raw, ARIMA+smooth, LSTM+raw, and the final LSTM+smooth model) and confirms that both the advanced LSTM architecture and the smoothed sentiment feature independently contribute to the model's predictive power. The LSTM model alone provides a larger boost than the smoothed feature alone, but their combination is synergistic.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "Following the execution of the ablation experiments (e_15), a formal 'analysis' of these new results is the essential next step. This process is required to interpret the data, quantify the individual contributions of the method's components, and generate the specific conclusions that were the entire purpose of conducting the ablation study."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Market prediction modeling",
+    "subject": "Economics",
+    "event_type": "writing",
+    "description": "The team revises the paper draft to incorporate the findings from the ablation study. A new subsection is added to the 'Methodology' to detail the ablation experiments, and the 'Results' section is updated to present the comparative analysis, quantitatively demonstrating the individual and combined contributions of the LSTM model and the smoothed sentiment feature.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The analysis of the ablation study (e_16) provided critical evidence supporting the paper's claims. The logical next step is to integrate these new, compelling results into the manuscript. This 'writing' event strengthens the paper's core argument by explicitly documenting the ablation study and its findings, bringing the paper to a near-final state."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "Market prediction modeling",
+    "subject": "Economics",
+    "event_type": "end",
+    "description": "The research project concludes. The final paper, incorporating all analyses including the ablation study, is considered complete and ready for submission to a peer-reviewed journal. The initial research goals have been successfully met and rigorously validated.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached a natural conclusion. The initial research questions have been answered, the methodology has been iteratively refined and validated, the main experimental results are conclusive, and a comprehensive paper has been drafted and revised with strong supporting evidence from an ablation study. The research arc is complete."
+  }
+]

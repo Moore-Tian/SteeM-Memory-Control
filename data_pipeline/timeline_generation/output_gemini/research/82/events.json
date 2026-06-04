@@ -1,0 +1,328 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Satellite image analysis",
+    "subject": "CS-CV",
+    "event_type": "proposal",
+    "description": "The project begins with a proposal to use deep learning for automated deforestation detection in satellite imagery. The core research question is whether a U-Net based model can outperform traditional remote sensing methods. A high-level plan is drafted, outlining data acquisition, model development, and evaluation phases.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "research_plan",
+      "research_goals"
+    ],
+    "reason": "Every research project must start with a foundational plan and a clear set of objectives. This initial proposal event establishes the core research questions and a high-level roadmap, which will guide all subsequent activities."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Satellite image analysis",
+    "subject": "CS-CV",
+    "event_type": "scheme_design",
+    "description": "Based on the initial proposal, a detailed methodological scheme is designed. This involves selecting a U-Net architecture with a ResNet-34 backbone, defining the data preprocessing pipeline for Landsat 8 satellite images, and choosing a combined Dice and Binary Cross-Entropy loss function. The scheme also specifies evaluation metrics like Intersection over Union (IoU) and pixel accuracy.",
+    "required_artifacts": [
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the high-level proposal (e_01), the next logical step is to translate the research goals into a concrete technical plan. This 'scheme_design' event creates the initial 'method_scheme', detailing the model architecture, data pipeline, and evaluation metrics necessary for implementation."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Satellite image analysis",
+    "subject": "CS-CV",
+    "event_type": "pilot_experiments",
+    "description": "A small-scale pilot experiment is conducted on a single geographic region to validate the designed scheme. The U-Net model is trained for a few epochs on a small dataset to ensure the data loading pipeline works, the model trains without crashing, and the loss function decreases as expected. Initial visual results are inspected to get a qualitative sense of the model's performance.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing the method in e_02, it is crucial to test its feasibility on a small scale before committing to full-scale experiments. This pilot study serves as a sanity check for the 'method_scheme' and produces initial 'experiment_results' to inform whether the current approach is viable."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Satellite image analysis",
+    "subject": "CS-CV",
+    "event_type": "analysis",
+    "description": "The results from the pilot experiment are formally analyzed. While the model trains and produces output, a qualitative review of the segmentation masks reveals a significant issue: the model frequently misclassifies dark regions like cloud shadows and water bodies as deforestation. This analysis concludes that the current method is not robust enough and requires modification before proceeding to main experiments.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After a pilot study (e_03), a formal analysis of the initial 'experiment_results' is necessary to evaluate the viability of the 'method_scheme'. This analysis step identifies a critical flaw, preventing a premature and wasteful jump to main experiments. The findings are summarized in a 'paper_paragraph' to document the pilot outcome, and this will necessitate a return to the design phase."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Satellite image analysis",
+    "subject": "CS-CV",
+    "event_type": "scheme_design",
+    "description": "In response to the pilot analysis, the method scheme is revised to address the misclassification of dark regions. The plan is to incorporate additional spectral bands from the Landsat 8 data, specifically the Near-Infrared (NIR) and Short-Wave Infrared (SWIR) bands, in addition to the visible RGB bands. This requires modifying the input layer of the U-Net model to accept a multi-channel input and updating the data preprocessing pipeline accordingly.",
+    "required_artifacts": [
+      "method_scheme",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis in e_04 revealed a critical flaw in the initial method, where the model confused dark areas with deforestation. This event is a direct and necessary response, revising the 'method_scheme' to incorporate more spectral information (NIR/SWIR bands) which is known to help distinguish vegetation, water, and shadows. This iterative refinement is a crucial step before attempting new experiments."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Satellite image analysis",
+    "subject": "CS-CV",
+    "event_type": "pilot_experiments",
+    "description": "A second pilot experiment is conducted using the revised method that incorporates multi-spectral data (RGB + NIR + SWIR). The experiment is run on the same small geographic region as the first pilot to allow for a direct comparison. The goal is to verify if the additional spectral information helps the model distinguish between deforestation and other dark features like water and cloud shadows.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the 'method_scheme' in e_05 to address the misclassification issue found in the first pilot analysis (e_04), it is essential to validate the new approach. This second pilot experiment tests the revised hypothesis before committing resources to full-scale 'main_experiments'."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Satellite image analysis",
+    "subject": "CS-CV",
+    "event_type": "analysis",
+    "description": "The results of the second pilot experiment are analyzed. The inclusion of NIR and SWIR bands significantly improved performance, as the model now correctly distinguishes deforestation from water bodies and cloud shadows. The quantitative metrics (IoU) are also markedly better, confirming the revised method is a success and ready for large-scale application.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the second pilot experiment (e_06), a thorough analysis is required to validate the revised 'method_scheme'. This analysis confirms that the changes made in e_05 successfully addressed the critical flaws found in the first pilot (e_04), providing the confidence needed to proceed with the main experiments."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Satellite image analysis",
+    "subject": "CS-CV",
+    "event_type": "main_experiments",
+    "description": "With the revised method validated, the main experiments are launched. The U-Net model is trained on the full dataset, which includes satellite imagery from multiple years and diverse geographic regions in the Amazon basin. The training process is monitored closely, and the best-performing model checkpoint is saved for the final evaluation phase.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The successful validation of the revised methodology in the second pilot study (e_06, e_07) provides the green light to proceed with the main experimental phase as outlined in the initial 'research_plan'. This step is crucial for generating the comprehensive results needed to address the core 'research_goals'."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Satellite image analysis",
+    "subject": "CS-CV",
+    "event_type": "analysis",
+    "description": "A comprehensive analysis of the main experiment results is performed. Quantitative metrics are calculated on the held-out test set, achieving an average Intersection over Union (IoU) of 0.85 on the deforestation class. The results are systematically compared against a traditional baseline (Normalized Difference Vegetation Index thresholding), showing a significant improvement and confirming the hypothesis from the original research goals.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After completing the main experiments in e_08, a detailed analysis is the critical next step to formally evaluate the model's performance against the project's research goals. This event quantifies the success of the final method and provides the core findings that will form the basis of the research paper."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Satellite image analysis",
+    "subject": "CS-CV",
+    "event_type": "writing",
+    "description": "The team begins drafting the full research paper. The methods section is written based on the final, validated scheme, and the results section is composed using the quantitative analysis from the main experiments. Previously generated paragraphs summarizing the pilot studies and final results are integrated into a cohesive narrative.",
+    "required_artifacts": [
+      "method_scheme",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the main experiments analyzed and the core research goals achieved (e_09), the project has reached a stage where the results and methods can be formally documented. This writing event is the logical next step, synthesizing the final 'method_scheme' and the conclusive 'paper_paragraph' from the analysis into a draft manuscript for publication."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Satellite image analysis",
+    "subject": "CS-CV",
+    "event_type": "analysis",
+    "description": "While writing the discussion section, the team performs a detailed error analysis on the main experiment's outputs. They inspect incorrect predictions on the test set and discover a pattern: most remaining errors occur at the fine-grained boundaries of deforestation patches or in areas with hazy atmospheric conditions. This provides valuable insights into the model's limitations and directions for future work.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After obtaining strong main results (e_09) and starting to write the paper (e_10), a crucial step is to understand the model's limitations. This error analysis provides a deeper understanding of the 'experiment_results' and generates key content for the paper's discussion and future work sections, making the research more robust and complete."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Satellite image analysis",
+    "subject": "CS-CV",
+    "event_type": "writing",
+    "description": "Using the insights from the recent error analysis, the team drafts the Discussion and Future Work sections of the paper. The text explicitly addresses the model's limitations, such as its difficulty with fine-grained segmentation boundaries and hazy images, and proposes these as avenues for future investigation, thereby framing the current work's contribution and context.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The detailed error analysis in e_11 provided crucial material for the paper's discussion. This writing event is the logical next step, translating those analytical findings into a formal part of the manuscript, which is essential for presenting a complete and honest account of the research."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Satellite image analysis",
+    "subject": "CS-CV",
+    "event_type": "scheme_design",
+    "description": "Inspired by the error analysis, the team designs a simple post-processing step to improve segmentation boundaries. They propose applying morphological operations (opening followed by closing) to the raw prediction masks to remove small, noisy detections and smooth the edges of larger deforestation patches. This is added as a final step to the method scheme, intended to be a simple but effective enhancement.",
+    "required_artifacts": [
+      "method_scheme",
+      "paper_paragraph",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The error analysis (e_11) and subsequent writing (e_12) highlighted poor boundary segmentation as a key limitation. Rather than just stating this as future work, a common research practice is to attempt a simple fix. This event revises the 'method_scheme' with a targeted post-processing step, aiming to strengthen the final results and the paper's contribution before finalization."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Satellite image analysis",
+    "subject": "CS-CV",
+    "event_type": "main_experiments",
+    "description": "The new post-processing step (morphological operations) is applied to the raw output masks generated by the main model. The experiment involves running this new step on the full test set and recalculating the performance metrics. This is done to quickly evaluate if the simple fix improves the final results without requiring a full model retrain.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing a post-processing step in e_13 to address boundary errors, the logical next step is to apply it and evaluate its effectiveness. This event runs the new step on the existing main experiment's outputs to generate final, refined results, directly testing the hypothesis that morphological operations can improve segmentation quality before finalizing the paper."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Satellite image analysis",
+    "subject": "CS-CV",
+    "event_type": "analysis",
+    "description": "The team analyzes the results from the post-processing experiment. The analysis shows a modest but consistent improvement in IoU (around 1.5%) across the test set, and the resulting segmentation masks are visibly less noisy. This confirms the utility of the morphological operations, and the team decides to report these enhanced results as the final findings.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After running an experiment with a new post-processing step in e_14, a formal analysis is required to quantify its impact. This event evaluates the new 'experiment_results' to confirm if the updated 'method_scheme' provides a tangible improvement, justifying its inclusion in the final paper."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Satellite image analysis",
+    "subject": "CS-CV",
+    "event_type": "writing",
+    "description": "The Methods and Results sections of the paper are revised to incorporate the final post-processing step and its impact. The Methods section is updated to describe the morphological operations, and the Results section now reports the improved IoU. A first draft of the abstract and introduction is also written, summarizing the complete research narrative.",
+    "required_artifacts": [
+      "method_scheme",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After the analysis in e_15 confirmed the benefit of the post-processing step, the paper draft must be updated to reflect the final, improved results and method. This writing event integrates the latest findings into the manuscript, creating a more complete version of the paper for internal review before submission."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Satellite image analysis",
+    "subject": "CS-CV",
+    "event_type": "writing",
+    "description": "The complete draft of the paper is circulated among the team and senior lab members for internal review. Feedback is collected on the clarity of the narrative, the presentation of results in figures and tables, and the strength of the conclusion. The review suggests minor revisions to improve the flow of the introduction and to add a more detailed comparison with related work.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With a full draft assembled (e_16), seeking internal feedback is a critical quality control step before external submission. This peer review process helps identify areas for improvement in the manuscript, ensuring the research contribution is communicated as clearly and effectively as possible before finalization."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "Satellite image analysis",
+    "subject": "CS-CV",
+    "event_type": "writing",
+    "description": "The team revises the manuscript based on the internal review feedback. They rewrite parts of the introduction to improve its narrative flow and expand the related work section with a more thorough comparison to other deep learning methods for satellite image segmentation, positioning their contribution more clearly.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the internal review in e_17, it is essential to incorporate the collected feedback to improve the quality of the manuscript. This revision step directly addresses the suggestions to refine the introduction and expand the related work section, strengthening the paper before final submission."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "research",
+    "topic": "Satellite image analysis",
+    "subject": "CS-CV",
+    "event_type": "end",
+    "description": "The manuscript has been fully revised based on internal feedback and is now considered complete. The code, data, and final paper are packaged for submission to a top-tier computer vision conference. The project successfully answered its initial research questions and produced a novel, effective method for deforestation detection.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has completed a full research cycle, from initial proposal to a fully revised manuscript (e_18). The methodology has been iteratively refined and validated (e_15), the main research goals have been met with strong results, and the paper has undergone internal review. At this stage, the core research work is concluded, making it a natural endpoint for the timeline."
+  }
+]

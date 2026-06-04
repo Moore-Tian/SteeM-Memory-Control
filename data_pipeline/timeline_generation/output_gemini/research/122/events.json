@@ -1,0 +1,296 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Probabilistic modeling for stochastic systems",
+    "subject": "Mathematics",
+    "event_type": "proposal",
+    "description": "The initial, broad research interest in probabilistic modeling for stochastic systems is refined into a concrete proposal. This step defines specific research questions and establishes a high-level research plan.",
+    "required_artifacts": [
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This initial event bootstraps the project by formalizing an abstract research interest (represented as requiring 'research_goals') into a documented set of concrete goals and a tangible plan. This is a necessary first step to provide structure and direction for subsequent research activities."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Probabilistic modeling for stochastic systems",
+    "subject": "Mathematics",
+    "event_type": "scheme_design",
+    "description": "Based on the research goals, an initial methodological scheme is designed. This involves selecting a specific class of probabilistic models (e.g., Gaussian Processes) and defining the simulation environment and evaluation metrics for the target stochastic systems.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "With a clear research plan and defined goals from the proposal stage (e_01), the logical next step is to translate these high-level ideas into a concrete technical approach. This 'scheme_design' event creates the initial blueprint for the methodology that will be tested in subsequent experiments."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Probabilistic modeling for stochastic systems",
+    "subject": "Mathematics",
+    "event_type": "pilot_experiments",
+    "description": "A small-scale pilot study is conducted to validate the designed methodological scheme. This involves implementing a prototype of the Gaussian Process model and testing it on a simplified, well-understood stochastic system to ensure the implementation is correct and the approach is viable.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing the initial method in e_02, it is crucial to test its feasibility before committing to large-scale computations. This pilot experiment serves as a sanity check, using the 'method_scheme' to generate initial 'experiment_results' that will guide the next steps, such as refining the method or proceeding to main experiments."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Probabilistic modeling for stochastic systems",
+    "subject": "Mathematics",
+    "event_type": "analysis",
+    "description": "The results from the pilot study are analyzed. The analysis confirms the Gaussian Process model's viability but reveals significant computational bottlenecks and sensitivity to hyperparameter tuning, which were not fully anticipated.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_plan"
+    ],
+    "reason": "Following the pilot experiments (e_03), a dedicated analysis step is necessary to interpret the 'experiment_results'. This analysis evaluates the performance of the 'method_scheme' against the 'research_goals' and identifies critical issues, leading to a necessary revision of the 'research_plan' to address these challenges before proceeding to main experiments."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Probabilistic modeling for stochastic systems",
+    "subject": "Mathematics",
+    "event_type": "scheme_design",
+    "description": "In response to the analysis of the pilot study, the methodological scheme is revised. To address the computational bottlenecks, a sparse approximation technique is incorporated into the Gaussian Process model, and a Bayesian optimization approach is introduced for more robust hyperparameter tuning.",
+    "required_artifacts": [
+      "research_plan",
+      "method_scheme",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous analysis (e_04) identified critical computational and hyperparameter issues with the initial method. Based on the updated 'research_plan' and the specific findings from the pilot 'experiment_results', this event revisits the design stage to create an improved 'method_scheme' intended to overcome these limitations before larger-scale experiments are attempted."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Probabilistic modeling for stochastic systems",
+    "subject": "Mathematics",
+    "event_type": "main_experiments",
+    "description": "With the improved method in hand, the main experiments are launched. This involves applying the sparse Gaussian Process model to a wider range of more complex stochastic systems, as outlined in the research plan, to gather comprehensive data on performance, scalability, and robustness.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The revised 'method_scheme' from e_05 was specifically designed to overcome the limitations found in the pilot study. Having addressed these critical issues, the project logically progresses from the pilot phase to the main experimental phase, aiming to collect the core results needed to validate the 'research_goals'."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Probabilistic modeling for stochastic systems",
+    "subject": "Mathematics",
+    "event_type": "analysis",
+    "description": "A detailed analysis of the main experiment results is performed. The analysis confirms that the sparse Gaussian Process model successfully addresses the computational bottlenecks and hyperparameter sensitivity issues identified in the pilot study, showing strong performance across all tested stochastic systems.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the execution of main experiments (e_06), a comprehensive analysis is the logical next step to interpret the collected 'experiment_results'. This analysis validates the revised 'method_scheme' against the 'research_goals' and produces the first concrete written output, a 'paper_paragraph' summarizing the key positive findings, which will serve as a foundation for the final paper."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Probabilistic modeling for stochastic systems",
+    "subject": "Mathematics",
+    "event_type": "writing",
+    "description": "Building on the positive analysis of the main experiments, a first draft of the core paper sections is written. This includes a detailed description of the revised sparse Gaussian Process methodology and a comprehensive presentation of the experimental results, including performance tables and figures.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With successful main experiments (e_06) and a conclusive analysis (e_07), the project has reached a stage where formalizing the findings is the priority. This writing event logically follows the analysis to convert the validated 'method_scheme' and 'experiment_results' into the primary sections of a research paper, building upon the initial summary started in the previous step."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Probabilistic modeling for stochastic systems",
+    "subject": "Mathematics",
+    "event_type": "analysis",
+    "description": "An internal review of the drafted paper sections reveals a significant weakness: the lack of a comparative analysis against other state-of-the-art methods. While the proposed model is proven effective, its relative performance is unknown, which weakens the paper's overall contribution.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_plan",
+      "research_goals"
+    ],
+    "reason": "After drafting the initial results (e_08), a critical evaluation of the paper's narrative is a natural next step. This analysis of the current 'paper_paragraph' against the 'research_goals' identifies a crucial experimental gap. Updating the 'research_plan' and refining the 'research_goals' is necessary to schedule the required comparative experiments and strengthen the final publication."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Probabilistic modeling for stochastic systems",
+    "subject": "Mathematics",
+    "event_type": "scheme_design",
+    "description": "To facilitate the comparative analysis mandated by the revised research plan, the experimental scheme is expanded. This involves selecting two state-of-the-art baseline models from recent literature and defining a strict protocol for running them on the same datasets and with the same evaluation metrics as the project's primary model.",
+    "required_artifacts": [
+      "research_plan",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis in e_09 updated the 'research_plan' and 'research_goals' to include a comparative study. The logical next step is to act on this plan by designing the specifics of the comparison, which involves updating the 'method_scheme' to include baseline models and a fair evaluation protocol before any new experiments can be run."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Probabilistic modeling for stochastic systems",
+    "subject": "Mathematics",
+    "event_type": "main_experiments",
+    "description": "The comparative experiments are executed by running the two selected state-of-the-art baseline models on the full suite of stochastic systems used in the main experiments. The results are collected following the strict protocol defined in the updated experimental scheme.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the expansion of the experimental design in e_10 to include baselines, the next logical step is to execute these new experiments. This event applies the updated 'method_scheme' to generate the necessary comparative 'experiment_results' as required by the revised 'research_plan', setting the stage for a final, comprehensive analysis."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Probabilistic modeling for stochastic systems",
+    "subject": "Mathematics",
+    "event_type": "analysis",
+    "description": "The results from the baseline models are analyzed and compared against the performance of the project's sparse Gaussian Process model. The comparative analysis shows that the proposed model offers a significant improvement in prediction accuracy for certain classes of highly non-stationary systems, while maintaining comparable computational efficiency.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the comparative experimental data now available from e_11, the next logical step is to perform the final analysis that was planned in e_09. This event directly compares the project's 'experiment_results' with those of the baselines, evaluating them against the updated 'research_goals' and producing the key comparative findings needed to complete the main body of the paper ('paper_paragraph')."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Probabilistic modeling for stochastic systems",
+    "subject": "Mathematics",
+    "event_type": "writing",
+    "description": "The paper draft is significantly revised to incorporate the comparative analysis. The results and discussion sections are expanded to contrast the proposed sparse Gaussian Process model with the baseline methods, using the latest findings to build a strong argument for the paper's contribution.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After the crucial comparative analysis was completed in e_12, the next logical step is to integrate these new findings into the paper draft. This writing event takes the existing draft (from e_08) and the new analysis paragraphs (from e_12) and merges them into a more complete and compelling manuscript, directly addressing the updated 'research_goals' and positioning the work within the state-of-the-art."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Probabilistic modeling for stochastic systems",
+    "subject": "Mathematics",
+    "event_type": "writing",
+    "description": "The manuscript is finalized by writing the remaining sections. This includes crafting a compelling Introduction to motivate the problem, a Conclusion to summarize contributions and discuss future work, and an Abstract to provide a concise overview of the entire project.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After incorporating the comparative analysis into the draft in e_13, the core of the paper is complete. The logical next step is to write the framing sections—Introduction, Conclusion, and Abstract—to create a full, submittable manuscript, ensuring the final narrative aligns with the project's 'research_goals' and synthesizes all findings."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Probabilistic modeling for stochastic systems",
+    "subject": "Mathematics",
+    "event_type": "analysis",
+    "description": "The complete manuscript undergoes a final internal review by senior researchers. The feedback is positive but suggests clarifying the theoretical underpinnings of the sparse approximation in the methodology section and adding a more detailed discussion of the model's limitations in the conclusion.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_plan"
+    ],
+    "reason": "With a full manuscript draft completed in e_14, a final internal review is a crucial quality control step before external submission. This analysis of the complete 'paper_paragraph' against the project's 'research_goals' identifies final weaknesses, leading to an updated 'research_plan' that schedules the last set of revisions to strengthen the paper's clarity and impact."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Probabilistic modeling for stochastic systems",
+    "subject": "Mathematics",
+    "event_type": "writing",
+    "description": "Following the final internal review, the manuscript is revised. The methodology section is updated to provide a clearer explanation of the theoretical basis for the sparse approximation, and the conclusion is expanded to include a nuanced discussion of the model's limitations and potential areas for future work.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The previous analysis (e_15) generated a 'research_plan' for final revisions based on internal feedback. This writing event directly implements that plan by editing the 'paper_paragraph' to address the identified weaknesses, bringing the manuscript to a near-final state ready for submission and ensuring it fully aligns with the 'research_goals'."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Probabilistic modeling for stochastic systems",
+    "subject": "Mathematics",
+    "event_type": "end",
+    "description": "The project concludes with the submission of the finalized manuscript to a top-tier journal in the field of machine learning. The research cycle, from initial proposal to a complete, peer-reviewed-ready paper, is now finished.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached its natural conclusion. The research questions have been answered, extensive experiments (including comparative analysis) have been conducted, and a complete manuscript has been drafted and revised multiple times based on internal feedback (e_16). With a polished paper ready for submission, the project's primary objectives are met."
+  }
+]

@@ -1,0 +1,376 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Preparing for a medical appointment and asking questions",
+    "subject": "Health",
+    "event_type": "objective_clarification",
+    "description": "Initial meeting with the learner, an adult English language learner, to discuss their goals. The learner wants to feel more confident speaking with doctors, specifically preparing for appointments and asking questions about their health.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first session, so the immediate priority is to understand the learner's goals, background, and specific needs. This diagnostic step is essential for creating a relevant and effective study plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Preparing for a medical appointment and asking questions",
+    "subject": "Health",
+    "event_type": "plan_milestones",
+    "description": "Based on the learner's goals, the tutor and learner collaborate to create a structured study plan. The plan breaks down the learning process into key milestones: 1) Vocabulary for symptoms and questions, 2) Scripts for making an appointment, and 3) Role-playing a doctor's visit.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learning objectives defined in the previous session, the next logical step is to create a structured roadmap. This study plan provides a clear path with measurable milestones, ensuring that tutoring sessions are focused and aligned with the learner's goal."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Preparing for a medical appointment and asking questions",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "The tutor conducts the first lesson based on the study plan, focusing on Milestone 1: Vocabulary. The session introduces essential terms for describing symptoms (e.g., 'dull ache', 'sharp pain', 'nausea', 'dizzy') and forming basic questions for a doctor.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a study plan in place, the next logical step is to begin instruction. This lesson directly addresses the first milestone of the plan, building foundational vocabulary, and creates teaching notes that can be used for future practice and review."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Preparing for a medical appointment and asking questions",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "The tutor assigns a practice activity based on the new vocabulary. The learner completes exercises like matching symptoms to definitions and filling in blanks in sentences describing a health problem, allowing them to apply the terms from the last lesson.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson introducing new concepts, the logical next step is to practice applying them. This targeted practice reinforces the vocabulary from the previous lesson and creates a record of the learner's performance, which is essential for the subsequent review and feedback phase."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Preparing for a medical appointment and asking questions",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's completed vocabulary exercises from the practice session. They analyze the learner's answers to identify common errors and misconceptions regarding symptom descriptions.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session (e_04), a review is necessary to assess the learner's understanding and provide corrective feedback. Analyzing the practice_record against the original teaching_notes allows the tutor to create a targeted feedback_summary, which is crucial for reinforcing learning and addressing specific difficulties before moving on."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Preparing for a medical appointment and asking questions",
+    "subject": "Health",
+    "event_type": "materials_revision",
+    "description": "Based on the review, the tutor identifies that the initial teaching notes lacked clarity in distinguishing between similar symptom descriptors (e.g., 'dull ache' vs. 'throbbing pain'). The tutor revises the notes to add a comparison chart and more contextual example sentences.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After identifying specific misconceptions during the review (e_05), a logical next step is to improve the teaching materials to address these weaknesses directly. Revising the teaching_notes based on the feedback_summary ensures the material is clearer for the learner's next practice attempt and improves the resource for future lessons."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Preparing for a medical appointment and asking questions",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "To reinforce the clarified concepts, the learner engages in a new practice session using the revised materials. This activity focuses specifically on distinguishing between similar symptom descriptors by asking the learner to choose the best word for different scenarios.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials (e_06) to address specific weaknesses, the next logical step is a follow-up practice session. This allows the learner to apply their knowledge with the improved materials, solidifying their understanding and providing a new basis to assess their mastery of the difficult concepts before moving on."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Preparing for a medical appointment and asking questions",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's second, more targeted practice attempt. They confirm that the learner can now successfully distinguish between the previously confusing symptom descriptors, indicating the revised materials and extra practice were effective.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the targeted practice in the previous session (e_07), a review is necessary to confirm that the learner has overcome their specific difficulties. This step validates the effectiveness of the revised materials and provides a clear signal that the learner is ready to progress to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Preparing for a medical appointment and asking questions",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "The tutor moves to the second milestone in the study plan: scripting a call to make a doctor's appointment. The lesson covers key phrases for requesting an appointment, describing the reason for the visit, and asking about availability.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_08) confirmed the learner's mastery of the vocabulary milestone. It is now appropriate to advance to the next stage of the study plan, which is learning the practical scripts for making an appointment, thus building on the foundational knowledge."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Preparing for a medical appointment and asking questions",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "The learner participates in a guided role-play activity with the tutor, practicing making a phone call to a doctor's office. They use the scripts and phrases from the previous lesson to request an appointment and describe their reason for the visit.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on appointment scripts (e_09), a practice session is the logical next step to help the learner internalize and apply the new language. This role-play activity provides a safe environment to use the phrases and generates a record of their performance for feedback."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Preparing for a medical appointment and asking questions",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor and learner review the role-play practice from the previous session. They listen to the recording of the practice phone call, and the tutor provides feedback on the learner's use of phrases, fluency, and handling of unexpected questions from the 'receptionist'.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a practice session like the role-play in e_10, a review is essential to assess performance and provide actionable feedback. Analyzing the practice_record allows the tutor to identify specific areas for improvement before proceeding to the final milestone of the study plan, which is role-playing the actual doctor's visit."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Preparing for a medical appointment and asking questions",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "With the first two milestones complete, the tutor begins the lesson for the final milestone: role-playing the doctor's visit. This session focuses on structuring the conversation, including how to state the reason for the visit, describe symptoms in detail, and ask clarifying questions about a diagnosis or treatment plan.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The successful review in the previous event (e_11) indicates the learner is ready to proceed. According to the study plan, the final milestone is role-playing the actual doctor's visit. This lesson directly addresses that milestone, preparing the learner for the core interaction of the appointment."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Preparing for a medical appointment and asking questions",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "The learner engages in a comprehensive role-play scenario where the tutor acts as the doctor. The learner practices initiating the conversation, describing their symptoms using the vocabulary learned, and asking clarifying questions about a potential diagnosis, based on the framework from the previous lesson.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on structuring a conversation with a doctor (e_12), a practical application is the logical next step. This role-play practice allows the learner to integrate all the skills learned so far—vocabulary, question-forming, and conversational structure—in a simulated but realistic context, generating a record of their performance for a final review."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Preparing for a medical appointment and asking questions",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor provides a final review of the comprehensive doctor's visit role-play. They assess the learner's ability to integrate all learned skills, including using correct vocabulary, structuring the conversation, and asking follow-up questions about the mock diagnosis and treatment.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the comprehensive practice role-play (e_13), a final review is essential to provide summative feedback and confirm the learner's mastery of the overall objective. This step evaluates how well the learner integrated skills from all three milestones, determining if they have met their learning goals."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Preparing for a medical appointment and asking questions",
+    "subject": "Health",
+    "event_type": "objective_clarification",
+    "description": "Following the successful final review, the tutor and learner discuss next steps. The learner expresses confidence in their ability to handle a basic appointment but now wants to focus on a new goal: understanding and asking questions about medication instructions and potential side effects.",
+    "required_artifacts": [
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "With the initial learning goals successfully met as confirmed by the final review (e_14), it is a natural point to revisit the learner's objectives. This session serves to either conclude the tutoring or define a new set of goals based on the learner's newfound confidence and emerging needs."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Preparing for a medical appointment and asking questions",
+    "subject": "Health",
+    "event_type": "plan_milestones",
+    "description": "The tutor and learner update the study plan to incorporate the new learning objective. They add new milestones focused on understanding medication, including key vocabulary (e.g., 'dosage', 'side effects'), phrases for clarifying instructions with a pharmacist, and a final role-play.",
+    "required_artifacts": [
+      "learning_objectives",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "After clarifying a new learning objective in the previous session (e_15), it is essential to update the study plan. This step formally integrates the new goal into the tutoring structure, providing a clear roadmap for the upcoming lessons on medication."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Preparing for a medical appointment and asking questions",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "The tutor begins the first lesson for the new objective, focusing on essential vocabulary related to medications. The lesson covers terms like 'dosage', 'prescription', 'side effects', and 'take with food', as outlined in the updated study plan.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the study plan recently updated to include new milestones on understanding medication (e_16), the immediate next step is to start teaching the first of these milestones. This lesson builds the necessary vocabulary foundation before the learner can practice asking questions about their prescriptions."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Preparing for a medical appointment and asking questions",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "The learner completes a practice worksheet on medication vocabulary. The exercises include matching terms like 'dosage' and 'side effects' to their definitions and using them in sentences to ensure comprehension.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson introducing new medication vocabulary (e_17), a practice session is the logical next step to reinforce learning. This activity allows the learner to apply the new terms and creates a record of their attempt, which is necessary for the upcoming review."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Preparing for a medical appointment and asking questions",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's practice worksheet from the previous session. They check the learner's understanding of key medication-related terms like 'dosage' and 'side effects' and identify any areas of confusion.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following a practice session (e_18), a review is the essential next step to evaluate the learner's comprehension. This allows the tutor to provide specific feedback on the new medication vocabulary and ensure the learner has a solid foundation before moving to more complex tasks, like role-playing conversations with a pharmacist."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Preparing for a medical appointment and asking questions",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "Building on the successful vocabulary review, the tutor conducts a lesson on the next milestone: phrases for clarifying instructions with a pharmacist. The session covers questions like 'How many times a day should I take this?', 'Are there any side effects?', and 'Should I take this with food?'.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_19) confirmed the learner's grasp of medication vocabulary. According to the updated study plan, the next logical step is to teach the conversational phrases needed to use that vocabulary in a practical context, such as speaking with a pharmacist."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "Preparing for a medical appointment and asking questions",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "The learner engages in a role-play activity where the tutor acts as a pharmacist. The learner practices asking questions about a mock prescription, using the phrases for clarifying medication instructions from the previous lesson.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson on phrases for talking with a pharmacist (e_20), a practical application is essential for reinforcement. This role-play allows the learner to actively use the new language in a conversational context, building confidence and generating a performance record for subsequent review."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "tutoring",
+    "topic": "Preparing for a medical appointment and asking questions",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor and learner review the recording of the pharmacist role-play from the previous session. The tutor provides feedback on the clarity of the learner's questions, pronunciation, and ability to understand the 'pharmacist's' responses.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the role-play practice in e_21, a review is necessary to evaluate the learner's performance and provide targeted feedback. This step assesses their practical application of the phrases for discussing medication, ensuring they are competent before concluding this learning module."
+  },
+  {
+    "event_id": "e_23",
+    "time_index": 23,
+    "domain": "tutoring",
+    "topic": "Preparing for a medical appointment and asking questions",
+    "subject": "Health",
+    "event_type": "end",
+    "description": "The tutoring concludes as the learner has successfully met all defined objectives. They have demonstrated confidence and competence in preparing for a doctor's appointment, describing symptoms, and asking clarifying questions about both diagnoses and medications.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has met both the initial and expanded learning objectives, with their competence confirmed in the final review sessions (e_14 and e_22). With no further goals identified, the tutoring process has reached a natural and successful conclusion."
+  }
+]

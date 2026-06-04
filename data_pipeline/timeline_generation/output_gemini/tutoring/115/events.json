@@ -1,0 +1,288 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Understanding medication labels and general safety rules",
+    "subject": "Health",
+    "event_type": "objective_clarification",
+    "description": "Held an initial diagnostic session to understand the learner's goals for understanding medication labels. Discussed their current knowledge, any specific medications they need to manage, and their desired outcome, such as independently managing their prescriptions.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first tutoring session. The primary goal is to establish a clear understanding of the learner's needs, background, and specific objectives before creating a structured study plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Understanding medication labels and general safety rules",
+    "subject": "Health",
+    "event_type": "plan_milestones",
+    "description": "Based on the initial discussion, a study plan was created with clear milestones. The plan breaks down the learning process into key stages: 1) Identifying key information on a label, 2) Understanding dosage and frequency, and 3) Recognizing warnings and side effects.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learner's goals established in the 'learning_objectives' artifact, the next logical step is to structure the tutoring process. Creating a 'study_plan' provides a clear roadmap for both the tutor and the learner, ensuring that all objectives are systematically addressed."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Understanding medication labels and general safety rules",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "Conducted the first lesson based on the study plan, focusing on 'Identifying key information on a label'. The lesson covered the standard layout of a prescription label, explaining where to find the patient's name, the drug name (brand vs. generic), strength, and quantity.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a clear 'study_plan' in place, the next logical step is to begin instruction. This lesson directly addresses the first milestone, providing the foundational knowledge required before the learner can practice reading labels."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Understanding medication labels and general safety rules",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "Assigned a practice exercise where the learner was given several sample prescription labels. The task was to identify and write down the patient name, drug name (brand/generic), strength, and quantity for each label, reinforcing the concepts from the first lesson.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After conducting a lesson, it is crucial to assess the learner's comprehension through practical application. This practice session directly applies the knowledge covered in the 'teaching_notes' and generates a 'practice_record' of the learner's attempts, which is necessary for a future review and feedback session."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Understanding medication labels and general safety rules",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "Reviewed the learner's completed practice exercise. The tutor analyzed the 'practice_record' to check for accuracy in identifying the key information on the sample labels and noted a common mistake where the learner confused the brand name with the generic name.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session (e_04), a review is necessary to evaluate the learner's performance and provide targeted feedback. Analyzing the 'practice_record' allows the tutor to identify specific misconceptions, such as confusing brand and generic names, which will inform the next steps in the tutoring process."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Understanding medication labels and general safety rules",
+    "subject": "Health",
+    "event_type": "materials_revision",
+    "description": "In response to the feedback summary, the tutor revised the teaching notes on identifying key label information. A new section with a side-by-side comparison and clear examples was added to better illustrate the difference between a drug's brand name and its generic name.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_05) highlighted a specific misconception noted in the 'feedback_summary'. To address this directly, the tutor is improving the 'teaching_notes' to provide a clearer explanation, making the material more effective before the learner attempts another practice session or moves to the next topic."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Understanding medication labels and general safety rules",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "To reinforce the revised concepts, the learner was given a new set of sample labels. This practice focused specifically on distinguishing between brand and generic drug names, while also re-confirming their ability to locate other key information.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the 'teaching_notes' to address the learner's confusion between brand and generic names (e_06), this targeted practice session is necessary to verify that the misconception has been corrected. It provides an opportunity for the learner to apply the improved guidance before advancing to the next milestone in the study plan."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Understanding medication labels and general safety rules",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor reviewed the second, more targeted practice attempt. The learner's performance on distinguishing brand versus generic names was excellent, indicating that the misconception identified in the previous review has been successfully resolved.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed a targeted practice session (e_07), it is crucial to review their work to confirm that the revised teaching materials were effective. This review assesses the latest 'practice_record' to validate their understanding and determines if they are ready to proceed to the next milestone in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Understanding medication labels and general safety rules",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "Proceeded to the second milestone in the study plan, 'Understanding dosage and frequency'. The lesson explained how to find and interpret instructions like 'take one tablet by mouth twice a day', defining key terms such as dosage, frequency, and route of administration.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_08) confirmed the learner's mastery of the first milestone. Therefore, the next logical step is to advance to the second milestone as outlined in the 'study_plan', introducing the next core concept of reading medication labels."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Understanding medication labels and general safety rules",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "The learner was given a new practice worksheet with several medication labels. For each label, they were asked to identify and write down the dosage instructions, including the amount, frequency, and route of administration (e.g., 'by mouth').",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on understanding dosage and frequency (e_09), it is critical for the learner to apply this knowledge. This practice session provides hands-on experience and generates a 'practice_record' to assess comprehension before moving on to the final milestone."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Understanding medication labels and general safety rules",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor reviewed the practice on dosage and frequency. The learner successfully identified the dosage instructions but occasionally struggled to interpret common medical abbreviations like 'q.d.' (once daily) or 'b.i.d.' (twice daily).",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on dosage instructions (e_10), a review is necessary to assess comprehension. By analyzing the 'practice_record', the tutor can identify specific difficulties, such as interpreting abbreviations, and provide targeted feedback before moving to the final topic."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Understanding medication labels and general safety rules",
+    "subject": "Health",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback from the last review, the tutor updated the teaching notes on dosage and frequency. A new reference chart was created and added, explaining common medical abbreviations (e.g., 'q.d.', 'b.i.d.', 'p.r.n.') with clear definitions.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_11) identified that the learner struggled with medical abbreviations, as noted in the 'feedback_summary'. To address this specific knowledge gap, it is necessary to revise the 'teaching_notes' to provide a clearer, more explicit resource before asking the learner to practice again."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Understanding medication labels and general safety rules",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "Gave the learner a targeted practice worksheet focusing on interpreting dosage instructions that use common medical abbreviations. The learner was encouraged to use the newly added reference chart from the revised teaching notes.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the 'teaching_notes' to include a chart for medical abbreviations (e_12), a follow-up practice session is needed to verify that the learner can now correctly interpret them. This exercise will test the effectiveness of the revised materials and produce a new 'practice_record' for the next review."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Understanding medication labels and general safety rules",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor reviewed the practice on medical abbreviations. The learner's performance was much improved, showing they could successfully use the new reference chart to interpret the dosage instructions correctly.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the targeted practice session (e_13), a review is necessary to confirm that the learner's difficulty with abbreviations has been resolved. Analyzing the 'practice_record' validates the effectiveness of the revised teaching notes and determines readiness to proceed to the final milestone."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Understanding medication labels and general safety rules",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "Moved to the final milestone in the study plan, 'Recognizing warnings and side effects'. The lesson covered how to identify common warning stickers on prescription bottles (auxiliary labels) and where to find more detailed information about side effects and drug interactions.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_14) confirmed the learner has successfully mastered the second milestone. It is now appropriate to proceed to the final topic outlined in the 'study_plan', which is understanding warnings and side effects."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Understanding medication labels and general safety rules",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "Created a practice exercise where the learner was shown several prescription bottles with different auxiliary warning labels (e.g., 'May cause drowsiness', 'Do not take with alcohol'). The learner was asked to explain the meaning of each warning and what precautions they should take.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on warnings and side effects (e_15), a practice session is essential to ensure the learner can apply this critical safety information. This activity will generate a 'practice_record' to evaluate their ability to interpret auxiliary labels before concluding the tutoring."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Understanding medication labels and general safety rules",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor reviewed the learner's explanations of the auxiliary warning labels from the last practice session. The learner correctly interpreted all warnings and described appropriate precautions, demonstrating a solid understanding of this critical safety information.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice on warning labels (e_16), this review is essential to evaluate the learner's ability to understand and act on critical safety information. Analyzing the 'practice_record' confirms mastery of the final milestone and provides the basis for deciding the concluding steps of the tutoring."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Understanding medication labels and general safety rules",
+    "subject": "Health",
+    "event_type": "end",
+    "description": "Final session to summarize the learner's progress and achievements. The tutor confirmed that all learning objectives have been met, and the learner expressed confidence in their ability to safely and independently read medication labels.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has successfully mastered all three milestones from the study plan, with performance validated through multiple practice and review cycles (e_14, e_17). As all initial objectives have been met and the learner's understanding is solid, the formal tutoring process is now complete."
+  }
+]

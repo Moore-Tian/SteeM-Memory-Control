@@ -1,0 +1,298 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Clinical trial statistical modeling",
+    "subject": "Medical",
+    "event_type": "proposal",
+    "description": "The project is initiated with a proposal to develop a novel Bayesian hierarchical model. This model aims to better account for patient heterogeneity in clinical trials, with the goal of improving the accuracy and personalization of treatment effect estimation compared to traditional statistical methods.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the first event of the project. It establishes the initial research goals and a high-level plan, which are fundamental starting points for any research endeavor. No prior artifacts are required as this step formulates the foundational ideas."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Clinical trial statistical modeling",
+    "subject": "Medical",
+    "event_type": "scheme_design",
+    "description": "Based on the initial proposal, the team designs the detailed statistical framework for the Bayesian hierarchical model. This involves specifying the model's layers, defining prior distributions for the parameters, and outlining the Markov Chain Monte Carlo (MCMC) simulation strategy for posterior inference. The design focuses on ensuring the model can capture variability both within and between patient subgroups.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the establishment of the project's goals and plan in the initial proposal (e_01), the logical next step is to translate these high-level ideas into a concrete technical specification. This 'scheme_design' phase is crucial for creating the actual method that will be tested, and it directly uses the `research_goals` to guide the model's structure."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Clinical trial statistical modeling",
+    "subject": "Medical",
+    "event_type": "pilot_experiments",
+    "description": "A pilot study is conducted using a simulated dataset that mimics known patient heterogeneity. This small-scale experiment aims to validate the implementation of the Bayesian model, test the convergence of the MCMC sampler, and provide a preliminary assessment of the model's ability to recover true parameter values.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With the theoretical model designed in e_02, a pilot experiment is the logical next step to test its practical implementation and feasibility. This sanity-check on a controlled, simulated dataset helps identify potential issues with the MCMC convergence or model specification before proceeding to more complex, real-world data, thus mitigating risk."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Clinical trial statistical modeling",
+    "subject": "Medical",
+    "event_type": "analysis",
+    "description": "The team analyzes the results from the pilot study. The analysis confirms the model's ability to recover the true parameters in the simulation, but diagnostics reveal that the MCMC sampler has slow convergence, which could be a computational bottleneck for the main experiments.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "research_plan"
+    ],
+    "reason": "After conducting a pilot experiment (e_03), it is essential to formally analyze the results to assess the method's performance and identify any issues. This analysis uses the `experiment_results` to validate the `method_scheme` and provides critical insights that lead to a refinement of the `research_plan` before committing to larger-scale experiments."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Clinical trial statistical modeling",
+    "subject": "Medical",
+    "event_type": "scheme_design",
+    "description": "To address the slow MCMC convergence identified in the pilot analysis, the team revises the sampling strategy. They replace the standard Metropolis-Hastings sampler with a more efficient algorithm, such as Hamiltonian Monte Carlo (HMC), which is better suited for the model's complex posterior geometry. This revision aims to significantly speed up computation for the main experiments.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis in e_04 revealed a critical computational bottleneck with the current MCMC sampler. A `scheme_design` event is the necessary next step to directly address this problem by improving the sampling algorithm. This revision is guided by the updated `research_plan` and modifies the existing `method_scheme` to make future experiments feasible."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Clinical trial statistical modeling",
+    "subject": "Medical",
+    "event_type": "pilot_experiments",
+    "description": "The team re-runs the pilot experiment using the revised method scheme, which incorporates the more efficient Hamiltonian Monte Carlo (HMC) sampler. The experiment is conducted on the same simulated dataset as before to directly compare the convergence speed and accuracy of the new sampler against the previous one.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the sampling algorithm in e_05 to address slow convergence, it is crucial to validate this change. Re-running the pilot experiment allows for a direct comparison and confirms that the new method is both computationally efficient and accurate before committing to the resource-intensive main experiments."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Clinical trial statistical modeling",
+    "subject": "Medical",
+    "event_type": "analysis",
+    "description": "The team analyzes the results from the second pilot experiment. The analysis confirms that the new Hamiltonian Monte Carlo (HMC) sampler achieves convergence significantly faster than the previous sampler, without compromising the accuracy of parameter estimation. This successful validation gives the green light for proceeding with the main experiments on real clinical trial data.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the second pilot run in e_06, a formal analysis is necessary to verify that the revised method from e_05 successfully addressed the slow convergence problem. This step confirms the method's readiness for larger-scale application and provides the confidence to begin drafting the methodology section of the research paper."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Clinical trial statistical modeling",
+    "subject": "Medical",
+    "event_type": "main_experiments",
+    "description": "With the method validated, the team proceeds with the main experiments. The refined Bayesian hierarchical model with the HMC sampler is applied to a large, real-world dataset from a multi-center oncology trial. The goal is to estimate treatment effects for predefined patient subgroups and explore evidence of heterogeneity.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The successful validation of the revised method in the second pilot study (e_06, e_07) has cleared the way for the main phase of the project. Applying the validated `method_scheme` to real data is the critical next step outlined in the `research_plan` to address the core `research_goals` and generate the primary findings of the study."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Clinical trial statistical modeling",
+    "subject": "Medical",
+    "event_type": "analysis",
+    "description": "The team performs a detailed analysis of the main experiment's results from the oncology trial data. The findings indicate statistically significant treatment effect heterogeneity across patient subgroups defined by specific biomarkers. The model successfully identifies a subgroup that shows a substantially higher benefit from the treatment, a result not discernible with traditional analysis methods.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After completing the main experiments in e_08, a thorough analysis of the `experiment_results` is the necessary next step. This analysis directly addresses the core `research_goals` by interpreting the model's output on real data and produces the key findings of the study, which can then be documented in a `paper_paragraph` for the results section of the manuscript."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Clinical trial statistical modeling",
+    "subject": "Medical",
+    "event_type": "writing",
+    "description": "The team begins to formally draft the full research paper. They integrate the previously written method and results paragraphs into a complete manuscript structure, writing the introduction, discussion, and conclusion sections to frame the study's contribution and contextualize the findings from the main analysis.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "method_scheme",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the main analysis (e_09) complete and key findings identified, the logical next step is to synthesize all the project's components into a full manuscript for publication. This `writing` event builds upon the initial `paper_paragraph` drafts and uses the project's `research_goals` and `experiment_results` to construct a complete narrative."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Clinical trial statistical modeling",
+    "subject": "Medical",
+    "event_type": "main_experiments",
+    "description": "During the writing process, a co-author suggests that the paper would be much stronger with a direct comparison to a standard method. The team decides to run an additional experiment, applying a conventional frequentist mixed-effects model to the same oncology dataset to benchmark their Bayesian model's ability to identify patient heterogeneity.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_plan",
+      "method_scheme",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "research_plan"
+    ],
+    "reason": "After drafting the initial manuscript (e_10), the team identified a crucial gap: the lack of a direct comparison to a baseline method. This new `main_experiments` event is a common and realistic step to strengthen the paper's argument by providing a quantitative benchmark against existing approaches, directly addressing a likely point of critique during peer review."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Clinical trial statistical modeling",
+    "subject": "Medical",
+    "event_type": "analysis",
+    "description": "The team analyzes the results from the benchmark frequentist model and compares them directly against the results from their Bayesian model. The comparative analysis shows that while the frequentist model detects an overall treatment effect, it fails to identify the specific high-benefit subgroup that the Bayesian model clearly distinguished, thus validating the new method's superior granularity.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the benchmark experiment in e_11, it is essential to analyze these new results and formally compare them to the original findings. This comparative analysis directly supports the central research goal of demonstrating the proposed model's superiority over standard methods and generates crucial content for the results and discussion sections of the paper."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Clinical trial statistical modeling",
+    "subject": "Medical",
+    "event_type": "writing",
+    "description": "The team revises the full paper draft, integrating the new comparative analysis results. The methods section is updated to include the benchmark frequentist model, and the results and discussion sections are rewritten to emphasize the superior performance of the Bayesian model in identifying the clinically significant patient subgroup.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After the crucial comparative analysis in e_12 demonstrated the model's superiority, the immediate next step is to update the manuscript. This `writing` event incorporates these compelling new findings from the benchmark experiment into the paper draft from e_10, significantly strengthening the study's central argument for publication."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Clinical trial statistical modeling",
+    "subject": "Medical",
+    "event_type": "main_experiments",
+    "description": "During an internal review of the revised paper, a team member raises a concern about the potential influence of the chosen prior distributions on the results. To address this, the team decides to conduct a sensitivity analysis by re-running the main experiment on the oncology data using a different set of more diffuse (less informative) priors for the model's hyperparameters.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the manuscript (e_13), it's common to perform a final internal critique. A sensitivity analysis is a standard and crucial step in Bayesian modeling to ensure the findings are robust and not an artifact of the prior specifications. This preempts a likely reviewer comment and strengthens the paper's overall credibility."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Clinical trial statistical modeling",
+    "subject": "Medical",
+    "event_type": "analysis",
+    "description": "The team analyzes the results of the sensitivity analysis. The analysis shows that using more diffuse priors does not meaningfully change the main conclusion: the model still robustly identifies the same high-benefit patient subgroup. This confirms that the original findings are not overly dependent on the specific choice of priors.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After conducting the sensitivity analysis experiment in e_14, the essential next step is to analyze those results. This analysis directly addresses the robustness of the findings, a key requirement for publication, and its conclusions will be used to update the manuscript, confirming the method's validity."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Clinical trial statistical modeling",
+    "subject": "Medical",
+    "event_type": "writing",
+    "description": "The team performs a final revision of the manuscript, adding a subsection to the appendix or methods section that describes the sensitivity analysis and its results. This addition serves to proactively address potential reviewer concerns about the choice of priors and demonstrates the robustness of the study's conclusions.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The successful sensitivity analysis in e_15 provided crucial evidence of the model's robustness. The immediate next step is to integrate these findings into the full manuscript, strengthening the paper to preempt reviewer critiques and preparing it for submission."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Clinical trial statistical modeling",
+    "subject": "Medical",
+    "event_type": "end",
+    "description": "With the final manuscript revised to include the comparative benchmark, the sensitivity analysis, and all key findings, the core research phase of the project is complete. The team prepares the finalized paper for submission to a top-tier statistical or medical journal.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has successfully developed and validated the proposed model, demonstrated its superiority over a standard method, and confirmed the robustness of its findings. The research goals have been met, and the results have been consolidated into a comprehensive, submission-ready manuscript (e_16), marking a natural conclusion to the research timeline."
+  }
+]

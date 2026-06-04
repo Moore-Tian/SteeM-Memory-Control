@@ -1,0 +1,356 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Error handling and building robust programs",
+    "subject": "Programming",
+    "event_type": "objective_clarification",
+    "description": "The initial session focuses on understanding the learner's goals for improving their error handling skills. The tutor and learner discuss the learner's current programming experience, desired outcomes, and any specific applications they have in mind.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "As the first step in the tutoring process, it is essential to establish a clear understanding of the learner's goals and background. This event creates the foundation for a tailored learning plan by producing the initial 'learning_objectives' artifact."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Error handling and building robust programs",
+    "subject": "Programming",
+    "event_type": "plan_milestones",
+    "description": "Based on the established learning objectives, the tutor and learner collaborate to create a structured study plan. This plan breaks down the topic of error handling into manageable milestones, such as understanding exception types, implementing try-catch blocks, and logging errors effectively.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learning objectives defined in the previous session (e_01), the natural next step is to create a structured plan to achieve them. This event uses the 'learning_objectives' artifact to produce a 'study_plan', providing a clear roadmap for the upcoming lessons."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Error handling and building robust programs",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "Following the study plan, the tutor conducts the first lesson on the fundamentals of error handling. The session introduces the concept of exceptions, explains the purpose of try-catch blocks, and provides clear examples of how they are used to handle potential runtime errors.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a clear study plan established in the previous event (e_02), the logical next step is to begin instruction. This lesson addresses the first milestone in the plan and generates 'teaching_notes' which can be used for future review and reinforcement."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Error handling and building robust programs",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "To reinforce the concepts from the lesson, the tutor assigns targeted coding exercises. The learner is tasked with writing code that uses try-catch blocks to handle potential errors like invalid user input or arithmetic exceptions.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing theoretical concepts in the previous lesson (e_03), the logical next step is to apply them through hands-on practice. This event creates a 'practice_record' of the learner's attempts, which is essential for the upcoming review and feedback cycle."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Error handling and building robust programs",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's submitted code from the practice session. The focus is on identifying common mistakes, such as catching overly broad exceptions or placing code incorrectly within the try-catch blocks, and then preparing constructive feedback.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed hands-on exercises in the previous event (e_04), the essential next step is to review their work. This review process uses the 'practice_record' to assess understanding and generates a 'feedback_summary' to guide the learner's improvement."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Error handling and building robust programs",
+    "subject": "Programming",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback from the last review, the tutor notices a recurring issue where the learner catches overly broad exceptions. To address this, the tutor revises the teaching notes to add a section on exception hierarchies and provides better examples contrasting specific vs. general exception handling.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in the previous event (e_05) revealed a specific, common misconception. Before assigning more practice, it is effective to improve the learning materials to directly address this gap. This event refines the 'teaching_notes' based on observed learner difficulties, making them more effective for future lessons and review."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Error handling and building robust programs",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "Following the materials revision and feedback, the tutor assigns a new set of practice exercises. These exercises are specifically designed to target the previously identified weakness, requiring the learner to choose appropriate, specific exception types instead of general ones.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials (e_06) to address a specific misconception identified during review (e_05), it is crucial for the learner to apply this new understanding. This targeted practice session reinforces the corrected concept and creates a new 'practice_record' to assess their progress."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Error handling and building robust programs",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's second set of practice exercises, focusing on whether they successfully used specific exception types as instructed. The review assesses if the targeted feedback and revised materials helped correct the initial misconception.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice in the previous event (e_07), a review is necessary to evaluate the learner's progress on the specific weakness identified earlier. This event closes the feedback loop by using the new 'practice_record' to generate an updated 'feedback_summary', which will determine if the concept has been mastered or if more reinforcement is needed."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Error handling and building robust programs",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "Assuming the previous review showed mastery of specific exceptions, the tutor proceeds to the next topic in the study plan: error logging. This lesson covers the importance of logging, different logging levels (e.g., INFO, WARN, ERROR), and how to implement a basic logger within catch blocks to record error details for debugging.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The successful review in the previous event (e_08) indicates the learner is ready for new material. Following the 'study_plan', this lesson introduces the next logical topic, error logging, and expands the existing 'teaching_notes' to include this new concept, preparing for the next practice cycle."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Error handling and building robust programs",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "To solidify the concepts from the error logging lesson, the tutor assigns new exercises. The learner must now modify their previous code to include logging statements that capture exception details, such as the error message and stack trace, within the catch blocks.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing error logging concepts in the previous lesson (e_09), the logical next step is for the learner to apply this knowledge through practical exercises. This practice session builds on the previous lesson's material and creates a new 'practice_record' that will be used to assess their understanding in the next review."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Error handling and building robust programs",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's practice code that incorporated error logging. The review focuses on whether the logs capture sufficient detail, are placed correctly within catch blocks, and use appropriate logging levels.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the practice exercises on error logging in the previous event (e_10), it is crucial to review their work. This review assesses their understanding of the new concept and generates a 'feedback_summary' to provide targeted guidance and determine the next steps."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Error handling and building robust programs",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "The review of logging practice was successful, so the tutor proceeds to the next topic in the study plan: custom exceptions. This lesson explains why and when to create custom exception types to handle application-specific errors, how to define them, and how to use the 'throw' keyword.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_11) confirmed the learner's understanding of error logging, making them ready for new material. Following the 'study_plan', this lesson introduces a more advanced concept, custom exceptions, building upon the established foundation and updating the 'teaching_notes' for the next practice cycle."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Error handling and building robust programs",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "To apply the concept of custom exceptions, the tutor assigns an exercise where the learner must define their own exception class (e.g., 'InvalidTransactionError'). The learner then needs to write code that throws this custom exception under specific business logic conditions and handles it appropriately.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the advanced topic of custom exceptions in the previous lesson (e_12), the logical next step is to provide hands-on practice to solidify understanding. This exercise requires the learner to apply the new theory, and the resulting 'practice_record' is essential for the upcoming review to assess their comprehension."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Error handling and building robust programs",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's code from the custom exceptions practice. The review checks if the custom exception class was defined correctly, thrown in the right business-logic context, and caught specifically to handle the application-specific error.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on custom exceptions (e_13), a review is the necessary next step to assess the learner's understanding of this advanced concept. This event uses the 'practice_record' to evaluate the code and produces a 'feedback_summary' to provide actionable advice and determine if the milestone is complete."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Error handling and building robust programs",
+    "subject": "Programming",
+    "event_type": "plan_milestones",
+    "description": "After successfully covering several key topics, the tutor and learner pause to review the overall progress against the original study plan. They decide to adjust the next milestone to focus on resource management (e.g., 'finally' blocks and 'try-with-resources') as a prerequisite for building a larger, more robust final project.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With several milestones completed and the last review (e_14) showing success, it is an opportune moment to reassess the overall plan. This event ensures the tutoring remains on track with the learner's goals and pace by refining the 'study_plan' based on accumulated progress, preparing for the next phase of learning."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Error handling and building robust programs",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "Following the updated study plan, the tutor delivers a lesson on resource management in error handling. The session covers the use of the 'finally' block to guarantee code execution (e.g., for closing files or database connections) and introduces the more modern 'try-with-resources' syntax as a safer, more concise alternative.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After adjusting the study plan in the previous event (e_15) to focus on resource management, the immediate next step is to teach this new topic. This lesson directly follows the revised plan, introduces a key concept for building robust applications, and updates the 'teaching_notes' accordingly."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Error handling and building robust programs",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "To solidify the concepts from the resource management lesson, the tutor assigns exercises that require the use of 'finally' blocks and 'try-with-resources' statements. The learner is tasked with writing code that correctly closes a file stream, regardless of whether an error occurs during file processing.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing resource management concepts like 'finally' and 'try-with-resources' in the previous lesson (e_16), the necessary next step is for the learner to apply them in a practical scenario. This practice session will generate a 'practice_record', allowing the tutor to assess the learner's ability to write robust, resource-safe code."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Error handling and building robust programs",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's code from the resource management practice. The review checks for the correct implementation of 'finally' blocks or 'try-with-resources' statements to ensure resources are always released properly, even when exceptions occur.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on resource management (e_17), a review is necessary to evaluate the learner's ability to write code that safely handles resources. This event will produce a 'feedback_summary' to confirm understanding or highlight areas for improvement before moving on."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Error handling and building robust programs",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "To synthesize all the learned concepts, the tutor assigns a capstone project. The learner is tasked with building a small application that reads data from a file, performs validation that could trigger custom exceptions, and writes results to another file, incorporating robust logging and resource management throughout.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After successfully reviewing individual concepts like resource management (e_18), a capstone project is the ideal next step to assess the learner's ability to integrate all skills. This project, guided by the 'study_plan' and 'teaching_notes', will produce a comprehensive 'practice_record' for a final evaluation."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Error handling and building robust programs",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "The tutor performs a comprehensive final review of the capstone project submission. This assessment evaluates the learner's ability to integrate all taught concepts, including custom exceptions, error logging, and proper resource management, into a single, robust application.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the capstone project in the previous event (e_19), a comprehensive review is essential to provide final feedback and assess overall mastery of the learning objectives. This final review produces a 'feedback_summary' that will determine if the tutoring goals have been met."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "Error handling and building robust programs",
+    "subject": "Programming",
+    "event_type": "end",
+    "description": "The tutor and learner have a final session to confirm that all learning objectives have been met. The final review of the capstone project was positive, demonstrating the learner's ability to build robust programs with effective error handling, so the tutoring engagement is concluded.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has successfully completed a capstone project that integrates all the key concepts from the study plan. The final review (e_20) confirmed their mastery of the material, indicating that the initial learning objectives have been met and the formal tutoring can conclude."
+  }
+]

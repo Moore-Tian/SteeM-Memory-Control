@@ -1,0 +1,304 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Building sustainable sleep routines",
+    "subject": "Health",
+    "event_type": "objective_clarification",
+    "description": "Initial session to understand the learner's sleep challenges. The learner reports inconsistent sleep schedules, difficulty falling asleep, and feeling groggy in the morning, aiming to establish a routine that leads to more restful sleep within two months.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first event in the tutoring timeline. It is essential to start by clarifying the learner's goals, challenges, and constraints to create a foundation for a tailored study plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Building sustainable sleep routines",
+    "subject": "Health",
+    "event_type": "plan_milestones",
+    "description": "Based on the learning objectives, the tutor and learner co-create a two-month study plan. The plan is divided into weekly milestones, starting with establishing a consistent wake-up time, followed by creating a pre-sleep wind-down routine, and then optimizing the sleep environment.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learner's goals defined in the initial 'objective_clarification' event, the next logical step is to create a structured study plan. This plan provides a clear roadmap with actionable milestones to guide the learning process effectively."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Building sustainable sleep routines",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "The tutor delivers a lesson on the first milestone from the study plan: the importance of a consistent wake-up time. The lesson explains the science behind circadian rhythms and provides practical strategies for adhering to a fixed wake-up schedule, including on weekends.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a study plan in place, the next logical step is to begin instruction on the first milestone. This lesson provides the foundational knowledge the learner needs before they start practicing the new habit, and it generates reusable teaching notes on a core concept."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Building sustainable sleep routines",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "The learner is assigned to track their wake-up time for one week using a sleep diary. The goal is to wake up within the same 30-minute window each day, including weekends, to start building the habit of a consistent wake-up time.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on consistent wake-up times, it is crucial for the learner to apply the knowledge in a real-world context. This practice session provides a structured way to track progress and gather data for the upcoming review."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Building sustainable sleep routines",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's sleep diary from the past week. The data shows good consistency on weekdays but a significant slip on the weekend, which the learner attributes to social plans. The tutor provides feedback on how to manage one-off disruptions without derailing the entire routine.",
+    "required_artifacts": [
+      "practice_record",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a week of practice, it is essential to review the learner's progress and the data they collected. This review step allows the tutor to identify successes and challenges, provide actionable feedback, and make informed decisions about the next steps in the learning plan."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Building sustainable sleep routines",
+    "subject": "Health",
+    "event_type": "materials_revision",
+    "description": "The tutor updates the teaching notes on consistent wake-up times to add a section on 'Managing Social Events and Weekend Variations'. This revision incorporates the specific advice from the recent feedback on handling disruptions without derailing the entire routine.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review session identified a key challenge for the learner that was not fully addressed in the original lesson. Revising the teaching notes makes the material more robust and directly applicable to the learner's real-world situation, better preparing them for the next practice attempt."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Building sustainable sleep routines",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "The learner is assigned to practice maintaining a consistent wake-up time for a second week. They will apply the newly discussed strategies for handling weekend social plans while continuing to log their times in a sleep diary.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the review and materials revision that addressed weekend challenges, it is crucial for the learner to re-attempt the practice. This second attempt allows them to apply the new strategies and provides a fresh data set to determine if the foundational habit of a consistent wake-up time is becoming more stable."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Building sustainable sleep routines",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor and learner review the second week's sleep diary. The learner successfully maintained a consistent wake-up time, even on the weekend, by applying the new strategies. The tutor provides positive feedback and confirms that this milestone is complete.",
+    "required_artifacts": [
+      "practice_record",
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the second, more targeted week of practice, a review is necessary to assess if the previous feedback was effective. This review confirms the learner has successfully established the foundational habit, allowing them to confidently proceed to the next milestone in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Building sustainable sleep routines",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "The tutor introduces the second milestone from the study plan: creating a pre-sleep wind-down routine. The lesson explains how calming activities before bed can improve sleep onset and quality, and provides examples like reading, listening to calm music, or gentle stretching, while advising against screen use.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review event confirmed the learner has successfully established a consistent wake-up time. Following the study plan, the next logical step is to introduce the second milestone. This lesson provides the foundational knowledge for creating an effective wind-down routine before moving on to practice."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Building sustainable sleep routines",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "The learner is assigned to design and implement a 30-minute pre-sleep wind-down routine for one week. They are to choose screen-free activities based on the lesson and log their routine and perceived time to fall asleep in their sleep diary.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on pre-sleep wind-down routines, it is essential for the learner to put the theory into practice. This task allows them to experiment with creating a personal routine and gathers crucial data for the upcoming review, moving them forward on the second milestone of their study plan."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Building sustainable sleep routines",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's sleep diary, which details their new wind-down routine. The learner reports that while the routine itself is pleasant, they still find their mind racing and struggle to fall asleep. The tutor identifies that the learner's chosen reading material (a fast-paced thriller) might be too mentally stimulating.",
+    "required_artifacts": [
+      "practice_record",
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a week of implementing the new wind-down routine, a review is the natural next step to assess its effectiveness. Analyzing the practice record allows the tutor to diagnose specific issues—like the choice of activity—and provide targeted feedback to refine the routine."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Building sustainable sleep routines",
+    "subject": "Health",
+    "event_type": "materials_revision",
+    "description": "The tutor refines the teaching notes on wind-down routines to add more specific guidance. Based on the recent review, a new section is added on selecting mentally calming activities (e.g., non-fiction, poetry) over stimulating ones (e.g., thrillers, complex puzzles) to better prepare the mind for sleep.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review identified that the learner's choice of activity was too mentally stimulating. Revising the teaching notes to explicitly differentiate between calming and stimulating activities incorporates this specific feedback, making the material more practical and setting the learner up for a more successful next practice attempt."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Building sustainable sleep routines",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "The learner is assigned to practice their wind-down routine for a second week, this time consciously selecting a less mentally stimulating activity based on the recent feedback. They will continue to log their chosen activity and perceived time to fall asleep in their sleep diary.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the previous review identified an issue with the learner's choice of activity and the teaching materials were revised, it is logical to have another practice session. This allows the learner to apply the refined guidance and see if it improves their ability to fall asleep, providing new data for assessment."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Building sustainable sleep routines",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor reviews the second week's sleep diary for the wind-down routine. The learner reports that switching to a less stimulating book significantly reduced their mental chatter and they now fall asleep more quickly. The tutor confirms the success of this milestone.",
+    "required_artifacts": [
+      "practice_record",
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a second, revised practice attempt (e_13), a review is essential to assess if the targeted feedback was effective. This event confirms the learner has successfully established a wind-down routine, allowing them to move on to the next milestone in their study plan."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Building sustainable sleep routines",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "The tutor introduces the third milestone from the study plan: optimizing the sleep environment. The lesson covers key factors like light exposure (especially from electronics), noise levels, and room temperature, providing actionable tips for creating a sleep-conducive bedroom.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_14) confirmed the successful completion of the second milestone (wind-down routine). According to the study plan, the next logical step is to begin a lesson on the third milestone, providing the learner with the foundational knowledge needed to optimize their sleep environment."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Building sustainable sleep routines",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "The learner is assigned to assess their sleep environment and make at least two concrete changes based on the recent lesson, such as installing blackout curtains or removing electronics from the bedroom. They will log these changes and their perceived sleep quality for one week in their sleep diary.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After receiving a lesson on optimizing the sleep environment, it is crucial for the learner to apply this knowledge directly. This practice task prompts them to make tangible changes and collect data on the impact, which is essential for the upcoming review and for completing the final milestone."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Building sustainable sleep routines",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's sleep diary, noting that the learner implemented blackout curtains and removed their phone from the bedroom. The learner reports a significant improvement in sleep quality, feeling more rested upon waking and falling asleep faster.",
+    "required_artifacts": [
+      "practice_record",
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner practiced optimizing their sleep environment (e_16), a review is essential to evaluate the effectiveness of the changes made. This step assesses the outcome of the final milestone and provides a basis for concluding the tutoring engagement."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Building sustainable sleep routines",
+    "subject": "Health",
+    "event_type": "end",
+    "description": "In this final session, the tutor and learner review the overall progress. All milestones have been met, and the learner confirms they have successfully established a sustainable, restful sleep routine, thus achieving their initial goals. The tutoring engagement is formally concluded.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has successfully completed all three milestones from the study plan (consistent wake-up, wind-down routine, optimized environment) and has reported significant, sustained improvements in sleep quality. As the initial learning objectives have been met, the tutoring process is now complete."
+  }
+]

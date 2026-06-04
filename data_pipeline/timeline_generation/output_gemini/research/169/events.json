@@ -1,0 +1,348 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Materials fatigue prediction",
+    "subject": "Engineering",
+    "event_type": "proposal",
+    "description": "The project is initiated to investigate the use of machine learning for predicting materials fatigue life. The core research question is defined: can a model trained on acoustic emission data outperform traditional stress-life (S-N) curve methods? A high-level plan is established to guide the initial phases of the research.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "As the inaugural event of the project, this step establishes the foundational direction and scope. It requires no prior artifacts and generates the initial `research_goals` and `research_plan`, which are essential for all subsequent stages of the research."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Materials fatigue prediction",
+    "subject": "Engineering",
+    "event_type": "scheme_design",
+    "description": "Based on the research goals, a detailed methodological scheme is developed. This includes selecting a specific aluminum alloy for testing, designing the cyclic loading protocol, and specifying the acoustic emission sensor placement and data acquisition parameters. An initial plan for the machine learning model, a Convolutional Neural Network (CNN) to process the acoustic waveforms, is also outlined.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "With the overall `research_plan` and `research_goals` established in e_01, the next logical step is to design the specific technical approach. This event translates the high-level proposal into a concrete experimental and analytical framework, producing the `method_scheme` needed to conduct the experiments."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Materials fatigue prediction",
+    "subject": "Engineering",
+    "event_type": "pilot_experiments",
+    "description": "A small-scale pilot study is conducted to validate the experimental setup. A few aluminum alloy specimens are subjected to the cyclic loading protocol, and acoustic emission data is collected. The goal is to verify that the sensors are capturing clear signals and that the data acquisition system is functioning as expected before launching the full-scale experiments.",
+    "required_artifacts": [
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the detailed design of the experimental setup in e_02, a pilot study is a crucial step to de-risk the project. It allows for a practical test of the `method_scheme` to identify and fix any unforeseen issues with equipment or data collection before committing the time and resources required for the main experiments. This generates the first set of `experiment_results` for initial analysis."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Materials fatigue prediction",
+    "subject": "Engineering",
+    "event_type": "analysis",
+    "description": "The data from the pilot study is analyzed to assess the signal-to-noise ratio and verify the integrity of the collected acoustic emission waveforms. The analysis confirms that the signals contain distinct features correlated with the stages of fatigue damage, validating the data collection methodology. The results suggest the approach is viable for the main study.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the `pilot_experiments` (e_03), a formal `analysis` of the collected `experiment_results` is the logical next step. This is crucial to validate the `method_scheme` and confirm that the experimental setup produces meaningful data before committing to the resource-intensive main experiments. The analysis produces validated findings, which are an updated form of `experiment_results`."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Materials fatigue prediction",
+    "subject": "Engineering",
+    "event_type": "main_experiments",
+    "description": "With the experimental protocol validated by the pilot study, the main experimental campaign begins. A large set of 50 aluminum alloy specimens are subjected to cyclic fatigue tests at five different stress amplitudes. Acoustic emission data is continuously recorded throughout the lifetime of each specimen to build a comprehensive dataset for training and testing the prediction model.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After the successful pilot study (e_03) and validation analysis (e_04), the project is ready to scale up. This `main_experiments` phase executes the validated `method_scheme` on a larger scale as outlined in the `research_plan` to generate the substantial dataset required for training and evaluating the machine learning model."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Materials fatigue prediction",
+    "subject": "Engineering",
+    "event_type": "analysis",
+    "description": "The large dataset from the main experiments is processed. The proposed Convolutional Neural Network (CNN) is trained on the acoustic emission data to predict remaining useful life. The model's performance is evaluated on a held-out test set and compared against the predictions from traditional S-N curve methods.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After collecting the comprehensive dataset in the `main_experiments` (e_05), the next critical step is to perform the primary `analysis`. This involves training and evaluating the machine learning model as planned in the `method_scheme` to directly address the core `research_goals`. This analysis generates the key findings of the study and provides the first concrete material for the results section of the paper."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Materials fatigue prediction",
+    "subject": "Engineering",
+    "event_type": "analysis",
+    "description": "A deeper analysis of the results from e_06 reveals a key weakness: the CNN model's performance is poor on low-stress amplitude tests, which correspond to longer fatigue lives. The investigation suggests that the raw acoustic signals in these cases have a low signal-to-noise ratio, and the current preprocessing pipeline is insufficient to isolate the critical damage-related emissions.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The initial analysis (e_06) provided a high-level performance comparison. A common next step in research is to dissect these results, especially when they are not perfect. This deeper `analysis` scrutinizes the `experiment_results` in the context of the `method_scheme` to identify specific failure modes, providing crucial insights that will guide the next iteration of method design."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Materials fatigue prediction",
+    "subject": "Engineering",
+    "event_type": "scheme_design",
+    "description": "In response to the poor performance on low-stress tests, the data processing part of the method is redesigned. The team decides to replace the simple preprocessing with a more advanced wavelet denoising technique to better isolate acoustic emission signals from background noise. The feature engineering process is also revised to extract more robust signal characteristics before feeding the data to the CNN.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous analysis (e_07) pinpointed a specific failure in the methodology: inadequate signal processing for low-stress data. The most logical next step is to return to the `scheme_design` phase to explicitly address this weakness. This revision of the `method_scheme` is guided by the problematic `experiment_results` and the overarching `research_goals`, aiming to create a more robust approach before re-analyzing the data."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Materials fatigue prediction",
+    "subject": "Engineering",
+    "event_type": "analysis",
+    "description": "The analysis is re-run on the main dataset using the revised method. The raw acoustic emission data is processed with the new wavelet denoising technique, and the engineered features are extracted. The CNN model is then retrained and evaluated, with a specific focus on its performance for the low-stress amplitude test cases that previously showed poor results.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the redesign of the data processing pipeline in e_08, the immediate next step is to apply this new `method_scheme` to the existing `experiment_results` dataset. This `analysis` will directly test the hypothesis that improved signal processing can solve the performance issues identified in e_07, thus moving the project closer to its `research_goals`."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Materials fatigue prediction",
+    "subject": "Engineering",
+    "event_type": "writing",
+    "description": "The re-analysis with the improved method (e_09) yielded excellent results, showing the wavelet denoising technique significantly boosted prediction accuracy for low-stress tests. The team now drafts the 'Methods' and 'Results' sections of the paper, detailing the final, successful methodology and presenting figures that showcase the model's superior performance compared to both the initial model and the traditional S-N curve baseline.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the successful validation of the revised method in e_09, the project has produced its core findings. The logical next step is to transition to the `writing` phase to formally document these successful results and the refined `method_scheme`. This builds on the conclusive `experiment_results` and existing `paper_paragraph` drafts to create a more complete manuscript, moving the project toward publication."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Materials fatigue prediction",
+    "subject": "Engineering",
+    "event_type": "analysis",
+    "description": "While writing the discussion section, the team realizes that simply reporting high accuracy is insufficient. To provide deeper insight, they conduct an interpretability analysis (e.g., using SHAP values) on the trained CNN to identify which features of the acoustic signal are most influential for predicting fatigue life. This aims to connect the model's 'black box' decisions to known physical phenomena of material degradation.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After drafting the core results in e_10, the writing process often highlights the need for a stronger narrative. The successful model from the previous `analysis` (e_09) works, but this new `analysis` aims to explain *why* it works. This step adds significant scientific depth and strengthens the paper's argument, directly generating new `experiment_results` (the interpretability findings) and content for the discussion section (`paper_paragraph`)."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Materials fatigue prediction",
+    "subject": "Engineering",
+    "event_type": "writing",
+    "description": "The team integrates the new interpretability analysis results into the discussion section of the paper. They proceed to draft the remaining sections, including the introduction, conclusion, and abstract, to create a full, cohesive manuscript. The paper is then circulated internally for review and feedback among the co-authors.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the successful interpretability analysis in e_11, the project has produced all its key scientific contributions. The next logical step is to synthesize these findings into a complete manuscript. This `writing` event consolidates all existing work—the `research_goals`, `method_scheme`, and all `experiment_results`—into a near-final `paper_paragraph` draft, moving the project towards submission and publication."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Materials fatigue prediction",
+    "subject": "Engineering",
+    "event_type": "proposal",
+    "description": "During the internal review of the manuscript, a co-author raises a critical point about the generalizability of the findings. The study only uses one type of aluminum alloy, making it unclear if the method would work for other materials. The team decides to expand the research goals to include a validation study on a different material, a titanium alloy, to strengthen the paper's claims.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "After completing a full draft of the paper (e_12), internal review is a natural checkpoint. This feedback often reveals weaknesses, such as a lack of generalizability, prompting a revision of the `research_goals` and `research_plan`. This event represents a realistic pivot to address a major critique before external submission, thereby significantly strengthening the study's impact."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Materials fatigue prediction",
+    "subject": "Engineering",
+    "event_type": "scheme_design",
+    "description": "To address the new research goal of testing for generalizability, the experimental scheme is adapted for the new material, a titanium alloy. This involves sourcing the new specimens and adjusting the cyclic loading stress levels based on titanium's distinct mechanical properties. The core data acquisition and processing methodology (wavelet denoising and CNN) is preserved to ensure a fair comparison.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the decision in e_13 to expand the study to a new material, the next logical step is to design the specific experimental protocol for this new material. This `scheme_design` event adapts the previously successful `method_scheme` to accommodate the properties of the titanium alloy, translating the updated `research_goals` into an actionable plan."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Materials fatigue prediction",
+    "subject": "Engineering",
+    "event_type": "pilot_experiments",
+    "description": "A small pilot study is conducted on the new titanium alloy. A few specimens are tested using the adapted protocol to ensure the loading parameters are appropriate and that the acoustic emission signals are being captured effectively. This serves as a final check before launching the full validation experiment.",
+    "required_artifacts": [
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After adapting the `method_scheme` for the new titanium alloy in e_14, a `pilot_experiments` phase is a prudent next step. This mirrors the original workflow (e_03) and serves to validate the new experimental setup on a small scale before committing the resources for a full set of main experiments, thereby de-risking the generalizability study."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Materials fatigue prediction",
+    "subject": "Engineering",
+    "event_type": "analysis",
+    "description": "The data from the titanium pilot study is analyzed. The analysis confirms that the acoustic emission signals are clear and correlate with fatigue progression, similar to the aluminum alloy. This positive result validates the adapted experimental protocol for the new material, clearing the way for the main validation experiments.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After conducting the pilot experiment on the new material (e_15), the crucial next step is to analyze the collected data. This `analysis` validates that the adapted `method_scheme` is effective for the titanium alloy before committing to the full, resource-intensive main validation experiments, mirroring the successful workflow from the first phase of the project."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Materials fatigue prediction",
+    "subject": "Engineering",
+    "event_type": "main_experiments",
+    "description": "Following the successful pilot study on titanium, the main validation experiments are launched. A full set of titanium alloy specimens are subjected to fatigue testing at various stress amplitudes, using the adapted protocol. Acoustic emission data is recorded throughout each test to build the validation dataset.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The pilot study analysis (e_16) confirmed the validity of the adapted `method_scheme` for the new material. The next logical step is to execute the `main_experiments` as per the revised `research_plan` to collect the comprehensive dataset required to evaluate the model's generalizability, directly addressing the goal set in e_13."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "Materials fatigue prediction",
+    "subject": "Engineering",
+    "event_type": "analysis",
+    "description": "The new dataset from the titanium alloy experiments is processed and analyzed using the established wavelet denoising and CNN pipeline. The model, previously trained on aluminum data, is tested on the titanium data to evaluate its cross-material generalizability. The results show a decent but notably lower accuracy, suggesting that while the features are somewhat general, material-specific tuning is necessary for optimal performance.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After collecting the validation dataset in the `main_experiments` of e_17, the crucial next step is to perform the `analysis`. This directly tests the hypothesis of generalizability, which was the core motivation for the second phase of the project (e_13). The findings are critical, generating new `experiment_results` and providing key content for the paper's discussion on the model's limitations and scope."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "research",
+    "topic": "Materials fatigue prediction",
+    "subject": "Engineering",
+    "event_type": "writing",
+    "description": "The team revises the entire manuscript to incorporate the findings from the cross-material generalizability study. The results section is updated with the titanium alloy performance data, and the discussion section is significantly expanded to analyze the model's limitations and the implications for real-world deployment. This creates a more nuanced and complete narrative for the final paper.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The analysis in e_18 produced the final key finding regarding the model's generalizability. The next logical step is to integrate this crucial result into the manuscript. This `writing` event synthesizes the latest `experiment_results` with the existing `paper_paragraph` draft to build the complete, final story of the research, preparing it for submission."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "research",
+    "topic": "Materials fatigue prediction",
+    "subject": "Engineering",
+    "event_type": "end",
+    "description": "The project reaches its conclusion. A comprehensive manuscript has been finalized, incorporating the initial findings, the refined methodology with wavelet denoising, the interpretability analysis, and the cross-material generalizability study. The team prepares the paper for submission to a high-impact engineering journal.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has successfully navigated from an initial proposal to a mature, well-validated research outcome. All initial and revised research goals have been addressed, and a complete, nuanced manuscript was finalized in the previous step (e_19). At this stage, the core research work is complete, making this a natural endpoint for the project timeline before it moves into the external peer-review process."
+  }
+]

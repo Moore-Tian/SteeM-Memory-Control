@@ -1,0 +1,374 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Exploratory analysis using textual summaries",
+    "subject": "DataScience",
+    "event_type": "objective_clarification",
+    "description": "Conducted an initial diagnostic session to understand the learner's background in data analysis and their specific goals for using textual summaries. We discussed their desired outcomes, such as being able to independently generate and interpret insights from unstructured text data.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first session, so the primary goal is to establish a clear understanding of the learner's objectives and background. This information is essential for creating a relevant and effective study plan in the subsequent steps."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Exploratory analysis using textual summaries",
+    "subject": "DataScience",
+    "event_type": "plan_milestones",
+    "description": "Based on the clarified objectives, we collaboratively drafted an initial study plan. This plan outlines key milestones, starting with foundational concepts like text preprocessing and moving towards specific summarization techniques and interpretation skills.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learner's goals established in the previous 'objective_clarification' session, the natural next step is to create a structured roadmap. This 'plan_milestones' event uses the 'learning_objectives' to produce a 'study_plan', ensuring the tutoring is aligned with the learner's desired outcomes from the start."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Exploratory analysis using textual summaries",
+    "subject": "DataScience",
+    "event_type": "lesson",
+    "description": "Delivered a lesson on the first topic from the study plan: foundational text preprocessing techniques. This included tokenization, stop-word removal, and stemming, and I created some reusable notes with definitions and examples.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After establishing the objectives and creating a study plan, the next logical step is to begin instruction. This lesson addresses the first milestone in the 'study_plan'—foundational concepts—to build the necessary groundwork for more advanced topics."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Exploratory analysis using textual summaries",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "Assigned a targeted practice exercise for the learner to apply the text preprocessing techniques from the last lesson. The task involved cleaning a small corpus of text data, and the learner's code and output were recorded for review.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the theoretical lesson on text preprocessing, it is essential for the learner to apply these concepts practically. This practice session solidifies their understanding, provides hands-on experience, and generates a 'practice_record' that can be used for evaluation and feedback in the next step."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Exploratory analysis using textual summaries",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "Reviewed the learner's submission from the text preprocessing practice. I analyzed their code and output, identified a few common mistakes related to stemming and the handling of punctuation, and prepared a summary of actionable feedback.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the hands-on exercise in the previous 'practice' event, the next logical step is to 'review' their work. This allows for the identification of misunderstandings and provides specific, actionable feedback, ensuring that the learner solidifies their foundational skills before moving on to more complex topics."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Exploratory analysis using textual summaries",
+    "subject": "DataScience",
+    "event_type": "materials_revision",
+    "description": "Based on the learner's mistakes with stemming and punctuation, I revised the teaching notes on text preprocessing. I added a clearer explanation of the trade-offs of stemming and included more robust code examples for handling punctuation.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The 'review' event revealed specific gaps in the learner's understanding that were likely caused by unclear examples in the initial teaching materials. This 'materials_revision' step directly addresses the feedback to improve the clarity and effectiveness of the 'teaching_notes' before the learner attempts another practice or moves to a new topic."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Exploratory analysis using textual summaries",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "To confirm the learner's understanding after the recent feedback, I assigned a second practice task focused on text preprocessing. This exercise specifically targets the areas of stemming and punctuation handling, using the newly revised teaching notes as a reference.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials based on feedback, it is essential to verify that the learner can now apply the concepts correctly. This follow-up 'practice' event closes the feedback loop, allowing the learner to demonstrate mastery of the foundational skills before moving on to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Exploratory analysis using textual summaries",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "Reviewed the learner's second practice attempt on text preprocessing. The review confirmed that the learner successfully applied the corrected concepts for stemming and punctuation handling, demonstrating a solid grasp of the foundational skills.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice in the previous step, a 'review' is essential to validate the learner's understanding. This event assesses the latest 'practice_record' to confirm that the feedback and revised materials were effective, allowing us to confidently proceed to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Exploratory analysis using textual summaries",
+    "subject": "DataScience",
+    "event_type": "lesson",
+    "description": "With the foundational skills of text preprocessing confirmed, we proceeded to the next topic in the study plan. This lesson introduced the concept of extractive summarization, focusing on frequency-based methods like TF-IDF to identify and rank important sentences.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous 'review' event confirmed the learner's proficiency in text preprocessing. Therefore, in alignment with the 'study_plan', it is time to progress to the next module. This 'lesson' introduces the core concepts of summarization, building directly on the skills the learner has just mastered."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Exploratory analysis using textual summaries",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "Assigned a practice exercise on extractive summarization. The learner was tasked with applying the TF-IDF method taught in the previous lesson to a short article, identifying the top-scoring sentences, and assembling them into a coherent summary.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the theory of extractive summarization in the previous 'lesson', this 'practice' event is crucial for the learner to apply the concepts hands-on. It allows them to translate theoretical knowledge into a practical skill and generates a 'practice_record' for assessment in the next step."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Exploratory analysis using textual summaries",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "Reviewed the learner's practice submission on extractive summarization. I checked their TF-IDF implementation and the coherence of the resulting summary, noting some issues with sentence selection logic that led to a slightly disjointed output.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner attempted the extractive summarization exercise in the previous 'practice' event, a 'review' is the necessary next step. This allows for assessment of their application of the new TF-IDF method and provides targeted feedback to correct any misunderstandings before building on this skill."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Exploratory analysis using textual summaries",
+    "subject": "DataScience",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback about the disjointed summary, I revised the teaching notes on extractive summarization. I added a new section on post-processing techniques, such as reordering sentences and checking for coherence, to guide the learner in assembling a more readable final summary.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous 'review' highlighted that the learner understands the mechanics of TF-IDF but struggles with the qualitative aspect of creating a coherent summary. This 'materials_revision' event directly addresses the problem noted in the 'feedback_summary' by enhancing the 'teaching_notes' with practical guidance on summary refinement, preparing the learner for a more successful follow-up practice."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Exploratory analysis using textual summaries",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "Assigned a follow-up practice exercise on extractive summarization, asking the learner to re-run their analysis from the previous task. The focus was on applying the new post-processing techniques from the revised teaching notes to improve the coherence and readability of the final summary.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials to address the issue of summary coherence, this follow-up 'practice' event is necessary to see if the learner can now apply the new post-processing techniques. It directly tests the concepts added in the 'materials_revision' step and will produce a new 'practice_record' for evaluation."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Exploratory analysis using textual summaries",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "Reviewed the learner's second attempt at extractive summarization. The review confirmed that applying the post-processing techniques significantly improved the summary's coherence and readability, indicating the learner has grasped the concept.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice in the previous step, a 'review' is essential to evaluate the learner's latest 'practice_record'. This confirms that the feedback and revised materials were effective and that the learner is now ready to proceed to the next topic."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Exploratory analysis using textual summaries",
+    "subject": "DataScience",
+    "event_type": "lesson",
+    "description": "Moving to the next topic in the study plan, this lesson introduced abstractive summarization. We contrasted this with the previously learned extractive methods, focusing on the conceptual difference of generating new sentences versus selecting existing ones, and discussed the underlying models (e.g., sequence-to-sequence).",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous 'review' event confirmed the learner's mastery of extractive summarization. In accordance with the 'study_plan', it is time to introduce a more advanced topic. This 'lesson' on abstractive summarization logically follows, building upon the learner's foundational knowledge of text summarization."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Exploratory analysis using textual summaries",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "Assigned a practice exercise on abstractive summarization. The task required the learner to use a pre-trained sequence-to-sequence model to generate a summary for a given article and write a brief interpretation of the output's quality and relevance.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on abstractive summarization, this 'practice' event is the essential next step for the learner to apply complex theoretical concepts. It provides hands-on experience with modern summarization models and generates a 'practice_record' for evaluation."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Exploratory analysis using textual summaries",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "Reviewed the learner's practice on abstractive summarization. I analyzed their generated summary and their interpretation of its quality, noting that they had difficulty identifying common model failures like factual inconsistencies and hallucinated details.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the practice exercise on abstractive summarization, a 'review' is the necessary next step. This is crucial for evaluating not just the technical execution but also the higher-level skill of critically assessing model output, which was a key part of the task."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Exploratory analysis using textual summaries",
+    "subject": "DataScience",
+    "event_type": "materials_revision",
+    "description": "In response to the learner's difficulty in evaluating abstractive summaries, I updated the teaching notes on this topic. The revision adds a dedicated section on critical evaluation, including a checklist and examples for identifying common model failures like hallucination and factual inconsistency.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review identified a key weakness in the learner's ability to critique abstractive summary outputs. This 'materials_revision' event directly addresses the 'feedback_summary' by enriching the 'teaching_notes' with concrete methods for model evaluation, which is crucial before asking the learner to practice this skill again."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Exploratory analysis using textual summaries",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "To reinforce the new evaluation techniques, I assigned a new practice task on abstractive summarization. The learner was asked to generate a summary with a pre-trained model and then use the revised evaluation checklist from the teaching notes to write a critical analysis of the output's strengths and weaknesses.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the revision of teaching materials on summary evaluation, this 'practice' event is essential to confirm the learner can apply the new, more structured approach. It directly addresses the weakness identified in the previous 'feedback_summary' and creates a new 'practice_record' for assessment."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Exploratory analysis using textual summaries",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "Reviewed the learner's critical analysis from the second abstractive summarization practice. The review showed that the learner successfully used the evaluation checklist from the revised notes to identify potential model hallucinations and assess the summary's factual consistency, demonstrating significant improvement.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice with revised materials, this 'review' is essential to validate the learner's progress. It assesses the latest 'practice_record' to confirm that the learner can now critically evaluate abstractive summary outputs, which was a previously identified weakness, and determines if they are ready to conclude this topic."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "Exploratory analysis using textual summaries",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "Assigned a final capstone project that requires the learner to integrate all learned skills. The project involves taking a raw text dataset, performing preprocessing, applying both extractive and abstractive summarization, and writing a comparative analysis of the results.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Having demonstrated proficiency in the individual components (preprocessing, extractive, and abstractive summarization), a capstone project is the ideal next step. This 'practice' event requires the learner to integrate all skills to solve an end-to-end problem, providing a comprehensive assessment of their overall competence before concluding the tutoring."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "tutoring",
+    "topic": "Exploratory analysis using textual summaries",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "Conducted a comprehensive review of the learner's capstone project submission. This final assessment evaluated their end-to-end workflow, from preprocessing to the comparative analysis of extractive and abstractive summaries, and provided a holistic summary of their performance.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner submitted a comprehensive capstone project in the previous 'practice' step, a final 'review' is necessary to assess their ability to integrate all the skills taught. This provides a concluding piece of feedback, confirming their readiness to work independently on similar tasks and wrapping up the learning cycle."
+  },
+  {
+    "event_id": "e_23",
+    "time_index": 23,
+    "domain": "tutoring",
+    "topic": "Exploratory analysis using textual summaries",
+    "subject": "DataScience",
+    "event_type": "end",
+    "description": "Final session to confirm that the learning objectives have been met and the tutoring engagement is complete. The learner has successfully demonstrated the ability to independently perform exploratory analysis on text data using various summarization techniques.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has successfully completed a capstone project integrating all taught skills, and the final review confirmed their proficiency. With the initial learning objectives met, the structured tutoring process is now concluded."
+  }
+]

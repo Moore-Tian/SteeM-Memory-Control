@@ -1,0 +1,427 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Colonialism and long-term consequences",
+    "subject": "History",
+    "event_type": "objective_clarification",
+    "description": "Initial meeting with a high school student to discuss their goals for learning about colonialism and its long-term consequences. The student wants to improve their essay writing and conceptual understanding for their upcoming AP World History exam.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first tutoring session. The primary goal is to understand the learner's needs, background, and specific objectives before creating a structured study plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Colonialism and long-term consequences",
+    "subject": "History",
+    "event_type": "plan_milestones",
+    "description": "Based on the student's goals, the tutor outlines a multi-week study plan. The plan breaks down the vast topic of colonialism into key themes (e.g., economic exploitation, political structures, social hierarchies) and schedules sessions for lessons, practice essays, and review.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learning objectives clarified in the first session, the next logical step is to create a structured study plan. This plan provides a roadmap for future sessions, ensuring that tutoring is targeted and progressive."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Colonialism and long-term consequences",
+    "subject": "History",
+    "event_type": "lesson",
+    "description": "The tutor conducts the first lesson as outlined in the study plan, focusing on the economic motivations and mechanisms of colonialism. Key concepts like mercantilism, resource extraction, and the creation of dependent economies are explained with historical examples.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a study plan in place, the first logical step is to begin instruction. This lesson addresses the first major theme identified in the plan, establishing a foundational understanding before moving on to practice activities."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Colonialism and long-term consequences",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "To check for understanding, the tutor provides a practice prompt asking the student to analyze a primary source document about resource extraction in a specific colony. The student is tasked with writing a thesis statement and outlining three supporting points, applying concepts from the recent lesson on economic colonialism.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following a lesson, a targeted practice session is essential to move from passive learning to active application. This event assesses the student's ability to use the concepts from the teaching notes and begins to build the analytical skills needed for their AP exam, creating a record of their work for a future review session."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Colonialism and long-term consequences",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor reviews the student's submitted thesis and outline from the practice session. The feedback focuses on the clarity of the thesis, the relevance of the supporting points to the primary source, and the correct application of economic concepts taught in the lesson.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following a practice session where the student's work was recorded, the immediate next step is to review that work. This allows the tutor to provide specific, actionable feedback, correct misunderstandings, and assess the student's grasp of the material before proceeding with the study plan."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Colonialism and long-term consequences",
+    "subject": "History",
+    "event_type": "materials_revision",
+    "description": "The tutor observes from the feedback summary that the student struggled to connect the abstract concept of 'dependent economies' to specific evidence in the primary source. To address this, the tutor revises the teaching notes, adding a more explicit 'How to Spot It in a Primary Source' section with annotated examples.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The feedback from the previous review revealed a specific gap between conceptual knowledge and application. Revising the teaching materials creates a more robust resource that directly addresses this observed difficulty, which will be useful for the next practice attempt."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Colonialism and long-term consequences",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "The tutor assigns a new practice task using the revised teaching notes. The student is asked to re-evaluate the previous primary source or a new, similar one, and write a short paragraph explaining how it demonstrates the concept of a 'dependent economy', directly addressing the weakness from the last review.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials to address a specific student misconception, a follow-up practice session is necessary. This allows the student to apply their understanding with the improved resources and provides a concrete way to assess if the intervention was successful before moving on to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Colonialism and long-term consequences",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor reviews the student's paragraph from the second practice attempt. The student's work shows a marked improvement in connecting the concept of 'dependent economy' to textual evidence, indicating the revised notes and targeted practice were effective.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following a targeted practice session, a review is essential to determine if the student has overcome the previously identified difficulty. This step closes the feedback loop, confirms the success of the materials revision, and clears the way to proceed to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Colonialism and long-term consequences",
+    "subject": "History",
+    "event_type": "lesson",
+    "description": "With the student's understanding of economic colonialism solidified, the tutor proceeds to the next module in the study plan. This lesson focuses on the political structures of colonialism, covering concepts like direct vs. indirect rule, the creation of artificial state boundaries, and the disruption of pre-colonial political systems.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review confirmed that the student has successfully mastered the concepts from the first topic. Therefore, it is appropriate to advance to the next major theme outlined in the study plan, which is the political dimension of colonialism, and generate new teaching materials for it."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Colonialism and long-term consequences",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "Following the lesson on political structures, the tutor gives the student a short-answer question. The student must compare and contrast direct and indirect rule, using one historical example for each, based on the concepts presented in the new teaching notes.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing new concepts in the previous lesson, a targeted practice session is crucial for reinforcing learning and checking for comprehension. This task requires the student to actively apply their knowledge of colonial political systems, and the resulting record will be the basis for the next review session."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Colonialism and long-term consequences",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor reviews the student's short-answer comparison of direct and indirect rule from the previous practice session. Feedback is provided on the accuracy of the definitions, the choice of historical examples, and the clarity of the comparison.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on colonial political structures (e_10), a review is the necessary next step to evaluate the student's comprehension and provide corrective feedback. This ensures the student has mastered the topic before the tutor moves on to the next concept in the study plan."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Colonialism and long-term consequences",
+    "subject": "History",
+    "event_type": "lesson",
+    "description": "Moving to the next topic in the study plan, the tutor introduces the social and cultural impacts of colonialism. The lesson covers the establishment of new social hierarchies, the role of Western education and religion, and the concept of cultural syncretism.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review confirmed the student's understanding of colonial political structures. Following the study plan, it is now appropriate to proceed to the next major theme, which is the social dimension of colonialism, and to create teaching materials for this new topic."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Colonialism and long-term consequences",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "To reinforce the lesson on social and cultural impacts, the tutor assigns a practice task. The student is asked to write a paragraph analyzing a short excerpt from a missionary's diary, identifying how it reflects the imposition of new cultural values on a colonial population.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on the social and cultural impacts of colonialism (e_12), a targeted practice session is the logical next step. This task requires the student to apply the newly learned concepts to a primary source, which directly supports their overall goal of improving analytical skills for the AP exam and creates a record of their attempt for review."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Colonialism and long-term consequences",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor reviews the student's paragraph analyzing the missionary's diary. Feedback focuses on the student's ability to identify cultural imposition and to use specific evidence from the source to support their claims, as taught in the previous lesson.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session (e_13), a review is the necessary next step to evaluate the student's comprehension of the social and cultural impacts of colonialism. This review provides targeted feedback, ensuring the student has grasped the concept before integrating this theme with previous ones."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Colonialism and long-term consequences",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "Now that the student has covered economic, political, and social impacts separately, the tutor assigns a synthesis task. The student is given a practice essay prompt and several primary source documents, and is asked to write a full thesis statement and outline that connects all three themes of colonialism.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After successfully reviewing the individual thematic components of colonialism, the next logical step is to practice synthesizing them. This cumulative task mirrors the complexity of AP exam questions and tests the student's ability to build a comprehensive argument connecting different historical factors."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Colonialism and long-term consequences",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor reviews the student's comprehensive thesis and outline from the synthesis practice session. The review assesses the student's ability to integrate economic, political, and social themes into a coherent argument supported by the provided documents.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following a major synthesis practice task (e_15), a thorough review is the essential next step. This review is critical for evaluating the student's ability to connect multiple historical themes, a key skill for their AP exam, and for providing feedback before they attempt to write a full essay."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Colonialism and long-term consequences",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "Based on the feedback on their synthesis outline, the student is now tasked with writing the full practice essay. The goal is to translate the structured outline into a complete, well-argued essay, paying close attention to using document evidence effectively and maintaining a clear argument across multiple paragraphs.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After successfully creating and receiving feedback on a comprehensive outline (e_16), the natural progression is to write the full essay. This task moves the student from planning to execution, directly addressing their primary goal of improving essay writing skills for the AP exam and creating a complete work for a final, comprehensive review."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Colonialism and long-term consequences",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor conducts a comprehensive review of the student's full practice essay. The feedback covers the overall argument, structure, use of evidence from the provided documents, historical accuracy, and writing style, providing a holistic assessment of their essay-writing skills.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the student has written a full, integrative essay (e_17), a comprehensive review is the most critical next step. This provides detailed feedback on their ability to execute the entire essay-writing process, directly addressing the primary learning objective and identifying any remaining areas for improvement before the AP exam."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Colonialism and long-term consequences",
+    "subject": "History",
+    "event_type": "plan_milestones",
+    "description": "Following the comprehensive essay review, the tutor and student meet to discuss overall progress and plan the final phase of tutoring before the exam. They agree to update the study plan to include timed, full-length practice essays and a final review of all key themes.",
+    "required_artifacts": [
+      "learning_objectives",
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "After a full cycle of instruction and a comprehensive essay review (e_18), it is logical to revisit the high-level plan. This step adjusts the focus from learning new content to consolidating skills and simulating exam conditions, ensuring the student is prepared for the final assessment."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Colonialism and long-term consequences",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "Following the revised study plan, the tutor administers the first timed practice essay. The student is given a new prompt and set of documents and tasked with writing a full essay under exam-like time constraints to simulate the AP test environment.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "The updated study plan from the previous session called for timed, full-length practice essays. This event executes that plan, helping the student build stamina and practice applying their knowledge and essay-writing skills under exam conditions, creating a new record for review."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "Colonialism and long-term consequences",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor reviews the student's first timed practice essay. The feedback assesses not only the quality of the argument and use of evidence but also the student's performance under time constraints, identifying areas where they can be more efficient.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a timed practice session (e_20), a review is the necessary next step. This allows the tutor to provide feedback on the student's ability to perform under exam-like conditions, addressing both content mastery and time management, which is crucial for AP exam preparation."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "tutoring",
+    "topic": "Colonialism and long-term consequences",
+    "subject": "History",
+    "event_type": "materials_revision",
+    "description": "Based on the review of the timed essay, the tutor notices the student struggled with quickly selecting the best documentary evidence under pressure. The tutor creates a new, one-page 'Timed Essay Strategy' guide that includes tips for rapid outlining and a checklist for evidence selection, updating the general teaching notes.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_21) identified time management as a key issue. Instead of just repeating another timed practice immediately, this step involves creating a targeted tool to help the student address the specific inefficiency. Revising materials to create a strategy guide is a proactive way to support the student's next practice attempt."
+  },
+  {
+    "event_id": "e_23",
+    "time_index": 23,
+    "domain": "tutoring",
+    "topic": "Colonialism and long-term consequences",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "To test the effectiveness of the new strategy guide, the tutor administers a second timed practice essay. The student is instructed to actively use the 'Timed Essay Strategy' guide for outlining and evidence selection to see if it improves their pacing and performance under pressure.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials to include a specific strategy guide (e_22), the immediate next step is to apply it in a practice setting. This event allows the student to use the new tool to address the time management issues identified in the previous review, creating a new performance record to assess its impact."
+  },
+  {
+    "event_id": "e_24",
+    "time_index": 24,
+    "domain": "tutoring",
+    "topic": "Colonialism and long-term consequences",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor reviews the student's second timed practice essay. The review confirms that using the 'Timed Essay Strategy' guide significantly improved the student's pacing and ability to select relevant evidence under pressure, leading to a stronger, more coherent essay within the time limit.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the student practiced with a new strategy guide (e_23), this review is essential to evaluate the intervention's success. Confirming the student's improved performance under timed conditions addresses the final major weakness identified and indicates they are well-prepared for the exam format."
+  },
+  {
+    "event_id": "e_25",
+    "time_index": 25,
+    "domain": "tutoring",
+    "topic": "Colonialism and long-term consequences",
+    "subject": "History",
+    "event_type": "end",
+    "description": "In the final session, the tutor and student review the significant progress made from the initial diagnostic to the successful timed essays. Confident in the student's preparation and mastery of the material and skills, the tutor concludes the formal tutoring engagement and offers final encouragement for the AP exam.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The student has met all initial learning objectives, including conceptual understanding and essay writing under exam conditions. The previous review (e_24) confirmed that major weaknesses have been successfully addressed and performance is now strong and stable, making it a natural point to conclude the tutoring process."
+  }
+]

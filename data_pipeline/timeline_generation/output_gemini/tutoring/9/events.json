@@ -1,0 +1,398 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Sequences and recurrence thinking",
+    "subject": "Math",
+    "event_type": "objective_clarification",
+    "description": "Initial meeting to discuss the learner's goals for understanding sequences and recurrence thinking. The learner has a pre-calculus background and wants to apply these concepts to computer science, particularly for analyzing algorithm complexity.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "As this is the first session, it is essential to first establish the learner's goals, background, and constraints. This initial diagnostic step will inform the creation of a tailored study plan in the next phase."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Sequences and recurrence thinking",
+    "subject": "Math",
+    "event_type": "plan_milestones",
+    "description": "Based on the learner's goals, a study plan is created. It outlines key milestones, starting with arithmetic and geometric sequences, moving to recurrence relations, and culminating in analyzing simple recursive algorithms.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learning objectives established in the previous session, the next logical step is to create a structured roadmap. This study plan breaks down the complex topic into manageable milestones, ensuring a clear path from foundational concepts to the learner's specific application goals."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Sequences and recurrence thinking",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "First lesson covering the fundamentals of sequences, as outlined in the study plan. The session focuses on defining arithmetic and geometric sequences, identifying their common differences or ratios, and deriving the formula for the nth term.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the established study plan, the first instructional step is to deliver a lesson on the foundational topic of arithmetic and geometric sequences. This creates the initial teaching materials that will be used for practice and review."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Sequences and recurrence thinking",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "The learner is assigned a set of practice problems to apply the concepts from the recent lesson. The problems involve identifying arithmetic and geometric sequences, calculating the common difference/ratio, and finding the nth term of a given sequence.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson on a new concept, it is essential for the learner to engage in targeted practice to solidify their understanding and apply the new formulas. This practice session directly builds on the previous lesson (e_03) and will generate a record of the learner's work, which is necessary for the upcoming review phase."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Sequences and recurrence thinking",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's submitted work on arithmetic and geometric sequences. The review focuses on identifying common errors, such as miscalculating the common ratio or misapplying the nth term formula.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the practice problems in e_04, it is crucial to review their work to assess their understanding and provide corrective feedback. This review uses the practice_record to identify specific issues and will produce a feedback_summary to guide the learner's next steps."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Sequences and recurrence thinking",
+    "subject": "Math",
+    "event_type": "materials_revision",
+    "description": "Based on the review, the tutor updates the teaching notes to address the common errors. A new section is added with a side-by-side comparison of arithmetic and geometric sequence formulas, including a mnemonic to help distinguish between them and prevent formula misapplication.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in e_05 identified specific misconceptions. It is a good practice to revise the teaching materials to proactively address these issues, making the notes clearer and more effective for the learner's future reference and for subsequent practice sessions."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Sequences and recurrence thinking",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "To reinforce the concepts and address the errors identified in the last review, the learner is given a new set of practice problems. These problems are specifically designed based on the revised teaching notes, focusing on the distinction between arithmetic and geometric sequences.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After reviewing the learner's first attempt (e_05) and revising the teaching materials (e_06), it is crucial to have another round of practice. This ensures the feedback has been understood and the revised materials are effective before moving on to a new topic."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Sequences and recurrence thinking",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's second attempt at the practice problems. The review confirms that the learner is now correctly distinguishing between sequence types and applying the formulas accurately, demonstrating a solid grasp of the foundational concepts.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted second practice round (e_07), it is necessary to review the learner's work to validate their understanding. This step confirms that the remediation was successful and the learner is ready to move on to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Sequences and recurrence thinking",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "With the foundational concepts mastered, the tutor moves to the next topic in the study plan: recurrence relations. This lesson introduces the basic definition of a recurrence relation, using the Fibonacci sequence and factorial as primary examples, and emphasizes the importance of base cases.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_08) confirmed the learner has a solid grasp of basic sequences. Following the roadmap laid out in the study_plan (e_02), the next logical step is to introduce the more advanced topic of recurrence relations."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Sequences and recurrence thinking",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "The learner is assigned practice problems on recurrence relations. The tasks include writing out the first few terms of sequences defined by recurrence relations (like the Fibonacci sequence) and identifying the base cases and recursive steps for simple patterns.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on recurrence relations (e_09), it is crucial for the learner to practice applying these new concepts. This practice session will help solidify their understanding of recursive definitions and base cases before moving on to more complex problems."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Sequences and recurrence thinking",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's practice on generating terms from recurrence relations. The review reveals that while the learner can follow the recursive step correctly, they sometimes overlook the importance of the base case, leading to errors in the initial terms.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the practice session on the new topic of recurrence relations (e_10), a review is the necessary next step. It allows the tutor to assess the learner's initial grasp of the concept, identify any immediate misconceptions (like neglecting base cases), and provide timely feedback before the learner attempts more complex problems."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Sequences and recurrence thinking",
+    "subject": "Math",
+    "event_type": "materials_revision",
+    "description": "Based on the review of the learner's practice, the tutor revises the teaching notes on recurrence relations. A new section is added with highlighted examples and a specific warning about the role of base cases in terminating a sequence, directly addressing the issue identified in the feedback.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_11) identified a specific weakness in understanding base cases. It is a good tutoring practice to update the teaching materials to explicitly address this common pitfall, making the notes a more effective reference for the learner before they attempt more practice."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Sequences and recurrence thinking",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "To reinforce the importance of base cases, the learner is assigned a new set of practice problems. These problems are specifically designed to test their understanding of the revised teaching notes, requiring them to generate sequences with non-standard or multiple base cases.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After identifying a specific weakness with base cases (e_11) and revising the teaching materials to address it (e_12), a targeted practice session is the logical next step. This allows the learner to apply the corrected understanding from the revised notes and provides new work to verify the concept has been mastered."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Sequences and recurrence thinking",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's second set of practice problems on recurrence relations. The review confirms that the learner now correctly identifies and applies base cases, even in non-standard scenarios, showing mastery of the concept.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted practice session (e_13) designed to address a specific weakness, a review is necessary to confirm that the issue has been resolved. This step validates the learner's understanding and clears the way for advancing to the next topic outlined in the study plan."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Sequences and recurrence thinking",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "The tutor introduces the next topic from the study plan: solving recurrence relations. The lesson focuses on the 'substitution' method (also known as 'unrolling' or 'iteration') to find a closed-form solution for simple linear recurrence relations.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_14) confirmed the learner has mastered the definition of recurrence relations. As per the study plan (e_02), the next logical step is to teach a method for solving them. This lesson builds directly on the previous concepts and prepares the learner for algorithmic analysis."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Sequences and recurrence thinking",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "The learner is assigned practice problems that require using the substitution method to find a closed-form solution for simple linear recurrence relations. The problems are designed to build procedural fluency with the unrolling technique taught in the previous lesson.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing a new computational technique like the substitution method in e_15, it is critical for the learner to apply it through targeted practice. This session will solidify their understanding and generate a work record that is essential for the upcoming review."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Sequences and recurrence thinking",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's practice on the substitution method. The review identifies that while the learner understands the unrolling process, they make frequent algebraic errors when simplifying the resulting summation to find the final closed-form solution.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner practiced a new, procedurally complex technique (the substitution method in e_16), it is essential to review their work. This review will pinpoint specific areas of difficulty, such as algebraic simplification, and provide targeted feedback before applying this skill to more complex problems like algorithm analysis."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Sequences and recurrence thinking",
+    "subject": "Math",
+    "event_type": "materials_revision",
+    "description": "To address the algebraic errors identified in the last review, the tutor revises the teaching notes on the substitution method. A new section is added with a detailed walkthrough of simplifying the resulting summations, including a refresher on geometric series formulas.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_17) showed that the learner's main difficulty was not the recurrence concept itself, but the subsequent algebraic simplification. Revising the teaching materials to provide more explicit support for this prerequisite skill is a targeted intervention that will help the learner succeed in the next practice attempt."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Sequences and recurrence thinking",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "The learner is given another set of practice problems on the substitution method, this time with a focus on correctly simplifying the resulting summations. The problems are designed to directly test the concepts covered in the revised teaching notes, particularly the algebraic simplification steps.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials (e_18) to address the algebraic errors found in the last review (e_17), it is essential to have another round of practice. This will test whether the revised notes were effective and will confirm if the learner can now execute the full substitution method correctly before moving on to its application in algorithm analysis."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Sequences and recurrence thinking",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's second attempt at solving recurrence relations using the substitution method. The focus is on verifying that the algebraic simplification is now correct, following the targeted practice and revised materials.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice in e_19, a review is essential to confirm that the learner has overcome their previous difficulties with algebraic simplification. This step will validate their readiness to apply recurrence relation solving to the analysis of algorithms, which is the final milestone in the study plan."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "Sequences and recurrence thinking",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "The tutor delivers the capstone lesson, connecting recurrence relations to their application in computer science. The session shows how to model the time complexity of simple recursive algorithms (like binary search) with a recurrence relation and then use the substitution method to find its Big-O complexity.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_20) confirmed the learner's mastery of solving recurrence relations. Following the study plan, this lesson directly addresses the learner's primary goal of applying these mathematical concepts to analyze algorithm complexity, which is the final milestone."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "tutoring",
+    "topic": "Sequences and recurrence thinking",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "The learner is assigned capstone practice problems where they must derive a recurrence relation for the time complexity of a simple recursive algorithm, then solve it using the substitution method to find its Big-O complexity.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the capstone lesson (e_21) that connected recurrence relations to algorithm analysis, this practice session is critical for the learner to apply and synthesize all the concepts learned. It directly targets the learner's primary goal and will produce a work record for final assessment."
+  },
+  {
+    "event_id": "e_23",
+    "time_index": 23,
+    "domain": "tutoring",
+    "topic": "Sequences and recurrence thinking",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor conducts a final review of the capstone practice problems. The assessment confirms whether the learner can successfully derive a recurrence relation for a simple recursive algorithm, solve it, and express the final time complexity using Big-O notation.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the capstone practice session (e_22), this final review is essential to assess the learner's ability to synthesize all the concepts and apply them to the primary goal of algorithm analysis. The outcome of this review will determine if the learning objectives have been fully met."
+  },
+  {
+    "event_id": "e_24",
+    "time_index": 24,
+    "domain": "tutoring",
+    "topic": "Sequences and recurrence thinking",
+    "subject": "Math",
+    "event_type": "end",
+    "description": "Final session to wrap up the tutoring engagement. The tutor and learner review the progress made from the initial objectives to the final capstone, confirming that all learning goals have been successfully met.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The previous review (e_23) confirmed the learner's ability to apply recurrence relations to analyze algorithm complexity, which was the primary objective. With all milestones in the study plan achieved and proficiency demonstrated, the tutoring process is now complete."
+  }
+]

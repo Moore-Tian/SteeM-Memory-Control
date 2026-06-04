@@ -1,0 +1,429 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for searching and filtering",
+    "subject": "Programming",
+    "event_type": "objective_clarification",
+    "description": "Conducted an initial diagnostic session to understand the learner's goals, background in programming, and desired outcomes for learning algorithmic search and filtering patterns. The learner wants to prepare for technical interviews within three months.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "As the first step in the tutoring process, it is essential to clarify the learner's objectives and constraints. This information will serve as the foundation for creating a tailored study plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for searching and filtering",
+    "subject": "Programming",
+    "event_type": "plan_milestones",
+    "description": "Based on the clarified objectives, a staged study plan was created. The plan outlines key milestones, starting with fundamental search algorithms (linear, binary search) and then moving to more complex filtering patterns relevant for technical interviews.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learning objectives established in the previous session, the next logical step is to create a structured study plan. This provides a clear roadmap for the learner and sets expectations for the upcoming tutoring sessions."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for searching and filtering",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "Delivered the first lesson as per the study plan, focusing on the fundamental concept of Linear Search. The lesson covered the algorithm's logic, its implementation in a common programming language, and its time and space complexity.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the creation of the study plan, the next step is to begin instruction. This lesson addresses the first milestone (fundamental search algorithms) and creates initial teaching materials for this core topic."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for searching and filtering",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "Assigned a set of targeted practice problems on Linear Search to reinforce the concepts from the recent lesson. The problems involve implementing the algorithm and identifying its application in simple scenarios, and the learner's attempts were recorded.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson on a new concept (Linear Search, e_03), it is crucial for the learner to apply their knowledge through practice. This step helps solidify understanding and generates a record of their work, which is essential for the upcoming review and feedback cycle."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for searching and filtering",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "Reviewed the learner's submissions for the Linear Search practice problems. The review focused on correctness, edge case handling (e.g., empty arrays), and implementation style, leading to a summary of actionable feedback.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the practice problems (e_04), the next logical step is to review their work. This allows the tutor to identify any misunderstandings, provide corrective feedback, and ensure the concept is solidified before introducing new material."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for searching and filtering",
+    "subject": "Programming",
+    "event_type": "materials_revision",
+    "description": "Based on the review, it was clear the learner struggled with edge cases (e.g., empty arrays), a point not sufficiently emphasized in the original lesson. The teaching notes for Linear Search were updated to include a 'Common Pitfalls' section with explicit examples for such cases.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After identifying a recurring issue with edge cases in the review (e_05), it's prudent to revise the teaching materials. This proactive step improves the clarity of the notes from the last lesson (e_03) and helps prevent similar mistakes as we move on to more complex topics."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for searching and filtering",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "To confirm understanding of the feedback from the last review, a follow-up practice session was assigned. The new problems focused specifically on the edge cases for Linear Search (e.g., empty or single-element arrays) that were previously challenging for the learner.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "The previous review (e_05) identified a weakness with edge cases, and the teaching materials were revised accordingly (e_06). This targeted practice session serves to verify that the learner has absorbed the feedback and can now correctly handle these cases, ensuring a solid foundation before proceeding to the next topic."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for searching and filtering",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "Reviewed the learner's solutions to the follow-up practice problems on Linear Search edge cases. The review confirmed that the learner now correctly handles empty and single-element arrays, demonstrating they have internalized the previous feedback.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice on edge cases (e_07), a review is necessary to verify that the learner has successfully addressed the weaknesses identified in the initial review (e_05). This step confirms mastery of the topic before moving on to the next concept in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for searching and filtering",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "With the learner's mastery of Linear Search confirmed, the next lesson from the study plan was delivered. This session introduced Binary Search, covering its core logic, the requirement for sorted data, and its significantly improved time complexity compared to Linear Search.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_08) confirmed the learner is ready for new material. Following the sequence laid out in the study plan (e_02), the next logical step is to teach the next fundamental algorithm, Binary Search, building on the foundation of searching concepts."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for searching and filtering",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "Assigned a set of practice problems for Binary Search, the topic of the previous lesson. The problems require implementing the algorithm and applying it to sorted data sets to reinforce the core concepts and its preconditions.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the new topic of Binary Search in the previous lesson (e_09), the next logical step is to assign practice problems. This allows the learner to actively apply the new algorithm and helps to solidify their understanding before a review session."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for searching and filtering",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "Reviewed the learner's submitted solutions for the Binary Search practice problems. The review checked for correct implementation, proper handling of loop conditions and index calculations to avoid common off-by-one errors, and overall algorithmic logic.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on Binary Search (e_10), it is crucial to review the learner's attempts. This allows the tutor to assess comprehension, identify common mistakes specific to this algorithm (like index management), and provide targeted feedback before proceeding."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for searching and filtering",
+    "subject": "Programming",
+    "event_type": "materials_revision",
+    "description": "The review of Binary Search practice revealed common off-by-one errors in the learner's index calculations. To address this, the teaching notes for Binary Search were revised to include a new section on 'Pointer Management' with visual aids and code snippets demonstrating how to correctly update boundaries.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After identifying a specific, common error pattern in the last review (e_11), it is effective to update the teaching materials to explicitly address this pitfall. This revision makes the notes more robust and directly supports the learner in overcoming the identified difficulty."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for searching and filtering",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "Assigned a follow-up practice session on Binary Search, focusing specifically on pointer management and index calculations. The problems are designed to address the off-by-one errors identified in the previous review, leveraging the newly revised teaching notes.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials (e_12) to address specific errors found during review (e_11), it is crucial to conduct a targeted practice session. This step verifies that the learner has understood the feedback and can now correctly implement the more challenging aspects of Binary Search."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for searching and filtering",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "Reviewed the learner's solutions to the targeted Binary Search practice problems on pointer management. The review confirmed that the learner now correctly implements the index calculations and avoids the previous off-by-one errors.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice on Binary Search pointer management (e_13), a review is essential to verify that the learner has mastered the concept. This step confirms that the issues identified in the prior review (e_11) are resolved before advancing to new material."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for searching and filtering",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "With mastery of basic search algorithms confirmed, the next lesson introduced the 'Two Pointers' pattern. The session covered its application for efficiently finding pairs or subarrays in sorted data, a common interview problem type.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_14) confirmed the learner has mastered Binary Search and is ready for new material. Following the study plan, the next logical step is to introduce a more advanced algorithmic pattern, the Two Pointers technique, which builds upon the work with sorted arrays."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for searching and filtering",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "Assigned a set of practice problems based on the 'Two Pointers' pattern. The problems involve finding pairs with a certain sum and other similar tasks in sorted arrays to reinforce the concepts from the previous lesson.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the 'Two Pointers' pattern in the last lesson (e_15), it is essential for the learner to apply this new technique through hands-on practice. This step solidifies their understanding and creates a record of their work for the next review session."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for searching and filtering",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "Reviewed the learner's solutions for the 'Two Pointers' practice problems. The focus was on the correct initialization of pointers, the logic for moving them based on the sum, and handling termination conditions correctly.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on the 'Two Pointers' pattern (e_16), a review is the necessary next step to assess the learner's understanding and implementation. This provides targeted feedback before moving on to more complex problems or new patterns."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for searching and filtering",
+    "subject": "Programming",
+    "event_type": "plan_milestones",
+    "description": "Conducted a mid-point check-in to review progress against the original study plan. Given the learner's solid performance but the observed need for reinforcement on new patterns, the timeline was adjusted to allocate more time for practice-review cycles on upcoming topics like 'Sliding Window'.",
+    "required_artifacts": [
+      "learning_objectives",
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "After covering several core patterns and observing the learner's pace, it is a strategic time to review and adjust the study plan. This ensures the plan remains realistic and aligned with both the learner's needs and the overarching 3-month interview preparation goal."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for searching and filtering",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "Following the revised study plan, a lesson was delivered on the 'Sliding Window' algorithmic pattern. The session covered the core concept of maintaining a dynamic subarray or substring, including how to expand and shrink the window, and its use in solving common problems.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous event (e_18) updated the study plan to schedule the next set of topics. This lesson directly addresses that next milestone by introducing the 'Sliding Window' pattern, an important technique for the learner's interview preparation goals."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for searching and filtering",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "Assigned a set of practice problems on the 'Sliding Window' pattern. The problems require the learner to find things like the longest substring with K distinct characters or the smallest subarray with a given sum, reinforcing the expand/shrink logic from the lesson.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the 'Sliding Window' pattern in the previous lesson (e_19), it is essential for the learner to apply the concept through practice. This step helps solidify their understanding of this new technique and generates a record of their work for the upcoming review."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for searching and filtering",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "Reviewed the learner's solutions for the 'Sliding Window' practice problems. The review focused on the correct implementation of the window expansion and contraction logic, and the accurate tracking of state within the window.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on the 'Sliding Window' pattern (e_20), a review is the necessary next step to assess the learner's understanding and implementation. This allows the tutor to provide targeted feedback on this complex pattern before moving forward."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for searching and filtering",
+    "subject": "Programming",
+    "event_type": "materials_revision",
+    "description": "The review of 'Sliding Window' practice showed the learner was sometimes unsure about the exact condition for shrinking the window. The teaching notes were updated with a flowchart and explicit examples contrasting different shrinking conditions.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_21) identified a specific weakness in applying the 'Sliding Window' pattern. Revising the teaching materials to explicitly address this point of confusion makes the notes more effective and supports the learner in mastering this complex pattern."
+  },
+  {
+    "event_id": "e_23",
+    "time_index": 23,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for searching and filtering",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "Assigned a follow-up practice session on the 'Sliding Window' pattern, with problems designed to test the learner's understanding of the window shrinking conditions. This practice directly addresses the issues identified in the previous review and leverages the revised teaching notes.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials (e_22) to clarify the window shrinking logic, this targeted practice is necessary to verify the learner has absorbed the feedback from the last review (e_21) and can now correctly apply the pattern."
+  },
+  {
+    "event_id": "e_24",
+    "time_index": 24,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for searching and filtering",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "Reviewed the learner's solutions to the targeted 'Sliding Window' practice. The review confirmed that the learner now correctly identifies and implements the window shrinking logic, indicating they have overcome the previously identified difficulty.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice on 'Sliding Window' mechanics (e_23), this review is necessary to validate that the learner has successfully internalized the feedback from the previous review (e_21) and can now apply the pattern correctly. This confirmation is crucial before moving on to new topics in the study plan."
+  },
+  {
+    "event_id": "e_25",
+    "time_index": 25,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for searching and filtering",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "To consolidate learning, a practice session with a mix of problems was assigned. The learner is not told which pattern to use and must first identify the most appropriate algorithm (e.g., Binary Search, Two Pointers, Sliding Window) before implementing a solution.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Having mastered several individual patterns in isolation, the learner now needs to practice problem decomposition and pattern selection, a critical skill for technical interviews. This mixed-problem session is designed to build that diagnostic capability before introducing more new concepts."
+  }
+]

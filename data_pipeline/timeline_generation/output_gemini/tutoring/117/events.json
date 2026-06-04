@@ -1,0 +1,283 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Healthy eating in shared or limited environments",
+    "subject": "Health",
+    "event_type": "objective_clarification",
+    "description": "Conducted an initial diagnostic session to understand the learner's context, such as living in a college dorm with a shared, limited kitchen. Discussed their goals, which include reducing reliance on takeout, learning simple, budget-friendly meal prep techniques, and understanding basic nutrition principles.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first event in the tutoring timeline. The `objective_clarification` step is essential to establish a baseline understanding of the learner's needs, constraints, and goals before creating a structured plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Healthy eating in shared or limited environments",
+    "subject": "Health",
+    "event_type": "plan_milestones",
+    "description": "Based on the defined objectives, a multi-stage study plan was created. The plan starts with foundational knowledge (pantry stocking, essential tools), progresses to simple meal construction (no-cook and microwave meals), and culminates in basic cooking techniques suitable for a shared kitchen.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learner's goals established in the `learning_objectives` artifact, creating a `study_plan` is the natural next step. This provides a clear roadmap for the tutoring sessions, breaking down the overall goal into manageable milestones and ensuring a structured learning path."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Healthy eating in shared or limited environments",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "Delivered a lesson on the first milestone from the study plan: 'Foundational Knowledge'. The lesson covered how to stock a healthy, budget-friendly pantry with non-perishable staples and how to select a minimal set of essential kitchen tools for a limited space.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a study plan in place, the next logical step is to begin instruction. This lesson directly addresses the first milestone in the plan, providing the foundational knowledge the learner needs before moving on to practical cooking exercises. Creating teaching notes captures the core concepts for the learner to review and for the tutor to reuse."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Healthy eating in shared or limited environments",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "Assigned a practical task based on the recent lesson. The learner was asked to create a sample one-week grocery list for a budget of $50, focusing on pantry staples, and to identify the top 3-5 essential kitchen tools they would purchase.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson on foundational concepts, a 'practice' event is crucial for the learner to apply their new knowledge. This task directly assesses their understanding of pantry stocking and tool selection, and the resulting 'practice_record' will provide concrete material for the upcoming review session."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Healthy eating in shared or limited environments",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "Reviewed the learner's submitted grocery list and list of essential kitchen tools from the practice record. The review focused on checking the nutritional balance, budget adherence, and practicality of the choices for a dorm setting. Feedback was prepared to highlight strengths and suggest improvements, such as incorporating more versatile protein sources.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a 'practice' event, a 'review' is the necessary next step to evaluate the learner's application of knowledge. By analyzing the 'practice_record' against the lesson's 'teaching_notes', the tutor can identify successes and misconceptions, producing a 'feedback_summary' with actionable advice for the learner."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Healthy eating in shared or limited environments",
+    "subject": "Health",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback summary, the tutor realized the original teaching notes lacked detail on versatile protein sources. The notes were revised to include a dedicated section on budget-friendly, easy-to-prepare proteins like beans, lentils, eggs, and canned fish, with specific examples relevant to a dorm setting.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The 'review' event highlighted a specific weakness in the learner's plan. Before assigning another practice or lesson, it's effective for the tutor to refine the teaching materials based on this insight. Revising the 'teaching_notes' ensures the core concepts are clearer and more comprehensive, directly addressing the issue identified in the 'feedback_summary'."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Healthy eating in shared or limited environments",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "The learner is asked to revise their previous grocery list based on the feedback they received and the updated teaching notes. The task specifically requires them to incorporate more versatile, budget-friendly protein sources while staying within the original $50 budget.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following a review and materials revision, a targeted 'practice' event is the logical next step. This allows the learner to directly apply the corrections from the 'feedback_summary' and the new information in the revised 'teaching_notes', ensuring the concept is properly understood before proceeding to new topics."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Healthy eating in shared or limited environments",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "Reviewed the learner's revised grocery list. The new list successfully incorporated more versatile protein sources as suggested in the previous feedback, while remaining within the budget. The tutor prepared feedback confirming the learner's understanding and readiness to move to the next topic.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted practice session (e_07) designed to correct a specific issue, a 'review' is necessary to confirm that the learner has successfully incorporated the feedback. This step closes the corrective loop, ensuring the foundational concept is solid before proceeding to the next lesson outlined in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Healthy eating in shared or limited environments",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "With the foundational knowledge of pantry stocking confirmed, the tutor delivered a lesson on the second milestone from the study plan: 'Simple Meal Construction'. The lesson introduced techniques for creating no-cook and microwaveable meals, such as overnight oats, salads with canned protein, and microwave-steamed vegetables, using the ingredients from the learner's successful grocery list.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_08) confirmed the learner's mastery of the first topic. Following the 'study_plan', the next logical step is to introduce the second milestone with a new 'lesson'. This lesson builds directly on the previously established knowledge of pantry staples and prepares the learner for practical meal assembly."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Healthy eating in shared or limited environments",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "Assigned a practice task for the learner to apply the concepts from the 'Simple Meal Construction' lesson. The learner is asked to create a 3-day meal plan (breakfast, lunch, dinner) using only no-cook and microwave methods, drawing from the items on their previously approved grocery list.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on no-cook and microwave meals, this 'practice' event is essential for the learner to translate theoretical knowledge into a practical plan. This task directly assesses their ability to construct simple meals as outlined in the study plan, and the results will be captured in a 'practice_record' for review."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Healthy eating in shared or limited environments",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "Reviewed the learner's 3-day no-cook/microwave meal plan. The tutor checked for nutritional variety, feasibility within a dorm setting, and the correct application of techniques from the lesson. Feedback was prepared to address minor issues, like relying too heavily on one type of protein, and to praise creative meal combinations.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the 'practice' event where the learner created a meal plan (e_10), a 'review' is the essential next step. This allows the tutor to evaluate the learner's application of the meal construction concepts from the 'teaching_notes' and provide targeted, actionable advice in a 'feedback_summary'."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Healthy eating in shared or limited environments",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "With the second milestone achieved, the tutor delivered a lesson on the final milestone from the study plan: 'Basic Cooking Techniques'. The lesson focused on using a single electric skillet or rice cooker for simple recipes, covering safety in a shared kitchen and demonstrating how to cook items from the learner's grocery list, like sauteed vegetables and chicken or cooking lentils and rice.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_11) confirmed the learner's competency with no-cook meals, making it appropriate to proceed to the next stage of the 'study_plan'. This 'lesson' introduces more advanced skills, directly building upon the learner's established knowledge of ingredients and preparing them for the final phase of their learning objectives."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Healthy eating in shared or limited environments",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "Assigned a practice task based on the 'Basic Cooking Techniques' lesson. The learner is asked to write out step-by-step instructions for two simple recipes (e.g., a chicken and vegetable stir-fry, and cooking rice and lentils) that can be made with a single electric skillet, detailing ingredients, prep, cooking steps, and safety precautions.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson on basic cooking techniques (e_12), a 'practice' event is the essential next step for the learner to apply these new skills. This task requires them to think through the entire process of cooking a meal with limited equipment, creating a 'practice_record' for the tutor to review."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Healthy eating in shared or limited environments",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "Reviewed the learner's step-by-step recipe instructions from the practice record. The tutor checked for clarity, logical flow, and inclusion of key safety precautions for a shared kitchen, as taught in the previous lesson. Feedback was prepared to refine the steps and reinforce safety measures before a hands-on practice.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed a 'practice' task (e_13) by writing out recipes, a 'review' is the necessary next step. This allows the tutor to assess their theoretical understanding of the cooking process and safety protocols before moving to a final, hands-on cooking practice. The 'feedback_summary' will provide corrections and confirm readiness for the last stage of learning."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Healthy eating in shared or limited environments",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "The learner conducted a final, hands-on cooking exercise by preparing one of the skillet recipes they had planned. This practical session, observed by the tutor (or self-reported with photos), was designed to assess the application of cooking techniques and safety measures in a real-world context.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the previous review (e_14) confirmed the learner's theoretical understanding of a recipe, a hands-on 'practice' event is the necessary next step to assess practical skill application. This task represents the culmination of all prior lessons, from planning to execution, and provides a final data point on the learner's ability to cook a healthy meal independently."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Healthy eating in shared or limited environments",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "Reviewed the results of the hands-on cooking exercise, including photos of the final meal and the learner's self-report on the process. The tutor provided a final summary of feedback, confirming the successful application of planning, safety, and cooking skills, and affirming that the core learning objectives have been met.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the culminating hands-on practice (e_15), a final 'review' is necessary to assess the learner's overall competence and formally confirm that they have achieved their goals. This event provides a final piece of feedback and serves as a capstone assessment for the entire learning process."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Healthy eating in shared or limited environments",
+    "subject": "Health",
+    "event_type": "end",
+    "description": "The tutoring engagement concludes with a final session summarizing the learner's progress. The learner has successfully demonstrated the ability to plan, budget for, and prepare healthy meals in their dorm environment, meeting all initial learning objectives.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The previous review (e_16) confirmed the learner's successful completion of a final hands-on cooking task, demonstrating mastery of all skills outlined in the study plan. With the core learning objectives met and the learner equipped for independent success, the tutoring process is now complete."
+  }
+]

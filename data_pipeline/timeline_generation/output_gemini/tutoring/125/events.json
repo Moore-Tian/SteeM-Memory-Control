@@ -1,0 +1,301 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Editing for concision and removing redundancy",
+    "subject": "Writing",
+    "event_type": "objective_clarification",
+    "description": "The first session is a diagnostic conversation to understand the learner's goals. The learner, a graduate student, wants to make their academic writing more concise and impactful by eliminating redundant phrases and jargon.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "As this is the first session, the initial step is to understand the learner's goals, background, and constraints. This diagnostic conversation establishes a foundation for creating a tailored study plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Editing for concision and removing redundancy",
+    "subject": "Writing",
+    "event_type": "plan_milestones",
+    "description": "Based on the learner's goals, the tutor outlines a multi-stage study plan. The plan prioritizes common redundancy patterns like nominalizations and wordy phrases, scheduling a cycle of lessons, targeted practice, and review for each.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learning objectives defined in the previous session, the next logical step is to create a structured roadmap. This study plan translates the high-level goals into a sequence of concrete milestones and activities for the tutoring process."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Editing for concision and removing redundancy",
+    "subject": "Writing",
+    "event_type": "lesson",
+    "description": "The tutor delivers the first lesson as outlined in the study plan, focusing on identifying and correcting nominalizations (verbs turned into nouns, e.g., 'make a decision' vs. 'decide'). The lesson includes definitions, examples, and strategies for converting them back into stronger verbs.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the study plan established, the logical next step is to begin instruction on the first milestone. This lesson addresses a core concept of concision and generates reusable teaching notes that will support future practice and review."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Editing for concision and removing redundancy",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "The tutor assigns a practice exercise focused on the lesson about nominalizations. The learner is given a set of sentences from academic texts and asked to identify and rewrite them to be more direct and active.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on nominalizations, it's essential for the learner to apply the concept. This targeted practice reinforces the learning, builds skill, and creates a record of the learner's work that can be used for feedback in the next session."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Editing for concision and removing redundancy",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor and learner review the practice exercise on nominalizations. The tutor provides specific feedback on the learner's edits, highlighting successful revisions and pointing out missed opportunities or awkward rephrasings.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the targeted practice (e_04), the essential next step is to review their work. This session uses the practice record to identify strengths and weaknesses, generating a feedback summary with actionable advice to solidify the concept of avoiding nominalizations."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Editing for concision and removing redundancy",
+    "subject": "Writing",
+    "event_type": "materials_revision",
+    "description": "Based on the review, the tutor notices the learner's revisions sometimes result in awkward phrasing. The tutor revises the 'teaching_notes' on nominalizations to include more nuanced examples and adds a 'Common Pitfalls' section addressing how to maintain natural sentence flow.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review session (e_05) identified a specific weakness in the learner's application of the concept. This event uses the insights from the feedback_summary to refine the teaching materials, making them more effective for addressing the observed difficulties and for future reference."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Editing for concision and removing redundancy",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "To reinforce the previous feedback, the tutor assigns a second practice exercise on nominalizations. This exercise uses the revised teaching notes and specifically challenges the learner to revise sentences while maintaining a natural, clear sentence structure.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "The review in e_05 identified that the learner's revisions could be awkward, and the teaching materials were updated in e_06 to address this. This follow-up practice is a necessary check to ensure the learner has integrated the feedback and can apply the skill correctly before moving to the next topic."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Editing for concision and removing redundancy",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor reviews the second practice exercise on nominalizations. They find that the learner has successfully integrated the feedback, and their revisions are now both concise and natural-sounding.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted second practice round (e_07), it is essential to review the work to confirm that the previous feedback was effective. This review serves as a final check on the topic of nominalizations before proceeding to the next milestone in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Editing for concision and removing redundancy",
+    "subject": "Writing",
+    "event_type": "lesson",
+    "description": "With the previous topic mastered, the tutor moves to the next milestone in the study plan: identifying and eliminating common wordy phrases (e.g., 'due to the fact that' -> 'because'). The lesson provides a list of such phrases and their concise alternatives.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_08) confirmed the learner's mastery of nominalizations. Following the study plan, the next logical step is to begin the lesson-practice-review cycle for the next topic, which is another common source of redundancy."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Editing for concision and removing redundancy",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "Following the lesson on wordy phrases, the tutor assigns an exercise where the learner must edit a sample academic paragraph. The goal is to identify and replace phrases like 'in order to' and 'due to the fact that' with their concise alternatives.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson on a new concept (e_09), immediate application is crucial for retention. This practice session allows the learner to actively use the list of wordy phrases and their alternatives, creating a record of their work that will be used for the next review."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Editing for concision and removing redundancy",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor and learner review the practice exercise on eliminating wordy phrases. They discuss the learner's edits, confirming that the concise alternatives were used correctly and effectively improved the paragraph's clarity.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the practice on wordy phrases in the previous step (e_10), the logical next step is to review their work. This allows the tutor to provide feedback, correct any misunderstandings, and assess mastery of the second major topic in the study plan."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Editing for concision and removing redundancy",
+    "subject": "Writing",
+    "event_type": "lesson",
+    "description": "Having successfully covered nominalizations and wordy phrases, the tutor introduces the next topic from the study plan: redundant pairs. The lesson covers common examples like 'basic fundamentals' and 'end result,' explaining how to spot and eliminate them.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The successful review in e_11 indicates the learner has mastered the previous topic and is ready to advance. According to the study plan, the next logical step is to introduce a new type of redundancy, which continues the progression through the defined curriculum."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Editing for concision and removing redundancy",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "The tutor assigns a practice exercise based on the latest lesson. The learner is given a list of sentences and short paragraphs and tasked with identifying and removing redundant pairs like 'completely finished' or 'future plans'.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on redundant pairs (e_12), the learner needs to apply this knowledge to solidify their understanding. This practice session provides that opportunity and generates a record of their work, which is essential for the subsequent review session."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Editing for concision and removing redundancy",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor and learner go over the practice exercise on redundant pairs. The tutor confirms the learner's edits and discusses any instances where the learner missed a redundant pair or made an incorrect change, ensuring the concept is well understood.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the practice on redundant pairs (e_13), the logical next step is to review their work. This session provides targeted feedback, solidifies the concept, and assesses the learner's readiness to combine this skill with previously learned ones."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Editing for concision and removing redundancy",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "To synthesize the skills learned, the tutor assigns a cumulative practice exercise. The learner is given a multi-paragraph text and asked to edit it for concision by identifying and correcting nominalizations, wordy phrases, and redundant pairs all at once.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "The learner has successfully practiced three distinct concision techniques in isolation. The logical next step is to integrate these skills in a more realistic editing scenario, which challenges the learner to apply all learned concepts simultaneously before moving on to new material."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Editing for concision and removing redundancy",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor and learner review the cumulative practice exercise from the previous session. They analyze the edits to see how well the learner integrated the three skills (nominalizations, wordy phrases, redundant pairs) and improved the overall concision of the text.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the cumulative practice in e_15, a comprehensive review is essential to evaluate the learner's ability to apply all learned skills together. This session provides final feedback on their integrated editing ability and determines if the primary learning objectives have been met."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Editing for concision and removing redundancy",
+    "subject": "Writing",
+    "event_type": "materials_revision",
+    "description": "Based on the final cumulative review, the tutor consolidates the separate notes on nominalizations, wordy phrases, and redundant pairs into a single, comprehensive \"Concision Cheatsheet\". This revised document is designed to be a practical reference for the learner's future independent editing.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_16) assessed the integrated application of all skills. To support the learner's long-term success, it is logical to consolidate the fragmented teaching materials into a single, unified guide that reflects this integrated approach and serves as a final takeaway."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Editing for concision and removing redundancy",
+    "subject": "Writing",
+    "event_type": "end",
+    "description": "The tutor and learner have a final wrap-up session. They agree that the learning objectives have been met, the learner has demonstrated proficiency, and the consolidated \"Concision Cheatsheet\" provides a solid basis for independent work.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has successfully completed the study plan, demonstrated integrated skills in a cumulative review (e_16), and received a final reference document (e_17). With the initial objectives met and the learner equipped for self-guided practice, the tutoring process has reached its natural conclusion."
+  }
+]

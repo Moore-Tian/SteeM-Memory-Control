@@ -1,0 +1,281 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Building a personal wellness plan and tracking progress",
+    "subject": "Health",
+    "event_type": "objective_clarification",
+    "description": "Conducted an initial diagnostic session to understand the learner's goals for creating a personal wellness plan. We discussed their current lifestyle, what they want to improve (e.g., fitness, diet, sleep), and their time constraints.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "As this is the first session, the immediate priority is to establish a clear understanding of the learner's goals and background. This foundational step will inform the creation of a tailored study plan and all subsequent tutoring activities."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Building a personal wellness plan and tracking progress",
+    "subject": "Health",
+    "event_type": "plan_milestones",
+    "description": "Based on the established learning objectives, we collaboratively outlined a multi-week study plan. The plan breaks down the process of building a wellness plan into key milestones: defining SMART goals, planning nutrition and fitness components, and selecting tracking methods.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learner's goals clarified in the previous session (learning_objectives), the logical next step is to structure the tutoring process. Creating a study plan provides a clear roadmap with milestones, ensuring that both the tutor and learner are aligned on the path forward."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Building a personal wellness plan and tracking progress",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "Delivered a lesson on the first milestone from the study plan: defining SMART (Specific, Measurable, Achievable, Relevant, Time-bound) goals. We discussed the definition of each component and reviewed examples of how to convert vague wellness aspirations into concrete, actionable goals.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the study plan established, the next logical step is to begin instruction on the first milestone. This lesson on SMART goals directly addresses the initial phase of the plan, providing the learner with the foundational framework needed to define their personal wellness objectives effectively."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Building a personal wellness plan and tracking progress",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "Assigned a practice task for the learner to apply the SMART goals framework. The learner was asked to draft two of their personal wellness goals in the SMART format, based on the concepts from the previous lesson.",
+    "required_artifacts": [
+      "learning_objectives",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on SMART goals, the immediate next step is for the learner to apply that knowledge. This practice session operationalizes the theory, using the teaching notes as a guide and their initial objectives as a starting point, and creates a concrete work product (practice_record) for future review and feedback."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Building a personal wellness plan and tracking progress",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "Reviewed the learner's two drafted SMART goals from the practice session. I provided specific feedback on how to make the 'Measurable' and 'Time-bound' aspects more concrete, while affirming the strong alignment of the goals with their initial learning objectives.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the learner's practice attempt (practice_record), the logical next step is to review their work. This allows for immediate correction of any misunderstandings of the SMART goals framework and provides targeted feedback, ensuring the learner can successfully apply the concept before moving forward."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Building a personal wellness plan and tracking progress",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "Following the feedback session, the learner was asked to revise their two SMART goals. This second practice attempt focuses on applying the specific corrections provided, particularly making the 'Measurable' and 'Time-bound' criteria more precise.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a review that identified specific areas for improvement, the most effective next step is to have the learner immediately apply the feedback. This iterative loop of practice-review-practice reinforces the concept and ensures the learner has successfully incorporated the corrections before moving to a new topic."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Building a personal wellness plan and tracking progress",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "Reviewed the learner's revised SMART goals from the second practice attempt. The revisions successfully incorporated the feedback, making the goals specific, measurable, and time-bound. The goals are now finalized for this stage of the plan.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner revised their work based on feedback, a follow-up review is essential to confirm that they have successfully grasped the concept. This step validates their understanding of SMART goals, providing a clear signal that we can proceed to the next topic outlined in the study plan."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Building a personal wellness plan and tracking progress",
+    "subject": "Health",
+    "event_type": "materials_revision",
+    "description": "Based on the learner's initial struggle with making goals 'Measurable' and 'Time-bound' (as noted in the feedback from e_05), I updated the teaching notes on SMART goals. I added more concrete examples and a 'Common Pitfalls' section to better explain these two components.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review process revealed a specific weakness in the learner's initial understanding. Revising the teaching materials to address this common difficulty not only helps solidify the concept for the current learner but also improves the materials for future tutoring sessions, making it a valuable reflective step before moving to the next topic."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Building a personal wellness plan and tracking progress",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "Moved to the next milestone in the study plan by delivering a lesson on planning nutrition and fitness components. We discussed how to translate the finalized SMART goals into actionable weekly steps for diet and exercise, and explored different planning templates.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the learner's SMART goals finalized and confirmed (e_07), the tutoring process can advance to the next milestone outlined in the study plan. This lesson on nutrition and fitness planning directly builds on those goals, teaching the learner how to translate their high-level objectives into concrete, actionable weekly plans."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Building a personal wellness plan and tracking progress",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "Assigned a practice task for the learner to create a draft one-week action plan for either nutrition or fitness. This plan must be based on one of their finalized SMART goals and should utilize one of the planning templates discussed in the previous lesson.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on planning nutrition and fitness, the natural next step is for the learner to apply these new concepts. This practice task requires them to use the teaching materials (teaching_notes) to translate their confirmed SMART goals (validated in feedback_summary) into a concrete weekly plan, creating a tangible artifact for review."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Building a personal wellness plan and tracking progress",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "Reviewed the learner's draft one-week action plan for their chosen wellness goal. I checked the plan for realism, specificity, and alignment with the parent SMART goal, providing feedback on how to better detail daily activities and set more practical portion sizes or exercise durations.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner submitted their draft plan in the previous practice session (practice_record), the essential next step is to review their work. This review provides timely feedback, ensuring the learner correctly understands how to translate strategic goals into a practical, actionable weekly schedule before moving on."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Building a personal wellness plan and tracking progress",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "Based on the review feedback, the learner was tasked with revising their one-week action plan. The focus of this practice is to incorporate the specific suggestions for detailing daily activities and setting more realistic and practical metrics for exercise duration or food portions.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After receiving targeted feedback on their initial draft plan, the most logical step is for the learner to apply those corrections. This iterative practice-review-practice cycle ensures the learner solidifies their understanding of how to create a realistic and actionable plan before progressing to the next topic."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Building a personal wellness plan and tracking progress",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "Reviewed the learner's revised one-week action plan. The new version successfully incorporated the feedback, with much clearer daily activities and realistic metrics. The plan is now considered complete and actionable.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner revised their action plan in the previous practice session, a follow-up review is necessary to confirm that the feedback was correctly applied. This step validates their ability to create a practical weekly plan, signaling readiness to move to the next topic of tracking progress."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Building a personal wellness plan and tracking progress",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "Delivered a lesson on the final milestone from the study plan: selecting tracking methods. We discussed various tools and techniques for monitoring progress, such as journaling, using mobile apps, or simple spreadsheets, and talked about the importance of consistency.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the learner's one-week action plan finalized and approved (e_13), the next logical step is to address the final milestone in the study plan: tracking progress. This lesson provides the concepts and tools necessary for the learner to monitor their adherence and results, closing the loop on the plan-do-check cycle."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Building a personal wellness plan and tracking progress",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "Assigned a practice task for the learner to select a suitable tracking method for their one-week action plan. The learner needs to choose a tool (e.g., app, journal, spreadsheet) and set up a basic template to monitor their progress for the week.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on tracking methods, the immediate next step is for the learner to apply this knowledge. This practice task requires them to select and set up a tracking tool for their finalized action plan (confirmed in e_13's feedback_summary), creating a tangible artifact (practice_record) that can be reviewed."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Building a personal wellness plan and tracking progress",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "Reviewed the learner's selected tracking method and the template they created. The review confirmed the chosen tool (a mobile app) was appropriate and the template was well-structured to monitor the key activities from their weekly action plan.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session where the learner set up a tracking system, a review is essential to validate their choice and implementation. This step ensures the final component of the wellness plan is effective and correctly set up, confirming the learner is ready to execute their plan independently."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Building a personal wellness plan and tracking progress",
+    "subject": "Health",
+    "event_type": "end",
+    "description": "Concluded the tutoring sessions, as the learner has now successfully created a complete, actionable wellness plan and established a method for tracking progress. We held a final review of the entire plan, and the learner expressed confidence in their ability to execute and manage it independently.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has successfully met all initial learning objectives, having completed all milestones in the study plan: defining goals, creating an action plan, and setting up tracking. Since they have demonstrated competence at each stage and have a complete, actionable plan, the formal tutoring process is concluded."
+  }
+]

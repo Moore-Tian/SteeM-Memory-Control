@@ -1,0 +1,343 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Personal budgeting and spending awareness",
+    "subject": "LifeSkills",
+    "event_type": "objective_clarification",
+    "description": "Initial meeting with the learner to discuss their goals for personal budgeting. The learner wants to understand where their money goes, create a simple monthly budget, and identify potential savings.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first session, so the primary goal is to understand the learner's needs and establish clear learning objectives. This information is foundational for creating a relevant study plan and subsequent lessons."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Personal budgeting and spending awareness",
+    "subject": "LifeSkills",
+    "event_type": "plan_milestones",
+    "description": "Based on the defined goals, the tutor and learner co-created a study plan. The plan outlines key milestones: first, tracking daily spending for two weeks, then categorizing expenses, and finally, creating a first-draft budget.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learning objectives established in the previous session, the next logical step is to create a structured plan. This study plan breaks down the overall goal into manageable milestones, providing a clear roadmap for the tutoring process."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Personal budgeting and spending awareness",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "The tutor teaches the learner different methods for tracking daily expenses, which is the first milestone in the study plan. They cover using a notebook, a simple spreadsheet, and mobile apps, discussing the pros and cons of each approach.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a study plan in place, the next logical step is to deliver the first lesson. This lesson directly addresses the first milestone of 'tracking daily spending' and equips the learner with the necessary knowledge before they begin the practical task."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Personal budgeting and spending awareness",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The learner is assigned the task of tracking their daily expenses for the next two weeks, as per the study plan. The learner chooses to use a spreadsheet, and the tutor provides a simple template to get them started.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on expense tracking methods, the next logical step is for the learner to apply this knowledge. This practice session directly implements the first milestone of the study plan, generating the raw data needed for the subsequent steps of categorization and analysis."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Personal budgeting and spending awareness",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor and learner meet to review the expense tracking data collected over the past two weeks. They discuss challenges the learner faced, identify any missing entries, and confirm the data is ready for the next step of categorization.",
+    "required_artifacts": [
+      "practice_record",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a significant practice period, a review is the logical next step to ensure the learner's work is on track before moving forward. This session assesses the quality of the practice_record against the goals of the study_plan and provides actionable feedback, ensuring a solid foundation for the next milestone."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Personal budgeting and spending awareness",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "Following the successful review of the expense tracking data, the tutor teaches the learner how to categorize expenses. They introduce common categories like 'Housing', 'Food', 'Transportation', and 'Entertainment', and work with the learner to customize a list that fits their specific spending habits, using examples from their practice record.",
+    "required_artifacts": [
+      "study_plan",
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the raw spending data collected and verified in the previous practice and review steps, the next logical step according to the study plan is to categorize it. This lesson provides the conceptual framework the learner needs to complete the second milestone of the plan."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Personal budgeting and spending awareness",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The learner is assigned the task of categorizing all the expenses from their two-week tracking log. They will add a 'category' column to their spreadsheet and apply the custom categories defined in the previous lesson.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on categorization, the learner needs to apply this new skill. This practice event directly follows the lesson and moves the learner forward on the second milestone of the study plan, transforming their raw spending data into a categorized list ready for analysis."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Personal budgeting and spending awareness",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor and learner review the categorized expense log. They discuss items the learner found difficult to categorize, ensure consistency in applying the category rules, and make minor corrections to the spreadsheet.",
+    "required_artifacts": [
+      "practice_record",
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner practiced categorizing their expenses, a review session is the logical next step to validate their work. This ensures the data is accurate and the learner understands the categorization process before moving to the final milestone of creating a budget, as outlined in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Personal budgeting and spending awareness",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "With the expense data now categorized and reviewed, the tutor teaches the learner how to create a first-draft budget. They explain how to sum up category totals, compare this spending against income, and set realistic spending goals for the next month.",
+    "required_artifacts": [
+      "practice_record",
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The learner has successfully completed the tracking and categorization milestones. According to the study plan, the next step is to create a budget. This lesson provides the necessary instruction to accomplish this final milestone, using the learner's own verified data as a practical foundation."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Personal budgeting and spending awareness",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The learner is assigned the task of creating a first-draft monthly budget based on their categorized spending data. They will use their spreadsheet to calculate category totals, compare them against their monthly income, and draft initial spending targets for the next month.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on how to create a budget, the natural next step is for the learner to apply this knowledge. This practice event represents the culmination of the previous steps (tracking and categorizing) and directly addresses the final milestone of the study plan."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Personal budgeting and spending awareness",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor and learner review the first-draft monthly budget created by the learner. They analyze the spending distribution, discuss whether the proposed spending targets are realistic, and identify potential areas for savings, directly addressing the learner's original goals.",
+    "required_artifacts": [
+      "practice_record",
+      "study_plan",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner created their first draft budget in the previous practice session, a comprehensive review is the critical next step. This session provides feedback on the final product of the study plan, validates its usefulness against the original learning objectives, and helps the learner transition from planning to implementation."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Personal budgeting and spending awareness",
+    "subject": "LifeSkills",
+    "event_type": "materials_revision",
+    "description": "Based on the learner's experience creating the budget, the tutor refines the spreadsheet template used for expense tracking. The tutor adds columns for automatic category summation and a simple summary chart to make the analysis step more intuitive and less error-prone.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After completing a full cycle from tracking to budgeting, it's a good time to refine the teaching materials. The review sessions revealed that the analysis was manual and time-consuming, so improving the template in the teaching_notes will better support the learner in the next phase of maintaining their budget."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Personal budgeting and spending awareness",
+    "subject": "LifeSkills",
+    "event_type": "plan_milestones",
+    "description": "With the first draft budget created, the tutor and learner update the study plan. They add a new milestone for the next month: actively track spending against the budget using the revised template, and then conduct a monthly review to compare actuals vs. budget and make adjustments.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "The initial milestones in the study plan have been met, culminating in the creation of a draft budget. The next logical step is to revise the plan to outline the next phase of the learning process, which is the practical application and maintenance of the budget, aligning with the learner's long-term goals."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Personal budgeting and spending awareness",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The learner begins the new milestone of tracking their spending for a full month against their first budget. They use the revised spreadsheet template to log daily expenses and monitor how their actual spending compares to their budgeted targets in real-time.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "The study plan was just updated to focus on applying the budget. This practice session is the direct implementation of that new plan, using the revised template from the teaching_notes and the budget targets from the previous practice_record. This marks the beginning of the budget maintenance cycle."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Personal budgeting and spending awareness",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "At the end of the month, the tutor and learner review the results of tracking spending against the budget. They compare actual spending totals for each category against the budgeted amounts, discuss successes and challenges, and analyze reasons for any significant variances.",
+    "required_artifacts": [
+      "practice_record",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After completing the month-long practice of tracking against a budget, as laid out in the revised study plan, a review is the logical next step. This session is crucial for analyzing the data from the practice record, providing actionable feedback, and helping the learner refine their budget for the next cycle."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Personal budgeting and spending awareness",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "Based on the end-of-month review, the learner is tasked with revising their budget for the upcoming month. They will adjust category targets in their spreadsheet, aiming to create a more realistic plan that addresses the variances identified in the previous review.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the review of the first month's budget performance, the learner must apply the feedback from the feedback_summary to refine their plan. This practice session is a critical step in the iterative budgeting cycle, teaching the learner how to adapt their budget to real-world spending patterns and make it a sustainable tool, as outlined in the study_plan."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Personal budgeting and spending awareness",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor and learner jointly review the revised monthly budget. They confirm that the adjustments made by the learner are logical and based on the feedback from the previous month's performance, ensuring the new budget is both realistic and aspirational.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner practiced revising their budget, a final review is crucial to validate the changes before they begin tracking against this new plan. This step ensures the learner has correctly applied the feedback from the previous cycle and solidifies their understanding of the iterative budgeting process outlined in the study plan."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Personal budgeting and spending awareness",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The learner begins tracking their spending for a second full month, this time using the revised budget they created. The goal is to follow the updated plan and see if the adjustments lead to better alignment between their spending and their goals.",
+    "required_artifacts": [
+      "study_plan",
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the budget and having it reviewed, the logical next step in the iterative budgeting cycle is to apply it. This practice session operationalizes the revised budget from the previous practice_record, following the process outlined in the study_plan and using the established tools from the teaching_notes, moving the learner towards independent management."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Personal budgeting and spending awareness",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "At the end of the second month, the tutor and learner review the spending data against the revised budget. They find that the learner's adjustments were effective, as the actual spending is much more aligned with the budget, and the learner can clearly explain the reasons for the remaining minor variances.",
+    "required_artifacts": [
+      "practice_record",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "The learner has just completed a second month of practice using their revised budget. A review is the logical next step to evaluate the effectiveness of the changes and assess whether the learner has achieved a sustainable budgeting habit, which is the final milestone of the current study plan."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Personal budgeting and spending awareness",
+    "subject": "LifeSkills",
+    "event_type": "end",
+    "description": "Final session to wrap up the tutoring. The tutor and learner agree that the initial learning objectives have been met. The learner has successfully created, tracked, and refined a personal budget over two months and feels confident in continuing the process independently.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has demonstrated proficiency in all key areas of the study plan, from tracking expenses to iteratively refining their budget. The latest review showed they can manage the process independently and have met all original learning objectives, making it a natural conclusion to the tutoring engagement."
+  }
+]

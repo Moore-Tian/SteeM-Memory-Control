@@ -1,0 +1,298 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Ecological simulation",
+    "subject": "Biology",
+    "event_type": "proposal",
+    "description": "Initial project proposal. Define the core research question: how do predator-prey population dynamics change in response to simulated climate change events? Create a high-level research plan to build a corresponding ecological simulation.",
+    "required_artifacts": [
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "research_plan",
+      "research_goals"
+    ],
+    "reason": "This is the first step of the project, establishing the foundational research goals and a high-level plan. It formalizes an initial, informal idea (represented as the required 'research_plan') into a concrete set of objectives and a structured roadmap (the generated artifacts)."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Ecological simulation",
+    "subject": "Biology",
+    "event_type": "scheme_design",
+    "description": "Based on the research goals, design the initial agent-based simulation model. This involves defining the key parameters for predator and prey agents (e.g., energy consumption, reproduction rates) and the environmental model for simulating climate events like temperature increases.",
+    "required_artifacts": [
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "With the high-level research plan and goals established in the previous step, the next logical action is to translate these ideas into a concrete technical design. This event creates the initial methodological framework required for any future experiments."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Ecological simulation",
+    "subject": "Biology",
+    "event_type": "pilot_experiments",
+    "description": "Run a small set of pilot simulations to validate the basic mechanics of the agent-based model. The goal is to ensure the simulation runs without crashing and that the predator-prey populations exhibit stable oscillations under baseline conditions, before introducing climate change variables.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing the simulation model in e_02, it is crucial to conduct pilot experiments. This step serves as a sanity check to verify that the implementation of the method scheme is correct and that the model behaves as expected in simple scenarios, before committing resources to large-scale main experiments."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Ecological simulation",
+    "subject": "Biology",
+    "event_type": "analysis",
+    "description": "Analyze the data from the pilot simulations. The analysis confirms the model's baseline stability, but also reveals that the population dynamics are overly sensitive to the initial agent energy parameters. This suggests a parameter tuning phase is necessary before proceeding to the main experiments.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After running pilot experiments in e_03, a formal analysis is the logical next step to interpret the outcomes. This analysis evaluates the 'experiment_results' in the context of the 'method_scheme' and 'research_goals', providing critical insights that will guide the subsequent refinement of the model before committing to larger-scale experiments."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Ecological simulation",
+    "subject": "Biology",
+    "event_type": "scheme_design",
+    "description": "Revise the simulation model based on the pilot analysis. The agent energy parameters are adjusted, and a new energy-balancing mechanism is introduced to reduce the model's sensitivity to initial conditions. This creates a more robust version of the method scheme for future experiments.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous analysis (e_04) of pilot results revealed that the model was overly sensitive to certain parameters. This event represents a necessary iterative step back to the design phase, using the insights from the 'experiment_results' to refine the 'method_scheme' before attempting more complex or large-scale experiments."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Ecological simulation",
+    "subject": "Biology",
+    "event_type": "main_experiments",
+    "description": "With the revised and more robust simulation model, run the main set of experiments. These experiments simulate the predator-prey dynamics under various climate change scenarios (e.g., gradual temperature increase, heatwave events) as outlined in the research goals. A large number of simulation runs are performed to ensure statistical significance of the results.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The previous step (e_05) addressed a key methodological flaw found during pilot testing. With a more robust 'method_scheme' now in place, the project can proceed to the main experimental phase to collect the data needed to answer the core research questions defined in the 'research_goals'."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Ecological simulation",
+    "subject": "Biology",
+    "event_type": "analysis",
+    "description": "Analyze the extensive data from the main experiments. The findings indicate that while gradual temperature increases shift the population balance, sudden heatwave events cause a catastrophic decline in the prey population, often leading to the extinction of the predator population within a few generations. This directly addresses the core research question.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After collecting a large volume of data from the main experiments (e_06), the essential next step is to perform a detailed analysis. This process is necessary to interpret the results in the context of the research goals and the applied methodology, and to extract meaningful scientific conclusions."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Ecological simulation",
+    "subject": "Biology",
+    "event_type": "writing",
+    "description": "With the core analysis complete, the team begins drafting the research paper. The initial focus is on writing the 'Methods' section, describing the final agent-based model, and the 'Results' section, presenting the key findings about the impact of different climate change scenarios on population stability.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The previous analysis (e_07) produced clear and significant results that address the main research questions. It is a natural and productive next step to start documenting these findings and the methodology used to obtain them, beginning the process of creating a publishable paper."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Ecological simulation",
+    "subject": "Biology",
+    "event_type": "analysis",
+    "description": "While writing the paper, the team realizes the argument could be stronger. They perform a follow-up analysis on the main experiment data to specifically investigate the time lag between the prey population collapse and the subsequent predator extinction, aiming to quantify this relationship more precisely.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The process of writing (e_08) often reveals gaps or weaknesses in the original analysis. This event represents a realistic return to the analysis phase to generate more detailed evidence from the existing 'experiment_results', specifically to strengthen the claims being made in the 'paper_paragraph' and better fulfill the 'research_goals'."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Ecological simulation",
+    "subject": "Biology",
+    "event_type": "writing",
+    "description": "The team updates the 'Results' section of the paper to incorporate the findings from the follow-up analysis. The new text and figures provide a quantitative description of the time lag between prey collapse and predator extinction, strengthening the paper's core argument.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After performing a specific follow-up analysis in e_09 to gather more precise data, the logical next step is to integrate these new findings into the paper. This event represents the revision of the 'paper_paragraph' to reflect the updated 'experiment_results', making the scientific argument more robust."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Ecological simulation",
+    "subject": "Biology",
+    "event_type": "scheme_design",
+    "description": "While writing the discussion section, the team realizes the paper would be stronger if it explored ecosystem resilience. They decide to design a new experimental scenario to test if the populations can recover after a temporary, severe heatwave. The method scheme is updated to include this new 'recovery' condition.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The process of writing the paper (e_10) often reveals gaps in the narrative or experimental evidence. To build a more complete story about ecosystem stability, it's logical to go back and design a new experiment to test for resilience, which requires updating the 'method_scheme' before new simulations can be run."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Ecological simulation",
+    "subject": "Biology",
+    "event_type": "main_experiments",
+    "description": "Run a new set of simulations using the updated method scheme to test for ecosystem recovery. These experiments focus on the 'recovery' condition, where a severe but temporary heatwave is simulated, followed by a return to baseline conditions, to observe if the populations can bounce back.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the design of a new experimental scenario in e_11, the logical next step is to run these simulations. This 'main_experiments' event will generate the data needed to answer the newly posed question about ecosystem resilience, directly executing the plan laid out in the revised 'method_scheme'."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Ecological simulation",
+    "subject": "Biology",
+    "event_type": "analysis",
+    "description": "The team analyzes the results from the new 'recovery' simulations. The analysis reveals that while the prey population often recovers after a temporary heatwave, the predator population, with its slower reproductive cycle, frequently fails to bounce back and goes locally extinct. This provides a nuanced answer to the new question about ecosystem resilience.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After running a new set of main experiments in e_12 to test for ecosystem recovery, the essential next step is to analyze the generated data. This analysis is crucial to interpret the outcome of the new experimental condition and determine if the ecosystem is truly resilient."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Ecological simulation",
+    "subject": "Biology",
+    "event_type": "writing",
+    "description": "The team incorporates the new findings about ecosystem resilience into the paper. They add a subsection to the 'Results' detailing the recovery experiment outcomes and expand the 'Discussion' section to contrast the effects of temporary versus permanent climate stressors.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After analyzing the results of the 'recovery' experiments in e_13, the logical next step is to integrate these new, nuanced findings into the manuscript. This action updates the existing 'paper_paragraph' to build a more complete and compelling scientific narrative that addresses the project's 'research_goals' more thoroughly."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Ecological simulation",
+    "subject": "Biology",
+    "event_type": "proposal",
+    "description": "As the paper nears completion, the team revisits the high-level project narrative. They refine the research goals to more accurately reflect the key findings, focusing on the distinction between ecosystem resistance to gradual change and its lack of resilience to severe, abrupt events.",
+    "required_artifacts": [
+      "research_goals",
+      "paper_paragraph",
+      "experiment_results",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "research_goals"
+    ],
+    "reason": "With the experimental and writing phases (e_13, e_14) providing a comprehensive set of results, it's a strategic moment to refine the project's core message. This 'proposal' refinement ensures the final paper's introduction and conclusion are perfectly aligned with the actual evidence and the nuanced story that emerged from the research."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Ecological simulation",
+    "subject": "Biology",
+    "event_type": "writing",
+    "description": "With the refined research goals from the previous step, the team drafts the final sections of the paper, including the Introduction and Conclusion. This ensures the paper's narrative is consistent and framed precisely around the key findings about ecosystem resistance and resilience, leading to a complete first draft of the manuscript.",
+    "required_artifacts": [
+      "research_goals",
+      "paper_paragraph",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After refining the high-level research goals in e_15 to match the final evidence, the logical next step is to finalize the manuscript. This writing phase integrates these refined goals into the paper's introduction and conclusion, creating a coherent and complete draft ready for internal review and submission."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Ecological simulation",
+    "subject": "Biology",
+    "event_type": "end",
+    "description": "The research team finalizes the manuscript and submits it to an ecology journal for peer review. The project's primary research phase is now considered complete, pending feedback from the scientific community.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has successfully progressed from an initial proposal to a complete manuscript, including multiple iterative cycles of experimentation, analysis, and writing. With a coherent paper draft (e_16) that addresses the refined research goals (e_15), the core research objectives have been met, making this a natural conclusion for the project timeline."
+  }
+]

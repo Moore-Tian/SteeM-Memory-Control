@@ -1,0 +1,340 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Writing structured historical arguments and essays",
+    "subject": "History",
+    "event_type": "objective_clarification",
+    "description": "The first session is a diagnostic discussion to understand the student's goals. The student wants to improve from a B- to an A grade in their high school history class by writing more structured and persuasive essays.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "As this is the first tutoring session, the primary goal is to establish the student's needs and learning objectives. This initial clarification is crucial for creating a relevant and effective study plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Writing structured historical arguments and essays",
+    "subject": "History",
+    "event_type": "plan_milestones",
+    "description": "Based on the student's goal of improving essay structure and persuasiveness, the tutor and student create a multi-stage study plan. The plan outlines key milestones, starting with thesis statement construction, followed by evidence integration, and finally argument organization.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the student's goals clearly defined in the 'learning_objectives' artifact from the previous session, the next logical step is to create a structured roadmap. This 'plan_milestones' event translates the high-level objectives into an actionable 'study_plan' with clear stages."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Writing structured historical arguments and essays",
+    "subject": "History",
+    "event_type": "lesson",
+    "description": "The tutor delivers the first lesson outlined in the study plan, focusing on how to construct a strong, arguable thesis statement for a historical essay. The lesson covers the key components of a thesis, distinguishes it from a simple statement of fact, and provides examples of effective and ineffective thesis statements.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the creation of the 'study_plan', the next logical step is to begin instruction on the first milestone. This 'lesson' on thesis statements directly addresses the initial stage of the plan and generates 'teaching_notes' that can be used for future review and practice."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Writing structured historical arguments and essays",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "To reinforce the lesson on thesis statements, the tutor assigns a practice exercise. The student is asked to write three distinct thesis statements based on different historical prompts, applying the principles covered in the teaching notes.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a 'lesson', the immediate next step should be application through 'practice' to consolidate learning. This event uses the 'teaching_notes' as a guide for the student and generates a 'practice_record' of their attempts, which is necessary for the subsequent 'review' phase."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Writing structured historical arguments and essays",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor reviews the student's practice thesis statements. The feedback highlights that while the student understands the basic structure, the statements could be more specific and contestable, providing concrete examples for revision.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the student completed the 'practice' exercise in the previous event, the logical next step is a 'review' to assess their work. This event uses the 'practice_record' to provide targeted feedback, which is captured in a new 'feedback_summary' artifact, closing the initial learning loop on this topic."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Writing structured historical arguments and essays",
+    "subject": "History",
+    "event_type": "materials_revision",
+    "description": "Reflecting on the review, the tutor realizes the teaching notes could be clearer on making a thesis 'specific' and 'contestable'. The tutor updates the teaching notes with more robust 'before-and-after' examples and a 'common pitfalls' section that directly addresses the issues from the feedback.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous 'review' identified a specific gap in the student's understanding. Before assigning more practice, it is effective to revise the 'teaching_notes' based on the 'feedback_summary', creating clearer instructional material that directly addresses the student's recent difficulties and improves the resource for future use."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Writing structured historical arguments and essays",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "To ensure the student has absorbed the feedback and can apply the improved concepts, the tutor assigns a second practice round. The student is asked to revise their previous thesis statements, specifically focusing on the feedback about making them more contestable and specific, using the newly revised teaching notes.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After reviewing the student's first attempt and revising the teaching materials, a follow-up 'practice' event is crucial. This allows the student to directly apply the recent 'feedback_summary' and use the updated 'teaching_notes', reinforcing the concept of a strong thesis before moving on to the next milestone in the 'study_plan'."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Writing structured historical arguments and essays",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor reviews the student's revised thesis statements from the second practice round. The review confirms the student successfully incorporated the feedback, producing specific and contestable arguments that demonstrate a solid grasp of the concept.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the student completed a targeted revision practice (e_07), a 'review' is essential to validate their understanding and confirm that the previous feedback was successfully applied. This assessment closes the loop on the first milestone and provides the green light to proceed to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Writing structured historical arguments and essays",
+    "subject": "History",
+    "event_type": "lesson",
+    "description": "Now that the student has mastered thesis statements, the tutor proceeds to the second milestone in the study plan: integrating evidence. The lesson covers how to select relevant evidence, introduce it contextually, and explain how it supports the thesis.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review confirmed the student is ready to advance. Following the 'study_plan', the next logical step is a 'lesson' on the second milestone, 'evidence integration', which will build upon and expand the existing 'teaching_notes' artifact."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Writing structured historical arguments and essays",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "Following the lesson on integrating evidence, the tutor assigns a practice exercise. The student must choose one of their previously approved thesis statements and write a body paragraph that integrates at least two pieces of historical evidence to support it.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a 'lesson' on integrating evidence, a 'practice' event is the natural next step to solidify the new skill. This exercise directly applies the concepts from the updated 'teaching_notes' and connects the new skill to the previously mastered skill of thesis writing, generating a new 'practice_record' for subsequent review."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Writing structured historical arguments and essays",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor reviews the student's practice body paragraph. The feedback notes that while the student selected relevant evidence, the analysis connecting the evidence back to the thesis is still underdeveloped and needs a more explicit explanation.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the 'practice' event where the student wrote a body paragraph, a 'review' is the necessary next step to evaluate their application of the evidence integration lesson. This review uses the 'practice_record' to provide targeted feedback, which is captured in a new 'feedback_summary' to guide the student's next attempt."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Writing structured historical arguments and essays",
+    "subject": "History",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback that the student's analysis was underdeveloped, the tutor revises the teaching notes on evidence integration. The notes are updated to include a specific framework for analysis, such as the 'Claim, Evidence, Explanation' model, with clear examples demonstrating how to explicitly link evidence back to a thesis.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous 'review' identified a specific weakness in the student's ability to analyze evidence. Before re-assigning practice, it's effective to improve the instructional materials based on the 'feedback_summary'. This 'materials_revision' provides the student with a more robust tool for the next practice attempt, directly addressing the gap identified in the last cycle."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Writing structured historical arguments and essays",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "To apply the newly added analysis framework, the tutor asks the student to revise their previous body paragraph. The student's task is to use the 'Claim, Evidence, Explanation' model from the updated teaching notes to strengthen the connection between their evidence and the thesis.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the 'materials_revision' in the previous step, a targeted 'practice' event is necessary. This gives the student a chance to immediately apply the new 'Claim, Evidence, Explanation' framework from the revised 'teaching_notes' to address the specific weakness identified in the last 'feedback_summary'."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Writing structured historical arguments and essays",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor reviews the student's revised body paragraph. The review confirms the student successfully applied the 'Claim, Evidence, Explanation' framework, leading to a much stronger analysis that explicitly connects the evidence back to the thesis.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted revision 'practice' in the previous event, a 'review' is the necessary next step to assess whether the student has successfully addressed the feedback and mastered the analysis skill using the revised materials. This confirms readiness to move on to the next milestone."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Writing structured historical arguments and essays",
+    "subject": "History",
+    "event_type": "lesson",
+    "description": "With thesis statements and body paragraphs mastered, the tutor moves to the final milestone in the study plan: overall essay organization. The lesson focuses on structuring a multi-paragraph argument, including the role of topic sentences, logical sequencing of paragraphs, and effective transitions.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_14) confirmed the student's mastery of the second milestone. Following the 'study_plan', the next logical step is a 'lesson' on the third and final milestone, argument organization, which will expand the existing 'teaching_notes'."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Writing structured historical arguments and essays",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "To apply the concepts from the lesson on essay organization, the tutor assigns a practice task. The student is asked to create a complete essay outline for a historical prompt, including a thesis statement, topic sentences for each body paragraph, and notes on the evidence to be used, testing their ability to structure a full argument.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on overall essay organization, the next logical step is a 'practice' event to apply this new, integrative skill. This task requires the student to use the comprehensive 'teaching_notes' to create a complete essay outline, generating a 'practice_record' that demonstrates their ability to synthesize all the concepts learned so far."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Writing structured historical arguments and essays",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor reviews the student's complete essay outline. The feedback confirms a strong thesis, logical paragraph sequencing, and good evidence selection, but suggests improving the transitional phrases between paragraphs to create a more seamless flow.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the comprehensive 'practice' of creating an essay outline, a 'review' is the necessary next step to provide feedback on this integrative task. This event evaluates the 'practice_record' against the principles in the 'teaching_notes', generating a 'feedback_summary' that offers final refinements before the student attempts a full essay."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Writing structured historical arguments and essays",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "As the final capstone practice, the tutor assigns the student to write the complete essay based on their previously reviewed outline. The student is instructed to incorporate the feedback on transitions and synthesize all the skills learned: a strong thesis, evidence-based body paragraphs with analysis, and a coherent structure.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "The student has successfully learned and practiced all individual components of essay writing. A final, comprehensive 'practice' event is the logical next step to assess their ability to synthesize these skills into a complete essay, incorporating the final piece of feedback from the last 'review'."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Writing structured historical arguments and essays",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor conducts a final review of the complete capstone essay. The feedback is overwhelmingly positive, noting the student successfully synthesized all skills: a strong thesis, well-supported paragraphs with strong analysis, and a coherent structure with effective transitions, meeting the standard for an 'A' grade.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the student submitted the complete capstone essay in the previous 'practice' event, a final 'review' is essential. This step serves as the ultimate evaluation of the student's ability to synthesize all learned skills and determines if the overall learning objectives have been met."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Writing structured historical arguments and essays",
+    "subject": "History",
+    "event_type": "end",
+    "description": "The tutor and student hold a final session to acknowledge that the learning objectives have been met. The student has demonstrated proficiency in all areas of the study plan and is now confident in their ability to write 'A'-grade historical essays.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The previous review confirmed the student's success on a capstone essay, demonstrating mastery of all skills outlined in the study plan. With the initial learning objectives fully achieved, the tutoring process has reached its natural conclusion."
+  }
+]

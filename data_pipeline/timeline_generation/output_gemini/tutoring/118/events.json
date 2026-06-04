@@ -1,0 +1,303 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Reducing sedentary time and improving daily movement",
+    "subject": "Health",
+    "event_type": "objective_clarification",
+    "description": "The tutor and learner have their first session to discuss the learner's goals. The learner, who has a desk job, wants to reduce overall sedentary time and incorporate more light physical activity throughout the day to improve energy levels and general well-being. They establish a primary goal of breaking up long sitting periods.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first event in the tutoring timeline. The initial step must be to understand and document the learner's goals, constraints, and background before any specific planning or teaching can occur."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Reducing sedentary time and improving daily movement",
+    "subject": "Health",
+    "event_type": "plan_milestones",
+    "description": "Based on the established goals, the tutor and learner collaboratively outline a phased plan. They decide to start with tracking current sedentary habits for a week to establish a baseline, then introduce a single new habit: standing up for 5 minutes every hour. This creates a clear, actionable starting point.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learner's goals documented in the 'learning_objectives' artifact, the logical next step is to translate those goals into a concrete and manageable 'study_plan'. This provides a clear roadmap and sets expectations for the initial phase of tutoring."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Reducing sedentary time and improving daily movement",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "Following the study plan, the tutor assigns the first task: tracking sedentary behavior for one week. The learner is given a simple logging template to record periods of sitting and any breaks taken in order to establish a clear baseline.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "The study plan requires establishing a baseline of the learner's current habits. This practice event puts the first step of the plan into action, creating a 'practice_record' of sedentary time which is necessary for future review and for measuring progress."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Reducing sedentary time and improving daily movement",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's week-long sedentary behavior log. They analyze the data together to identify key patterns, such as the total daily sitting time and the longest uninterrupted sedentary periods, which establishes a clear, data-driven baseline.",
+    "required_artifacts": [
+      "practice_record",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the tracking task in the previous 'practice' event, the logical next step is to 'review' the collected data ('practice_record'). This analysis is crucial for understanding the baseline, validating the approach in the 'study_plan', and generating actionable feedback to guide the next phase of habit-building."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Reducing sedentary time and improving daily movement",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "With the baseline established, the tutor teaches the learner practical strategies for implementing the new habit of taking a 5-minute standing break every hour. This includes setting effective reminders, 'habit stacking' (linking the new habit to an existing one), and ideas for simple activities to do during the break.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the review of the baseline data, the next step in the study plan is to introduce a new habit. This lesson provides the learner with the necessary strategies and knowledge to successfully implement the hourly standing break, creating reusable teaching notes for future reference."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Reducing sedentary time and improving daily movement",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "The learner is assigned to implement the new habit for one week: taking a 5-minute standing break every hour. They will use a simple log to track their success and any challenges encountered, applying the strategies from the recent lesson.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on implementation strategies, the next logical step is to put that knowledge into practice. This event operationalizes the current phase of the 'study_plan' by having the learner attempt the new habit, which will generate a new 'practice_record' for review."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Reducing sedentary time and improving daily movement",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor and learner review the log from the week of practicing hourly standing breaks. They discuss which strategies were successful, identify barriers like forgetting during focused work, and celebrate the progress made toward the goal.",
+    "required_artifacts": [
+      "practice_record",
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner practiced the new habit for a week in the previous event, the necessary next step is to review the 'practice_record'. This allows the tutor to provide targeted feedback, assess the effectiveness of the strategies from the 'teaching_notes', and determine if the 'study_plan' needs adjustment."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Reducing sedentary time and improving daily movement",
+    "subject": "Health",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback that the learner forgets breaks during focused work, the tutor revises the teaching notes. They add more robust strategies for setting effective reminders, such as using physical cues (e.g., a full water bottle to be emptied) or specific apps that can override 'do not disturb' modes.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review identified a specific barrier to success. This event directly addresses that barrier by improving the reusable 'teaching_notes', ensuring the learner has better strategies before the next practice attempt. This is a key step in adapting the teaching material to the learner's needs."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Reducing sedentary time and improving daily movement",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "The tutor assigns another week of practice for the hourly standing break habit. The learner is instructed to specifically try the new reminder strategies (e.g., physical cues, specific apps) from the revised teaching notes to overcome the issue of forgetting during focused work.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the teaching notes were revised to address a specific barrier, the logical next step is to put the new strategies into practice. This creates a new practice cycle to see if the revised guidance is effective before moving on to a new milestone in the study plan."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Reducing sedentary time and improving daily movement",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor and learner review the second week of practice logs. They find that the new reminder strategies were highly effective, with the learner successfully taking breaks over 90% of the time, even during periods of deep focus. This marks a successful adoption of the first new habit.",
+    "required_artifacts": [
+      "practice_record",
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice round in the previous event (e_09), a review is necessary to evaluate the effectiveness of the revised strategies from the 'teaching_notes'. By analyzing the new 'practice_record', the tutor can determine if the learner has overcome the previously identified barrier and is ready to move to the next milestone in the 'study_plan'."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Reducing sedentary time and improving daily movement",
+    "subject": "Health",
+    "event_type": "plan_milestones",
+    "description": "Now that the hourly standing break is a stable habit, the tutor and learner update the study plan. They add a new milestone: incorporating a 15-minute walk during the lunch break at least three times a week to increase overall light physical activity.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "The previous review confirmed the learner successfully adopted the first habit. The next logical step is to revise the 'study_plan' to introduce a new milestone, building on this success and moving towards the broader goals defined in the 'learning_objectives'."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Reducing sedentary time and improving daily movement",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "To support the new milestone, the tutor provides a lesson on successfully incorporating a lunchtime walk. They discuss strategies for overcoming common barriers like time constraints, bad weather, and lack of motivation, and suggest ways to make the walk more enjoyable, such as listening to a podcast.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a new milestone added to the 'study_plan', the next logical step is a 'lesson' to prepare the learner for this new challenge. This provides them with the necessary strategies to successfully implement the lunchtime walk, and updates the 'teaching_notes' with this new information before they begin practice."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Reducing sedentary time and improving daily movement",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "The tutor assigns the practice task for the new milestone: incorporate a 15-minute walk during the lunch break at least three times over the next week. The learner will log their walks and any challenges encountered, applying the strategies from the recent lesson.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson (e_12) provided strategies for the new lunchtime walk milestone, the logical next step is to put that knowledge into practice. This event operationalizes the current 'study_plan' and will generate a new 'practice_record' to assess the learner's initial success in adopting the new habit."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Reducing sedentary time and improving daily movement",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor and learner review the practice log for the lunchtime walks. The learner managed two walks but missed the third due to a day of bad weather, a barrier they hadn't fully prepared for. They discuss the success of the two walks and brainstorm solutions for the weather issue.",
+    "required_artifacts": [
+      "practice_record",
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the first week of practicing the new lunchtime walk habit (e_13), the necessary next step is to review the 'practice_record'. This allows the tutor to evaluate initial progress against the 'study_plan', identify new barriers like bad weather, and generate a 'feedback_summary' to guide the next steps."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Reducing sedentary time and improving daily movement",
+    "subject": "Health",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback that bad weather prevented a lunchtime walk, the tutor revises the teaching notes. They add a dedicated section on 'Bad Weather Alternatives,' including ideas like a 15-minute indoor stair-walking circuit, a short bodyweight exercise routine, or using a standing desk for an extended period.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_14) identified a specific, unaddressed barrier. This event directly responds to the 'feedback_summary' by improving the 'teaching_notes' with actionable solutions. This ensures the learner is better equipped to handle this challenge before the next practice attempt."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Reducing sedentary time and improving daily movement",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "The learner is assigned to practice the lunchtime walk milestone again for one week. They are specifically instructed to use the newly added 'Bad Weather Alternatives' from the revised teaching notes if they encounter bad weather, aiming to complete their three sessions of activity.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the revision of the 'teaching_notes' to address the bad weather barrier, the next logical step is a new practice cycle. This allows the learner to apply the new strategies, and the resulting 'practice_record' will demonstrate whether the solutions are effective before moving forward."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Reducing sedentary time and improving daily movement",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "The tutor and learner review the practice log from the second week of attempting the lunchtime activity. The learner successfully completed three sessions, using an indoor stair-walking alternative on one rainy day, confirming the effectiveness of the revised strategies.",
+    "required_artifacts": [
+      "practice_record",
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice in the previous event, a 'review' is the necessary next step. By analyzing the 'practice_record', the tutor can validate the effectiveness of the revised 'teaching_notes' and determine if the learner has successfully mastered the milestone in the 'study_plan', which will inform whether to introduce a new goal or conclude the tutoring."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Reducing sedentary time and improving daily movement",
+    "subject": "Health",
+    "event_type": "end",
+    "description": "In a final session, the tutor and learner review the overall progress made. They agree that the initial goals have been successfully met, the new habits are well-established, and the learner feels confident in maintaining them independently, so they conclude the formal tutoring.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has successfully established two key habits that meet their initial learning objectives and has demonstrated the ability to overcome challenges using the provided strategies. With performance stable and the core goals achieved, the tutoring process has reached a natural and successful conclusion."
+  }
+]

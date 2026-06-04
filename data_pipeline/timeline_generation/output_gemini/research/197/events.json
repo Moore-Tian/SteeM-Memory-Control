@@ -1,0 +1,303 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Thematic annotation of literature",
+    "subject": "Humanities",
+    "event_type": "proposal",
+    "description": "The initial research questions for a new project on thematic annotation of literature were formulated. The primary goal is to develop a reliable annotation scheme for capturing thematic elements, and a high-level plan was drafted to guide the work.",
+    "required_artifacts": [
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "As the first formal step of the project, this event takes the initial, abstract idea (represented as a required 'research_goals' artifact) and refines it into a more concrete set of goals and an actionable 'research_plan'. This establishes the foundational artifacts from which all subsequent work will proceed."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Thematic annotation of literature",
+    "subject": "Humanities",
+    "event_type": "scheme_design",
+    "description": "Based on the initial research goals, a first draft of the thematic annotation scheme was developed. This draft defines a preliminary set of thematic labels and provides initial guidelines for how to apply them to literary texts.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the establishment of the 'research_plan' and 'research_goals' in the initial proposal (e_01), the logical next step is to design the core methodology. This event translates the high-level goals into a tangible 'method_scheme', which is a prerequisite for conducting any pilot studies."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Thematic annotation of literature",
+    "subject": "Humanities",
+    "event_type": "pilot_experiments",
+    "description": "A small-scale pilot study was conducted to test the initial annotation scheme. Two annotators applied the draft guidelines to a short story to identify ambiguities in the scheme and calculate a preliminary inter-annotator agreement score.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With a draft 'method_scheme' available from the previous step (e_02), a pilot experiment is the logical next action. This step is necessary to validate the scheme's practicality and clarity on a small scale before committing to a larger main experiment, generating initial 'experiment_results' for analysis."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Thematic annotation of literature",
+    "subject": "Humanities",
+    "event_type": "analysis",
+    "description": "The results from the pilot study were analyzed to assess the viability of the annotation scheme. The analysis revealed a low inter-annotator agreement score, primarily due to ambiguities in the definitions for abstract themes. This finding indicates that the current annotation guidelines require significant revision.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "research_plan"
+    ],
+    "reason": "After conducting a pilot experiment (e_03), the logical next step is to analyze the generated 'experiment_results'. The analysis revealed major flaws in the 'method_scheme', indicating that the initial plan is too optimistic. Therefore, the 'research_plan' is updated to include an additional cycle of scheme refinement and pilot testing."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Thematic annotation of literature",
+    "subject": "Humanities",
+    "event_type": "scheme_design",
+    "description": "In response to the low agreement in the pilot study, the annotation scheme was substantially revised. The definitions for abstract themes like 'alienation' and 'redemption' were clarified with concrete examples, and a decision tree was added to the guidelines to help annotators distinguish between closely related concepts.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous analysis (e_04) identified critical flaws in the initial 'method_scheme' and updated the 'research_plan' to include a revision cycle. This event executes that plan, using the pilot's 'experiment_results' as a guide to create a more robust 'method_scheme' before attempting another validation study."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Thematic annotation of literature",
+    "subject": "Humanities",
+    "event_type": "pilot_experiments",
+    "description": "A second pilot study was conducted using the revised annotation scheme. The same two annotators were asked to apply the new guidelines to a different short story of similar complexity to test if the improved definitions and decision tree resolved the previously identified ambiguities.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After substantially revising the 'method_scheme' in the previous step (e_05) to address the failures identified in the first pilot study, it is crucial to validate these changes. This second pilot experiment serves as a necessary check to ensure the revised scheme is effective before committing the resources required for the main experiments."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Thematic annotation of literature",
+    "subject": "Humanities",
+    "event_type": "analysis",
+    "description": "The results of the second pilot study were analyzed. This analysis showed a substantial improvement in inter-annotator agreement, confirming that the revised scheme is clearer and more robust. The scheme is now considered stable enough to proceed with the main experiments.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_plan",
+      "paper_paragraph"
+    ],
+    "reason": "After conducting a second pilot experiment (e_06), the logical next step is to analyze the 'experiment_results' to see if the revised 'method_scheme' was successful. Since the analysis is positive, the 'research_plan' is updated to schedule the main experiments, and the validated methodology is strong enough to begin drafting the corresponding 'paper_paragraph' for the final publication."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Thematic annotation of literature",
+    "subject": "Humanities",
+    "event_type": "main_experiments",
+    "description": "With the annotation scheme now validated, the main data collection phase begins. A team of annotators applies the final scheme to a large corpus of 20th-century novels. This large-scale effort is designed to generate the primary dataset for answering the project's research questions.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The successful analysis of the second pilot study (e_07) confirmed the robustness of the 'method_scheme' and updated the 'research_plan' to proceed. This event executes that plan by launching the 'main_experiments', a critical step to collect the large-scale data needed to address the core 'research_goals'."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Thematic annotation of literature",
+    "subject": "Humanities",
+    "event_type": "analysis",
+    "description": "A comprehensive analysis of the data from the main experiments was performed. This involved statistical analysis of theme frequencies across the literary corpus and an examination of how certain themes co-occur. The results confirmed the primary hypotheses about thematic patterns in 20th-century literature.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph",
+      "research_plan"
+    ],
+    "reason": "Following the completion of the large-scale 'main_experiments' (e_08), the essential next step is to analyze the collected 'experiment_results'. This analysis is necessary to extract the core findings of the project in relation to the 'research_goals'. The positive outcomes allow for the drafting of the results section ('paper_paragraph') and an update to the 'research_plan' to focus on the final writing and publication stages."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Thematic annotation of literature",
+    "subject": "Humanities",
+    "event_type": "writing",
+    "description": "The research team begins to synthesize the project's findings into a full paper draft. This involves integrating the previously written paragraphs on methodology and results, writing the introduction to frame the research questions, and drafting the discussion section to interpret the findings in the context of the broader field.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the main analysis complete (e_09) and the research plan now focused on publication, the logical next step is to consolidate all materials into a coherent paper. This 'writing' event uses the existing 'paper_paragraph' snippets, 'research_goals', and 'experiment_results' to construct a more complete manuscript, moving the project into its final dissemination phase."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Thematic annotation of literature",
+    "subject": "Humanities",
+    "event_type": "writing",
+    "description": "After an internal review of the full paper draft, the team determined the discussion section was weak. This event focuses on rewriting the discussion and conclusion to better connect the experimental findings to the initial research goals and the broader context of literary theory.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After assembling a full draft (e_10), the natural next step is internal review and revision. This is a critical iterative loop in the writing process. This targeted 'writing' event addresses a specific weakness identified in the draft—the connection between results and goals—to strengthen the paper's overall argument before it is sent for external review."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Thematic annotation of literature",
+    "subject": "Humanities",
+    "event_type": "proposal",
+    "description": "As the paper draft neared completion, the team decided to refine the primary research goals to better reflect the most significant findings from the analysis. The focus was narrowed to more precisely articulate the project's contribution regarding the evolution of specific themes in post-war literature, making the paper's core argument more impactful.",
+    "required_artifacts": [
+      "research_goals",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "The writing and revision process (e_10, e_11) often clarifies a project's core contribution. This late-stage 'proposal' event represents a common refinement where the initial `research_goals` are sharpened to align with the final `experiment_results`. This strengthens the paper's narrative, and the `research_plan` is updated to reflect the final task: revising the paper to match these new goals."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Thematic annotation of literature",
+    "subject": "Humanities",
+    "event_type": "writing",
+    "description": "The full paper draft was revised to align with the sharpened research goals. This involved rewriting the introduction to frame the more specific research questions and updating the conclusion to emphasize the project's key contributions to understanding post-war literature.",
+    "required_artifacts": [
+      "research_goals",
+      "paper_paragraph",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The previous event (e_12) refined the project's 'research_goals' and updated the 'research_plan' to incorporate this change. This 'writing' event executes that plan, using the new goals to revise the current 'paper_paragraph' (the full draft), thus creating a final, cohesive version of the manuscript for submission."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Thematic annotation of literature",
+    "subject": "Humanities",
+    "event_type": "analysis",
+    "description": "The paper was submitted to a top-tier journal and has now received feedback from peer reviewers. The team analyzed the reviewers' comments, which were largely positive but requested a new analysis comparing theme distribution in early vs. late 20th-century novels. A plan was formulated to address this feedback.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_plan"
+    ],
+    "reason": "After finalizing the paper draft (e_13), submission for peer review is the natural progression. This 'analysis' event represents the common and critical research step of processing reviewer feedback. The outcome is an updated 'research_plan' detailing the necessary revisions to address the reviewers' comments, which will guide the subsequent work needed to get the paper published."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Thematic annotation of literature",
+    "subject": "Humanities",
+    "event_type": "analysis",
+    "description": "Following the updated research plan, the team performs the additional analysis requested by the journal reviewers. The main experiment dataset is segmented into two periods (e.g., pre-1950 and post-1950), and a comparative statistical analysis is run to identify significant shifts in thematic prevalence over time.",
+    "required_artifacts": [
+      "research_plan",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The previous event (e_14) analyzed reviewer feedback and updated the 'research_plan' with a new task. This 'analysis' event directly executes that plan, using the existing 'experiment_results' to generate the specific comparative findings requested by the reviewers. This is a crucial step in preparing the revised manuscript for resubmission."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Thematic annotation of literature",
+    "subject": "Humanities",
+    "event_type": "writing",
+    "description": "The team integrates the new comparative analysis into the paper. This involves adding a new subsection to the results, creating new tables and figures to display the findings, and revising the discussion and conclusion to reflect the added evidence about thematic shifts over time.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After generating the new analysis requested by reviewers (e_15), the necessary next step is to incorporate these findings into the manuscript. This 'writing' event updates the 'paper_paragraph' to create a revised version of the paper that directly addresses the reviewer feedback, preparing it for resubmission."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Thematic annotation of literature",
+    "subject": "Humanities",
+    "event_type": "end",
+    "description": "The revised manuscript, which incorporates the additional analyses and addresses all peer reviewer comments, has been resubmitted to the journal. Following a final check, the paper was accepted for publication, marking the successful completion of the research project.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has successfully navigated the full research lifecycle, from initial proposal to methodological refinement, data collection, and multiple rounds of revision based on peer feedback. With the final paper accepted for publication, the research goals have been met and the project's findings are ready for dissemination, concluding the timeline."
+  }
+]

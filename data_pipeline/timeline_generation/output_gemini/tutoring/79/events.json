@@ -1,0 +1,306 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Data validation rules and simple quality checks",
+    "subject": "DataScience",
+    "event_type": "objective_clarification",
+    "description": "The tutor meets with the learner to discuss their goals for learning about data validation. They establish that the learner, a junior analyst, wants to be able to write basic data quality checks in Python for their team's data pipelines. The initial focus will be on simple checks like nulls, uniqueness, and value ranges.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first session, so the primary goal is to understand the learner's background, needs, and specific learning objectives. This initial diagnostic step is crucial for creating a relevant and effective study plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Data validation rules and simple quality checks",
+    "subject": "DataScience",
+    "event_type": "plan_milestones",
+    "description": "The tutor and learner collaboratively create a study plan based on the clarified objectives. They decide to structure the learning into three main milestones: understanding foundational concepts, writing functions for specific checks (nulls, uniqueness, ranges), and finally, applying these functions to a small, realistic dataset.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learning objectives clearly defined in the previous session, the next logical step is to create a structured plan to achieve them. This event translates the high-level goals into a concrete roadmap, ensuring both tutor and learner are aligned on the path forward."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Data validation rules and simple quality checks",
+    "subject": "DataScience",
+    "event_type": "lesson",
+    "description": "The tutor begins the first milestone of the study plan by teaching foundational concepts. This includes defining key data quality dimensions like completeness (checking for nulls), uniqueness (checking for duplicates), and validity (checking for value ranges), and explaining their importance in a data pipeline.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the study plan created in the previous event, the first milestone is to cover foundational concepts. This lesson directly addresses that milestone, introducing the core ideas of data validation and creating the first set of reusable teaching notes for the topic."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Data validation rules and simple quality checks",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "The tutor provides a small, sample dataset and asks the learner to write Python code to perform basic checks. The learner is tasked with writing a function to count null values in a column and another to identify any duplicate rows, directly applying the concepts from the previous lesson.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson on foundational concepts, the natural next step is to apply that knowledge. This practice session provides a hands-on exercise that directly corresponds to the first milestone in the study plan and the content of the recent teaching notes, allowing the learner to solidify their understanding before moving forward."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Data validation rules and simple quality checks",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's Python code from the practice session. They analyze the functions for counting nulls and identifying duplicates, checking for correctness, logic errors, and clarity. The tutor prepares specific feedback on the learner's implementation.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following a practice session, the most critical next step is to review the learner's work. This event uses the 'practice_record' to assess understanding and identify misconceptions, generating a 'feedback_summary' that will guide the learner in correcting their mistakes and solidifying their grasp of the concepts from the 'teaching_notes'."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Data validation rules and simple quality checks",
+    "subject": "DataScience",
+    "event_type": "materials_revision",
+    "description": "The tutor reviews the feedback summary and identifies that the learner struggled with the syntax for finding duplicates. To address this, the tutor revises the teaching notes, adding a more detailed code example and a note on common pitfalls.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The feedback from the previous review indicated a gap in the teaching materials. This revision directly addresses that gap, proactively improving the resources before the learner attempts the practice again, which reinforces the concept more effectively."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Data validation rules and simple quality checks",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "The learner attempts the practice exercise again, using the feedback from the previous review and the revised teaching notes. They focus on correcting their implementation for identifying duplicate rows and ensuring their null-counting function is robust.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After receiving feedback and having the teaching materials improved, it's crucial for the learner to re-apply their knowledge. This second practice attempt allows them to correct previous mistakes, reinforces the concepts, and provides a clear signal of whether the targeted intervention was successful before moving on to new topics."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Data validation rules and simple quality checks",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's second practice attempt, focusing on the corrected code for identifying duplicates. The review confirms that the learner has successfully applied the feedback and now has a solid grasp of checking for nulls and duplicates.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the learner's second, revised practice attempt, a review is essential to validate their understanding and confirm the previous issues are resolved. This step closes the feedback loop and provides the green light to move on to the next milestone outlined in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Data validation rules and simple quality checks",
+    "subject": "DataScience",
+    "event_type": "lesson",
+    "description": "With null and duplicate checks mastered, the tutor moves to the next topic in the study plan: value range validation. The lesson covers how to write a Python function that checks if all values in a numeric column fall within a predefined minimum and maximum.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review confirmed the learner's success on the first set of checks. Following the study plan, the next logical step is to introduce the next type of validation rule. This lesson progresses to the 'value range' check, building on the established foundation and expanding the learner's skillset as planned."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Data validation rules and simple quality checks",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "The tutor assigns a new practice task based on the most recent lesson. The learner is asked to write a Python function that checks if all values in a numeric column fall within a specified minimum and maximum range, applying the value range validation concept.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson on a new concept (value range validation), the immediate next step is for the learner to apply that knowledge through a targeted practice exercise. This solidifies their understanding and creates a new 'practice_record' that can be reviewed to assess their progress on the second milestone of the study plan."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Data validation rules and simple quality checks",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's code for the value range validation function. They assess the logic for correctness, check how it handles non-numeric values, and prepare feedback on code clarity and efficiency.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the practice task on value range validation in the previous event, the essential next step is to review their work. This allows the tutor to evaluate their understanding of the new concept, identify any issues in their implementation, and generate a feedback summary to guide their improvement."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Data validation rules and simple quality checks",
+    "subject": "DataScience",
+    "event_type": "materials_revision",
+    "description": "Based on the review, the tutor realizes the learner's code would fail if the column contained non-numeric data. The tutor updates the 'value range' section of the teaching notes to include a best-practice example on how to handle potential data type errors gracefully before performing the numeric comparison.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in the previous event highlighted a specific edge case (handling non-numeric data) that the learner's code did not account for. This event proactively improves the teaching materials to cover this gap, ensuring the learner understands robust error handling before they are asked to practice the concept again."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Data validation rules and simple quality checks",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "The learner is asked to re-attempt the value range validation exercise, this time incorporating the feedback about error handling. They use the revised teaching notes to build a more robust function that can gracefully handle non-numeric data within the column before checking the range.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a review identified a gap and the teaching materials were revised to fill it, the next logical step is for the learner to practice again. This allows them to apply the new, more robust technique for error handling and solidify their understanding before moving to the final milestone of the study plan."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Data validation rules and simple quality checks",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's revised code for the value range validation function. The review confirms that the learner has successfully implemented the error handling for non-numeric data and now has a solid grasp of the concept.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner re-attempted the practice in the previous event, a review is necessary to confirm they have successfully incorporated the feedback on error handling. This step validates their understanding of the second milestone and ensures they are ready to proceed to the final stage of the study plan."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Data validation rules and simple quality checks",
+    "subject": "DataScience",
+    "event_type": "lesson",
+    "description": "With individual checks mastered, the tutor introduces the final milestone from the study plan: applying all checks to a dataset. The lesson covers how to structure a script that orchestrates the null, duplicate, and range validation functions and produces a consolidated quality report.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review confirmed the learner has mastered all individual checks planned so far. Following the study plan, the next step is to integrate these skills. This lesson prepares the learner for the final milestone by teaching them how to combine their individual functions into a comprehensive script."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Data validation rules and simple quality checks",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "The tutor assigns the final practice task, which integrates all previously learned concepts. The learner is tasked with writing a single Python script that applies the null, duplicate, and range validation functions to a new dataset and generates a consolidated quality report, as outlined in the final milestone of the study plan.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on orchestrating multiple checks, this practice session is the capstone exercise for the tutoring engagement. It allows the learner to apply all their skills in an integrated manner, directly addressing the final milestone in the study plan and providing a comprehensive demonstration of their abilities for final review."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Data validation rules and simple quality checks",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor performs a final review of the learner's integrated script. They check if the null, duplicate, and range validation functions are correctly orchestrated and if the consolidated quality report is clear and accurate, serving as a final assessment.",
+    "required_artifacts": [
+      "practice_record",
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the final, integrated practice task, a comprehensive review is essential. This step assesses their ability to combine all learned skills, validates that they have met the final milestone of the study plan, and provides a conclusive summary of their performance."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Data validation rules and simple quality checks",
+    "subject": "DataScience",
+    "event_type": "end",
+    "description": "The tutor and learner have a final session to review the overall progress. The tutor confirms that the learner has successfully met all initial learning objectives, having demonstrated the ability to write and orchestrate null, duplicate, and range validation checks. The engagement for this topic is concluded.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has successfully completed the final capstone practice task, and the final review confirmed their mastery of all concepts outlined in the study plan. With all learning objectives met, the tutoring process for this topic has reached its natural and successful conclusion."
+  }
+]

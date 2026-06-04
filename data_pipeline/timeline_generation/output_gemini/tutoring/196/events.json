@@ -1,0 +1,321 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Ecology and stability in ecosystems",
+    "subject": "Biology",
+    "event_type": "objective_clarification",
+    "description": "Initial meeting with a high school student to discuss their learning goals for ecology. The student aims to understand ecosystem stability and human impacts to improve their course grade.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first tutoring session, so the primary goal is to establish the student's learning objectives and current understanding. This information is foundational for creating a tailored study plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Ecology and stability in ecosystems",
+    "subject": "Biology",
+    "event_type": "plan_milestones",
+    "description": "Based on the learning objectives, the tutor and student outline a study plan. The plan sequences topics, starting with foundational concepts like trophic levels and biodiversity, before moving to ecosystem stability and human impacts.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learning objectives defined in the previous session (e_01), creating a structured study plan is the logical next step. This provides a clear roadmap for future lessons and ensures the tutoring is aligned with the student's goals."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Ecology and stability in ecosystems",
+    "subject": "Biology",
+    "event_type": "lesson",
+    "description": "The tutor delivers the first lesson as per the study plan, focusing on foundational concepts. The lesson covers trophic levels, energy flow in food chains, and the 10% rule, using diagrams and examples.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the established study plan (e_02), the first lesson addresses a foundational topic. This begins the instructional phase of the tutoring, building the necessary knowledge for more complex concepts later."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Ecology and stability in ecosystems",
+    "subject": "Biology",
+    "event_type": "practice",
+    "description": "The student is given a set of practice problems to apply the concepts from the first lesson. The problems involve constructing a food web from a list of organisms and calculating the energy available at each trophic level.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on foundational concepts (e_03), this practice session is designed to check for understanding and give the student hands-on application. The recorded attempts will provide concrete data for the tutor to review and give targeted feedback."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Ecology and stability in ecosystems",
+    "subject": "Biology",
+    "event_type": "review",
+    "description": "The tutor analyzes the student's completed practice problems from the practice record. The review highlights a consistent error in calculating energy transfer between trophic levels and a minor misunderstanding of decomposers' roles.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the student completed their practice (e_04), reviewing their work is essential to identify specific areas of difficulty. This review allows the tutor to create actionable feedback, ensuring misconceptions are addressed before introducing new material."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Ecology and stability in ecosystems",
+    "subject": "Biology",
+    "event_type": "materials_revision",
+    "description": "The tutor revises the teaching notes based on the feedback from the last session. They add a more detailed, step-by-step example for calculating energy transfer and include a clearer diagram illustrating the specific role of decomposers.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in e_05 identified specific, recurring errors in the student's practice. Revising the teaching materials to explicitly address these points of confusion is a proactive step to correct misconceptions before moving on to new topics or further practice."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Ecology and stability in ecosystems",
+    "subject": "Biology",
+    "event_type": "practice",
+    "description": "The tutor assigns a new, focused set of practice problems based on the feedback from the previous review. The exercises specifically target energy transfer calculations and the role of decomposers, allowing the student to apply the corrections and use the revised teaching notes.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the review (e_05) and materials revision (e_06) that addressed specific errors, this targeted practice session is necessary to confirm the student has corrected their misconceptions. It solidifies their understanding of the foundational concepts before proceeding with the study plan."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Ecology and stability in ecosystems",
+    "subject": "Biology",
+    "event_type": "review",
+    "description": "The tutor reviews the student's second set of practice problems, checking specifically for improvement on energy transfer calculations and the role of decomposers. The student's work shows significant improvement, indicating the revised notes and targeted practice were effective.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the targeted practice in e_07, a review is critical to assess whether the student's previous misconceptions have been corrected. This step validates the remediation efforts and confirms the student is ready to proceed to the next topic outlined in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Ecology and stability in ecosystems",
+    "subject": "Biology",
+    "event_type": "lesson",
+    "description": "With the foundational concepts mastered, the tutor proceeds to the next topic in the study plan: biodiversity. The lesson defines biodiversity, explains its importance for ecosystem resilience, and introduces concepts like species richness and evenness.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_08) confirmed the student's understanding of energy flow, making it appropriate to advance to the next module in the study plan (e_02). This lesson on biodiversity builds upon the foundational concepts and is a prerequisite for discussing ecosystem stability."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Ecology and stability in ecosystems",
+    "subject": "Biology",
+    "event_type": "practice",
+    "description": "To solidify understanding of biodiversity, the tutor provides practice questions. The student is asked to compare two ecosystems, calculate their species richness and evenness, and explain which one is likely more resilient to environmental changes.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on biodiversity (e_09), a practice session is necessary for the student to apply the new concepts. This exercise will test their ability to use measures like richness and evenness and connect them to the broader concept of ecosystem stability, creating a record for the next review."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Ecology and stability in ecosystems",
+    "subject": "Biology",
+    "event_type": "review",
+    "description": "The tutor reviews the student's work on the biodiversity practice problems. The analysis shows the student correctly calculates richness and evenness but struggles to articulate the connection between higher biodiversity and increased ecosystem resilience.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on biodiversity (e_10), this review is essential to evaluate the student's grasp of the new concepts. It provides an opportunity to pinpoint specific misunderstandings—in this case, the 'why' behind biodiversity's importance—before proceeding to more complex topics like ecosystem stability."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Ecology and stability in ecosystems",
+    "subject": "Biology",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback from the last review, the tutor updates the teaching notes on biodiversity. They add a new section with a case study comparing a diverse coral reef to a bleached one, explicitly explaining how species diversity provides resilience against environmental stressors.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_11) identified that the student understood the 'what' of biodiversity but not the 'why' of its connection to resilience. Revising the teaching materials to add a concrete example directly addresses this conceptual gap, strengthening the resources before asking the student to practice again."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Ecology and stability in ecosystems",
+    "subject": "Biology",
+    "event_type": "practice",
+    "description": "The tutor assigns a new practice task using the revised teaching notes. The student is asked to write a short explanation using the new coral reef case study to illustrate how higher biodiversity contributes to ecosystem resilience.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials (e_12) to address a specific conceptual gap identified in the last review (e_11), this targeted practice is the next logical step. It provides an immediate opportunity for the student to apply the new, clearer explanation and allows the tutor to assess if the remediation was successful."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Ecology and stability in ecosystems",
+    "subject": "Biology",
+    "event_type": "review",
+    "description": "The tutor reviews the student's explanation from the targeted practice on biodiversity and resilience. The student's response now clearly articulates the connection, successfully using the coral reef case study to support their argument.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the targeted practice in e_13, this review is essential to confirm that the student has overcome their previous difficulty in connecting biodiversity to resilience. This step verifies the effectiveness of the revised materials and practice, ensuring the student is prepared to move on to the next topic."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Ecology and stability in ecosystems",
+    "subject": "Biology",
+    "event_type": "lesson",
+    "description": "Building on the confirmed understanding of biodiversity, the tutor delivers a lesson on ecosystem stability and the effects of human impacts. The lesson defines concepts like resistance and resilience and introduces major anthropogenic pressures like habitat loss and pollution.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_14) confirmed the student's mastery of prerequisite concepts. Following the study plan (e_02), it is now appropriate to advance to the core topic of ecosystem stability and human impacts, which directly addresses the student's primary learning objective."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Ecology and stability in ecosystems",
+    "subject": "Biology",
+    "event_type": "practice",
+    "description": "The tutor assigns a comprehensive practice task requiring the student to synthesize all learned concepts. The student must analyze a case study of a specific human impact, like deforestation, and predict its effects on an ecosystem's stability, biodiversity, and trophic structure.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on the core topics of stability and human impacts (e_15), this practice session is essential for assessing the student's ability to apply and integrate all concepts. This task directly addresses the primary learning objective and will create a record of the student's analytical skills for the next review."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Ecology and stability in ecosystems",
+    "subject": "Biology",
+    "event_type": "review",
+    "description": "The tutor reviews the student's comprehensive case study analysis. The review focuses on how well the student synthesized concepts, linking human impacts to specific effects on trophic structure, biodiversity, and overall ecosystem stability.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the comprehensive practice session (e_16), a final review is essential to assess the student's ability to integrate all the topics covered. This step provides a holistic evaluation of their understanding and determines if the core learning objectives have been successfully met."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Ecology and stability in ecosystems",
+    "subject": "Biology",
+    "event_type": "materials_revision",
+    "description": "The tutor performs a final review of all teaching materials and the study plan. Based on the overall success and the final feedback summary, they refine the sequence of topics in the study plan and polish the examples in the teaching notes for future use.",
+    "required_artifacts": [
+      "feedback_summary",
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "reason": "The final review (e_17) provided a comprehensive assessment of the student's journey. This event represents a final consolidation step, where the tutor incorporates all lessons learned from the engagement to improve the reusability and effectiveness of the study plan and teaching notes for future students."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Ecology and stability in ecosystems",
+    "subject": "Biology",
+    "event_type": "end",
+    "description": "Final meeting to confirm that the student's learning objectives have been met and to formally conclude the tutoring engagement. The tutor and student briefly review the progress made and acknowledge the successful completion of the study plan.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The student has demonstrated mastery of the key topics, including the final synthesis task, as confirmed in the last review (e_17). With the learning objectives met and all materials refined (e_18), the tutoring process has reached its logical and successful conclusion."
+  }
+]

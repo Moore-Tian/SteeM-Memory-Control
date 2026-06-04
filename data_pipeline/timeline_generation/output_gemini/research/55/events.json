@@ -1,0 +1,285 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Story generation evaluation metrics",
+    "subject": "CS-NLP",
+    "event_type": "proposal",
+    "description": "The project begins by formalizing a vague, pre-existing idea into a concrete proposal. The primary goal is to develop new automated metrics for evaluating story generation that correlate better with human judgments on aspects like coherence and creativity.",
+    "required_artifacts": [
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This initial event conceptually 'requires' a nascent, unrecorded version of the research goals to produce a more refined, explicit version, thereby satisfying the data schema. This first formal step establishes the official research goals and a high-level plan, setting the foundation for the project."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Story generation evaluation metrics",
+    "subject": "CS-NLP",
+    "event_type": "scheme_design",
+    "description": "Based on the defined goals, the team designs an initial methodological scheme. The proposed metric will use a large language model (LLM) to score generated stories on coherence and creativity dimensions, based on a carefully designed set of prompts and a scoring rubric.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the high-level proposal in e_01, the next logical step is to design the concrete method for achieving the research goals. This event translates the abstract goals into a specific, testable scheme, creating the initial 'method_scheme' artifact necessary for future experiments."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Story generation evaluation metrics",
+    "subject": "CS-NLP",
+    "event_type": "pilot_experiments",
+    "description": "A small-scale pilot experiment is conducted to test the feasibility of the proposed LLM-based evaluation metric. The team scores a handful of generated stories using the designed prompts and compares the automated scores against a few human annotations to check for initial correlation and identify any obvious flaws in the method.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With an initial 'method_scheme' defined in e_02, a pilot experiment is the logical next step to sanity-check the approach before committing to a larger study. This generates the first 'experiment_results' artifact, providing crucial early feedback on the metric's viability."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Story generation evaluation metrics",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "The team analyzes the results from the pilot experiment. The analysis reveals a weak positive correlation between the LLM-based scores and human judgments, but also highlights significant inconsistencies where the LLM evaluator was highly sensitive to prompt phrasing and struggled to capture nuanced aspects of creativity.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_plan"
+    ],
+    "reason": "After conducting the pilot experiment in e_03, a formal analysis of the 'experiment_results' is the necessary next step to evaluate the method's performance against the original 'research_goals'. This analysis provides critical insights into the current scheme's weaknesses, leading to a revision of the 'research_plan' to include a redesign phase instead of proceeding directly to main experiments."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Story generation evaluation metrics",
+    "subject": "CS-NLP",
+    "event_type": "scheme_design",
+    "description": "In response to the pilot analysis, the team revises the evaluation scheme. They redesign the LLM prompts to be more robust, incorporating chain-of-thought reasoning to guide the model's evaluation process and developing a more structured, multi-faceted rubric to better capture creativity and coherence.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous analysis (e_04) of pilot results revealed significant flaws in the initial method. Following the updated research plan, it is necessary to go back and redesign the 'method_scheme' to address the identified issues (prompt sensitivity, poor creativity capture) before investing in larger-scale experiments."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Story generation evaluation metrics",
+    "subject": "CS-NLP",
+    "event_type": "pilot_experiments",
+    "description": "A second round of pilot experiments is conducted using the revised, more robust evaluation scheme. The team tests the new chain-of-thought prompts and multi-faceted rubric on a small set of stories, aiming to directly assess whether the changes have improved correlation with human judgments and reduced scoring inconsistencies.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After redesigning the method in e_05 to address the flaws found in the initial pilot (e_04), it is crucial to run another pilot experiment. This step validates whether the new 'method_scheme' is a significant improvement before committing to large-scale 'main_experiments'."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Story generation evaluation metrics",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "The team analyzes results from the second pilot experiment. The analysis shows a significant improvement: the revised metric with chain-of-thought prompting demonstrates a much stronger correlation with human judgments on both coherence and creativity, and the scoring is far more consistent.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_plan",
+      "paper_paragraph"
+    ],
+    "reason": "After conducting a second pilot (e_06) with a revised method, a formal analysis is the necessary next step to validate the improvements. The positive outcome confirms the new method's viability, solidifies the research plan to proceed to main experiments, and provides the first concrete results to be drafted for the paper."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Story generation evaluation metrics",
+    "subject": "CS-NLP",
+    "event_type": "main_experiments",
+    "description": "With the revised method validated, the team launches the main experiments. They apply the LLM-based metric to a large dataset of generated stories from multiple models and collect a comprehensive set of human judgments on the same stories to enable a robust, large-scale correlation analysis.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The successful analysis of the second pilot experiment (e_07) confirmed the viability of the revised 'method_scheme'. As per the updated 'research_plan', the logical next step is to scale up from pilot to main experiments to gather definitive, statistically significant data required to address the primary 'research_goals'."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Story generation evaluation metrics",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "The team performs a comprehensive statistical analysis on the data from the main experiments. This includes calculating correlation coefficients between the metric's scores and human ratings, comparing the new metric against established baselines (e.g., perplexity, ROUGE), and analyzing the metric's performance on different story generation models.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the completion of the main experiments in e_08, a thorough analysis of the large-scale 'experiment_results' is the essential next step. This analysis will quantitatively evaluate the metric's performance against the project's 'research_goals' and produce the key findings that will form the results section of the paper."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Story generation evaluation metrics",
+    "subject": "CS-NLP",
+    "event_type": "writing",
+    "description": "The team begins drafting the full paper, focusing on the 'Methodology' and 'Results' sections. They synthesize the detailed 'method_scheme' and the findings from the main analysis into a coherent narrative, expanding upon the initial 'paper_paragraph' snippets.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the comprehensive analysis of the main experiments completed in e_09, the core findings are now established. The most logical next step is to formally document these results by drafting the main sections of the research paper, transforming the structured analysis and method design into a compelling written argument."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Story generation evaluation metrics",
+    "subject": "CS-NLP",
+    "event_type": "main_experiments",
+    "description": "While drafting the paper, the team identifies a potential weakness in their claims: they haven't explicitly proven the importance of the chain-of-thought component. They decide to run an ablation study, re-evaluating the main experiment's dataset with an alternative metric where the chain-of-thought prompting is disabled, to isolate its specific contribution.",
+    "required_artifacts": [
+      "method_scheme",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The process of writing (e_10) often reveals gaps in the experimental evidence needed to support strong claims. Running an ablation study is a crucial step to preemptively address reviewer feedback and strengthen the paper's argument by providing direct evidence for the importance of a key component of the 'method_scheme'."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Story generation evaluation metrics",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "The team analyzes the results of the ablation study. The analysis confirms that the metric's performance drops significantly without the chain-of-thought component, providing strong quantitative evidence for its importance in achieving high correlation with human judgments.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After running the targeted ablation study in e_11, the logical and necessary next step is to analyze the resulting data. This analysis provides the crucial evidence needed to justify the methodological choices described in the paper and strengthens the overall contribution of the work, directly producing new content for the paper's 'Results' section."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Story generation evaluation metrics",
+    "subject": "CS-NLP",
+    "event_type": "writing",
+    "description": "With the ablation study analysis complete, the team integrates these new findings into the paper draft. They update the 'Results' section to include the ablation results and refine the 'Introduction' and 'Conclusion' to strengthen the paper's overall narrative and highlight the key contributions.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The successful analysis of the ablation study (e_12) provides the final key result for the paper. The logical next step is to incorporate this evidence into the manuscript, moving from piecemeal 'paper_paragraph' snippets towards a more complete and polished draft."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Story generation evaluation metrics",
+    "subject": "CS-NLP",
+    "event_type": "proposal",
+    "description": "After reviewing the near-complete paper draft, the team decides to refine the project's positioning. They update the research goals to emphasize their main contribution not as just a new metric, but as a generalizable methodology for developing and validating LLM-based evaluators using techniques like chain-of-thought prompting and targeted ablation studies.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "With the main results and a full draft in hand (e_13), it's common to refine the high-level narrative. The experimental journey, particularly the ablation study (e_11, e_12), revealed that the methodological insights are a key contribution. This event updates the 'research_goals' to reflect the project's strongest findings, ensuring the final paper is framed for maximum impact."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Story generation evaluation metrics",
+    "subject": "CS-NLP",
+    "event_type": "writing",
+    "description": "The team revises the full paper draft to align with the newly broadened research goals. This involves rewriting the Introduction and Conclusion to frame the work as a generalizable methodology for creating LLM evaluators, rather than just presenting a single new metric.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After refining the project's positioning in e_14, the next logical step is to implement these changes in the actual manuscript. This 'writing' event ensures the paper's narrative is consistent with the updated 'research_goals', making the final argument more cohesive and impactful before submission."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Story generation evaluation metrics",
+    "subject": "CS-NLP",
+    "event_type": "end",
+    "description": "The team completes the final revisions of the paper. With the methodology validated, the results (including the ablation study) fully analyzed and integrated, and the narrative aligned with the refined research goals, the manuscript is deemed ready for submission to a top-tier NLP conference.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached a natural conclusion. The research loop is complete: the method is stable and validated (e_05, e_07), the main experiments and a crucial ablation study are finished (e_08, e_11), the analysis is conclusive (e_12), and the paper has been written and revised to reflect the work's strongest contributions (e_15). The project's goals have been met, marking a suitable end point."
+  }
+]

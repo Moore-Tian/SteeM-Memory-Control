@@ -1,0 +1,297 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Large-scale logging infrastructure",
+    "subject": "CS-Systems",
+    "event_type": "proposal",
+    "description": "Initial proposal to address scalability and cost issues in large-scale logging infrastructure. The project's primary goals are to design a system that reduces log volume by 90% while preserving essential data for debugging. A high-level plan including pilot and main experiments was drafted.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the inaugural event of the research project. It establishes the foundational research goals and a high-level plan, which will guide the subsequent design and experimentation phases. As the first step, it requires no prior artifacts."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Large-scale logging infrastructure",
+    "subject": "CS-Systems",
+    "event_type": "scheme_design",
+    "description": "Based on the initial proposal, a detailed methodological scheme is designed. The scheme proposes a two-stage process: first, an adaptive sampling mechanism to filter redundant logs at the source, and second, a real-time log clustering engine to aggregate similar log messages at the ingestion point.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the establishment of high-level goals and a plan in the initial proposal (e_01), the next logical step is to design a concrete technical method. This event translates the abstract goals into a specific `method_scheme` that can be implemented and tested in subsequent pilot experiments."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Large-scale logging infrastructure",
+    "subject": "CS-Systems",
+    "event_type": "pilot_experiments",
+    "description": "A small-scale pilot experiment is conducted to validate the designed scheme. A prototype of the sampling and clustering mechanisms is implemented and tested on a captured log stream from a single service. The initial results are promising, showing a significant reduction in log volume, but also highlighting high CPU usage for the real-time clustering component.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With a detailed `method_scheme` designed in e_02, the next logical step is to conduct a pilot study. This allows for a sanity check of the proposed approach's feasibility and provides initial performance data (`experiment_results`) before committing to a full-scale implementation and evaluation, revealing potential bottlenecks like CPU usage."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Large-scale logging infrastructure",
+    "subject": "CS-Systems",
+    "event_type": "analysis",
+    "description": "A detailed analysis of the pilot experiment results is performed. The analysis confirms that the adaptive sampling meets the volume reduction targets, but performance profiling reveals that the real-time clustering component's high CPU usage stems from its complex distance calculations on high-dimensional log templates. The trade-off between clustering accuracy and CPU cost is quantified, concluding that the current algorithm is not viable for production scale.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The pilot experiment in e_03 produced promising but problematic results. Before redesigning the method or running more experiments, a formal analysis is crucial to precisely understand the root cause of the high CPU usage. This event provides a detailed diagnosis of the problem, which will inform the necessary revisions to the `method_scheme` in the next step."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Large-scale logging infrastructure",
+    "subject": "CS-Systems",
+    "event_type": "scheme_design",
+    "description": "Based on the analysis of the pilot experiment's high CPU usage, the method scheme is revised. The complex real-time clustering algorithm is replaced with a more computationally efficient approach using Locality-Sensitive Hashing (LSH) to group similar log templates. This new design prioritizes performance while accepting a small, controlled trade-off in clustering precision.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis in e_04 concluded that the current clustering algorithm in the `method_scheme` is not viable. The logical next step is to return to the design phase to address this critical flaw. This event uses the insights from the pilot `experiment_results` to create a revised, more performant `method_scheme` before committing to further experiments."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Large-scale logging infrastructure",
+    "subject": "CS-Systems",
+    "event_type": "pilot_experiments",
+    "description": "A second round of pilot experiments is run using the revised method scheme based on Locality-Sensitive Hashing (LSH). The prototype is tested on the same log stream as before. The results show that the new clustering approach successfully keeps CPU usage within acceptable limits while achieving a log volume reduction comparable to the original design, validating the revised scheme's viability.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After the `method_scheme` was revised in e_05 to fix performance issues, a new pilot experiment is necessary to validate the fix. This event tests the new LSH-based approach, providing crucial `experiment_results` that confirm its efficiency and effectiveness before committing to larger-scale main experiments."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Large-scale logging infrastructure",
+    "subject": "CS-Systems",
+    "event_type": "writing",
+    "description": "With the methodology now validated by the successful second pilot experiment, an initial draft of the paper's 'Methodology' section is created. This draft describes the final two-stage design, including the adaptive sampling at the source and the efficient LSH-based clustering at the ingestion point.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The successful validation of the revised `method_scheme` in the second pilot experiment (e_06) provides a stable foundation for the project's methodology. It is a logical and efficient step to begin documenting this finalized method in a `paper_paragraph` while preparations for the main experiments are underway."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Large-scale logging infrastructure",
+    "subject": "CS-Systems",
+    "event_type": "main_experiments",
+    "description": "With the methodology validated by pilot studies, the main experiments are launched. The system is deployed across a large cluster of 20 microservices with diverse logging patterns to evaluate its performance and effectiveness at scale. Data on CPU usage, memory footprint, and log reduction rates is collected over a one-week period to capture variations in workload.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the successful validation of the revised `method_scheme` in the second pilot experiment (e_06), the project is ready to move beyond small-scale testing. The logical next step is to conduct the main experiments as outlined in the `research_plan` to gather comprehensive performance data at scale, which will form the basis for the final evaluation."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Large-scale logging infrastructure",
+    "subject": "CS-Systems",
+    "event_type": "analysis",
+    "description": "A comprehensive analysis of the data from the main experiments is conducted. The results are aggregated across all 20 microservices, confirming that the system achieves an average log volume reduction of 92% with negligible performance overhead. The analysis also reveals that the effectiveness of the LSH clustering varies slightly depending on the structural complexity of the logs from different services.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After collecting a large volume of data from the main experiments in e_08, the immediate next step is to perform a detailed analysis. This event processes the raw data to evaluate the system's performance against the original `research_goals` and provides a comprehensive summary of the findings, which is essential before writing up the results section of the paper."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Large-scale logging infrastructure",
+    "subject": "CS-Systems",
+    "event_type": "writing",
+    "description": "Draft the 'Results' section of the paper, summarizing the key findings from the main experiments. This draft details the 92% average log reduction, the low performance overhead, and discusses the nuances of how the LSH clustering effectiveness varied with log complexity across different services.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the main experiment analysis (e_09) complete and confirming the system meets its `research_goals`, the next logical step is to document these findings. This event creates the 'Results' section of the paper, building upon the previously written methodology (`paper_paragraph`) and using the comprehensive `experiment_results` as the primary source."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Large-scale logging infrastructure",
+    "subject": "CS-Systems",
+    "event_type": "writing",
+    "description": "The team drafts the 'Discussion' section of the paper. This section interprets the main findings, explaining the significance of achieving high log reduction with low overhead. It also addresses the observed variance in clustering effectiveness as a limitation and an area for future work, and discusses the broader implications for designing cost-effective observability systems.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the 'Methodology' and 'Results' sections drafted (e_07, e_10), the next logical step is to interpret these findings. This writing event creates the 'Discussion' section, which contextualizes the `experiment_results` with respect to the original `research_goals`, addresses limitations noted during analysis (e_09), and discusses the broader impact of the work."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Large-scale logging infrastructure",
+    "subject": "CS-Systems",
+    "event_type": "proposal",
+    "description": "After drafting the discussion, the team decides the variance in LSH effectiveness across services is a significant finding that warrants a dedicated follow-up investigation. The research goals are revised to include a new question: 'How does log message structure and complexity influence the performance of LSH-based log clustering?' The research plan is updated to include a targeted experiment to answer this.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "The analysis in e_09 and subsequent discussion in e_11 revealed a key limitation regarding the variable performance of LSH clustering. Instead of simply listing this as future work, the team decides to address it directly. This event represents a realistic pivot, refining the `research_goals` and `research_plan` to incorporate a new investigation before finalizing the paper."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Large-scale logging infrastructure",
+    "subject": "CS-Systems",
+    "event_type": "scheme_design",
+    "description": "To address the new research question, a specific experimental scheme is designed. This involves creating a set of controlled log datasets with varying structural complexities (e.g., low vs. high number of unique log templates, simple vs. complex variable parameters). The existing LSH-based system will be run on these datasets to precisely measure how its clustering performance correlates with these complexity metrics.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "After revising the `research_goals` in e_12 to investigate the impact of log complexity, the next logical step is to design a controlled experiment to isolate this variable. This event refines the `method_scheme` to specify the setup for this new, targeted experiment, laying the groundwork for the subsequent experimental run."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Large-scale logging infrastructure",
+    "subject": "CS-Systems",
+    "event_type": "main_experiments",
+    "description": "The controlled experiment designed in the previous step is executed. The LSH-based system is run against the synthetic log datasets of varying structural complexity. Performance metrics, including clustering precision and recall, are carefully measured for each dataset to establish a clear correlation between log structure and system effectiveness.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing a targeted experimental scheme in e_13 to investigate the impact of log complexity, the logical next step is to execute this experiment. This event runs the controlled tests as per the revised `method_scheme` to generate new, specific `experiment_results` that will directly answer the new research question added in e_12."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Large-scale logging infrastructure",
+    "subject": "CS-Systems",
+    "event_type": "analysis",
+    "description": "The results from the controlled experiments are analyzed to quantify the relationship between log structural complexity and LSH clustering performance. The analysis confirms a strong negative correlation: as the number of unique log templates increases, clustering precision drops. A specific threshold is identified beyond which the system's effectiveness significantly degrades.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the execution of the controlled experiment in e_14, the immediate next step is to analyze the newly collected data. This analysis directly addresses the revised research goal from e_12 by processing the `experiment_results` to produce concrete findings about the impact of log complexity, which will then be used to refine the paper's discussion and conclusions."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Large-scale logging infrastructure",
+    "subject": "CS-Systems",
+    "event_type": "writing",
+    "description": "The paper draft is updated to incorporate the findings from the controlled experiment. The 'Results' section is expanded to include the quantitative analysis of LSH performance vs. log complexity, and the 'Discussion' section is revised to offer a more precise explanation of the system's operational boundaries and limitations.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The analysis in e_15 produced critical new findings that directly answer the revised research question from e_12. It is essential to integrate these results into the paper, updating the existing 'Results' and 'Discussion' sections to reflect this deeper understanding before finalizing the manuscript."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Large-scale logging infrastructure",
+    "subject": "CS-Systems",
+    "event_type": "end",
+    "description": "The research project is concluded. The primary goals have been met, the methodology has been validated and refined, comprehensive experiments have been conducted and analyzed, and the key findings have been written up and revised to include a deep dive into the system's limitations. The project has reached a natural completion point, with a strong set of results ready for final manuscript preparation and submission.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has completed a full research cycle, including a successful pivot (e_12) to investigate a key limitation found during initial analysis. The method is stable, results from multiple experiments are conclusive (e_15), and the paper draft is substantial and revised (e_16). With the core research questions answered and documented, the project is considered complete."
+  }
+]

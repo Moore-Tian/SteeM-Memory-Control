@@ -1,0 +1,371 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Systems of equations and constraints reasoning",
+    "subject": "Math",
+    "event_type": "objective_clarification",
+    "description": "This is the initial diagnostic session with the learner. We discussed their upcoming algebra test, their self-reported difficulties with word problems involving systems of equations, and their goal of being able to solve such problems confidently.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "As the first step in the tutoring process, it is essential to clarify the learner's goals, background, and specific needs. This session establishes the foundation for creating a targeted study plan and subsequent lessons."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Systems of equations and constraints reasoning",
+    "subject": "Math",
+    "event_type": "plan_milestones",
+    "description": "Based on the clarified objectives, a study plan is created. The plan outlines key milestones, starting with translating word problems into equations, followed by mastering substitution and elimination methods, and finally tackling more complex constraint-based problems.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learner's goals defined in the 'learning_objectives' artifact from the initial session, the next logical step is to create a structured study plan. This provides a clear roadmap for the tutoring process and sets expectations for both the tutor and the learner."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Systems of equations and constraints reasoning",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "This lesson focuses on the first milestone from the study plan: translating word problems into mathematical equations. Key concepts like identifying variables, constants, and relationships (e.g., 'sum', 'more than') are covered with simple examples, and teaching notes are created.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a study plan in place, the next logical step is to begin instruction. This lesson directly addresses the first milestone of the plan, which is translating verbal descriptions into algebraic equations, and creates reusable teaching notes for this core skill."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Systems of equations and constraints reasoning",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "The learner is given a worksheet with several word problems and asked to translate them into systems of linear equations. This exercise is designed to apply the concepts covered in the recent lesson on identifying variables and relationships, and the attempts are recorded.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson on a new concept, it is crucial to have the learner apply their knowledge through practice. This step directly corresponds to the first milestone in the study plan and generates a 'practice_record' that will be essential for assessing understanding and providing feedback."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Systems of equations and constraints reasoning",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's attempts from the practice session on translating word problems. Common errors, such as misinterpreting relationships or incorrectly assigning variables, are identified. A summary of these findings and corrective feedback is prepared.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following a practice session, a review is the logical next step to assess the learner's understanding and identify specific difficulties. By analyzing the 'practice_record', the tutor can create targeted, actionable feedback, which is essential for correcting misconceptions before moving forward."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Systems of equations and constraints reasoning",
+    "subject": "Math",
+    "event_type": "materials_revision",
+    "description": "Based on the review of the learner's practice, the teaching notes are revised. New examples are added to highlight the difference between phrases like 'more than' and 'is more than', and a checklist for defining variables is created to address the common errors identified.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The 'feedback_summary' from the previous review highlighted specific, recurring mistakes. Revising the 'teaching_notes' to explicitly address these common pitfalls makes the instructional material more effective and tailored to the learner's needs before they attempt another practice session."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Systems of equations and constraints reasoning",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "The learner attempts a new set of practice problems focused on translating word problems into equations. This second attempt is designed to reinforce the concepts after the targeted feedback and the revision of the teaching materials.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After identifying specific errors in the first practice round and revising the teaching notes to address them, the next logical step is a follow-up practice session. This allows the learner to apply the recent feedback and use the improved materials, providing a clear way to measure if the previous misconceptions have been resolved."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Systems of equations and constraints reasoning",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's second attempt at translating word problems. This review shows significant improvement, with most of the previously identified errors corrected. A new feedback summary is generated to affirm progress and address minor remaining inconsistencies.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the second targeted practice session, a review is critical to assess if the learner has successfully overcome their initial difficulties. By comparing the new 'practice_record' with the previous 'feedback_summary', the tutor can measure progress and decide whether to move on to the next topic in the study plan or provide further reinforcement."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Systems of equations and constraints reasoning",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "Since the last review confirmed the learner's strong progress in translating word problems, this lesson moves to the next milestone in the study plan. The tutor introduces the substitution method for solving systems of linear equations, updating the teaching notes with step-by-step instructions and examples.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The positive outcome of the previous review (e_08) indicates the learner is ready for the next topic. As outlined in the 'study_plan', this involves learning the methods for solving systems of equations, starting with the substitution method."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Systems of equations and constraints reasoning",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "The learner is assigned a set of pre-defined systems of linear equations to solve using the substitution method. This practice focuses purely on the algebraic procedure taught in the last lesson, and the learner's step-by-step solutions are recorded.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson on a new procedural skill like the substitution method, immediate practice is essential to build fluency and identify initial misunderstandings. This event directly applies the concepts from the previous lesson (e_09) and creates a record of the learner's performance for a subsequent review."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Systems of equations and constraints reasoning",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's work on solving systems of equations using the substitution method. The review focuses on identifying any algebraic mistakes or conceptual errors in applying the substitution steps, and a feedback summary is created.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on the substitution method (e_10), a review is necessary to assess the learner's procedural fluency and accuracy. Analyzing the 'practice_record' allows the tutor to provide specific, actionable feedback before moving to more complex problems or the next solution method."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Systems of equations and constraints reasoning",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "To integrate the learned skills, the learner is now given word problems that must first be translated into systems of equations and then solved using the substitution method. This practice session combines the two main skills covered so far, and the full solution process is recorded.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After practicing translation and substitution in isolation, this event combines them into a single, more complex task. This is a crucial step to build the learner's ability to handle word problems from start to finish, directly addressing the core objective of the tutoring."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Systems of equations and constraints reasoning",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's work from the integrated practice session. The analysis focuses on identifying whether errors occurred during the translation phase or the substitution phase, providing a clear picture of the learner's current strengths and weaknesses when handling a problem from start to finish.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a complex practice session combining multiple skills (e_12), a detailed review is the necessary next step. By analyzing the 'practice_record', the tutor can diagnose errors in the end-to-end process and generate a 'feedback_summary' to guide the next phase of instruction."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Systems of equations and constraints reasoning",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "Based on the successful integration of translation and substitution, the tutor introduces the next solution method from the study plan: elimination. The lesson covers the concept of adding or subtracting equations to eliminate one variable, and the teaching notes are updated with this new method.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_13) confirmed the learner can handle the end-to-end process with one method. Following the 'study_plan', the next logical step is to teach the second major solution technique, the elimination method, to broaden the learner's problem-solving toolkit."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Systems of equations and constraints reasoning",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "The learner is given a worksheet with pre-defined systems of linear equations and is asked to solve them using only the elimination method. This targeted practice is designed to build procedural fluency with the new technique taught in the previous lesson.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on the elimination method (e_14), immediate practice is necessary to solidify the learner's understanding and execution of the new procedure. This creates a 'practice_record' that will be used to assess mastery of the technique in isolation before applying it to more complex word problems."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Systems of equations and constraints reasoning",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's practice attempts at solving systems of equations using the elimination method. The review identifies any procedural errors, such as incorrect multiplication of equations or arithmetic mistakes during the elimination step, and a feedback summary is created.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on the elimination method (e_15), a review is the necessary next step to assess the learner's grasp of the new procedure. Analyzing the 'practice_record' allows the tutor to provide specific feedback before integrating this method with word problem translation."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Systems of equations and constraints reasoning",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "To integrate skills, the learner is now given word problems that they must first translate into systems of equations and then solve using the elimination method. This practice session combines the translation skill with the newly learned elimination procedure, mirroring the integrated practice done for the substitution method.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After practicing the elimination method in isolation and receiving feedback on procedural errors (e_16), the next logical step is to apply this method to the end-to-end task of solving word problems. This integrated practice is essential for assessing if the learner can combine their skills effectively before moving on to choosing between methods."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Systems of equations and constraints reasoning",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's work from the integrated practice session on elimination. The analysis checks for correctness in both the translation of the word problem into equations and the procedural application of the elimination method, with feedback prepared.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the integrated practice session combining translation and the elimination method (e_17), a review is necessary to assess the learner's end-to-end performance. This allows the tutor to identify specific points of failure and provide targeted feedback before moving to more advanced topics like choosing the most appropriate solution method."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Systems of equations and constraints reasoning",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "This lesson focuses on the strategic decision of choosing between the substitution and elimination methods. The tutor explains heuristics for selecting the most efficient method based on the structure of the equations (e.g., if a variable is already isolated or has a coefficient of 1), and updates the teaching notes with this new strategic guidance.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The learner has successfully practiced both substitution and elimination. The previous review (e_18) confirmed their ability to apply these methods. The next logical step is to teach them how to strategically choose the most efficient method, which is a higher-order skill essential for true mastery and a step towards tackling more complex problems as per the study plan."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Systems of equations and constraints reasoning",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "The learner is given a mixed set of word problems. For each problem, they must first translate it, then explicitly state which solution method (substitution or elimination) they will use and why, and finally solve it. This practice directly assesses the strategic decision-making taught in the previous lesson.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on choosing between substitution and elimination, this practice session is crucial for assessing the learner's ability to apply this new strategic skill. By requiring them to justify their choice of method, the exercise forces them to engage with the heuristics taught in the previous lesson (e_19) and creates a detailed record for review."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "Systems of equations and constraints reasoning",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's performance on the mixed practice set. The review assesses not only the accuracy of the final answers but also the learner's strategic choice of solution method and their justification for it, providing a comprehensive evaluation of their mastery.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session that required strategic decision-making (e_20), a comprehensive review is essential. This step evaluates the learner's ability to integrate all learned skills and make efficient choices, which is the final major objective before concluding the tutoring."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "tutoring",
+    "topic": "Systems of equations and constraints reasoning",
+    "subject": "Math",
+    "event_type": "end",
+    "description": "The learner has consistently demonstrated mastery in translating word problems, solving systems of equations using both substitution and elimination, and strategically choosing the most efficient method. The initial learning objectives have been met, and the tutor concludes the formal tutoring sessions.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has successfully progressed through all milestones, from foundational skills to integrated application and strategic decision-making. The last review confirmed comprehensive mastery, indicating that the tutoring goals have been achieved and the process can be concluded."
+  }
+]

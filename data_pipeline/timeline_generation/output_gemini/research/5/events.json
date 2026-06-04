@@ -1,0 +1,431 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Multi-agent communication protocols",
+    "subject": "CS-AI/ML",
+    "event_type": "proposal",
+    "description": "The project is initiated with a proposal to investigate emergent communication protocols in multi-agent systems. The primary goal is to explore how agents can learn to coordinate on tasks without a shared, predefined language. A high-level research plan is drafted to guide the initial stages.",
+    "required_artifacts": [
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the foundational step of the research project. It is necessary to first define the research goals and create a high-level plan before any specific methods can be designed or experiments can be run. This event formalizes the initial idea into a structured project."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Multi-agent communication protocols",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "Based on the research plan, an initial methodological scheme is designed. The team decides to use a cooperative navigation task in a grid-world environment. The agents will be based on a simple feed-forward neural network, and communication will be facilitated through a low-bandwidth, discrete message channel.",
+    "required_artifacts": [
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the high-level proposal, the next logical step is to translate the abstract goals into a concrete experimental design. This event establishes the initial technical approach and environment, which are necessary before any pilot experiments can be conducted."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Multi-agent communication protocols",
+    "subject": "CS-AI/ML",
+    "event_type": "pilot_experiments",
+    "description": "A small-scale pilot experiment is conducted to test the feasibility of the designed scheme. The goal is to verify that the agents can learn the navigation task and to observe if any rudimentary communication emerges. This initial run helps identify potential bugs and provides a first look at the learning dynamics.",
+    "required_artifacts": [
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With the initial method scheme designed, a pilot experiment is the logical next step. It serves as a sanity check to validate the experimental setup and ensure the core components work as expected before investing resources into full-scale experiments. The initial results will provide early feedback on the viability of the approach."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Multi-agent communication protocols",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The team analyzes the results from the pilot experiment. The findings indicate that while agents learn the basic navigation task, they fail to develop any meaningful communication protocol. The messages sent appear to be random noise, suggesting the current reward structure is insufficient to create a need for coordinated communication.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the pilot experiments (e_03), a formal analysis of the generated `experiment_results` is the necessary next step. This analysis evaluates the outcome of the pilot against the project's `research_goals` to determine the success of the initial method and guide the next phase of research, which will likely involve revising the experimental setup."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Multi-agent communication protocols",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "Following the analysis of the pilot results, the team revises the experimental scheme. To better incentivize communication, they modify the task by introducing asymmetric information: one agent is given the goal location, but only the other agent can navigate to it. This change is intended to create a clear need for the informed agent to communicate the goal to the navigator agent.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis in e_04 revealed that the initial method was insufficient to encourage communication. A logical next step is to redesign the experimental scheme to address this specific shortcoming. By creating a task with asymmetric information, there is now a stronger, more explicit pressure for the agents to develop a meaningful communication protocol, directly addressing the previous failure before attempting further experiments."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Multi-agent communication protocols",
+    "subject": "CS-AI/ML",
+    "event_type": "pilot_experiments",
+    "description": "A second pilot experiment is conducted using the revised scheme with asymmetric information. The primary objective is to quickly validate whether this new task structure successfully incentivizes the agents to develop a structured communication protocol for coordinating their actions.",
+    "required_artifacts": [
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the method in e_05 to address the shortcomings found in the first pilot, the logical next step is to run another small-scale experiment. This will validate the effectiveness of the new asymmetric information setup before committing to larger, more computationally expensive main experiments."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Multi-agent communication protocols",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The team analyzes the results of the second pilot study. The findings are positive: the asymmetric information setup successfully prompted the emergence of a basic, structured communication protocol. Agents that receive goal information learn to send specific signals, and navigator agents learn to react to these signals, leading to a significant increase in task success compared to the first pilot.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After conducting a second pilot experiment (e_06) with a revised method, the essential next step is to analyze the new results. This analysis is crucial to validate whether the changes made in e_05 were effective and to decide if the current approach is promising enough to proceed with large-scale main experiments."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Multi-agent communication protocols",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "With the methodology now validated by the successful second pilot, the team begins drafting the 'Methods' section of the research paper. This draft describes the final experimental setup, including the asymmetric information task, the agent architecture, and the reward structure designed to incentivize communication.",
+    "required_artifacts": [
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The analysis in e_07 confirmed the success of the revised method, making the experimental design stable. It is an opportune moment to document the methodology for the paper while it is finalized. This can be done while preparing for the larger-scale main experiments, representing a parallel workflow common in research."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Multi-agent communication protocols",
+    "subject": "CS-AI/ML",
+    "event_type": "main_experiments",
+    "description": "With the revised methodology validated, the team launches the main experiments. These are run on a larger scale, with more training epochs, multiple random seeds, and slight variations in the environment to test the robustness and generalizability of the emergent communication protocol.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The successful outcome of the second pilot experiment (e_07) confirmed the validity of the revised method. The logical next step is to conduct full-scale main experiments to collect comprehensive and statistically significant results, which will form the core evidence for the research paper."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Multi-agent communication protocols",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "A comprehensive analysis of the main experiment results is performed. The team investigates the structure of the emergent communication protocol, its semantic consistency across different runs, and its effectiveness in varying environmental conditions. The analysis confirms that a robust and meaningful protocol has been learned, solidifying the core findings of the project.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the completion of the large-scale main experiments in e_09, a thorough analysis is the critical next step. This is necessary to process the large volume of data, extract the core scientific findings, and formally evaluate the outcomes against the project's research goals before proceeding to write up the results."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Multi-agent communication protocols",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "The team begins writing the 'Results' section of the paper. This draft summarizes the key findings from the main experiments, using plots and tables to illustrate the structure and performance of the emergent protocol.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The main experiments have been analyzed (e_10), yielding the core findings of the project. The next logical step is to document these findings in the 'Results' section of the paper, building upon the previously drafted 'Methods' section (e_08)."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Multi-agent communication protocols",
+    "subject": "CS-AI/ML",
+    "event_type": "proposal",
+    "description": "Inspired by the robust protocol found in the main experiments, the team decides to expand the research goals. A new objective is added: to investigate the compositionality of the emergent language. The research plan is updated to include a new set of experiments designed to test whether agents can combine known symbols to describe novel, unseen object combinations.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "The successful analysis of the main experiments (e_10) provides a solid foundation to ask more advanced questions. Instead of just proving that communication emerges, the project now aims to probe deeper linguistic properties (compositionality), representing a natural and ambitious extension of the original goals. This step refines the project's scope based on its own successful results."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Multi-agent communication protocols",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "To address the new research goal of compositionality, the team designs a new experimental scheme. They adapt the environment to include objects with distinct attributes (e.g., color and shape). The task is modified so agents must communicate about novel combinations of these attributes not seen during training, which will test if the emergent protocol is compositional.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "After expanding the research goals to include compositionality in e_12, the immediate next step is to design a methodology that can actually test for it. This event translates the new abstract goal into a concrete experimental setup by modifying the existing method scheme, paving the way for new experiments."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Multi-agent communication protocols",
+    "subject": "CS-AI/ML",
+    "event_type": "pilot_experiments",
+    "description": "A pilot experiment is launched using the new scheme designed to test for compositionality. The goal is to quickly validate if the setup with colored shapes works as intended and to see if there are any early signs that agents are learning to combine symbols for novel object descriptions.",
+    "required_artifacts": [
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing a new, more complex experimental scheme in e_13 to test for compositionality, running a pilot experiment is the logical next step. This allows the team to validate the setup and get early feedback on whether the approach is promising before committing the time and resources required for a full-scale main experiment."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Multi-agent communication protocols",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The results from the compositionality pilot are analyzed. The findings are inconclusive: while agents show some ability to refer to novel object combinations, the protocol is not systematic and performance is low. This suggests the task or learning algorithm may need further refinement to encourage true compositional structure.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After conducting a pilot experiment (e_14) for the new compositionality goal, the immediate next step is to analyze the results. This analysis is critical to evaluate the effectiveness of the new experimental scheme (from e_13) and decide whether to proceed, revise the method, or reconsider the approach to testing compositionality."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Multi-agent communication protocols",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "Based on the inconclusive results of the compositionality pilot, the team revises the method again. They hypothesize that the standard reinforcement learning objective is too sparse. They decide to augment the agent's learning algorithm with an auxiliary loss that encourages disentanglement in the message space, hoping this will lead to more structured, compositional signals.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis in e_15 revealed that the method for testing compositionality was not effective. It is necessary to go back to the design phase and refine the methodology based on these failed results. This revision specifically targets the learning algorithm to better facilitate the emergence of a compositional protocol, which is a direct and logical response to the previous setback."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Multi-agent communication protocols",
+    "subject": "CS-AI/ML",
+    "event_type": "pilot_experiments",
+    "description": "The team runs another pilot experiment for compositionality, this time using the revised method that includes the auxiliary loss for message disentanglement. The goal is to see if this new learning objective successfully encourages the agents to develop a more systematic and compositional communication protocol.",
+    "required_artifacts": [
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the experimental method in e_16 to address the inconclusive results of the previous pilot, the logical next step is to run a new pilot experiment. This will serve as a quick and efficient test to validate whether the introduction of the auxiliary loss is an effective strategy for promoting compositional language before committing to more extensive experiments."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "Multi-agent communication protocols",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The team analyzes the results of the pilot experiment with the auxiliary loss. The findings are highly promising: the new learning objective has successfully encouraged the emergence of a compositional protocol. Agents are now able to systematically combine symbols to refer to novel object combinations with high accuracy, a significant improvement over the previous attempt.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the pilot experiment in e_17, a thorough analysis is necessary to evaluate the effectiveness of the revised method using an auxiliary loss. This step is crucial to confirm whether a compositional protocol has emerged, which will determine if the project can proceed to main experiments for this extended research goal."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "research",
+    "topic": "Multi-agent communication protocols",
+    "subject": "CS-AI/ML",
+    "event_type": "main_experiments",
+    "description": "Building on the successful pilot, the team launches the main experiments for the compositionality part of the study. These experiments are run with multiple random seeds and over longer training periods to rigorously test the hypothesis that the auxiliary loss promotes a robust, compositional communication protocol.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The analysis of the last pilot (e_18) validated the revised method for achieving compositionality. The logical next step is to conduct large-scale main experiments to collect comprehensive data, which will provide the core evidence for the second, more advanced part of the research paper."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "research",
+    "topic": "Multi-agent communication protocols",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The team performs a deep analysis of the main experiments on compositionality. They confirm that the auxiliary loss consistently leads to the emergence of a compositional protocol across multiple runs, demonstrating that agents can describe novel object combinations with high accuracy. The analysis also includes visualizing the message space to show that it has become disentangled with respect to object attributes.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After running the main experiments for the compositionality goal in e_19, a thorough analysis is the critical next step. This is necessary to rigorously validate the findings from the successful pilot, process the large-scale data, and generate the final results for the second part of the study."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "research",
+    "topic": "Multi-agent communication protocols",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "The team integrates the findings from the compositionality experiments into the paper. They write the 'Results' section for this second part of the study and update the 'Methods' section to describe the final, more complex setup with the auxiliary loss, creating a more complete draft of the paper.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the analysis of the main compositionality experiments complete (e_20), the next logical step is to write up these findings. This event consolidates the project's second major contribution into the paper draft, moving it closer to a submittable state."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "research",
+    "topic": "Multi-agent communication protocols",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "The team writes the 'Discussion' and 'Conclusion' sections of the paper. They interpret the collective findings from both the initial and the compositionality experiments, discussing the implications of the emergent protocols, limitations of the study, and suggesting avenues for future work.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the core 'Methods' and 'Results' sections drafted for both parts of the study (e_21), the next logical step is to write the 'Discussion' and 'Conclusion'. This synthesizes the findings, interprets their significance with respect to the research goals, and frames the overall contribution of the work, moving the paper towards a complete first draft."
+  },
+  {
+    "event_id": "e_23",
+    "time_index": 23,
+    "domain": "research",
+    "topic": "Multi-agent communication protocols",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "The team writes the 'Introduction' and 'Abstract' sections of the paper. The introduction frames the research problem within the broader context of multi-agent systems, and the abstract provides a concise summary of the entire project, from the initial problem to the key findings on compositionality.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the main body of the paper (Methods, Results, Discussion) drafted, the next logical step is to write the 'Introduction' and 'Abstract'. These sections frame the work and summarize its contributions, creating a complete first draft of the manuscript ready for internal review."
+  },
+  {
+    "event_id": "e_24",
+    "time_index": 24,
+    "domain": "research",
+    "topic": "Multi-agent communication protocols",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "The team conducts an internal review of the complete paper draft. Based on feedback, they revise the manuscript for clarity, flow, and consistency. The introduction is refined to better motivate the compositionality study, and the discussion is expanded to connect the two sets of findings more cohesively.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After assembling a complete first draft of the paper (e_23), the standard next step is a thorough internal review and revision cycle. This event represents the crucial process of polishing the manuscript to improve its narrative, clarify its contributions, and prepare it for submission to a conference or journal."
+  },
+  {
+    "event_id": "e_25",
+    "time_index": 25,
+    "domain": "research",
+    "topic": "Multi-agent communication protocols",
+    "subject": "CS-AI/ML",
+    "event_type": "end",
+    "description": "The revised manuscript is finalized and submitted to a top-tier AI conference. This event marks the culmination of the research project, from the initial exploration of emergent communication to the successful demonstration of compositional language in multi-agent systems.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has successfully navigated two full research cycles, produced conclusive results for its expanded goals, and has a complete, internally reviewed paper draft (e_24). With all major objectives met and documented, submitting the work for peer review and concluding this phase of the project is the natural final step."
+  }
+]

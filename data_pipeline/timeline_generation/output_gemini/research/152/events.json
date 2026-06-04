@@ -1,0 +1,319 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Experimental protocol design for wet labs",
+    "subject": "Biology",
+    "event_type": "proposal",
+    "description": "Define the initial research question and scope of the project. The goal is to develop a new computational framework to assist in designing more robust and reproducible experimental protocols for wet labs, aiming to minimize common sources of error.",
+    "required_artifacts": [
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "research_plan",
+      "research_goals"
+    ],
+    "reason": "This initial event bootstraps the project by taking an abstract idea (represented as a nascent 'research_plan') and formalizing it into a structured plan and a set of concrete research goals. This establishes the foundational artifacts for the project."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Experimental protocol design for wet labs",
+    "subject": "Biology",
+    "event_type": "scheme_design",
+    "description": "Based on the research goals, an initial version of the computational framework's architecture is designed. This includes defining key modules: a protocol parser, a risk-factor database for common lab procedures, and a simulation engine to estimate potential variance.",
+    "required_artifacts": [
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "With the high-level goals established in the initial proposal (e_01), the next logical step is to translate these goals into a concrete technical plan. This event designs the initial methodological scheme for the computational framework, which is the core of the research project."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Experimental protocol design for wet labs",
+    "subject": "Biology",
+    "event_type": "pilot_experiments",
+    "description": "A small-scale pilot study is conducted to test the core components of the designed framework. A standard PCR protocol is used as a test case to verify if the protocol parser can correctly interpret the steps and if the simulation engine, using a preliminary risk-factor database, can identify known sources of variability like pipetting errors.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing the initial `method_scheme` in e_02, it is crucial to validate its feasibility before committing to full-scale development. This pilot experiment serves as a proof-of-concept, generating the first `experiment_results` to see if the computational framework can produce meaningful outputs for a simple, well-understood laboratory procedure."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Experimental protocol design for wet labs",
+    "subject": "Biology",
+    "event_type": "analysis",
+    "description": "The pilot experiment results are analyzed to assess the framework's performance. The analysis shows the protocol parser is effective, but the simulation engine's predictions are not very accurate due to an oversimplified risk-factor model, failing to capture nuances in reagent stability.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the pilot study (e_03), a formal analysis of the `experiment_results` is necessary to validate the current `method_scheme` against the initial `research_goals`. This step is critical for identifying the strengths and weaknesses of the initial design before investing more resources. The outcome of this analysis, summarized in a draft paragraph, will directly inform the next iteration of development."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Experimental protocol design for wet labs",
+    "subject": "Biology",
+    "event_type": "scheme_design",
+    "description": "The methodological scheme is revised based on the analysis of the pilot study. The risk-factor model is expanded to include parameters for reagent batch, storage temperature, and handling time, aiming to better capture the sources of variance identified in the pilot results.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous analysis (e_04) revealed that the initial `method_scheme` was too simplistic to be effective. This event represents a necessary iterative step, using the insights from the pilot `experiment_results` to refine the core methodology before committing to more extensive main experiments."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Experimental protocol design for wet labs",
+    "subject": "Biology",
+    "event_type": "main_experiments",
+    "description": "With the revised method scheme, the main experiments are initiated. The framework is applied to a broader set of complex wet lab protocols, including Western blotting and cell culture passages, to generate predictions on their potential variability. These predictions will be used to guide a set of real-world lab experiments to validate the framework's utility.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the `method_scheme` in e_05 to address the weaknesses found in the pilot study, the next logical step is to conduct the main experiments. This moves the project from the validation phase into the primary data collection phase, using the improved methodology to generate a comprehensive set of `experiment_results` for a more rigorous evaluation."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Experimental protocol design for wet labs",
+    "subject": "Biology",
+    "event_type": "writing",
+    "description": "A first draft of the paper's 'Methods' section is written, detailing the revised computational framework. A preliminary 'Results' section is also drafted to present the variability predictions generated during the main experiments for the complex protocols.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With a stable `method_scheme` (from e_05) and a comprehensive set of `experiment_results` (from e_06), it is an efficient step to begin drafting the manuscript. Writing the methods and results sections helps to structure the findings and clarifies what final analyses are needed for the discussion."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Experimental protocol design for wet labs",
+    "subject": "Biology",
+    "event_type": "analysis",
+    "description": "A comprehensive analysis of the main experiment results is performed. The framework's predictions for Western blot and cell culture variability are compared against established literature benchmarks. The analysis confirms that the revised model successfully captures the impact of reagent stability and handling time, showing a significant improvement in predictive accuracy.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After generating a large dataset from the main experiments (e_06) and drafting a preliminary results section (e_07), a deep and formal analysis is the critical next step. This event is necessary to rigorously evaluate whether the revised `method_scheme` meets the project's `research_goals`, providing the core findings that will form the basis of the paper's main claims."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Experimental protocol design for wet labs",
+    "subject": "Biology",
+    "event_type": "writing",
+    "description": "The results and discussion sections of the paper are drafted. The comprehensive analysis from the main experiments is used to finalize the results narrative, and the discussion section is written to interpret the findings, address the initial research goals, and situate the work within the broader field.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the successful comprehensive analysis in e_08, the project has strong, validated results. The next logical step is to write up these findings, updating the existing `paper_paragraph` drafts from e_07 and interpreting the results in the context of the original `research_goals` to build a compelling narrative for the paper."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Experimental protocol design for wet labs",
+    "subject": "Biology",
+    "event_type": "proposal",
+    "description": "After drafting the discussion section, the team reviews the project's overall contribution. Based on the strong predictive performance shown in the main experiments, the research goals are refined to be more ambitious, shifting the focus from 'assisting' protocol design to 'optimizing' protocols by minimizing predicted experimental variance.",
+    "required_artifacts": [
+      "research_goals",
+      "experiment_results",
+      "paper_paragraph",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "The comprehensive analysis (e_08) and the process of writing the discussion (e_09) have clarified the framework's true capabilities. This event refines the original `research_goals` to better reflect the demonstrated success, strengthening the paper's central thesis and updating the `research_plan` for the final publication push."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Experimental protocol design for wet labs",
+    "subject": "Biology",
+    "event_type": "scheme_design",
+    "description": "To support the new, more ambitious goal of 'optimization', the computational framework is extended. An optimization module is designed and implemented, which uses the existing simulation engine to iteratively search for protocol parameters (e.g., incubation times, reagent concentrations) that minimize predicted experimental variance.",
+    "required_artifacts": [
+      "research_goals",
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "After refining the project's ambition from 'assisting' to 'optimizing' in e_10, the existing `method_scheme` is no longer sufficient. This event is a necessary step to technically upgrade the framework to match the new `research_goals`, creating a method that can actively propose superior protocols rather than just analyzing existing ones."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Experimental protocol design for wet labs",
+    "subject": "Biology",
+    "event_type": "pilot_experiments",
+    "description": "A pilot validation experiment is conducted to test the new optimization module. The framework is used to generate an 'optimized' PCR protocol, and this protocol is run in the lab alongside the standard protocol to compare the resulting experimental variance and yield.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After adding a new optimization module to the `method_scheme` in e_11, it is crucial to test its effectiveness. This pilot experiment serves as a proof-of-concept for the new 'optimization' goal, generating concrete `experiment_results` to validate whether the theoretically optimized protocol performs better in practice."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Experimental protocol design for wet labs",
+    "subject": "Biology",
+    "event_type": "analysis",
+    "description": "The results from the optimization pilot study are analyzed. The analysis confirms that the 'optimized' PCR protocol generated by the new module shows a statistically significant reduction in variance compared to the standard protocol, although the mean yield is slightly lower.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After conducting the pilot experiment (e_12) to test the new optimization module, the immediate next step is to formally analyze the `experiment_results`. This analysis is crucial to validate whether the updated `method_scheme` successfully achieves the 'optimization' `research_goals` before proceeding with further experiments or writing."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Experimental protocol design for wet labs",
+    "subject": "Biology",
+    "event_type": "main_experiments",
+    "description": "Building on the successful pilot, the optimization module is now applied to the more complex Western blot protocol. The framework generates an 'optimized' protocol, which is then executed in the lab alongside the standard protocol. The goal is to see if the framework can reduce variability in a multi-stage, technique-dependent procedure.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The pilot optimization experiment for PCR was a success (e_12, e_13). To substantiate the project's new, more ambitious 'optimization' goal, it is essential to demonstrate its effectiveness on a more complex and error-prone protocol. This event scales up the validation from a pilot to a main experiment, generating the critical `experiment_results` needed for the final paper."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Experimental protocol design for wet labs",
+    "subject": "Biology",
+    "event_type": "analysis",
+    "description": "The results of the main optimization experiment on the Western blot protocol are analyzed. The analysis compares the band intensity variance and signal-to-noise ratio between the 'optimized' and standard protocols. The findings confirm that the optimized protocol significantly reduces inter-assay variability while maintaining acceptable signal strength, validating the framework's utility for complex procedures.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After conducting the main optimization experiment in e_14, the essential next step is to perform a detailed analysis of the `experiment_results`. This analysis is critical to determine if the enhanced `method_scheme` meets the ambitious 'optimization' `research_goals` for a complex protocol, providing the final key finding for the research paper."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Experimental protocol design for wet labs",
+    "subject": "Biology",
+    "event_type": "writing",
+    "description": "The full manuscript is drafted by integrating the latest analysis of the Western blot optimization. The paper's narrative is restructured to tell the complete story, starting with the initial goal of analysis, the pivot to the more ambitious goal of optimization, and the final successful validation on a complex protocol.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the final, critical analysis completed in e_15, the project has all the necessary evidence. This writing event is the logical next step to consolidate all findings from the entire project timeline into a single, cohesive manuscript, preparing it for internal review and eventual submission."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Experimental protocol design for wet labs",
+    "subject": "Biology",
+    "event_type": "writing",
+    "description": "The full manuscript draft undergoes internal review by lab members and collaborators. Feedback suggests clarifying the novelty of the optimization algorithm compared to existing methods and adding a figure visualizing the trade-off between variance reduction and mean yield observed in the PCR experiment. The manuscript is revised to incorporate these changes.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After drafting the full manuscript in e_16, internal peer review is a crucial quality control step before submission. This event represents that iterative refinement, using feedback to improve the paper's clarity and strengthen its arguments by adding new visualizations based on existing `experiment_results`, making the project more publication-ready."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "Experimental protocol design for wet labs",
+    "subject": "Biology",
+    "event_type": "end",
+    "description": "The manuscript has been finalized after a thorough internal review and is submitted to a peer-reviewed journal. The core research objectives, including the pivot to protocol optimization, have been met and validated. The project's research phase is now considered complete pending the outcome of the external peer review process.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has successfully completed a full research arc, from initial proposal to a validated, ambitious outcome. The final manuscript has been drafted and revised based on internal feedback (e_17), and all major research goals have been addressed with supporting experimental evidence. At this stage, submitting the paper for publication is the natural conclusion of the research activities, making it an appropriate point to end the timeline."
+  }
+]

@@ -1,0 +1,297 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "User trust calibration in AI systems",
+    "subject": "CS-HCI",
+    "event_type": "proposal",
+    "description": "Initial project proposal outlining the core research question: how to design AI systems that effectively calibrate user trust. This involves defining the project's scope, identifying key variables (e.g., AI transparency, user expertise), and setting high-level goals.",
+    "required_artifacts": [
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the foundational event that bootstraps the research project. It requires an abstract notion of a research topic to produce the first concrete 'research_goals' and a high-level 'research_plan', which are necessary before any methods can be designed."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "User trust calibration in AI systems",
+    "subject": "CS-HCI",
+    "event_type": "scheme_design",
+    "description": "Based on the initial proposal, the team designs the first version of the experimental methodology. This includes selecting a specific AI task (e.g., a medical diagnosis assistant), defining different transparency levels for the AI's reasoning, and creating questionnaires to measure user trust before and after the interaction.",
+    "required_artifacts": [
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "With the high-level 'research_plan' and 'research_goals' from the proposal phase (e_01), the logical next step is to translate these abstract ideas into a concrete, testable 'method_scheme'. This new artifact is essential for running any experiments."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "User trust calibration in AI systems",
+    "subject": "CS-HCI",
+    "event_type": "pilot_experiments",
+    "description": "A small-scale pilot study is conducted with a handful of participants to test the experimental setup. The team checks the clarity of the task instructions, the effectiveness of the different AI transparency levels, and the reliability of the trust measurement scales.",
+    "required_artifacts": [
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing the experimental methodology ('method_scheme' in e_02), it is crucial to conduct a pilot study to validate the design and identify any practical issues before launching a full-scale experiment. This step generates the first preliminary 'experiment_results' to inform the next phase."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "User trust calibration in AI systems",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "The team conducts a formal analysis of the pilot study data. The results indicate that while the experimental task is viable, the trust measurement scale has low reliability, and the different AI transparency levels did not produce a measurable effect on user perception.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With preliminary 'experiment_results' from the pilot study (e_03), the immediate next step is to analyze them to assess the validity of the 'method_scheme' (e_02). This analysis provides critical insights into what needs to be fixed and can be used to draft an initial 'paper_paragraph' describing the pilot findings, which will inform the next design iteration."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "User trust calibration in AI systems",
+    "subject": "CS-HCI",
+    "event_type": "scheme_design",
+    "description": "Following the analysis of the unsuccessful pilot, the team revises the experimental design. A more robust, validated trust scale is adopted from prior literature, and the AI's transparency levels are redesigned to be more distinct and impactful for the user.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous analysis (e_04) revealed critical flaws in the experimental setup outlined in the 'method_scheme'. It is therefore necessary to go back to the 'scheme_design' stage to correct these issues based on the pilot 'experiment_results' before committing to a larger experiment. This ensures the revised plan still aligns with the original 'research_goals'."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "User trust calibration in AI systems",
+    "subject": "CS-HCI",
+    "event_type": "pilot_experiments",
+    "description": "A second, small-scale pilot study is conducted using the revised experimental design from the previous step. The goal is to validate that the newly adopted trust scale is reliable and that the redesigned transparency mechanisms are perceived differently by users, before committing to a large-scale study.",
+    "required_artifacts": [
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the 'method_scheme' (e_05) due to the failure of the first pilot, it is crucial to run another pilot experiment to validate the fixes. This iterative approach de-risks the project and ensures the updated methodology is sound before investing in a full main experiment. This generates new 'experiment_results' for analysis."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "User trust calibration in AI systems",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "The team analyzes the data from the second pilot study. The analysis confirms that the revised trust scale is statistically reliable and that the new transparency mechanisms successfully created significant differences in user perception, validating the revised experimental design.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the second pilot study (e_06), a formal analysis of the new 'experiment_results' is necessary to confirm that the revised 'method_scheme' (from e_05) is sound. This step is crucial to validate the fixes and justify moving forward to the main experiment. The positive findings are summarized in a new 'paper_paragraph' for the methods section of the future paper."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "User trust calibration in AI systems",
+    "subject": "CS-HCI",
+    "event_type": "main_experiments",
+    "description": "With a validated methodology, the team launches the full-scale main experiment. A large cohort of participants is recruited and run through the refined experimental procedure to collect a robust dataset on how different transparency levels affect user trust calibration.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The analysis of the second pilot study (e_07) confirmed the validity of the revised 'method_scheme'. Therefore, the logical and critical next step according to the 'research_plan' is to conduct the main experiment to gather the definitive data needed to address the research goals."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "User trust calibration in AI systems",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "The team performs a comprehensive statistical analysis on the full dataset from the main experiment. This involves data cleaning, hypothesis testing (e.g., using ANOVA to test the effect of transparency on trust), and generating summary statistics and visualizations to interpret the main findings.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After collecting the definitive dataset from the main experiment (e_08), the immediate and necessary next step is to conduct a thorough analysis. This will process the raw 'experiment_results' to answer the core 'research_goals' and provide the substantive findings that will form the basis of the research paper."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "User trust calibration in AI systems",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "The team begins to formally draft the research paper, focusing on the Methods and Results sections. They synthesize the final experimental design and the findings from the main data analysis into a coherent narrative for publication.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the main experiment analyzed (e_09) and core 'experiment_results' established, the project has reached a major milestone. The logical next step is to transition into the 'writing' phase to formally document the 'method_scheme' and the key findings in a 'paper_paragraph' that will form the core of the final manuscript."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "User trust calibration in AI systems",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "While drafting the discussion section of the paper, the team notices an unexpected finding: the effect of transparency on trust seems to be much stronger for users with low prior domain knowledge. They decide to perform a post-hoc analysis to formally investigate this interaction effect, which was not part of their original hypotheses.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "The process of writing the paper (e_10) often forces researchers to look at their findings from new angles. Discovering an unexpected but important interaction effect in the main 'experiment_results' (from e_09) necessitates a new round of 'analysis' to properly understand and report it, enriching the study's contribution."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "User trust calibration in AI systems",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "The team incorporates the new findings from the post-hoc analysis into the paper draft. They revise the Results section to feature the interaction effect and draft the Discussion section, interpreting how user expertise moderates the impact of AI transparency on trust calibration.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After the post-hoc analysis in the previous step (e_11) confirmed a significant new finding, the logical next action is to integrate it into the manuscript. This 'writing' step is crucial for documenting the new result and discussing its implications relative to the project's 'research_goals', moving the paper closer to completion."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "User trust calibration in AI systems",
+    "subject": "CS-HCI",
+    "event_type": "proposal",
+    "description": "The discovery of the strong interaction effect with user expertise prompts the team to revisit their initial research goals. They decide to reframe the project's main contribution to highlight this moderation effect, updating the research goals to reflect this more nuanced understanding of trust calibration.",
+    "required_artifacts": [
+      "research_goals",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "The significant, unexpected finding from the post-hoc analysis (e_11) is more impactful than the originally hypothesized main effects. It is a common research practice to refine the 'research_goals' late in the project to accurately frame the study's most significant contribution, which will guide the final writing of the paper's introduction and conclusion."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "User trust calibration in AI systems",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "With the newly refined research goals, the team revises the paper's introduction and conclusion. They rewrite these sections to build a narrative that culminates in the discovery of the interaction effect, ensuring the paper's framing matches its most significant contribution.",
+    "required_artifacts": [
+      "research_goals",
+      "paper_paragraph",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After reframing the project's main contribution and updating the 'research_goals' in the previous step (e_13), it is crucial to update the paper's narrative. This 'writing' event aligns the paper's introduction and conclusion with the new focus, creating a more coherent and compelling story for the final manuscript."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "User trust calibration in AI systems",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "The team focuses on completing the full manuscript for internal review. They write the abstract, create the final figures and tables based on the analyses, and add a comprehensive related work section to properly position their contribution within the field.",
+    "required_artifacts": [
+      "research_goals",
+      "paper_paragraph",
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After aligning the paper's narrative with the updated research goals (e_14), the project is now in the final writing stage. This event involves creating the remaining components of a complete manuscript (abstract, figures, related work) by synthesizing all existing artifacts, preparing the paper for feedback and eventual submission."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "User trust calibration in AI systems",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "After an internal review by senior lab members, the team revises the manuscript. The feedback highlighted the need for a more explicit discussion of the study's limitations and clearer framing of the future work section. The team rewrites these parts to strengthen the paper.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After completing a full draft for internal review (e_15), obtaining and incorporating feedback is a critical step towards finalizing a manuscript for submission. This revision cycle strengthens the paper's arguments and addresses potential weaknesses before it undergoes formal peer review."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "User trust calibration in AI systems",
+    "subject": "CS-HCI",
+    "event_type": "end",
+    "description": "The manuscript is complete and has been revised based on internal feedback. The team decides to submit the paper for publication, concluding this phase of the research project.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has progressed through a full research cycle, from initial proposal to a complete, internally reviewed, and revised manuscript (e_16). The research goals have been met, significant results are documented, and the paper is ready for submission. This marks a natural conclusion to the defined research activities."
+  }
+]

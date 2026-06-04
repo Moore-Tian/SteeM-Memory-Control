@@ -1,0 +1,282 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Trade flow analysis",
+    "subject": "Economics",
+    "event_type": "proposal",
+    "description": "The initial project proposal is formulated. The research aims to analyze global trade flows to identify how major economic shocks, like tariffs or pandemics, impact trade network structures. A high-level plan is outlined, starting with data acquisition and followed by network model development.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the first event of the project. A research project must begin with a clear proposal that defines its goals and outlines a plan. This initial step provides the foundational direction for all subsequent work."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Trade flow analysis",
+    "subject": "Economics",
+    "event_type": "scheme_design",
+    "description": "Based on the initial proposal, a detailed methodological scheme is designed. This involves selecting a weighted directed graph to represent trade flows between countries and choosing the gravity model of trade as the baseline for analysis. The scheme also specifies data sources (e.g., UN Comtrade) and the pre-processing steps required.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the high-level proposal (e_01), the next logical step is to translate the research goals and plan into a concrete technical approach. This scheme design phase establishes the specific models and data handling procedures needed for implementation."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Trade flow analysis",
+    "subject": "Economics",
+    "event_type": "pilot_experiments",
+    "description": "A pilot experiment is conducted using a small subset of the data (e.g., trade flows for a single year between G7 countries). The goal is to test the data preprocessing pipeline and verify that the gravity model implementation yields plausible baseline results.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With a concrete methodological scheme (e_02) in place, a pilot experiment is the logical next step. It serves as a proof-of-concept to validate the data handling and modeling approach on a manageable scale before launching the full-scale main experiments."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Trade flow analysis",
+    "subject": "Economics",
+    "event_type": "analysis",
+    "description": "The results from the pilot experiment are analyzed. The analysis confirms the data processing pipeline is robust, but reveals the baseline gravity model's predictive power is weaker than expected, suggesting that additional factors like trade agreements or historical ties need to be incorporated.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "research_plan"
+    ],
+    "reason": "After a pilot experiment (e_03), a dedicated analysis is necessary to evaluate the method's performance. The findings from this analysis are critical for deciding the next steps, and in this case, they indicate that the project plan must be updated to include a model refinement phase before proceeding to the main experiments."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Trade flow analysis",
+    "subject": "Economics",
+    "event_type": "scheme_design",
+    "description": "Based on the pilot analysis, the methodological scheme is revised. The gravity model is augmented to include additional variables, such as shared language, historical colonial ties, and the existence of free trade agreements, to better capture the complexities of trade relationships.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous analysis (e_04) revealed that the initial method scheme was too simplistic. This event directly addresses that finding by refining the model, which is a necessary step before committing to larger-scale experiments as indicated by the updated research plan."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Trade flow analysis",
+    "subject": "Economics",
+    "event_type": "pilot_experiments",
+    "description": "A second pilot experiment is conducted using the revised, augmented gravity model. The same small data subset (G7 countries for one year) is used to directly compare the new model's performance against the baseline results from the first pilot.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the methodological scheme (e_05) to address weaknesses found in the initial analysis (e_04), it is crucial to validate the improved model. Running a new pilot experiment provides a quick and efficient way to verify that the changes have had the desired effect before committing to the resource-intensive main experiments."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Trade flow analysis",
+    "subject": "Economics",
+    "event_type": "analysis",
+    "description": "The results from the second pilot experiment are analyzed, comparing the augmented gravity model to the original baseline. The analysis shows a marked improvement in model fit and predictive power, validating the revised methodology. This positive outcome confirms the suitability of the model for the main experiments.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the second pilot experiment (e_06), a thorough analysis is required to formally evaluate the performance of the revised model. The positive results validate the new approach, making it a suitable time to begin documenting the methodology in a draft paper paragraph, a key step towards publication."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Trade flow analysis",
+    "subject": "Economics",
+    "event_type": "main_experiments",
+    "description": "With the augmented model validated, the main experiments are launched. The full dataset, covering global trade flows from 2010-2020, is processed. The model is applied to analyze the structural changes in the trade network before and after a major economic shock, specifically the 2018 US-China tariff implementations.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The successful validation of the revised methodology in the second pilot phase (e_06, e_07) makes this the opportune moment to proceed with the main experiments. This step applies the proven model to the full dataset to generate the core findings needed to address the primary research goals."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Trade flow analysis",
+    "subject": "Economics",
+    "event_type": "analysis",
+    "description": "A comprehensive analysis of the main experiment results is performed. The analysis focuses on quantifying the impact of the 2018 tariffs, identifying significant trade diversion effects where US imports shifted from China to countries like Vietnam and Mexico. Key network metrics are calculated for the pre- and post-tariff periods to highlight the structural changes in the global trade web.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After running the resource-intensive main experiments (e_08), the essential next step is to conduct a thorough analysis of the resulting data. This analysis is critical for interpreting the findings, generating insights to answer the core research questions, and beginning to draft the results section of the paper."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Trade flow analysis",
+    "subject": "Economics",
+    "event_type": "writing",
+    "description": "A first full draft of the paper's results and discussion sections is written. This draft integrates the findings about trade diversion from the main analysis (e_09) and frames the discussion around the original research questions, highlighting the significance of the observed structural changes in the trade network.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the comprehensive analysis of the main experiments (e_09), the project has produced its core findings. The logical next step is to synthesize these results into a coherent narrative for the research paper. This writing event builds directly on the previous analysis and existing paper snippets to create a more complete draft."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Trade flow analysis",
+    "subject": "Economics",
+    "event_type": "proposal",
+    "description": "While drafting the discussion section, the team identifies an opportunity to strengthen the paper by comparing the impact of the 2018 tariffs with the impact of the 2020 COVID-19 pandemic. The research goals are officially expanded to include a comparative analysis of these two distinct economic shocks, leveraging the existing dataset which extends through 2020.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "research_plan",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "The process of writing (e_10) often reveals new perspectives and potential extensions. Recognizing that the existing main experiment data covers the beginning of the pandemic, expanding the research goals to include this comparative analysis is a logical step to enhance the paper's contribution without needing to collect new data."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Trade flow analysis",
+    "subject": "Economics",
+    "event_type": "analysis",
+    "description": "The team performs a new round of analysis on the main experiment data, this time focusing on the 2020 trade data to assess the impact of the COVID-19 pandemic. The analysis uses the same augmented gravity model to identify structural changes and compares the nature of the shock (e.g., broad-based decline vs. targeted trade diversion) with the earlier tariff analysis.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "Following the expansion of research goals in e_11 to include a comparative analysis of the pandemic, the logical next step is to analyze the existing main experiment results for the 2020 period. This directly addresses the new research question and allows for a comparison with the previous tariff analysis."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Trade flow analysis",
+    "subject": "Economics",
+    "event_type": "writing",
+    "description": "The paper draft is substantially revised to incorporate the comparative analysis. The results section is updated to present the findings for both the 2018 tariffs and the 2020 pandemic side-by-side. The discussion section is rewritten to contrast the nature of the two shocks and their differential impacts on the global trade network.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the analysis of the pandemic's impact (e_12) and the expansion of the research goals (e_11), the next logical step is to integrate these new findings into the paper. This writing event synthesizes the results from both the tariff and pandemic analyses into a single, cohesive narrative, directly addressing the updated research goals."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Trade flow analysis",
+    "subject": "Economics",
+    "event_type": "analysis",
+    "description": "While reviewing the revised draft, the team realizes they can add more depth by analyzing network resilience. A new analysis is conducted on the main experiment results to measure whether pre-shock trade partner diversity correlated with a country's ability to weather the disruptions from both the tariffs and the pandemic.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "Reviewing the full draft (e_13) often sparks ideas for strengthening the argument. This new analysis on resilience moves beyond simply describing the shocks' impacts to explaining why some actors were more affected than others, directly addressing a deeper question prompted by the comparative findings and significantly increasing the paper's novelty."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Trade flow analysis",
+    "subject": "Economics",
+    "event_type": "writing",
+    "description": "The findings from the resilience analysis are fully integrated into the paper. The introduction is revised to frame the research in terms of understanding network resilience to different types of shocks. The results and discussion sections are updated to include the new quantitative evidence linking trade partner diversity to economic stability during the tariff and pandemic periods.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After conducting a new analysis on network resilience (e_14), the immediate next step is to incorporate these significant findings into the main paper draft. This writing phase ensures that the latest insights are woven into the paper's core narrative, strengthening its overall argument and contribution before final review and submission."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Trade flow analysis",
+    "subject": "Economics",
+    "event_type": "end",
+    "description": "The research project concludes. The paper has been substantially revised to include a comparative analysis of two major shocks and a novel analysis of network resilience. With the methodology stable, the analyses complete, and the manuscript fully drafted, the work is ready for submission to a peer-reviewed journal.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has successfully navigated from its initial proposal through multiple cycles of experimentation, analysis, and writing. The research goals, including those added during the project (e_11, e_14), have been met, and the latest analysis has been fully integrated into a cohesive paper (e_15). The research phase is now considered complete, and the project has reached a natural conclusion."
+  }
+]

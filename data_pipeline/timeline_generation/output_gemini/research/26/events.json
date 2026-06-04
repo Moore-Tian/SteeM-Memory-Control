@@ -1,0 +1,296 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "In-context learning behavior analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "proposal",
+    "description": "Initial project proposal to investigate the mechanisms of in-context learning (ICL) in large language models. The core research question is: how do models form and use task-specific representations from a few demonstration examples? The high-level plan is to design controlled experiments and analyze model activations.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the first event of the project. A proposal is the necessary starting point to define the high-level research questions, set initial goals, and create a preliminary roadmap for the investigation."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "In-context learning behavior analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "Designed a concrete experimental scheme based on the initial proposal. The scheme involves using a transformer-based model (e.g., GPT-2) on a synthetic binary classification task. The methodology specifies how to construct demonstration examples (e.g., varying the number of shots) and defines the technique for analyzing internal activations, such as linear probing on hidden states.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the high-level proposal (e_01), this step translates the abstract research goals and plan into a concrete and testable experimental design. Creating a detailed `method_scheme` is essential before running any pilot or main experiments."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "In-context learning behavior analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "pilot_experiments",
+    "description": "Conducted a small-scale pilot study to validate the experimental setup. We ran the GPT-2 model on a small sample of the synthetic binary classification task. The goal was to ensure the data generation pipeline works correctly and to get a preliminary signal from the linear probes on the model's hidden states.",
+    "required_artifacts": [
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With a detailed `method_scheme` from e_02, a pilot experiment is the logical next step. It serves as a sanity check to validate the experimental design and technical implementation before committing resources to full-scale main experiments, and it will produce the first set of results for initial analysis."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "In-context learning behavior analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "Analyzed the results from the pilot study. The analysis confirmed that linear probes can decode task-relevant information from the model's hidden states. However, the signal was significantly stronger in the final layers of the network, suggesting the task representation is formed progressively and solidifies late in the forward pass.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "research_goals"
+    ],
+    "reason": "After conducting the pilot experiments (e_03) and obtaining initial `experiment_results`, a dedicated analysis is the logical next step. This event interprets the preliminary findings, and based on the key insight about layer-wise differences, refines the `research_goals` to be more specific before committing to larger-scale experiments."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "In-context learning behavior analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "Based on the pilot analysis insight that task representations solidify in later layers, the experimental scheme is revised. The updated plan includes a more rigorous layer-wise analysis protocol and expands the scope to test multiple model sizes (e.g., GPT-2 small, medium, and large). This is to investigate how model scale affects the depth at which task representations are formed.",
+    "required_artifacts": [
+      "research_goals",
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis in e_04 refined the research goals to focus on the layer-wise formation of representations. It is now crucial to update the `method_scheme` to explicitly incorporate this new focus before launching the main experiments. This revision ensures the main experiments are designed to directly answer the more specific research questions that emerged from the pilot study."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "In-context learning behavior analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "main_experiments",
+    "description": "Launched the main experiments based on the revised scheme from e_05. This involves running the synthetic binary classification task on GPT-2 small, medium, and large models. For each model, we are collecting hidden states across all layers to perform the planned layer-wise linear probing analysis.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With the `method_scheme` revised in e_05 to address the specific `research_goals` refined after the pilot study, the clear next step is to execute this plan. Running the main experiments will generate the core data needed to answer the central research questions about how task representations form across layers and model scales."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "In-context learning behavior analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "Conducted the main analysis on the experimental data from all model sizes (GPT-2 small, medium, large). The layer-wise linear probing results were aggregated and plotted, confirming that task-relevant information emerges in the upper layers. The analysis also revealed a clear trend where this emergence happens at progressively deeper layers as model size increases.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "With the main experiment data collected in e_06, the immediate next step is to perform a detailed analysis as planned. This event processes the raw `experiment_results` to produce key findings that directly address the `research_goals`, and the initial summary of these findings is drafted as a `paper_paragraph`, kicking off the writing process."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "In-context learning behavior analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "Drafted the 'Methods' and 'Results' sections for the paper. The methods section describes the synthetic task, the different model sizes used (GPT-2 small, medium, large), and the layer-wise linear probing protocol. The results section presents the key findings with figures, illustrating that task representation solidifies in later layers and this phenomenon occurs deeper in larger models.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the successful main analysis in e_07, which produced the core findings and an initial result summary, the natural next step is to formally write up these sections for the paper. This involves translating the detailed `method_scheme` and the conclusive `experiment_results` into a coherent narrative, moving the project into the manuscript preparation phase."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "In-context learning behavior analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "proposal",
+    "description": "After reviewing the drafted paper and main results, the team identifies a key limitation: the findings are correlational. To strengthen the paper's contribution, the project's scope is expanded to investigate the causal impact of the identified task representations. The new plan involves designing intervention-based experiments, such as activation patching, to see if these representations are necessary for task performance.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "With the main findings from e_07 written up in e_08, it's a natural point to review the project's overall contribution. Recognizing that linear probing shows correlation but not causation, the team decides to pivot towards establishing a causal link. This revision of the `research_goals` and `research_plan` represents a common research cycle where initial results motivate deeper, more rigorous follow-up questions before finalizing a paper."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "In-context learning behavior analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "Designed a new experimental scheme for the causal analysis phase. This scheme details the activation patching protocol: we will run a model on a 'source' prompt with correct demonstration examples and patch the hidden states from its later layers into a 'target' run with corrupted demonstration examples. The hypothesis is that patching these task representations will restore the model's performance on the target task.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the decision in e_09 to pursue causal analysis, the next step is to translate the updated `research_plan` into a concrete experimental design. This event creates a new `method_scheme` detailing the activation patching protocol, which is essential before running new experiments to test the causal role of the identified representations."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "In-context learning behavior analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "pilot_experiments",
+    "description": "Conducted a pilot study for the activation patching experiment. We used the GPT-2 medium model and patched the final layer's hidden state from a run with correct examples into a run with corrupted examples. The goal was to verify the technical implementation of patching and get an initial signal on whether this intervention can restore task performance.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing the complex causal intervention scheme in e_10, a pilot experiment is a crucial risk-mitigation step. It allows the team to debug the activation patching code and validate that the intervention has a measurable effect before committing the resources required for a full-scale main experiment across all model sizes."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "In-context learning behavior analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "Analyzed the results of the activation patching pilot experiment. The analysis shows a significant recovery in task performance when hidden states from a correct run are patched into a run with corrupted examples. This strongly suggests that the representations in the later layers are not just correlated with, but are causally responsible for, in-context task performance.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After conducting the causal pilot experiment in e_11, the immediate next step is to analyze its results. This analysis is crucial to validate the activation patching methodology and to confirm that there is a causal signal worth investigating further before committing to full-scale main experiments."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "In-context learning behavior analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "main_experiments",
+    "description": "Following the successful pilot, the full-scale causal experiments are launched. The activation patching protocol is systematically applied to all three model sizes (GPT-2 small, medium, large). The experiment also includes patching representations from different layer depths to map out precisely which layers are causally critical for each model size.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The pilot analysis in e_12 successfully validated the activation patching approach, showing a strong causal signal. The logical next step is to scale this up to a full main experiment, as defined by the `method_scheme` from e_10, to gather comprehensive data across all planned conditions. This will provide the definitive evidence needed to support the causal claims outlined in the revised `research_goals`."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "In-context learning behavior analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "Performed a comprehensive analysis of the main causal experiment results. The findings confirm that patching later-layer hidden states robustly restores task performance across all model sizes. The analysis also precisely maps the causally critical layers for each model, showing that as model size increases, the critical representations for ICL are found deeper within the network.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After running the full-scale causal experiments in e_13, the essential next step is to analyze the resulting data. This analysis will validate the causal hypothesis across all conditions, providing the definitive evidence needed to answer the updated research questions from e_09. The significant findings from this analysis are then summarized into a new `paper_paragraph` to be integrated into the manuscript."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "In-context learning behavior analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "The team undertakes a major revision of the paper draft. The 'Methods' and 'Results' sections are updated to integrate the findings from the causal (activation patching) experiments. The paper's narrative is restructured to first present the correlational findings and then introduce the causal experiments as a way to confirm and strengthen those initial hypotheses.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "method_scheme",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the comprehensive analysis of the main causal experiments completed in e_14, the next logical step is to incorporate these crucial findings into the paper. The existing draft from e_08 is now incomplete, so this writing phase is necessary to create a cohesive and updated manuscript that reflects the full scope of the project's results, moving from correlation to causation."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "In-context learning behavior analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "Drafted the Introduction and Conclusion sections to complete the main body of the paper. The Introduction frames the research question around understanding ICL mechanisms and summarizes the key findings. The Conclusion discusses the implications of the results, acknowledges limitations such as the focus on synthetic tasks, and proposes future work like investigating more complex tasks or different model architectures.",
+    "required_artifacts": [
+      "research_goals",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the Methods and Results sections updated in e_15, the next logical step is to write the surrounding narrative sections. Drafting the Introduction and Conclusion is essential for framing the research contributions, discussing their significance and limitations, and creating a complete, coherent manuscript ready for final review and submission."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "In-context learning behavior analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "end",
+    "description": "The project is concluded. The research successfully progressed from an initial correlational study to a more rigorous causal analysis, providing strong evidence for how and where ICL representations are formed in transformers. A complete paper draft has been written, and the team is preparing for submission to a top-tier conference.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached a natural and successful conclusion. The research questions outlined in the proposal (e_01) and revised in the follow-up (e_09) have been thoroughly answered with both correlational (e_07) and causal (e_14) evidence. A complete paper draft has been produced (e_16), marking the completion of the main research and writing cycle."
+  }
+]

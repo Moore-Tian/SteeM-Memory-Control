@@ -1,0 +1,399 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Data structures and representation choices",
+    "subject": "Programming",
+    "event_type": "objective_clarification",
+    "description": "Initial meeting with the learner to discuss their background in programming, their specific goals related to data structures, and any constraints like deadlines or preferred learning styles. The focus is on understanding what 'success' looks like for them.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "As this is the first interaction, the immediate priority is to understand the learner's goals and background. This clarification step is essential for creating a relevant and effective study plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Data structures and representation choices",
+    "subject": "Programming",
+    "event_type": "plan_milestones",
+    "description": "Based on the clarified objectives, the tutor and learner collaborate to outline a high-level study plan. This plan breaks down the topic of data structures into manageable milestones, such as 'Arrays and Lists,' 'Trees,' and 'Hash Tables,' and sets a rough timeline for covering them.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learning objectives defined in the previous step, creating a structured study plan is the natural progression. This ensures both the tutor and learner are aligned on the path forward and have clear milestones to track progress against."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Data structures and representation choices",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "The tutor delivers the first lesson, focusing on the initial milestone from the study plan: 'Arrays and Lists.' The session covers the definition, memory representation, common operations (access, insertion, deletion), and performance characteristics (Big O notation) of both data structures.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a study plan established, the next logical step is to begin instruction on the first topic. This lesson directly addresses the 'Arrays and Lists' milestone, initiating the learning process and creating foundational teaching materials for future reference."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Data structures and representation choices",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "The learner is assigned a set of targeted exercises to apply their knowledge of arrays and lists. The problems involve choosing the appropriate data structure for specific scenarios and analyzing the performance of basic operations, reinforcing the concepts from the previous lesson.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson, active practice is essential to solidify understanding and identify areas of confusion. This event directly applies the concepts from the 'Arrays and Lists' lesson (e_03), and the resulting practice record will provide concrete material for the upcoming review session."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Data structures and representation choices",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "The tutor analyzes the learner's submitted work from the practice session on arrays and lists. This involves checking the correctness of their solutions, evaluating their data structure choices, and identifying any patterns of errors or misconceptions.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session (e_04), a review is the logical next step to assess the learner's understanding and identify specific difficulties. Analyzing the `practice_record` is crucial for preparing targeted, actionable feedback before moving on to new material or further practice."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Data structures and representation choices",
+    "subject": "Programming",
+    "event_type": "materials_revision",
+    "description": "Based on the review, the tutor identifies that the learner struggled with the performance trade-offs between arrays and lists. The tutor revises the teaching notes to include a more explicit comparison table and adds visual diagrams illustrating the cost of insertion and deletion in both structures.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in the previous event (e_05) highlighted specific conceptual gaps. Before assigning more practice or moving on, it's effective to refine the teaching materials to directly address these weaknesses. This revision makes the `teaching_notes` a better resource for the learner and closes the feedback loop from the initial practice attempt."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Data structures and representation choices",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "To reinforce the concepts clarified in the revised materials, the learner is given a new set of problems focused specifically on the performance trade-offs of insertion and deletion in arrays versus lists. This targeted practice aims to confirm their understanding before moving to the next topic.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials (e_06) to address misconceptions found during review (e_05), a second, targeted practice session is necessary. This step verifies if the learner has overcome their previous difficulties with performance trade-offs before advancing to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Data structures and representation choices",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's solutions to the second, more targeted practice set. The focus is on confirming that the learner now correctly identifies the performance trade-offs between arrays and lists, especially for insertion and deletion, as addressed in the revised materials.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice in e_07, a review is necessary to verify if the learner has overcome their previous difficulties. This step closes the loop on the remediation effort and determines whether the learner is ready to advance to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Data structures and representation choices",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "Now that the learner has demonstrated proficiency with arrays and lists, the tutor introduces the next topic from the study plan: Trees. This lesson covers fundamental tree concepts, including nodes, edges, root, parent-child relationships, and the distinction between general trees and binary trees.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The successful review in the previous event (e_08) confirmed the learner's understanding of the first topic. Following the `study_plan`, the next logical step is to introduce the next major data structure, which is 'Trees', to continue making progress through the curriculum."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Data structures and representation choices",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "The learner is assigned practice problems to solidify their understanding of basic tree terminology from the previous lesson. The exercises include identifying the root, leaves, and parent/child nodes in given tree diagrams, and sketching a simple binary tree from a description.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the introductory lesson on trees (e_09), it is crucial for the learner to actively engage with the material to reinforce their understanding of fundamental concepts. This practice session directly applies the new terminology and prepares a `practice_record` for the upcoming review."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Data structures and representation choices",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's submission for the basic tree terminology practice. The goal is to check for correct identification of tree components (root, leaves, parents, children) and the ability to visualize and draw a simple tree structure.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on tree fundamentals (e_10), a review is essential to assess comprehension before introducing more complex topics like tree traversals. This step provides feedback and verifies that the learner has a solid grasp of the basic concepts."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Data structures and representation choices",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "With the fundamentals of tree structure confirmed, the tutor moves on to teaching core tree algorithms: traversals. The lesson covers pre-order, in-order, and post-order traversal, explaining the logic and showing how to trace them on an example binary tree.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The successful review in e_11 confirmed the learner's grasp of basic tree terminology. Following the study plan, it is now appropriate to introduce a key operational concept for trees—traversals—which builds directly on the previous lesson's foundation."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Data structures and representation choices",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "The learner is assigned exercises to apply the tree traversal algorithms learned in the previous lesson. The tasks involve tracing pre-order, in-order, and post-order traversals on several example binary trees and writing out the sequence of visited nodes for each.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson on an algorithmic topic like tree traversals (e_12), it is critical for the learner to engage in hands-on practice to solidify their understanding. This event directly applies the concepts from the lesson and will produce a record of their attempt, which is essential for the upcoming review."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Data structures and representation choices",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's work on the tree traversal exercises. The focus is on checking the accuracy of the pre-order, in-order, and post-order sequences and identifying any confusion between the three algorithms.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the practice session on tree traversals (e_13), a review is the essential next step to assess comprehension and provide corrective feedback. This ensures the learner has mastered this core skill before tackling more complex tree operations or data structures like Binary Search Trees."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Data structures and representation choices",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "Building on the knowledge of tree traversals, the tutor introduces a specialized and highly useful tree structure: the Binary Search Tree (BST). The lesson covers the BST property (left child < parent < right child), and how this property enables efficient search, insertion, and deletion operations.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The successful review of tree traversals in e_14 indicates the learner is ready for the next topic. Following the study plan, introducing Binary Search Trees is the logical next step, as it builds directly on the concepts of binary trees and ordered data."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Data structures and representation choices",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "The learner is given exercises to apply their knowledge of Binary Search Trees. The tasks include constructing a BST from a sequence of values, validating if a given tree is a BST, and performing search operations, reinforcing the core BST property from the previous lesson.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing Binary Search Trees in the previous lesson (e_15), immediate practice is crucial for the learner to internalize the BST property and its implications. This practice session provides a concrete way to assess understanding and generates a record for subsequent review."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Data structures and representation choices",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's submitted work on the Binary Search Tree exercises. The analysis focuses on the correctness of BST construction, validation, and search operations, checking for a solid grasp of the core BST property.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on BSTs (e_16), a review is the logical next step to assess the learner's comprehension. This provides crucial feedback and determines if the learner is ready to move on to the next major topic, 'Hash Tables', as outlined in the study plan."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Data structures and representation choices",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "With the learner's understanding of trees confirmed, the tutor introduces the next major topic from the study plan: Hash Tables. The lesson covers the core concepts of key-value pairs, hash functions, collisions, and collision resolution strategies like chaining.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The successful review in e_17 indicates the learner has mastered trees and is ready to move on. Following the study plan, introducing Hash Tables is the logical next step, as it's the next major topic in the curriculum."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Data structures and representation choices",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "The learner is assigned exercises on hash tables, focusing on the concepts from the previous lesson. The tasks involve tracing insertions with a given hash function and collision resolution strategy (chaining), and identifying the components of a hash table.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the introductory lesson on hash tables (e_18), a practice session is the critical next step to help the learner solidify their understanding. This active application of the concepts is essential before a review can take place to verify comprehension of the final topic in the study plan."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Data structures and representation choices",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's solutions to the hash table exercises. The review focuses on whether the learner correctly traced insertions, applied the hash function, and managed collisions using chaining.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the initial practice on hash tables (e_19), a review is the essential next step to gauge the learner's comprehension of this final core topic. This assessment provides critical feedback and helps determine if the main learning objectives of the study plan have been met."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "Data structures and representation choices",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "To synthesize the material covered, the tutor assigns a summative practice set. The problems require the learner to choose the most appropriate data structure (e.g., array, list, BST, hash table) for various problem scenarios and justify their choice, testing their holistic understanding of representation trade-offs.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Having successfully reviewed each topic in isolation, a summative practice session is necessary to evaluate the learner's ability to compare data structures and make representation choices, which is the core objective of the tutoring. This integrates all previous lessons and prepares for a final review."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "tutoring",
+    "topic": "Data structures and representation choices",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "The tutor conducts a final review of the summative practice set, evaluating the learner's ability to select and justify the most appropriate data structure for different scenarios. This comprehensive assessment measures their holistic understanding of the trade-offs between arrays, lists, trees, and hash tables.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a summative practice session (e_21) that integrates all topics, a final review is essential to evaluate the learner's overall mastery of the material and their ability to make informed representation choices. This step provides a final assessment against the core learning objectives and will determine if the tutoring goals have been met."
+  },
+  {
+    "event_id": "e_23",
+    "time_index": 23,
+    "domain": "tutoring",
+    "topic": "Data structures and representation choices",
+    "subject": "Programming",
+    "event_type": "materials_revision",
+    "description": "After the successful summative review, the tutor performs a final consolidation of all materials. The study plan is annotated with notes on pacing, and the teaching notes are refined based on the learner's journey, especially clarifying points that required remediation, creating a more robust resource for future students.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "reason": "With the learner's journey complete and their overall performance confirmed in the final review, this is the ideal time to capture lessons learned and refine the core teaching artifacts. This final revision improves the reusability and effectiveness of the materials for future tutoring engagements."
+  },
+  {
+    "event_id": "e_24",
+    "time_index": 24,
+    "domain": "tutoring",
+    "topic": "Data structures and representation choices",
+    "subject": "Programming",
+    "event_type": "end",
+    "description": "The tutoring engagement concludes with a final meeting to summarize the progress made. The learner has successfully met all the objectives outlined in the study plan, demonstrating a solid ability to choose and justify appropriate data structures for given problems.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has successfully completed all milestones in the study plan, including a final summative assessment (e_21, e_22). All teaching materials have been refined and consolidated (e_23). With the core learning objectives met and no outstanding issues, the tutoring process has reached its natural conclusion."
+  }
+]

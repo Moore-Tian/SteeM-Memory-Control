@@ -1,0 +1,305 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Entity-centric document understanding",
+    "subject": "CS-NLP",
+    "event_type": "proposal",
+    "description": "Defined the initial research questions and high-level goals for the project on entity-centric document understanding. The core idea is to develop a model that builds a dynamic knowledge graph of entities and their relations as it processes a document. This first step formalizes the vague initial ideas into a concrete plan.",
+    "required_artifacts": [
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "Every research project begins with an initial idea or question. This first event represents the formalization of these initial thoughts (represented notionally as 'research_goals') into a more concrete set of goals and a high-level research plan, establishing the foundation for the project."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Entity-centric document understanding",
+    "subject": "CS-NLP",
+    "event_type": "scheme_design",
+    "description": "Designed the initial architecture for the entity-centric model based on the research goals. The proposed scheme involves a transformer-based encoder to read the document context and a graph neural network (GNN) module to dynamically update the entity graph at each processing step.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "With the high-level research plan and goals established in the previous step (e_01), the logical next step is to design a concrete technical method. This event translates the abstract ideas into a specific architectural design, creating the 'method_scheme' needed for implementation and experimentation."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Entity-centric document understanding",
+    "subject": "CS-NLP",
+    "event_type": "pilot_experiments",
+    "description": "Implemented a prototype of the transformer-GNN model and ran pilot experiments on a small, well-annotated dataset. The goal was to verify that the model could learn to identify entities and form basic relational links, essentially a proof-of-concept for the proposed method scheme.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After defining the research goals (e_01) and designing the technical method (e_02), a pilot experiment is the logical next step. It allows for a low-cost sanity check of the proposed 'method_scheme' to identify major implementation hurdles or conceptual flaws before investing in large-scale experiments, generating the first set of 'experiment_results'."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Entity-centric document understanding",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "Analyzed the results from the pilot experiments. The model shows a basic capability to link entities, but the GNN module struggles to update relations based on long-range context within the document, leading to error propagation. The analysis concluded that the current message-passing mechanism in the GNN is too simplistic.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After running pilot experiments (e_03), a detailed analysis of the 'experiment_results' is the critical next step. This analysis evaluates the performance of the current 'method_scheme' against the initial 'research_goals', identifying specific weaknesses. The outcome is an updated 'experiment_results' artifact, now annotated with conclusions that will guide the next iteration of the project, likely a revision of the method."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Entity-centric document understanding",
+    "subject": "CS-NLP",
+    "event_type": "scheme_design",
+    "description": "Revised the model architecture based on the pilot study analysis. To address the GNN's weakness with long-range dependencies, the method scheme was updated to include a global context vector, computed via an attention mechanism over the entire document, which is fed into the GNN at every update step.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous analysis (e_04) identified a specific flaw in the model's handling of long-range context. A logical and necessary next step is to go back to the design phase and revise the 'method_scheme' to address this weakness before proceeding with more extensive experiments. This iterative refinement is crucial for developing a robust model."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Entity-centric document understanding",
+    "subject": "CS-NLP",
+    "event_type": "pilot_experiments",
+    "description": "Conducted a new round of pilot experiments with the revised model that includes the global context vector. These experiments were run on the same small dataset to directly compare performance and verify if the architectural change successfully mitigates the long-range dependency issue.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the 'method_scheme' (e_05) to fix a known issue, the most logical next step is to run another pilot study. This validates the effectiveness of the fix on a small scale before committing to larger, more resource-intensive main experiments, ensuring the updated method is sound."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Entity-centric document understanding",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "Analyzed the results from the second round of pilot experiments. The comparison confirms that the revised model with the global context vector significantly improves performance on tasks requiring long-range context understanding. The fix is deemed successful, and the model now appears robust enough for larger-scale evaluation.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After running a new pilot experiment (e_06) to test a specific fix, the immediate next step is to formally analyze the new 'experiment_results'. This analysis is crucial to validate whether the changes to the 'method_scheme' were effective before committing to the resource-intensive main experiments. A positive outcome here provides the green light to move forward."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Entity-centric document understanding",
+    "subject": "CS-NLP",
+    "event_type": "main_experiments",
+    "description": "Executed the main, large-scale experiments using the validated model architecture. The model was trained and evaluated on the full benchmark dataset as outlined in the research plan. This phase also included hyperparameter tuning to optimize the final performance.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the successful validation of the revised model in the second pilot study (e_07), the project is ready to move beyond small-scale tests. This event represents the transition to the main evaluation phase, running the experiments on a large benchmark dataset to gather the primary results needed to address the research goals."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Entity-centric document understanding",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "Performed a comprehensive analysis of the main experiment results. This included quantitative comparisons against state-of-the-art baselines and a qualitative error analysis on complex cases. The analysis confirms the model's superiority in long-range relational understanding, providing the core quantitative and qualitative findings for the paper.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "With the main experiments (e_08) completed, the crucial next step is a deep analysis of the resulting 'experiment_results'. This process translates raw performance numbers into scientific insights, evaluates the project's success against its 'research_goals', and generates the core findings that will be reported in the paper, parts of which are drafted into the first 'paper_paragraph' artifacts."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Entity-centric document understanding",
+    "subject": "CS-NLP",
+    "event_type": "writing",
+    "description": "Drafted the 'Methodology' and 'Experimental Setup' sections of the research paper. This involved translating the final method scheme and the main experiment design into a formal written description, detailing the model architecture, datasets, and evaluation metrics used.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the comprehensive analysis of the main experiments (e_09), the core scientific results are now established. The logical next step is to begin formally documenting the work for publication. This event focuses on writing up the methodology and experimental setup, which are foundational sections of the paper that can be drafted based on the final 'method_scheme' and the setup for the main 'experiment_results'."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Entity-centric document understanding",
+    "subject": "CS-NLP",
+    "event_type": "writing",
+    "description": "Drafted the 'Results and Analysis' section of the research paper. This involved creating tables to summarize the quantitative performance against baselines and writing text that interprets these results, highlighting the significant improvements shown by the proposed model based on the main experiment analysis.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the main results analyzed (e_09) and the methodology section drafted (e_10), the natural next step is to write the 'Results' section of the paper. This event translates the structured findings from the 'experiment_results' artifact into a narrative form suitable for publication, contextualizing the outcomes with respect to the original 'research_goals'."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Entity-centric document understanding",
+    "subject": "CS-NLP",
+    "event_type": "main_experiments",
+    "description": "While drafting the paper, a need for a more detailed ablation study was identified. New experiments were run to isolate the impact of the global context vector by comparing the final model against a version with this component removed, providing direct evidence for its contribution.",
+    "required_artifacts": [
+      "method_scheme",
+      "paper_paragraph",
+      "experiment_results",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After analyzing main results (e_09) and drafting the paper (e_10, e_11), it's common to identify a need for further experiments to strengthen the paper's claims. An ablation study provides crucial evidence for the importance of the novel component in the 'method_scheme', making the research more robust and convincing."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Entity-centric document understanding",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "Analyzed the results of the ablation study. The findings clearly demonstrate that removing the global context vector leads to a significant performance drop, confirming its crucial role in the model's success. This analysis provides strong evidence for the paper's central claims.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After conducting a new experiment (the ablation study in e_12), the immediate and necessary next step is to analyze its results. This analysis is essential to interpret the data from the ablation, quantify the impact of the specific model component, and generate the specific findings that will be added to the paper to strengthen its arguments."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Entity-centric document understanding",
+    "subject": "CS-NLP",
+    "event_type": "writing",
+    "description": "Updated the 'Results and Analysis' section of the paper to incorporate the findings from the ablation study. A new subsection was added with a table showing the performance drop when the global context vector is removed, and text was written to explain the significance of these results.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After analyzing the ablation study results in the previous step (e_13), the immediate next action is to integrate this new, crucial evidence into the paper draft. This writing step ensures that the compelling results from the ablation study are properly documented and used to strengthen the paper's main claims before finalizing the manuscript."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Entity-centric document understanding",
+    "subject": "CS-NLP",
+    "event_type": "writing",
+    "description": "Drafted the Introduction and Conclusion sections for the paper. The Introduction sets the context for the research problem and highlights the paper's main contributions. The Conclusion summarizes the findings, reiterates the model's effectiveness, and suggests avenues for future work.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the core Methodology and Results sections drafted and updated (e_14), the project is ready for the framing narrative. Writing the Introduction and Conclusion synthesizes the project's purpose (from 'research_goals') and its outcomes (from 'experiment_results') into a complete story, moving the paper closer to a full draft."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Entity-centric document understanding",
+    "subject": "CS-NLP",
+    "event_type": "writing",
+    "description": "Consolidated all drafted sections (Introduction, Methodology, Results, Conclusion) into a single, coherent manuscript. The paper was read from start to finish to improve narrative flow, fix inconsistencies, and polish the language. This step integrates all previously written parts into a near-complete draft.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After drafting all individual sections of the paper (e_15), the essential next step is to assemble them into a cohesive whole. This writing and editing phase ensures the final paper tells a clear and compelling story, connecting the initial 'research_goals' with the final 'experiment_results' in a unified narrative, preparing the manuscript for final review."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Entity-centric document understanding",
+    "subject": "CS-NLP",
+    "event_type": "end",
+    "description": "The project is concluded. The research has progressed from initial ideation through iterative method refinement, comprehensive experimentation, and detailed analysis, culminating in a complete and polished manuscript ready for submission to a conference or journal.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached a natural conclusion. The research goals have been met, the method has been validated, the main and ablation experiments provide conclusive results, and a full paper draft has been written and revised. The research cycle for this work is complete."
+  }
+]

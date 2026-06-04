@@ -1,0 +1,361 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "A/B testing logic and practical pitfalls",
+    "subject": "DataScience",
+    "event_type": "objective_clarification",
+    "description": "Initial meeting with the learner to discuss their background in statistics, their specific goals for learning A/B testing (e.g., for job interviews, on-the-job application), and any time constraints. The focus is on defining what 'success' looks like for them.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first session, so the primary goal is to establish a clear understanding of the learner's needs and goals. Creating the 'learning_objectives' artifact is the foundational step required before a detailed study plan can be developed."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "A/B testing logic and practical pitfalls",
+    "subject": "DataScience",
+    "event_type": "plan_milestones",
+    "description": "Based on the defined learning objectives, the tutor and learner collaborate to create a high-level study plan. This plan breaks down the A/B testing topic into key milestones, such as 'Statistical Foundations', 'Experiment Design', 'Interpreting Results', and 'Common Pitfalls', and sets a tentative timeline.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learning objectives established in the first session, the natural next step is to structure the learning journey. Creating a 'study_plan' provides a roadmap for both the tutor and the learner, ensuring that all objectives are covered in a logical sequence."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "A/B testing logic and practical pitfalls",
+    "subject": "DataScience",
+    "event_type": "lesson",
+    "description": "The tutor delivers the first lesson, focusing on the 'Statistical Foundations' milestone from the study plan. Key concepts covered include hypothesis testing (null vs. alternative), p-values, and statistical power, using simple, non-technical examples to build intuition.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the creation of the study plan, this first lesson initiates the teaching process by addressing the first milestone, 'Statistical Foundations'. This structured approach ensures the learner builds foundational knowledge before moving to more complex topics. The generated 'teaching_notes' will serve as a reference for the learner and a reusable asset for the tutor."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "A/B testing logic and practical pitfalls",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "To solidify the concepts from the first lesson, the tutor provides targeted practice problems. These tasks require the learner to formulate null and alternative hypotheses for given scenarios and interpret mock p-values, with their attempts captured for later review.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a theoretical lesson (e_03), it is essential for the learner to apply the new knowledge. This practice session serves to check their understanding of the foundational statistical concepts and generates a 'practice_record' which is necessary for the upcoming feedback and review stage."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "A/B testing logic and practical pitfalls",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's attempts from the practice session, focusing on their formulation of hypotheses and interpretation of p-values. Key misconceptions are identified, and specific, constructive feedback is prepared to correct misunderstandings.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session (e_04), a review is the essential next step to provide feedback and correct misunderstandings. By analyzing the 'practice_record', the tutor can create a 'feedback_summary' that addresses the learner's specific difficulties, ensuring they have a solid grasp of the foundational concepts before proceeding."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "A/B testing logic and practical pitfalls",
+    "subject": "DataScience",
+    "event_type": "materials_revision",
+    "description": "Based on the misconceptions identified during the review, the tutor revises the 'Statistical Foundations' teaching notes. The revision adds more intuitive examples and a new section clarifying the common confusion between statistical significance and practical significance.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in e_05 revealed specific weaknesses in the learner's understanding. Proactively revising the 'teaching_notes' based on the 'feedback_summary' strengthens the learning material, addresses the root cause of the confusion, and prepares for a more effective follow-up session."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "A/B testing logic and practical pitfalls",
+    "subject": "DataScience",
+    "event_type": "lesson",
+    "description": "The tutor leads a focused follow-up lesson using the revised teaching notes. This session specifically walks the learner through the new examples clarifying statistical vs. practical significance, directly addressing the issues highlighted in the feedback summary.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After identifying misconceptions (e_05) and revising materials (e_06), this targeted lesson is crucial to ensure the feedback was effective. Directly re-teaching the difficult concepts using the improved notes solidifies the learner's understanding before they attempt another practice session."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "A/B testing logic and practical pitfalls",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "To verify comprehension after the remedial lesson, the tutor assigns a new set of practice problems based on the revised notes. These tasks specifically challenge the learner to differentiate between statistical significance and practical significance in various scenarios, and their new attempts are recorded.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the targeted re-teaching in the previous session (e_07), a new practice session is necessary to confirm that the learner has overcome their earlier misconceptions. This generates a new 'practice_record' that will be used to assess their current understanding before advancing to the next milestone in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "A/B testing logic and practical pitfalls",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's second practice attempt, specifically checking their ability to differentiate statistical and practical significance. The review confirms that the learner has successfully overcome their previous confusion and has a solid grasp of the foundational concepts.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the second, remedial practice session (e_08), this review is necessary to formally assess whether the learner is ready to move forward. By analyzing the new 'practice_record', the tutor can confirm mastery and provide positive reinforcement before advancing to the next milestone in the study plan."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "A/B testing logic and practical pitfalls",
+    "subject": "DataScience",
+    "event_type": "lesson",
+    "description": "With foundational concepts secured, the tutor proceeds to the next milestone in the study plan: 'Experiment Design'. This lesson covers how to choose appropriate primary and secondary metrics, the principles of randomization, and an introduction to sample size calculation.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The successful review in e_09 confirmed the learner is ready to advance. This lesson moves the tutoring forward to the next logical milestone, 'Experiment Design', as laid out in the 'study_plan'. New 'teaching_notes' are created for this more advanced topic."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "A/B testing logic and practical pitfalls",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "The tutor assigns practice exercises based on the 'Experiment Design' lesson. The learner is given several business case studies and asked to define a primary metric, at least one secondary metric, and explain how they would ensure proper randomization for each case.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on 'Experiment Design' (e_10), this practice session is the logical next step to ensure the learner can apply these new, more complex concepts. Creating a 'practice_record' is essential for the tutor to assess understanding and prepare for the next review session."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "A/B testing logic and practical pitfalls",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's proposed experiment designs from the case studies. The focus is on evaluating the appropriateness of their chosen metrics and the soundness of their randomization plans, identifying any confusion or gaps in their reasoning.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the 'Experiment Design' practice (e_11), this review is essential to evaluate the learner's ability to apply these more abstract concepts. By analyzing the 'practice_record', the tutor can create a 'feedback_summary' that will guide the next lesson or practice session, ensuring the learner is building a solid foundation in experiment setup."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "A/B testing logic and practical pitfalls",
+    "subject": "DataScience",
+    "event_type": "lesson",
+    "description": "The tutor holds a clarification session focused on the issues raised in the last review. Using the learner's own work from the practice record, the tutor re-explains how to select appropriate metrics and walks through a corrected experiment design, updating the teaching notes with this new worked example.",
+    "required_artifacts": [
+      "feedback_summary",
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_12) identified gaps in the learner's ability to design experiments. This targeted lesson is a direct response, using the specific feedback and the learner's practice attempts to correct misunderstandings before they attempt practice again."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "A/B testing logic and practical pitfalls",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "To confirm understanding after the clarification session, the learner is given a new case study. They are tasked with designing an experiment from scratch, including defining metrics and a randomization strategy, using the corrected methods from the revised teaching notes.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the remedial lesson in e_13, a follow-up practice session is essential to verify that the learner has internalized the corrected concepts of experiment design. This creates a new 'practice_record' which will be used to assess their proficiency before moving to the next topic."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "A/B testing logic and practical pitfalls",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's second attempt at designing an experiment from scratch. The assessment confirms that the learner can now correctly define metrics and outline a randomization strategy, indicating they have internalized the concepts from the remedial lesson.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a second, targeted practice session on experiment design (e_14), a review is the necessary next step to validate the learner's understanding. This confirms whether the remedial lesson (e_13) was successful before advancing to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "A/B testing logic and practical pitfalls",
+    "subject": "DataScience",
+    "event_type": "lesson",
+    "description": "Having confirmed the learner's grasp of experiment design, the tutor advances to the 'Interpreting Results' milestone from the study plan. This lesson focuses on analyzing the outcomes of an A/B test, covering topics like calculating confidence intervals, checking for statistical significance, and translating numerical results into business impact.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The successful review in e_15 confirmed the learner's readiness to proceed. This lesson advances the tutoring to the next milestone, 'Interpreting Results', as outlined in the 'study_plan', and new 'teaching_notes' are generated for this topic."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "A/B testing logic and practical pitfalls",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "To apply the concepts from the 'Interpreting Results' lesson, the tutor provides the learner with several mock A/B test result datasets. The learner is tasked with calculating confidence intervals, determining statistical significance, and writing a brief summary of the business implications for each test.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the theoretical lesson on interpreting results (e_16), this practice session is essential for the learner to apply these analytical concepts to concrete scenarios. Generating a 'practice_record' is a necessary step to enable a thorough review of the learner's analytical skills."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "A/B testing logic and practical pitfalls",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor analyzes the learner's work on interpreting mock A/B test results. The review checks the correctness of their confidence interval calculations, significance checks, and the clarity of their business impact summaries.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner practiced interpreting results (e_17), a review is the essential next step to provide targeted feedback. Analyzing the 'practice_record' allows the tutor to create a 'feedback_summary' to correct any errors before tackling the final milestone of the study plan."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "A/B testing logic and practical pitfalls",
+    "subject": "DataScience",
+    "event_type": "lesson",
+    "description": "The tutor introduces the final milestone from the study plan: 'Common Pitfalls'. This lesson covers prevalent issues such as the 'peeking problem' (early stopping), Simpson's paradox, and the challenges of multiple comparisons, using examples to illustrate how these can invalidate test results.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_18) completed the 'Interpreting Results' module. According to the 'study_plan', the final topic is 'Common Pitfalls'. This lesson advances the tutoring to the last major milestone, equipping the learner with knowledge of practical challenges they will face in real-world A/B testing."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "A/B testing logic and practical pitfalls",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "To assess understanding of the final topic, the tutor provides case studies that contain subtle but critical flaws. The learner is asked to identify potential issues like the 'peeking problem', segmentation fallacies (Simpson's paradox), or invalid metric choices, and explain their reasoning.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the final lesson on 'Common Pitfalls' (e_19), a practice session is essential to ensure the learner can spot these complex issues in practical situations. This step creates a 'practice_record' that will be used for a final assessment of their comprehensive understanding."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "A/B testing logic and practical pitfalls",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's analysis of the flawed case studies, checking their ability to identify and explain common pitfalls like the 'peeking problem' and Simpson's paradox. This serves as a final check on the core curriculum topics.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the final practice session (e_20) covering 'Common Pitfalls', this review is critical to assess the learner's mastery of the entire curriculum. The resulting feedback will confirm whether the learner has met the key objectives and is ready for a final summary or conclusion of the tutoring."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "tutoring",
+    "topic": "A/B testing logic and practical pitfalls",
+    "subject": "DataScience",
+    "event_type": "end",
+    "description": "In this final session, the tutor and learner review the journey from the initial objectives to the final practice. They confirm that all milestones in the study plan have been successfully covered and the learner now has a confident, practical understanding of A/B testing, and the tutoring concludes.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has successfully progressed through all planned milestones, demonstrated proficiency in practice sessions, and passed the final review (e_21) covering complex pitfalls. With the initial learning objectives met, the formal tutoring process is now complete."
+  }
+]

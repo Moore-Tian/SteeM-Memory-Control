@@ -1,0 +1,414 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Organic chemistry patterns and reaction logic in words",
+    "subject": "Chemistry",
+    "event_type": "objective_clarification",
+    "description": "Initial diagnostic session to understand the learner's background in organic chemistry, identify specific struggles with reaction mechanisms, and define their primary goal: to move beyond rote memorization to understanding reaction patterns.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "As the first tutoring session, the priority is to clarify the learner's needs and establish clear goals. This diagnostic step provides the foundation for creating a tailored study plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Organic chemistry patterns and reaction logic in words",
+    "subject": "Chemistry",
+    "event_type": "plan_milestones",
+    "description": "Based on the clarified objectives, the tutor outlines a multi-stage study plan. The plan starts with foundational concepts (nucleophiles/electrophiles, arrow-pushing), then progresses through major reaction families (substitutions, eliminations, additions), with checkpoints after each module.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learner's goals established in the diagnostic session (e_01), the next logical step is to create a structured roadmap. This study plan translates the abstract objectives into a concrete sequence of topics and milestones."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Organic chemistry patterns and reaction logic in words",
+    "subject": "Chemistry",
+    "event_type": "lesson",
+    "description": "The first lesson begins, focusing on the foundational concepts outlined in the study plan. The tutor introduces the roles of nucleophiles (electron-rich species) and electrophiles (electron-poor species) as the primary actors in most organic reactions, using analogies and simple examples.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a study plan (e_02) in place, the next logical step is to begin instruction. This lesson executes the first stage of the plan by teaching the core concepts of nucleophiles and electrophiles, which are fundamental to understanding reaction logic."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Organic chemistry patterns and reaction logic in words",
+    "subject": "Chemistry",
+    "event_type": "practice",
+    "description": "To solidify the concepts from the first lesson, the tutor assigns a set of practice problems. The learner is asked to identify various chemical species as nucleophiles or electrophiles and to describe the reasoning based on their structure and electron density.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the introductory lesson on nucleophiles and electrophiles (e_03), this practice session is the essential next step to check for understanding and apply the new knowledge. It creates a record of the learner's work that can be used for feedback in the next session."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Organic chemistry patterns and reaction logic in words",
+    "subject": "Chemistry",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's completed practice problems from the practice record. The review identifies a common misconception where the learner correctly identifies charge but struggles to assess the impact of steric hindrance on nucleophilicity.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session (e_04), a review is critical to assess the learner's understanding and diagnose specific errors. This review of the practice_record allows for the creation of targeted feedback, ensuring misconceptions are addressed before new concepts are introduced."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Organic chemistry patterns and reaction logic in words",
+    "subject": "Chemistry",
+    "event_type": "materials_revision",
+    "description": "In response to the identified misconception, the tutor revises the teaching notes on nucleophilicity. A new section is added with diagrams and examples to explicitly explain how steric hindrance can impede a nucleophile's access to an electrophilic center, contrasting bulky vs. non-bulky nucleophiles.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in e_05 revealed a gap in the learner's understanding not adequately covered by the initial lesson materials. Revising the teaching_notes to directly address steric hindrance is a necessary step to create clearer, more effective materials before re-teaching or assigning further practice."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Organic chemistry patterns and reaction logic in words",
+    "subject": "Chemistry",
+    "event_type": "lesson",
+    "description": "The tutor conducts a targeted mini-lesson using the revised teaching notes to explicitly address the misconception about steric hindrance. They walk the learner through the new examples, contrasting bulky and non-bulky nucleophiles to clarify how molecular shape affects reactivity.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After revising the teaching materials in e_06 to address a specific error identified in e_05, a focused lesson is the logical next step. This ensures the learner directly benefits from the improved materials and has an opportunity to ask questions to fully resolve their confusion before attempting more practice."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Organic chemistry patterns and reaction logic in words",
+    "subject": "Chemistry",
+    "event_type": "practice",
+    "description": "To verify that the misconception about steric hindrance is resolved, the tutor assigns a new set of practice problems. These problems specifically require comparing the reactivity of bulky vs. non-bulky nucleophiles and justifying the answers.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the targeted re-teaching in e_07, this practice session is crucial to confirm that the learner can now correctly apply the concept of steric hindrance. It creates a new performance record to assess whether the remediation was successful before proceeding with the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Organic chemistry patterns and reaction logic in words",
+    "subject": "Chemistry",
+    "event_type": "review",
+    "description": "The tutor reviews the second set of practice problems, focusing on the learner's ability to apply the concept of steric hindrance. The learner's answers are now consistently correct, demonstrating that the previous misconception has been resolved.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice in e_08, a review is necessary to confirm that the remediation was successful. This step validates the learner's understanding and provides the green light to proceed to the next topic in the original study plan."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Organic chemistry patterns and reaction logic in words",
+    "subject": "Chemistry",
+    "event_type": "lesson",
+    "description": "With the foundational concepts mastered, the tutor proceeds to the next topic in the study plan: arrow-pushing formalism. The lesson introduces how to use curved arrows to represent the movement of electron pairs from a nucleophile to an electrophile, forming and breaking bonds.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The positive review in e_09 confirmed that the learner is ready to advance. According to the study plan (e_02), the next logical step is to teach arrow-pushing, the visual language needed to describe the interactions between the nucleophiles and electrophiles already learned."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Organic chemistry patterns and reaction logic in words",
+    "subject": "Chemistry",
+    "event_type": "practice",
+    "description": "After the lesson on arrow-pushing, the tutor assigns practice problems where the learner must draw the curved arrows for single-step reactions. The exercises involve simple acid-base reactions and nucleophilic attacks to build foundational skills in representing electron movement.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on arrow-pushing formalism (e_10), immediate practice is essential for the learner to apply this new, critical skill. This practice creates a record of their ability to visually represent reaction mechanisms, which can then be reviewed for accuracy and common errors."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Organic chemistry patterns and reaction logic in words",
+    "subject": "Chemistry",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's practice on arrow-pushing formalism. They find that while the learner correctly identifies the nucleophile and electrophile, they often draw arrows starting from the atomic nucleus instead of a lone pair or bond, indicating a misunderstanding of what the arrow represents.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on arrow-pushing (e_11), a review is the necessary next step to assess skill acquisition. This review is critical for catching fundamental errors in this visual language before applying it to more complex multi-step reactions."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Organic chemistry patterns and reaction logic in words",
+    "subject": "Chemistry",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback from the arrow-pushing review, the tutor updates the teaching notes. They add a prominent section with a \"Do's and Don'ts\" table, explicitly illustrating that curved arrows must originate from a source of electrons (a lone pair or a bond) and not an atom's nucleus.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in e_12 revealed a fundamental error in the learner's arrow-pushing technique. Before re-teaching, it is crucial to revise the teaching_notes to explicitly address this common pitfall, ensuring the instructional materials are as clear as possible and can be used for more effective remediation."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Organic chemistry patterns and reaction logic in words",
+    "subject": "Chemistry",
+    "event_type": "lesson",
+    "description": "The tutor conducts a targeted mini-lesson using the revised teaching notes. They walk the learner through the new \"Do's and Don'ts\" table, emphasizing that curved arrows must start from a source of electrons (a bond or lone pair) and point to an electron sink.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After revising the teaching materials in e_13 to address the specific error identified in e_12, a focused re-teaching session is the logical next step. This ensures the learner understands the correct arrow-pushing convention before attempting to practice it again."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Organic chemistry patterns and reaction logic in words",
+    "subject": "Chemistry",
+    "event_type": "practice",
+    "description": "To confirm that the learner has corrected their arrow-pushing technique, the tutor assigns a new set of targeted exercises. The problems require the learner to explicitly draw arrows starting from the correct electron source (lone pairs or bonds) for simple nucleophilic attacks.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the targeted re-teaching on correct arrow-pushing formalism in e_14, a new practice session is essential to verify that the learner can now apply the concept correctly. This creates a new performance record to assess whether the remediation was successful before moving on to more complex reactions."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Organic chemistry patterns and reaction logic in words",
+    "subject": "Chemistry",
+    "event_type": "review",
+    "description": "The tutor reviews the second set of arrow-pushing exercises. The learner's work now correctly shows curved arrows originating from sources of electron density (lone pairs and bonds), indicating that the misconception from e_12 has been resolved.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice in e_15, a review is essential to verify that the learner has mastered the correct arrow-pushing convention. This check confirms that the remediation was successful and that the learner is now ready to apply this fundamental skill to analyzing full reaction mechanisms."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Organic chemistry patterns and reaction logic in words",
+    "subject": "Chemistry",
+    "event_type": "lesson",
+    "description": "Building on the mastery of foundational skills, the tutor introduces the first major reaction type from the study plan: SN2 reactions. The lesson explains the concerted mechanism, showing how the concepts of nucleophilic attack and arrow-pushing come together to describe a substitution reaction.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in e_16 confirmed the learner's readiness to advance. Following the study plan (e_02), the next logical step is to introduce the first major reaction family, applying the foundational skills of nucleophiles/electrophiles and arrow-pushing to a complete reaction mechanism."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Organic chemistry patterns and reaction logic in words",
+    "subject": "Chemistry",
+    "event_type": "practice",
+    "description": "To solidify understanding of the SN2 mechanism, the tutor assigns practice problems. The learner is asked to identify the nucleophile, substrate, and leaving group for several reactions and then draw the complete, concerted mechanism using correct arrow-pushing.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on SN2 reactions (e_17), targeted practice is the necessary next step to assess if the learner can apply the newly integrated concepts. This practice session will generate a record of their work, which is crucial for identifying any difficulties in applying the mechanism."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Organic chemistry patterns and reaction logic in words",
+    "subject": "Chemistry",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's SN2 mechanism practice from the practice record. The review shows that while the learner correctly draws the arrow-pushing, they consistently miss the required inversion of stereochemistry at the carbon center, a critical feature of the SN2 pathway.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a practice session applying a new mechanism (e_18), a review is essential to evaluate understanding and catch new types of errors. This review identifies a specific, advanced misconception about stereochemistry, which must be addressed before moving to other reaction types."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Organic chemistry patterns and reaction logic in words",
+    "subject": "Chemistry",
+    "event_type": "materials_revision",
+    "description": "In response to the identified misconception about stereochemistry, the tutor revises the SN2 teaching notes. They add a dedicated section with 3D diagrams to visually explain the 'backside attack' and the resulting inversion of configuration, contrasting the stereochemistry of the reactant and product.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in e_19 revealed a fundamental gap in the learner's understanding of SN2 stereochemistry. Revising the teaching_notes to explicitly address this point is a crucial step to create clearer materials before re-teaching the concept and ensuring the learner grasps this key feature of the mechanism."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "Organic chemistry patterns and reaction logic in words",
+    "subject": "Chemistry",
+    "event_type": "lesson",
+    "description": "The tutor conducts a targeted mini-lesson using the revised teaching notes to explicitly address the stereochemical consequences of the SN2 reaction. They use the new 3D diagrams to walk the learner through the backside attack and the resulting inversion of configuration.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After revising the teaching materials in e_20 to address the specific error about stereochemistry identified in e_19, a focused lesson is the logical next step. This ensures the learner directly benefits from the improved materials and has an opportunity to correct their understanding before practicing again."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "tutoring",
+    "topic": "Organic chemistry patterns and reaction logic in words",
+    "subject": "Chemistry",
+    "event_type": "practice",
+    "description": "To confirm understanding of SN2 stereochemistry, the tutor assigns practice problems that require the learner to predict the product of an SN2 reaction and correctly draw its 3D structure, showing the inversion of configuration.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the targeted mini-lesson on SN2 stereochemistry in e_21, this practice session is essential to validate that the learner can now correctly apply the concept. It creates a new performance record to assess whether the remediation was successful before moving on to the next reaction type."
+  },
+  {
+    "event_id": "e_23",
+    "time_index": 23,
+    "domain": "tutoring",
+    "topic": "Organic chemistry patterns and reaction logic in words",
+    "subject": "Chemistry",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's practice on SN2 stereochemistry. The learner's work now correctly depicts the inversion of configuration for the products, confirming that the misconception from e_19 has been successfully addressed.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice in e_22, a review is essential to confirm that the learner has mastered the stereochemical consequences of the SN2 reaction. This check validates the remediation cycle and clears the way to introduce the next topic in the study plan, such as SN1 reactions."
+  },
+  {
+    "event_id": "e_24",
+    "time_index": 24,
+    "domain": "tutoring",
+    "topic": "Organic chemistry patterns and reaction logic in words",
+    "subject": "Chemistry",
+    "event_type": "lesson",
+    "description": "With SN2 concepts mastered, the tutor introduces the SN1 reaction as the next topic from the study plan. The lesson focuses on the stepwise mechanism involving a carbocation intermediate and contrasts the factors favoring SN1 (e.g., tertiary substrates, weak nucleophiles) with those favoring SN2.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The successful review in e_23 confirmed the learner's readiness to move on. Following the study plan, introducing the SN1 reaction is the logical next step, as it allows for a direct comparison with the SN2 mechanism and deepens the learner's understanding of substitution reaction patterns."
+  },
+  {
+    "event_id": "e_25",
+    "time_index": 25,
+    "domain": "tutoring",
+    "topic": "Organic chemistry patterns and reaction logic in words",
+    "subject": "Chemistry",
+    "event_type": "practice",
+    "description": "After the lesson on the SN1 mechanism, the tutor assigns practice problems. The learner is asked to propose mechanisms for reactions that proceed via an SN1 pathway, including drawing the carbocation intermediate and predicting the stereochemical outcome (racemization).",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on SN1 reactions (e_24), this practice session is the essential next step for the learner to apply the new concepts. It will generate a record of their ability to distinguish SN1 from SN2 and correctly depict its multi-step mechanism, which is necessary for the subsequent review."
+  }
+]

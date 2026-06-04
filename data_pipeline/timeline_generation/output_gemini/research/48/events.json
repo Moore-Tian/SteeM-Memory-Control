@@ -1,0 +1,295 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Emotion-aware dialogue systems",
+    "subject": "CS-NLP",
+    "event_type": "proposal",
+    "description": "Initial project proposal to define the scope and goals. The project aims to build a dialogue system that can recognize user emotions and adapt its responses to improve engagement. A high-level plan involving transformer-based models and existing emotion-labeled corpora was outlined.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the first event of the research project. It is necessary to establish the initial research questions, high-level goals, and a roadmap before any technical work can begin. This event creates the foundational artifacts for the project."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Emotion-aware dialogue systems",
+    "subject": "CS-NLP",
+    "event_type": "scheme_design",
+    "description": "Based on the initial proposal, a detailed methodological scheme was designed. The plan is to fine-tune a pre-trained transformer model (like BERT) on an emotion-labeled dialogue corpus for the emotion recognition task. For the response generation module, a separate GPT-style model will be conditioned on both the dialogue history and the predicted emotion label.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the initial proposal (e_01), the next logical step is to translate the high-level plan into a concrete technical design. This event uses the established research goals and plan to create a specific 'method_scheme' that details the model architecture and training strategy, which is necessary before any implementation or experiments can begin."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Emotion-aware dialogue systems",
+    "subject": "CS-NLP",
+    "event_type": "pilot_experiments",
+    "description": "Ran small-scale pilot experiments to validate the designed scheme. A subset of the emotion-labeled dialogue corpus was used to fine-tune the BERT-based emotion classifier. The initial results show the model can learn to classify emotions with above-chance accuracy, confirming the technical feasibility of the approach.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing the technical method (e_02), it is crucial to run pilot experiments to test the feasibility and identify potential issues before committing to large-scale main experiments. This step uses the 'method_scheme' to produce initial 'experiment_results', which provide a first validation of the research direction."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Emotion-aware dialogue systems",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "Conducted a detailed analysis of the pilot experiment results. The confusion matrix showed that the model frequently confuses subtle, low-arousal emotions like 'sadness' and 'disappointment'. This analysis suggests that the current model struggles with fine-grained distinctions and is biased towards majority classes in the training data.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The pilot experiment (e_03) produced initial, promising results. A thorough analysis is the critical next step to understand the model's specific failure modes before scaling up. This deep dive into the results is necessary to make an informed decision about whether to proceed to main experiments or to first revise the methodology."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Emotion-aware dialogue systems",
+    "subject": "CS-NLP",
+    "event_type": "scheme_design",
+    "description": "To address the issues identified in the pilot analysis, the method scheme is revised. The new approach incorporates a weighted loss function to handle class imbalance and explores using a RoBERTa-large model instead of BERT-base for better representational power to distinguish fine-grained emotions.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis of pilot results (e_04) revealed specific model weaknesses regarding subtle emotions and class imbalance. Instead of proceeding to main experiments with a flawed method, it is more efficient to revise the 'method_scheme' to directly address these problems. This iterative refinement is a crucial step to improve the model before scaling up experiments."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Emotion-aware dialogue systems",
+    "subject": "CS-NLP",
+    "event_type": "pilot_experiments",
+    "description": "A second round of pilot experiments was conducted using the revised method. The RoBERTa-large model was fine-tuned with the weighted loss function on the same subset of data. The goal was to directly assess whether the new approach mitigates the previously identified issues with fine-grained emotion classification.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the methodology in e_05 to address the shortcomings found in the initial pilot analysis (e_04), it is crucial to validate the effectiveness of these changes. Running another pilot experiment is a resource-efficient way to confirm that the new scheme with RoBERTa and a weighted loss function actually improves performance before proceeding to costly main experiments."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Emotion-aware dialogue systems",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "Analysis of the second round of pilot results confirms the revised scheme is more effective. The RoBERTa-large model with a weighted loss function significantly reduced the confusion between 'sadness' and 'disappointment' and improved overall F1 scores on minority classes. The results are now strong enough to justify proceeding with the main experiments.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the second pilot experiment (e_06), a detailed analysis is required to formally evaluate the impact of the revised method (e_05). This step is crucial for confirming that the previously identified weaknesses have been addressed and for making a go/no-go decision on running the full-scale main experiments."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Emotion-aware dialogue systems",
+    "subject": "CS-NLP",
+    "event_type": "main_experiments",
+    "description": "Launched the full-scale main experiments using the validated scheme. The RoBERTa-large emotion classifier was trained on the entire dataset, and the GPT-based response generator was trained, conditioned on the classifier's predicted emotion labels. The full system was then evaluated on the held-out test set using both automatic metrics and human evaluation.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The analysis of the second pilot study (e_07) confirmed that the revised method is effective. Therefore, the logical next step is to scale up from pilot studies to the main experiments. This event executes the validated 'method_scheme' on the full dataset to generate the definitive 'experiment_results' required for the final analysis and paper."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Emotion-aware dialogue systems",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "A comprehensive analysis of the main experiment results was performed. This involved statistical analysis of automatic metrics (e.g., perplexity, BLEU) and a qualitative review of the human evaluation data, which assessed appropriateness, empathy, and engagement. The results show a statistically significant improvement in human-rated engagement for the emotion-aware system compared to an emotion-agnostic baseline.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After running the large-scale main experiments (e_08), a thorough analysis is the essential next step to interpret the raw outputs. This event synthesizes the results, compares them against the project's research goals, and provides the key conclusions and quantitative evidence needed for the subsequent writing phase."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Emotion-aware dialogue systems",
+    "subject": "CS-NLP",
+    "event_type": "writing",
+    "description": "Began drafting the research paper based on the successful main experiments. The initial writing focuses on the 'Methodology' section, describing the final model architecture and training process, and the 'Results' section, presenting the key findings from the human and automatic evaluations.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the comprehensive analysis of the main experiments (e_09), the core scientific contributions are now clear. The logical next step is to begin documenting these findings for publication. This event translates the finalized 'method_scheme' and 'experiment_results' into the first draft of the paper, moving the project towards dissemination."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Emotion-aware dialogue systems",
+    "subject": "CS-NLP",
+    "event_type": "writing",
+    "description": "Drafted the 'Introduction' and 'Related Work' sections for the paper. The introduction frames the problem of emotionally flat dialogue systems, and the related work section situates the RoBERTa+GPT approach against prior work in affective computing and conditional text generation.",
+    "required_artifacts": [
+      "research_goals",
+      "method_scheme",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After drafting the core Methodology and Results sections in e_10, the next logical step is to write the introductory and background sections. This frames the research problem, highlights the contribution based on the successful results, and positions the work within the broader scientific field, creating a more complete paper draft."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Emotion-aware dialogue systems",
+    "subject": "CS-NLP",
+    "event_type": "writing",
+    "description": "Drafted the 'Discussion' and 'Conclusion' sections of the paper. This involved interpreting the results in a broader context, acknowledging limitations such as the specific dataset used, and outlining future work like exploring multi-modal emotion recognition.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the Introduction, Methods, and Results sections drafted (e_10, e_11), the next step is to write the Discussion and Conclusion. This section is essential for interpreting the findings from the 'experiment_results', reflecting on the initial 'research_goals', and contextualizing the work's contribution and limitations, thereby completing the main narrative of the paper."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Emotion-aware dialogue systems",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "During an internal review of the full paper draft, it was decided that the claims needed stronger qualitative evidence. A targeted qualitative analysis was conducted on the main experiment outputs to find compelling case studies that contrast the emotion-aware model with the baseline, especially in situations where the baseline fails to show empathy.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After drafting the full paper (e_10, e_11, e_12), a common next step is to strengthen the arguments. The current 'paper_paragraph' relies on aggregate metrics. This analysis adds qualitative depth by curating specific case studies from the 'experiment_results', making the paper's contributions more concrete and impactful."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Emotion-aware dialogue systems",
+    "subject": "CS-NLP",
+    "event_type": "writing",
+    "description": "Revised the 'Results' and 'Discussion' sections of the paper to include the compelling qualitative examples identified in the last analysis phase. These case studies highlight specific dialogues where the emotion-aware model provides an empathetic response while the baseline fails, making the paper's claims more tangible.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the targeted qualitative analysis in e_13, the clear next step is to integrate these new findings into the paper. This event updates the existing 'paper_paragraph' with the strong case studies from the 'experiment_results', directly addressing the feedback from the internal review and strengthening the overall manuscript."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Emotion-aware dialogue systems",
+    "subject": "CS-NLP",
+    "event_type": "proposal",
+    "description": "While finalizing the paper, the team revisits the initial research goals. Based on the final results and the paper's narrative, the goals are sharpened to more precisely claim the key contribution: demonstrating that conditioning on fine-grained emotion labels significantly improves human-perceived empathy and engagement in open-domain dialogue.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals"
+    ],
+    "reason": "With a complete paper draft (e_14) and final results (e_09, e_13), the project's exact contribution is now crystal clear. It is a common and important step to refine the initial 'research_goals' to perfectly align with the demonstrated outcomes, ensuring the paper's narrative is tight and its claims are precisely supported by the evidence."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Emotion-aware dialogue systems",
+    "subject": "CS-NLP",
+    "event_type": "writing",
+    "description": "Completed a final pass on the entire manuscript. This involved writing the abstract, checking for consistency across all sections, formatting the paper according to a target conference style, and performing a final proofread to prepare for submission.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After refining the research goals (e_15) and completing the main content of the paper (e_14), the project is at the final pre-submission stage. This event represents the crucial finalization of the manuscript, turning the revised draft into a polished, submission-ready document, which is the last step before the project's work is considered complete."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Emotion-aware dialogue systems",
+    "subject": "CS-NLP",
+    "event_type": "end",
+    "description": "The research paper is submitted to a top-tier NLP conference. This event marks the culmination of the project's research cycle, with the findings now ready for peer review and dissemination to the wider scientific community.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has successfully progressed from an initial proposal to a completed, submission-ready manuscript (e_16). The research goals were met, the methodology was validated, and the paper has been extensively written and revised. Therefore, the project has reached its natural conclusion, and submitting the work for publication is the final step of this research cycle."
+  }
+]

@@ -1,0 +1,353 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Adversarial robustness evaluation",
+    "subject": "CS-AI/ML",
+    "event_type": "proposal",
+    "description": "The initial project proposal is formulated. The core idea is to develop a new metric for adversarial robustness that moves beyond simple L-p norms to better align with human perception of semantic similarity.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "Every research project must start with an initial proposal to define its scope and objectives. This event establishes the foundational research goals and a high-level plan, which are necessary before any methods can be designed or experiments can be run."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Adversarial robustness evaluation",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "The initial methodological scheme for the new perceptual robustness metric is designed. The plan is to use the feature space of a pre-trained vision transformer (e.g., CLIP) to measure the semantic distance between an original image and its adversarial counterpart.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the initial proposal (e_01), the next logical step is to translate the high-level research goals into a concrete technical approach. This event designs the core method, creating the 'method_scheme' artifact, which is essential before any experiments can be conducted."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Adversarial robustness evaluation",
+    "subject": "CS-AI/ML",
+    "event_type": "pilot_experiments",
+    "description": "Small-scale pilot experiments are conducted to validate the feasibility of the proposed metric. A few standard adversarial attacks (e.g., PGD) are run on a small set of images from a standard dataset like CIFAR-10, and the CLIP-based semantic distance is calculated for each adversarial pair.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With the initial method designed in e_02, the next logical step is to perform a small-scale pilot study. This helps to sanity-check the approach and get a first look at whether the proposed metric behaves as expected before committing to large-scale main experiments."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Adversarial robustness evaluation",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The results from the pilot experiments are analyzed. The analysis confirms that the CLIP-based distance metric often aligns better with human perception than traditional L-p norms, but it also reveals that the metric's stability is sensitive to the choice of the feature layer within the transformer.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the pilot experiments (e_03), a formal analysis of the results is the necessary next step to evaluate the method's viability. This event interprets the raw 'experiment_results' in the context of the original 'research_goals', and the resulting summary of findings forms the basis for a preliminary results 'paper_paragraph', guiding the next phase of the project."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Adversarial robustness evaluation",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "Based on the analysis of pilot results, the methodological scheme is revised to address the instability caused by feature layer selection. The new approach proposes aggregating features from multiple, pre-selected intermediate layers of the vision transformer, instead of relying on a single layer, to create a more stable distance metric.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous analysis (e_04) revealed a critical weakness in the initial method—its sensitivity to the choice of feature layer. It is necessary to refine the 'method_scheme' to mitigate this issue before committing to large-scale main experiments. This iterative refinement loop is a standard part of the research process, ensuring the final methodology is robust."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Adversarial robustness evaluation",
+    "subject": "CS-AI/ML",
+    "event_type": "main_experiments",
+    "description": "The main experiments are launched using the revised multi-layer aggregation scheme. The evaluation is scaled up to a larger dataset (e.g., ImageNet-1k) and includes a wider variety of adversarial attacks (e.g., AutoAttack, C&W) to comprehensively assess the new metric's performance against traditional L-p norms.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After the methodology was successfully revised in e_05 to address the instability found in pilot tests, the project is ready for a full-scale evaluation. Launching the main experiments is the logical next step to gather the core data needed to address the primary research goals defined in the initial plan."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Adversarial robustness evaluation",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The extensive results from the main experiments on ImageNet are systematically analyzed. This involves creating summary statistics, generating visualizations to compare the new metric against L-p norms, and performing correlation studies to evaluate its alignment with perceptual similarity.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After completing the large-scale main experiments in e_06, a comprehensive analysis is the essential next step to interpret the findings. This process evaluates the collected 'experiment_results' against the project's 'research_goals' to determine the success of the revised metric and to produce the core conclusions that will be presented in the paper."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Adversarial robustness evaluation",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "With the main results analyzed, the process of writing the paper begins in earnest. Drafts of the 'Methodology' and 'Experimental Results' sections are composed, detailing the multi-layer aggregation scheme and presenting the comparative analysis against L-p norms from the ImageNet experiments.",
+    "required_artifacts": [
+      "method_scheme",
+      "paper_paragraph",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the comprehensive analysis of the main experiments (e_07), the project has produced its core findings. The logical next step is to begin formalizing these contributions into a research paper, starting with the key sections that describe the work done and the results achieved."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Adversarial robustness evaluation",
+    "subject": "CS-AI/ML",
+    "event_type": "proposal",
+    "description": "While drafting the paper, a critical review of the method reveals a potential vulnerability: the new metric could be susceptible to adaptive attacks. The research goals are updated to include evaluating the metric's robustness against an attack specifically designed to 'fool' the perceptual distance measure.",
+    "required_artifacts": [
+      "research_goals",
+      "paper_paragraph",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "The process of writing (e_08) often forces a deeper, more critical analysis of the work. Identifying the potential for an adaptive attack is a key insight that strengthens the research, making it necessary to revise the 'research_goals' and 'research_plan' to address this new challenge before finalizing the paper."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Adversarial robustness evaluation",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "The team designs the adaptive attack strategy to test the new perceptual metric. The attack is formulated as an optimization problem that aims to maximize the CLIP-based semantic distance while being constrained by a small L-infinity norm, directly targeting the proposed metric's vulnerability.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the goal revision in e_09 to test against adaptive attacks, the immediate next step is to design the attack itself. This event translates the abstract goal into a concrete technical method, updating the 'method_scheme' to include this new evaluation protocol before new experiments can be run."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Adversarial robustness evaluation",
+    "subject": "CS-AI/ML",
+    "event_type": "pilot_experiments",
+    "description": "A pilot experiment is conducted to test the newly designed adaptive attack against the perceptual metric. The attack is run on a small subset of ImageNet images to check if it can successfully generate adversarial examples that have a large perceptual distance according to our metric but a small L-infinity distance.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing the adaptive attack in e_10 to address the revised research goals from e_09, the next logical step is to run experiments. A pilot study is appropriate here to validate the attack's implementation and to quickly assess the metric's vulnerability before launching a full-scale set of main experiments."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Adversarial robustness evaluation",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The results from the adaptive attack pilot experiments are analyzed. The analysis confirms that the attack is highly effective, generating adversarial examples that are perceptually distinct (high metric score) but have a very small L-infinity norm, confirming the metric's vulnerability.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the pilot experiments for the adaptive attack (e_11), a detailed analysis of the results is the necessary next step. This analysis is crucial to validate the hypothesized vulnerability (from e_09) and quantify its impact, which will inform how the project must proceed to address this critical weakness."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Adversarial robustness evaluation",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "In response to the successful adaptive attack, the team revises the metric scheme to improve its robustness. The proposed fix involves introducing randomization: for each evaluation, a random subset of transformer layers is selected for feature aggregation, making it difficult for a gradient-based attack to find a consistent direction for optimization.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis in e_12 confirmed a critical vulnerability to adaptive attacks, which undermines the core research goal. The only way forward is to redesign the method to counter this specific threat. This event represents a necessary return to the design phase to address the failure observed in the latest experiments before the project can proceed."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Adversarial robustness evaluation",
+    "subject": "CS-AI/ML",
+    "event_type": "pilot_experiments",
+    "description": "A new pilot experiment is launched to evaluate the robustness of the revised, randomized metric. The adaptive attack designed in e_10 is deployed against this new scheme on a small set of images to determine if the randomization defense is effective.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After redesigning the metric in e_13 to include randomization as a defense, the immediate next step is to test its effectiveness. This pilot experiment directly evaluates the new 'method_scheme' against the known adaptive attack, providing crucial validation before potentially rerunning larger-scale experiments."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Adversarial robustness evaluation",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The results of the pilot experiment on the randomized metric are analyzed. The analysis shows that the randomization significantly reduces the effectiveness of the adaptive attack, as the attack gradients become unstable and fail to consistently find effective perturbations. This confirms the viability of the randomization defense.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After running the pilot experiment in e_14 to test the randomized defense, the essential next step is to analyze the results. This analysis will determine if the new defense mechanism successfully counters the adaptive attack, which is a critical question raised in e_09. The outcome of this analysis is a major finding that will heavily influence the final paper."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Adversarial robustness evaluation",
+    "subject": "CS-AI/ML",
+    "event_type": "main_experiments",
+    "description": "With the randomized defense validated, a new set of main experiments is run. This involves re-evaluating the final, robust metric against the full suite of standard attacks (PGD, AutoAttack) and the adaptive attack on the entire ImageNet-1k dataset to generate the definitive results for the paper.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The analysis in e_15 confirmed the randomized defense works in a pilot setting. The next logical step is to scale this up to a full main experiment to gather the definitive evidence for the paper. This replaces the now-obsolete results from the initial main experiments (e_06) and provides a comprehensive evaluation of the final, robust method."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Adversarial robustness evaluation",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The definitive results from the final main experiments are analyzed. This includes a thorough comparison of the robust, randomized metric against both standard attacks and the adaptive attack, confirming its superiority and resilience across the full dataset.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After running the conclusive main experiments in e_16 with the final, robust method, a comprehensive analysis is the mandatory next step. This analysis will produce the core findings of the entire project, directly addressing the revised research goals and providing the content for the final results section of the paper."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "Adversarial robustness evaluation",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "The paper draft is substantially rewritten to incorporate the final project outcomes. The 'Methodology' section is updated to detail the randomized defense, and the 'Results' section is replaced with the analysis from the final experiments, showing resilience to adaptive attacks. The paper's narrative is revised to tell the full story of identifying and fixing the metric's initial vulnerability.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After the final analysis in e_17, the project's core contributions are solidified. The next crucial step is to update the paper draft, which was last seriously worked on in e_08, to reflect the entire research arc, including the discovery of the vulnerability and the development of the successful randomized defense. This consolidates all final findings into a coherent narrative for publication."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "research",
+    "topic": "Adversarial robustness evaluation",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "The team focuses on finalizing the paper for submission. This involves drafting the Abstract, Introduction, and Conclusion sections to frame the project's contributions, and polishing the entire manuscript for clarity, flow, and impact based on internal feedback.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After the core of the paper was rewritten in e_18, the next logical step is to complete the manuscript. Writing the framing sections (Abstract, Introduction, Conclusion) and polishing the text are essential for creating a submission-ready document that effectively communicates the project's full narrative and contributions."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "research",
+    "topic": "Adversarial robustness evaluation",
+    "subject": "CS-AI/ML",
+    "event_type": "end",
+    "description": "The finalized paper is submitted to a top-tier machine learning conference (e.g., NeurIPS). The project is considered complete, pending the outcome of peer review.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has successfully navigated a full research cycle, from initial proposal to a robust, validated method and a polished, submission-ready manuscript (e_19). The research goals have been met, the results are conclusive, and the paper is complete. Submitting the work for publication marks the end of the active research phase."
+  }
+]

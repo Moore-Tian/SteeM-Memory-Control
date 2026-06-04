@@ -1,0 +1,302 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Distributed ML training reliability",
+    "subject": "CS-AI/ML",
+    "event_type": "proposal",
+    "description": "Initial project proposal to investigate reliability issues in large-scale distributed ML training. The primary goal is to develop a new checkpointing mechanism that minimizes overhead while ensuring fault tolerance. A high-level plan is drafted to guide the initial research phases.",
+    "required_artifacts": [
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "research_plan",
+      "research_goals"
+    ],
+    "reason": "This is the first step of the project, establishing the initial research direction and goals. A nascent, high-level idea for a plan is formalized into a concrete research plan and a clear set of research goals to guide the project."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Distributed ML training reliability",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "Based on the research goals, an initial scheme for an 'Asynchronous Incremental Checkpointing' (AIC) mechanism is designed. The design focuses on capturing model parameter changes incrementally and offloading the storage process to a separate thread to minimize interference with the main training loop.",
+    "required_artifacts": [
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "With the high-level goals and plan established in the initial proposal (e_01), the next logical step is to translate these ideas into a concrete technical design. This event creates the first version of the method scheme, which is necessary before any implementation or experimentation can begin."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Distributed ML training reliability",
+    "subject": "CS-AI/ML",
+    "event_type": "pilot_experiments",
+    "description": "Small-scale pilot experiments are conducted to validate the core functionality of the Asynchronous Incremental Checkpointing (AIC) scheme. A prototype is implemented and tested on a small cluster with a simple model to measure basic performance overhead and confirm that checkpoints can be created and restored successfully.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the design of the AIC method in e_02, a pilot experiment is the logical next step. This allows for a low-cost sanity check of the design's feasibility and provides initial data on its performance before committing to larger, more complex main experiments."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Distributed ML training reliability",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The results from the pilot experiments are analyzed. The analysis confirms that the AIC approach successfully reduces direct training overhead, but it also identifies a potential bottleneck where the asynchronous write queue can become backlogged under high I/O contention, increasing recovery time.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After conducting pilot experiments (e_03), a formal analysis is the necessary next step to interpret the data and evaluate the method's performance against the initial research goals. This analysis provides crucial findings that will guide the next iteration of the scheme design, specifically to address the identified I/O bottleneck."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Distributed ML training reliability",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "Based on the analysis of the pilot results, the AIC scheme is revised to address the I/O bottleneck. The new design introduces a dynamic throttling mechanism for the write queue and a lightweight compression algorithm to reduce the total data volume being written to persistent storage.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis in e_04 identified a critical performance bottleneck in the initial design. It is essential to revise the method scheme to mitigate this issue before investing time and resources into larger main experiments. This iterative refinement of the method is a core part of the research process."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Distributed ML training reliability",
+    "subject": "CS-AI/ML",
+    "event_type": "main_experiments",
+    "description": "Confident in the revised design, the first set of main experiments is launched. These experiments use larger models like BERT on a multi-node cluster to evaluate the revised AIC scheme's performance, overhead, and recovery time under realistic fault scenarios, comparing it against standard checkpointing methods.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the method scheme (e_05) to address the bottleneck found in the pilot analysis (e_04), the next logical step is to validate the solution at scale. Moving to main experiments allows for the collection of comprehensive data needed for the final evaluation, testing the scheme's viability under more demanding, realistic conditions."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Distributed ML training reliability",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "A thorough analysis of the main experiment results is performed. The data confirms that the revised AIC scheme with throttling and compression significantly outperforms standard checkpointing, reducing overhead by over 50% while keeping recovery times low. A minor increase in CPU usage due to the compression algorithm is noted as an acceptable trade-off.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "Following the execution of main experiments in e_06, a detailed analysis is the critical next step to validate the revised method from e_05 against the project's goals. This analysis provides the core findings for the research and, given the positive outcome, justifies starting to draft the results section of the paper."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Distributed ML training reliability",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "With strong results from the main experiments, the team drafts the core sections of the paper. This includes a detailed description of the revised AIC methodology and the experimental setup, formally documenting the work for publication.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After the successful analysis in e_07 confirmed the method's effectiveness, a crucial next step is to translate the technical work and findings into a written manuscript. This event builds on the initial result summary (e_07) by drafting the detailed methodology and setup sections, moving the project closer to publication."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Distributed ML training reliability",
+    "subject": "CS-AI/ML",
+    "event_type": "main_experiments",
+    "description": "While writing the paper, the team identifies a potential gap in their evaluation: experiments have so far focused on NLP models. To demonstrate the generality of the AIC scheme, they run a new set of experiments applying it to a large-scale computer vision task using a Vision Transformer (ViT) model, strengthening the paper's claims of broad applicability.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After drafting initial paper sections (e_08), it is common to identify weaknesses in the evaluation. Running additional experiments on a different domain (computer vision) demonstrates the robustness and generality of the proposed method (e_05), strengthening the final paper and preempting potential reviewer critiques."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Distributed ML training reliability",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The results from the new experiments on the Vision Transformer (ViT) model are analyzed. The analysis shows that the AIC scheme maintains its performance benefits in the computer vision domain, confirming its general applicability across different model architectures. These findings are summarized to be integrated into the paper's results section.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After running additional experiments in e_09 to test the method's generality, the essential next step is to analyze this new data. This analysis validates the broader claims of the paper and provides the specific results needed to write the corresponding section of the manuscript, strengthening the overall contribution."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Distributed ML training reliability",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "The team integrates the new findings from the Vision Transformer experiments into the main paper draft. They update the results section with the new data and plots, and revise the abstract and introduction to highlight the demonstrated generality of the AIC method.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After analyzing the successful results from the ViT experiments in e_10, the logical next step is to incorporate these findings into the paper draft started in e_08. This action consolidates the new evidence, strengthens the paper's main claims, and moves the project closer to a submittable manuscript."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Distributed ML training reliability",
+    "subject": "CS-AI/ML",
+    "event_type": "main_experiments",
+    "description": "During an internal review of the paper draft, a question is raised about the individual contributions of the throttling mechanism and the compression algorithm. To create a more robust evaluation, the team runs an ablation study, testing the performance of the AIC scheme with only throttling, only compression, and both components disabled.",
+    "required_artifacts": [
+      "method_scheme",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After drafting the main results (e_11), it became clear that a more detailed analysis was needed to isolate the impact of each component of the revised AIC method. This ablation study is a crucial step to strengthen the paper's claims and provide deeper insights for the final analysis, directly addressing potential reviewer feedback."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Distributed ML training reliability",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The results of the ablation study are analyzed. The analysis quantifies the individual contributions of the throttling and compression mechanisms, demonstrating that both components are critical for achieving the optimal balance of low overhead and fast recovery time. These findings provide strong justification for the final design of the AIC scheme.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After running the ablation study in e_12, it is essential to analyze the new data to understand the impact of each component. This analysis provides critical insights needed to strengthen the paper's claims and justify the complexity of the proposed method, directly preparing content for the manuscript."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Distributed ML training reliability",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "The team writes up the results of the ablation study and integrates them into the paper. This involves adding a new subsection to the results section with tables and figures that clearly illustrate the performance impact of each component (throttling and compression) individually and combined, strengthening the paper's core claims.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After analyzing the ablation study in e_13, the essential next step is to incorporate these detailed findings into the manuscript. This action finalizes the results section by providing a deeper justification for the method's design, making the paper's argument more robust and complete before a final review."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Distributed ML training reliability",
+    "subject": "CS-AI/ML",
+    "event_type": "proposal",
+    "description": "With all experimental results finalized, the team revisits the initial research goals. They refine the project's core contribution statement to precisely reflect the demonstrated performance gains and the general applicability of the AIC scheme, ensuring the paper's narrative is tightly aligned with the evidence.",
+    "required_artifacts": [
+      "research_goals",
+      "experiment_results",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "After completing all experiments and analysis (up to e_14), it is a standard practice to refine the initial research goals (from e_01) to precisely match the final, evidence-backed contributions. This step sharpens the paper's core message before the final writing and submission push."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Distributed ML training reliability",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "The team writes the final sections of the paper, including the abstract, introduction, related work, and conclusion. This involves synthesizing all the experimental findings and framing the work's contribution in the context of the refined research goals and existing literature. The entire manuscript is polished for clarity and consistency.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the research goals refined in e_15 and all experimental results consolidated, the final step before considering the project complete is to finalize the manuscript. This event transforms the drafted sections and results into a cohesive paper by adding the framing sections (introduction, conclusion) and performing a final polish."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Distributed ML training reliability",
+    "subject": "CS-AI/ML",
+    "event_type": "end",
+    "description": "The final manuscript is submitted to a top-tier conference on systems and machine learning. This marks the conclusion of the primary research cycle for this project, with all goals met and findings documented.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached a natural conclusion. The research goals have been met, the proposed method has been designed and validated through extensive experiments (including ablation studies and generality tests), and a complete, polished manuscript was prepared in e_16, making submission the final step."
+  }
+]

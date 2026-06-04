@@ -1,0 +1,420 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Career planning and skill development strategies",
+    "subject": "LifeSkills",
+    "event_type": "objective_clarification",
+    "description": "Conducted an initial diagnostic session to understand the learner's career goals, current skill set, and desired outcomes. The learner is a mid-career professional looking to transition into a product management role within the next 12-18 months.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first event in the tutoring timeline. It is essential to start by clarifying the learner's goals and background to establish a foundation for all subsequent planning and instruction."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Career planning and skill development strategies",
+    "subject": "LifeSkills",
+    "event_type": "plan_milestones",
+    "description": "Based on the learner's goal of transitioning to product management, the tutor and learner collaboratively outlined a high-level study plan. The plan is structured into quarterly milestones, starting with foundational knowledge and moving towards practical application and portfolio building.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "After clarifying the learning objectives in the first session, the natural next step is to create a structured plan to achieve them. This event uses the 'learning_objectives' to produce a 'study_plan' that will guide the subsequent tutoring sessions."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Career planning and skill development strategies",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "Delivered the first lesson as per the study plan, focusing on the fundamentals of product management. The lesson covered the PM role, key responsibilities like market analysis and roadmap planning, and the product development lifecycle.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the study plan in place, the next logical step is to begin instruction. This lesson addresses the first milestone of building foundational knowledge and generates teaching notes for future reference and review."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Career planning and skill development strategies",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "To reinforce the concepts from the initial lesson, the learner was assigned a practical exercise. The task involved selecting a familiar digital product and creating a short analysis of its target audience, core problem solved, and key features, applying the market analysis principles discussed.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a foundational lesson, it is crucial to move from theory to application. This practice session allows the learner to actively engage with the concepts taught in the previous lesson and produces a record of their work that can be reviewed in the next session."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Career planning and skill development strategies",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor reviewed the learner's product analysis from the practice session. The review focused on the depth of the market analysis and the clarity of the feature mapping to user problems, identifying a few areas where the learner's reasoning could be strengthened.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following a practice session, the natural next step is to review the learner's work. This allows the tutor to assess comprehension, identify misconceptions, and provide targeted feedback, ensuring the learner is building on a solid foundation before moving to the next topic."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Career planning and skill development strategies",
+    "subject": "LifeSkills",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback from the previous review, the tutor refined the teaching notes on market analysis. They added a structured template and a worked example of a product analysis to better scaffold the exercise for the learner.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After the review highlighted specific weaknesses in the learner's practice attempt, it is a good practice to improve the instructional materials. This event uses the 'feedback_summary' to revise the 'teaching_notes', making them more effective for the next practice round."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Career planning and skill development strategies",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The learner is asked to re-attempt the product analysis exercise, this time using the revised teaching notes which include a structured template and a worked example. The goal is to apply the feedback from the previous review and demonstrate improved understanding of market analysis.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials to address specific weaknesses, the next logical step is a second practice attempt. This allows the learner to apply the recent feedback and use the improved scaffolding, providing a clear way to measure if the previous review and materials revision were effective."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Career planning and skill development strategies",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor reviewed the learner's second attempt at the product analysis. This review confirmed that the learner successfully applied the provided template and addressed the previous feedback, showing a much stronger grasp of market analysis fundamentals.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a second practice attempt, a review is necessary to assess improvement and confirm that the previous feedback and revised materials were effective. This review closes the loop on the initial difficulty and confirms the learner is ready to move on to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Career planning and skill development strategies",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "With the learner's understanding of market analysis confirmed, the tutor introduces the next topic from the study plan: product roadmapping. The lesson covers the purpose of a roadmap, different roadmap formats, and how to link strategic goals to feature prioritization.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review cycle successfully concluded, confirming the learner's grasp of the first topic. Following the study plan, it is now appropriate to proceed to the next lesson, building upon the foundational knowledge the learner has just acquired."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Career planning and skill development strategies",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "Following the lesson on product roadmapping, the learner is tasked with creating a basic roadmap for the product they previously analyzed. The exercise requires them to define 2-3 strategic goals and map a few key features to a quarterly timeline, justifying their prioritization.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the new concept of product roadmapping in the previous lesson, a practical application is the logical next step. This practice session requires the learner to apply theoretical knowledge, reinforcing the lesson and generating work that can be evaluated in a subsequent review."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Career planning and skill development strategies",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor reviewed the learner's first draft of the product roadmap. The review highlighted that while the learner successfully mapped features to a timeline, the justification for prioritization needed a stronger link back to the strategic goals defined in the exercise.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed a practice exercise on roadmapping in the previous event, the logical next step is to review their work. This review assesses their ability to apply the concepts from the lesson and provides targeted feedback to address any gaps, such as strengthening the link between strategy and feature prioritization."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Career planning and skill development strategies",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "Based on the feedback from the last review, the learner is asked to revise their product roadmap. The task is to strengthen the justification for feature prioritization by explicitly linking each feature back to the defined strategic goals.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "The previous review identified a specific weakness in the learner's roadmapping practice. A targeted practice session where the learner revises their work is the most direct way for them to apply the feedback and demonstrate improved understanding before moving on."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Career planning and skill development strategies",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor reviewed the learner's revised product roadmap. The review confirmed that the learner successfully strengthened the link between strategic goals and feature prioritization, demonstrating a solid understanding of the concept.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner revised their work in the previous practice session, a review is essential to validate that the feedback was correctly applied and the learning gap is closed. This step confirms the learner's proficiency before moving to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Career planning and skill development strategies",
+    "subject": "LifeSkills",
+    "event_type": "plan_milestones",
+    "description": "The tutor and learner reviewed progress against the initial study plan now that the first major milestone (foundational PM concepts) is complete. Based on the learner's progress and expressed interest, they adjusted the next quarter's milestone to focus more deeply on user interview and feedback synthesis techniques.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "After successfully completing a block of foundational topics, it is a natural point to review and adjust the long-term study plan. This ensures the plan remains aligned with the learner's progress and evolving interests, making the tutoring process more dynamic and personalized."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Career planning and skill development strategies",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "Following the updated study plan, the tutor delivered a lesson on user interview and feedback synthesis techniques. The lesson covered how to plan user research, formulate open-ended questions, and an introduction to affinity mapping for synthesizing qualitative data.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous event updated the study plan to focus on user interviews. The logical next step is to deliver a lesson on this new topic, starting the next learning cycle as outlined in the revised plan."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Career planning and skill development strategies",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "To apply the concepts from the lesson on user research, the learner is tasked with creating a user interview plan. The plan must define a target user persona for a hypothetical product and include a script with several open-ended questions designed to uncover user needs and pain points.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on user interview techniques, the next logical step is a practice exercise. This task allows the learner to translate theoretical knowledge into a practical skill (creating an interview plan) and generates a concrete output for the upcoming review session."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Career planning and skill development strategies",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor reviewed the learner's draft of the user interview plan and script. The feedback focused on refining the open-ended questions to be less leading and ensuring the target persona was specific enough to guide the interview effectively.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the practice task of creating a user interview plan in the previous event, the logical next step is to review their work. This review assesses their application of the concepts from the lesson and provides targeted feedback for improvement before they conduct a mock interview."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Career planning and skill development strategies",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "Based on the review feedback, the learner is asked to revise their user interview plan. The focus is on rephrasing leading questions to be more open-ended and adding more detail to the target user persona to better guide the interview.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "The previous review identified specific areas for improvement in the learner's interview plan. This targeted practice session allows the learner to directly apply the feedback, reinforcing the learning and ensuring they correct their misconceptions before proceeding to more complex tasks."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Career planning and skill development strategies",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor reviewed the learner's revised user interview plan. The review confirmed that the learner successfully rephrased the leading questions and added sufficient detail to the persona, demonstrating a good grasp of the principles taught in the lesson.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner revised their work in the previous practice session, a review is essential to validate that the feedback was correctly applied and the learning gap is closed. This step confirms the learner's proficiency before moving on to a more hands-on task like a mock interview."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Career planning and skill development strategies",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "To move from planning to execution, the tutor conducts a mock user interview with the learner. The tutor role-plays the target user from the learner's plan, while the learner uses their approved script to practice asking open-ended questions and managing the conversation flow.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Having successfully created and revised an interview plan, the learner is ready to practice its execution. A mock interview is a crucial next step to bridge the gap between theory and practice, allowing the learner to apply their planning skills in a dynamic, real-time scenario before moving on to data synthesis."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "Career planning and skill development strategies",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor and learner reviewed the mock user interview from the previous session. The feedback highlighted the learner's strong ability to follow the script but noted opportunities to ask more spontaneous follow-up questions to probe deeper into user responses.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a hands-on practice session like a mock interview, a review is essential to provide feedback on the learner's real-time performance. This step allows the tutor to assess how well the learner applied the interview techniques and to identify specific areas for improvement, such as asking better follow-up questions."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "tutoring",
+    "topic": "Career planning and skill development strategies",
+    "subject": "LifeSkills",
+    "event_type": "materials_revision",
+    "description": "Based on the review of the mock interview, the tutor updated the teaching notes on user research. A new section was added covering techniques for asking spontaneous follow-up and probing questions, complete with examples, to address the feedback from the previous session.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review identified a specific area for improvement: asking spontaneous follow-up questions. Revising the teaching materials to explicitly address this skill provides the learner with better scaffolding for their next practice attempt and improves the quality of the instructional content."
+  },
+  {
+    "event_id": "e_23",
+    "time_index": 23,
+    "domain": "tutoring",
+    "topic": "Career planning and skill development strategies",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The learner conducts a second mock user interview, with a specific focus on applying the newly added techniques for asking spontaneous follow-up questions. The tutor again role-plays the user, providing responses that create opportunities for deeper probing.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials to address a specific weakness (asking follow-up questions), the immediate next step is a targeted practice session. This allows the learner to apply the new guidance from the revised 'teaching_notes' and gives the tutor a way to assess if the intervention was effective."
+  },
+  {
+    "event_id": "e_24",
+    "time_index": 24,
+    "domain": "tutoring",
+    "topic": "Career planning and skill development strategies",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor reviewed the second mock interview. The review confirmed the learner significantly improved at asking spontaneous follow-up questions, successfully probing deeper into the 'user's' responses and uncovering more nuanced insights.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted practice session (e_23) designed to improve a specific skill, a review is the logical next step to assess progress. This review validates whether the revised materials and focused practice were effective, confirming the learner is ready for the next topic."
+  },
+  {
+    "event_id": "e_25",
+    "time_index": 25,
+    "domain": "tutoring",
+    "topic": "Career planning and skill development strategies",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "To complete the user research cycle, the learner is tasked with synthesizing the qualitative data from the successful mock interview. Using the affinity mapping technique from the teaching notes, they will group observations from the interview into themes to identify key user pain points and needs.",
+    "required_artifacts": [
+      "teaching_notes",
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After successfully conducting a mock interview, the next logical step is to practice synthesizing the collected data. This exercise connects the skill of interviewing with the skill of analysis, which is crucial for turning raw user feedback into actionable product insights."
+  }
+]

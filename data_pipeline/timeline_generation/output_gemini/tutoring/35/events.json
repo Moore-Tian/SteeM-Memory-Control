@@ -1,0 +1,423 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for aggregation and counting",
+    "subject": "Programming",
+    "event_type": "objective_clarification",
+    "description": "Initial meeting with the learner to discuss their background with programming, their specific goals for learning algorithmic patterns for aggregation and counting, and any time constraints. The learner wants to improve their skills for technical interviews happening in about two months. An initial draft of a study plan was created based on this discussion.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives",
+      "study_plan"
+    ],
+    "reason": "As this is the first session, the immediate priority is to understand the learner's goals, background, and constraints. This clarification is essential for creating a relevant and effective learning plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for aggregation and counting",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "Conducted the first lesson based on the study plan, introducing the fundamental 'Frequency Count' pattern using hash maps. The lesson covered the core logic of iterating through a collection, using a hash map to store counts, and handling the first-time encounter of an element. A simple example, like counting character frequencies in a string, was used to illustrate the pattern.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the initial planning in e_01, the next logical step is to begin instruction with the first topic. This lesson directly addresses the learning objectives by teaching a core aggregation pattern. Creating 'teaching_notes' establishes a reusable resource for this fundamental concept."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for aggregation and counting",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "Assigned a practice problem for the learner to solve: 'Given an array of integers, find the one that appears most frequently.' The learner was asked to apply the 'Frequency Count' pattern from the previous lesson, and their coding process and final solution were recorded.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the 'Frequency Count' pattern in the lesson (e_02), the next logical step is to have the learner apply this knowledge to a concrete problem. This practice session will test their understanding and generate a record of their attempt, which is essential for the subsequent review and feedback phase."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for aggregation and counting",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "Reviewed the learner's solution for the 'most frequent element' problem from the previous session. The review focused on correctness, code clarity, and proper application of the 'Frequency Count' pattern. The learner correctly used a hash map to count frequencies but struggled with the logic to iterate through the map to find the element with the highest count.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed a practice problem in e_03, the most critical next step is to review their work. This allows for immediate feedback on their application of the 'Frequency Count' pattern, identifies specific misconceptions, and generates actionable advice captured in the 'feedback_summary'."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for aggregation and counting",
+    "subject": "Programming",
+    "event_type": "materials_revision",
+    "description": "Based on the learner's difficulty identified in the review, the 'Frequency Count' teaching notes were updated. The revision adds an explicit section on how to iterate through the completed hash map to find the entry with the highest value, which was the part the learner struggled with.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in e_04 highlighted a specific gap in the learner's understanding. It is prudent to revise the teaching materials to explicitly address this weakness before moving on or re-assigning practice. This makes the teaching notes more robust for this learner and for future use."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for aggregation and counting",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "To reinforce the concept after the recent review and materials update, the learner is assigned a new practice problem to solidify their understanding. The task is to apply the 'Frequency Count' pattern to a slightly different problem, which will test their ability to implement the part of the logic they previously struggled with.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After identifying a weakness in e_04 and updating the teaching materials to address it in e_05, it is crucial to give the learner another opportunity to practice. This targeted practice will verify if the feedback and revised notes were effective before introducing new topics, ensuring the foundational concept is solid."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for aggregation and counting",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "Reviewed the learner's second attempt at applying the 'Frequency Count' pattern. The learner successfully implemented the full logic, including iterating the hash map to find the final result, demonstrating that the previous feedback and materials revision were effective. The new feedback confirms their correct application and offers minor suggestions for code style.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the reinforcement practice in e_06, a review is necessary to assess the learner's progress on the specific weakness identified earlier. This step confirms whether the remediation was successful and generates feedback to close the loop before introducing new material."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for aggregation and counting",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "With the 'Frequency Count' pattern mastered, the next lesson introduces the 'Grouping' pattern. This lesson shows how to extend the hash map approach to group items from a collection into lists based on a common key, such as grouping employees by department.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_07) confirmed the learner's mastery of the foundational 'Frequency Count' pattern. Following the study plan, the next logical step is to introduce a new, related pattern. The 'Grouping' pattern is a natural progression that builds upon the learner's existing hash map skills."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for aggregation and counting",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "Assigned a practice problem for the 'Grouping' pattern: 'Given a list of strings, group the anagrams together.' The learner is expected to use a hash map where keys represent character counts and values are lists of anagrams, applying the pattern taught in the previous lesson.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the 'Grouping' pattern in the previous lesson (e_08), it is essential for the learner to apply this new concept to a practical problem. This practice session will test their ability to implement the pattern and will generate a record of their attempt for the upcoming review."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for aggregation and counting",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "Reviewed the learner's solution for the 'group anagrams' problem. The learner correctly set up the hash map to group items into lists but struggled to devise a consistent key for identifying anagrams (e.g., by sorting the string). The feedback focused on this key generation strategy.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner attempted a practice problem on the 'Grouping' pattern in e_09, a review is the essential next step. This allows for assessment of their understanding, identification of specific difficulties like key creation, and the generation of targeted feedback."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for aggregation and counting",
+    "subject": "Programming",
+    "event_type": "materials_revision",
+    "description": "Following the review of the anagram problem, the teaching notes for the 'Grouping' pattern are updated. A new section is added that explicitly discusses strategies for creating a canonical key for grouping, using the 'sorted string' for anagrams as the primary example.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_10) pinpointed a specific conceptual hurdle: creating a key to group items. Just as in event e_05, the best practice is to revise the teaching materials to directly address this weakness. This improves the notes and prepares the learner for a follow-up practice session."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for aggregation and counting",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "To reinforce the concept of creating canonical keys for grouping, the learner is assigned a new practice problem. The task is to group a list of file paths by their file extension, which requires them to extract the extension as a key for grouping, applying the revised teaching notes.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the materials in e_11 to better explain key creation for the 'Grouping' pattern, a new practice session is needed. This allows the learner to apply the revised guidance and demonstrate that they have overcome the specific difficulty identified in the previous review (e_10)."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for aggregation and counting",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "Reviewed the learner's solution for grouping file paths by extension. The learner successfully extracted the file extension as a key and grouped the paths correctly, demonstrating a solid understanding of the concept after the previous feedback and material revision. The feedback provided confirms their success and suggests a minor optimization.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed a targeted practice problem in e_12, a review is essential to confirm that they have overcome their previous difficulty with key creation in the 'Grouping' pattern. This step validates the effectiveness of the revised materials and closes the feedback loop before proceeding to a new topic."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for aggregation and counting",
+    "subject": "Programming",
+    "event_type": "plan_milestones",
+    "description": "Held a checkpoint session to review the overall study plan. Having successfully covered the 'Frequency Count' and 'Grouping' patterns, the learner and tutor assessed progress against the original timeline. The next milestone was defined as mastering the 'Sliding Window' pattern, and the study plan was updated to reflect this next phase.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "The learner has successfully completed two full learning cycles and mastered two patterns. This is a natural point to review the high-level plan, confirm the next set of topics, and ensure the tutoring remains on track with the learner's long-term goals before introducing new material."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for aggregation and counting",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "Introduced the 'Sliding Window' pattern as defined in the updated study plan. The lesson covered the core concept of maintaining a dynamic window over a sequence to solve problems about contiguous subarrays or substrings, using a simple example like finding the maximum sum of any contiguous subarray of size 'k'.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the milestone planning in e_14 which identified 'Sliding Window' as the next topic, the logical next step is to conduct a lesson on this new pattern. This initiates the next learning cycle as outlined in the revised study plan."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for aggregation and counting",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "Assigned a practice problem to apply the 'Sliding Window' pattern: 'Given an array of positive integers and a positive integer 'k', find the maximum sum of any contiguous subarray of size 'k'.' The learner was asked to implement the pattern discussed in the last lesson, and their work was recorded.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the 'Sliding Window' pattern in the previous lesson (e_15), the next logical step is for the learner to apply it to a concrete problem. This practice solidifies their initial understanding and generates a record of their attempt, which is crucial for the upcoming review phase."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for aggregation and counting",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "Reviewed the learner's solution for the 'maximum sum subarray of size k' problem. The learner correctly initialized the first window's sum but struggled to efficiently update the sum as the window slides, instead re-calculating the sum for each new window from scratch.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session in e_16, a review is the critical next step to assess the learner's initial application of the 'Sliding Window' pattern. This review identifies a key inefficiency in their approach, allowing for targeted feedback before moving forward."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for aggregation and counting",
+    "subject": "Programming",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback from the last session, the teaching notes for the 'Sliding Window' pattern were revised. The update adds a specific section detailing the efficient method of sliding the window: subtracting the outgoing element's value and adding the incoming element's value, rather than re-summing the entire window.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in e_17 identified a core inefficiency in the learner's approach. To prevent this from becoming a recurring issue, it is best to update the teaching materials to explicitly address this common pitfall before assigning more practice, ensuring the learner has a clear reference for the correct technique."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for aggregation and counting",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "To reinforce the efficient sliding technique, a new practice problem is assigned: 'Given an array of integers, find the average of all contiguous subarrays of size 'k''. This requires the learner to apply the revised notes on efficiently updating the window's sum by subtracting the outgoing element and adding the incoming one.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials in e_18 to address the inefficient re-calculation of the window sum, it is essential to assign another practice problem. This targeted exercise will verify if the learner can now correctly implement the efficient sliding technique, confirming their understanding before moving on."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for aggregation and counting",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "Reviewed the learner's solution for finding the average of all subarrays of size 'k'. The learner successfully implemented the efficient sliding window technique by updating the sum in constant time for each step. This confirms their understanding following the previous feedback and materials revision.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the targeted practice in e_19, a review is necessary to confirm that the learner has successfully grasped the efficient update method for the 'Sliding Window' pattern. This step validates the effectiveness of the recent feedback and materials revision, closing the learning loop for this topic."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for aggregation and counting",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "Introduced a more advanced variation of the sliding window: the 'Dynamic Sliding Window' pattern. This lesson focused on problems where the window size changes to satisfy a condition, such as finding the smallest subarray with a sum greater than or equal to a target value 'S'.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After the learner demonstrated mastery of the fixed-size sliding window in e_20, the next logical step is to introduce a more complex variation. The 'Dynamic Sliding Window' pattern builds directly on the previous topic and is a crucial concept for technical interviews, aligning with the learner's goals."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for aggregation and counting",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "Assigned a practice problem for the 'Dynamic Sliding Window' pattern: 'Given an array of positive integers and a target sum 'S', find the length of the smallest contiguous subarray whose sum is greater than or equal to 'S'.' The learner is expected to apply the logic of expanding and shrinking the window taught in the previous lesson.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the 'Dynamic Sliding Window' pattern in the previous lesson (e_21), it is crucial for the learner to apply this more advanced concept to a problem. This practice session tests their initial comprehension and generates a record of their attempt for review."
+  },
+  {
+    "event_id": "e_23",
+    "time_index": 23,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for aggregation and counting",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "Reviewed the learner's solution for the 'smallest subarray sum' problem. The learner correctly expanded the window to meet the target sum but struggled with the logic for shrinking the window from the left while the condition was still met, resulting in a non-optimal solution.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner attempted a practice problem on the 'Dynamic Sliding Window' pattern in e_22, a review is the critical next step. This assesses their grasp of the more complex logic and identifies specific issues, such as the window shrinking mechanism, which can then be addressed with targeted feedback."
+  },
+  {
+    "event_id": "e_24",
+    "time_index": 24,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for aggregation and counting",
+    "subject": "Programming",
+    "event_type": "materials_revision",
+    "description": "Based on the review of the 'smallest subarray sum' problem, the teaching notes for the 'Dynamic Sliding Window' pattern are updated. The revision adds a detailed section explaining the logic for shrinking the window from the left to find the minimal length that satisfies the condition, which was the learner's point of confusion.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_23) revealed a specific misunderstanding of the window-shrinking part of the dynamic window pattern. Following the established tutoring cycle, revising the teaching materials to clarify this exact point is the most effective next step before assigning more practice."
+  },
+  {
+    "event_id": "e_25",
+    "time_index": 25,
+    "domain": "tutoring",
+    "topic": "Algorithmic patterns for aggregation and counting",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "Assigned a new practice problem on the 'Dynamic Sliding Window' pattern: 'Given a string, find the length of the longest substring with no more than K distinct characters.' This problem requires the learner to correctly manage both the expansion and shrinking of the window, directly targeting the weakness identified in the previous review.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials in e_24 to better explain the window-shrinking logic, a new practice session is essential. This task specifically tests the learner's ability to apply the corrected logic, verifying that they have overcome the difficulty identified in e_23 before concluding this topic."
+  }
+]

@@ -1,0 +1,299 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Weakly supervised segmentation",
+    "subject": "CS-CV",
+    "event_type": "proposal",
+    "description": "Define the initial research question and scope for the project on weakly supervised segmentation. The primary goal is to investigate how to generate high-quality pseudo-masks from image-level labels alone, aiming to bridge the performance gap with fully supervised methods.",
+    "required_artifacts": [
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the inaugural event of the research project, establishing the foundational objectives and a high-level roadmap. It formalizes an initial, abstract research interest (represented as requiring 'research_goals') into a concrete set of goals and a tangible plan to guide the project's next steps."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Weakly supervised segmentation",
+    "subject": "CS-CV",
+    "event_type": "scheme_design",
+    "description": "Design the initial methodological scheme based on Class Activation Maps (CAMs). The plan is to train a standard classification network, extract CAMs as initial object seeds, and then develop a refinement strategy (e.g., a random walk or CRF) to expand these seeds into dense pseudo-masks.",
+    "required_artifacts": [
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the establishment of the project's goals in e_01, this event translates the high-level research plan into a concrete technical approach. It creates the initial `method_scheme`, which is a necessary prerequisite for conducting any pilot experiments to validate the idea."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Weakly supervised segmentation",
+    "subject": "CS-CV",
+    "event_type": "pilot_experiments",
+    "description": "Run pilot experiments on a small subset of the PASCAL VOC dataset to validate the CAM-based pseudo-mask generation scheme. The goal is to quickly assess the quality of the initial seeds and the effectiveness of the refinement step, identifying any major implementation bugs or conceptual flaws.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With a concrete `method_scheme` defined in e_02, the logical next step is to perform a small-scale validation. These pilot experiments serve as a crucial sanity check to see if the proposed approach is viable before committing to large-scale experiments, generating the first set of `experiment_results` for analysis."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Weakly supervised segmentation",
+    "subject": "CS-CV",
+    "event_type": "analysis",
+    "description": "Analyze the pilot experiment results. The analysis reveals that while the CAMs correctly locate the object, they are too sparse and only cover the most discriminative parts. The random walk refinement step often fails to expand these sparse seeds to the full object extent and sometimes leaks into the background.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After generating the first `experiment_results` in e_03, a dedicated analysis step is crucial to interpret the findings. This step evaluates the performance of the initial `method_scheme` and identifies specific shortcomings (sparse CAMs, refinement leakage), which will inform the next iteration of the research cycle."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Weakly supervised segmentation",
+    "subject": "CS-CV",
+    "event_type": "scheme_design",
+    "description": "Revise the method to address the findings from the pilot study. To combat sparse CAMs and background leakage, the new scheme incorporates a saliency-guided refinement module. The idea is to use a pre-trained saliency model to generate an attention map that guides the random walk, constraining the pseudo-mask expansion to salient object regions and preventing it from leaking into the background.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous analysis in e_04 revealed that the initial method was flawed, producing sparse activations and leaky refinements. A logical next step is to return to the design phase to correct these specific issues. This event revises the `method_scheme` based on the insights from the `experiment_results`, representing a necessary iterative step in the research cycle before attempting more experiments."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Weakly supervised segmentation",
+    "subject": "CS-CV",
+    "event_type": "pilot_experiments",
+    "description": "Run a new set of pilot experiments using the revised, saliency-guided refinement scheme. The goal is to specifically evaluate if the new module successfully addresses the sparse CAM and background leakage issues observed in the previous pilot run.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the `method_scheme` in e_05 to address specific flaws, the next logical step is to validate this new design. A targeted pilot experiment allows for a quick and efficient check to see if the saliency-guided approach effectively solves the previously identified problems before scaling up to main experiments."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Weakly supervised segmentation",
+    "subject": "CS-CV",
+    "event_type": "analysis",
+    "description": "Analyze the results from the second pilot run. The analysis confirms that the saliency-guided refinement significantly improves pseudo-mask quality, creating denser masks that cover more of the object and substantially reducing background leakage. The approach is now deemed promising enough to proceed with large-scale experiments.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After running a new pilot experiment in e_06, the logical next step is to analyze the results to see if the revised method was successful. This analysis is critical to validate the changes made in e_05 and determine if the method is mature enough to move on from the pilot phase to more comprehensive experiments."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Weakly supervised segmentation",
+    "subject": "CS-CV",
+    "event_type": "main_experiments",
+    "description": "Launch the main experiments on the full PASCAL VOC dataset. This involves generating pseudo-masks for the entire training set using the validated saliency-guided method and then training a final segmentation network on these masks. The goal is to gather comprehensive results for comparison against state-of-the-art methods.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The analysis in e_07 confirmed the revised method's success in pilot studies, making it ready for large-scale validation. Moving to `main_experiments` is the logical next step to generate the core quantitative results needed to address the project's `research_goals` and establish the method's performance on a full benchmark."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Weakly supervised segmentation",
+    "subject": "CS-CV",
+    "event_type": "analysis",
+    "description": "Perform a comprehensive analysis of the main experiment results. The quantitative results show that our method achieves a mean Intersection-over-Union (mIoU) on par with several state-of-the-art methods. Qualitative analysis reveals the method excels at segmenting single, prominent objects but struggles with images containing multiple, small, or heavily occluded object instances.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "Following the completion of the main experiments in e_08, a thorough analysis is the necessary next step to interpret the large-scale results. This event evaluates the final performance of the method against the project's goals, identifies key strengths and weaknesses, and produces the core findings that will form the basis of the results section of the paper, leading to the creation of the first `paper_paragraph`."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Weakly supervised segmentation",
+    "subject": "CS-CV",
+    "event_type": "writing",
+    "description": "Begin drafting the main body of the paper. This involves writing the detailed methodology section based on the final saliency-guided scheme and the results section, summarizing the quantitative scores and qualitative findings from the main experiments.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After the comprehensive analysis of the main experiments in e_09, the core scientific contribution is established. The logical next step is to start documenting the work for publication, translating the finalized `method_scheme` and `experiment_results` into a written paper format."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Weakly supervised segmentation",
+    "subject": "CS-CV",
+    "event_type": "proposal",
+    "description": "Re-evaluate the project goals and scope based on the main experiment's findings. The analysis in e_09 showed a clear weakness with multiple/small objects. We decide to pivot slightly: instead of trying to solve all cases at once, we will frame the current saliency-guided method as a strong baseline for single-object scenes and propose a separate, more complex extension as future work. This refines the primary contribution of the current paper.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "The main experiment analysis (e_09) revealed significant limitations, prompting a strategic decision. Rather than immediately starting another design-and-experiment cycle which could significantly delay the project, it's a common research practice to refine the project's scope to focus on the demonstrated strengths. This event adjusts the `research_goals` to align with the achieved results, ensuring a more focused and publishable story for the current work."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Weakly supervised segmentation",
+    "subject": "CS-CV",
+    "event_type": "writing",
+    "description": "Revise the paper draft to align with the newly scoped research goals. This involves rewriting the introduction to frame the contribution more narrowly (a strong baseline for single-object scenes) and updating the discussion/conclusion to clearly position the identified limitations as avenues for future work.",
+    "required_artifacts": [
+      "research_goals",
+      "paper_paragraph",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After refining the project's scope in e_11, the existing paper draft from e_10 is no longer aligned with the new narrative. This writing step is essential to update the manuscript to reflect the revised `research_goals`, ensuring the paper tells a coherent story that highlights the method's strengths while transparently addressing its limitations."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Weakly supervised segmentation",
+    "subject": "CS-CV",
+    "event_type": "main_experiments",
+    "description": "To strengthen the paper, run a set of ablation studies. The experiments are designed to specifically quantify the impact of the saliency-guidance module by comparing the full model's performance against a version where this module is disabled. This will provide direct evidence for the module's contribution.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With the main narrative of the paper established (e_11, e_12), a common next step is to add experiments that strengthen the core claims. An ablation study is crucial for justifying the design choices in the `method_scheme` and providing quantitative proof for the arguments made in the `paper_paragraph`, making the paper more robust for peer review."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Weakly supervised segmentation",
+    "subject": "CS-CV",
+    "event_type": "analysis",
+    "description": "Analyze the results of the ablation study. The analysis confirms a significant performance drop (e.g., 5-7 mIoU points) when the saliency-guidance module is removed, quantitatively demonstrating its crucial role in improving pseudo-mask quality and final segmentation performance.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After running ablation studies in e_13, the immediate next step is to analyze the new `experiment_results`. This analysis is essential to produce the quantitative evidence needed to support the claims about the method's design and will be used to add a dedicated ablation section to the `paper_paragraph`, strengthening the paper's overall argument."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Weakly supervised segmentation",
+    "subject": "CS-CV",
+    "event_type": "writing",
+    "description": "Integrate the ablation study results into the paper draft. A new subsection is added to the experiments section dedicated to the ablation study, including a table comparing the performance with and without the saliency-guidance module. The surrounding text is updated to reference these findings, solidifying the justification for our method's design.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the analysis of the ablation study in e_14, the next logical step is to incorporate these crucial findings into the paper. This writing event uses the latest `experiment_results` to update the `paper_paragraph`, strengthening the paper's core argument and moving the manuscript closer to a complete draft."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Weakly supervised segmentation",
+    "subject": "CS-CV",
+    "event_type": "writing",
+    "description": "Write the remaining sections of the paper, including the abstract, introduction, and related work. The goal is to create a complete, submission-ready manuscript by integrating all previously written parts and ensuring a consistent narrative and flow throughout the document.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the core method, results, and ablation studies written up (e_15), the project is approaching its conclusion. This writing event focuses on creating a complete, polished manuscript by adding framing sections like the abstract and introduction, and integrating all existing parts into a coherent whole, which is a necessary step before considering the project finished."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Weakly supervised segmentation",
+    "subject": "CS-CV",
+    "event_type": "end",
+    "description": "The project is concluded. The final manuscript is submitted to a top-tier computer vision conference (e.g., CVPR). The research cycle for this specific project is complete, with future work on multi-object scenes identified for a potential follow-up project.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached a natural conclusion. The research goals were met and refined (e_11), the method was validated through extensive main experiments and ablations (e_08, e_13), and a complete, polished manuscript has been drafted (e_16). With a submission-ready paper, the primary objectives are fulfilled, making this a logical endpoint for the timeline."
+  }
+]

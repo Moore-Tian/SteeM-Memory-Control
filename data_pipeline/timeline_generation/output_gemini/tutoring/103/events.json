@@ -1,0 +1,297 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Exercise planning for consistency and safety",
+    "subject": "Health",
+    "event_type": "objective_clarification",
+    "description": "Initial meeting to discuss the learner's goals for creating a safe and sustainable exercise plan. We covered their current fitness level, available time, and what they hope to achieve in the next three months.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first session, so the primary goal is to understand the learner's needs and establish clear learning objectives. This foundational step is necessary before creating a study plan or starting any lessons."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Exercise planning for consistency and safety",
+    "subject": "Health",
+    "event_type": "plan_milestones",
+    "description": "Based on the agreed-upon learning objectives, we collaborated to outline a study plan. The plan includes key milestones like 'Understanding FITT Principles', 'Designing a Weekly Split', and 'Injury Prevention Techniques'.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learner's goals clarified in the 'learning_objectives' artifact, the next logical step is to create a structured roadmap. This 'plan_milestones' event translates those goals into an actionable 'study_plan', providing a clear sequence for future lessons and activities."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Exercise planning for consistency and safety",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "Conducted the first lesson, focusing on the FITT (Frequency, Intensity, Time, Type) principles, which is the first milestone in the study plan. We discussed how each component applies to building a balanced workout routine.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the creation of the 'study_plan', the natural next step is to begin instruction on the first scheduled topic. This 'lesson' on FITT principles directly addresses the first milestone, and creating 'teaching_notes' provides a reusable resource for the learner and future sessions."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Exercise planning for consistency and safety",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "Assigned a practice task for the learner to apply the FITT principles. The task was to draft a single cardio workout session, specifying the Frequency, Intensity, Time, and Type, based on their personal fitness level.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a theoretical lesson on the FITT principles, the next logical step is to have the learner apply this knowledge in a practical exercise. This 'practice' event solidifies their understanding and generates a 'practice_record' of their attempt, which is essential for the upcoming review and feedback session."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Exercise planning for consistency and safety",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "Reviewed the learner's draft cardio workout from the practice session. We assessed whether the FITT principles were applied correctly and safely, noting that the proposed intensity was slightly too high for a beginner.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the 'practice' event where the learner applied their knowledge, a 'review' is the necessary next step. By analyzing the 'practice_record' against the concepts in the 'teaching_notes', we can identify specific areas of misunderstanding and provide targeted, actionable feedback in a 'feedback_summary'."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Exercise planning for consistency and safety",
+    "subject": "Health",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback from the previous review, the teaching notes on FITT principles were updated. More specific guidance and examples were added on how to choose an appropriate starting intensity, including using the Rate of Perceived Exertion (RPE) scale.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The 'review' event identified that the learner struggled with selecting an appropriate intensity. This 'materials_revision' event directly addresses that finding by improving the 'teaching_notes', making them clearer and more practical before the learner re-attempts the practice task."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Exercise planning for consistency and safety",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "The learner was asked to revise their cardio workout plan from the previous attempt. This time, they were instructed to use the RPE scale from the updated teaching notes to set a more appropriate and safe intensity level.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the 'teaching_notes' to address a specific weakness identified in the 'feedback_summary', the next logical step is a repeat 'practice' session. This allows the learner to apply the new knowledge immediately, reinforcing the correction and producing a new 'practice_record' to verify their understanding before moving on."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Exercise planning for consistency and safety",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "Reviewed the learner's revised cardio workout plan from the second practice attempt. The new plan successfully incorporated the RPE scale to set a safe and appropriate intensity, demonstrating a good grasp of the concept after the previous feedback.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner submitted a revised 'practice_record', a 'review' is essential to validate that the feedback was understood and the concept is now mastered. This step confirms the learner can now correctly apply the FITT principles before proceeding to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Exercise planning for consistency and safety",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "Now that the learner has successfully applied the FITT principles, we proceeded to the next topic in the study plan: 'Designing a Weekly Split'. This lesson covered how to structure a full week of exercise, balancing workout days and rest days to promote recovery and consistency.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous 'review' event confirmed that the learner has mastered the FITT principles. Following the 'study_plan', the logical next step is to begin a 'lesson' on the next milestone. This moves the learner forward in their curriculum and updates the 'teaching_notes' with material for the new topic."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Exercise planning for consistency and safety",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "Assigned a practice task for the learner to apply the concept of designing a weekly split. The task is to create a sample one-week schedule that includes both workout days and rest days, based on the principles discussed in the last lesson.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on 'Designing a Weekly Split', this 'practice' event is the logical next step. It requires the learner to actively apply the new concepts from the 'teaching_notes', solidifying their learning and creating a 'practice_record' for the tutor to review."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Exercise planning for consistency and safety",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "Reviewed the learner's sample one-week schedule from the practice record. The plan showed a good effort, but it included too many consecutive workout days without adequate rest, highlighting a misunderstanding of recovery principles.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner submitted their attempt to create a weekly schedule in the 'practice_record', a 'review' is the necessary next step. This allows for evaluation against the concepts in the 'teaching_notes' and the generation of a 'feedback_summary' to correct misconceptions before they become ingrained."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Exercise planning for consistency and safety",
+    "subject": "Health",
+    "event_type": "materials_revision",
+    "description": "Updated the 'Designing a Weekly Split' teaching notes to better emphasize the importance of rest and recovery. The revision includes specific examples of balanced weekly schedules and a checklist for avoiding overtraining.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review revealed a critical misunderstanding about recovery, as noted in the 'feedback_summary'. This 'materials_revision' event directly addresses that gap by improving the 'teaching_notes', making the principles of rest clearer before the learner re-attempts the practice task."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Exercise planning for consistency and safety",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "The learner was asked to revise their one-week schedule, using the newly updated teaching notes that emphasize rest and recovery. The goal is to create a more balanced plan that avoids overtraining by incorporating the provided examples and checklist.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the 'teaching_notes' to address the learner's difficulty with scheduling rest days, a follow-up 'practice' session is the logical next step. This allows the learner to apply the revised guidance from the 'feedback_summary' immediately, creating a new 'practice_record' to demonstrate their corrected understanding."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Exercise planning for consistency and safety",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "Reviewed the learner's revised one-week schedule. The new plan successfully incorporates appropriate rest days, demonstrating an understanding of how to balance workouts and recovery to avoid overtraining.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner submitted a revised weekly schedule in the previous 'practice' event, a 'review' is essential to confirm that the feedback was correctly applied. This step validates their understanding of recovery principles before moving on to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Exercise planning for consistency and safety",
+    "subject": "Health",
+    "event_type": "lesson",
+    "description": "With the learner showing a solid grasp of weekly scheduling, we moved to the next milestone in the study plan: 'Injury Prevention Techniques'. This lesson focused on the importance of dynamic warm-ups, static stretching for cool-downs, and listening to one's body to prevent common exercise-related injuries.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous 'review' event confirmed the learner's mastery of scheduling principles. Following the 'study_plan', the next logical step is to introduce the next core topic, 'Injury Prevention'. This 'lesson' advances the curriculum and generates new 'teaching_notes' for this critical subject."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Exercise planning for consistency and safety",
+    "subject": "Health",
+    "event_type": "practice",
+    "description": "Assigned a practice task to integrate injury prevention techniques. The learner was asked to design a complete workout session, including a specific dynamic warm-up, the main exercises, and a cool-down with static stretches.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on injury prevention, this 'practice' event is the essential next step. It requires the learner to apply the concepts from the 'teaching_notes' in a concrete way, creating a 'practice_record' for review and confirming they can integrate all components of a safe workout."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Exercise planning for consistency and safety",
+    "subject": "Health",
+    "event_type": "review",
+    "description": "Reviewed the learner's complete workout session from the practice record. The plan correctly included a dynamic warm-up and a cool-down with static stretches, showing a good understanding of the injury prevention lesson.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner submitted a complete workout plan in the 'practice_record', a 'review' is the necessary next step. This allows for a final check to ensure all key concepts from the 'teaching_notes'—FITT, weekly splits, and injury prevention—are integrated correctly, and generates a 'feedback_summary' confirming mastery of the planned topics."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Exercise planning for consistency and safety",
+    "subject": "Health",
+    "event_type": "end",
+    "description": "This was the final session, summarizing the learner's progress. We confirmed that all initial learning objectives were met and the learner now feels confident in their ability to create and adjust a safe and sustainable exercise plan independently.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has successfully completed all milestones in the study plan, demonstrating through multiple practice and review cycles that they can apply the FITT principles, structure a weekly schedule, and integrate injury prevention techniques. Since the core objectives have been met and mastery has been confirmed, the tutoring process for this topic can be concluded."
+  }
+]

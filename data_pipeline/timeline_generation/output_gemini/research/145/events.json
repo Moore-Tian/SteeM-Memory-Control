@@ -1,0 +1,279 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Gene regulatory network inference",
+    "subject": "Biology",
+    "event_type": "proposal",
+    "description": "The project begins by defining the core research question: can we improve the accuracy of gene regulatory network (GRN) inference by integrating transcriptomic and proteomic data? A high-level plan is formulated to develop a new Bayesian model for this purpose and validate it on a well-characterized human cell line.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "Every research project must start with a clear goal and a plan. This initial proposal event establishes the foundational research questions and a high-level roadmap, which will guide all subsequent design and experimental work. No prior artifacts are required as this is the project's inception."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Gene regulatory network inference",
+    "subject": "Biology",
+    "event_type": "scheme_design",
+    "description": "Based on the initial proposal, the team designs the specific mathematical structure of the Bayesian model. This involves defining the likelihood function for observing transcriptomic and proteomic data given a network structure, and selecting prior distributions for the model parameters. A Markov Chain Monte Carlo (MCMC) sampling strategy is chosen for posterior inference.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "With the high-level goals and plan established in e_01, the necessary next step is to translate these ideas into a concrete technical approach. This event creates the initial 'method_scheme', which details the proposed model and is essential for any subsequent implementation and experimentation."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Gene regulatory network inference",
+    "subject": "Biology",
+    "event_type": "pilot_experiments",
+    "description": "A prototype of the Bayesian model is implemented and tested on a small, simulated dataset with a known ground-truth network structure. This initial test aims to debug the MCMC sampler, check for convergence issues, and get a preliminary sense of the model's performance in a controlled environment.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the theoretical design of the model in e_02, a pilot experiment is the logical next step to validate the implementation and feasibility of the proposed 'method_scheme' before applying it to complex, real-world data. Using simulated data allows for a controlled evaluation against a known ground truth, which is critical for debugging and initial validation."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Gene regulatory network inference",
+    "subject": "Biology",
+    "event_type": "analysis",
+    "description": "The team formally analyzes the results from the pilot simulation. The analysis confirms that the MCMC sampler converges properly and the model can successfully recover the simple ground-truth network from the simulated data with high precision and recall. This positive outcome validates the core model design and implementation.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_plan"
+    ],
+    "reason": "Following the pilot experiments in e_03, a detailed analysis is the necessary next step to interpret the results and decide on the project's direction. Since the analysis confirms the method's validity, the 'research_plan' is updated to reflect this successful milestone and to greenlight the transition to experiments on real-world data."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Gene regulatory network inference",
+    "subject": "Biology",
+    "event_type": "main_experiments",
+    "description": "Following the successful pilot, the team applies the Bayesian model to the real-world transcriptomic and proteomic datasets from the human cell line. The computationally intensive MCMC sampler is run for an extended period to ensure convergence and collect posterior samples for the network structure. This step aims to generate the primary results for the project.",
+    "required_artifacts": [
+      "research_plan",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The successful pilot study (e_03) and its positive analysis (e_04) validated the core methodology. As outlined in the updated 'research_plan', the logical next step is to apply the 'method_scheme' to the real-world data to address the primary 'research_goals'. This constitutes the main experimental phase of the project, generating the key dataset for final analysis."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Gene regulatory network inference",
+    "subject": "Biology",
+    "event_type": "analysis",
+    "description": "The team analyzes the output from running the model on the real-world cell line data. The analysis focuses on evaluating the posterior probabilities of regulatory links and comparing the inferred network against known pathways from databases like KEGG and Reactome. Initial findings suggest that while some known interactions are recovered, the network also contains many unexpected links and the MCMC chains show signs of poor mixing, indicating potential convergence issues.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After running the main experiments in e_05, a thorough analysis is the critical next step to interpret the results. This analysis directly addresses the 'research_goals' by evaluating the performance of the 'method_scheme' on real data. Generating a preliminary 'paper_paragraph' is a common practice to start documenting findings, even if they are not yet final and may require revision."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Gene regulatory network inference",
+    "subject": "Biology",
+    "event_type": "scheme_design",
+    "description": "The poor MCMC mixing observed in the main experiment's analysis prompts a revision of the inference method. The team decides to replace the basic MCMC sampler with a more sophisticated algorithm, such as Hamiltonian Monte Carlo (HMC) or a non-sampling approach like Variational Inference (VI), to improve convergence on the complex posterior landscape of the real-world data.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis in e_06 revealed that the current 'method_scheme' is not robust enough for the real dataset, as evidenced by poor MCMC convergence in the 'experiment_results'. To obtain reliable results that address the 'research_goals', it's necessary to go back and refine the methodology. This iterative loop of analysis followed by method redesign is a common and critical part of computational research."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Gene regulatory network inference",
+    "subject": "Biology",
+    "event_type": "pilot_experiments",
+    "description": "To validate the revised inference strategy, the team implements the new Variational Inference (VI) approach and re-runs a pilot experiment on the original simulated dataset. This test is designed to confirm that the new method is implemented correctly and can successfully recover the simple ground-truth network, while also assessing its convergence speed and stability compared to the previous MCMC sampler.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After redesigning the core inference algorithm in e_07 to fix convergence issues, it is prudent to test the new 'method_scheme' on a small, controlled problem before applying it to the full, complex dataset again. This pilot experiment serves as a critical sanity check to validate the new implementation and de-risk the subsequent main experiment."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Gene regulatory network inference",
+    "subject": "Biology",
+    "event_type": "analysis",
+    "description": "The results from the pilot test of the new Variational Inference (VI) method are analyzed. The analysis confirms that the VI approach successfully recovers the ground-truth network from the simulated data, showing significantly improved convergence and stability compared to the previous MCMC method. This positive outcome validates the revised inference strategy.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_plan"
+    ],
+    "reason": "Following the pilot experiment in e_08 to test the revised methodology, a formal analysis is the necessary next step to interpret the results. This analysis validates that the new 'method_scheme' overcomes the previous convergence issues, and updating the 'research_plan' formalizes the decision to proceed with re-running the main experiments on the real-world data."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Gene regulatory network inference",
+    "subject": "Biology",
+    "event_type": "main_experiments",
+    "description": "With the revised inference method validated, the team re-runs the main experiment. The new Variational Inference (VI) model is applied to the full transcriptomic and proteomic datasets from the human cell line to infer the gene regulatory network, aiming to produce stable and reliable results.",
+    "required_artifacts": [
+      "research_plan",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The analysis in e_09 confirmed the new VI-based 'method_scheme' is effective in a controlled setting. Following the updated 'research_plan', the crucial next step is to apply this improved method to the real-world data to finally address the core 'research_goals' and overcome the convergence issues identified in e_06."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Gene regulatory network inference",
+    "subject": "Biology",
+    "event_type": "analysis",
+    "description": "The team performs a comprehensive analysis of the results from the re-run main experiment using Variational Inference. The analysis confirms that the VI method achieved stable convergence and the inferred network shows a significantly higher enrichment for known biological pathways compared to the previous MCMC-based results. This successful outcome validates the revised methodology on real-world data.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After re-running the main experiment in e_10 with an improved method, a detailed analysis is the essential next step. This event evaluates the new 'experiment_results' against the core 'research_goals' to determine if the methodological revision was successful, and begins to synthesize these key findings into a 'paper_paragraph' for the eventual publication."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Gene regulatory network inference",
+    "subject": "Biology",
+    "event_type": "writing",
+    "description": "With the main results now validated, the team begins to draft the manuscript. They write a detailed 'Methods' section describing the final Variational Inference model and a 'Results' section presenting the inferred network and its validation against known biological pathways.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The successful analysis in e_11 provides the core findings for the project. The logical next step is to formally document this work by drafting the main sections of the paper, using the final 'method_scheme' and 'experiment_results' to build upon existing 'paper_paragraph' snippets and frame the narrative around the 'research_goals'."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Gene regulatory network inference",
+    "subject": "Biology",
+    "event_type": "main_experiments",
+    "description": "To properly benchmark the new VI-based method against the state-of-the-art, the team runs several established GRN inference algorithms on the same human cell line dataset. This comparative experiment is crucial for demonstrating the novel method's performance advantages and providing context for the manuscript.",
+    "required_artifacts": [
+      "research_plan",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After drafting the initial results (e_12), a standard and critical step for a methods paper is to perform a comparative benchmark. This experiment generates results from competing methods, which are necessary to quantitatively support claims of improvement and to satisfy the expectations of peer review."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Gene regulatory network inference",
+    "subject": "Biology",
+    "event_type": "analysis",
+    "description": "The team analyzes the benchmark results, systematically comparing the performance of their VI-based model against the state-of-the-art methods run in the previous step. The comparison uses standard metrics like Area Under the Precision-Recall Curve (AUPRC) to quantify the performance differences and highlight the advantages of their integrated data approach.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After running benchmark experiments in e_13, the crucial next step is to analyze these comparative 'experiment_results'. This analysis is essential for positioning the new method against the state-of-the-art, directly addressing the 'research_goals', and generating key content for the 'paper_paragraph' that will form the core of the manuscript's results section."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Gene regulatory network inference",
+    "subject": "Biology",
+    "event_type": "writing",
+    "description": "The team integrates the benchmark analysis into the manuscript. They finalize the 'Results' section with figures and tables comparing their method's performance against competitors, and draft the 'Discussion' section to interpret the findings, address limitations, and highlight the significance of the work.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the comparative analysis from e_14 complete, the project has all the necessary results. The logical next step is to incorporate these final 'experiment_results' into the manuscript, building on the existing 'paper_paragraph' to create a nearly complete draft that addresses the core 'research_goals'."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Gene regulatory network inference",
+    "subject": "Biology",
+    "event_type": "end",
+    "description": "With a complete manuscript draft that includes the final methods, main results, and comparative benchmarks, the core research objectives are met. The team finalizes the paper and supplemental materials for submission to a peer-reviewed journal, concluding the primary research phase of the project.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has successfully navigated from initial proposal to a validated method with strong comparative results (e_14), which have been fully documented in a manuscript (e_15). As the research questions have been answered and the results consolidated into a publication-ready format, the project has reached its natural conclusion."
+  }
+]

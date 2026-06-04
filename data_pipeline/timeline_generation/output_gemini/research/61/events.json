@@ -1,0 +1,326 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Abstractive summarization quality modeling",
+    "subject": "CS-NLP",
+    "event_type": "proposal",
+    "description": "Initial proposal to develop a reference-free quality model for abstractive summaries. The goal is to move beyond ROUGE and other lexical overlap metrics by modeling aspects like factuality, coherence, and relevance directly. The initial plan is to first define a comprehensive set of quality dimensions and then explore machine learning models to predict them.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "research_plan",
+      "research_goals"
+    ],
+    "reason": "This is the first step of the research project. It is necessary to define the initial research goals and a high-level plan to guide the subsequent stages of the project."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Abstractive summarization quality modeling",
+    "subject": "CS-NLP",
+    "event_type": "scheme_design",
+    "description": "Based on the initial proposal, a methodological scheme is designed. This involves defining a set of key quality dimensions (e.g., Relevance, Factuality, Coherence, Fluency) and creating detailed annotation guidelines for human evaluators. The plan is to collect human judgments on a diverse set of summaries and use this data to train a multi-task learning model based on a pre-trained language model.",
+    "required_artifacts": [
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the initial proposal (e_01), this step translates the high-level research goals into a concrete experimental and methodological plan. A detailed `method_scheme` is necessary before any data collection or pilot experiments can be conducted."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Abstractive summarization quality modeling",
+    "subject": "CS-NLP",
+    "event_type": "pilot_experiments",
+    "description": "A small-scale pilot study is conducted to test the annotation guidelines and the overall experimental setup. A few annotators are asked to label a small set of summaries using the defined quality dimensions. The goal is to check inter-annotator agreement and identify any ambiguities or issues in the annotation protocol.",
+    "required_artifacts": [
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing the experimental scheme (e_02), a pilot study is a crucial sanity check. It helps validate the feasibility and clarity of the annotation guidelines (`method_scheme`) before committing to the expensive and time-consuming main experiments. The results from this pilot will guide any necessary revisions to the methodology."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Abstractive summarization quality modeling",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "The results from the pilot study are analyzed to assess inter-annotator agreement (IAA). While agreement for 'Fluency' and 'Coherence' is acceptable, the IAA for 'Relevance' and 'Factuality' is lower than desired. Annotator feedback confirms that the guidelines for these two dimensions are ambiguous and need refinement.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the pilot study (e_03), a detailed analysis of the collected data is necessary to evaluate the effectiveness of the annotation protocol defined in the `method_scheme`. The outcome of this analysis is crucial to determine whether the project can proceed to the main experiments or if the methodology needs revision, as is suggested by the low agreement scores."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Abstractive summarization quality modeling",
+    "subject": "CS-NLP",
+    "event_type": "scheme_design",
+    "description": "In response to the low inter-annotator agreement found in the pilot study, the annotation guidelines are revised. The definitions for 'Relevance' and 'Factuality' are refined to be more concrete, with more detailed examples and decision trees to guide annotators. 'Factuality' is further broken down into sub-dimensions like 'atomic fact accuracy' and 'completeness'.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis in e_04 revealed critical flaws in the original `method_scheme`, making it unsuitable for large-scale annotation. Revisiting the `scheme_design` to address the identified ambiguities is a necessary step to ensure the collection of high-quality data in future experiments. This iterative refinement of the methodology is crucial before committing resources to the main study."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Abstractive summarization quality modeling",
+    "subject": "CS-NLP",
+    "event_type": "pilot_experiments",
+    "description": "A second round of pilot experiments is conducted using the revised annotation guidelines. A small group of annotators is tasked with labeling a new set of summaries, with a specific focus on evaluating the clarity and effectiveness of the updated 'Relevance' and 'Factuality' dimensions.",
+    "required_artifacts": [
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After refining the `method_scheme` in e_05 to address the low inter-annotator agreement discovered in the first pilot, it is critical to validate that these revisions were successful. This second pilot serves as a targeted check to confirm that the new guidelines produce more consistent annotations before committing to the full-scale main experiments."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Abstractive summarization quality modeling",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "The results of the second pilot study are analyzed. The analysis shows a significant improvement in inter-annotator agreement for the 'Relevance' and 'Factuality' dimensions, reaching acceptable levels. The refined guidelines are deemed successful and ready for the main data collection phase.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the second pilot experiment (e_06), which used the revised `method_scheme`, this analysis is crucial to validate the effectiveness of the changes. The positive outcome confirms that the annotation protocol is now robust enough to proceed to the main experiments, resolving the issues identified in e_04."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Abstractive summarization quality modeling",
+    "subject": "CS-NLP",
+    "event_type": "main_experiments",
+    "description": "With the annotation protocol now validated, the main data collection phase is launched. A large dataset of summaries generated by various state-of-the-art models is annotated by a team of evaluators using the refined guidelines. This effort aims to produce a substantial, high-quality dataset for training the proposed quality prediction model.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The successful analysis in e_07 confirmed the reliability of the refined `method_scheme`. This validation is the necessary prerequisite to confidently scale up the project to the `main_experiments` stage, which involves the costly and time-consuming process of large-scale data annotation. This step moves the project from methodological validation to core data generation."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Abstractive summarization quality modeling",
+    "subject": "CS-NLP",
+    "event_type": "writing",
+    "description": "While the main data collection is ongoing, work begins on drafting the 'Methodology' section of the research paper. This section details the finalized quality dimensions, the refined annotation guidelines, and the two-stage pilot study process that led to the final experimental design.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the `method_scheme` finalized and validated through two pilot studies (e_03-e_07), and the main data collection underway (e_08), it is an opportune time to start documenting the experimental procedure for the paper. Writing the methodology section in parallel with the ongoing experiments is an efficient use of time and ensures the details of the complex annotation process are captured accurately."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Abstractive summarization quality modeling",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "The main annotation phase is complete. A comprehensive statistical analysis is performed on the newly collected dataset, examining score distributions, final inter-annotator agreement, and correlations between the different quality dimensions. The findings confirm the data is of high quality and reveals interesting relationships, such as a strong positive correlation between perceived factuality and relevance.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "With the main data collection (e_08) complete, a thorough analysis of the new dataset is a crucial step before proceeding to model training. This analysis validates the quality of the large-scale annotations and provides key statistical insights about the data, which are necessary for both informing the modeling approach and for describing the dataset in the paper."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Abstractive summarization quality modeling",
+    "subject": "CS-NLP",
+    "event_type": "main_experiments",
+    "description": "With the high-quality annotated dataset now available, the first version of the quality prediction model is implemented and trained. A multi-task learning setup is used on top of a pre-trained language model (e.g., RoBERTa) to jointly predict scores for all defined quality dimensions. The initial results are evaluated on a held-out validation set to get a first look at the model's performance.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After successfully collecting and analyzing the main dataset (e_10), the project now moves to the core modeling phase. Training the model using the collected human ratings (`experiment_results`) is the central experiment of this research and a direct step towards achieving the project's `research_goals`."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Abstractive summarization quality modeling",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "The initial model's performance is analyzed. The results show high correlation with human scores for 'Fluency' and 'Coherence', but only moderate correlation for the more challenging 'Factuality' and 'Relevance' dimensions. A qualitative error analysis reveals the model often fails to penalize summaries with subtle factual inaccuracies.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After training the first version of the model in e_11, a detailed analysis of its performance is the logical next step. This analysis is critical to identify the model's specific strengths and weaknesses, providing the necessary insights to guide subsequent model improvements and to begin drafting the results section of the paper."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Abstractive summarization quality modeling",
+    "subject": "CS-NLP",
+    "event_type": "scheme_design",
+    "description": "To address the model's poor performance on 'Factuality' as identified in the previous analysis, the modeling scheme is revised. The new design proposes a two-stage approach: first, the base model predicts scores for all dimensions, then a specialized, fine-tuned NLI (Natural Language Inference) model is used to explicitly verify factual claims in the summary against the source document, providing a secondary signal to refine the factuality score.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis in e_12 revealed a specific weakness in the model's ability to handle factuality. A logical next step is to go back to the design phase and create a new modeling approach (`method_scheme`) that directly targets this weakness. This iterative process of analyzing results and refining the method is crucial for improving model performance and achieving the core `research_goals`."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Abstractive summarization quality modeling",
+    "subject": "CS-NLP",
+    "event_type": "main_experiments",
+    "description": "The revised two-stage modeling approach is implemented. The specialized NLI model is fine-tuned on an external dataset and then applied to verify claims from summaries in our main dataset. The predictions from the NLI model are combined with the base model's output to generate a new, refined factuality score, and the entire system is re-evaluated.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After redesigning the modeling approach in e_13 to specifically target the factuality weakness identified in e_12, the next logical step is to implement and run this new experiment. This is necessary to test the hypothesis that the two-stage NLI-based `method_scheme` can improve performance and better align with the project's `research_goals`."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Abstractive summarization quality modeling",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "The performance of the new two-stage model is analyzed. The results show a significant improvement in correlation with human judgments for 'Factuality', confirming the effectiveness of the NLI-based refinement. The model's performance on other dimensions remains strong, indicating the new component did not negatively impact overall quality prediction.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After running the new two-stage model experiment in e_14, a thorough analysis is essential to quantify its performance and compare it to the previous baseline. This step is critical to validate whether the revised modeling scheme from e_13 successfully addressed the factuality issue and moved the project closer to its research goals."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Abstractive summarization quality modeling",
+    "subject": "CS-NLP",
+    "event_type": "main_experiments",
+    "description": "To demonstrate the superiority of the new two-stage model, a final set of experiments is run to compare it against established baselines. The performance of the model is benchmarked against metrics like ROUGE, BERTScore, and other state-of-the-art quality estimation models on the held-out test set. The primary evaluation metric is the correlation with human judgments from the main dataset.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The analysis in e_15 confirmed the internal validity and effectiveness of the new two-stage model. To establish its external validity and contribution to the field, it is crucial to compare its performance against existing state-of-the-art methods. This baseline comparison is a standard and necessary step to contextualize the model's performance and justify its novelty."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Abstractive summarization quality modeling",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "The results from the benchmark comparison experiments are analyzed in detail. Correlation scores (e.g., Spearman's rho, Kendall's tau) are computed for our model and all baselines against the human judgments. The analysis confirms that our two-stage model significantly outperforms all baselines, particularly in its ability to model factuality.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "Following the final benchmark experiments (e_16), this analysis is the crucial step to quantify and confirm the superiority of the proposed model over existing methods. These conclusive results are essential for substantiating the paper's primary contributions and will form the core of the results section."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "Abstractive summarization quality modeling",
+    "subject": "CS-NLP",
+    "event_type": "writing",
+    "description": "With all experimental results and analyses finalized, the focus shifts to creating a complete draft of the research paper. This involves integrating the previously written paragraphs on methodology and results, and writing the missing sections such as the Introduction, Related Work, and Conclusion. The goal is to synthesize all project findings into a single, cohesive narrative.",
+    "required_artifacts": [
+      "research_goals",
+      "experiment_results",
+      "paper_paragraph",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The conclusive analysis from the benchmark comparison (e_17) marks the end of the primary research and analysis phase. The logical next step is to consolidate all the methods, results, and existing text fragments into a full paper draft to prepare the work for publication and dissemination."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "research",
+    "topic": "Abstractive summarization quality modeling",
+    "subject": "CS-NLP",
+    "event_type": "end",
+    "description": "The research paper has been fully drafted, internally reviewed, and revised to a final version. With conclusive results demonstrating the model's superiority and a well-defined methodology, the project has met its goals and is considered complete. The work is now ready for submission to a top-tier NLP conference.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has successfully progressed from an initial proposal (e_01) to validated methods (e_07), conclusive benchmarked results (e_17), and a complete paper draft (e_18). All research goals have been addressed, and the project's contributions are clearly articulated and supported by strong evidence. The research cycle is now complete, making this a natural point to conclude the timeline."
+  }
+]

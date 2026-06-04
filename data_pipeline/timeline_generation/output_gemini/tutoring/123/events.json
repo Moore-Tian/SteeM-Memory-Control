@@ -1,0 +1,273 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Outlining long documents for structure and consistency",
+    "subject": "Writing",
+    "event_type": "objective_clarification",
+    "description": "The tutor and learner hold an initial meeting to discuss the learner's challenges with structuring a long manuscript. They establish the primary goal: to create a clear, consistent, and hierarchical outline for a 100+ page document. A secondary goal is to learn how to maintain that structure during the writing process.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first event in the timeline, so the logical starting point is to clarify the learner's goals and challenges. This 'objective_clarification' step is foundational for all subsequent planning and teaching."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Outlining long documents for structure and consistency",
+    "subject": "Writing",
+    "event_type": "plan_milestones",
+    "description": "The tutor translates the learning objectives into a concrete study plan. The plan includes three key milestones: understanding hierarchical outlining principles, creating a topic-level outline for the learner's manuscript, and then expanding that into a detailed, multi-level outline.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "Following the clarification of the learner's goals in the previous event, the next logical step is to create a structured roadmap. This 'plan_milestones' event uses the 'learning_objectives' to produce a 'study_plan' that will guide the upcoming lessons and practice sessions."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Outlining long documents for structure and consistency",
+    "subject": "Writing",
+    "event_type": "lesson",
+    "description": "The tutor delivers the first lesson, focusing on the core principles of hierarchical outlining as outlined in the study plan. Key concepts covered include top-down structure, logical grouping of ideas, and maintaining parallel construction across headings.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a study plan established, the first milestone is to understand outlining principles. This 'lesson' directly addresses that milestone, providing the foundational knowledge the learner needs before they can begin practicing. It generates 'teaching_notes' that can be referenced later."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Outlining long documents for structure and consistency",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "The tutor assigns a practice task based on the first milestone. The learner is asked to create a high-level, topic-based outline for their manuscript, focusing on applying the principles of hierarchy and logical grouping discussed in the recent lesson. The learner's attempt is recorded for later review.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After learning the theory of hierarchical outlining in the previous 'lesson', the logical next step is for the learner to apply that knowledge. This 'practice' event directly addresses the first milestone in the 'study_plan' and generates a 'practice_record' that will be essential for the upcoming 'review' session."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Outlining long documents for structure and consistency",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor reviews the high-level outline from the practice session, checking it against the principles taught in the lesson. The review identifies areas where the hierarchy is unclear or where topics could be grouped more logically. The tutor compiles specific feedback and suggestions for revision.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the 'practice' event where the learner created an outline, the logical next step is a 'review' to assess their work. This event uses the 'practice_record' to provide targeted, actionable advice, which is captured in the new 'feedback_summary' artifact. This feedback is crucial for correcting misunderstandings before moving on."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Outlining long documents for structure and consistency",
+    "subject": "Writing",
+    "event_type": "materials_revision",
+    "description": "Based on the issues with logical grouping identified in the review, the tutor revises the teaching notes. They add a new section with a worked example showing how to cluster a list of raw ideas into thematic groups before assigning them hierarchical levels.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The 'review' event produced a 'feedback_summary' that revealed a specific weakness in the learner's understanding. Before asking the learner to practice again, a good next step is to improve the instructional materials. This 'materials_revision' event refines the 'teaching_notes' to better address the observed difficulty, ensuring the learner has better support for their next attempt."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Outlining long documents for structure and consistency",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "Following the review and materials revision, the learner is asked to revise their high-level manuscript outline. They are instructed to specifically apply the feedback on logical grouping and refer to the new example in the updated teaching notes. The revised outline is recorded for the next review.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes",
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After receiving targeted feedback and having the instructional materials enhanced to address a specific weakness, the logical next step is for the learner to apply what they've learned. This second 'practice' event allows the learner to directly incorporate the feedback from the 'feedback_summary' and the revised 'teaching_notes', creating a new 'practice_record' and reinforcing the learning cycle."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Outlining long documents for structure and consistency",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's revised high-level outline from the second practice session. The assessment confirms that the learner has successfully applied the feedback on logical grouping, resulting in a much more coherent structure. The tutor provides positive reinforcement and confirms the learner is ready for the next milestone.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner submitted a revised practice attempt in the previous event, the next logical step is to review it. This 'review' event assesses the new 'practice_record' against the previous 'feedback_summary' to confirm that the learner has successfully incorporated the guidance. A new 'feedback_summary' is generated to formally approve the work and signal readiness to move to the next stage of the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Outlining long documents for structure and consistency",
+    "subject": "Writing",
+    "event_type": "lesson",
+    "description": "The tutor delivers a lesson on the next milestone from the study plan: expanding a high-level outline into a detailed, multi-level structure. The lesson covers techniques for adding sub-points (e.g., from topic sentences to supporting details), maintaining consistent depth, and using sub-headings effectively.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous 'review' event confirmed the learner mastered the high-level outline and is ready for the next stage. According to the 'study_plan', this next stage is creating a detailed outline. This 'lesson' provides the necessary instruction to tackle this more complex task, updating the 'teaching_notes' with advanced techniques."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Outlining long documents for structure and consistency",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "The tutor assigns a practice task based on the latest lesson. The learner is asked to take one major section of their approved high-level outline and expand it into a detailed, multi-level structure, applying the techniques for adding sub-points and maintaining consistent depth.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on detailed outlining (e_09), the next logical step is to apply that knowledge through targeted practice. This 'practice' event challenges the learner to expand their previously approved high-level outline ('practice_record'), moving them forward on the 'study_plan' and creating a new artifact for review."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Outlining long documents for structure and consistency",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor reviews the detailed outline section created in the previous practice session. The review focuses on whether the learner successfully expanded a high-level topic into multiple, consistent sub-levels and maintained logical flow, as taught in the last lesson.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner attempted to create a detailed outline section in the 'practice' event (e_10), a 'review' is the necessary next step. This event assesses the learner's application of the concepts from the recent 'lesson' (e_09) by evaluating the 'practice_record' and produces a 'feedback_summary' to guide their next steps."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Outlining long documents for structure and consistency",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "The feedback from the previous review noted inconsistencies in the depth of sub-points and a lack of parallel structure in headings. The learner is tasked with revising their detailed outline section to correct these specific issues, using the feedback summary as a guide.",
+    "required_artifacts": [
+      "feedback_summary",
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "The previous 'review' (e_11) provided specific feedback on the learner's first attempt at detailed outlining. The logical next step is a targeted 'practice' session focused on revision, allowing the learner to apply the 'feedback_summary' before tackling the rest of the document."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Outlining long documents for structure and consistency",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor reviews the revised detailed outline section. The assessment confirms the learner successfully corrected the issues with inconsistent depth and parallel structure, demonstrating a solid grasp of the technique. The tutor provides positive feedback and clears the learner to apply this method to the rest of their manuscript.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "The learner submitted a revised practice attempt in the previous event (e_12) based on specific feedback. The logical next step is to review this revision to confirm the concepts are now understood. This 'review' assesses the new 'practice_record' and generates a new 'feedback_summary' to approve the work and set up the next, larger task."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Outlining long documents for structure and consistency",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "The learner is now tasked with applying the proven method to their entire manuscript. They will expand their approved high-level outline into a complete, detailed, multi-level document, following the final milestone of the study plan. This represents the major capstone practice for the tutoring engagement.",
+    "required_artifacts": [
+      "study_plan",
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "The previous review (e_13) confirmed the learner's ability to create a detailed outline section and cleared them to work on the full manuscript. This 'practice' event is the logical next step, representing the culmination of all prior lessons and feedback. It directly addresses the final milestone in the 'study_plan' by having the learner produce the complete outline."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Outlining long documents for structure and consistency",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor conducts a final, comprehensive review of the learner's complete, multi-level manuscript outline. The assessment focuses on overall structural integrity, consistency across all sections, and the correct application of all outlining principles taught.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the capstone 'practice' task of creating a full manuscript outline (e_14), the necessary next step is a final 'review'. This event assesses the complete 'practice_record' against the 'study_plan' milestones and 'teaching_notes' to provide a concluding 'feedback_summary' on the learner's overall mastery of the topic."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Outlining long documents for structure and consistency",
+    "subject": "Writing",
+    "event_type": "end",
+    "description": "The tutor and learner have a final meeting to confirm that the learning objectives have been met. The learner has successfully produced a complete, well-structured outline for their manuscript and feels confident in applying the skills independently.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has successfully completed the capstone practice task (e_14) and received a final comprehensive review (e_15), fulfilling all milestones set out in the original study plan. With the primary learning objectives met and the learner's skills validated, the tutoring process is now complete."
+  }
+]

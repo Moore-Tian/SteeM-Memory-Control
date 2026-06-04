@@ -1,0 +1,351 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Collaborative writing tools with AI support",
+    "subject": "CS-HCI",
+    "event_type": "proposal",
+    "description": "The project is initiated by defining the core research questions and a high-level plan. The initial focus is to explore how AI can help writing teams synthesize diverse ideas while maintaining a consistent voice.",
+    "required_artifacts": [
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the foundational event of the project. It acts as a bootstrapping step, taking a preliminary, unstated research idea and formalizing it into the first official 'research_goals' artifact, which is then used to produce the initial 'research_plan'."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Collaborative writing tools with AI support",
+    "subject": "CS-HCI",
+    "event_type": "scheme_design",
+    "description": "Based on the initial proposal, the team designs the first version of the experimental setup. This includes defining the writing task, the user interface for the collaborative tool, and the specific AI features for suggesting idea integrations and stylistic edits.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "With the high-level goals and plan established in the initial proposal (e_01), the natural next step is to translate these abstract ideas into a concrete experimental design. This event creates the initial 'method_scheme' required for any future experiments."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Collaborative writing tools with AI support",
+    "subject": "CS-HCI",
+    "event_type": "pilot_experiments",
+    "description": "The team runs a small-scale pilot study with a few pairs of writers to test the designed tool and experimental procedure. The goal is to gather initial feedback on the user interface and the AI suggestions, and to identify any major usability issues or technical bugs before a larger study.",
+    "required_artifacts": [
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing the experimental setup (e_02), a pilot study is the logical next step to validate the 'method_scheme' in a real-world setting. This allows the team to gather preliminary data and identify potential flaws before committing the time and resources required for the main experiments."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Collaborative writing tools with AI support",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "The team analyzes the qualitative feedback and interaction logs from the pilot study. Key findings indicate that while the AI's idea synthesis feature was valued, the stylistic suggestions were often ignored or perceived as disruptive, breaking the writers' flow. This analysis highlights a critical need to rethink the intervention mechanism for stylistic consistency.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the pilot experiments (e_03), a formal analysis of the collected 'experiment_results' is the necessary next step. This allows the team to interpret the initial findings, validate or challenge the current 'method_scheme', and make an informed decision about the project's direction before committing to larger-scale experiments."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Collaborative writing tools with AI support",
+    "subject": "CS-HCI",
+    "event_type": "scheme_design",
+    "description": "In response to the pilot analysis, the team revises the experimental design. They decide to change the delivery mechanism for stylistic suggestions, moving from real-time interruptions to an on-demand 'consistency check' feature that users can invoke at their discretion. This aims to reduce the disruptive effect on the writers' creative flow.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis of the pilot study (e_04) revealed that the initial method for providing stylistic feedback was disruptive. This event represents a necessary iteration on the 'method_scheme', using the insights from the 'experiment_results' to create a revised design that better aligns with the 'research_goals' before committing to larger experiments."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Collaborative writing tools with AI support",
+    "subject": "CS-HCI",
+    "event_type": "main_experiments",
+    "description": "With the revised experimental design finalized, the team launches the main user study. They recruit a significant number of participant pairs to use the collaborative writing tool with the on-demand consistency checker, aiming to collect substantial data to evaluate the system's effectiveness.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the 'method_scheme' (e_05) to address the flaws discovered in the pilot study analysis (e_04), the team is now confident enough to proceed with the main experiment. This step is necessary to collect the definitive data required to answer the core 'research_goals' using the improved methodology."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Collaborative writing tools with AI support",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "The team performs a comprehensive analysis of the data collected from the main experiment. The analysis includes statistical comparisons of writing quality and task efficiency between groups, as well as a thematic analysis of user interviews. The results confirm that the on-demand consistency checker is less disruptive and more positively received than the initial real-time suggestion model.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "Following the completion of the main experiments (e_06), the essential next step is to analyze the collected 'experiment_results'. This analysis is crucial for determining if the revised 'method_scheme' successfully addressed the research questions, and the findings are mature enough to begin drafting the results section of the paper, thus generating the first 'paper_paragraph'."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Collaborative writing tools with AI support",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "With the main experiment's results analyzed and deemed successful, the team focuses on documenting the methodology. They draft the 'Methods' section of the paper, detailing the revised experimental design, the participant recruitment process, and the data collection procedures used in the main study.",
+    "required_artifacts": [
+      "method_scheme",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After analyzing the successful main experiment in e_07 and drafting an initial results summary ('paper_paragraph'), a logical next step is to formally document the study's methodology for the research paper. This event uses the finalized 'method_scheme' to produce a detailed 'Methods' section, expanding the paper and moving the project closer to publication."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Collaborative writing tools with AI support",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "The team drafts the 'Introduction' and 'Related Work' sections of the paper. This involves situating their contribution within the existing literature, motivating the study by highlighting current gaps, and clearly articulating the research questions and contributions based on the successful main experiment.",
+    "required_artifacts": [
+      "research_goals",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the Methods (e_08) and initial Results (e_07) sections drafted, the logical next step is to write the paper's introduction. This requires referencing the original 'research_goals' to frame the problem and using the positive 'experiment_results' to assert the paper's contributions, thus creating the narrative arc for the publication."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Collaborative writing tools with AI support",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "While outlining the 'Discussion' section of the paper, the team realizes they need a deeper understanding of user behavior. They conduct a follow-up analysis on the main experiment's interaction logs, specifically focusing on when and how users invoked the on-demand 'consistency check' feature. This secondary analysis aims to uncover patterns that can explain the feature's success.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After drafting the introduction and methods (e_08, e_09), the process of writing reveals the need for more detailed findings to build a strong argument in the paper's discussion. This event represents a return to the 'analysis' phase to extract richer, more nuanced insights from the existing 'experiment_results' data, which will then be used to strengthen the paper."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Collaborative writing tools with AI support",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "Using the nuanced findings from the secondary analysis, the team drafts the 'Discussion' section of the paper. This section interprets the user behavior patterns, explaining why the on-demand feature was successful and less disruptive. They also draft the 'Conclusion' and 'Limitations' sections, summarizing the key takeaways and acknowledging the study's scope.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The follow-up analysis in e_10 was explicitly performed to gather deeper insights for the paper's discussion. This writing event is the direct consequence, using the new 'experiment_results' to construct a compelling argument that ties the findings back to the 'research_goals' and completes the main narrative of the paper ('paper_paragraph')."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Collaborative writing tools with AI support",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "The team integrates all drafted sections into a full manuscript. They perform a round of internal peer review to refine the paper's narrative, check for consistency across sections, and strengthen the connection between the stated research goals and the final conclusions.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With all major sections of the paper drafted in previous events (e_08, e_09, e_11), the immediate next step is to assemble these parts into a coherent whole. This 'writing' event represents the crucial phase of internal review and revision, ensuring the final paper is polished and its arguments are sound before any external submission."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Collaborative writing tools with AI support",
+    "subject": "CS-HCI",
+    "event_type": "proposal",
+    "description": "During the internal review of the full manuscript, feedback suggests the paper's contribution could be strengthened with a more forward-looking component. Inspired by the discussion, the team decides to expand the project's scope by proposing a new, small-scale follow-up study to test a 'smart suggestion' model, where the AI proactively suggests an optimal time for a consistency check, rather than being purely on-demand.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "After completing a full paper draft (e_12), the review process revealed an opportunity to increase the work's impact. This event represents a strategic decision to return to the 'proposal' phase, using the insights from the drafted paper to refine the 'research_goals' and 'research_plan' for one more targeted experiment before publication."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Collaborative writing tools with AI support",
+    "subject": "CS-HCI",
+    "event_type": "scheme_design",
+    "description": "Following the decision to conduct a follow-up study, the team designs a new experimental scheme for the 'smart suggestion' model. They define the specific triggers for the proactive AI suggestions (e.g., based on edit velocity or stylistic divergence metrics) and create a modified UI to present these non-interruptive alerts.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "After updating the project's 'research_goals' and 'research_plan' in e_13 to include a new follow-up study, the necessary next step is to translate that proposal into a concrete experimental design. This event modifies the existing 'method_scheme' to create a testable protocol for the new 'smart suggestion' idea."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Collaborative writing tools with AI support",
+    "subject": "CS-HCI",
+    "event_type": "pilot_experiments",
+    "description": "The team quickly runs a small pilot for the newly designed 'smart suggestion' feature. A few user pairs test the system to validate that the proactive triggers work as intended and that the non-interruptive alerts are noticeable but not distracting. The goal is to iron out any technical glitches or UI misunderstandings.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing the scheme for the follow-up study in e_14, a pilot experiment is a crucial risk-mitigation step. It allows the team to test the new 'method_scheme' in practice and gather preliminary 'experiment_results' before investing resources in the final, albeit small, main experiment."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Collaborative writing tools with AI support",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "The team analyzes the data from the 'smart suggestion' pilot. The findings are positive: the proactive triggers are accurate, and users perceive the non-interruptive alerts as helpful guidance rather than a distraction. This validates the technical and UX design of the new feature.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After conducting the pilot experiment for the new feature in e_15, a formal analysis of the results is the necessary next step. This analysis validates that the revised 'method_scheme' works as intended before the team commits resources to running the final follow-up experiment to strengthen the paper's contribution."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Collaborative writing tools with AI support",
+    "subject": "CS-HCI",
+    "event_type": "main_experiments",
+    "description": "Based on the successful pilot, the team conducts the final, small-scale main experiment for the 'smart suggestion' feature. This study is designed to gather conclusive evidence on its effectiveness and user perception, which will be integrated into the existing paper manuscript as a forward-looking contribution.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The successful analysis of the pilot study (e_16) validated the design for the 'smart suggestion' feature. The logical next step is to run the planned follow-up experiment to collect the final data needed to strengthen the paper's contribution, as outlined in the revised 'research_goals' (e_13)."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "Collaborative writing tools with AI support",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "The team analyzes the results from the final follow-up experiment on the 'smart suggestion' feature. The analysis confirms that the proactive, non-interruptive alerts are perceived as more helpful than the purely on-demand system, leading to better outcomes without increasing perceived disruption. This provides a strong concluding point for the paper.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After conducting the final follow-up experiment in e_17, the essential next step is to analyze the newly collected 'experiment_results'. This analysis is crucial for validating the 'smart suggestion' concept against the updated 'research_goals' and generating the specific findings ('paper_paragraph') that will be integrated into the final paper."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "research",
+    "topic": "Collaborative writing tools with AI support",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "The team integrates the findings from the 'smart suggestion' follow-up study into the full paper manuscript. This involves updating the Methods, Results, and Discussion sections to present the final experiment as a powerful extension of the initial work, strengthening the paper's overall contribution.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After analyzing the final follow-up experiment in e_18, the explicit goal was to use these findings to strengthen the paper. This writing event directly accomplishes that by integrating the new 'experiment_results' into the existing 'paper_paragraph' draft, aligning the final narrative with the updated 'research_goals'."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "research",
+    "topic": "Collaborative writing tools with AI support",
+    "subject": "CS-HCI",
+    "event_type": "end",
+    "description": "The project concludes with a finalized, submission-ready manuscript that incorporates findings from two major experimental cycles. The research has successfully progressed from an initial concept to a validated, dual-feature system, with all results and contributions fully documented and integrated into a single paper.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached a natural end state. A full paper has been written and revised (e_19) based on a successful initial study and a targeted follow-up experiment (e_17, e_18). All research goals are met, and the primary artifact (the paper) is complete, making this a logical point to terminate the timeline before the external submission and review process begins."
+  }
+]

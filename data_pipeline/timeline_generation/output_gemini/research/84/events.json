@@ -1,0 +1,296 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Video summarization algorithms",
+    "subject": "CS-CV",
+    "event_type": "proposal",
+    "description": "Define the initial scope and high-level goals for the video summarization project. The core idea is to explore unsupervised methods using transformer architectures to generate summaries from long videos. The project aims to create a method that is both efficient and produces qualitatively better summaries than existing baselines.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the first event, initiating the research project. It establishes the foundational artifacts, 'research_goals' and 'research_plan', from scratch. No prior artifacts are required as this is the starting point of the entire research endeavor."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Video summarization algorithms",
+    "subject": "CS-CV",
+    "event_type": "scheme_design",
+    "description": "Design the initial version of the unsupervised summarization model based on the project goals. The scheme involves using a pre-trained Vision Transformer (ViT) to extract frame-level features and then applying a temporal transformer to model relationships between video segments. The unsupervised objective is defined as a combination of reconstruction loss and a diversity-promoting term to avoid redundant frame selection.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the high-level proposal (e_01), this event translates the research goals into a concrete technical design. Creating a 'method_scheme' is a necessary prerequisite for implementing the model and running any pilot experiments."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Video summarization algorithms",
+    "subject": "CS-CV",
+    "event_type": "pilot_experiments",
+    "description": "Implement a prototype of the transformer-based model and run pilot experiments on a small subset of the TVSum dataset. The goal is to verify that the model can be trained with the proposed unsupervised objective and to get a preliminary sense of its ability to select diverse and important frames. This initial test will help identify major implementation bugs and conceptual flaws.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With a concrete 'method_scheme' (e_02) in place, running pilot experiments is the logical next step to validate the technical approach before committing to large-scale main experiments. These initial 'experiment_results' will provide crucial feedback on the viability of the proposed model and loss function."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Video summarization algorithms",
+    "subject": "CS-CV",
+    "event_type": "analysis",
+    "description": "Analyze the results from the pilot experiments. The analysis reveals that while the model successfully reconstructs frames, the diversity-promoting term is not effective, often leading to summaries with highly redundant, adjacent frames. Additionally, the model shows difficulty in capturing long-range temporal dependencies, likely due to the small scale of the pilot data.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After running pilot experiments (e_03), the logical next step is to analyze the 'experiment_results' to understand the model's performance and identify weaknesses. This analysis is critical for making informed decisions about whether to proceed to main experiments, revise the method, or adjust the research goals. The findings here suggest that the current 'method_scheme' needs revision."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Video summarization algorithms",
+    "subject": "CS-CV",
+    "event_type": "scheme_design",
+    "description": "Revise the methodological scheme based on the analysis of pilot results. The simple diversity term is replaced with a more structured determinantal point process (DPP) objective to explicitly encourage selection of diverse frames. To better capture long-range dependencies, the temporal transformer architecture is modified to incorporate sparse attention mechanisms, inspired by models like Longformer.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous analysis (e_04) revealed critical weaknesses in the initial model, namely frame redundancy and poor long-range temporal modeling. This event revisits the 'scheme_design' to directly address these shortcomings by introducing a DPP-based objective and a more efficient attention mechanism. This is a necessary step before running new experiments to test the improved approach."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Video summarization algorithms",
+    "subject": "CS-CV",
+    "event_type": "pilot_experiments",
+    "description": "Run a new round of pilot experiments with the revised model architecture. The implementation of the DPP objective and sparse attention mechanism is tested on the same small TVSum subset to validate whether the changes have resolved the issues of frame redundancy and poor long-range modeling observed previously.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the 'method_scheme' in e_05 to address the weaknesses found during the first analysis (e_04), it is crucial to validate these changes. Running a second, targeted pilot experiment confirms if the new DPP objective and sparse attention are effective before scaling up to full, computationally expensive 'main_experiments'."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Video summarization algorithms",
+    "subject": "CS-CV",
+    "event_type": "analysis",
+    "description": "Analyze the results from the second round of pilot experiments. The analysis confirms that the revised scheme is a significant improvement: the DPP objective effectively reduces frame redundancy, and the sparse attention mechanism allows the model to capture more meaningful long-range context. The summaries are qualitatively better and quantitatively show higher diversity scores.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the second pilot experiment (e_06) with the revised method, a detailed analysis is necessary to confirm that the changes (from e_05) have successfully addressed the previously identified issues. These positive findings provide the confidence needed to move forward to the more resource-intensive main experiments."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Video summarization algorithms",
+    "subject": "CS-CV",
+    "event_type": "main_experiments",
+    "description": "With the revised method validated, the main experiments are launched. The model is trained on the full TVSum and SumMe datasets, and its performance is benchmarked against several state-of-the-art unsupervised summarization methods. This step aims to gather comprehensive quantitative and qualitative results for the final evaluation.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The previous analysis (e_07) confirmed that the revised method works well in a pilot setting. The logical progression, as outlined in the 'research_plan', is to scale up to 'main_experiments' to collect robust results and demonstrate the method's effectiveness on full benchmark datasets."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Video summarization algorithms",
+    "subject": "CS-CV",
+    "event_type": "analysis",
+    "description": "Analyze the comprehensive results from the main experiments on TVSum and SumMe. The analysis involves calculating F-scores and comparing them against baseline methods, revealing that our approach achieves state-of-the-art performance. A qualitative review is also conducted, which, while generally positive, notes that the model occasionally misses key moments in videos with very subtle visual changes.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "Following the execution of the main experiments (e_08), a comprehensive analysis is the critical next step. This process interprets the raw data, evaluates the method against the 'research_goals', and produces the core findings and initial text snippets ('paper_paragraph') that will form the basis of the results section of the paper."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Video summarization algorithms",
+    "subject": "CS-CV",
+    "event_type": "writing",
+    "description": "Draft the 'Methodology' section of the research paper. This section provides a detailed description of the final model architecture, including the ViT feature extractor, the temporal transformer with sparse attention, and the formulation of the unsupervised objective function combining reconstruction loss with a determinantal point process (DPP) regularizer.",
+    "required_artifacts": [
+      "method_scheme",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the main experimental results analyzed and showing state-of-the-art performance (e_09), a logical next step is to begin formally documenting the research for publication. The methodology is stable and validated, making it an ideal section to write first. This builds upon the final 'method_scheme' (e_05) and the initial writing snippets from the analysis (e_09)."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Video summarization algorithms",
+    "subject": "CS-CV",
+    "event_type": "writing",
+    "description": "Draft the 'Results' section of the research paper. This involves creating tables to compare the model's F-scores against baselines on the TVSum and SumMe datasets. It also includes selecting and describing qualitative examples that highlight the method's strengths, particularly its ability to create diverse and representative summaries.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After analyzing the main experiments (e_09) and drafting the methodology (e_10), the next logical step is to write the 'Results' section. This task directly uses the analyzed 'experiment_results' to present the quantitative and qualitative findings of the project in the paper, building upon the existing draft."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Video summarization algorithms",
+    "subject": "CS-CV",
+    "event_type": "main_experiments",
+    "description": "To strengthen the paper, ablation studies are conducted. Two additional experiments are run: one with the sparse attention mechanism but without the DPP objective, and another with the DPP objective but using standard full attention. This is designed to quantitatively isolate and verify the individual contribution of each of the two main architectural revisions.",
+    "required_artifacts": [
+      "method_scheme",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After drafting the methodology and results sections (e_10, e_11), it becomes clear that strong empirical evidence is needed to justify the two key innovations: the DPP objective and sparse attention. Running ablation studies is a standard and necessary step to provide this evidence, making the paper's claims more robust and convincing before finalizing the draft."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Video summarization algorithms",
+    "subject": "CS-CV",
+    "event_type": "analysis",
+    "description": "The results from the ablation studies are analyzed. The analysis quantitatively confirms that both the DPP objective and the sparse attention mechanism are crucial for the model's performance, as removing either component leads to a significant drop in F-score. These findings provide strong evidence for the design choices detailed in the methodology.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After running the ablation studies (e_12), a dedicated analysis is required to interpret the findings and integrate them into the paper. This step is essential for creating the 'Ablation Studies' subsection, which validates the individual contributions of the method's key components and strengthens the paper's overall argument."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Video summarization algorithms",
+    "subject": "CS-CV",
+    "event_type": "writing",
+    "description": "Update the 'Results' section of the paper to include the findings from the ablation studies. This involves adding a new subsection titled 'Ablation Studies', creating a table to present the quantitative drop in performance when either the DPP objective or sparse attention is removed, and explaining how these results validate the design choices.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After analyzing the ablation studies in e_13, the immediate next step is to integrate these crucial findings into the paper. This strengthens the paper's core claims by providing direct empirical evidence for the contribution of each key component of the proposed method, which is a critical part of preparing the manuscript for submission."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Video summarization algorithms",
+    "subject": "CS-CV",
+    "event_type": "writing",
+    "description": "Draft the 'Conclusion' and 'Discussion' sections of the paper. This part summarizes the key contributions, discusses the limitations noted during analysis (e.g., handling videos with very subtle changes), and suggests directions for future work, such as incorporating audio or text modalities to improve event detection.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the 'Methodology' and 'Results' sections largely complete (e_10, e_11, e_14), drafting the 'Conclusion' is a natural next step to synthesize the project's findings. This allows for a high-level summary of the achievements relative to the 'research_goals', a transparent discussion of limitations identified during analysis (e_09), and an outline of future research, thus framing the work's overall impact."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Video summarization algorithms",
+    "subject": "CS-CV",
+    "event_type": "writing",
+    "description": "Draft the 'Introduction', 'Abstract', and 'Related Work' sections of the paper. This step synthesizes the project's motivation from the research goals, the proposed method, and the key findings into a cohesive narrative to frame the paper and position it within the field.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the main body of the paper (Methodology, Results, Conclusion) drafted, writing the framing sections is the logical next step. The 'Introduction' and 'Abstract' require a complete overview of the project, from goals to results, and the 'Related Work' section contextualizes the contribution, making this the right time to create a near-complete first draft of the paper."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Video summarization algorithms",
+    "subject": "CS-CV",
+    "event_type": "end",
+    "description": "The project concludes as the primary research goals have been met. A novel video summarization method has been successfully developed and evaluated, achieving state-of-the-art results, and a complete research paper has been drafted, making it ready for submission to a peer-reviewed venue.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "With a stable method, strong experimental validation (including ablations in e_13), and a complete paper draft (e_16), the project has reached a successful conclusion. The research questions posed in the initial proposal (e_01) have been answered, and the findings are documented for dissemination, marking a natural end to this research cycle."
+  }
+]

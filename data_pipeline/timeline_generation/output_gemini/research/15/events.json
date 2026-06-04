@@ -1,0 +1,346 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "RLHF optimization and stability analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "proposal",
+    "description": "Define the initial research questions focusing on the instability of the RLHF training process, particularly reward model overfitting and policy collapse. Establish high-level goals to investigate mitigation strategies and formulate a preliminary research plan.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "research_plan",
+      "research_goals"
+    ],
+    "reason": "This is the first step of the research project. It is necessary to establish the initial goals and a high-level plan to guide all subsequent research activities."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "RLHF optimization and stability analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "Design the initial experimental methodology based on the research goals. This involves selecting base language models, preference datasets, and defining the specific RL algorithm (PPO) parameters. The scheme also outlines metrics for tracking training instability, such as reward hacking and policy entropy collapse.",
+    "required_artifacts": [
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the establishment of the research plan and goals in e_01, the next logical step is to create a detailed experimental design. This 'method_scheme' is essential for translating the high-level proposal into a concrete set of actions for the upcoming pilot experiments."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "RLHF optimization and stability analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "pilot_experiments",
+    "description": "Run small-scale pilot experiments using a subset of the preference data and a smaller model to validate the experimental setup. The primary goals are to debug the PPO implementation, confirm that the instability metrics are being logged correctly, and get a preliminary sense of the training dynamics.",
+    "required_artifacts": [
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With the experimental 'method_scheme' defined in e_02, the next logical step is to conduct pilot experiments. This allows for sanity-checking the entire pipeline and methodology on a small scale before investing significant computational resources into the main experiments."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "RLHF optimization and stability analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "Analyze the results from the pilot experiments. The analysis reveals that while the pipeline is functional, the policy shows signs of premature convergence and reward hacking even with small learning rates, suggesting the initial PPO hyperparameters are not robust enough.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After conducting pilot experiments in e_03, a dedicated analysis step is crucial to interpret the preliminary findings. This analysis of the 'experiment_results' determines that the current 'method_scheme' is flawed, indicating that revisions are necessary before launching the more resource-intensive main experiments."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "RLHF optimization and stability analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "Revise the experimental scheme to address the instability issues observed in the pilot study. The key modifications include introducing an adaptive KL penalty controller and refining the reward normalization procedure to better mitigate reward hacking.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis in e_04 revealed significant instability (premature convergence) with the initial experimental setup. This event directly addresses those findings by revising the 'method_scheme' to incorporate more robust optimization techniques, a necessary step before rerunning pilot experiments or proceeding to the main study."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "RLHF optimization and stability analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "pilot_experiments",
+    "description": "Run a second round of pilot experiments using the revised scheme which includes an adaptive KL controller and improved reward normalization. The goal is to verify if these changes successfully stabilize training and reduce the reward hacking observed previously.",
+    "required_artifacts": [
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the 'method_scheme' in e_05 to address the instability issues found in the first pilot run, it is crucial to conduct another small-scale pilot experiment. This step validates the effectiveness of the new mitigation strategies before committing to resource-intensive main experiments."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "RLHF optimization and stability analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "Analyze the results from the second round of pilot experiments. The analysis confirms that the adaptive KL controller and revised reward normalization significantly improved training stability, reducing policy collapse and reward hacking compared to the initial runs.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the second pilot run in e_06, a formal analysis is necessary to validate the effectiveness of the revised method scheme from e_05. This step confirms that the stability issues are resolved, providing the green light to proceed with the main, large-scale experiments."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "RLHF optimization and stability analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "main_experiments",
+    "description": "Launch the full-scale main experiments using the validated scheme. This involves training larger models on the complete dataset to collect the primary results on the effectiveness of the adaptive KL controller and revised reward normalization for stabilizing RLHF.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The previous analysis in e_07 confirmed the revised method scheme is robust in pilot studies. It is now the logical and necessary time to execute the main experiments as laid out in the research plan to gather the definitive data required to address the project's core research goals."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "RLHF optimization and stability analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "Perform a comprehensive analysis of the results from the main experiments. This includes statistical significance testing and generating plots to visualize the improved stability and performance with the new methods. The analysis confirms that the adaptive KL controller and reward normalization are highly effective.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After completing the main experiments in e_08, the crucial next step is to perform a detailed analysis of the collected data. This analysis provides the definitive evidence needed to answer the core research questions and serves as the foundation for drafting the results section of the research paper."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "RLHF optimization and stability analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "Draft the 'Methods' section of the paper, detailing the final experimental setup. This includes the base models, datasets, the revised PPO algorithm with the adaptive KL controller, and the specific metrics used to evaluate stability.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the main experimental results analyzed and confirmed in e_09, the project is shifting towards dissemination. A logical next step is to formally document the methodology by drafting the 'Methods' section of the paper, using the validated 'method_scheme' as the primary source."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "RLHF optimization and stability analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "Draft the 'Results' section of the paper based on the comprehensive analysis of the main experiments. This involves creating a narrative that presents the key findings, supported by figures and tables, demonstrating the effectiveness of the improved RLHF training scheme.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the main experimental results analyzed (e_09) and the methods section drafted (e_10), the next logical step is to write the 'Results' section. This task directly uses the analyzed 'experiment_results' to create a new 'paper_paragraph' that communicates the project's core contributions."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "RLHF optimization and stability analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "While drafting the paper and reviewing related work, the team identifies a crucial missing baseline. A recently popularized method, Direct Preference Optimization (DPO), is not included in the comparisons, which could weaken the paper's impact. The analysis concludes that new experiments are needed to benchmark against DPO.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_plan",
+      "research_goals"
+    ],
+    "reason": "After drafting the initial results (e_11), it is standard practice to contextualize findings against the state-of-the-art. This analysis reveals a competitive gap in the experimental setup, making it necessary to revise the 'research_plan' and 'research_goals' to include an important new baseline before finalizing the paper."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "RLHF optimization and stability analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "Revise the experimental scheme to incorporate a new set of experiments comparing the proposed method against Direct Preference Optimization (DPO). This includes specifying the DPO implementation, hyperparameters, and ensuring the experimental conditions are comparable to the PPO-based runs.",
+    "required_artifacts": [
+      "research_plan",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis in e_12 concluded that a comparison against the DPO baseline is necessary for the paper's completeness. Therefore, the next step is to formally update the 'method_scheme' to define how this new comparative experiment will be implemented and executed, building upon the newly revised 'research_plan'."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "RLHF optimization and stability analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "main_experiments",
+    "description": "Run the new set of main experiments comparing the team's stabilized PPO method against the DPO baseline. These experiments are executed under the conditions specified in the revised method scheme to ensure a fair and rigorous comparison.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After updating the 'method_scheme' in e_13 to include the DPO comparison, the next step is to execute these experiments. Since the core codebase is mature and the team has experience, they proceed directly to 'main_experiments' to generate the final comparative data needed to complete the paper."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "RLHF optimization and stability analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "Analyze the results from the new experiments comparing the proposed adaptive PPO method against the DPO baseline. The analysis confirms that while DPO is a strong baseline, the proposed method demonstrates superior stability on certain complex tasks and achieves a better trade-off between reward and policy drift.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After running the comparative experiments against DPO in e_14, it is essential to analyze the new 'experiment_results'. This analysis directly addresses the revised 'research_goals' (e_12) and provides the final, crucial evidence needed to position the paper's contributions, which will be incorporated into an updated 'paper_paragraph' for the results section."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "RLHF optimization and stability analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "Revise the 'Methods' and 'Results' sections of the paper to fully integrate the DPO comparison. The methods are updated to detail the DPO baseline experiment, and the results section is rewritten to present the comparative analysis, positioning the proposed adaptive PPO method's advantages.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The analysis in e_15 provided the final set of comparative results against the DPO baseline. The next logical step is to incorporate these critical findings into the paper draft, updating the existing 'Methods' and 'Results' sections to create a more complete and compelling narrative for the final manuscript."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "RLHF optimization and stability analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "Draft the 'Introduction', 'Discussion', and 'Conclusion' sections of the paper. The introduction frames the problem using the initial research goals, the discussion interprets the significance of the comparative results against DPO, and the conclusion summarizes the project's contributions.",
+    "required_artifacts": [
+      "research_goals",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the core 'Methods' and 'Results' sections revised (e_16), the next step is to write the framing sections of the manuscript. This involves creating the introduction based on the 'research_goals' and a discussion/conclusion based on the final 'experiment_results', moving the project closer to a complete first draft."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "RLHF optimization and stability analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "Consolidate all drafted sections into a single manuscript. Perform a comprehensive review for clarity, flow, and consistency, and generate the final set of figures and tables based on the latest analysis.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With all major sections of the paper drafted (e_17), the crucial next step is to assemble and polish the full manuscript. This event integrates all written content and finalizes the presentation of results, moving the project from a collection of parts to a complete, coherent scientific paper ready for internal review."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "research",
+    "topic": "RLHF optimization and stability analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "The consolidated manuscript undergoes an internal review by collaborators and the advisor. Based on the feedback, the paper is revised to improve the clarity of the core claims, strengthen the discussion by better contextualizing the results against prior work, and polish the overall narrative.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After assembling the first full draft in e_18, a crucial step is to get feedback from peers and advisors. This internal review process invariably leads to revisions, making this 'writing' event a necessary step to refine the manuscript for clarity, impact, and correctness before external submission."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "research",
+    "topic": "RLHF optimization and stability analysis",
+    "subject": "CS-AI/ML",
+    "event_type": "end",
+    "description": "The research project concludes with the submission of the final, polished manuscript to a top-tier AI conference. The paper successfully presents the novel adaptive PPO method, demonstrates its stability improvements, and provides a thorough comparison against the DPO baseline.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached its natural conclusion. The research goals have been met, the proposed methods have been validated through extensive experiments (including a crucial baseline comparison), and a complete, internally-reviewed manuscript has been produced. The project is now ready for external peer review."
+  }
+]

@@ -1,0 +1,302 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Feature thinking and representing information",
+    "subject": "DataScience",
+    "event_type": "objective_clarification",
+    "description": "Initial meeting with the learner to discuss their background in product management, their goal of improving feature thinking, and their desire to represent product ideas more systematically. The learner wants to apply this to their current role within the next 3 months.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "As this is the first session, the primary goal is to understand the learner's needs and context. Clarifying objectives is the necessary first step before creating a study plan or starting any lessons."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Feature thinking and representing information",
+    "subject": "DataScience",
+    "event_type": "plan_milestones",
+    "description": "Based on the clarified objectives, the tutor and learner co-create a high-level study plan. The plan breaks down the goal into three milestones: 1) Core Concepts of Feature Representation, 2) Applying Frameworks to Case Studies, and 3) Developing a Feature Proposal for a real work project.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learning objectives defined in the previous step, the natural next action is to structure the tutoring engagement. Creating a study plan with clear milestones sets expectations and provides a roadmap for achieving the learner's goals within their 3-month timeframe."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Feature thinking and representing information",
+    "subject": "DataScience",
+    "event_type": "lesson",
+    "description": "The tutor conducts the first lesson, focusing on Milestone 1: Core Concepts. The session covers the definition of a 'feature,' the distinction between raw data and engineered features, and common representation types like numerical, categorical, and binary.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the study plan established, the next logical step is to begin instruction on the first milestone. This lesson on core concepts directly addresses the plan and generates initial teaching notes for the topic, which can be reused and refined later."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Feature thinking and representing information",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "To reinforce the concepts from the first lesson, the tutor assigns a practice exercise. The learner is given a list of real-world product attributes (e.g., 'user account age', 'subscription tier', 'is_active') and asked to classify each as numerical, categorical, or binary, recording their reasoning.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the introductory lesson on core concepts (e_03), targeted practice is essential to solidify the learner's understanding. This exercise directly applies the definitions from the teaching notes and generates a practice record, which is necessary for the upcoming review and feedback cycle."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Feature thinking and representing information",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's classifications from the practice exercise. The tutor identifies a recurring mistake where the learner confuses numerical identifiers (like user IDs) with true numerical features, and prepares specific feedback and examples to clarify the distinction.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session (e_04), a review is the necessary next step to assess the learner's understanding and provide targeted feedback. Analyzing the practice_record allows the tutor to identify specific misconceptions, which are then documented in the feedback_summary to guide the learner's correction and future learning."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Feature thinking and representing information",
+    "subject": "DataScience",
+    "event_type": "materials_revision",
+    "description": "In response to the feedback from the last review, the tutor revises the teaching notes on core concepts. A new section is added to explicitly distinguish between numerical identifiers (like User IDs) and true numerical features, including clear examples and a 'common pitfalls' warning.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in e_05 revealed a specific misconception. To address this directly and improve the clarity of the learning materials for future reference, revising the teaching_notes is the most effective next step before moving on to further practice or new concepts."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Feature thinking and representing information",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "To confirm the learner has grasped the corrected concept, the tutor assigns a follow-up practice exercise. The new task includes ambiguous attributes like 'product_SKU', 'customer_satisfaction_score (1-5)', and 'zip_code' to specifically test the distinction between identifiers and numerical features that was addressed in the recent feedback.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials (e_06) based on feedback from the first practice attempt (e_05), a second, more targeted practice session is necessary. This step will verify that the learner has successfully overcome their previous misconception before the tutor introduces more advanced concepts."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Feature thinking and representing information",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's second practice attempt. The learner correctly identifies the ambiguous attributes, demonstrating a solid understanding of the distinction between identifiers and true numerical features. The tutor prepares feedback confirming mastery of this concept and readiness to proceed.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted practice session (e_07) designed to address a specific misconception, a review is the necessary next step. By analyzing the new practice_record, the tutor can confirm that the corrective actions (e_06, e_07) were successful before moving on to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Feature thinking and representing information",
+    "subject": "DataScience",
+    "event_type": "lesson",
+    "description": "Now that the learner has mastered the core concepts of feature types, the tutor moves to Milestone 2 of the study plan. This lesson introduces a structured framework for brainstorming and defining features for a given product problem, using a simple case study like 'predicting user churn' as an example.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_08) confirmed the learner's understanding of the initial concepts. According to the study plan, the next logical step is to progress to Milestone 2, which involves applying frameworks. This lesson introduces the first such framework, building on the established foundation."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Feature thinking and representing information",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "To apply the new framework from the previous lesson, the tutor assigns a practice task. The learner is asked to use the framework to brainstorm and list potential features for a new case study: 'predicting which users are likely to upgrade to a premium subscription tier.'",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on a new feature brainstorming framework (e_09), it is crucial for the learner to apply this new knowledge. This practice task directly reinforces the lesson, moves the learner forward on Milestone 2 of the study plan, and generates a new practice_record for the next review cycle."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Feature thinking and representing information",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor reviews the brainstormed feature list from the previous practice session. The tutor observes that while the learner generated a good number of features, they are mostly simple, direct attributes and lack more complex, interaction-based features. Feedback is prepared to encourage deeper thinking about how user behaviors combine.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session where the learner applied a new brainstorming framework (e_10), a review is the necessary next step. Analyzing the practice_record against the framework taught in the teaching_notes allows the tutor to assess the learner's application of the concept and prepare targeted feedback for improvement."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Feature thinking and representing information",
+    "subject": "DataScience",
+    "event_type": "lesson",
+    "description": "Based on the previous review, the tutor delivers a targeted lesson on creating composite and interaction features. The session explains how combining simple attributes (e.g., 'total purchases' and 'account age') can create more powerful predictive features (e.g., 'purchase frequency').",
+    "required_artifacts": [
+      "feedback_summary",
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The last review (e_11) revealed that the learner was not generating complex, interaction-based features. A focused lesson is the necessary next step to explicitly teach this more advanced concept before the learner attempts another practice session. This directly addresses the feedback and deepens the learner's skill set for Milestone 2."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Feature thinking and representing information",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "To solidify the concept of composite features, the tutor asks the learner to revisit their previous case study ('predicting premium upgrades'). The task is to enhance their original feature list by adding at least three new interaction or composite features, explaining the rationale for each.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a targeted lesson on composite features (e_12), immediate practice is crucial for reinforcement. This task directly applies the new concept to a familiar case study, allowing the tutor to assess if the learner has overcome the weakness identified in the previous review (e_11)."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Feature thinking and representing information",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's enhanced feature list. The learner successfully added several meaningful composite features, demonstrating a good grasp of the concept from the last lesson. The tutor prepares feedback confirming this and indicating readiness to move to the final milestone: applying these skills to a real work project.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice on composite features (e_13), a review is essential to validate the learner's understanding. By evaluating the new practice_record, the tutor can confirm that the weakness identified in e_11 has been successfully addressed and that the learner is ready to progress to the next milestone in the study plan."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Feature thinking and representing information",
+    "subject": "DataScience",
+    "event_type": "lesson",
+    "description": "With Milestones 1 and 2 complete, the tutor begins Milestone 3 by teaching how to structure a formal feature proposal document. The lesson covers key sections such as Problem Statement, Proposed Features (with data types and definitions), and Rationale, preparing the learner to create a professional deliverable for their final project.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_14) confirmed the learner's readiness to advance to the final milestone. According to the study plan, this involves applying skills to a real project. A lesson on how to structure the final deliverable (a feature proposal) is the logical first step in this new phase, equipping the learner with the necessary format before they begin the main task."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Feature thinking and representing information",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "The tutor assigns the final project for Milestone 3. The learner is tasked with selecting a real problem from their current job, applying the brainstorming frameworks to generate a list of simple and composite features, and then compiling everything into the formal feature proposal document format taught in the previous lesson.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on structuring a feature proposal (e_15), the next logical step is for the learner to apply this skill to their real-world project, as defined in Milestone 3 of the study plan. This capstone practice task synthesizes all concepts learned to date and will produce the final deliverable for review."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Feature thinking and representing information",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor performs a comprehensive review of the final feature proposal project. The review assesses the learner's application of all concepts, including feature brainstorming, creation of composite features, and the structure of the proposal document, against a real-world problem from their job.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner submitted their final capstone project in the previous step (e_16), a comprehensive review is critical. This step serves as the final assessment of the learner's ability to synthesize and apply all the skills covered, determining if the objectives of the study plan have been successfully met."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Feature thinking and representing information",
+    "subject": "DataScience",
+    "event_type": "end",
+    "description": "A final wrap-up session where the tutor and learner review the journey against the initial objectives. The learner has successfully completed the capstone project and feels confident applying the feature thinking frameworks in their role, so both agree to conclude the tutoring engagement.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has successfully completed all milestones in the study plan, culminating in a real-world project application (e_16) and a final comprehensive review (e_17). With the initial learning objectives met and the learner confident, it is the natural point to conclude the tutoring process."
+  }
+]

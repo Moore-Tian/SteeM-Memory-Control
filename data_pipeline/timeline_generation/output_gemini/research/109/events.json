@@ -1,0 +1,279 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Edge-cloud collaborative computing",
+    "subject": "CS-Systems",
+    "event_type": "proposal",
+    "description": "Formulate the initial research questions for a project on edge-cloud collaborative computing, focusing on developing a dynamic task offloading framework. The primary goal is to minimize latency while respecting the computational constraints of edge devices. A high-level research plan is drafted to structure the project.",
+    "required_artifacts": [
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the inaugural event of the research project. It is essential to formalize the initial, abstract ideas into a concrete set of research goals and a high-level plan. These artifacts provide the foundational direction required for all subsequent work, such as method design and experimentation."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Edge-cloud collaborative computing",
+    "subject": "CS-Systems",
+    "event_type": "scheme_design",
+    "description": "Design the initial version of the dynamic task offloading framework based on the established research goals. This includes specifying the system architecture, the algorithm for making offloading decisions (e.g., using reinforcement learning), and the metrics for evaluating latency and resource usage.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "With the high-level goals and plan defined in e_01, the project must now move to a more concrete stage. This 'scheme_design' event translates the abstract research questions into a tangible methodological approach, creating the 'method_scheme' which will serve as the blueprint for implementation and initial testing."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Edge-cloud collaborative computing",
+    "subject": "CS-Systems",
+    "event_type": "pilot_experiments",
+    "description": "Implement a prototype of the task offloading framework and run small-scale pilot experiments in a simulated environment. These experiments aim to validate the basic functionality of the reinforcement learning decision algorithm and to gather preliminary data on latency and resource consumption.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the design of the methodological framework in e_02, it is a standard research practice to conduct pilot experiments. This step serves as a proof-of-concept, allowing for the validation of the 'method_scheme' on a small scale before committing to more resource-intensive main experiments, and it generates the first set of 'experiment_results' for initial analysis."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Edge-cloud collaborative computing",
+    "subject": "CS-Systems",
+    "event_type": "analysis",
+    "description": "Analyze the preliminary data from the pilot experiments. The results indicate that the reinforcement learning model is viable for task offloading but suffers from slow convergence and instability under dynamic network conditions. This suggests the current state representation within the model is insufficient.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the pilot experiments in e_03, a formal analysis is the logical next step to interpret the findings. By comparing the 'experiment_results' against the original 'research_goals', we can identify shortcomings in the current method. The analysis synthesizes these findings into a concise summary, which is captured as a 'paper_paragraph' and will inform the necessary revisions to the experimental scheme."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Edge-cloud collaborative computing",
+    "subject": "CS-Systems",
+    "event_type": "scheme_design",
+    "description": "Revise the task offloading framework to address the slow convergence and instability issues identified in the pilot analysis. The focus is on enhancing the reinforcement learning model's state representation to include more comprehensive network state information (e.g., bandwidth, jitter) and node status.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis in event e_04 revealed significant performance issues with the initial method under dynamic conditions. A redesign of the 'method_scheme' is the necessary next step to address these specific shortcomings before proceeding to larger-scale experiments. This revision directly incorporates the findings from the pilot study to improve the framework's robustness."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Edge-cloud collaborative computing",
+    "subject": "CS-Systems",
+    "event_type": "main_experiments",
+    "description": "With the revised framework, run the first set of main experiments. These experiments use a larger, more complex simulation environment with highly dynamic network conditions and a wider variety of computational tasks to rigorously evaluate the performance and stability of the enhanced task offloading algorithm.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the 'method_scheme' in e_05 to address the instability issues found in the pilot study, the logical progression is to conduct comprehensive 'main_experiments'. This step will test the improved framework under more realistic and challenging conditions to see if the changes were effective and to gather the core data needed for the final analysis."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Edge-cloud collaborative computing",
+    "subject": "CS-Systems",
+    "event_type": "analysis",
+    "description": "Analyze the results from the first set of main experiments. The analysis confirms that the enhanced state representation significantly improves the framework's performance, showing faster convergence and a notable reduction in latency under dynamic network conditions. The system now robustly meets the primary research goals established at the project's outset.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After collecting a comprehensive dataset from the main experiments in e_06, a detailed analysis is the crucial next step. This event interprets the 'experiment_results' in the context of the 'research_goals' to formally validate the success of the revised 'method_scheme' and quantify the performance improvements, which is a prerequisite for writing the results section of the paper."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Edge-cloud collaborative computing",
+    "subject": "CS-Systems",
+    "event_type": "writing",
+    "description": "Begin drafting the core sections of the research paper. This involves writing a detailed description of the revised methodology and formally presenting the key findings and performance metrics from the main experiments, creating initial drafts for the 'Methods' and 'Results' sections.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the successful validation of the revised framework in the main experiments (e_06) and the subsequent positive analysis (e_07), the project has reached a stage where the core contributions are clear. The logical next step is to begin the formal writing process to document the methodology and results for publication, building upon the existing analysis summaries."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Edge-cloud collaborative computing",
+    "subject": "CS-Systems",
+    "event_type": "main_experiments",
+    "description": "To strengthen the paper, the team runs additional experiments to compare their framework against two state-of-the-art baseline methods. This involves implementing the baseline algorithms within the same simulation environment to ensure a fair and direct comparison of latency and resource usage.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After drafting the initial results section (e_08), it became clear that a direct comparison with existing state-of-the-art methods is necessary to demonstrate the significance of the proposed framework. This event initiates benchmark experiments, which are crucial for contextualizing the performance gains and strengthening the paper's argument for publication."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Edge-cloud collaborative computing",
+    "subject": "CS-Systems",
+    "event_type": "analysis",
+    "description": "Analyze the results from the comparative experiments against state-of-the-art baselines. The analysis focuses on quantifying the performance improvement of the proposed framework in terms of latency reduction and efficient resource utilization, highlighting scenarios where it significantly outperforms the other methods.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the benchmark experiments in e_09, it is essential to analyze the newly collected 'experiment_results'. This analysis will provide the quantitative evidence needed to demonstrate the superiority of the proposed method, which is a critical component for strengthening the 'Results' section of the paper that was started in e_08."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Edge-cloud collaborative computing",
+    "subject": "CS-Systems",
+    "event_type": "writing",
+    "description": "Revise and expand the 'Results' section of the paper to incorporate the analysis from the comparative experiments. This involves creating new figures to visually compare the proposed framework against the baselines and articulating the significance of the performance gains.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After analyzing the benchmark results in e_10, the immediate next step is to integrate these compelling findings into the research paper draft started in e_08. This update strengthens the paper's core claims by providing direct comparative evidence against state-of-the-art methods, moving the manuscript closer to completion."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Edge-cloud collaborative computing",
+    "subject": "CS-Systems",
+    "event_type": "writing",
+    "description": "With the core technical sections drafted, the team focuses on completing the manuscript. This involves writing the Introduction to motivate the problem, the Related Work section to position the research, and the Conclusion to summarize contributions and outline future work, thereby creating a full first draft of the paper.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After solidifying the Methods and Results sections with comparative data (e_11), the project is ready for the creation of a complete paper draft. Writing the surrounding sections (Introduction, Related Work, Conclusion) is the logical next step to assemble a coherent narrative for submission, using the existing technical content and initial project goals as a foundation."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Edge-cloud collaborative computing",
+    "subject": "CS-Systems",
+    "event_type": "main_experiments",
+    "description": "Following an internal review of the full paper draft, the team decides to conduct an ablation study. These experiments aim to isolate the contribution of each component of the enhanced state representation (e.g., bandwidth, jitter, node status) by evaluating the framework's performance with each component individually removed.",
+    "required_artifacts": [
+      "method_scheme",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After completing a full paper draft (e_12), an internal review identified the need to strengthen the paper's claims by demonstrating the individual importance of each component in the revised method. Running an ablation study is a standard and rigorous way to provide this justification, generating new 'experiment_results' that will be crucial for the final version of the paper."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Edge-cloud collaborative computing",
+    "subject": "CS-Systems",
+    "event_type": "analysis",
+    "description": "The results from the ablation study are analyzed to quantify the individual contribution of each feature in the enhanced state representation. The analysis confirms that all components (bandwidth, jitter, node status) positively contribute to the model's performance, providing strong justification for the design choices.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After conducting the ablation study in e_13 to generate new 'experiment_results', the immediate next step is to perform an 'analysis'. This is necessary to interpret the data and draw conclusions about the importance of each component of the method, which will then be used to strengthen the arguments in the paper."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Edge-cloud collaborative computing",
+    "subject": "CS-Systems",
+    "event_type": "writing",
+    "description": "Integrate the results of the ablation study into the manuscript. This involves adding a new subsection to the 'Results' section with figures that demonstrate the impact of each component, and updating the 'Methods' section to detail the ablation study's design. This produces a near-final draft of the paper, ready for internal review before submission.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the successful analysis of the ablation study in e_14, the logical next step is to incorporate these crucial findings into the full paper draft. This writing phase strengthens the paper's core arguments by providing explicit justification for the design choices, moving the manuscript from a complete draft to a polished, pre-submission version."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Edge-cloud collaborative computing",
+    "subject": "CS-Systems",
+    "event_type": "end",
+    "description": "The near-final manuscript undergoes a final round of proofreading and formatting, and is submitted to a top-tier conference on systems and networking. This marks the successful completion of the research project, having developed and rigorously validated a novel task offloading framework.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached its logical conclusion. The initial research questions have been answered, the proposed method has been validated through extensive experiments (including comparative and ablation studies), and a complete, polished manuscript has been produced and submitted for peer review. All major research objectives have been met, bringing this research cycle to a close."
+  }
+]

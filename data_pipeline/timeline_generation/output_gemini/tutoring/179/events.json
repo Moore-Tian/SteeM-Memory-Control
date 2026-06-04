@@ -1,0 +1,406 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Writing balanced policy arguments with evidence",
+    "subject": "PoliticalScience",
+    "event_type": "objective_clarification",
+    "description": "Initial session with the learner to understand their goals for improving their policy writing skills. We discussed their current skill level, target context (e.g., a specific course), and desired outcomes, such as writing more persuasive and evidence-based arguments.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first session, so the primary goal is to establish a clear understanding of the learner's needs and goals. This initial clarification is essential for creating a relevant and effective study plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Writing balanced policy arguments with evidence",
+    "subject": "PoliticalScience",
+    "event_type": "plan_milestones",
+    "description": "Based on the learning objectives, we created a high-level study plan. The plan outlines key milestones, including understanding argument structure, finding and evaluating evidence, and addressing counterarguments.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learning objectives established in the initial session, the next logical step is to create a structured study plan. This plan provides a roadmap for the tutoring sessions and sets clear expectations for progress."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Writing balanced policy arguments with evidence",
+    "subject": "PoliticalScience",
+    "event_type": "lesson",
+    "description": "Conducted the first lesson based on the study plan, focusing on the core components of a balanced argument: claim, evidence, and warrant. We used examples from existing policy papers to illustrate these concepts.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a study plan in place, the next step is to begin instruction. This lesson addresses the first milestone in the plan, building a foundational understanding of argument structure before moving on to practice."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Writing balanced policy arguments with evidence",
+    "subject": "PoliticalScience",
+    "event_type": "practice",
+    "description": "Assigned a targeted practice exercise based on the recent lesson. The learner was asked to write a single paragraph arguing for a specific policy, and then to label their claim, evidence, and warrant.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the core concepts of argument structure in the previous lesson, this practice session allows the learner to apply that knowledge in a controlled, hands-on exercise. Creating a practice record is essential for the upcoming review and feedback cycle."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Writing balanced policy arguments with evidence",
+    "subject": "PoliticalScience",
+    "event_type": "review",
+    "description": "Reviewed the learner's practice paragraph from the previous session. We discussed their labeling of the claim, evidence, and warrant, identifying that the warrant was weak and not explicitly connecting the evidence to the claim.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session, a review is essential to assess the learner's understanding and application of the concepts. By analyzing the practice_record, we can provide specific, actionable feedback, which is captured in the feedback_summary for the learner's reference."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Writing balanced policy arguments with evidence",
+    "subject": "PoliticalScience",
+    "event_type": "materials_revision",
+    "description": "Based on the review of the learner's practice, it became clear the concept of a 'warrant' was not fully understood. I revised the teaching notes to include a clearer definition, several new examples of strong vs. weak warrants, and a simple checklist for self-evaluation.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review identified a specific weakness in the learner's understanding of warrants. Before moving to more practice, it is effective to first strengthen the instructional materials based on this observation. This revision makes the teaching notes a better resource for addressing the identified gap."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Writing balanced policy arguments with evidence",
+    "subject": "PoliticalScience",
+    "event_type": "practice",
+    "description": "To reinforce the concept of a 'warrant', the learner was asked to revise their previous paragraph, focusing on writing a strong, explicit warrant based on the feedback and revised notes. A second, new paragraph task was also assigned to check for transfer of the skill.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After identifying a weakness with 'warrants' and revising the teaching materials to address it, a targeted practice session is the logical next step. This allows the learner to apply the new, clearer explanation and demonstrate their improved understanding before moving on to new concepts."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Writing balanced policy arguments with evidence",
+    "subject": "PoliticalScience",
+    "event_type": "review",
+    "description": "We reviewed the learner's revised paragraph and the new paragraph from the latest practice session. The review confirmed a significant improvement in writing strong, explicit warrants that connect evidence to claims, indicating that the revised notes and targeted practice were effective.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the targeted practice in the previous step, a review is necessary to assess whether the learner has successfully addressed their difficulty with warrants. This feedback loop is critical to confirm understanding before proceeding to the next topic outlined in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Writing balanced policy arguments with evidence",
+    "subject": "PoliticalScience",
+    "event_type": "lesson",
+    "description": "With the basics of argument structure mastered, we moved to the next milestone in the study plan: finding and evaluating evidence. The lesson covered strategies for locating credible sources and criteria for evaluating their quality, such as relevance, authoritativeness, and potential bias.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review confirmed that the learner now understands how to structure a basic argument. According to the study plan, the next logical step is to teach the skill of finding and evaluating strong evidence, which is a prerequisite for building more complex and persuasive policy arguments."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Writing balanced policy arguments with evidence",
+    "subject": "PoliticalScience",
+    "event_type": "practice",
+    "description": "Assigned a practice task where the learner must find three potential sources of evidence for a given policy topic. For each source, they were asked to write a brief evaluation based on the criteria discussed in the last lesson (relevance, authoritativeness, bias).",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on finding and evaluating evidence, this practice session is designed to let the learner apply those new skills. This task will generate a record of their ability to select and critique sources, which is essential for review and feedback."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Writing balanced policy arguments with evidence",
+    "subject": "PoliticalScience",
+    "event_type": "review",
+    "description": "Reviewed the learner's evaluation of the three sources from the practice task. We discussed their assessments of relevance and authoritativeness, and identified a need for a more nuanced approach to detecting potential bias.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on finding and evaluating sources, a review is the natural next step to assess the learner's application of the concepts. This review provides specific feedback on their performance, which is essential before they start integrating these sources into actual arguments."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Writing balanced policy arguments with evidence",
+    "subject": "PoliticalScience",
+    "event_type": "materials_revision",
+    "description": "In response to the last review, I expanded the teaching notes on evaluating sources. The revision adds a more detailed section on identifying potential bias, including examples of loaded language, framing, and the strategic omission of key facts.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review showed the learner needed a more nuanced approach to detecting bias. Revising the teaching materials to provide clearer definitions and specific examples directly addresses this identified learning gap before attempting further practice on the topic."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Writing balanced policy arguments with evidence",
+    "subject": "PoliticalScience",
+    "event_type": "practice",
+    "description": "To reinforce the concept of identifying bias, the learner was given a new practice exercise using the revised teaching notes. The task involved analyzing two short policy articles and highlighting specific examples of loaded language, framing, or strategic omission of facts.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials to better explain how to detect bias, this targeted practice session allows the learner to apply the new, more detailed guidance. It is a crucial step to check for understanding before combining this skill with argument construction."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Writing balanced policy arguments with evidence",
+    "subject": "PoliticalScience",
+    "event_type": "review",
+    "description": "Reviewed the learner's analysis of the two policy articles for bias. The learner successfully identified several examples of loaded language and framing, demonstrating a much stronger understanding of the concept after using the revised teaching notes.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice on identifying bias, a review is necessary to confirm that the learner has overcome their previous difficulty. This step provides feedback and verifies that the learner is ready to integrate this skill into writing full arguments."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Writing balanced policy arguments with evidence",
+    "subject": "PoliticalScience",
+    "event_type": "lesson",
+    "description": "Building on the confirmed skills, we proceeded to the next milestone in the study plan: addressing counterarguments. This lesson explained the importance of acknowledging and refuting opposing viewpoints to create a more robust and persuasive balanced argument.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review confirmed that the learner can now structure an argument and evaluate evidence. According to the study plan, the next logical step is to introduce the concept of counterarguments, a key component of writing a 'balanced' policy argument."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Writing balanced policy arguments with evidence",
+    "subject": "PoliticalScience",
+    "event_type": "practice",
+    "description": "Assigned a practice exercise where the learner must integrate a counterargument into a policy argument. The task is to write a paragraph that first presents an opposing viewpoint on a given topic and then refutes it using evidence and a clear warrant.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on addressing counterarguments, this practice session allows the learner to apply the concept directly. Creating a record of this attempt is crucial for the subsequent review, which will assess their ability to build a more robust and balanced argument."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Writing balanced policy arguments with evidence",
+    "subject": "PoliticalScience",
+    "event_type": "review",
+    "description": "Reviewed the learner's practice paragraph that integrated a counterargument. The learner successfully presented an opposing viewpoint, but the refutation was not strongly supported with evidence, making it sound more like a simple dismissal than a reasoned rebuttal.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following a practice session on a new, complex skill like handling counterarguments, a review is essential to assess performance and provide corrective feedback. This step allows us to check the learner's application of the concept and identify specific areas for improvement before they attempt a full essay."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Writing balanced policy arguments with evidence",
+    "subject": "PoliticalScience",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback that the learner's refutation of a counterargument was weak, I updated the teaching notes. The revision adds a clear, step-by-step process for refutation and includes examples of strong rebuttals that are explicitly linked to evidence.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review identified a specific weakness in refuting counterarguments. Before assigning more practice, revising the teaching materials to provide a more structured approach and better examples is a proactive step to help the learner overcome this hurdle, reinforcing the lesson from the feedback."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Writing balanced policy arguments with evidence",
+    "subject": "PoliticalScience",
+    "event_type": "practice",
+    "description": "To reinforce the skill of refuting counterarguments, the learner was asked to revise their previous attempt using the updated teaching notes. The task emphasized using specific evidence to support the rebuttal, directly addressing the weakness identified in the last review.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials to better explain how to refute counterarguments, a targeted practice session is the logical next step. This allows the learner to apply the new step-by-step process and improved examples, providing a clear opportunity to demonstrate mastery of this specific skill before moving on."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Writing balanced policy arguments with evidence",
+    "subject": "PoliticalScience",
+    "event_type": "review",
+    "description": "We reviewed the learner's revised attempt at refuting a counterargument. The review confirmed that by following the updated step-by-step process in the teaching notes, the learner was able to successfully use specific evidence to create a strong, well-reasoned rebuttal.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted practice session on refuting counterarguments, a review is necessary to validate the learner's improvement. This step confirms that the revised materials and practice were effective, and that the learner is now ready to integrate all the learned skills into a comprehensive writing task."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "Writing balanced policy arguments with evidence",
+    "subject": "PoliticalScience",
+    "event_type": "practice",
+    "description": "With all individual skills confirmed, we are moving to a comprehensive practice task. The learner is assigned to write a short (1-2 page) policy brief on a new topic, which requires them to find evidence, structure their arguments, and integrate a well-refuted counterargument.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "The learner has successfully mastered all the sub-skills in isolation (argument structure, evidence evaluation, counterarguments). This comprehensive practice is the capstone task designed to assess their ability to integrate all these skills into a single, cohesive piece of writing, directly addressing the main learning objective."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "tutoring",
+    "topic": "Writing balanced policy arguments with evidence",
+    "subject": "PoliticalScience",
+    "event_type": "review",
+    "description": "Conducted a final, comprehensive review of the learner's 1-2 page policy brief. The review assessed the overall quality of the argument, the integration of evidence, the handling of counterarguments, and the coherence of the writing, confirming that the learner successfully integrated all the individual skills.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a capstone practice task that integrates all learned skills, a comprehensive review is the necessary next step. This allows for a final assessment of the learner's abilities against the overall course objectives and provides holistic feedback on their performance."
+  },
+  {
+    "event_id": "e_23",
+    "time_index": 23,
+    "domain": "tutoring",
+    "topic": "Writing balanced policy arguments with evidence",
+    "subject": "PoliticalScience",
+    "event_type": "plan_milestones",
+    "description": "In this wrap-up session, we reviewed the entire study plan, marking all milestones as complete. We discussed the learner's significant progress and outlined strategies for them to continue refining their writing skills independently, adding these suggestions to the final plan.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the capstone project successfully reviewed, the main learning objectives have been met. This event serves as a formal conclusion, updating the study plan to reflect the completed work and providing the learner with a final document summarizing their achievements and next steps for self-study."
+  },
+  {
+    "event_id": "e_24",
+    "time_index": 24,
+    "domain": "tutoring",
+    "topic": "Writing balanced policy arguments with evidence",
+    "subject": "PoliticalScience",
+    "event_type": "end",
+    "description": "The tutoring engagement is formally concluded. The learner has met all the learning objectives and has a clear plan for continuing their development independently.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has successfully completed a capstone project demonstrating mastery of all skills, and the study plan was marked as complete in the final wrap-up session. The tutoring goals have been met, making this a natural point to conclude the process."
+  }
+]

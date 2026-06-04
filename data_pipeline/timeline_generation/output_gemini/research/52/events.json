@@ -1,0 +1,369 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Biomedical text mining",
+    "subject": "CS-NLP",
+    "event_type": "proposal",
+    "description": "Initial project proposal for biomedical text mining. The primary goal is to develop a novel neural network model for extracting drug-disease relationships from scientific literature. A high-level plan is drafted, including data collection, model development, and evaluation phases.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the first event of the project. A proposal is necessary to establish the initial research goals and a high-level plan, which will guide all subsequent activities."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Biomedical text mining",
+    "subject": "CS-NLP",
+    "event_type": "scheme_design",
+    "description": "Based on the initial proposal, a detailed methodological scheme is designed. This includes selecting a pre-trained language model (e.g., BioBERT) as the base, defining the entity masking strategy for input sentences, and specifying the architecture of the classification head for relationship extraction.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "With the high-level research goals and plan established in the initial proposal (e_01), the next necessary step is to design a concrete technical approach. This event creates the initial 'method_scheme' which details the model architecture and experimental setup, making it possible to proceed with implementation and pilot experiments."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Biomedical text mining",
+    "subject": "CS-NLP",
+    "event_type": "pilot_experiments",
+    "description": "A small-scale pilot experiment is conducted to validate the designed method. This involves implementing the BioBERT model with the specified classification head on a small, curated dataset of drug-disease sentences. The goal is to debug the code, test the data processing pipeline, and get a preliminary performance estimate.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the detailed design of the methodological scheme (e_02), conducting pilot experiments is a crucial next step. This allows for a low-cost sanity check of the proposed approach and implementation, generating initial 'experiment_results' to guide further development before committing to resource-intensive main experiments."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Biomedical text mining",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "The results from the pilot experiment are analyzed in detail. While the model shows some capability in identifying relationships, performance is lower than expected, with a high number of false positives. Error analysis suggests the current entity masking strategy is insufficient for complex sentences with multiple entities.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After obtaining initial `experiment_results` (e_03), a detailed analysis is the logical next step to understand the strengths and weaknesses of the current method. This analysis is crucial for making an informed decision on next steps, and it's a good time to start documenting findings by drafting an initial `paper_paragraph` for the results section."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Biomedical text mining",
+    "subject": "CS-NLP",
+    "event_type": "scheme_design",
+    "description": "Based on the analysis of poor pilot results, the methodological scheme is revised. The simple entity masking strategy is replaced with a more sophisticated one using typed entity markers (e.g., '[DRUG]' and '[DISEASE]') to provide the model with more contextual information. This change is intended to help the model distinguish between different entities in complex sentences and reduce false positives.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous analysis (e_04) of the pilot `experiment_results` revealed a critical flaw in the original `method_scheme`. It is therefore necessary to revisit the design phase and improve the method before running more experiments. This event directly addresses the identified weakness (insufficient entity masking) and produces a revised `method_scheme`."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Biomedical text mining",
+    "subject": "CS-NLP",
+    "event_type": "pilot_experiments",
+    "description": "A second pilot experiment is conducted using the revised method with typed entity markers. The goal is to directly assess if this new approach improves upon the poor performance of the initial pilot, specifically in reducing false positives on the same small, curated dataset.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The previous event (e_05) produced a revised `method_scheme` to address issues found in the first pilot study. It is now necessary to run a new pilot experiment to validate this revised scheme and generate new `experiment_results` before proceeding to larger-scale experiments."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Biomedical text mining",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "The results from the second pilot experiment are analyzed. The revised model using typed entity markers shows a significant performance improvement, with a much lower false positive rate. This analysis confirms that the revised method is effective and ready for larger-scale evaluation.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After running a second pilot experiment (e_06) with the revised method, the immediate next step is to analyze the new `experiment_results`. This analysis is critical to validate whether the changes made to the `method_scheme` were successful before committing resources to the main experiments. The positive findings are documented by updating the `paper_paragraph`."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Biomedical text mining",
+    "subject": "CS-NLP",
+    "event_type": "main_experiments",
+    "description": "With the revised method validated, the main experiments are now conducted. The model is trained on the full biomedical text corpus and evaluated on the standard benchmark test set. This process generates the primary results for the study, including precision, recall, and F1-score for drug-disease relationship extraction.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The successful analysis of the second pilot study (e_07) confirmed the revised `method_scheme` is effective. Therefore, the logical next step is to scale up from pilot studies to the main experiments, as outlined in the `research_plan`, to generate comprehensive `experiment_results` on the full dataset."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Biomedical text mining",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "A comprehensive analysis of the main experiment results is performed. The model achieves a new state-of-the-art F1-score on the benchmark dataset, confirming the effectiveness of the revised method. Error analysis is also conducted, identifying that the model still has difficulty with sentences containing negation and hypothetical statements.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After generating the main `experiment_results` (e_08), a detailed analysis is the necessary next step. This allows the team to interpret the final performance metrics in the context of the `research_goals`, understand the model's remaining weaknesses, and generate key content for the paper's results and discussion sections (`paper_paragraph`)."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Biomedical text mining",
+    "subject": "CS-NLP",
+    "event_type": "writing",
+    "description": "With strong results from the main experiments, the team begins drafting the full research paper. The methods section is written based on the final scheme, and the results section is populated with the tables and figures from the main analysis. The discussion section expands on the error analysis, highlighting the model's strengths and acknowledging its limitations with negation and hypotheticals.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The main experiments (e_08) and their analysis (e_09) have produced a significant, state-of-the-art result. The most logical next step is to formally document these findings for publication. This writing event synthesizes all the major artifacts created so far into a coherent manuscript draft, moving the project towards its conclusion."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Biomedical text mining",
+    "subject": "CS-NLP",
+    "event_type": "proposal",
+    "description": "After drafting the paper, the team discusses the limitations identified in the main analysis (negation and hypotheticals). They decide to expand the project's scope to address this, revising the research goals to include a new sub-task: classifying extracted relationships as factual, negated, or hypothetical. The research plan is updated to include a new phase for developing and evaluating this classifier.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "The analysis of the main experiments (e_09) and the process of writing the paper (e_10) made it clear that while the model is strong, it has significant limitations. Rather than simply publishing, a realistic next step in a long-term research project is to address these limitations. This event revises the project's core goals and plan to tackle a new, more nuanced research problem that emerged from the previous results."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Biomedical text mining",
+    "subject": "CS-NLP",
+    "event_type": "scheme_design",
+    "description": "Following the revised research goals, a new methodological scheme is designed for the sub-task of classifying relationship factuality. The plan is to extend the existing BioBERT model by adding a second classification head. This head will take the sentence and entity representations to predict whether an extracted relationship is factual, negated, or hypothetical.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous event (e_11) expanded the project's `research_goals` to include classifying relationship factuality. The logical next step is to design a technical approach to meet these new goals. This event creates an updated `method_scheme` that details the architecture for the new classification sub-task, building upon the existing model."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Biomedical text mining",
+    "subject": "CS-NLP",
+    "event_type": "pilot_experiments",
+    "description": "A pilot experiment is launched to test the new factuality classification head. This requires annotating a small subset of the data with factuality labels (factual, negated, hypothetical) and then training the dual-head model to see if it can learn this new task without degrading performance on the primary relationship extraction task.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing a new scheme for the factuality sub-task (e_12), a pilot experiment is the logical next step to validate the approach. This provides a low-cost sanity check on the new model architecture and generates initial `experiment_results` before committing to a full-scale main experiment."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Biomedical text mining",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "Analysis of the factuality classification pilot experiment reveals mixed results. The new classification head performs reasonably well on the sub-task of identifying negated and hypothetical statements. However, its inclusion has caused a slight but noticeable degradation in F1-score for the primary relationship extraction task, suggesting a multi-task learning interference problem.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the pilot experiment for the new factuality sub-task (e_13), a detailed analysis of the `experiment_results` is essential. This step is necessary to determine the viability of the dual-head model and understand the trade-offs before deciding whether to proceed to main experiments or redesign the method."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Biomedical text mining",
+    "subject": "CS-NLP",
+    "event_type": "scheme_design",
+    "description": "To address the task interference issue identified in the last analysis, the team redesigns the method. They abandon the joint multi-task model in favor of a two-stage pipeline. The first stage will use the original, high-performing model to extract relationships, and the second stage will use a new, separately trained classifier to determine the factuality (factual, negated, hypothetical) of the extracted relationships.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous analysis (e_14) showed that the dual-head `method_scheme` caused performance degradation on the primary task. The logical next step is to go back to the design phase to create a new approach that mitigates this interference. This event proposes a two-stage pipeline, resulting in a revised `method_scheme` designed to achieve the expanded `research_goals` without compromising existing performance."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Biomedical text mining",
+    "subject": "CS-NLP",
+    "event_type": "pilot_experiments",
+    "description": "A new pilot experiment is run to test the two-stage pipeline approach. First, the original high-performance model is used to extract all potential relationships. Then, a second, separately trained classifier is applied to label these extractions as factual, negated, or hypothetical. This tests whether the decoupled approach can achieve the new goals without compromising the primary task's performance.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After redesigning the method into a two-stage pipeline (e_15) to avoid task interference, a pilot experiment is the essential next step. This will validate the new `method_scheme` by generating `experiment_results` to confirm if it successfully addresses the expanded `research_goals` without the performance degradation seen in the previous multi-task approach."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Biomedical text mining",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "The results of the two-stage pipeline pilot are analyzed. The analysis confirms that this decoupled approach is successful: the primary relationship extraction model maintains its high performance, and the second-stage classifier effectively identifies negated and hypothetical statements. This validates the pipeline as the final method for the expanded goals.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the pilot experiment of the two-stage pipeline (e_16), a detailed analysis of the new `experiment_results` is the necessary next step. This analysis is critical to confirm that the revised `method_scheme` solves the previously identified task interference problem and successfully achieves the expanded `research_goals` before committing to the final main experiments."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "Biomedical text mining",
+    "subject": "CS-NLP",
+    "event_type": "main_experiments",
+    "description": "The validated two-stage pipeline is now run at full scale. The first-stage model extracts relationships from the entire corpus, and the second-stage factuality classifier is trained and evaluated on the full benchmark dataset. This generates the final, comprehensive results for both relationship extraction and factuality classification.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The previous analysis (e_17) confirmed the success of the two-stage pipeline in a pilot study. It is now time to execute the main experiments according to the revised `research_plan` to generate the final, comprehensive `experiment_results` that address the expanded `research_goals`."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "research",
+    "topic": "Biomedical text mining",
+    "subject": "CS-NLP",
+    "event_type": "analysis",
+    "description": "A final, comprehensive analysis of the main experiment results for the two-stage pipeline is conducted. The analysis confirms that the primary relationship extraction task maintains its state-of-the-art performance, while the second-stage classifier accurately identifies negated and hypothetical statements. These conclusive results validate the final method and fulfill the project's expanded research goals.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After running the final main experiments (e_18), a conclusive analysis is the essential next step. This event serves to formally interpret the final `experiment_results`, confirm that the two-stage `method_scheme` successfully meets all `research_goals`, and generate the definitive findings for the paper (`paper_paragraph`)."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "research",
+    "topic": "Biomedical text mining",
+    "subject": "CS-NLP",
+    "event_type": "writing",
+    "description": "The team focuses on completing the full research paper. The methods section is rewritten to describe the final two-stage pipeline, and the results section is updated with the comprehensive findings from the final main experiments. The introduction and discussion are revised to frame the full narrative, including the initial challenges with multi-task learning and the successful pivot to the pipeline approach.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the final conclusive analysis (e_19), the project has stable methods and definitive results that fulfill all research goals. The essential next step is to synthesize these mature components into a complete, polished manuscript for publication. This writing event consolidates all findings and brings the project closer to its final deliverable."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "research",
+    "topic": "Biomedical text mining",
+    "subject": "CS-NLP",
+    "event_type": "end",
+    "description": "The research project is concluded. The final paper, detailing the two-stage pipeline for relationship extraction and factuality classification, has been thoroughly revised and is ready for submission to a top-tier NLP conference. The project successfully achieved its expanded goals, producing a novel method with state-of-the-art results.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached a natural conclusion. The final method (a two-stage pipeline) is stable and validated (e_17), the main experiments have yielded conclusive, state-of-the-art results (e_19), and the paper has been comprehensively written to reflect the entire research journey (e_20). All research goals have been met, making this the appropriate time to end the timeline."
+  }
+]

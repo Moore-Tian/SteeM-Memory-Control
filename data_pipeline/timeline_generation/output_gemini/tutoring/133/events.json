@@ -1,0 +1,285 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Responding to feedback and planning revisions",
+    "subject": "Writing",
+    "event_type": "objective_clarification",
+    "description": "Initial diagnostic session with a student who struggles to incorporate feedback into their writing. The discussion covers their current writing process, past experiences with feedback, and specific goals for improvement, such as moving beyond surface-level edits.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives",
+      "study_plan"
+    ],
+    "reason": "As the first event in the timeline, it is essential to clarify the learner's goals and background. This session establishes a foundation for all subsequent tutoring activities and produces an initial set of objectives and a high-level study plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Responding to feedback and planning revisions",
+    "subject": "Writing",
+    "event_type": "lesson",
+    "description": "First lesson focuses on a structured method for analyzing feedback. The tutor introduces a framework for categorizing feedback into global (argument, structure) and local (grammar, wording) issues, helping the student prioritize revision efforts.",
+    "required_artifacts": [
+      "learning_objectives",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the learning objectives and study plan in place, the next logical step is to deliver the first core lesson. This lesson addresses a foundational skill—categorizing feedback—and produces reusable teaching notes that will support future practice and review."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Responding to feedback and planning revisions",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "To apply the new framework, the student is given a short sample essay that has already been marked up with various types of feedback. Their task is to categorize each piece of feedback as either 'global' or 'local' and to briefly justify their choices.",
+    "required_artifacts": [
+      "teaching_notes",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on categorizing feedback, this practice session allows the student to apply the new skill in a controlled environment. This step is crucial for reinforcing the concept and creating a record of their attempt, which can be analyzed in the next review session."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Responding to feedback and planning revisions",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor reviews the student's categorization of feedback from the practice exercise. The review identifies that the student correctly classified most local issues but struggled to distinguish between global feedback on argument versus structure, often lumping them together.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the student completed the practice task (e_03), it is crucial to review their work to check for understanding and identify misconceptions. This review of the practice_record provides targeted feedback, which is captured in a new feedback_summary artifact, guiding the next steps."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Responding to feedback and planning revisions",
+    "subject": "Writing",
+    "event_type": "materials_revision",
+    "description": "Based on the student's difficulty distinguishing global feedback types, the tutor revises the teaching notes. The updated notes now include a dedicated section with clearer definitions and side-by-side examples of 'argument-level' versus 'structure-level' feedback to address the specific confusion observed in the last practice.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The feedback_summary from the previous review (e_04) highlighted a specific misconception. A logical next step is to improve the instructional materials to address this weakness directly. Revising the teaching_notes makes them more effective for reteaching the concept and for future reference, demonstrating an adaptive approach to tutoring."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Responding to feedback and planning revisions",
+    "subject": "Writing",
+    "event_type": "lesson",
+    "description": "A focused mini-lesson is conducted to explicitly address the student's confusion between 'argument' and 'structure' feedback. The tutor uses the newly revised teaching notes, walking the student through the side-by-side examples and creating a simple checklist to help differentiate them.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After revising the teaching materials in the previous step (e_05) based on feedback from e_04, this lesson directly reteaches the challenging concept. Using the improved notes ensures the student grasps the distinction before moving on to another practice, solidifying the learning loop."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Responding to feedback and planning revisions",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "The student is given a new practice exercise with a different sample text and feedback. This task is specifically designed to test their ability to distinguish between 'argument' and 'structure' feedback, applying the concepts from the recent mini-lesson and revised notes.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the targeted reteaching in the previous lesson (e_06), it is crucial to assess whether the student can now apply the corrected concept. This practice session provides a direct opportunity to check for understanding, creating a new practice_record that will be the basis for the next review."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Responding to feedback and planning revisions",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor reviews the student's second practice attempt at categorizing feedback. The analysis shows significant improvement, with the student now correctly distinguishing between argument and structure feedback in almost all cases. The feedback summary praises this progress and confirms that the student is ready to move on.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice in e_07, this review is essential to verify that the student has successfully overcome their previous confusion. This step closes the remediation loop (e_04 to e_08) and generates a new feedback_summary that formally confirms mastery and sets the stage for the next milestone."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Responding to feedback and planning revisions",
+    "subject": "Writing",
+    "event_type": "plan_milestones",
+    "description": "With the first skill mastered, the tutor and student review the study plan to detail the next milestone. They agree to focus on translating categorized feedback into a prioritized revision plan, starting with global issues before addressing local ones.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "The previous review (e_08) confirmed the student's mastery of feedback categorization, completing a key milestone. This event is a logical transition to the next phase, updating the study plan to reflect the new focus on creating a revision plan, ensuring both parties are aligned on the next steps."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Responding to feedback and planning revisions",
+    "subject": "Writing",
+    "event_type": "lesson",
+    "description": "The tutor introduces a new method for creating a revision plan. This lesson covers how to translate categorized feedback into a prioritized to-do list, starting with global issues, and teaches the student to brainstorm specific actions for each point of feedback.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After defining the next milestone in the study plan (e_09), the logical next step is a lesson on that topic. This lesson directly teaches the process of creating a revision plan, which is the core skill for the current phase, and updates the teaching notes with this new material."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Responding to feedback and planning revisions",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "The student is given an essay draft with diverse feedback and is tasked with creating a structured revision plan. They must first categorize the feedback and then create a prioritized list of actions, addressing global issues before local ones, as taught in the previous lesson.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on creating a revision plan (e_10), this practice session is the essential next step for the student to apply the new skill. It allows them to translate theoretical knowledge into a practical output, generating a practice_record that can be used for assessment in the subsequent review."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Responding to feedback and planning revisions",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor reviews the student's revision plan from the practice session. The review finds that while the student correctly prioritized global issues over local ones, the action items they created were often too vague (e.g., 'clarify paragraph' instead of a specific action).",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the student completed the practice task of creating a revision plan (e_11), a review is necessary to evaluate their performance. This step assesses their application of the lesson's concepts (e_10) and generates a feedback_summary that identifies specific areas for improvement, such as creating more concrete action steps."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Responding to feedback and planning revisions",
+    "subject": "Writing",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback that the student's action items were too vague, the tutor revises the teaching notes on creating a revision plan. The new version includes a clear 'before and after' table showing how to transform vague goals into concrete, actionable steps for both global and local feedback.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The feedback_summary from e_12 identified a specific weakness in the student's practice. A logical next step is to revise the teaching_notes to explicitly address this gap by providing clear models of specific action items. This improves the instructional material before asking the student to practice again."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Responding to feedback and planning revisions",
+    "subject": "Writing",
+    "event_type": "lesson",
+    "description": "The tutor conducts a mini-lesson using the newly revised teaching notes. They walk the student through the 'before and after' examples, demonstrating how to transform vague intentions into specific, actionable revision steps.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After revising the teaching materials in e_13 to address the issue of vague action items, a targeted lesson is the next logical step. This reteaching session uses the improved materials to directly address the weakness identified in the previous review (e_12) before assigning further practice."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Responding to feedback and planning revisions",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "The student is given a new practice task using a sample essay and feedback, focusing specifically on translating feedback comments into concrete, actionable steps for a revision plan. This exercise is designed to directly apply the skills from the recent mini-lesson.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a targeted mini-lesson (e_14) and materials revision (e_13) focused on creating specific action items, this practice session is crucial to assess if the student can now apply the improved method. It creates a new practice_record to evaluate their progress on the weakness identified in the previous review (e_12)."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Responding to feedback and planning revisions",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor reviews the student's latest practice attempt from e_15. The review confirms that the student now successfully translates feedback into concrete, actionable steps, demonstrating a clear understanding of the method taught in the recent mini-lesson.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the targeted practice in e_15, a review is essential to confirm that the student has overcome their difficulty with creating specific action items. This step closes the second remediation loop (e_12 to e_16) and provides a final assessment of the student's ability to create a detailed revision plan, paving the way for concluding the tutoring."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Responding to feedback and planning revisions",
+    "subject": "Writing",
+    "event_type": "end",
+    "description": "Final session concluding the tutoring engagement. The tutor and student review the progress made, confirming that the student now feels confident in their ability to systematically analyze feedback and create effective revision plans, thus meeting the initial learning objectives.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The student has successfully mastered the key skills of categorizing feedback and creating concrete, prioritized revision plans, as confirmed by the successful review in e_16. With the core learning objectives met and the student equipped for independent practice, the tutoring process has reached its natural conclusion."
+  }
+]

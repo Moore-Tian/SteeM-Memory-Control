@@ -1,0 +1,431 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Understanding loans, interest, and debt decisions",
+    "subject": "LifeSkills",
+    "event_type": "objective_clarification",
+    "description": "Initial meeting with the learner to discuss their goals for understanding loans, interest, and debt. The learner, a recent graduate, wants to make informed decisions about student loan repayment and a potential car loan.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives",
+      "study_plan"
+    ],
+    "reason": "As the first event in the tutoring timeline, it is essential to clarify the learner's goals, background, and desired outcomes. This session establishes the foundation for all future lessons and creates an initial high-level plan to guide the process."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Understanding loans, interest, and debt decisions",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "The first lesson begins by introducing the core concept of simple interest. The tutor explains the formula (Interest = Principal x Rate x Time), defines each component, and provides a clear, step-by-step example of calculating interest on a one-year loan.",
+    "required_artifacts": [
+      "learning_objectives",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the initial planning session (e_01), the logical next step is to begin instruction on the most fundamental topic. This lesson on simple interest directly addresses the first milestone in the study plan and creates foundational teaching notes that will be built upon in subsequent sessions."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Understanding loans, interest, and debt decisions",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The tutor assigns a set of practice problems for calculating simple interest. The problems use various principal amounts, interest rates, and time periods to ensure the learner can apply the formula flexibly. The learner's work and final answers are recorded.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the concept of simple interest in the lesson (e_02), the next logical step is to have the learner apply this knowledge. This practice session solidifies understanding and creates a record of the learner's work, which is essential for the upcoming review and feedback process."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Understanding loans, interest, and debt decisions",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's submitted answers from the simple interest practice. The review identifies a recurring error where the learner forgets to convert the annual interest rate into a decimal before calculating. The tutor prepares a summary of this feedback and a corrected example.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed practice problems (e_03), the essential next step is to review their work to identify misconceptions and provide targeted feedback. This review process generates a feedback summary, which will guide the next instructional or practice step and ensure the learner masters the current concept before moving on."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Understanding loans, interest, and debt decisions",
+    "subject": "LifeSkills",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback from the last review, the tutor updates the teaching notes on simple interest. A 'Common Pitfalls' section is added, explicitly warning to convert percentage rates into decimals (e.g., 5% becomes 0.05) before performing calculations.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in e_04 identified a recurring learner error. Before re-assigning practice, it is a best practice to update the core teaching materials to explicitly address this common pitfall, which improves the clarity and effectiveness of the notes for future reference."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Understanding loans, interest, and debt decisions",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "To confirm understanding after the recent review, the tutor provides a new, short set of practice problems focused on simple interest. The problems are similar to the last set but use different numbers, giving the learner a chance to apply the feedback about converting percentages to decimals.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After identifying a specific error (e_04) and revising the teaching materials to address it (e_05), a follow-up practice session is necessary to confirm the learner has corrected their mistake. This validates the feedback and ensures mastery of simple interest before moving to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Understanding loans, interest, and debt decisions",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor reviews the second set of practice problems and confirms the learner has successfully corrected their previous error. All calculations now correctly use the decimal form of the interest rate. The feedback summary notes this success and confirms readiness for the next topic.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice in e_06, a review is essential to validate that the learner has internalized the feedback and mastered the concept. This step confirms the learner is ready to progress to the next topic, compound interest, as outlined in the study plan."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Understanding loans, interest, and debt decisions",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "Building on the mastery of simple interest, the tutor introduces compound interest. The lesson explains how compound interest is calculated on both the principal and previously accrued interest, and introduces the formula A = P(1 + r/n)^(nt).",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_07) confirmed the learner's mastery of simple interest. Following the sequence outlined in the study plan, the next logical step is to introduce the more complex concept of compound interest, which is fundamental to understanding most real-world loans."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Understanding loans, interest, and debt decisions",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The tutor assigns practice problems for calculating compound interest. The problems require the learner to apply the new formula, focusing on how different compounding frequencies (e.g., annually vs. monthly) affect the total amount owed. The learner's calculations and steps are recorded.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the formula for compound interest in the lesson (e_08), the immediate next step is for the learner to apply it. This practice session is designed to build procedural fluency and create a record of the learner's work, which is necessary for the upcoming review."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Understanding loans, interest, and debt decisions",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's compound interest calculations. The review focuses on whether the learner correctly applied the formula, particularly the exponent and the division of the rate by the number of compounding periods. A summary of findings and corrections is prepared.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed practice on compound interest (e_09), a review is necessary to assess their understanding of this more complex topic. This feedback loop is crucial for identifying any new misconceptions before building on this concept, such as comparing different loan offers."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Understanding loans, interest, and debt decisions",
+    "subject": "LifeSkills",
+    "event_type": "plan_milestones",
+    "description": "After covering the core concepts of simple and compound interest, the tutor and learner review the initial study plan. They agree to prioritize the next milestone: analyzing a real car loan amortization schedule to see how interest and principal are paid over time.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "Having completed the foundational units on interest calculation (confirmed in e_10), this is a natural point to review and refine the study plan. This event ensures both tutor and learner are aligned on the next practical application step, directly addressing the learner's goal of understanding a car loan."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Understanding loans, interest, and debt decisions",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "The tutor introduces the concept of loan amortization. The lesson explains how an amortization schedule breaks down each monthly payment into principal and interest components, and a sample car loan schedule is used as a visual aid to show how the principal balance decreases over time.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After prioritizing the analysis of a car loan in the updated study plan (e_11), the logical next step is a lesson explaining what an amortization schedule is and how to interpret it. This lesson directly addresses the new milestone and builds upon the learner's understanding of compound interest."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Understanding loans, interest, and debt decisions",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The tutor provides a practice exercise where the learner must calculate the first three months of an amortization schedule for a new car loan scenario. The learner is tasked with determining the monthly interest, the principal paid, and the remaining balance for each payment, recording their steps.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on loan amortization (e_12), a hands-on practice exercise is the logical next step to solidify understanding. This task requires the learner to actively apply the concepts from the lesson, and the resulting practice record will be essential for the upcoming review to check for comprehension."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Understanding loans, interest, and debt decisions",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's practice calculations for the amortization schedule. The review confirms the learner correctly calculated the monthly interest and principal portions for each payment and accurately updated the remaining loan balance, demonstrating a solid grasp of the process.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on amortization calculations (e_13), a review is the necessary next step to assess the learner's comprehension. This step verifies that the learner can correctly apply the multi-step process, which is crucial before moving on to comparing different loan offers or discussing concepts like extra payments."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Understanding loans, interest, and debt decisions",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "Building on the understanding of amortization, this lesson focuses on comparing loan offers. The tutor explains how to analyze two different car loan options (e.g., one with a lower interest rate but longer term vs. one with a higher rate and shorter term) by comparing the total interest paid and the total cost of each loan.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in e_14 confirmed the learner can calculate an amortization schedule. The logical next step is to apply this knowledge to a real-world decision, as outlined in the study plan. This lesson moves from calculation to analysis, directly addressing the learner's goal of making informed choices about loans."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Understanding loans, interest, and debt decisions",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The learner is given a practical scenario with two different car loan offers. They are tasked with calculating the total cost and total interest paid for each loan, then writing a brief recommendation on which loan is better and why, based on their analysis.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on comparing loan offers (e_15), this practice session is crucial for the learner to apply analytical skills to a realistic decision. Creating a practice record allows the tutor to assess if the learner can synthesize information from previous lessons to make a justified choice, which is a core learning objective."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Understanding loans, interest, and debt decisions",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's analysis of the two car loan offers from the previous practice session. The review assesses the accuracy of the total cost and interest calculations, as well as the quality of the reasoning in the learner's recommendation.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practical application exercise in e_16, a review is necessary to evaluate the learner's ability to synthesize information and make a justified financial decision. This feedback is critical for confirming mastery of the car loan objective before moving to the next topic, such as student loans."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Understanding loans, interest, and debt decisions",
+    "subject": "LifeSkills",
+    "event_type": "plan_milestones",
+    "description": "With the car loan module successfully completed, the tutor and learner revisit the original study plan. They confirm the next major focus will be on the second learning objective: understanding student loan repayment options. The plan is updated to outline the upcoming lessons on topics like deferment, forbearance, and different income-driven repayment plans.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "The review in e_17 confirmed mastery of the car loan analysis objective. This is a natural transition point to review the overall progress against the initial learning objectives and formally pivot to the second major topic, student loans. Updating the study plan ensures both parties are aligned on the next set of milestones."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Understanding loans, interest, and debt decisions",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "Following the updated study plan, the tutor begins the student loan module. This first lesson defines and contrasts key student loan concepts: deferment and forbearance, explaining the conditions for each and, crucially, how interest accrues differently between them.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After updating the study plan in e_18 to focus on student loans, the logical next step is to begin instruction on this new topic. This lesson directly addresses the first milestone in the revised plan, introducing fundamental concepts that are essential for understanding student loan repayment strategies."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Understanding loans, interest, and debt decisions",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The tutor provides a set of scenarios where a borrower faces financial difficulty. The learner is asked to determine whether deferment or forbearance would apply and to describe the consequences for interest accumulation in each case, recording their reasoning.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson on deferment and forbearance (e_19), it is essential for the learner to apply these definitions to practical scenarios. This practice session tests their conceptual understanding and generates a record of their work for the subsequent review process."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "Understanding loans, interest, and debt decisions",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's responses to the scenarios on deferment and forbearance. The feedback confirms the learner correctly identified the applicable status in each case and accurately described the impact on interest accumulation, preparing them for the next topic.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the practice session on student loan concepts (e_20), a review is the necessary next step to verify the learner's understanding. This feedback loop ensures the learner has mastered these foundational concepts before moving on to more complex topics like income-driven repayment plans."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "tutoring",
+    "topic": "Understanding loans, interest, and debt decisions",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "The tutor introduces the various Income-Driven Repayment (IDR) plans for federal student loans, such as SAVE (formerly REPAYE), PAYE, and IBR. The lesson explains how these plans calculate monthly payments based on a percentage of the borrower's discretionary income.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in e_21 confirmed the learner understands deferment and forbearance. Following the study plan updated in e_18, the next logical step is to teach the core topic of Income-Driven Repayment plans, which is central to the learner's student loan objectives."
+  },
+  {
+    "event_id": "e_23",
+    "time_index": 23,
+    "domain": "tutoring",
+    "topic": "Understanding loans, interest, and debt decisions",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The tutor assigns a practice problem where the learner must calculate the estimated monthly payment for a borrower under an Income-Driven Repayment (IDR) plan. The scenario includes the borrower's income, family size, and loan details, requiring the learner to first calculate discretionary income before determining the payment amount.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on Income-Driven Repayment plans (e_22), this practice session is crucial for the learner to apply the calculation method in a concrete scenario. This hands-on application solidifies understanding and creates a practice record that is essential for the upcoming review."
+  },
+  {
+    "event_id": "e_24",
+    "time_index": 24,
+    "domain": "tutoring",
+    "topic": "Understanding loans, interest, and debt decisions",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's calculation of the monthly payment under an Income-Driven Repayment (IDR) plan. The review focuses on the correct calculation of discretionary income and the final payment amount, providing corrections as needed.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the practice session on IDR calculations (e_23), a review is the essential next step to verify the learner's ability to perform this multi-step calculation. This feedback ensures the learner has a solid grasp of the mechanics before moving on to compare different repayment plans, which is a key learning objective."
+  },
+  {
+    "event_id": "e_25",
+    "time_index": 25,
+    "domain": "tutoring",
+    "topic": "Understanding loans, interest, and debt decisions",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "Now that the learner can calculate an IDR payment, this lesson focuses on comparing repayment strategies. The tutor explains how to evaluate different plans (e.g., Standard 10-Year vs. an IDR plan) by considering factors like total amount paid, interest accrual, and potential for loan forgiveness.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in e_24 confirmed the learner's ability to calculate an IDR payment. To address the core objective of making informed decisions, the next logical step is a lesson that teaches how to compare the long-term financial implications of different student loan repayment plans."
+  }
+]

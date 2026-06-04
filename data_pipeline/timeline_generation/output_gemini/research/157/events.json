@@ -1,0 +1,380 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Environmental risk forecasting",
+    "subject": "Engineering",
+    "event_type": "proposal",
+    "description": "Initial project proposal drafted to outline the core research questions for environmental risk forecasting. The focus is on leveraging satellite imagery and climate data to predict events like floods or wildfires. A high-level research plan is established to guide the initial stages of the project.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "As the first step in the research project, a proposal is necessary to define the initial scope, set clear research goals, and create a high-level plan. These foundational artifacts will guide all subsequent research activities."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Environmental risk forecasting",
+    "subject": "Engineering",
+    "event_type": "scheme_design",
+    "description": "Based on the research goals, a detailed methodological scheme is designed. This scheme outlines the data sources (e.g., Sentinel-2 satellite imagery, GFS weather model outputs), the data preprocessing steps, and the initial architecture for a deep learning model that integrates spatial and temporal data for risk prediction.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the initial proposal (e_01), it is necessary to translate the high-level research goals into a concrete plan of action. This event designs the specific method scheme, which is a crucial prerequisite for conducting any pilot or main experiments."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Environmental risk forecasting",
+    "subject": "Engineering",
+    "event_type": "pilot_experiments",
+    "description": "A small-scale pilot experiment is conducted to validate the designed data processing pipeline and the initial model. The experiment uses satellite and climate data from a single region over a limited time period to check for implementation bugs and get a preliminary assessment of the model's predictive capability.",
+    "required_artifacts": [
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With the methodological scheme designed in e_02, the logical next step is to conduct a pilot experiment. This serves as a sanity check to ensure the proposed methods are feasible and to identify any immediate problems before scaling up to the main experiments. This step generates the first set of experimental results."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Environmental risk forecasting",
+    "subject": "Engineering",
+    "event_type": "analysis",
+    "description": "The results from the pilot experiment are formally analyzed. The analysis reveals that the data processing pipeline is robust, but the model's predictive accuracy is lower than expected in areas with significant cloud cover, which leads to sparse satellite data. This finding highlights a key weakness in the current approach.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After conducting the pilot experiment (e_03) and generating initial results, a dedicated analysis is the logical next step. This is necessary to formally evaluate the performance of the designed method, identify its limitations, and provide evidence-based guidance for the next phase, which could be method refinement or scaling up."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Environmental risk forecasting",
+    "subject": "Engineering",
+    "event_type": "scheme_design",
+    "description": "To address the poor performance under cloud cover identified in the pilot analysis, the methodological scheme is revised. The new design incorporates a data fusion module to integrate Synthetic Aperture Radar (SAR) data, which is unaffected by clouds, with the optical imagery and climate data.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis of pilot results (e_04) demonstrated a critical failure of the initial method in cloudy conditions. It is therefore necessary to revisit the `scheme_design` to solve this problem before running main experiments. This revision directly addresses the identified weakness by incorporating an all-weather data source."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Environmental risk forecasting",
+    "subject": "Engineering",
+    "event_type": "main_experiments",
+    "description": "The main experiments are launched using the revised method scheme that incorporates SAR data. The model is trained and evaluated on a large-scale dataset covering multiple geographic regions and several years to test its generalizability and robustness, particularly in cloudy conditions.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the method scheme in e_05 to address the key limitation found in the pilot study, the next logical step is to conduct the main experiments. This will test the improved method at scale and generate the comprehensive results needed to evaluate the project's primary research goals."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Environmental risk forecasting",
+    "subject": "Engineering",
+    "event_type": "analysis",
+    "description": "A comprehensive analysis of the main experiment results is performed. The analysis confirms that incorporating SAR data significantly improves predictive accuracy, especially in regions and seasons with persistent cloud cover. The model now meets the performance targets outlined in the research goals, validating the revised approach.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the completion of the main experiments (e_06), a detailed analysis is the critical next step. This is necessary to formally evaluate the performance of the revised, large-scale model and to verify whether the inclusion of SAR data successfully addressed the limitations identified in the pilot study (e_04)."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Environmental risk forecasting",
+    "subject": "Engineering",
+    "event_type": "writing",
+    "description": "With the main experimental results successfully analyzed, the team begins drafting the research paper. Initial efforts focus on writing the 'Methods' section, detailing the final data fusion approach with SAR data, and the 'Results' section, summarizing the key performance metrics and the significant improvement observed.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The analysis in e_07 confirmed that the project's goals have been met with the revised method. Therefore, the logical next step is to begin documenting the work for publication. Starting with the methods and results sections is a common practice as these are based on the most recently completed and analyzed work."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Environmental risk forecasting",
+    "subject": "Engineering",
+    "event_type": "analysis",
+    "description": "While drafting the results section, the team realizes that a direct comparison against a simpler baseline model (e.g., one using only optical data without SAR) would better highlight the contribution of the data fusion approach. A new analysis is performed on the existing experimental data to generate these comparative results and create new visualizations for the paper.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The process of writing the paper (e_08) often highlights gaps in the current analysis needed to build a strong argument. This return to the analysis phase is a realistic iteration, aimed at strengthening the paper's claims by providing crucial comparative data before continuing with the writing."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Environmental risk forecasting",
+    "subject": "Engineering",
+    "event_type": "writing",
+    "description": "The paper draft is updated to incorporate the new comparative analysis. The 'Results' section is revised with the baseline comparison data and new visualizations are created to clearly demonstrate the performance gains from using SAR data. This significantly strengthens the narrative of the paper.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The additional analysis in e_09 was performed specifically to generate stronger evidence for the paper. Therefore, the immediate next step is to integrate these new comparative results and visualizations into the existing paper draft (started in e_08), moving the manuscript closer to a submittable state."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Environmental risk forecasting",
+    "subject": "Engineering",
+    "event_type": "writing",
+    "description": "With the core technical sections of the paper drafted, the team writes the 'Introduction' to motivate the problem using the original research goals, and the 'Conclusion' to summarize the findings and the impact of the SAR data fusion.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After refining the 'Methods' and 'Results' sections in e_10, completing the framing narrative with an 'Introduction' and 'Conclusion' is the natural next step. This integrates the initial project goals (e_01) with the final results (e_09) to create a cohesive manuscript, preparing it for internal review."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Environmental risk forecasting",
+    "subject": "Engineering",
+    "event_type": "proposal",
+    "description": "After reviewing the full paper draft, the team decides to refine the project's high-level narrative. The research goals are updated to more strongly emphasize the methodological contribution of the multi-modal data fusion technique itself, shifting the focus slightly from just the forecasting application. The research plan is also revised to outline potential future work on applying this fusion method to other domains.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "With a complete draft of the paper available (e_11), the team has a clear view of the project's story. It is a common and realistic step to revisit the high-level goals at this stage to sharpen the paper's core message and impact before final submission. This refinement helps align the initial framing with the final, most significant results."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Environmental risk forecasting",
+    "subject": "Engineering",
+    "event_type": "writing",
+    "description": "The paper's introduction and conclusion are revised to align with the newly sharpened research goals from the previous step. The narrative is adjusted to more clearly frame the work's primary contribution as the novel multi-modal data fusion technique, rather than just the forecasting application itself.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After the research goals were refined in e_12 based on a review of the full draft, it is essential to update the paper itself to reflect this new, sharper focus. This revision ensures the manuscript's narrative is consistent and effectively communicates the project's main contributions before submission."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Environmental risk forecasting",
+    "subject": "Engineering",
+    "event_type": "writing",
+    "description": "The team performs a final comprehensive review of the manuscript, proofreading the text and ensuring all figures and tables are correctly formatted. The abstract is written to concisely summarize the project's key contributions, preparing the paper for submission to a peer-reviewed journal.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After aligning the paper's narrative with the refined research goals in e_13, the logical final step before submission is a comprehensive review and the creation of an abstract. This ensures the manuscript is polished, internally consistent, and accurately represents the project's outcomes."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Environmental risk forecasting",
+    "subject": "Engineering",
+    "event_type": "analysis",
+    "description": "The submitted paper receives peer-review feedback. Reviewers praise the core data fusion idea but request additional experiments to demonstrate the method's generalizability to a different type of environmental risk (e.g., wildfire prediction, if the original focus was on floods). The team analyzes this feedback to plan the necessary revisions.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "research_plan"
+    ],
+    "reason": "After preparing the paper for submission (e_14), receiving and analyzing peer-review feedback is the natural next step in the publication cycle. This feedback often requires further work, and analyzing it is crucial for creating a revised research plan to address the reviewers' concerns and strengthen the paper for resubmission."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Environmental risk forecasting",
+    "subject": "Engineering",
+    "event_type": "scheme_design",
+    "description": "In response to reviewer feedback, the team adapts the methodological scheme for a new application: wildfire risk forecasting. This involves modifying the data ingestion pipeline to include wildfire-specific predictors like vegetation indices (NDVI) and land surface temperature, while retaining the core SAR-optical fusion architecture. The model's output layer is also adjusted for predicting fire ignition probability.",
+    "required_artifacts": [
+      "research_plan",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis of peer-review feedback in e_15 resulted in a plan to demonstrate the method's generalizability. This event executes that plan by adapting the existing `method_scheme` for a new environmental risk, which is a necessary step before running the additional experiments requested by the reviewers."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Environmental risk forecasting",
+    "subject": "Engineering",
+    "event_type": "pilot_experiments",
+    "description": "A pilot experiment is conducted using the adapted scheme for wildfire risk forecasting. The experiment uses data from a specific fire-prone region for a single fire season to quickly test the new data pipelines (including NDVI and temperature data) and evaluate the model's initial performance on this different environmental risk.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the adaptation of the method for wildfire prediction in e_16, a pilot study is a crucial and efficient next step. It serves to validate the new experimental setup and provide a preliminary check on its effectiveness before investing resources in the full-scale experiments required to address the reviewer comments."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "Environmental risk forecasting",
+    "subject": "Engineering",
+    "event_type": "analysis",
+    "description": "The results from the wildfire pilot experiment are analyzed. The analysis shows that the adapted model successfully integrates the new data sources (NDVI, temperature) and demonstrates promising, albeit preliminary, predictive performance for fire ignition risk. This positive outcome justifies proceeding with larger-scale experiments to address the reviewer's request.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After running a pilot experiment for the new wildfire application (e_17), a dedicated analysis is the logical next step. This is required to evaluate the feasibility of the adapted scheme and to make an informed decision about committing to the larger-scale experiments needed for the paper revision."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "research",
+    "topic": "Environmental risk forecasting",
+    "subject": "Engineering",
+    "event_type": "main_experiments",
+    "description": "Following the successful pilot, main experiments are run for the wildfire risk forecasting application. The model is trained and evaluated on a large-scale dataset covering multiple fire-prone regions over several years, aiming to provide strong evidence of the method's generalizability for the revised paper.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The positive analysis of the wildfire pilot study (e_18) confirmed the adapted method's feasibility. The next critical step is to scale up to main experiments to generate the robust evidence of generalizability demanded by the peer reviewers before the paper can be revised and resubmitted."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "research",
+    "topic": "Environmental risk forecasting",
+    "subject": "Engineering",
+    "event_type": "analysis",
+    "description": "A detailed analysis of the main wildfire experiment results is conducted. The findings show that the data fusion method generalizes effectively to wildfire risk forecasting, maintaining high performance and demonstrating its robustness across different environmental risk types. This provides the strong evidence needed to address the peer reviewers' comments.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the completion of the main experiments for the wildfire application (e_19), a formal analysis is the mandatory next step. This is required to confirm that the method's generalizability has been successfully demonstrated and to generate the specific findings that will be used to revise the paper in response to reviewer feedback."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "research",
+    "topic": "Environmental risk forecasting",
+    "subject": "Engineering",
+    "event_type": "writing",
+    "description": "The team revises the manuscript to address the reviewer feedback. This involves adding a new section detailing the wildfire risk experiments, including the adapted methods and the successful generalizability results. The abstract and conclusion are also updated to reflect this major addition, strengthening the paper for resubmission.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the analysis of the generalizability experiments complete (e_20), the essential next step is to incorporate these new findings into the paper. This revision directly addresses the peer reviewers' major concern and is crucial for preparing the manuscript for resubmission."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "research",
+    "topic": "Environmental risk forecasting",
+    "subject": "Engineering",
+    "event_type": "end",
+    "description": "The revised manuscript, which now includes extensive generalizability experiments, is resubmitted to the journal. Following a final round of minor revisions, the paper is accepted for publication, marking the successful completion of the research project.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has successfully navigated the entire research cycle, from initial proposal to a published paper. It has addressed major peer-review feedback by demonstrating the method's generalizability through new experiments and has incorporated these findings into a final, comprehensive manuscript. With the paper's acceptance, the project's primary goals are fulfilled, making this a natural conclusion."
+  }
+]

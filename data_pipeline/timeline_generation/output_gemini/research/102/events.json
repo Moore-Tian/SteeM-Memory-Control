@@ -1,0 +1,281 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Cloud cost-aware scheduling",
+    "subject": "CS-Systems",
+    "event_type": "proposal",
+    "description": "Initial project proposal to define the core research questions and scope for cloud cost-aware scheduling. The primary goal is to develop a scheduling algorithm that minimizes monetary cost while respecting performance SLOs, and a high-level roadmap is established.",
+    "required_artifacts": [
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the foundational event of the research project. It is essential to first establish clear research goals and a high-level plan, which will guide all subsequent design and experimentation work."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Cloud cost-aware scheduling",
+    "subject": "CS-Systems",
+    "event_type": "scheme_design",
+    "description": "Initial design of the cost-aware scheduling algorithm. The scheme is a greedy algorithm that considers current spot instance prices and predicted workload completion times to make scheduling decisions. The design specifies the inputs (workload queue, instance prices) and outputs (scheduling decisions) of the system.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the high-level proposal (e_01), the next logical step is to design a concrete technical approach. This event translates the abstract research goals into a specific algorithm (method_scheme) that can be implemented and evaluated in the next phase."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Cloud cost-aware scheduling",
+    "subject": "CS-Systems",
+    "event_type": "pilot_experiments",
+    "description": "Implemented a prototype of the greedy scheduling algorithm and ran pilot experiments using a small-scale simulator with historical spot price data. The goal was to validate the basic logic and get a preliminary sense of its cost-saving potential against a baseline 'on-demand-only' scheduler.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing the initial algorithm (e_02), the next logical step is to perform pilot experiments to validate its feasibility. This provides early, low-cost feedback on the current 'method_scheme' before committing to more extensive main experiments, and it generates the first set of 'experiment_results' for analysis."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Cloud cost-aware scheduling",
+    "subject": "CS-Systems",
+    "event_type": "analysis",
+    "description": "Analyzed the results from the pilot experiments. The analysis showed that while the greedy algorithm reduced costs compared to the baseline, it was highly susceptible to short-term price volatility, leading to frequent task rescheduling and occasional SLO violations.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After conducting pilot experiments (e_03), the logical next step is to formally analyze the 'experiment_results'. This analysis provides critical insights into the current method's strengths and weaknesses, which is necessary before proceeding to main experiments or method revision. Generating a 'paper_paragraph' at this stage helps to document the findings and begins the writing process early."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Cloud cost-aware scheduling",
+    "subject": "CS-Systems",
+    "event_type": "scheme_design",
+    "description": "Revised the scheduling algorithm to address the issues found in the pilot study analysis. The new scheme incorporates a moving average of recent spot prices to smooth out short-term volatility and adds a penalty term for task rescheduling to reduce churn and improve SLO adherence.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis in e_04 revealed that the initial greedy algorithm was flawed. Therefore, it is necessary to go back to the design phase and revise the method. This event uses the insights from the pilot 'experiment_results' to create a more robust 'method_scheme' before committing to larger-scale experiments."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Cloud cost-aware scheduling",
+    "subject": "CS-Systems",
+    "event_type": "pilot_experiments",
+    "description": "Ran a second round of pilot experiments using the revised scheduling algorithm. The experiments were specifically designed to test whether the new moving-average price smoothing and rescheduling penalties successfully mitigate the SLO violations and instability observed in the first pilot run.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the algorithm in e_05 to address flaws found in the initial analysis (e_04), it is critical to validate the fix. This second pilot study serves as a low-cost sanity check to confirm that the new 'method_scheme' performs as expected before committing resources to the full-scale main experiments."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Cloud cost-aware scheduling",
+    "subject": "CS-Systems",
+    "event_type": "analysis",
+    "description": "Analysis of the second round of pilot experiments. The results confirm that the revised algorithm with price smoothing and rescheduling penalties successfully reduces SLO violations by over 90% and lowers task churn, while still achieving significant cost savings compared to the on-demand baseline.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the second pilot study (e_06), a formal analysis is necessary to confirm that the revised algorithm (e_05) has fixed the identified issues. This step validates the current method, and its positive results provide the confidence needed to proceed with the main experiments."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Cloud cost-aware scheduling",
+    "subject": "CS-Systems",
+    "event_type": "main_experiments",
+    "description": "Launched the main set of experiments to rigorously evaluate the revised scheduling algorithm. These experiments use a wider variety of realistic workload traces and longer-term spot price histories from multiple cloud providers. The evaluation compares the proposed scheduler against several baselines, including an on-demand-only scheduler and a state-of-the-art cost-aware scheduler.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The revised algorithm was successfully validated in the second pilot study (e_07), demonstrating its stability and effectiveness. The project is now ready to move from pilot validation to comprehensive evaluation. These main experiments are necessary to collect robust data for the final analysis and to demonstrate the method's advantages over state-of-the-art baselines under realistic conditions."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Cloud cost-aware scheduling",
+    "subject": "CS-Systems",
+    "event_type": "analysis",
+    "description": "Conducted a comprehensive analysis of the main experiment results. The analysis quantifies the cost savings, SLO adherence, and task completion times of the proposed algorithm against the on-demand and state-of-the-art baselines across all tested workloads and cloud provider data.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the main experiments (e_08) completed, the critical next step is to perform a detailed analysis of the collected data. This analysis is necessary to validate the research hypotheses, quantify the benefits of the proposed method, and generate the core findings that will form the basis of the research paper."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Cloud cost-aware scheduling",
+    "subject": "CS-Systems",
+    "event_type": "writing",
+    "description": "Began drafting the full research paper. This involves writing the detailed methodology section based on the final algorithm design and the evaluation section presenting the comprehensive results from the main experiments. The goal is to create a coherent narrative that frames the problem, describes the solution, and presents the evidence of its effectiveness.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the comprehensive analysis of the main experiments in e_09, the core research findings are now stable. The logical next step is to transition from analysis to dissemination by formally documenting the methodology and results in a draft paper, building upon the existing analysis paragraphs and method design."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Cloud cost-aware scheduling",
+    "subject": "CS-Systems",
+    "event_type": "main_experiments",
+    "description": "During an internal review of the paper draft, a key weakness was identified: the lack of a sensitivity analysis for the algorithm's main parameters (the moving average window and the rescheduling penalty). A new set of targeted experiments was run to evaluate how the algorithm's performance varies with different parameter values.",
+    "required_artifacts": [
+      "method_scheme",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The writing process (e_10) often exposes gaps in the evaluation. After reviewing the draft paper, it became clear that the claims of robustness were not fully supported without a sensitivity analysis. Running these additional experiments is a necessary step to strengthen the paper and preemptively address likely reviewer feedback."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Cloud cost-aware scheduling",
+    "subject": "CS-Systems",
+    "event_type": "analysis",
+    "description": "Analyzed the results from the new sensitivity analysis experiments. The analysis determined the impact of the moving average window size and rescheduling penalty on cost and SLOs, providing practical guidance for parameter tuning and highlighting performance trade-offs.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After running the targeted sensitivity experiments in e_11 to address a gap in the evaluation, the necessary next step is to analyze these new 'experiment_results'. This analysis provides the missing evidence on parameter sensitivity, which can then be integrated into the paper to strengthen its claims."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Cloud cost-aware scheduling",
+    "subject": "CS-Systems",
+    "event_type": "writing",
+    "description": "Updated the evaluation section of the paper to incorporate the results from the sensitivity analysis. This includes adding new figures showing performance trade-offs and text that discusses the impact of parameter tuning, strengthening the paper's contribution and practical guidance.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The sensitivity analysis in e_12 was specifically conducted to fill a gap identified during the initial writing process (e_10, e_11). The logical next step is to integrate these new findings into the paper draft, which strengthens the evaluation and moves the paper closer to a submittable state."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Cloud cost-aware scheduling",
+    "subject": "CS-Systems",
+    "event_type": "writing",
+    "description": "With the evaluation section strengthened by the sensitivity analysis, the focus shifts to completing the paper's narrative. Drafted the Introduction, which motivates the problem and outlines the paper's contributions, and the Conclusion, which summarizes the findings and discusses future work.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The core experimental results and analysis are now finalized and documented in the paper draft (e_13). The logical next step is to write the framing sections—the Introduction and Conclusion—to build a complete and compelling narrative around the research contributions before a final round of polishing."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Cloud cost-aware scheduling",
+    "subject": "CS-Systems",
+    "event_type": "writing",
+    "description": "A full internal review of the complete paper draft is conducted. The team reads the paper from start to finish to polish the language, improve clarity and narrative flow, and check for consistency across the Introduction, Method, Evaluation, and Conclusion sections.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "method_scheme",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After drafting the framing sections in e_14, a complete version of the paper exists. The logical next step before submission is a comprehensive polishing and review phase to ensure the entire manuscript is coherent, well-written, and accurately reflects the research goals and results."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Cloud cost-aware scheduling",
+    "subject": "CS-Systems",
+    "event_type": "end",
+    "description": "The research paper is finalized and submitted to a top-tier systems conference. The project's main cycle is considered complete, having successfully developed, evaluated, and documented the novel cost-aware scheduling algorithm.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached a successful conclusion for this research cycle. The initial research goals have been met, the methodology was validated through extensive experiments, and a complete, polished paper was produced after internal review (e_15). The work is now ready for external peer review, marking a natural endpoint for this phase of the project."
+  }
+]

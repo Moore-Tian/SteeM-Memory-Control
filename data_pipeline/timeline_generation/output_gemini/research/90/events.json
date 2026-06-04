@@ -1,0 +1,348 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Human-AI interaction evaluation",
+    "subject": "CS-HCI",
+    "event_type": "proposal",
+    "description": "The project begins with an initial proposal to define a new framework for evaluating human-AI interaction. The team outlines the primary research questions and a high-level plan for the project, focusing on identifying gaps in current evaluation methodologies.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the first event of the project. A 'proposal' is the natural starting point, establishing the foundational research goals and a roadmap for subsequent work. No artifacts are required as this is the inception of the project."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Human-AI interaction evaluation",
+    "subject": "CS-HCI",
+    "event_type": "scheme_design",
+    "description": "Based on the initial research goals, the team begins to design the specific experimental methodology. This involves defining the tasks for human-AI collaboration, selecting appropriate performance and subjective metrics, and outlining the structure of the user study.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the high-level 'proposal' in e_01, the logical next step is to translate the abstract research goals and plan into a concrete experimental design. This 'scheme_design' event creates the methodological foundation required before any experiments can be conducted."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Human-AI interaction evaluation",
+    "subject": "CS-HCI",
+    "event_type": "pilot_experiments",
+    "description": "The team conducts a small-scale pilot study with a few participants to test the experimental setup designed in the previous step. The goal is to validate the task instructions, check the duration of the experiment, and ensure the data collection tools are working correctly.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After creating the initial 'method_scheme' in e_02, running 'pilot_experiments' is a crucial step to de-risk the project. It allows the team to identify and fix practical issues in the experimental design before committing the resources required for the main experiments, ensuring the collected data will be valid."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Human-AI interaction evaluation",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "The team analyzes the data and feedback collected from the pilot study. The analysis reveals that participants found one of the tasks confusing and that a key subjective metric showed very little variance, suggesting a ceiling effect.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After running 'pilot_experiments' (e_03), the logical next step is to perform an 'analysis' of the resulting data. This is crucial for identifying flaws in the experimental design before committing to the main study. The findings from this analysis will inform whether the 'method_scheme' needs to be revised."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Human-AI interaction evaluation",
+    "subject": "CS-HCI",
+    "event_type": "scheme_design",
+    "description": "In response to the pilot analysis, the team revises the experimental methodology. The confusing task is redesigned with clearer instructions and simplified steps, and the subjective metric showing a ceiling effect is replaced with a more sensitive, validated scale from prior HCI literature.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous 'analysis' (e_04) of the pilot study revealed critical flaws in the experimental design. It is necessary to revisit the 'scheme_design' to correct these issues before investing resources in the main experiments. This iterative refinement ensures the validity and quality of the data to be collected."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Human-AI interaction evaluation",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "While preparing for the next round of experiments, the team begins to draft the \"Methodology\" section for the paper. This initial draft describes the participant tasks, the chosen metrics, and the overall procedure based on the updated experimental design.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With a revised and more stable `method_scheme` from e_05, it is an efficient use of time to begin documenting the methodology for the research paper. This parallelizes the writing process with experimental preparations and creates the first written artifact for the final publication."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Human-AI interaction evaluation",
+    "subject": "CS-HCI",
+    "event_type": "main_experiments",
+    "description": "With a refined and validated methodology, the team launches the full-scale main experiment. They recruit a large cohort of participants to interact with the AI system under the conditions specified in the revised method scheme, aiming to collect a robust dataset.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The experimental design was revised in e_05 based on the pilot analysis (e_04), and the methodology was documented in e_06. The logical next step is to execute the refined plan and run the 'main_experiments' to collect the primary data needed to address the research goals."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Human-AI interaction evaluation",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "The team performs a comprehensive statistical analysis on the data from the main experiment. This involves processing the raw data, running statistical tests on the defined metrics, and creating visualizations to interpret the findings in relation to the research questions.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the completion of the 'main_experiments' in e_07, the essential next step is to conduct a thorough 'analysis' of the collected data. This is required to extract meaningful findings, validate or reject the project's hypotheses, and provide the substance for the results section of the paper."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Human-AI interaction evaluation",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "Following the comprehensive analysis, the team drafts the 'Results' section of the paper. This involves summarizing the statistical findings, describing the key outcomes, and creating tables and figures to visually present the data, directly addressing the research questions.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the main experiment data analyzed in e_08, the most logical next step is to document these findings. This 'writing' event translates the statistical 'experiment_results' into a narrative for the paper's results section, moving the project closer to completion."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Human-AI interaction evaluation",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "While interpreting the main experiment's outcomes, the team is puzzled by an unexpected null result for one of their key hypotheses. They conduct a post-hoc analysis, examining potential interaction effects and qualitatively coding open-ended feedback to find an explanation for this finding.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The initial analysis (e_08) was completed, but an unexpected finding requires deeper investigation before writing the paper's discussion. This additional 'analysis' is a critical step to ensure the interpretation of results is robust and to account for all outcomes, not just the ones that confirmed initial hypotheses."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Human-AI interaction evaluation",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "The post-hoc analysis provided a plausible explanation for the unexpected null result. The team now writes the 'Discussion' section of the paper, interpreting the main findings, contextualizing the null result, and relating the outcomes back to the original research goals and prior literature.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After completing the post-hoc analysis in e_10 to understand an unexpected outcome, the next logical step is to synthesize and interpret all findings. This 'writing' event focuses on drafting the 'Discussion' section, which is crucial for framing the contribution of the research and contextualizing the results in relation to the initial 'research_goals'."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Human-AI interaction evaluation",
+    "subject": "CS-HCI",
+    "event_type": "proposal",
+    "description": "The discussion of the null result leads to a broader team meeting about the project's direction. The team decides to slightly revise the project's scope, adding a new, secondary research goal to explicitly investigate the influence of user's prior experience, as this seems to be a critical confounding factor.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "The analysis in e_10 and writing of the discussion in e_11 revealed a critical, unaddressed factor: user prior experience. Instead of just noting this as a limitation, the team decides it's important enough to formally incorporate into the project. Revisiting the 'proposal' stage to update the 'research_goals' and 'research_plan' formalizes this new direction before designing a follow-up study."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Human-AI interaction evaluation",
+    "subject": "CS-HCI",
+    "event_type": "scheme_design",
+    "description": "To address the new research goal about user experience, the team designs a follow-up study. This new scheme includes a pre-experiment questionnaire to classify participants as 'novice' or 'expert' and updates the analysis plan to test for effects related to this classification.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan",
+      "method_scheme",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "After revising the 'research_goals' in e_12 to investigate the impact of user experience, the logical next step is to design a new experimental protocol. This 'scheme_design' event translates the updated goal into a concrete methodology for a follow-up experiment capable of testing the new hypothesis."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Human-AI interaction evaluation",
+    "subject": "CS-HCI",
+    "event_type": "pilot_experiments",
+    "description": "The team runs a small-scale pilot for the follow-up study. They recruit a handful of participants with varying experience levels to test the new pre-experiment questionnaire and ensure the 'novice' vs. 'expert' classification is working as intended before launching the full study.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After creating a revised 'method_scheme' in e_13 to address the new research goal, running a small 'pilot_experiments' is a prudent next step. This allows the team to validate the new classification instrument and procedure before committing the resources required for a second large-scale main experiment."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Human-AI interaction evaluation",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "The team analyzes the data from the follow-up pilot study. The analysis confirms that the pre-experiment questionnaire successfully distinguishes between 'novice' and 'expert' users and that the rest of the experimental procedure is sound.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After running a pilot for the follow-up study (e_14), the essential next step is to perform an 'analysis' of its data. This validates the new classification scheme designed in e_13 and ensures the study is ready to be run at a larger scale to address the revised 'research_goals'."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Human-AI interaction evaluation",
+    "subject": "CS-HCI",
+    "event_type": "main_experiments",
+    "description": "The team launches the second main experiment, the follow-up study designed to investigate the impact of user experience. They recruit a balanced sample of 'novice' and 'expert' participants based on the validated pre-experiment questionnaire and collect data on their interactions with the AI.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After the analysis of the follow-up pilot (e_15) confirmed the validity of the new experimental design, the project is ready for the next phase of data collection. Running the 'main_experiments' is the necessary step to gather the data required to answer the new research question about user experience introduced in e_12."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Human-AI interaction evaluation",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "The team performs a comparative analysis on the data from the second main experiment, focusing on the differences between 'novice' and 'expert' user groups. This analysis uses the pre-defined plan to test whether prior experience significantly impacts the key metrics and explains the null result observed in the first study.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After collecting data from the second 'main_experiments' in e_16, the essential next step is to conduct an 'analysis'. This is critical to answer the new research question about user experience that was formulated in e_12 and will determine the final conclusions of the project."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "Human-AI interaction evaluation",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "With conclusive results from the follow-up study, the team undertakes a major revision of the paper. They integrate the findings from both experiments into a unified narrative, updating the 'Results' and 'Discussion' sections to tell the complete story of the initial puzzling result and its subsequent explanation.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "paper_paragraph",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The analysis from the second experiment (e_17) provided the final pieces of the puzzle. It is now necessary to consolidate all findings into a coherent paper. This 'writing' event updates the paper draft to reflect the complete research arc, moving the project from data analysis to a near-complete manuscript."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "research",
+    "topic": "Human-AI interaction evaluation",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "The team focuses on finalizing the manuscript for submission. They write the Introduction, Abstract, and Conclusion sections, and perform a comprehensive proofread and edit of the entire paper to ensure narrative coherence, clarity, and correct formatting.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After the major revision in e_18 integrated all experimental findings, the core content of the paper is complete. This final 'writing' phase is the logical next step, focusing on composing the framing sections (Intro, Abstract, Conclusion) and polishing the entire document to create a submission-ready manuscript."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "research",
+    "topic": "Human-AI interaction evaluation",
+    "subject": "CS-HCI",
+    "event_type": "end",
+    "description": "With the manuscript fully drafted, edited, and proofread, the research team concludes the core work on the project. The paper, which now presents a coherent narrative across two major experiments, is deemed complete and ready for submission to a peer-reviewed venue.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached a natural conclusion. The initial research questions have been addressed, a puzzling result was investigated and explained through a follow-up study, and a complete, polished manuscript has been produced (e_19). All research activities are complete, making this the appropriate time to end the timeline."
+  }
+]

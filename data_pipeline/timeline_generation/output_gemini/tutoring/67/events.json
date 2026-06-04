@@ -1,0 +1,265 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Baseline design and fair method comparisons",
+    "subject": "DataScience",
+    "event_type": "objective_clarification",
+    "description": "The tutor and learner hold an initial diagnostic session to discuss the learner's goals for understanding baseline design and fair method comparisons. They cover the learner's current knowledge, time constraints, and what 'success' would look like.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first event in the tutoring timeline. It is essential to clarify the learner's objectives and background before creating a study plan or starting any lessons."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Baseline design and fair method comparisons",
+    "subject": "DataScience",
+    "event_type": "plan_milestones",
+    "description": "Based on the clarified objectives, the tutor creates a high-level study plan. This plan breaks down the topic into manageable milestones, such as defining baselines, selecting appropriate metrics, and designing fair experiments.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learning objectives established in the previous session, the natural next step is to create a structured study plan. This plan provides a roadmap for future lessons and ensures the tutoring is aligned with the learner's goals."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Baseline design and fair method comparisons",
+    "subject": "DataScience",
+    "event_type": "lesson",
+    "description": "The tutor delivers the first lesson as outlined in the study plan, focusing on the definition and importance of baselines. The lesson covers simple baselines (e.g., random guess, majority class) and their role in establishing a performance floor.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a study plan established, the next logical step is to begin instruction. This lesson addresses the first milestone in the plan, providing foundational knowledge that will be built upon in subsequent practice and review sessions."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Baseline design and fair method comparisons",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "The tutor assigns a practice exercise based on the recent lesson. The learner is asked to identify and justify appropriate simple baselines (e.g., majority class, random) for a given classification problem scenario.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After learning the theoretical concepts of baselines in the previous lesson, it is crucial for the learner to apply this knowledge through practice. This exercise helps solidify understanding and provides concrete work for an upcoming review session."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Baseline design and fair method comparisons",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's practice attempt at identifying appropriate baselines. The review focuses on the correctness of the chosen baselines and the clarity of the justification provided in the practice record.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the practice exercise (e_04), a review is the logical next step to assess understanding and provide corrective feedback. This process uses the practice record to identify specific strengths and weaknesses, leading to actionable guidance."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Baseline design and fair method comparisons",
+    "subject": "DataScience",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback from the last review, the tutor refines the teaching notes on simple baselines. They add a clearer example demonstrating how to articulate the justification for choosing a specific baseline, addressing a minor point of confusion for the learner.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review session provided feedback that highlighted a small gap in the learner's justification skills. Revising the teaching notes to include a more explicit example directly addresses this feedback, improves the reusability of the material, and supports the learner's consolidation of the topic."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Baseline design and fair method comparisons",
+    "subject": "DataScience",
+    "event_type": "lesson",
+    "description": "Following the study plan, the tutor delivers the next lesson on stronger, non-trivial baselines. This lesson covers using simple heuristics, rule-based models, and results from existing literature as more competitive baselines for model evaluation.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous learning cycle on simple baselines, including practice and review, is complete. According to the study plan, it is now appropriate to move to the next milestone. This lesson builds on the foundational concepts by introducing more advanced types of baselines."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Baseline design and fair method comparisons",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "The tutor assigns a new practice exercise focused on stronger baselines. The learner is asked to analyze a research problem and propose a suitable heuristic or rule-based model as a non-trivial baseline, justifying why it is a more competitive starting point than a simple baseline.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the concept of stronger baselines in the previous lesson (e_07), it is essential for the learner to apply this knowledge. This practice task reinforces the new concepts and provides a concrete basis for the upcoming review session, mirroring the successful learning loop from earlier sessions."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Baseline design and fair method comparisons",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor and learner review the practice submission on stronger baselines. They discuss the learner's proposed heuristic model and evaluate the strength of the justification for why it's a better baseline than a simple one.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on stronger baselines (e_08), a review is the logical next step to assess the learner's application of the new concepts. This allows the tutor to provide specific feedback on the learner's reasoning and ensure the topic is well understood before moving on."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Baseline design and fair method comparisons",
+    "subject": "DataScience",
+    "event_type": "lesson",
+    "description": "The tutor moves to the next topic in the study plan: selecting appropriate evaluation metrics. The lesson explains how the choice of metric (e.g., accuracy vs. F1-score) can influence the comparison and must be aligned with the problem's goals.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After successfully covering simple and strong baselines in the previous learning cycles, the curriculum progresses to the next milestone outlined in the study plan. Understanding evaluation metrics is essential for conducting a fair comparison, making this the logical next topic to address."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Baseline design and fair method comparisons",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "To solidify the concepts from the previous lesson, the tutor assigns a practice problem on selecting evaluation metrics. The learner is given a scenario involving an imbalanced dataset (e.g., medical diagnosis) and asked to choose and justify an appropriate metric over simple accuracy.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on evaluation metrics (e_10), it is crucial for the learner to apply this knowledge. This practice exercise bridges theory and application, creating a concrete record of the learner's understanding that can be assessed in the next review session."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Baseline design and fair method comparisons",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's practice submission on selecting evaluation metrics. The focus is on the justification for choosing a specific metric (e.g., F1-score) over accuracy, especially in the context of the provided imbalanced dataset scenario.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the practice exercise on evaluation metrics (e_11), a review is the logical next step to assess their understanding and provide corrective feedback. This process uses the practice record to identify specific strengths and weaknesses before proceeding to the next topic."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Baseline design and fair method comparisons",
+    "subject": "DataScience",
+    "event_type": "lesson",
+    "description": "With the learner showing good understanding of baselines and metrics, the tutor moves to the final key topic from the study plan: designing a fair comparison experiment. The lesson covers the importance of using identical training, validation, and test sets for all models, and applying the same data preprocessing steps to avoid introducing bias.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The learner has successfully completed the practice-and-review cycles for identifying baselines and selecting metrics. According to the study plan, the next logical step is to teach the principles of fair experimental setup, which integrates the previous concepts into a complete methodology."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Baseline design and fair method comparisons",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "The tutor assigns a comprehensive practice task that requires the learner to integrate all topics covered. The learner must design a full experimental plan for a given scenario, specifying the baseline model, evaluation metric, data splitting strategy, and preprocessing steps to ensure a fair comparison.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on fair experimental design (e_13), a practice session is the natural next step to assess the learner's ability to apply and synthesize all the concepts taught. This cumulative exercise provides a concrete record of their integrated understanding for a final review."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Baseline design and fair method comparisons",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor conducts a final review of the comprehensive experimental plan submitted by the learner. This capstone review assesses the learner's ability to integrate all concepts: choosing an appropriate baseline, selecting a justified metric, and outlining a fair comparison procedure.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the comprehensive practice task in e_14, a final review is essential to evaluate the learner's integrated understanding of all topics. This confirms whether the overall learning objectives have been met and provides final feedback before concluding the tutoring on this topic."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Baseline design and fair method comparisons",
+    "subject": "DataScience",
+    "event_type": "end",
+    "description": "The learner has successfully demonstrated their ability to define, select, and design fair comparisons using appropriate baselines and metrics. With the learning objectives met, the tutor and learner conclude the sessions for this topic.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has successfully completed all milestones in the study plan, culminating in a comprehensive practice task and final review (e_14, e_15) that confirmed their integrated understanding. As the stated learning objectives have been achieved, the tutoring process for this topic is now complete."
+  }
+]

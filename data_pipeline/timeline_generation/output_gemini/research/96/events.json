@@ -1,0 +1,282 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Behavioral logging and analysis",
+    "subject": "CS-HCI",
+    "event_type": "proposal",
+    "description": "This initial proposal outlines the project's core idea: to develop a new methodology for logging fine-grained user interactions within software applications. The goal is to analyze these logs to automatically identify common user workflows and pain points, providing a scalable alternative to traditional usability testing.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "Every research project must start with a foundational plan. This proposal event establishes the initial research goals and a high-level plan, which are necessary prerequisites for designing any specific methodology or experiment."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Behavioral logging and analysis",
+    "subject": "CS-HCI",
+    "event_type": "scheme_design",
+    "description": "Based on the initial proposal, the team designed the first version of the behavioral logging scheme. This scheme defines the specific events to be captured (e.g., UI element clicks, keyboard inputs, mouse trajectories) and the data format for the logs. A popular open-source image editor was chosen as the target application for the initial study.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "With the research goals and plan established in the initial proposal (e_01), the logical next step is to design a concrete technical methodology. This scheme design event translates the high-level ideas into a specific plan for data collection, creating the 'method_scheme' artifact necessary for implementation and pilot testing."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Behavioral logging and analysis",
+    "subject": "CS-HCI",
+    "event_type": "pilot_experiments",
+    "description": "A small-scale pilot study was conducted with a few internal users interacting with the target image editor. The goal was to validate the technical implementation of the logging scheme, ensuring that the defined events are captured correctly and the data format is robust. This test aimed to identify any immediate bugs or shortcomings in the data collection process.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing the initial `method_scheme` (e_02), conducting a pilot experiment is a crucial step to validate its technical feasibility and data quality. This small-scale test helps identify and fix potential issues with the logging implementation before committing resources to a larger main experiment, generating preliminary `experiment_results` for the first time."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Behavioral logging and analysis",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "The team analyzed the data collected from the pilot study. The analysis confirmed the technical stability of the logging framework, but revealed that the data's granularity was insufficient to distinguish between accidental user errors and intentional exploratory actions, a key requirement of the research goals.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "research_plan"
+    ],
+    "reason": "After a pilot experiment (e_03) generates initial `experiment_results`, a dedicated analysis is the logical next step. This analysis evaluates whether the data collected using the current `method_scheme` is sufficient to address the `research_goals`, and the findings inform the decision to either proceed or, in this case, revise the plan to include another design iteration."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Behavioral logging and analysis",
+    "subject": "CS-HCI",
+    "event_type": "scheme_design",
+    "description": "In response to the analysis of pilot data, the team revised the logging scheme to capture more contextual information. The new scheme now includes logging of mouse hover events and the duration between clicks, aiming to provide the necessary detail to differentiate between user errors and exploratory behavior.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals",
+      "research_plan",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous analysis (e_04) concluded that the initial `method_scheme` was inadequate for the research goals. This event represents a necessary iteration in the design cycle, using the insights from the pilot `experiment_results` to create a more robust data collection scheme before committing to larger experiments."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Behavioral logging and analysis",
+    "subject": "CS-HCI",
+    "event_type": "pilot_experiments",
+    "description": "With the revised data collection scheme, the team ran a second pilot experiment. The goal was to verify that the newly added contextual data, like mouse hovers and click timings, could effectively help differentiate between user errors and exploratory behaviors, which was a key failing of the first pilot.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the `method_scheme` in the previous step (e_05), a second pilot study is a necessary validation step. It ensures the new design works as intended and provides the required data granularity before the team commits to the larger and more resource-intensive main experiments. This iterative testing is a hallmark of a robust research process."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Behavioral logging and analysis",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "The team performed an in-depth analysis of the data from the second pilot study. The results were positive, confirming that the additional contextual data (mouse hovers, click timings) successfully allows for the differentiation between accidental errors and intentional exploratory user behavior, meeting a key research goal.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the second pilot experiment (e_06), an analysis is necessary to validate the revised `method_scheme`. This event confirms the method's effectiveness in meeting the `research_goals`, and as the methodology is now considered stable, the team begins drafting the corresponding section of the paper, generating the first `paper_paragraph` artifact."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Behavioral logging and analysis",
+    "subject": "CS-HCI",
+    "event_type": "main_experiments",
+    "description": "With the data collection method now validated, the team launched the main experiment by recruiting a larger and more diverse set of participants. The objective is to collect a substantial dataset of user interactions over a longer period to enable a comprehensive analysis of common workflows, errors, and behavioral patterns.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After the analysis in e_07 confirmed the success of the revised `method_scheme` in a pilot setting, the logical next step is to scale up data collection. The main experiment is crucial for gathering a sufficiently large and robust dataset to properly address the project's `research_goals`."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Behavioral logging and analysis",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "The team began the large-scale analysis of the data collected from the main experiment. Initial data processing and clustering algorithms were applied to the interaction logs to identify recurring sequential patterns, which correspond to common user workflows.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After collecting a large dataset from the main experiment (e_08), a comprehensive analysis is the necessary next step to extract meaningful findings. This event focuses on applying analytical techniques to the `experiment_results` to address the core `research_goals`, and the initial findings are summarized in a new `paper_paragraph` for the results section of the paper."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Behavioral logging and analysis",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "The team drafted the introduction and discussion sections of the paper. This involved articulating the research contribution based on the successful method validation and the initial findings from the main experiment analysis, and situating the work within the broader context of HCI research.",
+    "required_artifacts": [
+      "research_goals",
+      "paper_paragraph",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With a validated method and initial analysis results from the main experiment (e_09), it is a good time to start structuring the full research paper. Drafting the introduction and discussion helps to frame the narrative and identify any gaps in the current results that need to be addressed in subsequent analysis."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Behavioral logging and analysis",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "Building on the initial analysis that identified common workflows, the team now focuses on identifying user pain points. They develop and apply new algorithms to the main experiment data to detect patterns indicative of user struggle, such as frequent 'undo' actions, task abandonment, or inefficient tool usage.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After conducting a first-pass analysis (e_09) and drafting high-level sections of the paper (e_10), a deeper, more targeted analysis is required to fulfill all research goals. This event addresses the 'pain points' aspect of the original proposal, leveraging the rich main experiment dataset to generate a new set of findings for the paper."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Behavioral logging and analysis",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "To validate the findings on user pain points, the team conducted a qualitative review. They presented the automatically identified struggle patterns from the main experiment (e.g., frequent undos, inefficient tool sequences) to a panel of external usability experts. The experts confirmed that the majority of identified patterns corresponded to known usability issues in the software, lending credibility to the automated approach.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After using algorithms to identify 'pain points' from logs (e_11), a crucial next step is to validate whether these computational findings correspond to real-world usability problems. This expert review provides essential qualitative evidence to support the quantitative analysis, significantly strengthening the project's claims before finalizing the paper."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Behavioral logging and analysis",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "The team integrated all previously drafted sections and analysis findings into a complete first draft of the research paper. This involved structuring the narrative, refining the arguments, creating data visualizations for the results, and ensuring a cohesive flow from the introduction to the conclusion.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the core analysis and validation complete (e_11, e_12), and multiple paper sections already drafted, consolidating these pieces into a full manuscript is the critical next step. This allows the team to assess the overall story and prepare the paper for internal review and eventual submission."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Behavioral logging and analysis",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "During an internal review of the complete paper draft, a key question emerged: how novel are the automatically identified 'pain points'? To address this, the team performed a new comparative analysis, cross-referencing their findings against the public bug tracker and feature request database for the target software.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After producing a full draft (e_13), the process of internal review often uncovers weaknesses or unanswered questions in the narrative. This analysis event is a direct and realistic response to such feedback, aiming to provide stronger evidence for the novelty of the findings by comparing them against an external ground-truth source, thus preemptively addressing a likely reviewer concern."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Behavioral logging and analysis",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "The team integrated the results from the comparative analysis into the paper draft. They updated the results section to quantify the overlap between their discovered pain points and the public bug tracker, and revised the discussion to highlight the novel issues their method uniquely identified, strengthening the paper's contribution.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After performing a new analysis (e_14) to address internal feedback, the logical and necessary next step is to incorporate these new findings into the paper. This writing event directly uses the latest `experiment_results` to revise the `paper_paragraph`s, making the manuscript's arguments about novelty and contribution much stronger before submission."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Behavioral logging and analysis",
+    "subject": "CS-HCI",
+    "event_type": "end",
+    "description": "The research paper has been finalized after incorporating all analysis results, including the comparative study. The manuscript is submitted to a top-tier HCI conference. The project is considered complete for this research cycle, having successfully developed and validated a novel methodology for behavioral analysis.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has successfully navigated from proposal to a complete, revised paper draft (e_15). All core research goals have been met, the methodology has been validated (e_07), and the findings have been strengthened through multiple rounds of analysis (e_12, e_14). With a strong manuscript ready for submission, the research cycle has reached its natural conclusion."
+  }
+]

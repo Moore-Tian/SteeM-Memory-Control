@@ -1,0 +1,358 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Solutions and concentration reasoning in text problems",
+    "subject": "Chemistry",
+    "event_type": "objective_clarification",
+    "description": "The tutor meets with the learner to understand their background, goals, and struggles with chemistry word problems, specifically those involving solutions and concentration. They discuss the learner's desired outcomes and timeline for improvement.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first session, so the logical starting point is to clarify the learner's goals, background, and specific difficulties. This 'objective_clarification' event establishes the foundation for creating a tailored study plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Solutions and concentration reasoning in text problems",
+    "subject": "Chemistry",
+    "event_type": "plan_milestones",
+    "description": "The tutor uses the learner's goals to create a structured study plan with clear milestones. The plan prioritizes foundational concepts like defining concentration units before moving to more complex problem types like dilution and stoichiometry.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learning objectives established in the previous session, the logical next step is to create a roadmap for achieving them. This 'plan_milestones' event translates the high-level goals into an actionable study plan, providing structure for the upcoming lessons."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Solutions and concentration reasoning in text problems",
+    "subject": "Chemistry",
+    "event_type": "lesson",
+    "description": "Following the study plan, the tutor conducts the first lesson on foundational concepts. The session covers definitions of solute, solvent, and solution, and introduces the primary concentration unit: molarity (moles/L).",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With a study plan established, the next logical step is to begin instruction. This 'lesson' event executes the first part of the plan, focusing on foundational knowledge, and generates reusable 'teaching_notes' to solidify the concepts covered."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Solutions and concentration reasoning in text problems",
+    "subject": "Chemistry",
+    "event_type": "practice",
+    "description": "To reinforce the lesson on molarity, the tutor assigns several practice problems where the learner must calculate molarity, moles, or volume. The learner works through the problems, and the tutor records their steps and final answers.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson (e_03), the immediate next step is to apply the new knowledge to check for understanding. This 'practice' event allows the learner to actively use the concepts from the 'teaching_notes' and creates a 'practice_record' that will be essential for the upcoming review and feedback cycle."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Solutions and concentration reasoning in text problems",
+    "subject": "Chemistry",
+    "event_type": "review",
+    "description": "The tutor analyzes the learner's submitted work from the practice session. They identify a recurring mistake where the learner confuses moles with mass and often forgets to convert volume to liters, leading to incorrect molarity calculations.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the 'practice' event (e_04), a 'review' is the necessary next step to assess the learner's understanding and identify specific errors. By analyzing the 'practice_record', the tutor can create targeted, actionable feedback, which will be captured in the 'feedback_summary'."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Solutions and concentration reasoning in text problems",
+    "subject": "Chemistry",
+    "event_type": "materials_revision",
+    "description": "Based on the review, the tutor revises the teaching notes on molarity. They add a prominent section clarifying the difference between mass (grams) and moles, and include a step-by-step calculation guide that explicitly highlights the need to convert all volumes to Liters.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in the previous event (e_05) identified specific conceptual errors captured in the 'feedback_summary'. Before asking the learner to practice again, the most effective next step is to improve the instructional materials to directly address these misconceptions, making the 'teaching_notes' more robust for future review and practice."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Solutions and concentration reasoning in text problems",
+    "subject": "Chemistry",
+    "event_type": "practice",
+    "description": "To check if the recent feedback was effective, the tutor assigns a new set of targeted practice problems. These problems specifically require converting mass to moles and non-liter volumes to liters, directly addressing the misconceptions identified in the previous review.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials (e_06) based on specific feedback (e_05), the logical next step is a targeted 'practice' session. This serves to reinforce the corrected concepts and allows the tutor to verify that the learner has overcome their previous difficulties before advancing in the study plan."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Solutions and concentration reasoning in text problems",
+    "subject": "Chemistry",
+    "event_type": "review",
+    "description": "The tutor reviews the second set of practice problems and observes that the learner is now correctly converting units and distinguishing between mass and moles. The feedback confirms the learner's progress and prepares them for the next topic in the study plan.",
+    "required_artifacts": [
+      "practice_record",
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice in the previous event (e_07), a 'review' is essential to confirm that the learner has successfully addressed the misconceptions identified earlier. Analyzing the new 'practice_record' allows the tutor to provide positive reinforcement and determine readiness to proceed with the 'study_plan', capturing this in an updated 'feedback_summary'."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Solutions and concentration reasoning in text problems",
+    "subject": "Chemistry",
+    "event_type": "lesson",
+    "description": "Now that the learner has mastered basic molarity, the tutor introduces the next topic from the study plan: dilution. The lesson covers the principle of dilution (M1V1 = M2V2) and demonstrates how to solve for an unknown concentration or volume after adding more solvent.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_08) confirmed the learner's proficiency with molarity, so it is time to proceed with the 'study_plan'. This 'lesson' introduces the next logical topic, dilution, which builds directly upon the established understanding of concentration, and updates the 'teaching_notes' with this new material."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Solutions and concentration reasoning in text problems",
+    "subject": "Chemistry",
+    "event_type": "practice",
+    "description": "Following the lesson on dilution, the tutor assigns practice problems that require using the M1V1 = M2V2 formula. The learner attempts to solve for different variables (initial volume, final concentration, etc.) in various scenarios, and their work is recorded.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the new concept of dilution in the previous lesson (e_09), the logical next step is to have the learner apply this knowledge through practice. This 'practice' event creates a 'practice_record' which will be used to assess the learner's initial grasp of the dilution formula before moving on."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Solutions and concentration reasoning in text problems",
+    "subject": "Chemistry",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's attempts at the dilution problems from the previous session. They check for correct application of the M1V1=M2V2 formula and identify a minor issue where the learner sometimes uses milliliters for one volume and liters for the other within the same equation.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner practiced a new concept (dilution) in event e_10, a 'review' is the essential next step. Analyzing the 'practice_record' allows the tutor to assess comprehension, identify specific errors, and generate a 'feedback_summary' to guide the next phase of instruction."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Solutions and concentration reasoning in text problems",
+    "subject": "Chemistry",
+    "event_type": "materials_revision",
+    "description": "Based on the review of dilution problems, the tutor updates the teaching notes. A 'Common Pitfall' section is added to the dilution topic, emphasizing that volume units (V1 and V2) must be consistent within the M1V1=M2V2 calculation.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_11) identified a specific, minor error in the learner's practice. Before assigning more practice, it is effective to update the 'teaching_notes' to explicitly address this misconception, reinforcing the feedback and improving the instructional materials for future reference."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Solutions and concentration reasoning in text problems",
+    "subject": "Chemistry",
+    "event_type": "practice",
+    "description": "To confirm understanding of the recent feedback, the tutor assigns a short set of dilution problems. These problems are designed to check for unit consistency, requiring the learner to convert between mL and L within the M1V1=M2V2 formula.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching notes (e_12) to address a minor error identified in the last review (e_11), a targeted 'practice' session is necessary. This step ensures the learner has corrected their mistake regarding unit consistency before moving on to more complex topics in the study plan."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Solutions and concentration reasoning in text problems",
+    "subject": "Chemistry",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's most recent practice on dilution. They confirm that the learner is now consistently using the same units for volume (either mL or L) on both sides of the M1V1=M2V2 equation, indicating the previous misconception is resolved.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice in event e_13, a 'review' is the necessary next step to verify that the learner has corrected their error. Analyzing the new 'practice_record' allows the tutor to provide final confirmation on the topic of dilution before advancing to the next milestone in the 'study_plan'."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Solutions and concentration reasoning in text problems",
+    "subject": "Chemistry",
+    "event_type": "lesson",
+    "description": "With molarity and dilution mastered, the tutor advances to the next topic in the study plan: solution stoichiometry. The lesson explains how to use molarity as a conversion factor to relate the volume of a solution to the moles of a reactant or product in a balanced chemical equation.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_14) confirmed the learner is proficient with dilution calculations, signaling readiness to move on. Following the 'study_plan', the next logical step is a 'lesson' on a more complex topic, solution stoichiometry, which builds directly on the mastered concept of molarity. This updates the 'teaching_notes' with new, advanced content."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Solutions and concentration reasoning in text problems",
+    "subject": "Chemistry",
+    "event_type": "practice",
+    "description": "After the lesson on solution stoichiometry, the tutor provides a set of practice problems. These problems require the learner to use molarity as a conversion factor in chemical reactions, such as calculating the volume of solution needed to react with a given mass of another substance.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the introduction of solution stoichiometry in the previous lesson (e_15), it is essential for the learner to apply this new, complex skill. This 'practice' event tests their initial comprehension and ability to integrate molarity with stoichiometric calculations, generating a 'practice_record' for the tutor to analyze."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Solutions and concentration reasoning in text problems",
+    "subject": "Chemistry",
+    "event_type": "review",
+    "description": "The tutor analyzes the learner's work on the complex solution stoichiometry problems. They find that while the learner correctly uses molarity as a conversion factor, they occasionally struggle with setting up the multi-step dimensional analysis correctly, sometimes inverting conversion factors.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner practiced a complex, integrative topic (e_16), a 'review' is the necessary next step to diagnose any issues. Analyzing the 'practice_record' is crucial for identifying subtle errors in their problem-solving process and creating a 'feedback_summary' to address them before concluding the topic."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Solutions and concentration reasoning in text problems",
+    "subject": "Chemistry",
+    "event_type": "materials_revision",
+    "description": "In response to the feedback from the last review, the tutor enhances the teaching notes on solution stoichiometry. They add a visual guide and a step-by-step template for setting up dimensional analysis, explicitly showing how to map a path from the given quantity to the desired quantity to avoid inverting conversion factors.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_17) identified a specific procedural weakness with multi-step calculations. Before re-assigning practice, the most effective step is to revise the 'teaching_notes' to directly address this issue, providing the learner with a better tool to overcome the hurdle. This improves the reusable materials and prepares the learner for a final, successful practice attempt."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Solutions and concentration reasoning in text problems",
+    "subject": "Chemistry",
+    "event_type": "practice",
+    "description": "To validate the effectiveness of the revised teaching materials, the tutor assigns a final set of practice problems on solution stoichiometry. These problems specifically test the learner's ability to set up multi-step dimensional analysis correctly, reinforcing the new visual guide.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching notes (e_18) to address a specific procedural error, a targeted 'practice' session is the logical next step. This allows the learner to apply the new problem-solving template and enables the tutor to verify that the final major hurdle in the study plan has been overcome before concluding the topic."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Solutions and concentration reasoning in text problems",
+    "subject": "Chemistry",
+    "event_type": "review",
+    "description": "The tutor reviews the final practice set on solution stoichiometry, confirming that the learner now correctly applies the dimensional analysis template from the revised teaching notes. The learner successfully solves the problems, demonstrating mastery of the topic.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the final targeted practice (e_19), a 'review' is essential to formally confirm mastery of the most complex topic. Analyzing the 'practice_record' allows the tutor to provide a final, positive 'feedback_summary', verifying that the core objectives of the 'study_plan' are now met."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "Solutions and concentration reasoning in text problems",
+    "subject": "Chemistry",
+    "event_type": "end",
+    "description": "In a final wrap-up session, the tutor and learner review the journey from the initial objectives to the final practice. They confirm that all goals have been met and the learner is now confident in their ability to solve solution chemistry problems, so they conclude the tutoring.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The previous review event (e_20) confirmed that the learner has achieved mastery of all topics in the study plan, including the most complex ones. Since the initial learning objectives have been fully met and the learner's performance is stable, it is a natural point to conclude the tutoring process."
+  }
+]

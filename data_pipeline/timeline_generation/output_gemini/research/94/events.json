@@ -1,0 +1,310 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Interactive data visualization systems",
+    "subject": "CS-HCI",
+    "event_type": "proposal",
+    "description": "Define the initial research questions and high-level plan for a project on interactive data visualization systems. The project will investigate how novel interaction techniques can improve users' ability to explore complex datasets compared to standard methods.",
+    "required_artifacts": [
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This first event formalizes a pre-existing, high-level research interest (represented as the input 'research_goals') into a concrete, documented set of goals and a project plan. It marks the transition from a vague idea to a structured research project."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Interactive data visualization systems",
+    "subject": "CS-HCI",
+    "event_type": "scheme_design",
+    "description": "Translate the high-level research plan into a concrete experimental design. This involves specifying the novel interaction techniques for the visualization system, defining a baseline for comparison (e.g., standard pan-and-zoom), and outlining the user tasks and data to be used.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the initial proposal (e_01), which produced the 'research_plan' and 'research_goals', the logical next step is to design the specific methodology. This event creates the initial 'method_scheme' artifact, which is essential before any implementation or pilot experiments can begin."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Interactive data visualization systems",
+    "subject": "CS-HCI",
+    "event_type": "pilot_experiments",
+    "description": "Run a small-scale pilot study with a few participants to test the experimental setup. The goal is to identify potential issues with the task instructions, the software implementation of the interaction techniques, and the data logging process before launching the main study.",
+    "required_artifacts": [
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With the initial 'method_scheme' defined in e_02, a pilot study is the logical next step. This allows for a practical validation of the experimental design and software, ensuring feasibility and identifying necessary adjustments before committing resources to the full 'main_experiments'."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Interactive data visualization systems",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "Analyze the results from the pilot study. This involves reviewing participant feedback, checking logged interaction data for errors, and identifying usability issues. The analysis reveals that task instructions were sometimes ambiguous and the novel interaction technique had a steeper learning curve than anticipated.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After conducting the pilot experiment in e_03, the immediate next step is to analyze the collected 'experiment_results'. This analysis is crucial for interpreting the pilot's outcomes and making an informed decision on whether to proceed to the main study or, as is often the case, to revise the 'method_scheme' based on the findings."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Interactive data visualization systems",
+    "subject": "CS-HCI",
+    "event_type": "scheme_design",
+    "description": "Revise the experimental design based on pilot study feedback. The task instructions are rewritten for clarity, and a new mandatory tutorial phase is added to help participants get accustomed to the novel interaction technique before the main tasks begin.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous analysis (e_04) of the pilot 'experiment_results' revealed critical flaws in the 'method_scheme', namely ambiguous instructions and a steep learning curve. This event directly addresses those findings by revising the experimental protocol, which is a necessary step before running more effective experiments."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Interactive data visualization systems",
+    "subject": "CS-HCI",
+    "event_type": "main_experiments",
+    "description": "With the revised experimental protocol, conduct the main user study. Recruit a larger group of participants to perform the data exploration tasks using both the novel interaction system and the baseline system, collecting quantitative and qualitative data.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The 'method_scheme' was revised in e_05 to address issues found during the pilot phase. Now that the protocol is considered stable and improved, the logical next step is to execute the full-scale main experiment to collect the primary data needed to answer the 'research_goals'."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Interactive data visualization systems",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "Perform a detailed analysis of the data from the main user study. This includes statistical tests on quantitative metrics (e.g., task completion times, error rates) to compare the novel and baseline systems, and a thematic analysis of qualitative user feedback to understand the user experience.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the successful execution of the main experiments in e_06, the crucial next step is to analyze the collected 'experiment_results'. This analysis will determine the core findings of the study and directly address the initial 'research_goals'."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Interactive data visualization systems",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "Begin drafting the research paper based on the main study's outcomes. The initial focus is on writing the 'Methods' section, detailing the revised experimental protocol, and the 'Results' section, summarizing the key statistical findings and qualitative themes from the analysis.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the detailed analysis of the main experiment completed in e_07, the core findings are now available. It is a natural and productive next step to start documenting these findings for publication, beginning with the methods and results sections, which are directly supported by the existing 'method_scheme' and 'experiment_results' artifacts."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Interactive data visualization systems",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "While reviewing the initial draft of the paper, the team identifies a disconnect between quantitative and qualitative results. The novel technique led to faster task completion, but user feedback indicates it was also more confusing. A new round of analysis is performed to investigate this trade-off, correlating performance metrics with subjective confidence ratings for each participant.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The process of writing (e_08) revealed a nuanced but critical issue in the 'experiment_results' that the initial analysis (e_07) did not fully address. This event represents a common research loop where writing forces deeper reflection, prompting a return to analysis to refine the study's main findings and build a stronger narrative."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Interactive data visualization systems",
+    "subject": "CS-HCI",
+    "event_type": "proposal",
+    "description": "The deeper analysis revealed a significant trade-off between task performance and user confusion. The team decides to pivot the project's focus to frame this trade-off as a primary contribution. The research goals are revised to explicitly include investigating the reasons for this speed-confusion trade-off and its implications for designing interactive systems.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals"
+    ],
+    "reason": "The secondary analysis in e_09 produced a finding (the speed-confusion trade-off) that is more significant than the original hypothesis. This event represents a strategic pivot to reframe the project's 'research_goals' around this new, more interesting insight. This ensures the paper's narrative will be aligned with the strongest evidence from the 'experiment_results'."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Interactive data visualization systems",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "Revise the entire paper draft to align with the new research goals. The introduction and discussion sections are rewritten to frame the 'speed-confusion trade-off' as the central contribution. The results section from the previous draft is updated to more clearly present the analysis that highlights this trade-off.",
+    "required_artifacts": [
+      "research_goals",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After revising the 'research_goals' in e_10 to focus on the newly discovered trade-off, the immediate next step is to update the paper itself. This 'writing' event realigns the narrative of the 'paper_paragraph' with the project's pivoted direction, ensuring the main contribution is clearly communicated based on the latest 'experiment_results'."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Interactive data visualization systems",
+    "subject": "CS-HCI",
+    "event_type": "scheme_design",
+    "description": "To better explain the 'speed-confusion trade-off' identified in the main study, the team designs a follow-up experiment. This new design incorporates a think-aloud protocol and targeted post-task interviews to capture qualitative insights into users' cognitive load and decision-making strategies while using the novel interface.",
+    "required_artifacts": [
+      "research_goals",
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "While rewriting the paper (e_11), it became clear that while the project identified an important trade-off, it couldn't explain its cause. The revised 'research_goals' (e_10) call for this deeper understanding. This event creates a new 'method_scheme' for a follow-up study designed specifically to investigate the 'why' behind the previous 'experiment_results'."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Interactive data visualization systems",
+    "subject": "CS-HCI",
+    "event_type": "pilot_experiments",
+    "description": "Run a small-scale pilot of the follow-up study with a few participants. The primary goal is to test the feasibility of the think-aloud protocol and refine the interview questions designed to uncover the reasons for the observed speed-confusion trade-off.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing a new experimental 'method_scheme' for the follow-up study in e_12, a pilot experiment is a crucial risk-mitigation step. It allows the team to validate the new, more qualitative methods (think-aloud, interviews) before investing resources in a full-scale main experiment."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Interactive data visualization systems",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "Analyze the data from the pilot of the follow-up study. The team reviews the think-aloud transcripts and interview notes to assess if the new qualitative methods are successfully capturing insights into users' cognitive processes and the sources of confusion.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After running the pilot for the follow-up study in e_13, the immediate next step is to analyze the collected 'experiment_results'. This analysis is critical to validate the new 'method_scheme' and ensure it can effectively address the revised 'research_goals' before committing to a larger main experiment."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Interactive data visualization systems",
+    "subject": "CS-HCI",
+    "event_type": "main_experiments",
+    "description": "With the qualitative methods validated, the team conducts the main follow-up study. A new cohort of participants is recruited to use the novel system while thinking aloud, followed by in-depth interviews to gather rich data explaining the cognitive factors behind the speed-confusion trade-off.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The analysis of the pilot study (e_14) confirmed that the new qualitative 'method_scheme' is effective. Therefore, the logical next step is to execute the main follow-up experiment to collect the detailed data required to fully address the revised 'research_goals' and explain the core phenomenon."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Interactive data visualization systems",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "Conduct a thematic analysis of the qualitative data from the follow-up study, including think-aloud transcripts and interview notes. The analysis aims to extract key themes explaining the cognitive mechanisms behind the speed-confusion trade-off, linking user strategies and interface elements to moments of confusion or insight.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After collecting rich qualitative data in the main follow-up experiment (e_15), the essential next step is to perform a detailed analysis. This analysis is critical for fulfilling the revised 'research_goals' by providing a causal explanation for the core trade-off, which is the project's main focus."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Interactive data visualization systems",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "Integrate the findings from the qualitative follow-up study into the research paper. The 'Results' section is expanded to include the thematic analysis, and the 'Discussion' section is substantially rewritten to synthesize the quantitative and qualitative results, providing a comprehensive explanation for the speed-confusion trade-off.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The previous analysis (e_16) produced the key explanatory insights for the project's central research question. The immediate next step is to incorporate these new 'experiment_results' into the 'paper_paragraph', creating a more complete and coherent narrative that addresses the revised 'research_goals'."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "Interactive data visualization systems",
+    "subject": "CS-HCI",
+    "event_type": "end",
+    "description": "The project concludes after successfully synthesizing quantitative and qualitative findings into a cohesive research paper. The central 'speed-confusion trade-off' has been identified, explained, and documented, fulfilling the revised research goals and resulting in a complete manuscript ready for submission.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has completed a full research cycle: an initial study revealed an unexpected phenomenon (e_09), the goals were revised to focus on it (e_10), and a follow-up study provided a deep explanation (e_16). With the final paper draft integrating all findings (e_17), the core research objectives have been met, and the project has reached a natural conclusion."
+  }
+]

@@ -1,0 +1,355 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Avoiding overclaiming and qualifying statements properly",
+    "subject": "Writing",
+    "event_type": "objective_clarification",
+    "description": "Conducted an initial diagnostic session with the learner, a junior analyst, to understand their goals. The learner wants to improve their professional writing by learning how to qualify statements appropriately and avoid making unsupported claims in reports.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first event in the tutoring timeline. The initial step in any tutoring process is to clarify the learner's objectives and background to establish a clear foundation for all subsequent planning and instruction."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Avoiding overclaiming and qualifying statements properly",
+    "subject": "Writing",
+    "event_type": "plan_milestones",
+    "description": "Based on the initial objectives, the tutor drafted a study plan with three milestones: 1) Identifying overclaims, 2) Using hedging language, and 3) Citing evidence to support claims. The plan schedules a mix of lessons, practice exercises, and review sessions.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learning objectives defined in the previous session, the logical next step is to create a structured plan. This 'plan_milestones' event translates the high-level goals into a concrete roadmap, setting clear expectations for the learner and guiding future sessions."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Avoiding overclaiming and qualifying statements properly",
+    "subject": "Writing",
+    "event_type": "lesson",
+    "description": "Delivered the first lesson based on the study plan, focusing on 'Identifying Overclaims'. The tutor explained how to spot absolute language, generalizations without evidence, and definitive predictions, using examples from sample business reports.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the study plan established, the next logical action is to begin instruction. This lesson addresses the first milestone in the plan, 'Identifying overclaims', providing the foundational knowledge the learner needs before they can practice the skill."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Avoiding overclaiming and qualifying statements properly",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "Assigned the learner a practice exercise to apply the concepts from the previous lesson. The task involved highlighting and categorizing overclaims (e.g., absolute language, unsupported generalizations) in a set of sample business report excerpts.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After teaching the concept of identifying overclaims, the next logical step is to have the learner apply this knowledge through targeted practice. This event creates a record of the learner's performance, which is essential for the upcoming review and feedback session."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Avoiding overclaiming and qualifying statements properly",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor reviewed the learner's submitted practice exercise. They analyzed the learner's annotations from the practice record, noting a good ability to spot absolute language but some difficulty in identifying subtle, unsupported generalizations. The tutor prepared specific feedback to address these gaps.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the practice exercise, the natural next step is to review their work. This 'review' event uses the 'practice_record' to assess understanding, identify specific areas of difficulty, and generate actionable feedback, which is crucial for reinforcing learning and planning subsequent steps."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Avoiding overclaiming and qualifying statements properly",
+    "subject": "Writing",
+    "event_type": "materials_revision",
+    "description": "Based on the review, the tutor revised the 'Identifying Overclaims' teaching notes. They added a new section with more examples of subtle, unsupported generalizations and included a checklist to help differentiate them from well-supported inferences.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review identified that the learner struggled with a specific concept. Before moving to new practice or topics, it is effective to revise the teaching materials to address this weakness directly, ensuring the learner has better resources for the next attempt."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Avoiding overclaiming and qualifying statements properly",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "To reinforce the previous feedback, the tutor assigned a second, more focused practice exercise. This task used the revised teaching materials and required the learner to specifically identify and explain subtle, unsupported generalizations in a new set of report excerpts.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials to address a specific weakness found during the last review, the next logical step is a follow-up practice session. This allows the learner to apply the new guidance and provides a way to assess if the targeted feedback and revised materials were effective before moving on."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Avoiding overclaiming and qualifying statements properly",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor reviewed the learner's second practice attempt, focusing on the identification of subtle, unsupported generalizations. The review confirmed that the learner's performance improved significantly, demonstrating a solid grasp of the concept after the targeted remediation.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice in the previous event (e_07), a 'review' is necessary to assess its effectiveness. This step evaluates the learner's progress on the specific weakness identified earlier (e_05) and determines if they are ready to move on to the next milestone in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Avoiding overclaiming and qualifying statements properly",
+    "subject": "Writing",
+    "event_type": "lesson",
+    "description": "With the first milestone mastered, the tutor delivered a lesson on the second milestone from the study plan: 'Using Hedging Language'. The lesson covered techniques for qualifying statements, such as using modal verbs (e.g., 'may', 'could'), adverbs of probability (e.g., 'likely', 'possibly'), and cautious phrasing ('it appears that...').",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_08) confirmed the learner's proficiency in identifying overclaims. Therefore, according to the 'study_plan', the next logical step is to proceed to the second milestone and teach the learner how to use hedging language to qualify their own statements."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Avoiding overclaiming and qualifying statements properly",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "The tutor assigned a practice exercise where the learner had to rewrite a series of overclaimed sentences from a sample report. The task required applying the hedging techniques from the last lesson, such as using modal verbs and adverbs, to make the claims more accurate and defensible.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on 'Using Hedging Language' (e_09), this practice session is designed to let the learner actively apply the new concepts. Creating a 'practice_record' of their attempts is essential for evaluating their understanding and providing targeted feedback in the next review."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Avoiding overclaiming and qualifying statements properly",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor reviewed the learner's practice exercise on rewriting overclaimed sentences. The review focused on how effectively the learner applied hedging language, noting a tendency to overuse simple words like 'may' and underuse more nuanced phrases like 'it seems likely that...'.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the practice on applying hedging language (e_10), a review is essential to evaluate their application of the concepts. This step provides specific feedback on their performance and determines if they have mastered the second milestone or require further practice before moving on."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Avoiding overclaiming and qualifying statements properly",
+    "subject": "Writing",
+    "event_type": "materials_revision",
+    "description": "In response to the last review, the tutor expanded the 'Using Hedging Language' teaching notes. They added a new section with a table of hedging phrases categorized by their level of certainty, providing the learner with a richer vocabulary for qualifying claims.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_11) found that the learner overused simple hedging words. This 'materials_revision' event directly addresses that feedback by improving the teaching materials, giving the learner better tools before they practice the skill again. This follows the successful remediation loop seen earlier in the timeline."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Avoiding overclaiming and qualifying statements properly",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "The tutor assigned a follow-up practice exercise on hedging. The learner was asked to rewrite another set of absolute statements, this time specifically using the new table of categorized hedging phrases from the revised teaching notes to vary their word choice.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials (e_12) to address the learner's overuse of simple hedging words (identified in e_11), this targeted practice is the logical next step. It allows the learner to apply the new resources and provides an opportunity to assess their improvement before moving on."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Avoiding overclaiming and qualifying statements properly",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor reviewed the learner's second practice on hedging, confirming that the learner successfully used a wider variety of phrases from the revised teaching notes. The feedback noted this marked improvement and confirmed mastery of the second milestone.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice in e_13, a 'review' is the necessary next step to evaluate its success. This review assesses whether the revised materials and focused practice helped the learner overcome the previously identified weakness, clearing the way to begin the final milestone."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Avoiding overclaiming and qualifying statements properly",
+    "subject": "Writing",
+    "event_type": "lesson",
+    "description": "Having confirmed mastery of the first two milestones, the tutor proceeded to the final milestone: 'Citing evidence to support claims'. The lesson focused on how to properly attribute information, link claims to data points in a report, and use phrases that signal evidence-based reasoning.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_14) confirmed the learner's mastery of hedging language. According to the original 'study_plan', the next logical step is to teach the third and final milestone, which involves strengthening claims by properly citing evidence."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Avoiding overclaiming and qualifying statements properly",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "The tutor assigned a practice task for the final milestone. The learner was given a small data table and a list of unsupported claims, and was asked to rewrite the claims by linking them directly to the data using appropriate citation phrases taught in the previous lesson.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on citing evidence (e_15), the natural next step is for the learner to apply this skill through targeted practice. This event creates a record of their work, which is essential for the tutor to review and assess their mastery of the final milestone."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Avoiding overclaiming and qualifying statements properly",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor reviewed the learner's practice on citing evidence. The analysis of the practice record showed that the learner could correctly link claims to data but occasionally used awkward or imprecise citation phrasing, which was noted for feedback.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on the final milestone (e_16), a 'review' is the necessary next step to evaluate the learner's performance. This review assesses their ability to cite evidence, identifies any remaining issues, and generates feedback to determine if the core learning objectives have been met."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Avoiding overclaiming and qualifying statements properly",
+    "subject": "Writing",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback from the last review, the tutor updated the 'Citing Evidence' teaching notes. A new section was added with a list of professional, non-awkward phrases for linking claims to data, such as 'As indicated by the survey results...' or 'This trend is supported by...'.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_17) identified a minor but specific issue with the learner's phrasing when citing evidence. Consistent with the prior remediation loops (e_06, e_12), this 'materials_revision' event addresses the feedback directly by enhancing the teaching materials, providing the learner with concrete examples to improve their writing style."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Avoiding overclaiming and qualifying statements properly",
+    "subject": "Writing",
+    "event_type": "practice",
+    "description": "The tutor assigned a final targeted practice exercise on citing evidence. The learner was asked to revise a set of claims by linking them to data, with an emphasis on using the professional phrasing examples from the newly revised teaching notes.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the revision of teaching materials in the previous step (e_18), this practice session is necessary for the learner to apply the new guidance on professional phrasing. It creates a new practice record to assess if the specific weakness identified in the last review (e_17) has been resolved."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Avoiding overclaiming and qualifying statements properly",
+    "subject": "Writing",
+    "event_type": "review",
+    "description": "The tutor reviewed the final practice on citing evidence, confirming that the learner was now able to use professional and varied phrasing from the revised notes. This review confirmed mastery of the final milestone and the overall learning objectives.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the final targeted practice (e_19), this review is the necessary final check to confirm that the learner has overcome the last identified weakness. By validating their performance on this last milestone, it confirms that the overall learning objectives have been met, paving the way to conclude the tutoring."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "Avoiding overclaiming and qualifying statements properly",
+    "subject": "Writing",
+    "event_type": "end",
+    "description": "The tutor and learner held a final session to summarize progress. With all three milestones from the study plan successfully mastered and confirmed through practice and review, the formal tutoring engagement is concluded.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The previous review confirmed that the learner has mastered all key objectives, including identifying overclaims, using hedging language, and citing evidence. Since the goals outlined in the 'learning_objectives' and 'study_plan' have been met, it is appropriate to conclude the tutoring timeline."
+  }
+]

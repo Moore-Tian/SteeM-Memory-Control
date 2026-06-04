@@ -1,0 +1,293 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Calibration of probabilistic predictions",
+    "subject": "CS-AI/ML",
+    "event_type": "proposal",
+    "description": "Initial project proposal. The goal is to investigate why modern neural networks are often miscalibrated and to develop a new post-hoc calibration method that is both effective and computationally efficient.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the first event of the project. A proposal is the natural starting point, establishing the initial research goals and a high-level plan. No prior artifacts are required as this event initiates the research process."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Calibration of probabilistic predictions",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "Initial design of the experimental scheme. The plan is to benchmark several existing calibration methods (like Temperature Scaling and Isotonic Regression) on standard image classification datasets (CIFAR-100, ImageNet) and compare them against a newly proposed parametric method, Vector Scaling with Bias (VSB).",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the initial proposal (e_01), the next logical step is to design a concrete experimental and methodological scheme. This event translates the high-level research goals into a specific plan for experiments and defines the initial version of the proposed method."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Calibration of probabilistic predictions",
+    "subject": "CS-AI/ML",
+    "event_type": "pilot_experiments",
+    "description": "Pilot experiments are conducted on the CIFAR-100 dataset to test the implementation of the new Vector Scaling with Bias (VSB) method. The goal is to ensure the experimental setup is working correctly and to get a preliminary performance comparison against the Temperature Scaling baseline.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With the experimental scheme designed (e_02), a pilot study is the logical next step to validate the implementation and methodology on a smaller scale. This helps to identify any potential issues and gather preliminary data before investing time and computational resources in the full-scale main experiments."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Calibration of probabilistic predictions",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "Analysis of the pilot experiment results. The findings indicate that while the new Vector Scaling with Bias (VSB) method is functional, its performance improvement over the Temperature Scaling baseline is not statistically significant. The analysis suggests the model might be overfitting the calibration set, pointing to a need for method refinement before running large-scale experiments.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After conducting pilot experiments (e_03), it is crucial to analyze the results to assess the viability of the proposed method. This analysis step formalizes the findings from the pilot, concluding that the current method is not yet sufficient and needs revision, thus preventing a premature and wasteful jump to main experiments."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Calibration of probabilistic predictions",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "The experimental scheme is revised based on the pilot analysis. To address the overfitting issue with the Vector Scaling with Bias (VSB) method, a regularization term (L2 penalty) is added to its loss function. This modification aims to constrain the magnitude of the scaling parameters and improve the method's generalization to the test set.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis of the pilot experiments (e_04) showed that the proposed VSB method was overfitting. A direct and logical response to this finding is to go back to the design phase and revise the method. This event updates the `method_scheme` to incorporate regularization, a standard technique to combat overfitting, before attempting further experiments."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Calibration of probabilistic predictions",
+    "subject": "CS-AI/ML",
+    "event_type": "pilot_experiments",
+    "description": "A second round of pilot experiments is conducted to evaluate the revised Vector Scaling with Bias (VSB) method, now incorporating L2 regularization. The experiment is run on CIFAR-100, comparing the regularized VSB against the original VSB and the Temperature Scaling baseline to specifically check if the overfitting issue has been mitigated.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the method to include regularization in e_05, it is essential to test whether this change has solved the overfitting problem identified in the first pilot study (e_04). Running another targeted pilot experiment is the most efficient way to validate the fix before proceeding to more computationally expensive main experiments."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Calibration of probabilistic predictions",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "Analysis of the second round of pilot experiments. The results are promising: the regularized Vector Scaling with Bias (VSB) method now significantly outperforms both the non-regularized version and the Temperature Scaling baseline on the CIFAR-100 validation set. The analysis confirms that the L2 penalty successfully mitigated the overfitting issue observed previously.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the second pilot experiment (e_06), it is essential to analyze the new results to see if the method revision from e_05 was successful. This analysis provides the critical go/no-go decision for proceeding with the now-validated method, and the positive outcome justifies moving on to the main experiments."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Calibration of probabilistic predictions",
+    "subject": "CS-AI/ML",
+    "event_type": "main_experiments",
+    "description": "With the revised method validated, the main experiments are launched. The regularized Vector Scaling with Bias (VSB) method and all baselines are run on the full CIFAR-100 test set. The experiments are also scaled up to the much larger ImageNet dataset to evaluate performance on a more challenging, large-scale benchmark.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The analysis of the second pilot experiment (e_07) confirmed that the regularized VSB method is effective and addresses the overfitting issue. Therefore, the logical progression is to execute the main experiments as planned, gathering the core results on larger datasets needed to substantiate the research claims."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Calibration of probabilistic predictions",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "A comprehensive analysis of the main experiment results is performed. The analysis confirms that the regularized VSB method consistently and significantly outperforms all baselines on both CIFAR-100 and the large-scale ImageNet dataset, establishing its effectiveness and generalizability.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After running the main experiments (e_08), a thorough analysis is the necessary next step to interpret the findings and determine if the research goals have been met. This analysis will produce the core quantitative conclusions of the study and can be used to start drafting the results section of the paper."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Calibration of probabilistic predictions",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "With the main results confirmed, work begins on drafting the core sections of the research paper. The 'Methods' section is written to detail the final regularized VSB approach, and a first draft of the 'Results' section is created to present the key findings from the CIFAR-100 and ImageNet experiments.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The comprehensive analysis of the main experiments (e_09) provided strong, positive results, making this the opportune moment to start writing the paper. This event translates the finalized methodology and conclusive results into a draft, moving the project towards publication."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Calibration of probabilistic predictions",
+    "subject": "CS-AI/ML",
+    "event_type": "main_experiments",
+    "description": "While drafting the paper, the team realizes the need for an ablation study to better justify the components of their VSB method. New experiments are designed and run to isolate the individual contributions of the 'vector' scaling and the 'bias' term, comparing them against the full method and baselines.",
+    "required_artifacts": [
+      "method_scheme",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After drafting the initial results section (e_10), it is common for researchers to identify gaps in their argument. An ablation study is a logical next step to provide deeper insight into why the proposed method works, strengthening the paper's contribution and pre-empting potential reviewer critiques."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Calibration of probabilistic predictions",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The results of the ablation study are analyzed. The findings confirm that both the vector scaling and the bias term are crucial components; removing either one leads to a significant degradation in calibration performance, thus justifying the design of the full VSB method.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After running the ablation experiments in e_11, the immediate and necessary next step is to analyze the results. This analysis provides the evidence required to justify the specific design choices of the proposed method and will be incorporated into the paper to strengthen its arguments."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Calibration of probabilistic predictions",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "The paper draft is updated to incorporate the findings from the ablation study. The 'Results' section is expanded with a new subsection detailing the ablation experiments and their outcomes, strengthening the justification for the VSB method's design.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the analysis of the ablation study complete (e_12), the immediate next step is to integrate these crucial findings into the paper draft. This strengthens the paper's core argument by providing direct evidence for the necessity of each component in the proposed method."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Calibration of probabilistic predictions",
+    "subject": "CS-AI/ML",
+    "event_type": "proposal",
+    "description": "The team revisits the initial research goals to align them with the final results. The project's contribution is refined to emphasize not just the new VSB method, but the critical role of regularization in overcoming overfitting for parametric calibration models, as demonstrated by the experiments.",
+    "required_artifacts": [
+      "research_goals",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "research_goals"
+    ],
+    "reason": "With the main experimental results and ablation studies analyzed (e_12) and written up (e_13), the project's core contribution is now clear. It is a common and valuable step to refine the initial research goals to precisely match the final findings, ensuring the paper's narrative is tightly focused on the demonstrated achievements."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Calibration of probabilistic predictions",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "The Introduction and Conclusion sections of the paper are drafted. The Introduction is written to motivate the problem based on the newly refined research goals, and the Conclusion summarizes the key findings, including the effectiveness of the regularized VSB method and the broader implications for parametric calibration.",
+    "required_artifacts": [
+      "research_goals",
+      "paper_paragraph",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Now that the research goals have been refined (e_14) and the core results sections have been drafted (e_13), the next logical step is to write the framing sections of the paper. Drafting the Introduction and Conclusion creates a complete first version of the manuscript, aligning the narrative with the final, demonstrated contributions of the project."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Calibration of probabilistic predictions",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "The team adds a comprehensive 'Related Work' section to the paper to properly contextualize their method. The entire manuscript is then polished for clarity, consistency, and narrative flow, preparing the final submission-ready version.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With a complete first draft available from e_15, a final writing pass is necessary to produce a polished, submission-ready manuscript. This includes adding the crucial 'Related Work' section and refining the entire text, which is a standard step before concluding a research project."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Calibration of probabilistic predictions",
+    "subject": "CS-AI/ML",
+    "event_type": "end",
+    "description": "The research project concludes with the submission of the polished manuscript to a top-tier machine learning conference. The work successfully developed and validated the regularized VSB method, and the results are now ready for peer review.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached a natural conclusion. The research goals were met and refined, the proposed method was validated through extensive experiments, and a complete, polished manuscript has been produced (e_16). All core research activities are complete, making this the appropriate time to end the timeline."
+  }
+]

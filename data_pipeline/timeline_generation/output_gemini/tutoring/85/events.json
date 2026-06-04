@@ -1,0 +1,348 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Communication for coordination and expectation setting",
+    "subject": "LifeSkills",
+    "event_type": "objective_clarification",
+    "description": "Conducted an initial diagnostic session to understand the learner's goals for improving communication skills in a professional setting. We discussed their role, common challenges with team coordination and setting stakeholder expectations, and defined success criteria for the tutoring.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first event in the tutoring timeline. The initial step in any tutoring process is to clarify the learner's goals, background, and constraints to establish a foundation for a tailored learning plan. This event produces the initial 'learning_objectives' artifact."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Communication for coordination and expectation setting",
+    "subject": "LifeSkills",
+    "event_type": "plan_milestones",
+    "description": "Based on the clarified objectives, we collaboratively outlined a study plan with key milestones. The plan includes stages for learning foundational models of communication, practicing specific scenarios (e.g., project kick-offs, progress updates), and reviewing outcomes.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learning objectives defined in the previous session, the next logical step is to create a structured study plan. This plan breaks down the high-level goals into actionable milestones, providing a clear roadmap for the upcoming tutoring sessions."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Communication for coordination and expectation setting",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "Delivered the first lesson as per the study plan, focusing on a foundational framework for clear communication: the 'Purpose, Context, Details, Next Steps' (PCDN) model. We discussed how to apply this model to structure project updates and requests to stakeholders.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the creation of the study plan, the logical next step is to begin instruction with the first core concept. This lesson introduces a foundational communication framework and generates the initial 'teaching_notes' artifact, which can be refined and reused in future sessions."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Communication for coordination and expectation setting",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "Assigned a practice task for the learner to apply the 'PCDN' framework. The task involved drafting a project progress update email to a manager, simulating a common professional scenario. The learner's draft and thought process were recorded.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing a new framework in the previous lesson, the most effective next step is to have the learner apply it through targeted practice. This solidifies their understanding and creates a concrete work product ('practice_record') that can be analyzed in the next review session."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Communication for coordination and expectation setting",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "Reviewed the learner's draft email from the practice session. We analyzed its structure against the 'PCDN' framework, identifying strengths in stating the purpose and areas for improvement in clarifying context and defining clear next steps.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the practice task, the immediate next step is to review their work. This allows for timely feedback, correction of misconceptions about the 'PCDN' framework, and identification of specific areas for improvement, all of which are captured in the new 'feedback_summary' artifact."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Communication for coordination and expectation setting",
+    "subject": "LifeSkills",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback from the last review, the teaching notes for the 'PCDN' framework were updated. More explicit examples and a checklist for the 'Context' and 'Next Steps' sections were added to address the specific weaknesses observed in the learner's practice draft.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review session produced feedback highlighting specific areas of difficulty for the learner. A logical next step is to revise the instructional materials to directly address these points, making the concepts clearer before the learner attempts another practice exercise. This improves the reusability and effectiveness of the 'teaching_notes'."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Communication for coordination and expectation setting",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "To reinforce the learning from the previous review, the learner was assigned a second practice task using the revised 'PCDN' framework. This time, they drafted an email to a colleague to delegate a task, focusing on clearly defining the context and desired next steps.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After reviewing the learner's first attempt and revising the teaching materials to address weaknesses, the next logical step is another practice round. This allows the learner to apply the feedback and use the improved notes on a new scenario, consolidating their understanding and creating a new artifact to measure progress."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Communication for coordination and expectation setting",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "Reviewed the learner's second practice draft (task delegation email). We compared it to the revised 'PCDN' checklist, noting significant improvement in providing clear context and actionable next steps, which confirmed the learner's grasp of the core framework.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed a second practice task (e_07) using revised materials, the immediate next step is to review their work. This assesses whether the previous feedback and material revisions were effective, and it provides updated, actionable feedback captured in a new 'feedback_summary' artifact."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Communication for coordination and expectation setting",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "With the learner showing mastery of the PCDN framework, we moved to the next milestone in the study plan: proactively managing expectations. This lesson introduced the 'Situation-Impact-Resolution' (SIR) model for communicating project delays or issues to stakeholders.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_08) confirmed the learner's grasp of the foundational communication framework. As per the study plan, the next logical step is to introduce a new, more advanced concept for handling challenging communication scenarios, thus progressing to the next learning milestone."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Communication for coordination and expectation setting",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "Assigned a practice task for the learner to apply the 'Situation-Impact-Resolution' (SIR) model. The scenario involves drafting a Slack message to their team lead explaining an unexpected delay on a key deliverable and outlining a proposed resolution.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the new SIR model for managing expectations in the previous lesson (e_09), the logical next step is for the learner to apply it in a targeted practice exercise. This helps solidify their understanding and creates a 'practice_record' for the upcoming review session."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Communication for coordination and expectation setting",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "Reviewed the learner's practice draft of the Slack message applying the 'Situation-Impact-Resolution' (SIR) model. We analyzed the clarity of the 'Situation' description and the feasibility of the 'Resolution', identifying that the 'Impact' section could be more specific.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session (e_10) on the new 'SIR' model, the immediate next step is to review the learner's work. This allows for timely analysis and feedback, helping to correct any misunderstandings of the new concept before they become ingrained and creating a new 'feedback_summary' to guide the next steps."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Communication for coordination and expectation setting",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "The learner was asked to revise their previous Slack message draft based on the feedback provided. The focus was on elaborating the 'Impact' section of the SIR model to more concretely explain the consequences of the delay on other team members and the project timeline.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "The previous review (e_11) identified a specific weakness in the learner's application of the SIR model. A targeted practice session to revise the work based on direct feedback is the most effective way to reinforce the concept and check for understanding before moving on."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Communication for coordination and expectation setting",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "Reviewed the learner's revised Slack message. The revision showed a much stronger 'Impact' section, demonstrating that the learner successfully incorporated the feedback and now has a solid grasp of the 'Situation-Impact-Resolution' model.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner revised their practice work in the previous step (e_12), the logical next action is to review that revision. This step confirms whether the feedback was effective and the learner has now mastered the specific skill, allowing the tutoring to progress to the next topic."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Communication for coordination and expectation setting",
+    "subject": "LifeSkills",
+    "event_type": "plan_milestones",
+    "description": "Held a checkpoint session to review progress against the original study plan. We acknowledged the learner's successful mastery of the 'PCDN' and 'SIR' models and confirmed the next milestone: applying these frameworks in a live, role-played conversation rather than just written formats.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "The learner has successfully completed two major learning modules (PCDN and SIR). This is a natural point to pause, review the overall progress against the study plan and learning objectives, and confirm or adjust the next steps, ensuring the plan remains relevant and the learner is engaged."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Communication for coordination and expectation setting",
+    "subject": "LifeSkills",
+    "event_type": "lesson",
+    "description": "Delivered a lesson on adapting the PCDN and SIR frameworks for verbal communication, as per the updated study plan. We discussed strategies for managing conversational flow, using appropriate tone, and applying the frameworks in a real-time, interactive setting.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The study plan was just updated to include live role-playing. Before practicing this new, more complex skill, a preparatory lesson is needed to teach the learner how to adapt the previously learned written frameworks for synchronous, spoken conversation."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Communication for coordination and expectation setting",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "Conducted the first live role-playing practice session as planned. The learner played the role of a team lead giving a project status update to a manager (played by the tutor) in a simulated video call, applying the PCDN framework verbally.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on adapting frameworks for verbal communication, the next logical step is to practice this skill in a realistic, interactive scenario. This role-play exercise allows the learner to apply the theory from the previous lesson and creates a 'practice_record' for a detailed review."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Communication for coordination and expectation setting",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "Reviewed the recording of the live role-play session. We analyzed the learner's verbal application of the PCDN framework, noting good use of tone and structure but identifying moments where they could have been more concise and checked for understanding more frequently.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After conducting a complex practice exercise like a live role-play (e_16), the immediate next step is to review the performance. This provides specific, actionable feedback on applying the learned frameworks in a dynamic, verbal context and generates a 'feedback_summary' to guide the next practice session."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Communication for coordination and expectation setting",
+    "subject": "LifeSkills",
+    "event_type": "materials_revision",
+    "description": "Following the review of the live role-play, the teaching notes on adapting frameworks for verbal communication were updated. New sections were added with specific tips on maintaining conciseness and techniques for periodically checking for audience understanding.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_17) highlighted specific weaknesses in the learner's verbal delivery. It is a good practice to codify this feedback into the teaching materials, improving their clarity and reusability for the next practice session and for future reference."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Communication for coordination and expectation setting",
+    "subject": "LifeSkills",
+    "event_type": "practice",
+    "description": "Conducted a second live role-playing practice session, this time using the 'Situation-Impact-Resolution' (SIR) framework verbally. The learner simulated a call with a client to communicate a project scope change, focusing on applying the feedback about conciseness and checking for understanding.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching notes based on the last review, the next step is another practice session to apply the new guidance. This exercise allows the learner to reinforce their skills in a different context (verbal SIR model) and provides a new performance record to evaluate their improvement."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Communication for coordination and expectation setting",
+    "subject": "LifeSkills",
+    "event_type": "review",
+    "description": "Reviewed the recording of the second live role-play session. We noted significant improvement in conciseness and the learner's proactive use of questions to check for understanding, confirming their ability to apply the SIR framework effectively in a live, verbal context.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the second live practice session (e_19), a review is necessary to evaluate the learner's performance and determine if they have successfully integrated the previous feedback. This step provides a final assessment of their skill in applying complex frameworks verbally and generates a summary of their progress."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "Communication for coordination and expectation setting",
+    "subject": "LifeSkills",
+    "event_type": "end",
+    "description": "Conducted a final wrap-up session to conclude the tutoring engagement. We reviewed the learner's journey from the initial objectives to their demonstrated mastery of the PCDN and SIR frameworks in both written and verbal formats, and discussed strategies for continued self-improvement.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The previous review (e_20) confirmed the learner's proficiency in applying the core communication frameworks in complex, live scenarios. With all major learning objectives from the study plan met and performance stable, the tutoring process has reached its natural conclusion."
+  }
+]

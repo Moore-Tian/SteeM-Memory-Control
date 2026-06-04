@@ -1,0 +1,329 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Numerical PDE simulation pipelines",
+    "subject": "Mathematics",
+    "event_type": "proposal",
+    "description": "Initial project proposal to investigate and develop a more efficient and modular pipeline for numerical PDE simulations. The core idea is to automate the setup, execution, and post-processing stages, which are often manual and error-prone. Key challenges identified include component integration and data management.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the first event of the research project. A proposal is the necessary starting point to define the scope, establish initial research questions and goals, and create a high-level plan. No prior artifacts exist, so this event creates the foundational documents for the project."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Numerical PDE simulation pipelines",
+    "subject": "Mathematics",
+    "event_type": "scheme_design",
+    "description": "Based on the initial proposal, a detailed architectural design for the simulation pipeline is developed. This includes selecting specific software components (e.g., Gmsh for meshing, FEniCS for solving, ParaView for visualization) and defining the interfaces and data flow between them. The design emphasizes modularity to allow for easy substitution of components.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the initial proposal (e_01), the next logical step is to translate the high-level research plan and goals into a concrete technical design. This scheme design phase is crucial for defining the methodology before any implementation or pilot experiments can begin."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Numerical PDE simulation pipelines",
+    "subject": "Mathematics",
+    "event_type": "pilot_experiments",
+    "description": "A small-scale pilot study is conducted to test the designed simulation pipeline. A simple 2D Poisson equation is used as the test case to verify that data flows correctly from meshing (Gmsh) to solving (FEniCS) and finally to visualization (ParaView). The primary goal is to identify any major integration bottlenecks or software compatibility issues.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With a detailed method_scheme established in e_02, conducting pilot experiments is the logical next step. This allows for an initial validation of the proposed pipeline on a manageable scale, ensuring the components work together as intended before committing to larger, more complex simulations. These initial results provide the first empirical feedback on the design's feasibility."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Numerical PDE simulation pipelines",
+    "subject": "Mathematics",
+    "event_type": "analysis",
+    "description": "The results from the pilot study are analyzed. While the pipeline correctly solved the 2D Poisson equation, performance metrics indicate a significant data I/O bottleneck when converting solution files for visualization. The core components are functional, but the interface 'glue' code needs optimization before scaling up.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After running the pilot experiments (e_03), a formal analysis of the results is necessary to evaluate the success of the initial design (e_02) and identify areas for improvement. This step interprets the raw `experiment_results` and provides the insights needed for the next iteration of the project. Generating a `paper_paragraph` at this stage is a common practice to document findings while they are fresh."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Numerical PDE simulation pipelines",
+    "subject": "Mathematics",
+    "event_type": "scheme_design",
+    "description": "Based on the analysis of the pilot study, the pipeline's data transfer mechanism is redesigned. The team decides to replace the slow file-based data conversion with an in-memory data bridge using a more efficient format like HDF5. This revision specifically targets the I/O bottleneck identified between the FEniCS solver and the ParaView visualization stage.",
+    "required_artifacts": [
+      "method_scheme",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous analysis (e_04) identified a critical performance bottleneck, rendering the initial design unsuitable for large-scale experiments. It is therefore necessary to revisit the scheme design (e_02) and revise the methodology to address this specific issue. This iterative refinement of the method is a crucial step before proceeding to more comprehensive experiments."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Numerical PDE simulation pipelines",
+    "subject": "Mathematics",
+    "event_type": "pilot_experiments",
+    "description": "A second round of pilot experiments is conducted using the revised pipeline design. The same 2D Poisson test case is used to directly compare the performance of the new in-memory data bridge against the previous file-based approach. The focus is on measuring data transfer speeds and overall execution time to validate the fix.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the methodology in e_05 to address a critical bottleneck, it is essential to validate that the changes were successful. Running another pilot experiment allows for a direct, controlled comparison to confirm that the performance issue is resolved before proceeding to more complex and resource-intensive main experiments."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Numerical PDE simulation pipelines",
+    "subject": "Mathematics",
+    "event_type": "analysis",
+    "description": "The performance results from the second pilot run are analyzed. The new in-memory data bridge shows a 50x speed-up in data transfer compared to the previous file-based method, confirming the fix is successful. The overall pipeline is now deemed efficient enough for more complex, large-scale simulations.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After running a new pilot experiment (e_06) to test the revised pipeline, a formal analysis is required to quantify the improvement and validate the fix. This step is crucial to confirm that the performance bottleneck identified in e_04 has been resolved before proceeding to the main, more resource-intensive experiments."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Numerical PDE simulation pipelines",
+    "subject": "Mathematics",
+    "event_type": "main_experiments",
+    "description": "With the pipeline's performance validated, the main experiments begin. The team applies the pipeline to a more complex problem: a 3D time-dependent fluid dynamics simulation using the Navier-Stokes equations. This phase focuses on testing the scalability and robustness of the entire automated workflow on a computationally intensive, scientifically relevant case.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The analysis in e_07 confirmed the success of the revised pipeline in pilot studies. The logical next step is to apply this validated methodology to the main, large-scale problems outlined in the original research plan and goals. This moves the project from the validation phase to the core data generation phase."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Numerical PDE simulation pipelines",
+    "subject": "Mathematics",
+    "event_type": "analysis",
+    "description": "The results from the 3D Navier-Stokes simulation are analyzed. While the pipeline handled the computational load successfully, the output reveals numerical instabilities and artifacts in the fluid simulation, particularly at the boundary layers. These issues were not apparent in the simpler 2D pilot case.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After completing the first major run of the main experiments (e_08), the essential next step is to analyze the generated data. This analysis is crucial for validating the scientific results, assessing pipeline performance on a complex problem, and identifying any new issues that need to be addressed. The discovery of numerical artifacts is a typical outcome that will drive the next research cycle."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Numerical PDE simulation pipelines",
+    "subject": "Mathematics",
+    "event_type": "scheme_design",
+    "description": "In response to the numerical instabilities found in the 3D simulation, the method scheme is revised. The team decides to implement a more sophisticated numerical stabilization technique (e.g., streamline upwind Petrov-Galerkin, SUPG) within the FEniCS solver configuration. Additionally, the mesh generation parameters in Gmsh are adjusted to create a finer mesh near the boundary layers where the artifacts were most prominent.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous analysis (e_09) revealed that while the pipeline is mechanically sound, the scientific results of the main experiment are flawed due to numerical instability. This necessitates a return to the scheme design phase to refine the numerical methods and simulation parameters. Addressing these simulation-specific issues is critical before rerunning the expensive main experiments to obtain valid results."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Numerical PDE simulation pipelines",
+    "subject": "Mathematics",
+    "event_type": "main_experiments",
+    "description": "The main 3D Navier-Stokes simulation is re-run using the revised scheme. This new run incorporates the SUPG stabilization technique and the finer boundary layer mesh to test if these changes have resolved the numerical instabilities observed previously. The goal is to obtain a stable and accurate solution for the fluid dynamics problem.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the methodology in e_10 to address the numerical instabilities found in e_09, it is essential to re-run the main experiment. This step will validate whether the implemented stabilization techniques and mesh refinements were successful in producing scientifically valid results, providing a new dataset for analysis."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Numerical PDE simulation pipelines",
+    "subject": "Mathematics",
+    "event_type": "analysis",
+    "description": "The results from the re-run 3D Navier-Stokes simulation are analyzed. The analysis confirms that the SUPG stabilization and refined mesh have successfully eliminated the numerical artifacts observed previously. The solution is now stable and aligns well with theoretical expectations for this fluid dynamics problem.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the re-run of the main experiment in e_11, it is critical to analyze the new results to determine if the methodological changes from e_10 were successful. This analysis validates the final experimental setup and provides the core scientific findings needed for the project's conclusion and subsequent paper writing."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Numerical PDE simulation pipelines",
+    "subject": "Mathematics",
+    "event_type": "writing",
+    "description": "With the final experimental results validated, the team begins to formally draft the research paper. This effort focuses on writing the 'Methods' section, describing the final pipeline architecture and numerical stabilization, and the 'Results' section, presenting the successful outcome of the 3D Navier-Stokes simulation and the performance benchmarks.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The analysis in e_12 confirmed the success of the final experimental run, providing all the necessary components for a compelling research story. It is now the opportune moment to synthesize the final `method_scheme` and `experiment_results` into a coherent paper draft, moving the project from the experimentation phase to the dissemination phase."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Numerical PDE simulation pipelines",
+    "subject": "Mathematics",
+    "event_type": "analysis",
+    "description": "To strengthen the paper's claims, a quantitative comparative analysis is performed. The team benchmarks the final automated pipeline against a traditional, manual workflow for the same 3D Navier-Stokes problem, measuring metrics like total time-to-solution and estimated hands-on user time. The goal is to provide concrete evidence of the efficiency gains promised in the initial proposal.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the core results validated (e_12) and the paper writing started (e_13), it's crucial to substantiate the project's primary goal of improving efficiency. This comparative analysis provides the quantitative data needed to demonstrate the value of the new pipeline, directly addressing the initial research goals and providing strong evidence for the paper's discussion and conclusion sections."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Numerical PDE simulation pipelines",
+    "subject": "Mathematics",
+    "event_type": "writing",
+    "description": "The team integrates the results from the comparative analysis into the paper draft. They update the 'Results' section with the new performance benchmarks and write the 'Discussion' section, highlighting how the automated pipeline significantly reduces user effort and time-to-solution compared to traditional methods.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After conducting the comparative analysis in e_14, the next logical step is to incorporate these crucial findings into the paper. This writing phase synthesizes the quantitative evidence of the pipeline's efficiency with the previously drafted methods and results sections (e_13), creating a more complete and compelling narrative that directly addresses the project's research goals."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Numerical PDE simulation pipelines",
+    "subject": "Mathematics",
+    "event_type": "writing",
+    "description": "A full draft of the manuscript is assembled. The Introduction and Conclusion sections are written, framing the research questions and summarizing the key findings. An abstract is also drafted to provide a concise overview of the project's contributions.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Previous writing events (e_13, e_15) produced the core Methods, Results, and Discussion sections. To create a complete manuscript for internal review and submission, the next logical step is to write the framing sections (Introduction, Conclusion, Abstract), integrating all existing parts into a coherent narrative."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Numerical PDE simulation pipelines",
+    "subject": "Mathematics",
+    "event_type": "writing",
+    "description": "The full manuscript draft is reviewed by senior researchers and collaborators. Feedback suggests that while the results are strong, the introduction needs to better motivate the problem for a broader audience. The team begins revising the manuscript to improve the narrative framing and clarity based on this feedback.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After assembling a complete first draft (e_16), the next logical step is to conduct an internal review and revise the manuscript based on feedback. This iterative writing process is crucial for refining the paper's narrative, clarifying its contributions, and preparing it for submission to a journal or conference."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "Numerical PDE simulation pipelines",
+    "subject": "Mathematics",
+    "event_type": "writing",
+    "description": "The team completes the revisions on the manuscript, focusing on strengthening the introduction and ensuring a clear, compelling narrative throughout the paper. A final version is prepared for submission to a peer-reviewed journal in the field of computational science.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the internal review and feedback in e_17, the necessary next step is to complete the manuscript revisions. This event represents the finalization of the paper, incorporating all feedback and polishing the text, making it ready for submission and bringing the project's primary writing phase to a close."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "research",
+    "topic": "Numerical PDE simulation pipelines",
+    "subject": "Mathematics",
+    "event_type": "end",
+    "description": "The research project concludes with the submission of the final manuscript to a peer-reviewed journal. The project successfully developed, validated, and documented a novel automated pipeline for numerical PDE simulations, achieving its initial goals.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached a logical conclusion. The initial research goals have been met, the methodology has been refined and validated through multiple experiment cycles, and a complete manuscript has been drafted, revised, and prepared for submission (e_18). This marks the end of the active research and development phase."
+  }
+]

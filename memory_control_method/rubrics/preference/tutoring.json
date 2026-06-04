@@ -1,0 +1,905 @@
+{
+  "domain": "tutoring",
+  "tasks": [
+    {
+      "task_id": "plan_design",
+      "task_name": "Plan/Design",
+      "query_template": "Based on the learning objectives and the learner’s current mastery, provide a staged learning route (3–5 stages). Each stage should include: objectives, key knowledge points, practice types, common misconceptions, and completion criteria. Also provide a concrete task checklist for this week (or before the next session).",
+      "Preference_note": "This rubric is about how the plan treats the existing learner-specific route vs a generic curriculum route. It should be possible for different regimes to give clearly different judgments on the SAME answer.",
+      "preference_dimensions": [
+        {
+          "dimension_id": "content_axis",
+          "dimension_name": "Content axis (individual trajectory and cross-session materials vs generic content)",
+          "definition": "To what extent the stages, focus points, and concrete tasks are selected and emphasized based on the learner’s own trajectory (goals, progress, errors, notes) and cross-session execution briefs/templates, as opposed to primarily following a generic skill map or textbook outline that could apply to any learner."
+        },
+        {
+          "dimension_id": "pattern_axis",
+          "dimension_name": "Pattern axis (continuation of existing route vs reconstruction from general structure)",
+          "definition": "To what extent the route construction and reasoning follow the existing study_plan and previously used templates (including how prior constraints are treated), versus being rebuilt from general knowledge/ability structure and curriculum design principles with weaker continuity to the existing route."
+        },
+        {
+          "dimension_id": "style_axis",
+          "dimension_name": "Style axis (internal planning register vs external syllabus-style register)",
+          "definition": "To what extent the plan is written in the internal planning/register used in this course and in prior sessions (stage names, labels, referencing past sessions and templates), versus being expressed as a decontextualized, generic syllabus aimed at an anonymous audience."
+        }
+      ],
+      "regimes": [
+        {
+          "regime_id": 1,
+          "regime_label": "More conservative (strong path orientation)",
+          "preference_summary": "The learner wants to keep walking along the current route: refine, repair, and extend what already exists, rather than redesigning the route from a general curriculum view.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "Almost every stage and task can be traced back to this learner’s existing study_plan, progress, error patterns, or cross-session notes; without those records, the chosen focus and ordering would be hard to explain.",
+                "Examples and practice sets are strongly tied to known weak spots, past homework, or previously used materials for this learner, rather than aiming for broad syllabus coverage."
+              ],
+              "low_score_signals": [
+                "Stages and tasks mainly follow a generic skill progression or textbook contents; even if the learner’s history is mentioned, it does not materially change which topics are selected or emphasized.",
+                "Examples look like typical problem-bank samples for this level; someone who does not know this learner could have chosen almost the same practice purely from the syllabus."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The overall route is clearly a continuation of the existing one: stage boundaries, ordering, and pacing are very similar to the previous plan, with only small local insertions or splits at well-justified points.",
+                "Time, workload, and milestone constraints from earlier plans are explicitly kept and treated as fixed; the plan does not reopen large structural questions such as ‘should we rebuild the route’."
+              ],
+              "low_score_signals": [
+                "Major stages are re-partitioned, merged, or re-ordered according to a new generic structure (for example, a standard textbook or ability ladder), and the previous route becomes hard to recognize.",
+                "The plan casually changes global pacing or rearranges stage order as if all prior constraints were negotiable; it reads more like a new design than a continuation."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "Stage names, labels, and shorthand are heavily reused from prior plans for this learner; the tone assumes shared context and directly references earlier sessions (for example, ‘continue the Stage 2 toolkit we started last week’).",
+                "The plan reads like the next page of the same internal planning document, not like a fresh syllabus written for a new student."
+              ],
+              "low_score_signals": [
+                "The writing avoids prior labels, session references, or internal shorthand and instead adopts new, generic headings (‘Module 1’, ‘Module 2’) that could be pasted into a public course outline.",
+                "The tone is impersonal and course-advertisement-like (for example, ‘this course will help learners master…’), rather than addressing this learner and their ongoing route."
+              ]
+            }
+          ]
+        },
+        {
+          "regime_id": 2,
+          "regime_label": "Somewhat conservative, limited exploration (moderately-high path orientation)",
+          "preference_summary": "The learner still wants the existing route as the backbone, but is willing to insert a small number of new stages or strategies at clear weak points. Changes should be targeted and clearly motivated by the learner’s history, not broad redesign.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "Core stages remain those in the current plan; new content appears mainly as small ‘patch’ blocks or focused drills that address specific error clusters or coverage gaps seen in past sessions.",
+                "Each added practice type or sub-topic is justified by a concrete past observation (for example, ‘you repeatedly confuse A and B, so we add a short contrastive-practice block here’)."
+              ],
+              "low_score_signals": [
+                "The plan either sticks almost entirely to the old content without adding any new targeted material for observed weaknesses, or introduces many new topics/practice types that are not clearly tied to the learner’s history.",
+                "New content seems chosen because ‘it is good to know’ in general, not because this learner, at this point, needs it."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The main stage order clearly follows the old route, but 1–2 stages are expanded into more detailed sub-stages or have short side-branches added at specific weak points; the mainline remains obvious.",
+                "Exploratory blocks are short and bounded (for example, a 1-week diagnostic review), and their insertion points are explained using the existing route (‘insert between Stage 2 and Stage 3 because…’)."
+              ],
+              "low_score_signals": [
+                "Many new side-branches or sub-stages are added in different places so that the ‘main route’ becomes blurry, or it is unclear which parts are optional and which are core.",
+                "Conversely, the structure remains almost identical to Regime 1 (only cosmetic changes), with no real exploratory or repair segments where they are clearly needed."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The voice is still internal and path-following (‘given how you did on…’), but exploratory parts are explicitly marked in the wording as optional or experimental (for example, ‘try this small side block if…’).",
+                "New labels and phrases are introduced only for the few added pieces and are connected back to existing names; most of the naming system is inherited."
+              ],
+              "low_score_signals": [
+                "Exploratory segments are described in the same generic style as the rest of the plan, with no cues that they are additions, making the whole plan look like a half-redesigned new route.",
+                "Alternatively, the style barely differs from a purely conservative regime: it sounds like minor editing, and the reader cannot tell where any new ideas actually are."
+              ]
+            }
+          ]
+        },
+        {
+          "regime_id": 3,
+          "regime_label": "Balanced: stability and exploration equally important (medium path orientation)",
+          "preference_summary": "The learner wants to stand in the middle: keep respecting their route so far, but also explicitly align the plan with a generic knowledge/ability structure and be willing to re-group content where that makes sense.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "Each major stage is justified from BOTH sides: where the learner currently is (recent performance, goals, gaps) AND where that stage sits in a general concept/skill map.",
+                "The plan surfaces tensions between the two (‘although we planned to finish X now, from the general structure it’s better to insert a short review of Y first’) and resolves them by design choices."
+              ],
+              "low_score_signals": [
+                "Content selection is clearly dominated by just one view: it is either just a cleaned-up version of the old plan, or essentially a fresh generic curriculum with the learner’s status only mentioned at the start.",
+                "The explanation of why each stage exists rarely uses both the learner’s trajectory and the generic structure; one of them is effectively ignored."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The route makes visible where it is following the old path and where it is reorganized according to general structure (for example, by labeling parts as ‘continue existing Stage 2’ vs ‘re-group topics into a new combined stage’).",
+                "It gives at least one explicit ‘switch point’ where the learner could move from “old-path style” tasks to “new-structure style” tasks, and explains how to do so safely."
+              ],
+              "low_score_signals": [
+                "New structural elements are sprinkled in without clear labels; the reader cannot tell which parts are inherited and which are restructured.",
+                "Or the route is effectively either Regime 1/2 (only tiny re-grouping) or Regime 4 (almost full rebuild), with no real sense of balancing the two modes."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The explanation explicitly switches between ‘your current course path’ wording and ‘in the general structure of this topic’ wording, and signals these switches so a learner can follow both views.",
+                "A teacher or future self reading the plan could see how to reuse the generic parts for other learners while keeping the parts that are tightly tied to this learner."
+              ],
+              "low_score_signals": [
+                "The style does not clearly distinguish when it is talking about this specific learner versus talking about generic structure, making it hard to see there are two perspectives.",
+                "Or the style anchors entirely in one mode: either fully internal/cohort-specific or fully generic/external, rather than truly giving them equal weight."
+              ]
+            }
+          ]
+        },
+        {
+          "regime_id": 4,
+          "regime_label": "Exploration-leaning, with key constraints retained (moderately-low path orientation)",
+          "preference_summary": "The learner wants a mostly re-designed route based on general knowledge and curriculum logic, but still expects the plan to respect a small set of hard constraints from their history (time, exams, must-cover topics, serious weaknesses).",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "Stage content is chosen mainly by reasoning from a generic concept/skill map and typical learning trajectories; the learner’s history is used mainly to decide entry point, pace, and a few must-emphasize areas.",
+                "Some topics or drills appearing in the old plan are deliberately dropped or postponed because they are not central in the generic structure, and this is explained explicitly."
+              ],
+              "low_score_signals": [
+                "Content choices still largely mirror the existing learner-specific plan; generic structure is presented in words but does not actually change which topics appear where.",
+                "Or the plan proposes an abstract, ideal curriculum that ignores obvious hard constraints (for example, exam in two weeks, or critical gaps that must be addressed before moving on)."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The stage ordering clearly follows a general curriculum logic (for example, from core intuitions to formalization to mixed/composite problems), and the old route is treated as one instantiation that may be partly overridden.",
+                "Existing milestones and fixed time windows are treated as immovable marks on this generic structure (for example, ‘by the midterm date you must have reached stage …’), but within those marks the path is rebuilt."
+              ],
+              "low_score_signals": [
+                "The route still reads like the old path with minor re-labeling; the general structure is not visible in how stages are sequenced.",
+                "Or, in trying to follow a generic structure, the plan reshuffles everything without checking whether key milestones or dependencies from the learner’s actual situation can still be met."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The tone resembles a curriculum designer addressing ‘a learner at this level’ more than a teacher talking only to this individual, but it still explicitly acknowledges a small number of non-negotiable facts about this learner (for example, exam date, strongest/weakest area).",
+                "Internal labels and classroom jargon are mostly replaced by general terms, with only a few retained where they correspond to real constraints (‘we keep your existing note system for…’)."
+              ],
+              "low_score_signals": [
+                "The style remains heavily tied to this one classroom’s idiosyncratic language and inside references, so the plan does not really feel like a general route rebuilt from scratch.",
+                "Alternatively, it uses very generic, polished phrasing and never mentions concrete constraints from this learner, so the route feels unrealistic for their situation."
+              ]
+            }
+          ]
+        },
+        {
+          "regime_id": 5,
+          "regime_label": "More exploratory (weak path orientation)",
+          "preference_summary": "The learner wants a ‘best-possible’ generic route for this topic and level, as if designing a course for many students like them, with their past route used at most as a simple example or sanity check, not as a constraint.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "The chosen stages, knowledge groupings, and practice types follow a general theory of how this topic should be learned; they could be reused almost as-is for another learner with similar level and goals.",
+                "The current learner’s history is mentioned only briefly (for example, ‘you’d probably join at Stage 2’) and does not determine which topics or practice types are included."
+              ],
+              "low_score_signals": [
+                "Most content choices still look like small edits of the learner’s existing plan; if one removed explicit learner references, the route would not look particularly generic or reusable.",
+                "The plan cannot stand alone as a generic recommendation because too many content decisions depend on specific anecdotes or micro-errors from this learner."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The route’s structure is self-contained: it explicitly states principles for partitioning stages and ordering them, and these principles do not rely on knowing this learner’s previous route.",
+                "If one swapped in a different learner at the same level, the same stage order would still make sense, with only entry/exit points or speed adjusted."
+              ],
+              "low_score_signals": [
+                "Stage ordering still makes sense only if one knows the prior plan (‘we continue last week…’); external readers would have trouble understanding why the order is like this.",
+                "The description keeps referencing ‘what we did before’ instead of describing the logic of the new order, so it behaves more like a minor extension of the old path."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The language is that of a general study guide, introducing all labels and assumptions explicitly; it does not rely on prior shared shorthand or local classroom conventions.",
+                "Mentions of this learner’s past sessions, homework, or internal labels appear only as optional examples (‘for you, this looked like…’) and are not needed to understand the route."
+              ],
+              "low_score_signals": [
+                "The explanation presupposes detailed knowledge of prior sessions and uses unexplained local terms or nicknames that would confuse an outside reader.",
+                "Even when the structure is somewhat general, the style continually returns to course-specific phrasing, making it feel like a custom plan rather than a generic one."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "task_id": "revise",
+      "task_name": "Revise",
+      "query_template": "Please rewrite the following teaching explanation/handout so that it is clearer, the examples better match the learner’s level, and common pitfalls are explicitly covered. Do not introduce content beyond the current learning objectives. Output: (1) the rewritten version; (2) 3–5 reasons for the revisions. Text: {notes}",
+      "Preference_note": "This rubric is about whether the rewrite behaves like a small in-place patch vs a partly/newly structured, more generic handout.",
+      "preference_dimensions": [
+        {
+          "dimension_id": "content_axis",
+          "dimension_name": "Content axis (learner- and session-specific context vs general conceptual content)",
+          "definition": "To what extent the rewrite keeps its content selection anchored in the current teaching_notes, this class’s history, and cross-session handout experience, versus primarily following general conceptual structure and textbook-like content without close dependence on local context."
+        },
+        {
+          "dimension_id": "pattern_axis",
+          "dimension_name": "Pattern axis (following the existing explanation path vs structural reorganization)",
+          "definition": "To what extent the rewrite preserves and refines the existing explanation path and local templates (including how scope and objective constraints shape the structure), versus reorganizing the explanation under a more general teaching template with weaker attachment to the original path."
+        },
+        {
+          "dimension_id": "style_axis",
+          "dimension_name": "Style axis (local classroom explanatory style vs generic expository style)",
+          "definition": "To what extent the rewrite maintains the local classroom’s explanatory style, terminology, and discourse conventions (including those reflected in cross-session templates), versus adopting a generic textbook/editorial tone aimed at a broad audience."
+        }
+      ],
+      "regimes": [
+        {
+          "regime_id": 1,
+          "regime_label": "More conservative (strong path orientation)",
+          "preference_summary": "The teacher wants a ‘same route, clearer text’ revision: fix wording, highlight pitfalls, and tweak examples, but keep function, structure, and voice of the original handout almost unchanged.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "The main claims, examples, and coverage are the same as in the original; new sentences mainly clarify, disambiguate, or make explicit pitfalls already implied by the old text.",
+                "Any added examples or comments clearly arise from specific misunderstandings or feedback observed in THIS class, not from an attempt to cover more general theory."
+              ],
+              "low_score_signals": [
+                "Large blocks of original content are dropped or replaced by more general explanations or additional subtopics that were not present and are not strictly needed for this lesson.",
+                "Examples are swapped for new ones with no relation to what this class has seen; they read like generic textbook examples that could be used anywhere."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "Section and paragraph order match the original; restructuring is limited to splitting long paragraphs, merging very short ones, or adding signposting sentences inside existing sections.",
+                "Where structure is adjusted (for example, moving one sentence), it is clearly a local fix that does not change how the explanation flows at a high level."
+              ],
+              "low_score_signals": [
+                "The rewrite adopts a different macro-structure (for example, reordering from ‘examples → rule’ to ‘rule → examples’) or introduces new major sections that the original did not have.",
+                "The reader would struggle to line up old sections with new ones; the revision feels like ‘another handout’ rather than a clearer version of the same one."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The tone, level of formality, and way of talking to students closely match previous handouts and spoken explanations for this class; it sounds like the same teacher polishing their own notes.",
+                "Local shorthand, metaphors, and expressions already familiar to this class are preserved, only cleaned up when they cause confusion."
+              ],
+              "low_score_signals": [
+                "The text suddenly sounds like a textbook, exam solution, or blog article, using a different voice from what students are used to in this course.",
+                "Local phrases and idioms that anchor the document in this classroom are systematically removed or replaced by generic phrases without a good reason."
+              ]
+            }
+          ]
+        },
+        {
+          "regime_id": 2,
+          "regime_label": "Somewhat conservative, limited exploration (moderately-high path orientation)",
+          "preference_summary": "The teacher still wants this to be ‘the same handout’ in spirit, but is willing to significantly rework a small number of problematic chunks using ideas and micro-structures that worked well in other sessions or materials.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "Most statements and examples from the original are preserved, but weak spots get more elaborated explanations, alternative phrasing, or extra contrast examples taken from this class or a sibling class with similar issues.",
+                "New content appears in a few targeted locations and is clearly introduced as clarification or reinforcement of an already-present idea, not as additional topics."
+              ],
+              "low_score_signals": [
+                "Either content changes are so minor that they do not address previously observed confusions, or many new examples and side explanations are added broadly, diluting the focus of the original handout.",
+                "New content appears for ‘overall polish’ but is not clearly tied to real difficulties or known pain points in teaching this lesson."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "A small number of subsections (for example, one tricky definition) are significantly restructured according to a local pattern tested in other handouts (‘intuition → formal rule → quick test → common trap’), while the rest of the document keeps the original structure.",
+                "The place and scope of these restructured parts are clearly bounded; the original global flow remains easy to trace."
+              ],
+              "low_score_signals": [
+                "Multiple large sections are heavily reorganized or combined into new high-level sections, so that the document’s structure feels more like a fresh template than a targeted improvement.",
+                "Conversely, known problematic paragraphs are left almost unchanged, and no meaningful local reorganization is attempted."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "Overall style remains that of the course; imported phrases or patterns from other materials are adapted to match this voice instead of being copied verbatim.",
+                "The text occasionally uses slightly more polished wording at difficult points, but students who know the teacher would still recognize this as ‘their teacher talking’."
+              ],
+              "low_score_signals": [
+                "Certain segments sound like they were pasted from a different author (for example, very formal, very different rhythmic structure), breaking stylistic continuity with the rest of the document.",
+                "Or the style hardly differs from the Regime 1 version: even in places where existing materials show a clearer phrasing, the revision keeps the old, convoluted voice."
+              ]
+            }
+          ]
+        },
+        {
+          "regime_id": 3,
+          "regime_label": "Balanced: stability and exploration equally important (medium path orientation)",
+          "preference_summary": "The teacher wants this handout to work both as a local classroom note and as a reasonably general mini-chapter: it should keep the necessary class-specific content but be reorganized and phrased using a standard teaching template.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "The rewrite keeps key examples, remarks, and pitfalls that are important for THIS lesson, but also introduces or slightly reshapes some content so that the explanation covers the concept more systematically (for example, including a simple boundary case or typical variant).",
+                "Information clearly irrelevant outside this class (micro anecdotes, references to particular dates, etc.) is compressed or moved, while core conceptual content is sharpened."
+              ],
+              "low_score_signals": [
+                "The revision is almost entirely local, merely polishing the original without adding any structure or content that would make it reusable across classes.",
+                "Or class-specific content is stripped out so heavily, or replaced with generic content so broadly, that the handout’s connection to this particular lesson becomes weak."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The handout now follows a recognizable, reusable explanation template (for example, ‘recall → intuition → formal rule → examples from easy to hard → pitfalls → quick summary’), and the original content is obviously mapped into these slots.",
+                "The mapping between old sections and new ones is still trackable: a teacher can see where each original idea landed in the new structure."
+              ],
+              "low_score_signals": [
+                "Structural changes are small or ad hoc, and the new document does not show a clear, reusable explanatory pattern.",
+                "Or the text is fully restructured under a textbook-like outline with little sign of where the original sections and emphases went; it behaves more like Regime 4 or 5."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The style is halfway between a classroom note and a generic learning resource: it keeps some local flavor (direct address, small jokes or reminders) but uses clearer, more neutral phrasing around key concepts so that a stranger could also follow.",
+                "The tone feels consistent from start to finish; it does not oscillate sharply between informal talk and formal treatise."
+              ],
+              "low_score_signals": [
+                "The style remains almost purely local and informal, including many context-specific references that would confuse someone not in this class.",
+                "Or it becomes almost fully textbook-like, with no trace of the course’s existing voice or awareness of this specific learner cohort."
+              ]
+            }
+          ]
+        },
+        {
+          "regime_id": 4,
+          "regime_label": "Exploration-leaning, with key constraints retained (moderately-low path orientation)",
+          "preference_summary": "The teacher wants to effectively rebuild the handout using strong general teaching paradigms and ‘best-of’ patterns from many sessions, while still respecting current scope, difficulty, and necessary continuity with surrounding lessons.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "The rewrite prunes some original details, replaces some examples, and adds a few new ones so that the total content closely matches what an experienced teacher would include in a general-purpose handout for this concept at this level.",
+                "The class’s current progress and known limitations mainly constrain how deep to go and which examples to pick, not what the conceptual coverage should be."
+              ],
+              "low_score_signals": [
+                "Content still largely mirrors the original document, including idiosyncratic asides or narrow example choices that do not reflect a more general teaching design.",
+                "Or the reworked content introduces advanced topics or heavy technical details that clearly exceed the current lesson’s goals and learner foundation."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The overall structure is noticeably different from the original and matches a general teaching pattern (for example, building from intuition through multiple representation modes), while still respecting time and prerequisite constraints.",
+                "The original ordering no longer dominates; instead, the explanation flows according to a conceptually optimal outline, with old material slotted into new positions."
+              ],
+              "low_score_signals": [
+                "Structural changes are modest; the skeleton of the original handout is still the main organizing principle, with only cosmetic improvements.",
+                "Or the new pattern disregards natural prerequisite order or the place of this lesson in the sequence, making the handout unrealistic for current learners."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The tone is closer to a general teaching resource than to an in-class note: it states assumptions clearly, avoids heavy inside jokes, and uses terminology consistent with other high-quality teaching materials for this topic.",
+                "References to the current class (‘last time we…’) are limited and clearly framed as context hooks that could be cut without breaking the explanation."
+              ],
+              "low_score_signals": [
+                "The style continues to depend on local shorthand and references that assume detailed knowledge of this particular class’s previous sessions.",
+                "Alternatively, the style is so abstract and formal that it no longer feels tuned to the current learners’ comfort zone or to the stated objective of not exceeding the present syllabus."
+              ]
+            }
+          ]
+        },
+        {
+          "regime_id": 5,
+          "regime_label": "More exploratory (weak path orientation)",
+          "preference_summary": "The teacher wants to essentially write a standalone, high-quality handout as if for a wider audience, keeping only the necessary constraints of topic and level; the current handout is used only as raw material and as one possible example.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "The explanation and examples are chosen so that they could serve any learner at this level, not just this class: they include a clear definition, well-chosen easy/medium/hard examples, and a reasonably complete set of typical pitfalls.",
+                "Any content coming from the original handout is present only because it is a good element for a generic explanation, not because it happened to be there before."
+              ],
+              "low_score_signals": [
+                "The document still heavily reflects peculiarities of this class’s earlier teaching sequence or old notes; dropping references to those would leave gaps in the explanation.",
+                "Examples are almost exclusively recycled from the existing handout and may not be the best generic choices for the concept, suggesting strong path dependence."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The structure follows a self-contained, widely applicable outline that would still make sense in a different course (for example, the same document could be assigned as supplementary reading elsewhere).",
+                "The old handout structure is not needed to understand the new one; at most, a few sentences acknowledge how it differs from what this class saw before."
+              ],
+              "low_score_signals": [
+                "The outline still mirrors the earlier class flow or handout section order, and the explanation depends on that context to be fully understandable.",
+                "The organization is highly tuned to where this lesson sits in this particular course, and would require major changes to be reused elsewhere."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The style is that of a general learning resource: it introduces notation and ideas from scratch, avoids classroom-specific nicknames, and addresses ‘you’ as a generic learner rather than as a member of this particular class.",
+                "Where this class is mentioned, it is only as a light example (‘in our current course this showed up when…’), not as assumed background knowledge."
+              ],
+              "low_score_signals": [
+                "The explanation assumes that the reader has been in this classroom and shares its specific conversational history and in-jokes.",
+                "Terminology or metaphors are used that only make sense in the context of this course, without being defined for an outside audience."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "task_id": "critique",
+      "task_name": "Critique",
+      "query_template": "Please evaluate the following solution process: whether steps are correct, whether they fit this problem type, potential pitfalls, and a more robust approach; finally provide 3 targeted practice problems (with key points for answers). Problem and process: {problem_and_steps}",
+      "Preference_note": "This rubric is about whether feedback stays very close to this learner’s specific work vs re-frames it inside problem-type level patterns.",
+      "preference_dimensions": [
+        {
+          "dimension_id": "content_axis",
+          "dimension_name": "Content axis (learner-specific error history vs generic problem-type content)",
+          "definition": "To what extent the critique and the suggested practices are grounded in this learner’s specific solution attempt, known error patterns, and cross-session error briefs, versus mainly reflecting a generic description of the problem type and standard solution content."
+        },
+        {
+          "dimension_id": "pattern_axis",
+          "dimension_name": "Pattern axis (following the existing solution trail vs using an external framework)",
+          "definition": "To what extent the critique unfolds along the learner’s actual step sequence and the course’s existing correction path (including how it proposes changes), versus being organized around an external standard framework with weaker continuity to the learner’s current solving path."
+        },
+        {
+          "dimension_id": "style_axis",
+          "dimension_name": "Style axis (local diagnostic style vs external expert report style)",
+          "definition": "To what extent the feedback and practice description are written in the local diagnostic and coaching style familiar from previous sessions, versus taking the form of an external expert report that explains problem types and solutions in a more impersonal way."
+        }
+      ],
+      "regimes": [
+        {
+          "regime_id": 1,
+          "regime_label": "More conservative (strong path orientation)",
+          "preference_summary": "The learner wants the teacher to ‘go through my solution with me’: detailed step-by-step diagnosis and small corrections around their current way of thinking, not a long lecture on abstract methods.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "Most comments explicitly quote or paraphrase the learner’s steps and decisions (‘in step 2 you did…’) and discuss why each is correct or problematic, including what it reveals about this learner’s current understanding.",
+                "Practice problems directly target the concrete errors or risky habits seen in this solution and this learner’s known history (for example, always forgetting a certain condition)."
+              ],
+              "low_score_signals": [
+                "After a brief remark on the learner’s work, the feedback mostly describes a model solution or general tips that could have been written without seeing this attempt.",
+                "Practice problems look like generic drills for this topic; the feedback does not explain how they are connected to this specific learner’s pattern of mistakes."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The critique follows the order of the learner’s solution and reacts to the actual path taken; alternative steps are introduced mainly as local repairs (‘at this point a better move would be…’).",
+                "It does not reorganize the whole solution under a new conceptual framework; instead, it stays anchored to what the learner actually did."
+              ],
+              "low_score_signals": [
+                "The feedback is structured according to a standard solution template (for example, ‘first do A, then B, then C’) with only superficial references to where the learner deviated.",
+                "Sections of the feedback do not correspond clearly to parts of the learner’s solution; the learner would struggle to match comments to their own work."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The tone is that of direct coaching: lots of ‘you’ references, concrete advice, and familiar phrases from previous feedback (‘this is the slip you often make when…’).",
+                "The language is personalized and immediate, focusing on what this learner should do differently next time, not on abstract grading criteria."
+              ],
+              "low_score_signals": [
+                "The feedback reads more like a formal grading comment or an exam report (‘the solution lacks…’, ‘the answer would benefit from…’) rather than a conversation with the learner.",
+                "It avoids using prior shared vocabulary or examples from earlier sessions, as if written for an unknown student."
+              ]
+            }
+          ]
+        },
+        {
+          "regime_id": 2,
+          "regime_label": "Somewhat conservative, limited exploration (moderately-high path orientation)",
+          "preference_summary": "The learner primarily wants step-by-step feedback on their own work, but is open to a few more general ‘micro-strategy’ inserts and small redesigns at key error points.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "Most of the critique still talks about this particular solution, but at a few important steps it introduces slightly more general heuristics (‘for inequalities of this form, always first check…’) directly tied to the learner’s mistakes.",
+                "Practice problems are chosen as minimal variations around the specific errors, designed to practice one or two micro-strategies rather than to cover the whole problem class."
+              ],
+              "low_score_signals": [
+                "General strategies or tips are introduced that do not clearly hook into what this learner did wrong (they could fit any learner for this topic).",
+                "Practice problems are generic or cover many unrelated aspects at once, making them more like a general worksheet than a targeted repair set."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The overall structure still walks along the learner’s solution, but there are a small number of clearly marked ‘detour boxes’ where a short, robust sub-procedure or check is taught and then plugged back into the learner’s path.",
+                "Suggested changes mostly keep the learner’s overall approach but strengthen a few weak joints, rather than proposing a completely different approach."
+              ],
+              "low_score_signals": [
+                "The feedback frequently steps away from the learner’s route to follow an external template and does not clearly return, making the learner’s path feel sidelined.",
+                "Or it never introduces any stronger sub-structure or micro-strategy at all, behaving very similarly to Regime 1."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The style alternates between very local coaching (‘your step 3…’) and short, slightly more general teaching moments (‘a good habit here is…’), with clear cues about which is which.",
+                "The tone remains friendly and personal; even the more general parts explicitly reference this learner’s tendencies."
+              ],
+              "low_score_signals": [
+                "General explanations are written in a detached, textbook-like tone that suddenly breaks the conversational coaching voice.",
+                "Alternatively, feedback stays so local and informal that when general lessons are mentioned, they are phrased as one-off comments rather than as reusable strategies."
+              ]
+            }
+          ]
+        },
+        {
+          "regime_id": 3,
+          "regime_label": "Balanced: stability and exploration equally important (medium path orientation)",
+          "preference_summary": "The learner wants both: a clear review of what they did AND a reasonably systematic explanation of the problem type and robust method, so they can see where their approach sits in the bigger picture.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "Feedback includes a detailed diagnosis of this attempt and, with comparable weight, an explanation of the general method structure and key subskills for this kind of problem.",
+                "Practice set includes tasks that both directly rehearse this learner’s weak points and cover representative patterns from the general problem-type space, and this dual purpose is spelled out."
+              ],
+              "low_score_signals": [
+                "Feedback is strongly skewed: either almost entirely about the learner’s answer (with little generalization), or almost entirely about the general method (with little engagement with this particular solution).",
+                "Practice tasks are chosen solely based on one of these views — either highly idiosyncratic to this learner or completely generic."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The critique contains one clearly structured part aligned to the learner’s step order and one clearly structured part aligned to a standard problem-type framework, and then explicitly connects them (for example, ‘your step 2 corresponds to step B in the general method…’).",
+                "The learner can see a map: where in the general method their solution was on track, where it skipped or mis-ordered parts, and what an improved path would look like."
+              ],
+              "low_score_signals": [
+                "The two patterns (learner path and general framework) are mixed together without clear structure, making it hard to know what is commentary on this attempt versus explanation of the method.",
+                "Or one of the two patterns is essentially absent: the feedback uses only the learner’s step order or only a general template as its organizing principle."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The style feels like one teacher who can switch between ‘coach talking to you about your work’ and ‘instructor explaining the general method’, with smooth transitions and explicit signaling.",
+                "The learner can easily tell when the comment is only about their own habits versus when it is about all problems of this type."
+              ],
+              "low_score_signals": [
+                "The style is nearly uniform — either entirely local and informal or entirely formal and depersonalized — so the dual perspective does not come through.",
+                "When the style changes, it does so abruptly or without cues, so learners may misinterpret a general warning as something specific to them (or vice versa)."
+              ]
+            }
+          ]
+        },
+        {
+          "regime_id": 4,
+          "regime_label": "Exploration-leaning, with key constraints retained (moderately-low path orientation)",
+          "preference_summary": "The learner mainly wants to understand ‘how experts think about this problem type’ and get a more robust method, while still keeping the explanation compatible with their current level and curriculum constraints.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "Most of the space is devoted to describing a robust solution framework, typical variants, and classic pitfalls for this problem type, using the learner’s attempt mainly as a case to illustrate these points.",
+                "Practice problems are chosen to systematically cover key sub-patterns in this general framework, with this learner’s history mainly influencing where to start and how hard the tasks should be."
+              ],
+              "low_score_signals": [
+                "Feedback still focuses primarily on local repair of the given solution, without conveying a clear sense of broader method or problem-type landscape.",
+                "Alternatively, the critique suggests exercises or concepts that are clearly beyond the syllabus or the learner’s current foundation, treating ‘expert view’ as if constraints did not exist."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The feedback is structured around an external framework (for example, decomposition into key steps or ‘decision points’), and the learner’s solution is discussed by mapping it into or against that framework.",
+                "The learner’s step order is explicitly referenced but is not the main axis; rather, it is used to show where their current routine diverges from the robust pattern."
+              ],
+              "low_score_signals": [
+                "The organizing principle is still simply ‘go through step 1, 2, 3… of the learner’s solution’, with the general framework only hinted at.",
+                "Or the general framework is presented as if in a vacuum, without showing how this particular attempt sits inside it, making the critique feel detached from the learner’s experience."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The tone is closer to that of an experienced tutor giving a mini-lesson on problem-type strategy: it is more neutral, uses standard names for ideas, and assumes a ‘typical learner at this stage’, while still avoiding technical jargon beyond the learner’s level.",
+                "References to the learner’s attempt are concise and analytical (‘your work here is an example of pattern X’), not the main narrative backbone."
+              ],
+              "low_score_signals": [
+                "The style remains very chatty and case-specific (‘here you… there you…’), with little shift to a broader, more reusable way of talking about the method.",
+                "Or the style jumps to a research-like or exam-standard tone that does not reflect the learner’s current mathematical or conceptual maturity."
+              ]
+            }
+          ]
+        },
+        {
+          "regime_id": 5,
+          "regime_label": "More exploratory (weak path orientation)",
+          "preference_summary": "The learner wants a mostly ‘reference-style’ answer: a map of related problem types, strategies, and pitfalls, with their current solution used only as one small case among many.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "The critique mainly describes a taxonomy of problem types, associated solution approaches, and systemic pitfalls, with multiple examples; the learner’s solution is just one instance used to illustrate a category.",
+                "Practice problems are designed to expose the learner to a breadth of typical cases across that taxonomy, not primarily to repeat the exact pattern of their current mistake."
+              ],
+              "low_score_signals": [
+                "The critique is centred almost entirely on this one solution, and does not introduce any real sense of a broader family of tasks or strategies.",
+                "Practice is narrow, focusing on minor variations of the given problem or on a single error type without connecting to the larger strategy space."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The structure does not follow the learner’s step order; instead, it follows a conceptual ordering such as ‘types of tasks → default strategies → important distinctions → typical traps’, into which the learner’s attempt is slotted.",
+                "Sections are designed so that they could be reused for other students with similar background but different concrete mistakes."
+              ],
+              "low_score_signals": [
+                "The organization still tracks the learner’s specific steps, and the explanation of general ideas is tied to that sequence in a way that would not be natural for other cases.",
+                "The critique cannot be read as a standalone reference on this problem type; it loses coherence without the exact student solution as context."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The style is that of an expert note or mini-guide aimed at many learners: it emphasizes generalizable insights, avoids heavy personalization, and uses precise terminology for concept and strategy names.",
+                "Mentions of ‘you’ or this particular attempt are sparse and clearly marked; a different learner could read the same text and still find it directly relevant."
+              ],
+              "low_score_signals": [
+                "The commentary is suffused with references to this learner’s personal habits (‘as you always do…’), making it feel too specific to function as a general guide.",
+                "The language is informal and context-bound in a way that obscures the general rules, even when they are implicitly present."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "task_id": "concept_explanation",
+      "task_name": "Concept Explanation",
+      "query_template": "Please explain the concept: {concept}, including: (1) definition and intuition; (2) key steps/rules; (3) 2–3 example problems from easy to hard; (4) common errors and corrections; (5) one analogy or visualization-based understanding.",
+      "Preference_note": "This rubric is about whether the explanation is anchored in this course’s way of introducing the concept vs a broad, course-agnostic conceptual view.",
+      "preference_dimensions": [
+        {
+          "dimension_id": "content_axis",
+          "dimension_name": "Content axis (current learning history vs general concept structure)",
+          "definition": "To what extent the explanation content (definitions, examples, errors) is anchored in the learner’s current unit, typical tasks, and error patterns, versus being anchored in the general ontology of the concept, its relations, and textbook-level content that may not depend on the local learning history."
+        },
+        {
+          "dimension_id": "pattern_axis",
+          "dimension_name": "Pattern axis (following course/learner trajectory vs standard pedagogical structure)",
+          "definition": "To what extent the order and framing of definition, intuition, examples, and errors follow the way the concept has been introduced and used in this course and by this learner, versus following a standard, course-independent pedagogical outline."
+        },
+        {
+          "dimension_id": "style_axis",
+          "dimension_name": "Style axis (local classroom explanatory style vs generic conceptual exposition)",
+          "definition": "To what extent the explanation adopts the local classroom’s explanatory style, metaphors, and terminology, versus taking the tone of a generic conceptual exposition that would be suitable for a wide audience beyond this course."
+        }
+      ],
+      "regimes": [
+        {
+          "regime_id": 1,
+          "regime_label": "More conservative (strong path orientation)",
+          "preference_summary": "The learner wants ‘explain it again, but better’ in the way this course has already been using the concept, with familiar tasks and known pitfalls, not a different, more abstract version.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "Examples, error types, and explanations are almost all drawn from this unit’s worksheets, quizzes, or in-class discussions; the focus is the exact version of the concept that appears in current homework.",
+                "The explanation spends little or no time on extensions, variations, or advanced cases that the course has not yet touched."
+              ],
+              "low_score_signals": [
+                "The explanation highlights many properties, variants, or applications of the concept that have not appeared in this course and are not immediately needed for current tasks.",
+                "Examples and error cases are taken from contexts quite different from those used in this course, without linking them back to familiar tasks."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The order (whether starting from examples, a story, or a formal rule) closely follows how the teacher already presented the concept in class, just made clearer and more complete.",
+                "Key steps in the explanation (for example, the specific progression from a concrete example to the general rule) mirror the classroom pattern that the learner has already seen."
+              ],
+              "low_score_signals": [
+                "The explanation uses a different teaching order from what this course typically uses (for example, jumping to formalism first when the course normally builds from intuition).",
+                "The learner who attended class would feel that this is ‘a different way of telling the story’ rather than a sharper version of the same story."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The tone, sentence patterns, and metaphors closely resemble how the teacher (or course materials) usually explain things: similar level of informality, similar ways of naming objects and steps.",
+                "Local shorthand and references (‘like we did with fractions last week…’) are used and are assumed to make sense to the learner."
+              ],
+              "low_score_signals": [
+                "The explanation sounds like a textbook or exam-preparation book rather than like the teacher talking to this class.",
+                "Existing, familiar metaphors and ways of speaking about the concept are discarded and replaced by new ones without explanation."
+              ]
+            }
+          ]
+        },
+        {
+          "regime_id": 2,
+          "regime_label": "Somewhat conservative, limited exploration (moderately-high path orientation)",
+          "preference_summary": "The learner wants the course version plus a little bit of ‘looking outside the window’: mainly stick to local tasks/phrasing, but briefly hint at a more general view or an alternative explanation where it helps.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "The core of the explanation is the course version, but one or two short segments explicitly point to how this fits into a more general definition or mention a closely related variant the learner may see later.",
+                "Extra content clearly supports understanding of the current tasks (‘this is actually a special case of…’), rather than opening many new directions at once."
+              ],
+              "low_score_signals": [
+                "Either there is essentially no general context at all, so the learner cannot see beyond the exact exercises they have done, or much of the explanation is spent on generalities that overshadow the current version.",
+                "Additional content about other variants or uses is given without clarifying that they are not yet required now."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The explanation follows the course’s usual order but at one or two points temporarily steps back (and says so) to present an alternative framing or a slightly more abstract view, then returns to the familiar track.",
+                "These excursions are clearly marked as ‘another way to see it’ and do not rewrite the whole explanatory order."
+              ],
+              "low_score_signals": [
+                "Alternative framings are introduced in a way that competes with or replaces the course order, leaving the learner unsure which one is the main story.",
+                "Or the explanation stays strictly in the original order even where a short alternative framing would be helpful and natural, making it very hard to distinguish this regime from Regime 1."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The overall voice remains that of the course, but in a few places the explanation deliberately switches to a slightly more precise or standard phrasing (for example, when stating the general definition), then returns to the local style.",
+                "These style shifts are brief and clearly attached to ‘general view’ or ‘for later, you may see it written as…’ segments."
+              ],
+              "low_score_signals": [
+                "Segments with more general phrasing sound like imported textbook snippets and break the continuity of the local style.",
+                "Alternatively, the explanation never tries to phrase anything in a more standard way where that would be natural, staying entirely in local slang and making generalization difficult."
+              ]
+            }
+          ]
+        },
+        {
+          "regime_id": 3,
+          "regime_label": "Balanced: stability and exploration equally important (medium path orientation)",
+          "preference_summary": "The learner wants to fully understand both the ‘course version’ and the ‘textbook version’, and how they line up: the explanation should give both layers and show the mapping between them.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "The explanation explicitly distinguishes between ‘the version we use in this course’ and ‘the more general version’, and devotes meaningful space to each, including which assumptions are added or dropped.",
+                "Examples include both typical course exercises and at least one or two more general or cross-context cases that show the concept’s wider reach."
+              ],
+              "low_score_signals": [
+                "Either the general layer is reduced to one or two vague sentences, or the course-specific layer is treated as a short aside; one of them does not get enough content to be truly useful.",
+                "The relationship between the two layers stays implicit; a learner cannot tell which parts belong only to this course and which are general facts about the concept."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The explanation is visibly layered: it has clearly delineated parts for course-level explanation and general-level explanation, or it follows a repeated pattern where each step is first explained in the course context and then in general form (or vice versa).",
+                "The sequence makes it obvious how the learner moves from their existing understanding to a more general one (for example, by progressively relaxing or adding assumptions)."
+              ],
+              "low_score_signals": [
+                "Course-specific and general explanations are mixed together in one flow, making it hard to see which sentence is about which level.",
+                "Or the narrative is driven by only one of the patterns (course order or generic pedagogical order) and never explicitly addresses the other."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The style can comfortably switch between a familiar, informal classroom tone and a more neutral, general-exposition tone, and signals these switches to the learner.",
+                "Both tones sound like they come from the same teacher; they are adapted to each other rather than feeling like text from two different authors."
+              ],
+              "low_score_signals": [
+                "The style is locked into a single mode (only course-like or only textbook-like), so the dual perspective is not clearly felt.",
+                "When shifts occur, they are abrupt and unexplained, and the learner may misinterpret a general rule as something specific to this course or the other way around."
+              ]
+            }
+          ]
+        },
+        {
+          "regime_id": 4,
+          "regime_label": "Exploration-leaning, with key constraints retained (moderately-low path orientation)",
+          "preference_summary": "The learner wants to mainly learn ‘the real, general concept’ as seen in textbooks or other courses, while still keeping the explanation within their current level and acknowledging how the course’s version fits into that picture.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "The explanation focuses on the general definition, properties, variants, and relationships of the concept, then clearly marks how the course’s usage is a special case or simplification.",
+                "Examples and error patterns are chosen mainly to illuminate the general structure; a small subset of current-course tasks is used as concrete instances of that structure."
+              ],
+              "low_score_signals": [
+                "The content still revolves mostly around the exact tasks and patterns from this course, with only superficial mention of the concept’s broader role.",
+                "Or the explanation introduces general content that is significantly beyond the learner’s level or current prerequisites, ignoring the stated need to respect current foundations."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The exposition starts from a general pedagogical structure (for example, definition → different viewpoints → applications → examples across contexts) and then locates the course’s way of using the concept inside this structure.",
+                "The order of sections clearly follows general teaching logic rather than the chronological order in which the class encountered the concept."
+              ],
+              "low_score_signals": [
+                "The order still mirrors the course’s trajectory (‘first we saw it in fractions, then in…’) and only occasionally adds general remarks, so that the general structure remains weak.",
+                "The explanation feels like a slightly enriched version of the course notes, not like something designed to stand as a general conceptual account."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The tone is close to that of a general conceptual lecture: it is more neutral, emphasizes precision and cross-context clarity, but still avoids excessive technicalities that exceed the learner’s current stage.",
+                "References to the current course (‘in our class this is the part we use’) are brief and clearly framed as connecting points, not as the main narrative."
+              ],
+              "low_score_signals": [
+                "The explanation largely keeps the casual, ad hoc classroom style, with little sense of stepping back to talk about the concept in a more stable, widely sharable way.",
+                "Or it becomes too formal/technical for the learner’s level, sounding more like a research-oriented or advanced textbook explanation than a level-appropriate general view."
+              ]
+            }
+          ]
+        },
+        {
+          "regime_id": 5,
+          "regime_label": "More exploratory (weak path orientation)",
+          "preference_summary": "The learner wants a broadly reusable conceptual explanation that could be read by any student with similar prerequisites, with this course mentioned only as one of many places where the concept appears.",
+          "dimension_rubrics": [
+            {
+              "dimension_id": "content_axis",
+              "high_score_signals": [
+                "The explanation lays out the concept’s general role, main use-cases, variants, and relationships to neighboring ideas, and uses examples from multiple contexts (possibly including other domains or curricula).",
+                "The particular way this course uses the concept is just one example among several, and is not central to what is covered or emphasized."
+              ],
+              "low_score_signals": [
+                "Most examples, error discussions, and explanations strongly depend on this course’s specific tasks and story; a learner outside this course would find the coverage narrow or oddly chosen.",
+                "Only one context (the current course) is used to illustrate the concept; broader uses or variants are not seriously addressed."
+              ]
+            },
+            {
+              "dimension_id": "pattern_axis",
+              "high_score_signals": [
+                "The explanation follows a course-independent outline that could be dropped into different teaching settings with minimal adjustments; it does not rely on the order or framing used in this particular course.",
+                "The current course’s trajectory, if mentioned, appears as a short digression or example, not as the backbone of the explanation’s order."
+              ],
+              "low_score_signals": [
+                "Sections are ordered in a way that makes sense only because of how this course happened to introduce the concept (for example, referencing specific past lessons as if they were known).",
+                "To reuse the explanation elsewhere, a teacher would need to overhaul the order heavily, indicating strong path dependence."
+              ]
+            },
+            {
+              "dimension_id": "style_axis",
+              "high_score_signals": [
+                "The style is that of a clean, stand-alone conceptual note or mini-chapter: it introduces all terms it uses, avoids course-specific nicknames, and talks to an abstract ‘you’ who could be any learner with the requisite background.",
+                "If the mention of this particular course were removed, the explanation would still feel complete and natural."
+              ],
+              "low_score_signals": [
+                "The explanation frequently refers to ‘in our class we…’ or uses internal metaphors without introducing them; an external learner would feel like they are listening in on another group’s private conversation.",
+                "The level of shorthand or assumed context is such that the explanation is not realistically reusable beyond this particular teaching setting."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,280 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Visual captioning evaluation",
+    "subject": "CS-CV",
+    "event_type": "proposal",
+    "description": "Defined the initial research questions and created a high-level project plan. The core idea is to develop a new evaluation framework for visual captioning that goes beyond simple n-gram matching to assess deeper semantic properties like factual accuracy and compositionality.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the first event, so it establishes the foundational goals and a roadmap for the project. No prior artifacts are required as this is the inception of the research idea. This step generates the initial 'research_goals' and 'research_plan' that will guide subsequent work."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Visual captioning evaluation",
+    "subject": "CS-CV",
+    "event_type": "scheme_design",
+    "description": "Designed the initial methodological scheme for the new evaluation framework. The scheme involves using a scene graph parser to decompose both the image and the generated caption into entities, attributes, and relations, allowing for a structured comparison to assess factual accuracy.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the initial proposal (e_01), this step translates the abstract research goals into a concrete experimental design. Creating a 'method_scheme' is the necessary next step before any pilot experiments can be conducted."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Visual captioning evaluation",
+    "subject": "CS-CV",
+    "event_type": "pilot_experiments",
+    "description": "Ran a small-scale pilot study to validate the scene graph-based evaluation method. A pre-trained captioning model was run on a small subset of the COCO dataset, and the generated captions were evaluated using the new scheme to check the feasibility and initial performance of the structured comparison approach.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing the methodology in e_02, a pilot experiment is the logical next step to test its feasibility and get initial feedback. This small-scale test helps to identify potential flaws in the scene graph parsing and comparison logic before committing to larger, more resource-intensive main experiments."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Visual captioning evaluation",
+    "subject": "CS-CV",
+    "event_type": "analysis",
+    "description": "Analyzed the results from the pilot study. The analysis revealed that while the scene graph approach is promising, the off-the-shelf scene graph parser introduces significant noise, often misidentifying objects and relationships, which leads to inaccurate evaluation scores. This suggests the core comparison logic is sound, but the input data quality is a major bottleneck.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_plan"
+    ],
+    "reason": "After conducting the pilot experiment (e_03), a formal analysis of the 'experiment_results' is crucial. This step allows the team to interpret the initial findings in the context of the 'research_goals', identify weaknesses in the 'method_scheme' (like the noisy parser), and make an informed decision on how to proceed, leading to a necessary update of the 'research_plan'."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Visual captioning evaluation",
+    "subject": "CS-CV",
+    "event_type": "scheme_design",
+    "description": "Revised the evaluation methodology to address the noisy parser issue. The new scheme replaces the direct scene graph comparison with a VQA-based verification approach. For each entity-attribute-relation triple extracted from a caption, a targeted question is generated and posed to a VQA model to verify its presence in the image, making the process more robust to parsing errors.",
+    "required_artifacts": [
+      "research_plan",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous analysis (e_04) showed that the initial method was unreliable due to noise from the scene graph parser. This redesign is a direct response to that finding, modifying the 'method_scheme' to be more robust before proceeding with larger experiments. This iterative refinement is a crucial step to ensure the project's core methodology is sound."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Visual captioning evaluation",
+    "subject": "CS-CV",
+    "event_type": "pilot_experiments",
+    "description": "Conducted a new, small-scale pilot study to validate the revised VQA-based verification scheme. This experiment used a handful of images and captions to test the question generation process and the reliability of the VQA model's answers for verifying semantic triples.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After a major redesign of the methodology in e_05, it is crucial to validate this new VQA-based approach before committing to large-scale main experiments. This second pilot experiment serves as a sanity check for the new design, testing its feasibility and robustness and ensuring it addresses the parser noise issue identified in e_04."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Visual captioning evaluation",
+    "subject": "CS-CV",
+    "event_type": "analysis",
+    "description": "Analyzed the results from the VQA-based pilot study. The findings confirmed that this revised approach is significantly more robust and reliable than the initial scene graph method. The VQA model's verification of semantic triples showed high correlation with human judgments, validating the method's potential for accurate factuality assessment.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After conducting a second pilot study (e_06) with a revised method, a thorough analysis of the new 'experiment_results' is the essential next step. This analysis validates that the redesigned 'method_scheme' from e_05 is successful, justifying a move towards main experiments. Since the methodology is now stable, it is a good time to start documenting it, leading to the creation of a 'paper_paragraph' for the paper's methods section."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Visual captioning evaluation",
+    "subject": "CS-CV",
+    "event_type": "main_experiments",
+    "description": "Executed the main experiments by applying the validated VQA-based evaluation framework at scale. The method was used to evaluate captions generated by several state-of-the-art models on the entire COCO dataset, producing a comprehensive set of factuality scores for comparison.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The previous pilot study (e_06) and its analysis (e_07) successfully validated the revised VQA-based methodology. With a stable and promising method, the natural progression is to conduct the large-scale 'main_experiments' to gather the primary data needed to answer the research questions and support the paper's main claims."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Visual captioning evaluation",
+    "subject": "CS-CV",
+    "event_type": "analysis",
+    "description": "Performed a comprehensive analysis of the main experiment results. This involved aggregating the VQA-based factuality scores for each captioning model, comparing their performance, and calculating the correlation between our new metric and traditional metrics like CIDEr and SPICE, as well as with human judgments.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the large-scale main experiments (e_08), a detailed analysis of the collected 'experiment_results' is the critical next step. This analysis synthesizes the raw data into meaningful findings that directly address the 'research_goals' and allows the team to begin drafting the core results section of the paper, leading to a new 'paper_paragraph'."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Visual captioning evaluation",
+    "subject": "CS-CV",
+    "event_type": "writing",
+    "description": "Focused on drafting the main body of the research paper. This involved writing the detailed methodology section based on the VQA-based scheme, creating tables and figures to present the main experiment results, and starting the discussion section to interpret the findings and their implications.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the main experimental results comprehensively analyzed in e_09, the core research contributions are now established. The next logical step is to synthesize the methodology, results, and analysis into a coherent manuscript, moving the project from the research phase to the dissemination phase. This step consolidates the work done so far into a preliminary paper draft."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Visual captioning evaluation",
+    "subject": "CS-CV",
+    "event_type": "analysis",
+    "description": "While reviewing the paper draft, the team noticed that the 'compositionality' aspect from the initial research goals was not explicitly evaluated. This analysis focuses on creating a specialized benchmark subset from the existing main experiment results to specifically test the metric's ability to handle complex relational and compositional structures in captions.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After drafting the paper (e_10), a review against the original 'research_goals' showed that the analysis of compositionality was underdeveloped. This targeted analysis of the existing 'experiment_results' from e_08 is a crucial step to ensure all initial research questions are addressed, thereby strengthening the paper's overall contribution before finalizing the manuscript."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Visual captioning evaluation",
+    "subject": "CS-CV",
+    "event_type": "writing",
+    "description": "Updated the paper draft to fully incorporate the new compositionality analysis. This involved adding a dedicated subsection to the results, creating new tables and figures to showcase performance on the compositional benchmark, and revising the abstract and introduction to emphasize this contribution.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After the targeted analysis in e_11 produced specific results on compositionality, the next logical step is to integrate these findings into the main paper draft. This ensures the manuscript fully addresses all the initial 'research_goals' and strengthens the paper's overall narrative before submission."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Visual captioning evaluation",
+    "subject": "CS-CV",
+    "event_type": "main_experiments",
+    "description": "To strengthen the paper, an ablation study was conducted to test the metric's sensitivity to the choice of the underlying VQA model. The main evaluation was re-run using a different, weaker VQA model to analyze the impact on the final factuality scores and their correlation with human judgments.",
+    "required_artifacts": [
+      "method_scheme",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "While reviewing the nearly complete paper draft (e_12), a potential weakness was identified: the dependency on a specific VQA model. Running an ablation study is a standard and crucial step to demonstrate the robustness of the proposed method, making the paper's claims more convincing. This experiment directly addresses this by testing a key component of the 'method_scheme'."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Visual captioning evaluation",
+    "subject": "CS-CV",
+    "event_type": "analysis",
+    "description": "Analyzed the results of the ablation study on VQA model choice. The analysis confirmed that while a stronger VQA model yields better absolute correlation with human judgments, the metric's relative ranking of different captioning models remains stable even with a weaker VQA model, demonstrating the framework's robustness.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After conducting the ablation study in e_13, the immediate next step is to analyze the new 'experiment_results'. This analysis is crucial for interpreting the study's outcome, confirming the method's robustness as per the 'research_goals', and generating the specific findings that will be added to the paper's 'paper_paragraph' on ablations."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Visual captioning evaluation",
+    "subject": "CS-CV",
+    "event_type": "writing",
+    "description": "Integrated the ablation study findings into the main paper draft. A new subsection was added to the experiments section detailing the study on VQA model choice, including a table comparing correlations. The conclusion was also updated to highlight the demonstrated robustness of the proposed framework.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the analysis of the ablation study in e_14, the next logical step is to incorporate these new results into the paper. This writing task finalizes the experimental section of the manuscript, making the paper's claims stronger and bringing it one step closer to submission."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Visual captioning evaluation",
+    "subject": "CS-CV",
+    "event_type": "end",
+    "description": "The project is concluded after a final round of revisions to the paper, which now comprehensively details the VQA-based evaluation framework, main results, compositionality analysis, and ablation studies. The manuscript is deemed complete and is submitted to a top-tier computer vision conference for peer review.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached a natural conclusion. The initial research goals have been met, the methodology has been designed and validated, extensive experiments and analyses have been conducted, and the findings have been consolidated into a complete paper draft. All major research activities are finished, making submission the final step."
+  }
+]

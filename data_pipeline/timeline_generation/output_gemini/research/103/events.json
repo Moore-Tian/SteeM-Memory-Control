@@ -1,0 +1,338 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Fault tolerance in distributed computation",
+    "subject": "CS-Systems",
+    "event_type": "proposal",
+    "description": "The project kicks off by defining its initial scope and direction. We establish the core research questions regarding a novel, low-overhead checkpointing mechanism for distributed systems and create a high-level research plan.",
+    "required_artifacts": [
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "Every research project begins with an idea. This initial 'proposal' event formalizes that idea, taking an abstract concept of the project's goals as an implicit input and producing the first concrete 'research_goals' artifact and a 'research_plan' to guide subsequent work."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Fault tolerance in distributed computation",
+    "subject": "CS-Systems",
+    "event_type": "scheme_design",
+    "description": "Based on the research goals, we are designing the initial version of the checkpointing algorithm. This includes defining the data structures for storing state, the protocol for coordinating checkpoints across nodes, and the metrics for evaluating overhead (e.g., latency, throughput impact).",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "With the high-level 'research_plan' and 'research_goals' established in the proposal stage, the natural progression is to design the concrete technical method. This 'scheme_design' event translates the abstract goals into a tangible 'method_scheme' that can be implemented and tested in subsequent experiments."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Fault tolerance in distributed computation",
+    "subject": "CS-Systems",
+    "event_type": "pilot_experiments",
+    "description": "We are conducting a small-scale pilot study to validate the checkpointing algorithm. A prototype is deployed on a small cluster to test its basic functionality and gather preliminary performance data, such as latency during checkpoint operations.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing the initial 'method_scheme' in the previous step, it is crucial to test its feasibility before committing to large-scale implementation. These pilot experiments serve as a sanity check, providing the first 'experiment_results' to see if the theoretical design holds up in a practical, albeit simplified, setting."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Fault tolerance in distributed computation",
+    "subject": "CS-Systems",
+    "event_type": "analysis",
+    "description": "We analyze the preliminary data from the pilot study. The results confirm the basic correctness of the checkpointing protocol, but they also reveal that the performance overhead is much higher than anticipated, especially during coordination phases. This analysis suggests a bottleneck that needs to be addressed before scaling up.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After conducting 'pilot_experiments', the logical next step is to analyze the collected 'experiment_results'. This analysis compares the findings against the initial 'research_goals' to identify successes and shortcomings, guiding the subsequent phase of the project. The outcome of this analysis—in this case, identifying a performance bottleneck—will determine whether to revise the method or proceed to main experiments."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Fault tolerance in distributed computation",
+    "subject": "CS-Systems",
+    "event_type": "scheme_design",
+    "description": "In response to the high overhead identified in the pilot study, the team is redesigning the checkpointing algorithm. The focus is on modifying the coordination protocol to be more asynchronous, aiming to reduce the performance bottleneck observed previously.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous 'analysis' event (e_04) revealed that the initial 'method_scheme' did not meet the performance goals. Therefore, a redesign is a necessary and logical step to address the identified bottleneck before committing to larger-scale experiments. This iterative refinement is a core part of the research process."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Fault tolerance in distributed computation",
+    "subject": "CS-Systems",
+    "event_type": "pilot_experiments",
+    "description": "A second round of pilot experiments is conducted using the revised, asynchronous checkpointing protocol. This study is specifically designed to measure the performance overhead and compare it against the baseline results from the initial pilot study to validate the recent design changes.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the 'method_scheme' (e_05) to address the performance issues found during the first analysis (e_04), it is crucial to validate the fix. A new round of 'pilot_experiments' is the logical next step to test if the redesign successfully reduced the overhead before committing to larger, more expensive main experiments. The previous 'experiment_results' serve as a direct benchmark for comparison."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Fault tolerance in distributed computation",
+    "subject": "CS-Systems",
+    "event_type": "analysis",
+    "description": "The results from the second pilot study are analyzed. The data shows a significant reduction in performance overhead compared to the initial design, validating the asynchronous approach. The new scheme now meets the performance targets outlined in our research goals.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the second round of 'pilot_experiments' (e_06), an 'analysis' step is necessary to interpret the new data. By comparing the latest 'experiment_results' against the 'research_goals' and the previous design's performance, we can officially validate the revised 'method_scheme' and decide if it's ready for large-scale evaluation."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Fault tolerance in distributed computation",
+    "subject": "CS-Systems",
+    "event_type": "writing",
+    "description": "While preparing the setup for the main experiments, we begin drafting the methodology section of the research paper. This draft describes the final, validated asynchronous checkpointing protocol, detailing its design and the rationale for the changes made after the initial pilot study.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The core methodology is now stable and has been validated by pilot experiments (e_07). It is an efficient use of time to begin writing the paper by drafting the 'Methods' section, creating the first 'paper_paragraph' artifact, while the more time-consuming main experiments are being prepared. This leverages the validated 'method_scheme' to make progress on the final publication."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Fault tolerance in distributed computation",
+    "subject": "CS-Systems",
+    "event_type": "main_experiments",
+    "description": "With the revised method validated, we are now launching the main experiments. This involves deploying the asynchronous checkpointing protocol on a larger, more heterogeneous cluster and running it under various workloads and failure scenarios to comprehensively evaluate its performance, overhead, and resilience.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The previous analysis (e_07) confirmed the success of the revised 'method_scheme' in pilot studies. Following the 'research_plan', the project now progresses to 'main_experiments' to gather comprehensive data on a larger scale, which is essential for validating the research hypotheses defined in the 'research_goals'."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Fault tolerance in distributed computation",
+    "subject": "CS-Systems",
+    "event_type": "analysis",
+    "description": "The team analyzes the large dataset from the main experiments. This analysis focuses on quantifying performance overhead across different workloads and measuring recovery times from various simulated failures. The results are compared against both the pilot study benchmarks and theoretical state-of-the-art systems.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After completing the 'main_experiments' (e_09), the essential next step is a comprehensive 'analysis' of the gathered data. This process is crucial for interpreting the 'experiment_results' in the context of the original 'research_goals' and validating the effectiveness of the final 'method_scheme'."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Fault tolerance in distributed computation",
+    "subject": "CS-Systems",
+    "event_type": "writing",
+    "description": "Following the comprehensive analysis of the main experiments, we are drafting the 'Results' section of the research paper. This involves creating figures and tables to visualize the performance and resilience data, and writing text that interprets these findings in the context of our research goals and state-of-the-art comparisons.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the main experimental results now fully analyzed (e_10), the project's focus naturally shifts towards disseminating the findings. This 'writing' event is the logical next step, translating the final 'experiment_results' into a compelling narrative for the paper and building upon the previously drafted methods section ('paper_paragraph')."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Fault tolerance in distributed computation",
+    "subject": "CS-Systems",
+    "event_type": "analysis",
+    "description": "While writing the results section, an unexpected pattern emerged from the main experiment data: our asynchronous protocol also significantly reduces tail latency under high load. This analysis is dedicated to isolating and quantifying this secondary, but potentially important, finding which was not an initial research goal.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "The process of writing up results (e_11) often forces a deeper look at the data, revealing unexpected findings. This analysis event represents a realistic 'deep dive' into a secondary observation found in the main 'experiment_results', which could significantly strengthen the paper's contribution. This new finding will be documented in a new 'paper_paragraph'."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Fault tolerance in distributed computation",
+    "subject": "CS-Systems",
+    "event_type": "proposal",
+    "description": "The recent analysis revealed a significant, unexpected benefit: a reduction in tail latency. We are officially revising the research goals to elevate this finding from a side-note to a core contribution of the project, which will help strengthen the paper's overall narrative and impact.",
+    "required_artifacts": [
+      "research_goals",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "The discovery of the tail latency benefit (e_12) is a major finding that was not part of the initial plan. This 'proposal' event is a strategic step to formally update the 'research_goals' and 'research_plan', re-framing the project's main contributions to maximize its impact. This pivot is a realistic response to a significant, unexpected positive result."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Fault tolerance in distributed computation",
+    "subject": "CS-Systems",
+    "event_type": "writing",
+    "description": "With the project's contributions now reframed, the team is revising the introduction and abstract of the paper. The new draft emphasizes the dual benefits of low-overhead fault tolerance and tail latency reduction, aligning the paper's narrative with the updated research goals.",
+    "required_artifacts": [
+      "research_goals",
+      "paper_paragraph",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After formally updating the 'research_goals' in the previous step (e_13) to include the tail latency discovery, it is a logical next step to update the paper's overall narrative. This 'writing' event revises the high-level sections of the paper to reflect the new framing, ensuring the final manuscript tells the most impactful story possible."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Fault tolerance in distributed computation",
+    "subject": "CS-Systems",
+    "event_type": "main_experiments",
+    "description": "To strengthen our new claim about tail latency reduction, we are running a supplementary set of main experiments. These experiments use specific, latency-sensitive workloads to rigorously measure and demonstrate the mechanism's impact on tail latency under stress, providing dedicated evidence for this updated research goal.",
+    "required_artifacts": [
+      "research_goals",
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After reframing the paper's contribution to include tail latency (e_13, e_14), the existing experimental data, while suggestive, is not sufficient. This targeted round of 'main_experiments' is a crucial step to provide robust, direct evidence for the new key claim, ensuring the final paper is scientifically rigorous."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Fault tolerance in distributed computation",
+    "subject": "CS-Systems",
+    "event_type": "analysis",
+    "description": "The team performs a detailed analysis of the supplementary experiments focused on tail latency. The results are conclusive, showing a statistically significant reduction in tail latency under the tested workloads, which strongly supports the project's revised primary claim.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "Following the targeted 'main_experiments' (e_15), a dedicated 'analysis' is the necessary next step. This analysis will validate the new claims about tail latency reduction against the updated 'research_goals' and provide the concrete findings needed to finalize the results section of the 'paper_paragraph'."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Fault tolerance in distributed computation",
+    "subject": "CS-Systems",
+    "event_type": "writing",
+    "description": "The team is now consolidating all sections of the paper into a complete first draft. This involves integrating the latest analysis on tail latency into the results and discussion sections, polishing the narrative to flow from the introduction to the conclusion, and ensuring all claims are strongly supported by the final experimental data.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the final analysis (e_16) complete and all claims validated, the logical next step is to produce a complete draft of the research paper. This 'writing' event consolidates all prior work—methods, results, and the revised project narrative—into a single, coherent document ready for internal review and eventual submission."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "Fault tolerance in distributed computation",
+    "subject": "CS-Systems",
+    "event_type": "writing",
+    "description": "The team conducts an internal review of the complete paper draft. Feedback focuses on improving the narrative flow, strengthening the connection between the claims and the evidence, and polishing the language for clarity and impact before considering submission.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After assembling a complete first draft (e_17), a crucial step is internal team review and revision. This 'writing' event represents that final polish, ensuring the paper's narrative is coherent and all claims are strongly supported by the final 'experiment_results'. This is the last step before the manuscript is considered complete and ready for submission."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "research",
+    "topic": "Fault tolerance in distributed computation",
+    "subject": "CS-Systems",
+    "event_type": "end",
+    "description": "The research project concludes. A complete, polished manuscript describing the novel asynchronous checkpointing protocol and its dual benefits of low overhead and tail latency reduction is ready for submission to a top-tier systems conference.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached its logical conclusion. It has successfully progressed through multiple iterations of design, experimentation, and analysis, culminating in a complete and internally-reviewed paper draft (e_18) that fulfills the revised research goals (e_13). The core research work is finished, making this a natural endpoint for the timeline."
+  }
+]

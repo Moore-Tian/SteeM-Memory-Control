@@ -1,0 +1,326 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Common misconceptions and debugging math solutions",
+    "subject": "Math",
+    "event_type": "objective_clarification",
+    "description": "Initial diagnostic session with the learner to understand their goals. The learner reports feeling confident with core algebra concepts but frequently loses points on homework and tests due to 'silly mistakes' and wants to improve their ability to self-correct their work.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first event in the tutoring timeline. The logical first step is to clarify the learner's goals and background to establish a clear direction for subsequent planning and instruction."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Common misconceptions and debugging math solutions",
+    "subject": "Math",
+    "event_type": "plan_milestones",
+    "description": "Based on the learner's goal of improving self-correction, a study plan is drafted. The plan outlines three milestones: 1) identifying common error patterns, 2) learning structured debugging techniques (e.g., sanity checks, unit analysis), and 3) applying these techniques in timed practice sessions.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learning objectives defined in the previous step, the natural next step is to create a structured plan to achieve them. This event translates the high-level goals into a concrete, milestone-based study plan."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Common misconceptions and debugging math solutions",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "The first lesson is delivered, focusing on the first milestone from the study plan: 'identifying common error patterns'. The tutor covers frequent algebraic mistakes such as sign errors, incorrect distribution, and exponent rule misapplication, preparing teaching notes with clear examples.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the study plan established, the next logical step is to begin instruction. This lesson directly addresses the first milestone in the plan and creates the initial set of teaching notes that will be used for future practice and review."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Common misconceptions and debugging math solutions",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "The learner is assigned a set of practice problems focused on algebraic manipulations where common errors (sign errors, incorrect distribution) are likely to occur. The learner solves the problems, and their step-by-step work is recorded for later analysis.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson on identifying common errors, the immediate next step is to apply that knowledge through practice. This event provides the learner with an opportunity to try and catch these errors in a controlled setting, generating a record of their attempts that is crucial for the subsequent review phase."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Common misconceptions and debugging math solutions",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's step-by-step work from the practice record. The analysis confirms that the learner frequently makes sign errors when distributing negative numbers, a key topic from the recent lesson. A summary of findings and corrective feedback is prepared.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session where a `practice_record` was generated, the logical next step is to review the learner's work. This allows the tutor to assess understanding, identify specific mistakes, and generate actionable feedback, which is captured in the `feedback_summary` artifact."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Common misconceptions and debugging math solutions",
+    "subject": "Math",
+    "event_type": "materials_revision",
+    "description": "In response to the feedback summary, the tutor revises the teaching notes on algebraic errors. A new section is added with a specific checklist for distributing negative numbers and more worked examples contrasting the common sign error with the correct procedure.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in the previous step revealed a specific, recurring mistake. Before moving to more practice, it is effective to refine the teaching materials to directly address this observed weakness, making the explanation more robust and providing the learner with a better reference for future work."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Common misconceptions and debugging math solutions",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "A second, more targeted practice session is conducted. The problems specifically focus on distributing negative numbers and other expressions where sign errors are common, giving the learner a chance to apply the feedback and use the revised teaching notes.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After identifying a specific weakness, providing feedback, and revising the teaching materials, the next logical step is a targeted practice session. This assesses if the intervention was successful and if the learner can now avoid the previously identified sign errors, generating a new practice record for the next review cycle."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Common misconceptions and debugging math solutions",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviews the second, targeted practice record. The analysis shows a significant reduction in sign errors, indicating that the revised materials and focused practice were effective. A new feedback summary is created to affirm the learner's progress and close the loop on this specific error type.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted practice session (e_07), the natural next step is to review the results to assess whether the intervention was successful. This review confirms the learner's improvement on the specific weakness identified earlier, allowing the tutoring to progress to the next topic outlined in the study plan."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Common misconceptions and debugging math solutions",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "Having confirmed the learner's improvement on sign errors, the tutoring moves to the second milestone of the study plan. The tutor introduces structured debugging techniques, such as performing sanity checks (e.g., checking the sign of the answer) and using dimensional analysis to verify formulas and solutions.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review confirmed that the learner has successfully addressed the first identified error type. It is now appropriate to progress to the next milestone in the study plan, which is to teach structured debugging techniques, moving the learner toward their goal of better self-correction."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Common misconceptions and debugging math solutions",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "The learner is assigned practice problems that require applying the structured debugging techniques from the last lesson. These include word problems where dimensional analysis is useful and multi-step algebra problems where sanity checks can catch intermediate errors. The learner's solution and their documented debugging steps are recorded.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on debugging techniques, the immediate next step is for the learner to apply these new methods. This practice session is designed specifically to exercise these skills, creating a `practice_record` that will show not just the final answer, but the learner's process for self-correction and verification."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Common misconceptions and debugging math solutions",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviews the practice record from the previous session. The analysis shows that while the learner successfully used dimensional analysis on word problems, they often forgot to perform sanity checks on multi-step algebra problems, leading to some un-caught errors. A feedback summary is generated to highlight this inconsistency and suggest ways to build the habit of checking.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following a practice session focused on applying new skills (e_10), the necessary next step is to review the learner's work. This review assesses how well the learner has integrated the new debugging techniques, identifies specific areas of difficulty, and produces a feedback summary to guide the next learning cycle."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Common misconceptions and debugging math solutions",
+    "subject": "Math",
+    "event_type": "materials_revision",
+    "description": "Based on the feedback that the learner forgets to perform sanity checks, the tutor revises the teaching materials. A new 'Debugging Checklist' template is created and added to the teaching notes, prompting the learner to explicitly verify steps like checking signs, units, and the reasonableness of the final answer.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_11) showed a gap between knowing a technique (sanity checks) and applying it consistently. Revising the teaching materials to include a practical tool like a checklist provides a scaffold to help the learner build this habit, directly addressing the issue before the next practice attempt."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Common misconceptions and debugging math solutions",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "The learner is given another set of multi-step algebra problems and is explicitly instructed to use the new 'Debugging Checklist' from the revised teaching notes. This session is designed to reinforce the habit of performing sanity checks, and the learner's work, including the completed checklists, is recorded.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the creation of a 'Debugging Checklist' in the previous step to address inconsistent use of sanity checks, this practice session requires the learner to apply the new tool. This provides a structured opportunity to build the desired habit and generates a new practice record to assess if the intervention was successful."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Common misconceptions and debugging math solutions",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviews the practice record where the learner used the 'Debugging Checklist'. The analysis shows the checklist was highly effective; the learner caught several potential errors by systematically performing sanity checks. A new feedback summary is prepared to acknowledge this significant progress and reinforce the value of the debugging habit.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner practiced using the new 'Debugging Checklist' in the previous step (e_13), the immediate next step is to review their work. This review assesses the effectiveness of the new tool and the learner's ability to consistently apply the sanity check technique, providing positive reinforcement and closing the loop on this learning cycle."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Common misconceptions and debugging math solutions",
+    "subject": "Math",
+    "event_type": "lesson",
+    "description": "With the debugging techniques now established, the tutoring moves to the third milestone of the study plan. The lesson focuses on applying these skills under time pressure, teaching strategies for efficient checking like 'spot-checking' key steps and allocating a final review block during timed assignments.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_14) confirmed the learner's success in using debugging checklists. It is now appropriate to progress to the final milestone in the study plan—applying these skills in timed scenarios. This lesson introduces strategies for that new context, updating the teaching notes accordingly."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Common misconceptions and debugging math solutions",
+    "subject": "Math",
+    "event_type": "practice",
+    "description": "A timed practice session is administered to simulate a test environment, addressing the third milestone. The learner works through a mixed set of problems and is expected to apply their debugging and self-correction skills efficiently to maintain accuracy under time pressure. Their work, including any self-corrections, is recorded.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on applying debugging skills under time pressure (e_15), the natural next step is for the learner to practice these skills in a realistic, timed scenario. This event directly assesses their ability to meet the final milestone of the study plan and generates a new practice record for evaluation."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Common misconceptions and debugging math solutions",
+    "subject": "Math",
+    "event_type": "review",
+    "description": "The tutor reviews the timed practice record, focusing on accuracy, efficiency, and evidence of self-correction under pressure. The analysis indicates the learner successfully applied debugging strategies, catching most potential errors without running out of time. A final feedback summary is created to confirm the learner has met the objectives.",
+    "required_artifacts": [
+      "practice_record",
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the timed practice session (e_16) designed to simulate a test environment, the crucial next step is to review the learner's performance. This review assesses whether the learner has successfully integrated all the taught skills and can meet the final milestone of the study plan, providing a definitive measure of progress."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Common misconceptions and debugging math solutions",
+    "subject": "Math",
+    "event_type": "materials_revision",
+    "description": "The tutor finalizes the study plan and teaching notes based on the successful outcome of the tutoring. The plan is updated with annotations about the effectiveness of the two-step practice cycle and the debugging checklist, making it a reusable template for future learners with similar goals.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "reason": "With the learner's objectives successfully met, this final revision consolidates the lessons learned during the tutoring process into the core materials. This improves the reusability and effectiveness of the study plan and teaching notes for future students, serving as a final wrap-up step."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Common misconceptions and debugging math solutions",
+    "subject": "Math",
+    "event_type": "end",
+    "description": "The tutoring engagement concludes as the learner has successfully met all learning objectives. They can now consistently identify common error patterns, apply structured debugging techniques, and maintain accuracy under timed conditions.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has demonstrated mastery of the skills outlined in the study plan, confirmed by the final timed practice and review (e_17). All milestones have been met and the instructional materials have been finalized (e_18), making this a natural and successful end to the tutoring process."
+  }
+]

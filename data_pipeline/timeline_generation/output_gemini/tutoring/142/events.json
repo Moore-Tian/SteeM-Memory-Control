@@ -1,0 +1,436 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Momentum and collision reasoning in text problems",
+    "subject": "Physics",
+    "event_type": "objective_clarification",
+    "description": "Initial meeting with the learner to discuss their goals for understanding momentum and collisions. The learner expressed difficulty with applying conservation laws in multi-step word problems and wants to build confidence for an upcoming physics exam.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives",
+      "study_plan"
+    ],
+    "reason": "This is the first event in the tutoring timeline. It is essential to start by clarifying the learner's goals, background, and constraints to establish a foundation for all subsequent planning and instruction. An initial draft of a study plan is created based on this discussion."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Momentum and collision reasoning in text problems",
+    "subject": "Physics",
+    "event_type": "lesson",
+    "description": "The tutor delivers the first lesson, focusing on the definition of momentum (p=mv) and the principle of conservation of linear momentum in a closed system. The lesson introduces key concepts like 'system' and 'external forces' using simple, one-dimensional examples.",
+    "required_artifacts": [
+      "learning_objectives",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the learning objectives and study plan established in e_01, the next logical step is to begin instruction. This foundational lesson on the core principles of momentum directly addresses the learner's stated goals and prepares them for future problem-solving practice. The tutor creates teaching notes to formalize the concepts for reuse."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Momentum and collision reasoning in text problems",
+    "subject": "Physics",
+    "event_type": "practice",
+    "description": "The tutor assigns a set of simple, one-dimensional collision problems to check the learner's basic understanding of momentum and its conservation. The learner's attempts and thought process for each problem are captured to provide concrete data for review.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the foundational lesson (e_02), it is crucial to assess the learner's initial comprehension and ability to apply the new concepts. This targeted practice session provides the first opportunity for the learner to actively solve problems, generating a 'practice_record' that will be essential for identifying misconceptions and providing feedback in a subsequent review."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Momentum and collision reasoning in text problems",
+    "subject": "Physics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's submitted work from the practice session, analyzing their problem-solving steps. The analysis reveals the learner correctly applies p=mv but struggles to consistently define the 'system' and set up the conservation equation correctly for different scenarios.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed practice (e_03), a review is the necessary next step to assess understanding and provide targeted feedback. Analyzing the 'practice_record' allows the tutor to diagnose specific misconceptions and create a 'feedback_summary' to guide the learner and plan the next lesson."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Momentum and collision reasoning in text problems",
+    "subject": "Physics",
+    "event_type": "materials_revision",
+    "description": "Based on the learner's difficulties identified during the review, the tutor revises the teaching notes on momentum. The notes are updated to include a more explicit, step-by-step guide for defining the 'system' in a problem and distinguishing between internal and external forces, complete with clearer diagrams and annotated examples.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in e_04 revealed a specific conceptual gap regarding how to define the 'system'. Before re-teaching or assigning more practice, it is effective to refine the teaching materials to directly target this weakness, ensuring the next lesson is more impactful and the materials are improved for future use."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Momentum and collision reasoning in text problems",
+    "subject": "Physics",
+    "event_type": "lesson",
+    "description": "The tutor delivers a targeted mini-lesson focused on how to define the 'system' and identify external vs. internal forces, using the newly revised teaching notes. The session explicitly addresses the issues raised in the recent feedback summary and walks through several annotated examples.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the review (e_04) and materials revision (e_05), a targeted lesson is necessary to directly address the learner's identified difficulty. This step uses the improved materials to explicitly teach the concept the learner struggled with, ensuring they understand the correction before attempting more practice."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Momentum and collision reasoning in text problems",
+    "subject": "Physics",
+    "event_type": "practice",
+    "description": "To verify the effectiveness of the targeted mini-lesson, the tutor assigns a new set of practice problems. These problems are specifically designed to test the learner's ability to correctly define the 'system' and set up the conservation of momentum equation, reflecting the concepts covered in the revised notes.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a targeted lesson (e_06) to address a specific weakness identified in a review (e_04), the next logical step is to assess the learner's understanding with another practice session. This creates a new 'practice_record' to determine if the remediation was successful before moving on to more advanced topics outlined in the study plan."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Momentum and collision reasoning in text problems",
+    "subject": "Physics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's second set of practice problems. The analysis focuses on whether the learner has successfully overcome their previous difficulty with defining the 'system' and correctly setting up conservation equations.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice in e_07, a review is essential to evaluate the effectiveness of the remedial lesson (e_06). Analyzing the new 'practice_record' will determine if the learner's specific misconception has been resolved, and the resulting 'feedback_summary' will guide the decision to either advance to new material or provide further support."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Momentum and collision reasoning in text problems",
+    "subject": "Physics",
+    "event_type": "plan_milestones",
+    "description": "The latest review (e_08) confirms the learner now reliably sets up conservation of momentum problems. The tutor and learner meet to update the study plan, marking the first milestone as complete and outlining the next topic: distinguishing between elastic and inelastic collisions.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "After a successful remediation cycle (e_04-e_08), it is a good practice to formally update the study plan. This marks progress, reinforces the learner's achievement, and clearly defines the next learning target, ensuring alignment before moving on to more complex concepts like collision types."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Momentum and collision reasoning in text problems",
+    "subject": "Physics",
+    "event_type": "lesson",
+    "description": "The tutor introduces the next major topic: the distinction between elastic and inelastic collisions. The lesson covers the concept of kinetic energy and explains that while momentum is conserved in all collisions in a closed system, kinetic energy is only conserved in perfectly elastic collisions.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the learner's foundational understanding of momentum conservation confirmed and the study plan updated in e_09, the next logical step is to introduce the next planned topic. This lesson builds on prior knowledge by adding the concept of kinetic energy to differentiate between elastic and inelastic collisions."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Momentum and collision reasoning in text problems",
+    "subject": "Physics",
+    "event_type": "practice",
+    "description": "The tutor assigns practice problems that require the learner to distinguish between elastic and inelastic collisions. The problems involve calculating initial and final kinetic energy to determine if it is conserved, in addition to applying conservation of momentum.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on elastic and inelastic collisions (e_10), this practice session is crucial for assessing the learner's ability to apply the new concepts. It requires them to integrate kinetic energy calculations with momentum conservation, generating a new 'practice_record' for the next review cycle."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Momentum and collision reasoning in text problems",
+    "subject": "Physics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's solutions to the problems on elastic and inelastic collisions. The analysis shows the learner correctly applies momentum conservation but makes occasional arithmetic errors when calculating kinetic energy, sometimes leading to incorrect classification of the collision type.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the practice session in e_11, a review is the necessary next step to evaluate the learner's grasp of the new material. By analyzing the 'practice_record', the tutor can identify specific issues—in this case, calculation errors—and generate a 'feedback_summary' to guide the next phase of instruction."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Momentum and collision reasoning in text problems",
+    "subject": "Physics",
+    "event_type": "materials_revision",
+    "description": "In response to the review identifying arithmetic errors, the tutor revises the teaching notes on collisions. The notes are updated to include a structured template for calculating kinetic energy, with an emphasis on checking steps like squaring the velocity and summing energies correctly.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_12) pinpointed calculation errors, not conceptual ones. Before assigning more practice, it's effective to revise the teaching materials to provide a scaffold—like a calculation template—that directly addresses this procedural weakness and helps the learner build better habits."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Momentum and collision reasoning in text problems",
+    "subject": "Physics",
+    "event_type": "practice",
+    "description": "The tutor assigns a new set of problems on elastic and inelastic collisions. The learner is explicitly instructed to use the new calculation template from the revised teaching notes to minimize arithmetic errors when calculating kinetic energy.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials in e_13 to address calculation errors identified in e_12, the next step is to have the learner practice using the new template. This targeted practice is designed to reinforce correct procedure and verify that the intervention has resolved the issue before moving to new concepts."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Momentum and collision reasoning in text problems",
+    "subject": "Physics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's latest practice attempts, specifically checking for arithmetic errors in kinetic energy calculations. The analysis confirms that using the new calculation template has significantly reduced errors, and the learner is now correctly classifying collision types.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the targeted practice in e_14, a review is necessary to assess if the intervention (the calculation template from e_13) was successful. Analyzing the new 'practice_record' confirms the learner has overcome their issue with arithmetic, allowing the tutor to provide positive feedback and confidently plan the next stage of learning."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Momentum and collision reasoning in text problems",
+    "subject": "Physics",
+    "event_type": "plan_milestones",
+    "description": "Following the successful review in e_15, the tutor and learner agree the current milestone is met. They update the study plan to introduce the final and most complex topic: two-dimensional collisions and multi-step problems that combine momentum with other principles like kinematics or work-energy theorem.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "The learner has demonstrated proficiency with the foundational concepts after the successful remediation cycle ending in e_15. It is now appropriate to update the study plan to define the next milestone, which directly targets the learner's original goal of solving complex, multi-step word problems before moving into the final phase of instruction."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Momentum and collision reasoning in text problems",
+    "subject": "Physics",
+    "event_type": "lesson",
+    "description": "The tutor begins the final instructional phase by teaching two-dimensional collisions. The lesson explains how to treat momentum as a vector, resolving initial velocities into x and y components and applying the conservation principle independently for each axis.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the foundational concepts mastered and the study plan updated in e_16, the next step is to teach the most advanced topic. This lesson directly addresses the learner's original goal of handling more complex problems by introducing vector-based momentum conservation in two dimensions."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Momentum and collision reasoning in text problems",
+    "subject": "Physics",
+    "event_type": "practice",
+    "description": "The tutor assigns a set of 2D collision problems. These problems require the learner to resolve momentum vectors into components and apply conservation of momentum independently in the x and y directions.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on two-dimensional collisions (e_17), a practice session is the necessary next step to assess the learner's ability to apply vector concepts to momentum conservation. This creates a new 'practice_record' that will be crucial for evaluating their progress on the most complex topic in the study plan."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Momentum and collision reasoning in text problems",
+    "subject": "Physics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's solutions for the two-dimensional collision problems. The analysis focuses on whether the learner correctly resolved vectors into components and applied the conservation of momentum principle independently along the x and y axes.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on 2D collisions (e_18), a review is the necessary next step to evaluate the learner's understanding of this advanced topic. Analyzing the 'practice_record' is crucial for identifying any issues with vector decomposition or applying conservation laws in two dimensions, which will inform the final stages of tutoring."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Momentum and collision reasoning in text problems",
+    "subject": "Physics",
+    "event_type": "lesson",
+    "description": "Based on the feedback from the last review, the tutor holds a focused session on the trigonometry of vector decomposition. The lesson clarifies how to use sine and cosine to break initial velocity vectors into x and y components and how to recombine components to find a final velocity's magnitude and direction.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_19) identified a specific weakness in applying trigonometry for vector decomposition. This targeted lesson directly addresses that gap before the learner attempts more complex problems, ensuring they have the necessary mathematical tools to succeed with 2D collisions."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "Momentum and collision reasoning in text problems",
+    "subject": "Physics",
+    "event_type": "practice",
+    "description": "To check the effectiveness of the targeted trigonometry lesson, the tutor assigns another set of 2D collision problems. The learner is encouraged to focus on carefully applying the vector decomposition steps covered in the recent lesson.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a targeted lesson (e_20) on vector decomposition, a new practice session is necessary to determine if the learner has overcome their previous difficulty. This will create a new 'practice_record' to assess their ability to solve 2D collision problems before moving on to the final integration of concepts."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "tutoring",
+    "topic": "Momentum and collision reasoning in text problems",
+    "subject": "Physics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's second attempt at 2D collision problems. The analysis confirms that the targeted trigonometry lesson was successful, as the learner is now correctly decomposing vectors and applying conservation laws in both x and y dimensions.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice in e_21, a review is necessary to confirm that the learner has overcome their difficulty with vector decomposition. Analyzing the new 'practice_record' provides clear evidence of their progress, and the resulting 'feedback_summary' can confirm mastery of this skill before moving to the final stage of problem integration."
+  },
+  {
+    "event_id": "e_23",
+    "time_index": 23,
+    "domain": "tutoring",
+    "topic": "Momentum and collision reasoning in text problems",
+    "subject": "Physics",
+    "event_type": "lesson",
+    "description": "The tutor introduces the final topic: multi-step problems that combine momentum conservation with other principles like kinematics or the work-energy theorem. The lesson focuses on strategies for breaking down complex scenarios into distinct 'before', 'during', and 'after' collision phases.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review in e_22 confirmed the learner's proficiency with 2D collisions, the last prerequisite skill. Following the study plan from e_16, this lesson addresses the learner's original core goal: solving complex, multi-step problems by integrating momentum with other physics concepts."
+  },
+  {
+    "event_id": "e_24",
+    "time_index": 24,
+    "domain": "tutoring",
+    "topic": "Momentum and collision reasoning in text problems",
+    "subject": "Physics",
+    "event_type": "practice",
+    "description": "The tutor assigns a culminating set of practice problems that require integrating momentum conservation with kinematics and work-energy principles. These multi-step problems are designed to simulate exam-level difficulty and assess the learner's ability to synthesize concepts.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the final lesson on multi-step problems (e_23), this practice session is critical for assessing the learner's ability to apply the integrated problem-solving strategies. It directly targets their original learning goal and will generate a comprehensive 'practice_record' for a final review of their overall competence."
+  },
+  {
+    "event_id": "e_25",
+    "time_index": 25,
+    "domain": "tutoring",
+    "topic": "Momentum and collision reasoning in text problems",
+    "subject": "Physics",
+    "event_type": "review",
+    "description": "The tutor conducts a final, comprehensive review of the learner's solutions to the multi-step problems. The analysis focuses on the learner's ability to correctly identify which physics principles to apply, structure the solution logically, and synthesize all concepts covered.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the culminating practice session (e_24) covering all topics, a comprehensive review is the necessary final check. This step assesses the learner's overall competence against the study plan's final objectives and generates a summative feedback report before concluding the tutoring."
+  }
+]

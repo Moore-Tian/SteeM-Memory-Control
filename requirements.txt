@@ -1,0 +1,9 @@
+# Data pipeline
+openai
+tqdm
+
+# Memory control method - evaluation & judging
+vllm
+transformers
+pandas
+matplotlib

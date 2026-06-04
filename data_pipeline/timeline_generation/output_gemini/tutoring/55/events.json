@@ -1,0 +1,422 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Database fundamentals and query reasoning",
+    "subject": "Programming",
+    "event_type": "objective_clarification",
+    "description": "Initial meeting to understand the learner's background, goals, and constraints. The learner is a junior data analyst aiming to master SQL for their job, with a focus on complex joins and subqueries. We established a target timeline of 3 months and drafted an initial high-level plan.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives",
+      "study_plan"
+    ],
+    "reason": "This is the first session with the learner. It's essential to clarify their objectives and create an initial study plan to provide structure and direction for the tutoring process before diving into specific topics."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Database fundamentals and query reasoning",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "First lesson covering the fundamentals of SQL. We focused on the basic structure of a SELECT query, including SELECT, FROM, and WHERE clauses, and prepared initial teaching notes on these concepts.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the initial plan in place, the next logical step is to begin instruction. This foundational lesson on basic SQL queries directly addresses the starting point outlined in the study plan and creates the first set of teaching notes for future reference and revision."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Database fundamentals and query reasoning",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "Assigned the learner a set of simple practice problems requiring them to write basic SELECT queries with WHERE clauses. The learner's attempts and the query outputs were recorded to check for understanding and common errors.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing foundational concepts in the previous lesson (e_02), it is crucial to have the learner apply them through hands-on practice. This step helps solidify their understanding and generates a record of their work, which is essential for the upcoming review and feedback cycle."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Database fundamentals and query reasoning",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "Reviewed the learner's submitted queries from the practice session. Identified some minor syntax errors and a misunderstanding of how to filter using multiple conditions in the WHERE clause. A feedback summary was created to explain the corrections and suggest next steps.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed hands-on exercises in the previous practice event (e_03), it is essential to review their work. This step allows for the identification of specific errors and the creation of targeted feedback, ensuring that misconceptions are addressed before moving on to more complex topics."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Database fundamentals and query reasoning",
+    "subject": "Programming",
+    "event_type": "materials_revision",
+    "description": "Based on the learner's difficulties with multiple conditions identified in the review, the teaching notes on the WHERE clause were updated. The revision added clearer examples and explicit explanations for using AND/OR operators to combine filters.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_04) highlighted a specific gap in the learner's understanding. Revising the teaching materials to explicitly address this point ensures the learner has a clearer reference and improves the quality of the instructional content for future lessons."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Database fundamentals and query reasoning",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "To reinforce the concepts from the recent feedback, the learner was assigned a new set of practice problems focused specifically on using multiple conditions with AND/OR operators in the WHERE clause. Their attempts were recorded for a follow-up review.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the review (e_04) and materials revision (e_05), this targeted practice session is designed to verify that the learner has corrected their misunderstanding of multiple WHERE conditions. It provides an opportunity to apply the revised concepts before moving on to new topics."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Database fundamentals and query reasoning",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "Reviewed the learner's second set of practice queries focusing on multiple WHERE conditions. The learner successfully applied the AND/OR operators correctly, indicating that the previous feedback and revised materials were effective. A new feedback summary was created to confirm their success and prepare for the next topic.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice in the previous event (e_06), this review is essential to verify that the learner has overcome their earlier difficulties. Confirming their understanding allows us to close this remediation loop and confidently proceed with the study plan."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Database fundamentals and query reasoning",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "Following the successful review of basic queries, we proceeded to the next topic in the study plan: combining data. This lesson introduced the concept of JOINs, focusing specifically on INNER JOIN, and updated the teaching notes with syntax, examples, and diagrams.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the learner's mastery of basic WHERE clauses confirmed in the previous review (e_07), it is time to advance to the next topic outlined in the study plan. This lesson on JOINs begins to address the learner's primary goal of handling more complex queries."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Database fundamentals and query reasoning",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "Assigned the learner practice exercises requiring them to write queries using INNER JOIN to combine data from two tables. The goal is to apply the concept from the previous lesson, and their attempts were recorded for review.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing the concept of INNER JOINs in the previous lesson (e_08), it is essential for the learner to apply this new knowledge through hands-on practice. This step solidifies their understanding and creates a record of their work, which is necessary for the next review and feedback cycle."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Database fundamentals and query reasoning",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "Reviewed the learner's practice queries using INNER JOIN. The learner grasped the basic syntax but made some errors in selecting the correct columns for the join condition. A feedback summary was created with visual diagrams to clarify how to identify the correct primary/foreign key pairs for joining tables.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on a new, more complex topic (INNER JOINs in e_09), a detailed review is critical. This step allows for the identification of specific misunderstandings—in this case, on join conditions—and the creation of targeted feedback to correct them before they become ingrained habits."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Database fundamentals and query reasoning",
+    "subject": "Programming",
+    "event_type": "materials_revision",
+    "description": "To address the learner's difficulty with join conditions, the teaching notes on JOINs were updated. The revision incorporates the visual diagrams and clearer explanations about primary/foreign key relationships that were created for the last feedback session.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_10) identified a key conceptual gap. It is good practice to formally incorporate the successful corrective explanations from the feedback summary back into the main teaching notes, improving them for future reference and practice."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Database fundamentals and query reasoning",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "Assigned the learner a new set of practice problems focused on INNER JOINs, with an emphasis on correctly identifying the primary and foreign keys for the join condition. This targeted practice is designed to reinforce the concept addressed in the recent feedback and materials revision.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After identifying a specific weakness with join conditions in the last review (e_10) and updating the teaching notes (e_11), this targeted practice session is crucial to verify that the learner has absorbed the feedback and can now correctly apply the concept before moving on to more complex join types."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Database fundamentals and query reasoning",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "Reviewed the learner's second set of INNER JOIN queries. The learner now correctly identifies and uses the appropriate primary/foreign keys for join conditions, showing that the targeted practice was successful. A feedback summary was generated to confirm their progress and greenlight moving to more complex join types.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the targeted practice in the previous event (e_12), this review is essential to confirm that the learner has overcome their difficulties with join conditions. Verifying this mastery allows us to confidently close the remediation loop and advance to the next topic in the study plan, such as OUTER JOINs."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Database fundamentals and query reasoning",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "With INNER JOINs mastered, the next lesson introduced OUTER JOINs (LEFT and RIGHT). The session focused on the conceptual difference between them and INNER JOINs, explaining how to retrieve non-matching rows. The teaching notes were updated with explanations and examples for these new join types.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_13) confirmed the learner's proficiency with INNER JOINs. According to the study plan, the next logical step is to build upon this knowledge by introducing more complex join types, which directly addresses the learner's goal of mastering complex queries."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Database fundamentals and query reasoning",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "Assigned practice exercises requiring the use of LEFT and RIGHT JOINs to combine data, including cases where some rows do not have matches. The learner's queries were recorded to assess their understanding of how OUTER JOINs differ from INNER JOINs.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing OUTER JOINs in the previous lesson (e_14), hands-on practice is the essential next step. This allows the learner to apply the new concepts, solidifies their understanding, and generates a record of their work for the upcoming review."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Database fundamentals and query reasoning",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "Reviewed the learner's practice on OUTER JOINs. The learner correctly used the syntax but showed confusion in choosing between LEFT and RIGHT JOIN to get the desired result, sometimes mixing them up. A feedback summary was created to clarify the 'direction' of the join with specific examples.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on OUTER JOINs (e_15), a review is the necessary next step to assess understanding. Identifying and correcting the learner's confusion between LEFT and RIGHT JOINs is critical for building a solid foundation before tackling more advanced query patterns."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Database fundamentals and query reasoning",
+    "subject": "Programming",
+    "event_type": "materials_revision",
+    "description": "To address the learner's confusion between LEFT and RIGHT joins, the teaching notes were revised. The update adds a new section clarifying the 'directionality' of the joins with side-by-side examples showing how changing from LEFT to RIGHT affects the query result.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_16) highlighted a conceptual error in choosing the correct OUTER JOIN type. Revising the teaching materials to explicitly address this confusion provides a clearer reference for the learner and is a necessary step before further practice."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Database fundamentals and query reasoning",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "To reinforce the concept of join directionality, the learner was assigned a new set of targeted practice problems. These problems require them to choose the correct OUTER JOIN (LEFT or RIGHT) to produce a specific desired output, based on the recently revised teaching notes.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials to clarify OUTER JOINs (e_17), this targeted practice is the crucial next step. It allows the learner to apply the corrected concept and provides a means to verify their understanding before progressing to more complex topics like subqueries."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Database fundamentals and query reasoning",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "Reviewed the learner's targeted practice on choosing between LEFT and RIGHT JOINs. The learner now correctly selects the appropriate join type to match the requirements, demonstrating a solid understanding of join directionality. A feedback summary was created to confirm this success and prepare for the introduction of subqueries.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice in the previous event (e_18), this review is necessary to confirm that the learner has mastered the distinction between LEFT and RIGHT joins. Verifying this understanding is the final step before progressing to subqueries, a key component of the learner's original objectives."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Database fundamentals and query reasoning",
+    "subject": "Programming",
+    "event_type": "lesson",
+    "description": "With JOINs mastered, we moved on to the next major topic from the study plan: subqueries. This lesson introduced the concept of nested queries, focusing on their use in the WHERE clause to filter data based on the result of another query. The teaching notes were updated to include this new topic.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_19) confirmed the learner's solid grasp of JOINs. As per the study plan and the learner's original objectives, introducing subqueries is the next logical step in building their skills for writing complex queries."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "tutoring",
+    "topic": "Database fundamentals and query reasoning",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "Assigned the learner a set of practice problems requiring the use of subqueries in the WHERE clause. The exercises are designed to test their initial grasp of how to nest a query for filtering purposes, and their attempts were recorded for review.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing subqueries in the previous lesson (e_20), immediate hands-on practice is crucial for reinforcement. This session allows the learner to apply the new concept and creates a practice record that is essential for identifying any initial misunderstandings in the subsequent review."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "tutoring",
+    "topic": "Database fundamentals and query reasoning",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "Reviewed the learner's initial practice on subqueries. Found that the learner understood the basic concept but struggled with using operators like IN vs. = with subqueries that return multiple values. A feedback summary was created to explain the difference and provide corrected examples.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the first practice session on a new, complex topic like subqueries (e_21), a review is necessary to catch initial misconceptions. Identifying the learner's confusion with single-row vs. multi-row subquery operators allows for targeted feedback, preventing this fundamental error from persisting as we move to more complex subquery types."
+  },
+  {
+    "event_id": "e_23",
+    "time_index": 23,
+    "domain": "tutoring",
+    "topic": "Database fundamentals and query reasoning",
+    "subject": "Programming",
+    "event_type": "materials_revision",
+    "description": "To address the learner's confusion with subquery operators, the teaching notes were updated. The revision explicitly clarifies when to use operators like IN, ANY, ALL for multi-row subqueries versus using = for single-row subqueries, incorporating examples from the recent feedback.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_22) identified a critical misunderstanding in using subqueries. Revising the teaching materials to directly address this error is a necessary step to provide the learner with a clear, corrected reference before they attempt further practice on the topic."
+  },
+  {
+    "event_id": "e_24",
+    "time_index": 24,
+    "domain": "tutoring",
+    "topic": "Database fundamentals and query reasoning",
+    "subject": "Programming",
+    "event_type": "practice",
+    "description": "To reinforce the correct use of subquery operators, the learner was assigned new targeted practice problems. These exercises require them to choose between operators like IN and = based on whether the subquery returns single or multiple rows.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching materials on subquery operators (e_23), this targeted practice is essential to verify the learner has overcome their previous confusion. This step ensures they can correctly apply the concept before moving to more advanced subquery use cases."
+  },
+  {
+    "event_id": "e_25",
+    "time_index": 25,
+    "domain": "tutoring",
+    "topic": "Database fundamentals and query reasoning",
+    "subject": "Programming",
+    "event_type": "review",
+    "description": "Reviewed the learner's targeted practice on subquery operators. The learner now correctly distinguishes between situations requiring IN versus =, showing that the previous remediation cycle was successful. A new feedback summary was created to confirm their mastery and prepare for the next topic.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice in the previous event (e_24), this review is essential to verify that the learner has overcome their confusion with subquery operators. Confirming this mastery allows the tutoring to proceed to more advanced subquery applications, keeping momentum in the study plan."
+  }
+]

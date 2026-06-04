@@ -1,0 +1,338 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Evaluating historical sources and perspectives in text",
+    "subject": "History",
+    "event_type": "objective_clarification",
+    "description": "The tutor and learner hold an initial diagnostic session to discuss the learner's goals for analyzing historical texts. They cover the learner's self-assessed skill level, desired outcomes (e.g., improving grades on history essays), and any time constraints, producing a first draft of learning objectives and a high-level study plan.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives",
+      "study_plan"
+    ],
+    "reason": "This is the first event in the tutoring timeline. The logical starting point is to clarify the learner's objectives and create an initial plan to guide subsequent sessions."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Evaluating historical sources and perspectives in text",
+    "subject": "History",
+    "event_type": "lesson",
+    "description": "The tutor conducts the first lesson, focusing on foundational concepts for source evaluation as outlined in the study plan. The lesson covers distinguishing between primary and secondary sources and introduces a framework (e.g., author, purpose, audience) for analyzing a document's context and potential bias. The tutor prepares a set of teaching notes covering these concepts.",
+    "required_artifacts": [
+      "learning_objectives",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After establishing a plan and objectives, the next logical step is to begin instruction. This lesson addresses a foundational topic from the study plan, and creating teaching notes makes the material reusable for future review and practice."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Evaluating historical sources and perspectives in text",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "To reinforce the concepts from the first lesson, the tutor provides the learner with two short historical documents. The learner is tasked with identifying each as a primary or secondary source and applying the analysis framework (author, purpose, audience) to one of them. The tutor records the learner's analysis steps and final conclusions.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following a lesson on new concepts, targeted practice is essential for the learner to apply and internalize the knowledge. This event creates a record of the learner's attempt, which is necessary for the upcoming review and feedback cycle."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Evaluating historical sources and perspectives in text",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's analysis from the practice session, assessing the accuracy of source classification and the application of the analysis framework. The tutor identifies specific areas of confusion, such as misunderstanding the author's purpose, and prepares a summary of feedback with corrections and actionable advice.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed a practice task (e_03), the logical next step is to review their work. This allows the tutor to assess comprehension, identify specific errors documented in the practice_record, and generate a feedback_summary to guide the learner's improvement."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Evaluating historical sources and perspectives in text",
+    "subject": "History",
+    "event_type": "materials_revision",
+    "description": "Based on the review which highlighted the learner's confusion about 'author's purpose,' the tutor revises the teaching notes. The updated notes now include more concrete examples and a checklist to help differentiate an author's stated purpose from their potential underlying motives or biases.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The feedback from the last review (e_04) pinpointed a specific conceptual gap. Revising the teaching materials is a proactive step to address this gap before the next practice session, ensuring the learner has clearer, more effective resources to learn from."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Evaluating historical sources and perspectives in text",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "To confirm the learner's understanding after the recent feedback and materials revision, the tutor assigns a new practice task. The learner is given a different historical document and asked to focus specifically on analyzing the author's purpose, using the revised checklist from the updated teaching notes. The learner's attempt is recorded.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After identifying a specific weakness (e_04) and revising the teaching materials to address it (e_05), it is crucial to conduct another practice session. This allows the tutor to verify that the intervention was successful and that the learner can now correctly apply the concept before introducing new material."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Evaluating historical sources and perspectives in text",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's second practice attempt, focusing on the analysis of the author's purpose. The tutor observes significant improvement, noting that the learner successfully used the revised checklist from the teaching notes to produce a more nuanced analysis. A new feedback summary is created to confirm the learner's progress and suggest they are ready for the next topic.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted practice session (e_06) designed to address a previously identified weakness, a review is necessary to evaluate the learner's progress. This step closes the feedback loop, confirms that the remediation was successful, and provides a clear basis for deciding whether to move on to new material."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Evaluating historical sources and perspectives in text",
+    "subject": "History",
+    "event_type": "plan_milestones",
+    "description": "Following the successful remediation, the tutor and learner review the study plan. They officially mark the first milestone ('Mastering source fundamentals') as complete and detail the next milestone: 'Comparing and contrasting perspectives across multiple sources.' The plan is updated with specific learning activities for this new phase.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "The previous review (e_07) confirmed the learner has mastered the foundational concepts, signaling the completion of the first learning block. This makes it an appropriate time to formally update the study plan, acknowledge the progress, and clearly define the objectives and activities for the next topic."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Evaluating historical sources and perspectives in text",
+    "subject": "History",
+    "event_type": "lesson",
+    "description": "The tutor introduces the next topic as per the updated study plan: comparing and contrasting perspectives. The lesson covers methods for identifying corroboration and contradiction between multiple sources about the same event. The tutor creates new teaching notes outlining a systematic approach for this comparative analysis.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After updating the study plan to define the next learning milestone (e_08), the logical progression is to teach the concepts required for that milestone. This lesson directly addresses the new topic of comparative analysis and generates updated teaching materials to support the learner in this more complex task."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Evaluating historical sources and perspectives in text",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "The tutor provides the learner with two primary sources describing the same historical event but from different viewpoints. The learner is tasked with applying the comparative analysis method from the recent lesson to identify points of corroboration and contradiction. The learner's findings and reasoning are documented.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After a lesson on the new topic of comparing sources (e_09), the natural next step is for the learner to apply this skill through targeted practice. This task directly assesses the concepts from the lesson and generates a practice_record, which is essential for the upcoming review."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Evaluating historical sources and perspectives in text",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's comparative analysis from the previous practice session. They assess the learner's ability to identify corroboration and contradiction between the two sources, noting that the learner correctly identified contradictions but struggled to explain their historical significance. The tutor prepares a feedback summary with specific examples and guiding questions.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on comparative analysis (e_10), a review is the logical next step to assess the learner's performance. This allows the tutor to evaluate the application of the new skill, identify specific difficulties (like explaining significance), and generate targeted feedback to guide the next learning activity."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Evaluating historical sources and perspectives in text",
+    "subject": "History",
+    "event_type": "materials_revision",
+    "description": "Responding to the feedback from the last review, the tutor enhances the teaching notes on comparative analysis. A new section is added that focuses specifically on how to interpret the 'significance' of contradictions, providing a framework with questions like 'What does this disagreement tell us about the authors' different perspectives or access to information?'",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_11) revealed that the learner struggles with analyzing the significance of contradictions, a higher-order skill. Before assigning more practice, it is effective to first improve the instructional materials to explicitly teach this concept, ensuring the learner has a clear framework to apply."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Evaluating historical sources and perspectives in text",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "To verify understanding of the newly explained concept, the tutor assigns a focused practice task. Using the revised teaching notes, the learner analyzes the same pair of contrasting sources from the previous exercise, but this time with a specific instruction to explain the historical significance of the contradictions they find. Their new analysis is recorded.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "The previous review (e_11) identified a gap in understanding the significance of source contradictions, which was addressed by revising the teaching notes (e_12). This targeted practice session is necessary to confirm that the learner can now apply this more advanced analytical skill using the new materials, creating a new practice record for evaluation."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Evaluating historical sources and perspectives in text",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's focused practice on explaining the significance of source contradictions. The tutor confirms that the learner's new analysis is much stronger, successfully using the revised framework to connect source disagreements to broader historical context. A new feedback summary is generated to praise the improvement and confirm readiness for the next topic.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted practice session (e_13) that followed a materials revision (e_12), a review is essential to close the feedback loop. This event assesses whether the learner has overcome the specific difficulty identified in the previous review (e_11) and generates a new feedback summary to formalize the outcome."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Evaluating historical sources and perspectives in text",
+    "subject": "History",
+    "event_type": "plan_milestones",
+    "description": "Following the successful remediation and review, the tutor and learner meet to update the study plan. They mark the second milestone ('Comparing and contrasting perspectives') as complete and define the next milestone: 'Synthesizing multiple sources to build a historical argument.' The plan is revised with new learning activities for this advanced skill.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "The previous review (e_14) confirmed the learner's mastery of comparative analysis. As with the completion of the first milestone (e_08), this is the appropriate time to update the study plan to reflect progress and clearly define the goals and activities for the next, more advanced topic."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Evaluating historical sources and perspectives in text",
+    "subject": "History",
+    "event_type": "lesson",
+    "description": "As outlined in the newly revised study plan, the tutor conducts a lesson on the advanced skill of synthesizing information from multiple sources. The lesson explains how to move beyond comparison to construct a coherent historical argument, supported by evidence from various documents. The tutor prepares new teaching notes detailing this process, including how to formulate a thesis based on source analysis.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the study plan updated in the previous event (e_15) to focus on synthesis, the immediate next step is to teach this new concept. This lesson provides the theoretical foundation the learner needs before they can practice constructing their own historical arguments."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Evaluating historical sources and perspectives in text",
+    "subject": "History",
+    "event_type": "practice",
+    "description": "To apply the final skill of synthesis, the tutor provides a set of three historical documents on a single topic. The learner is tasked with developing a thesis and outlining a historical argument that synthesizes evidence from all three sources, following the method taught in the previous lesson. The learner's thesis and outline are recorded for review.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on synthesis (e_16), this practice session serves as a capstone exercise, requiring the learner to apply all the skills they have developed. It is a critical step to assess their ability to perform the ultimate learning objective—constructing a historical argument—and generates a record for a final, comprehensive review."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Evaluating historical sources and perspectives in text",
+    "subject": "History",
+    "event_type": "review",
+    "description": "The tutor conducts a final review of the learner's synthesis practice, assessing the thesis and outline for coherence, use of evidence from all sources, and overall argument structure. The tutor prepares a comprehensive feedback summary assessing the learner's mastery of all key skills.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the capstone practice exercise on synthesis (e_17), this review is the necessary next step to evaluate the learner's overall proficiency. It provides a final assessment against the learning objectives and generates feedback that will determine if the tutoring process is complete."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Evaluating historical sources and perspectives in text",
+    "subject": "History",
+    "event_type": "objective_clarification",
+    "description": "The tutor and learner hold a final wrap-up session to review the entire tutoring process. They compare the comprehensive feedback from the last review against the initial learning objectives, confirming that all goals have been successfully met. The tutor provides advice on how the learner can continue to apply these skills independently.",
+    "required_artifacts": [
+      "learning_objectives",
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "After the final review (e_18) confirmed the learner's mastery of the capstone skill, this session formally closes the tutoring arc. It validates the achievement of the initial goals and provides a clear sense of closure before officially ending the engagement."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Evaluating historical sources and perspectives in text",
+    "subject": "History",
+    "event_type": "end",
+    "description": "The tutoring engagement is formally concluded as all learning objectives have been met and the learner has demonstrated proficiency in the required skills, from basic source analysis to complex synthesis.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The previous event (e_19) was a final wrap-up session that confirmed all initial learning objectives were met. The capstone review (e_18) showed the learner's mastery of the subject. With the learning arc complete and advice for future independent study provided, the tutoring process has reached its natural conclusion."
+  }
+]

@@ -1,0 +1,342 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Inequality, mobility, and distributional effects",
+    "subject": "Economics",
+    "event_type": "objective_clarification",
+    "description": "The tutor and learner hold an initial diagnostic session to discuss the learner's goals, prior knowledge in economics and statistics, and motivation for studying inequality and mobility. The learner expresses interest in understanding key metrics and their policy implications for a university course, aiming to complete the topic within two months.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives",
+      "study_plan"
+    ],
+    "reason": "As the first session, it is essential to clarify the learner's goals and background to tailor the tutoring. This diagnostic step produces the initial learning objectives and a draft study plan, which will guide all subsequent activities."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Inequality, mobility, and distributional effects",
+    "subject": "Economics",
+    "event_type": "lesson",
+    "description": "The tutor delivers the first lesson, focusing on foundational concepts of inequality measurement. The session covers the Lorenz curve and the Gini coefficient, including their graphical representation, calculation, and interpretation.",
+    "required_artifacts": [
+      "learning_objectives",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the creation of the initial study plan in the diagnostic session (e_01), the next logical step is to begin instruction. This lesson on core metrics directly addresses the learner's objectives and initiates the first topic outlined in the plan, creating reusable teaching notes for the concepts covered."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Inequality, mobility, and distributional effects",
+    "subject": "Economics",
+    "event_type": "practice",
+    "description": "The tutor assigns targeted practice problems on calculating the Gini coefficient from income distribution data and interpreting Lorenz curves. The learner works through the problems, and their step-by-step solutions and final answers are recorded.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After introducing foundational concepts in the lesson (e_02), this practice session is the logical next step to solidify understanding and assess the learner's ability to apply the methods. Creating a practice record is essential for the subsequent review and feedback cycle."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Inequality, mobility, and distributional effects",
+    "subject": "Economics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's solutions from the practice session on the Gini coefficient and Lorenz curves. The review focuses on identifying errors in calculation and interpretation, noting where the learner struggled to apply the concepts from the lesson.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session (e_03) where the learner's work was recorded, a review is the necessary next step to assess understanding and provide targeted feedback. This event uses the practice record to generate a feedback summary, which will guide the next phase of instruction or remediation."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Inequality, mobility, and distributional effects",
+    "subject": "Economics",
+    "event_type": "materials_revision",
+    "description": "Based on the review, the tutor revises the teaching notes for the Gini coefficient. They add a more detailed, step-by-step calculation example and a new section on common interpretation pitfalls to address the specific issues identified in the learner's practice attempts.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review (e_04) revealed specific gaps in the learner's understanding. Revising the teaching materials based on the feedback summary is a crucial step to clarify difficult points before assigning more practice or introducing new concepts, thus improving the effectiveness of future lessons."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Inequality, mobility, and distributional effects",
+    "subject": "Economics",
+    "event_type": "practice",
+    "description": "The tutor assigns a new set of practice problems focusing on the areas where the learner previously struggled, using the revised teaching notes. The learner's attempts at calculating the Gini coefficient and interpreting Lorenz curves are recorded to check for improvement.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching notes (e_05) to address specific difficulties identified during the last review (e_04), it is crucial to re-assess the learner's understanding. This targeted practice session allows the learner to apply the clarified concepts, and the resulting record will verify if the remediation was successful before moving on."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Inequality, mobility, and distributional effects",
+    "subject": "Economics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's second set of practice attempts. The analysis confirms that the learner has successfully corrected their previous calculation errors and can now interpret Lorenz curves accurately, demonstrating mastery of the topic.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted second practice session (e_06) that followed materials revision, it is necessary to review the new attempts. This review verifies whether the remediation was successful and confirms that the learner is ready to move on to the next topic outlined in the study plan."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Inequality, mobility, and distributional effects",
+    "subject": "Economics",
+    "event_type": "lesson",
+    "description": "With the first topic mastered, the tutor introduces the concept of intergenerational mobility. The lesson explains how to measure mobility using transition matrices and correlation coefficients, and introduces the Great Gatsby Curve to link inequality and mobility.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_07) confirmed the learner's mastery of static inequality measures. Following the study plan, the next logical step is to introduce a new, related topic. This lesson on intergenerational mobility builds on the foundational concepts and advances the learning objectives."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Inequality, mobility, and distributional effects",
+    "subject": "Economics",
+    "event_type": "practice",
+    "description": "The tutor provides practice exercises on intergenerational mobility. The learner is asked to interpret a transition matrix, calculate a simple mobility coefficient, and explain the relationship depicted by the Great Gatsby Curve, with their responses being recorded.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on intergenerational mobility (e_08), this practice session is the necessary next step to assess the learner's initial grasp of the new concepts. Creating a practice record is crucial for the upcoming review and feedback cycle, continuing the established learn-practice-review loop."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Inequality, mobility, and distributional effects",
+    "subject": "Economics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's practice attempts on intergenerational mobility. The analysis reveals the learner has a good conceptual understanding of the Great Gatsby Curve but made minor errors in calculating the mobility coefficient from the transition matrix.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on mobility (e_09), a review is the necessary next step to assess comprehension and identify any misunderstandings. This review generates a feedback summary that will guide the next step, which could be further practice or clarification on the calculation method."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Inequality, mobility, and distributional effects",
+    "subject": "Economics",
+    "event_type": "materials_revision",
+    "description": "Based on the review of the learner's practice, the tutor revises the teaching notes on intergenerational mobility. A more detailed, step-by-step example for calculating the mobility coefficient from a transition matrix is added to address the minor errors identified.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review (e_10) identified minor but specific calculation errors. Following the successful pattern from events e_04-e_06, revising the teaching materials to add clarity on the difficult point is a logical step before re-assessing the learner with more practice."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Inequality, mobility, and distributional effects",
+    "subject": "Economics",
+    "event_type": "practice",
+    "description": "To reinforce the concept after the materials were revised, the tutor assigns a new, focused practice problem on calculating the mobility coefficient from a transition matrix. The learner's step-by-step calculation is recorded to verify that the previous error has been corrected.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After revising the teaching notes (e_11) to address specific calculation errors identified in the last review (e_10), a follow-up practice session is necessary. This step allows the learner to apply the clarified method and provides a new record to assess whether the remediation was successful before moving forward."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Inequality, mobility, and distributional effects",
+    "subject": "Economics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's attempt at the focused practice problem on mobility coefficients. The review confirms the learner has now correctly applied the calculation method, demonstrating that the previous difficulty identified in event e_10 has been resolved.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted practice session (e_12), a review is essential to verify that the remediation and materials revision (e_11) were successful. This step confirms the learner's understanding of the calculation before moving on to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Inequality, mobility, and distributional effects",
+    "subject": "Economics",
+    "event_type": "plan_milestones",
+    "description": "The tutor and learner hold a checkpoint session to review progress against the original study plan. Having completed the foundational topics of inequality and mobility measurement, they decide to adjust the timeline for the upcoming module on policy analysis to allow more time for case studies.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "After completing two major topics and observing the learner's pace (including time needed for remediation), it is a good practice to review and adjust the study plan. This ensures the plan remains realistic and aligned with the learner's progress before starting the next complex topic on policy implications."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Inequality, mobility, and distributional effects",
+    "subject": "Economics",
+    "event_type": "lesson",
+    "description": "Following the updated study plan, the tutor begins the module on policy analysis. The lesson introduces the concepts of progressive and regressive taxation and social transfers, explaining how these fiscal tools can alter the distribution of income.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After adjusting the study plan in the previous checkpoint (e_14) and confirming mastery of prerequisite topics (e_13), the next logical step is to start the next module. This lesson on policy tools directly follows the revised plan and builds towards the learner's goal of understanding policy implications."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Inequality, mobility, and distributional effects",
+    "subject": "Economics",
+    "event_type": "practice",
+    "description": "The tutor assigns practice problems where the learner must analyze the impact of different fiscal policies, such as a progressive income tax or a social transfer program, on a given income distribution. The learner's calculations and interpretations of the changes in inequality are recorded.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on policy analysis (e_15), this practice session is a crucial step to ensure the learner can apply these complex concepts. It directly addresses a core learning objective about policy implications, and creating a practice record is necessary for the subsequent review and feedback cycle."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Inequality, mobility, and distributional effects",
+    "subject": "Economics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's practice attempts on analyzing fiscal policy impacts. The review checks the learner's ability to apply concepts like progressive taxation and social transfers to a given income distribution and correctly interpret the resulting changes in inequality.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session on policy analysis (e_16), a review is the necessary next step to assess the learner's comprehension and identify any difficulties in applying the new concepts. This review generates a feedback summary that will determine whether the learner is ready for case studies or requires further clarification."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Inequality, mobility, and distributional effects",
+    "subject": "Economics",
+    "event_type": "practice",
+    "description": "The tutor assigns a comprehensive case study based on a real-world scenario. The learner is tasked with applying concepts from all previous lessons—calculating inequality metrics, assessing mobility, and analyzing the distributional effects of a proposed policy intervention—to produce a consolidated report.",
+    "required_artifacts": [
+      "study_plan",
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "The previous review (e_17) confirmed the learner's grasp of policy analysis tools. In line with the updated study plan (e_14), this capstone practice session requires the learner to synthesize all topics covered so far, moving from isolated problems to a more holistic analysis, which is a key learning objective."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "tutoring",
+    "topic": "Inequality, mobility, and distributional effects",
+    "subject": "Economics",
+    "event_type": "review",
+    "description": "The tutor performs a comprehensive review of the learner's case study report. The analysis assesses the learner's ability to integrate concepts from the entire course, including calculating inequality metrics, interpreting mobility, and evaluating the distributional impact of policies in a coherent narrative.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the submission of a comprehensive case study (e_18), a thorough review is the necessary next step to provide final, holistic feedback. This event evaluates the learner's ability to synthesize knowledge across all topics, which is the ultimate goal outlined in the study plan and learning objectives."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "tutoring",
+    "topic": "Inequality, mobility, and distributional effects",
+    "subject": "Economics",
+    "event_type": "end",
+    "description": "In a final wrap-up session, the tutor and learner review the journey from the initial diagnostic to the successful completion of the case study. The tutor confirms that all learning objectives have been met and provides final encouragement and tips for the learner's university course.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The learner has demonstrated mastery by successfully completing a comprehensive case study that integrates all topics, as confirmed by the final review (e_19). With the core objectives of the study plan achieved, the tutoring process has reached its natural and successful conclusion."
+  }
+]

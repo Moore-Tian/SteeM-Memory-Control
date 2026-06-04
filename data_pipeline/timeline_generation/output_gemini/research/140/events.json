@@ -1,0 +1,421 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Polymer design workflows",
+    "subject": "Chemistry",
+    "event_type": "proposal",
+    "description": "Initial project proposal to establish the core research questions and a high-level plan. The project aims to develop and validate a new computational workflow for designing polymers with specific thermal and mechanical properties.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the first event of the project, so it's logical to start with a 'proposal' to define the initial scope. This step establishes the foundational 'research_goals' and 'research_plan' artifacts, which will guide all subsequent research activities. No prior artifacts are required as this is the project's inception."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Polymer design workflows",
+    "subject": "Chemistry",
+    "event_type": "scheme_design",
+    "description": "The team designs the initial computational workflow, outlining the specific steps for the polymer design process. The proposed scheme integrates molecular dynamics (MD) simulations for property prediction with a genetic algorithm for optimizing polymer structures.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the initial proposal (e_01), the next logical step is to translate the high-level 'research_plan' and 'research_goals' into a concrete computational procedure. This 'scheme_design' event creates the initial 'method_scheme', which is required before any experiments can be run."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Polymer design workflows",
+    "subject": "Chemistry",
+    "event_type": "pilot_experiments",
+    "description": "Run a small-scale pilot study to test the feasibility of the designed workflow. The team applies the integrated MD simulation and genetic algorithm approach to a small, well-characterized set of known polymers to validate the implementation and ensure the property predictions are reasonable.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing the computational 'method_scheme' (e_02), a pilot study is a crucial next step to validate the approach before committing to large-scale 'main_experiments'. This event will generate initial 'experiment_results', providing a sanity check on the workflow's implementation and its ability to meet the 'research_goals'."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Polymer design workflows",
+    "subject": "Chemistry",
+    "event_type": "analysis",
+    "description": "The team analyzes the pilot study results. The analysis shows that while the MD property predictions are accurate, the genetic algorithm converges prematurely to suboptimal structures, indicating a major performance bottleneck.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_plan"
+    ],
+    "reason": "After generating initial 'experiment_results' from the pilot study (e_03), a formal 'analysis' is the logical next step. Evaluating these results against the 'method_scheme' and 'research_goals' is crucial for identifying weaknesses. This analysis revealed a significant issue, necessitating a revision of the 'research_plan' to prioritize improving the optimization algorithm before running main experiments."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Polymer design workflows",
+    "subject": "Chemistry",
+    "event_type": "scheme_design",
+    "description": "Based on the analysis of the pilot study, the team revises the computational method. They modify the genetic algorithm to incorporate a diversity-preservation mechanism, aiming to prevent the premature convergence issue identified in the previous step.",
+    "required_artifacts": [
+      "research_plan",
+      "method_scheme",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous 'analysis' (e_04) of the pilot 'experiment_results' revealed a critical flaw in the 'method_scheme' and led to an updated 'research_plan'. Therefore, the logical next step is to return to the 'scheme_design' stage to address this specific flaw. This revision is necessary before running more extensive or new experiments."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Polymer design workflows",
+    "subject": "Chemistry",
+    "event_type": "pilot_experiments",
+    "description": "The team re-runs the pilot study using the revised method scheme. The goal is to verify that the new diversity-preservation mechanism in the genetic algorithm successfully prevents the previously observed premature convergence.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the 'method_scheme' in e_05 to fix a critical flaw, a new round of 'pilot_experiments' is essential to validate that the fix works as intended. This step is a necessary checkpoint before committing resources to full-scale main experiments, and it will generate new 'experiment_results' reflecting the performance of the updated method."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Polymer design workflows",
+    "subject": "Chemistry",
+    "event_type": "analysis",
+    "description": "The team analyzes the results from the second pilot study. The analysis confirms that the revised genetic algorithm with the diversity-preservation mechanism successfully avoids premature convergence, validating the updated method against the project's goals.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_plan"
+    ],
+    "reason": "After re-running the pilot study with a revised method (e_06), a new 'analysis' is required to formally evaluate the outcome. This step is crucial to confirm whether the fix was successful by comparing the new 'experiment_results' against the 'research_goals'. The successful analysis updates the 'research_plan', officially concluding the pilot phase and greenlighting the project to proceed to the main experiments."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Polymer design workflows",
+    "subject": "Chemistry",
+    "event_type": "main_experiments",
+    "description": "With the revised workflow validated, the team launches the main computational experiments. The system is used to screen a large library of monomer candidates to design novel polymers that meet the target thermal and mechanical properties defined in the research goals.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the successful validation of the revised method in the second pilot study (e_06, e_07), the 'research_plan' now calls for scaling up the effort. This 'main_experiments' phase is the logical next step, applying the validated 'method_scheme' to address the core 'research_goals' by generating a comprehensive set of 'experiment_results'."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Polymer design workflows",
+    "subject": "Chemistry",
+    "event_type": "analysis",
+    "description": "The team performs a comprehensive analysis of the results from the main computational experiments. The analysis identifies several promising novel polymer candidates that meet or exceed the target properties. Key findings, such as structure-property relationships and performance data for the top candidates, are summarized.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After running the 'main_experiments' (e_08) and generating a large dataset, the immediate and necessary next step is a thorough 'analysis'. This event involves interpreting the raw 'experiment_results' in the context of the original 'research_goals' to distill the core scientific findings. The output is a new, refined 'experiment_results' artifact, representing the summarized and interpreted findings rather than just the raw data."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Polymer design workflows",
+    "subject": "Chemistry",
+    "event_type": "writing",
+    "description": "The team begins drafting the manuscript for publication. Initial drafts of the 'Methods' section are written based on the final computational workflow, and the 'Results' section is drafted to present the key findings from the main experiments, including the performance of the top polymer candidates.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the comprehensive analysis of the main experiments (e_09), the project has reached a major milestone with validated results. The logical next step is to begin the 'writing' process to formally document the 'method_scheme' and the summarized 'experiment_results' for publication. This creates the first draft content for the paper."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Polymer design workflows",
+    "subject": "Chemistry",
+    "event_type": "main_experiments",
+    "description": "While drafting the paper, the team identifies the need for a stronger baseline for comparison. They decide to run an additional set of simulations to benchmark the performance of their top designed polymer candidates against a leading, commercially available polymer with similar target properties.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The process of writing the paper (e_10) revealed a narrative gap: the lack of a direct comparison to a state-of-the-art material. This additional 'main_experiments' run is a logical step to generate crucial benchmark data using the established 'method_scheme', thereby strengthening the claims made about the novel polymers identified in the previous 'experiment_results'."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Polymer design workflows",
+    "subject": "Chemistry",
+    "event_type": "analysis",
+    "description": "The team analyzes the results of the benchmark simulations. They compare the performance of their top computationally designed polymers against the commercial standard, confirming that their novel structures offer a significant improvement in the targeted thermal and mechanical properties.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After running additional 'main_experiments' for benchmarking in e_11, the logical next step is to perform an 'analysis' of this new data. This is necessary to directly compare the performance of the newly designed polymers with the established baseline, thereby generating a consolidated set of 'experiment_results' that will strengthen the claims in the paper."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Polymer design workflows",
+    "subject": "Chemistry",
+    "event_type": "writing",
+    "description": "The team revises the manuscript to incorporate the new benchmark comparison data. The 'Results' section is updated to show the superior performance of their designed polymers, and the 'Discussion' section is expanded to highlight the significance of these findings relative to the commercial standard.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After analyzing the benchmark experiments in e_12, the project has a complete set of compelling 'experiment_results'. The logical next step is to integrate these findings into the existing 'paper_paragraph' draft to build a stronger argument for the novelty and impact of the work, aligning the narrative with the original 'research_goals'."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Polymer design workflows",
+    "subject": "Chemistry",
+    "event_type": "proposal",
+    "description": "With the core findings for the paper established, the team meets to discuss the project's future direction. Based on the strong computational results, they decide to expand the project's scope to include a new long-term goal: the experimental synthesis and lab validation of the top-performing polymer. The research goals and plan are updated to reflect this.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "After integrating the benchmark data into the paper draft (e_13), the project has reached a stable point with compelling results. This is a natural time to step back and plan for the future. The success documented in the 'experiment_results' justifies expanding the 'research_goals' to include experimental validation, requiring an update to the long-term 'research_plan'."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Polymer design workflows",
+    "subject": "Chemistry",
+    "event_type": "scheme_design",
+    "description": "To pursue the new goal of experimental validation, the team designs a protocol for the wet-lab synthesis of the most promising polymer candidate from the computational study. The new method scheme outlines the specific chemical reactions, purification steps, and analytical techniques (e.g., DSC, tensile testing) required to create and test the material.",
+    "required_artifacts": [
+      "research_plan",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous event (e_14) updated the 'research_plan' and 'research_goals' to include experimental validation. The logical next step is to translate this new goal into a concrete plan, which requires a 'scheme_design' event. This creates a new experimental 'method_scheme' based on the top candidate from the computational 'experiment_results'."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Polymer design workflows",
+    "subject": "Chemistry",
+    "event_type": "pilot_experiments",
+    "description": "The team attempts a small-scale pilot synthesis of the top polymer candidate based on the new wet-lab protocol. The goal is to test the feasibility of the synthesis route and to produce a small quantity of the material for initial characterization, checking for any unforeseen challenges in the procedure.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing the experimental synthesis protocol in e_15, a 'pilot_experiments' event is the logical next step to validate the feasibility of the new 'method_scheme' in a wet-lab setting. This is a crucial risk-mitigation step before committing to a larger, more resource-intensive synthesis and will generate the first set of physical 'experiment_results' for the new material."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Polymer design workflows",
+    "subject": "Chemistry",
+    "event_type": "analysis",
+    "description": "The team analyzes the outcome of the pilot synthesis. The analysis reveals that while the target polymer was successfully synthesized, the yield was very low and the material's measured glass transition temperature was slightly lower than computationally predicted, likely due to impurities. This indicates the synthesis protocol needs optimization.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "research_plan"
+    ],
+    "reason": "Following the pilot synthesis experiment (e_16), an 'analysis' of the outcome is the mandatory next step. This event evaluates the physical 'experiment_results' against the synthesis 'method_scheme' and the project's 'research_goals' to identify successes and failures. The findings directly inform the next steps, in this case indicating a need to update the 'research_plan' to include a synthesis optimization phase."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "Polymer design workflows",
+    "subject": "Chemistry",
+    "event_type": "scheme_design",
+    "description": "In response to the pilot synthesis analysis, the team revises the wet-lab synthesis protocol. They focus on optimizing the purification steps to remove impurities and adjust reaction conditions to improve the overall yield, aiming to produce a higher-purity material for characterization.",
+    "required_artifacts": [
+      "research_plan",
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous analysis (e_17) revealed that the initial synthesis protocol was suboptimal, resulting in low yield and impurities. Revisiting 'scheme_design' is the logical next step to modify the 'method_scheme' based on the findings from those pilot 'experiment_results', directly addressing the issues before attempting another synthesis."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "research",
+    "topic": "Polymer design workflows",
+    "subject": "Chemistry",
+    "event_type": "pilot_experiments",
+    "description": "The team performs a second pilot synthesis using the revised and optimized wet-lab protocol. The goal is to determine if the adjustments to the purification steps and reaction conditions have successfully increased the yield and purity of the target polymer.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the synthesis protocol in e_18 to address issues of low yield and purity, the logical next step is to test this new 'method_scheme'. This 'pilot_experiments' event serves to validate the fix, generating new 'experiment_results' that will determine if the synthesis is now robust enough for larger-scale production and characterization."
+  },
+  {
+    "event_id": "e_20",
+    "time_index": 20,
+    "domain": "research",
+    "topic": "Polymer design workflows",
+    "subject": "Chemistry",
+    "event_type": "analysis",
+    "description": "The team analyzes the results of the second pilot synthesis. The analysis confirms that the revised protocol significantly improved both the yield and purity of the polymer. The measured glass transition temperature of the purified material now closely matches the original computational prediction, validating the model.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "research_plan"
+    ],
+    "reason": "After conducting a second pilot synthesis with a revised protocol (e_19), a detailed 'analysis' is the necessary next step. This event evaluates the new 'experiment_results' against the 'method_scheme' and 'research_goals' to confirm if the optimization was successful. The positive outcome validates the synthesis approach and updates the 'research_plan' to proceed with larger-scale experimental work."
+  },
+  {
+    "event_id": "e_21",
+    "time_index": 21,
+    "domain": "research",
+    "topic": "Polymer design workflows",
+    "subject": "Chemistry",
+    "event_type": "main_experiments",
+    "description": "With the synthesis protocol validated, the team proceeds with the main experimental validation. They synthesize a larger batch of the top-performing polymer and conduct comprehensive characterization, including tensile testing for mechanical properties and thermogravimetric analysis (TGA) for thermal stability, to compare against the initial computational predictions.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the successful pilot synthesis and analysis (e_20), the updated 'research_plan' calls for scaling up the experimental validation. This 'main_experiments' step is the execution of that plan, using the validated 'method_scheme' to produce a larger sample and generate comprehensive physical 'experiment_results' to directly test against the project's 'research_goals'."
+  },
+  {
+    "event_id": "e_22",
+    "time_index": 22,
+    "domain": "research",
+    "topic": "Polymer design workflows",
+    "subject": "Chemistry",
+    "event_type": "analysis",
+    "description": "The team performs the final analysis, comparing the comprehensive experimental characterization data (tensile strength, thermal stability) with the original computational predictions. The analysis shows a strong correlation, validating the predictive power of the entire computational workflow from design to physical realization.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After generating comprehensive physical characterization data in the main experimental phase (e_21), the critical next step is to conduct a detailed 'analysis'. This event closes the loop on the project's central hypothesis by directly comparing the experimental outcomes against the initial computational predictions and 'research_goals', providing the definitive validation of the design workflow."
+  },
+  {
+    "event_id": "e_23",
+    "time_index": 23,
+    "domain": "research",
+    "topic": "Polymer design workflows",
+    "subject": "Chemistry",
+    "event_type": "writing",
+    "description": "The team performs a major revision of the manuscript to incorporate the full end-to-end story. They add new sections describing the experimental synthesis and characterization methods, and present the physical validation results, directly comparing them to the computational predictions. The discussion is rewritten to emphasize the successful validation of the entire design workflow.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After the final analysis (e_22) confirmed the successful experimental validation, the most critical next step is to integrate these powerful new findings into the paper. The existing 'paper_paragraph' draft is incomplete, and this 'writing' event creates a comprehensive manuscript that reflects the full scope and success of the project, aligning the final narrative with the 'research_goals'."
+  },
+  {
+    "event_id": "e_24",
+    "time_index": 24,
+    "domain": "research",
+    "topic": "Polymer design workflows",
+    "subject": "Chemistry",
+    "event_type": "end",
+    "description": "With a comprehensive manuscript detailing the successful computational design, experimental synthesis, and validation of a novel polymer, the project has achieved all its stated goals. The team finalizes the paper for submission to a peer-reviewed journal, marking the conclusion of this research project.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has successfully progressed from an initial computational concept to full experimental validation, with all findings documented in a comprehensive paper draft (e_23). All major research goals have been met, the methods are stable, and the results are conclusive. Therefore, it is a natural and logical point to conclude this research timeline."
+  }
+]

@@ -1,0 +1,327 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Benchmarks for long-context reasoning",
+    "subject": "CS-AI/ML",
+    "event_type": "proposal",
+    "description": "The project begins with an initial proposal to address the lack of robust benchmarks for long-context reasoning in LLMs. The team defines the primary research goal as creating a new benchmark suite that tests multi-step reasoning and information synthesis over extended documents. A high-level plan is drafted, outlining the major phases: task design, data collection, model evaluation, and analysis.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the first event of the project. A 'proposal' event is the most logical starting point, as it establishes the initial research goals and a high-level plan, which are necessary before any design or experimentation can begin."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Benchmarks for long-context reasoning",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "Following the high-level plan, the team designs the initial scheme for the benchmark tasks. They decide to create synthetic tasks by injecting a 'needle' (a specific fact) into a long 'haystack' of text, requiring models to retrieve the fact. The scheme details the procedure for generating these text blocks, the types of questions to ask, and the evaluation metric (exact match on the answer).",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "After establishing the high-level goals and plan in the 'proposal' event (e_01), the natural next step is to design the concrete methodology for the benchmark. This 'scheme_design' event translates the abstract ideas from 'research_goals' into a tangible 'method_scheme' that can be used for pilot experiments."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Benchmarks for long-context reasoning",
+    "subject": "CS-AI/ML",
+    "event_type": "pilot_experiments",
+    "description": "The team runs a small-scale pilot experiment to validate the 'needle in a haystack' task design. They generate a handful of test cases with varying context lengths and run a baseline LLM to see if the task is feasible and if the evaluation logic is sound. The goal is to quickly identify any obvious flaws in the experimental setup before scaling up.",
+    "required_artifacts": [
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With a concrete 'method_scheme' defined in e_02, the logical next step is to conduct 'pilot_experiments'. This allows the team to sanity-check the proposed task and evaluation metric on a small scale, ensuring the design is viable before committing to resource-intensive main experiments. The results will provide the first empirical data for the project."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Benchmarks for long-context reasoning",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The team analyzes the pilot experiment results. They observe that the simple 'needle in a haystack' task is easily solved by most models, but doesn't effectively test for deeper reasoning or information synthesis. The analysis concludes that the current task design is too simplistic to meaningfully differentiate models' long-context reasoning capabilities.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals"
+    ],
+    "reason": "After conducting 'pilot_experiments' (e_03), a dedicated 'analysis' of the 'experiment_results' is the logical next step. This allows the team to evaluate the effectiveness of the initial scheme against the original 'research_goals' and identify its shortcomings. The outcome is a refinement of the goals to focus on more complex reasoning tasks, which will guide the next design phase."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Benchmarks for long-context reasoning",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "Based on the analysis of pilot results, the team revisits the benchmark design. They propose a new set of tasks called 'multi-hop information synthesis', where the model must retrieve and combine multiple pieces of information from different parts of the long context to answer a question. This is a significant revision from the simple 'needle in a haystack' approach.",
+    "required_artifacts": [
+      "research_goals",
+      "method_scheme",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous analysis (e_04) revealed that the initial task design was too simplistic. This 'scheme_design' event is a necessary step to revise the 'method_scheme' to align with the refined 'research_goals' and create tasks that genuinely test complex, multi-step reasoning, addressing the shortcomings found in the pilot 'experiment_results'."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Benchmarks for long-context reasoning",
+    "subject": "CS-AI/ML",
+    "event_type": "pilot_experiments",
+    "description": "The team conducts a second round of pilot experiments to test the newly designed 'multi-hop information synthesis' task. A small set of examples is created to verify that the task is solvable but challenging, and to test the data generation pipeline for these more complex scenarios. The primary goal is to ensure the revised scheme is a significant improvement over the initial 'needle in a haystack' task before scaling up.",
+    "required_artifacts": [
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After significantly revising the benchmark design in the previous 'scheme_design' event (e_05), it is crucial to validate this new, more complex 'method_scheme'. Running another round of 'pilot_experiments' allows the team to test the feasibility and difficulty of the 'multi-hop' tasks on a small scale, mitigating the risk of committing to large-scale main experiments with a flawed design."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Benchmarks for long-context reasoning",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The team analyzes the results from the second round of pilot experiments. The 'multi-hop information synthesis' task proves to be effective: it is challenging for baseline models but solvable, and performance correlates with model capabilities. The analysis confirms this task design is robust and suitable for a large-scale benchmark.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After conducting the second round of 'pilot_experiments' (e_06) with the revised 'method_scheme', a detailed 'analysis' of the new 'experiment_results' is the logical next step. This is crucial to formally validate that the new task design meets the project's 'research_goals' before committing resources to the full-scale main experiments."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Benchmarks for long-context reasoning",
+    "subject": "CS-AI/ML",
+    "event_type": "main_experiments",
+    "description": "With the 'multi-hop' task design validated, the team proceeds to the main experiments. They generate a large-scale dataset of thousands of examples with varying context lengths and run a comprehensive set of long-context models to establish benchmark performance. This phase requires significant computational resources and is aimed at producing the core results of the study.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The successful analysis of the second pilot study (e_07) confirmed that the revised 'method_scheme' is effective and robust. Therefore, the logical progression is to scale up from the pilot to the 'main_experiments' to collect the comprehensive data needed to fulfill the project's research goals."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Benchmarks for long-context reasoning",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The team conducts a deep-dive analysis of the main experiment results. They compare the performance of various models on the 'multi-hop' tasks, plotting accuracy against context length and identifying common failure modes. The analysis reveals that even capable models struggle significantly as the number of 'hops' and context length increase, providing strong evidence for the benchmark's utility.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "After completing the large-scale 'main_experiments' in e_08, the most critical next step is to perform a comprehensive 'analysis' of the resulting data. This allows the team to interpret the findings in the context of the 'research_goals' and synthesize them into key conclusions. It is also a natural point to start drafting the results section of the paper, thus generating the first 'paper_paragraph'."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Benchmarks for long-context reasoning",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "With the core analysis complete, the team shifts focus to drafting the paper. They write a detailed methodology section based on the final 'multi-hop' task design and expand the results section with tables, figures, and text summarizing the key findings from the main experiments.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "Following the comprehensive analysis of main experiments (e_09), the logical next step is to formally document the project's contributions. This 'writing' event translates the stable 'method_scheme' and rich 'experiment_results' into core sections of the research paper, moving the project towards publication."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Benchmarks for long-context reasoning",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "While reviewing the main results and the draft paper, the team hypothesizes that the task's difficulty might stem from either multi-step retrieval or the synthesis of information. A detailed error analysis is performed on failure cases, which indicates that synthesis is the primary bottleneck. This insight leads to a decision to design a controlled experiment to explicitly isolate and test this synthesis capability.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_plan",
+      "research_goals"
+    ],
+    "reason": "After drafting the initial results (e_10), it's common to identify weaknesses or alternative explanations for the findings. This 'analysis' event represents a deeper dive to strengthen the paper's core claims, leading to a refinement of the 'research_goals' and an update to the 'research_plan' to include a new, more focused experiment."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Benchmarks for long-context reasoning",
+    "subject": "CS-AI/ML",
+    "event_type": "scheme_design",
+    "description": "To test the synthesis-as-bottleneck hypothesis, the team designs a new controlled experiment. The scheme involves creating 'synthesis-only' variants of the multi-hop tasks where the necessary facts are provided directly in the prompt, removing the long-context retrieval challenge. By comparing model performance on the original 'retrieval+synthesis' task against the new 'synthesis-only' version, they can isolate the difficulty of the synthesis step.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the analysis in e_11 which led to a new hypothesis and an updated 'research_plan', the immediate next step is to design the experiment to test it. This 'scheme_design' event creates a concrete 'method_scheme' for the controlled experiment needed to disentangle the effects of retrieval versus synthesis, directly addressing the refined 'research_goals'."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Benchmarks for long-context reasoning",
+    "subject": "CS-AI/ML",
+    "event_type": "pilot_experiments",
+    "description": "The team runs a pilot for the new controlled experiment, testing the 'synthesis-only' task on a small scale. They generate a limited number of examples and run them on a key model to get a quick signal. The goal is to verify that the task behaves as expected (i.e., performance is much higher than the original task) and to iron out any issues in the new experimental setup.",
+    "required_artifacts": [
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After designing the controlled experiment scheme in e_12 to isolate the synthesis bottleneck, the immediate and prudent next step is to run a 'pilot_experiment'. This allows the team to validate the new 'method_scheme' on a small scale and ensure the experimental design is sound before committing to a larger, more resource-intensive main experiment."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Benchmarks for long-context reasoning",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The team analyzes the pilot results for the 'synthesis-only' controlled experiment. The findings show that models perform significantly better when the retrieval step is eliminated, strongly supporting the hypothesis that information synthesis, not just retrieval, is a major bottleneck. This analysis validates the controlled experiment's design and confirms its value for the paper.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After conducting the pilot experiment for the controlled task (e_13), the logical next step is to analyze the results. This 'analysis' is crucial to validate the experimental design from e_12 and confirm the 'synthesis-as-bottleneck' hypothesis before proceeding to a larger-scale experiment, ensuring the new findings are robust."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Benchmarks for long-context reasoning",
+    "subject": "CS-AI/ML",
+    "event_type": "main_experiments",
+    "description": "Building on the successful pilot, the team now runs the full-scale controlled experiment for the 'synthesis-only' task. They use the same set of models and context lengths as the main 'multi-hop' experiments to allow for direct comparison. This generates a comprehensive dataset isolating the synthesis capability of each model.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The previous analysis (e_14) validated the design of the controlled experiment and provided strong preliminary evidence for the 'synthesis-as-bottleneck' hypothesis. The logical next step is to conduct the 'main_experiments' to gather robust, large-scale data. This will provide definitive evidence for the paper's key claims, directly addressing the refined 'research_goals' from e_11."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Benchmarks for long-context reasoning",
+    "subject": "CS-AI/ML",
+    "event_type": "analysis",
+    "description": "The team performs a comparative analysis, contrasting the results from the 'synthesis-only' controlled experiment (e_15) with the original 'multi-hop' retrieval+synthesis experiment (e_08). The analysis confirms with high confidence that information synthesis is a distinct and significant challenge for LLMs, separate from long-context retrieval. Key visualizations are created to show the performance gap between the two conditions across different models.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "reason": "With the data from the controlled main experiment (e_15) now available, a comprehensive 'analysis' is the critical next step. This allows the team to synthesize findings from both sets of main experiments, directly address the key hypothesis from e_11, and generate the core conclusive arguments and figures for the paper."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Benchmarks for long-context reasoning",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "With the core experimental work and analysis complete, the team focuses on producing a full draft of the paper. They integrate the results from the controlled experiment into the manuscript, revise the methodology section to describe both tasks, and write the discussion and conclusion sections, which frame the 'synthesis bottleneck' as the paper's main takeaway.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After the final comparative analysis (e_16) solidified the project's key findings, the most logical next step is a dedicated 'writing' phase to consolidate all results into a full paper draft. This event transforms the separate analyses and method descriptions into a single, coherent narrative, moving the project significantly closer to completion."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "Benchmarks for long-context reasoning",
+    "subject": "CS-AI/ML",
+    "event_type": "writing",
+    "description": "The team circulates the full paper draft for internal review. Based on collective feedback, they revise the manuscript to improve the narrative flow, clarify the description of the controlled experiment, and enhance the visualizations comparing the 'retrieval+synthesis' and 'synthesis-only' tasks. The goal is to create a polished, submission-ready version of the paper.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After creating a full draft in e_17, a crucial next step is internal review and revision. This 'writing' event addresses feedback to refine the paper's narrative and presentation, ensuring the final manuscript is clear, convincing, and accurately reflects the methods and results before submission."
+  },
+  {
+    "event_id": "e_19",
+    "time_index": 19,
+    "domain": "research",
+    "topic": "Benchmarks for long-context reasoning",
+    "subject": "CS-AI/ML",
+    "event_type": "end",
+    "description": "The team submits the polished manuscript to a top-tier AI conference. The project is considered complete, with the benchmark data, code, and paper prepared for public release upon acceptance.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached a natural conclusion. A clear research question was posed and answered through multiple, well-justified experimental cycles. The final paper has been drafted, internally reviewed, and polished (e_18), making submission the final step. All core artifacts have been created and refined, fulfilling the project's objectives."
+  }
+]

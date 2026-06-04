@@ -1,0 +1,288 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Human-in-the-loop annotation workflows",
+    "subject": "CS-HCI",
+    "event_type": "proposal",
+    "description": "Initial project proposal to investigate more efficient human-in-the-loop annotation workflows. The core idea is to explore how to best combine active learning strategies with interactive annotator feedback to reduce labeling costs while maintaining quality.",
+    "required_artifacts": [
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "This is the first formal event of the project, establishing the initial research direction. It takes a pre-existing, high-level research idea as input ('research_goals') and produces a more refined set of goals and a concrete high-level plan for the project."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Human-in-the-loop annotation workflows",
+    "subject": "CS-HCI",
+    "event_type": "scheme_design",
+    "description": "Based on the research plan, an initial methodological scheme is designed. This includes selecting 'uncertainty sampling' as the active learning strategy, designing a simple UI for text classification annotation, and choosing a standard sentiment analysis dataset for the experiments.",
+    "required_artifacts": [
+      "research_plan",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the initial proposal (e_01), the next logical step is to translate the high-level goals and plan into a concrete experimental design. This event creates the first version of the 'method_scheme' that will be tested in subsequent pilot experiments."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Human-in-the-loop annotation workflows",
+    "subject": "CS-HCI",
+    "event_type": "pilot_experiments",
+    "description": "A small-scale pilot study is conducted using the designed scheme. A single annotator labels a few hundred instances from the sentiment dataset to test the UI's usability and verify that the uncertainty sampling logic correctly identifies and presents ambiguous examples.",
+    "required_artifacts": [
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With a concrete 'method_scheme' defined in e_02, the next logical step is to run a pilot experiment. This serves as a sanity check for the experimental setup and workflow before committing resources to large-scale main experiments."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Human-in-the-loop annotation workflows",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "The results from the pilot study are analyzed. The analysis reveals that while the basic workflow is functional, the annotator reported some confusion with the UI. Furthermore, the uncertainty sampling strategy appears to be less effective in the initial rounds of annotation when the model is poorly trained.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After conducting a pilot experiment (e_03), the essential next step is to analyze its results. This analysis provides concrete feedback on the current 'method_scheme', identifying both its strengths and weaknesses before committing to larger, more expensive main experiments. The findings will guide the next iteration of design."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Human-in-the-loop annotation workflows",
+    "subject": "CS-HCI",
+    "event_type": "scheme_design",
+    "description": "The experimental scheme is revised based on pilot study feedback. The annotation UI is updated with clearer instructions and layout improvements. To address the 'cold start' problem, the sampling strategy is modified to begin with a round of random sampling before switching to uncertainty sampling.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The analysis of the pilot experiment (e_04) identified critical flaws in the initial 'method_scheme' from e_02. This event represents a necessary iteration in the design cycle, revising the scheme to address the identified UI and sampling issues before running more extensive experiments."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Human-in-the-loop annotation workflows",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "With the experimental method revised and stabilized, a first draft of the 'Methodology' section for the research paper is written. This draft details the hybrid random/uncertainty sampling strategy and the refined annotation user interface.",
+    "required_artifacts": [
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "The experimental design ('method_scheme') was significantly revised in e_05, creating a more stable version. It is a common and efficient practice to begin drafting the methods section of a paper at this stage, while the design details are fresh and before running large-scale experiments."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Human-in-the-loop annotation workflows",
+    "subject": "CS-HCI",
+    "event_type": "main_experiments",
+    "description": "The main experiments are launched using the revised scheme. A larger group of annotators is recruited to label the full sentiment dataset, comparing the performance of the hybrid random/uncertainty sampling strategy against a pure random sampling baseline in terms of annotation cost and model accuracy.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After the initial method was revised (e_05) based on pilot feedback (e_04) and documented (e_06), the next logical step is to run the full-scale main experiment. This will generate the primary data needed to evaluate the core research hypotheses and test the effectiveness of the refined 'method_scheme'."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Human-in-the-loop annotation workflows",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "The data from the main experiments is formally analyzed. The results confirm that the hybrid sampling strategy significantly reduces the number of required labels to reach a target model accuracy compared to the random sampling baseline. The analysis also reveals that the benefit is most pronounced after the model has been trained on an initial seed set of about 10% of the data.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the completion of the main experiments in e_07, the critical next step is to analyze the collected data. This analysis directly addresses the project's 'research_goals' by evaluating the effectiveness of the proposed annotation strategy and provides the core findings for the research paper."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Human-in-the-loop annotation workflows",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "A draft of the 'Results' section for the paper is written. This section presents the quantitative findings from the main experiment's analysis, including charts that compare the model accuracy against the number of labels for both the hybrid strategy and the baseline.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the main experimental analysis completed in e_08 and yielding positive results, the most logical next step is to document these findings. This event builds on the existing paper draft (e_06) by adding the crucial 'Results' section, moving the project closer to a complete manuscript."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Human-in-the-loop annotation workflows",
+    "subject": "CS-HCI",
+    "event_type": "proposal",
+    "description": "After reviewing the main experiment analysis, the team identifies the initial seed set size as a critical, unexplored variable. The project's goals are formally revised to focus on a new primary research question: how does the size of the initial randomly-sampled seed set affect the overall efficiency of the hybrid active learning workflow?",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "The analysis from e_08 revealed an important new research direction. This event represents a realistic pivot, where initial findings lead to a refinement of the project's core 'research_goals'. An updated 'research_plan' is needed to outline the next steps for investigating this new question."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Human-in-the-loop annotation workflows",
+    "subject": "CS-HCI",
+    "event_type": "scheme_design",
+    "description": "To address the new research question, the experimental scheme is updated. The design now specifies a new set of experiments that will systematically vary the size of the initial random seed set (e.g., testing 1%, 5%, 10%, and 20% of the total dataset) before switching to uncertainty sampling.",
+    "required_artifacts": [
+      "research_plan",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The project's goals were refined in e_10 to focus on the impact of the initial seed set size. This event is the necessary next step to translate those new goals into a concrete experimental design by modifying the existing 'method_scheme' to systematically test this new variable."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Human-in-the-loop annotation workflows",
+    "subject": "CS-HCI",
+    "event_type": "main_experiments",
+    "description": "A new round of main experiments is conducted based on the updated scheme. The experiment systematically compares the annotation efficiency when using different initial random seed set sizes (1%, 5%, 10%, and 20%) before switching to the uncertainty sampling strategy.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the revision of the research goals (e_10) and the corresponding update to the experimental design (e_11), the immediate next step is to run these new main experiments. This will generate the data required to answer the new, more focused research question about the impact of the initial seed set size."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Human-in-the-loop annotation workflows",
+    "subject": "CS-HCI",
+    "event_type": "analysis",
+    "description": "The data from the second round of main experiments is analyzed. The analysis indicates that an initial random seed set of 10% provides the best trade-off, leading to the fastest convergence to the target accuracy. Smaller seed sets (1%, 5%) fail to train the model sufficiently for effective uncertainty sampling, while a larger set (20%) is inefficient as it uses too many labels in the non-targeted random phase.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After conducting the targeted main experiments in e_12 to test different seed set sizes, the essential next step is to analyze the resulting data. This analysis directly addresses the refined 'research_goals' from e_10 and will produce the key findings for the paper's main contribution."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Human-in-the-loop annotation workflows",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "The 'Methodology' and 'Results' sections of the paper are substantially revised to incorporate the latest findings. The narrative is updated to highlight the investigation into the optimal seed set size as the core contribution, presenting the data from the second experiment that shows a 10% seed set is the most efficient trade-off.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After the analysis in e_13 yielded the project's key finding, the most important next step is to update the research paper. This event revises the existing draft (from e_09) to reflect the new, more significant results about the optimal seed set size, solidifying the paper's main contribution."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Human-in-the-loop annotation workflows",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "Drafts of the 'Discussion' and 'Conclusion' sections of the paper are written. The discussion interprets the findings, explaining why a 10% seed set provides a good balance between model initialization and labeling efficiency. The conclusion summarizes the project's main contribution and suggests avenues for future work, such as exploring dynamic seed set sizes.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the core 'Methodology' and 'Results' sections revised in e_14 to reflect the key findings from e_13, the next logical step is to add the interpretive and concluding parts of the paper. This event uses the final results and research goals to frame the discussion and summarize the project's contributions, moving the manuscript closer to a complete draft."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Human-in-the-loop annotation workflows",
+    "subject": "CS-HCI",
+    "event_type": "writing",
+    "description": "The 'Introduction', 'Related Work', and 'Abstract' sections of the paper are drafted to create a complete first version of the manuscript. The introduction sets the context for human-in-the-loop annotation and leads into the paper's specific contribution, while the abstract provides a concise summary of the problem, method, results, and conclusion.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After drafting the core sections of the paper (Methodology, Results, Discussion) in events e_14 and e_15, the next step is to write the framing sections (Introduction, Abstract) to produce a complete manuscript. This synthesizes the project's goals and final results into a cohesive narrative, preparing the paper for internal review."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Human-in-the-loop annotation workflows",
+    "subject": "CS-HCI",
+    "event_type": "end",
+    "description": "With the research questions answered by conclusive experimental results and a full manuscript drafted (from abstract to conclusion), the core research phase of the project is considered complete. The paper is now ready for submission to a relevant academic venue.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has reached a natural conclusion. It has successfully navigated from an initial proposal through multiple cycles of experimentation, analysis, and a significant pivot, culminating in a stable method, strong results, and a complete paper draft (e_16). No further core research is planned at this stage."
+  }
+]

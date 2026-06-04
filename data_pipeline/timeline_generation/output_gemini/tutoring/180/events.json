@@ -1,0 +1,287 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Incentives, trade-offs, and decision making",
+    "subject": "Economics",
+    "event_type": "objective_clarification",
+    "description": "Initial meeting with the learner to discuss their goals, background, and motivation for studying incentives, trade-offs, and decision-making. The conversation covers desired outcomes, such as applying concepts to personal finance, and any time constraints.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives",
+      "study_plan"
+    ],
+    "reason": "This is the first session, so the primary goal is to establish a clear understanding of the learner's objectives. This initial clarification is essential for creating a relevant and effective study plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Incentives, trade-offs, and decision making",
+    "subject": "Economics",
+    "event_type": "lesson",
+    "description": "First instructional session focusing on the core concept of 'opportunity cost'. The tutor explains the definition, uses examples related to personal finance and career choices to align with the learner's goals, and prepares notes on the topic.",
+    "required_artifacts": [
+      "learning_objectives",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the learning objectives and an initial study plan established in the previous session, the next logical step is to begin teaching the first core concept. This lesson directly addresses the topic and generates foundational teaching materials that will be used for future practice and review."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Incentives, trade-offs, and decision making",
+    "subject": "Economics",
+    "event_type": "practice",
+    "description": "The learner is given a set of practice problems to apply the concept of 'opportunity cost' to real-world scenarios, such as choosing between a job offer and graduate school. The tutor records the learner's answers and thought process for each problem.",
+    "required_artifacts": [
+      "teaching_notes",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the lesson on opportunity cost (e_02), this practice session is designed to test the learner's comprehension and ability to apply the concept. Creating a practice record is essential for the next step, which will be to review the learner's work and provide specific feedback."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Incentives, trade-offs, and decision making",
+    "subject": "Economics",
+    "event_type": "review",
+    "description": "The tutor analyzes the learner's submissions from the 'opportunity cost' practice session. The review focuses on identifying misunderstandings in the application of the concept and provides structured feedback, including corrections and explanations for any errors.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the practice session (e_03), reviewing the learner's work is the critical next step to assess understanding and provide targeted guidance. This review of the `practice_record` allows the tutor to create a `feedback_summary` that addresses specific errors, reinforcing the concepts from the lesson (e_02) before introducing new material."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Incentives, trade-offs, and decision making",
+    "subject": "Economics",
+    "event_type": "materials_revision",
+    "description": "Based on the review of the learner's practice attempts, the tutor revises the 'opportunity cost' teaching notes. The revision adds more diverse examples and explicitly addresses the common misconception of confusing opportunity cost with simple monetary cost, which was identified in the feedback summary.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The review (e_04) and resulting feedback summary highlighted specific weaknesses in the learner's understanding. It is a best practice to refine the teaching materials (from e_02) to address these observed issues, improving the notes for future review before moving on to a new topic or further practice."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Incentives, trade-offs, and decision making",
+    "subject": "Economics",
+    "event_type": "practice",
+    "description": "The tutor assigns a follow-up practice set on 'opportunity cost' using problems specifically designed to address the misconception identified in the previous review. The learner is asked to explicitly differentiate between accounting costs and opportunity costs in their answers, and their work is recorded.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After identifying a key misconception (e_04) and revising the teaching materials to address it (e_05), it's essential to confirm that the learner has successfully corrected their understanding. This second, more targeted practice session serves as a check for comprehension before advancing to the next topic in the study plan."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Incentives, trade-offs, and decision making",
+    "subject": "Economics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's second attempt at the 'opportunity cost' practice problems. The analysis confirms that the learner has successfully corrected their previous misconception and can now accurately apply the concept.",
+    "required_artifacts": [
+      "practice_record",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After a targeted practice session (e_06) designed to correct a specific misunderstanding, this review is necessary to confirm mastery. By checking the new `practice_record` against the issues raised in the previous `feedback_summary`, the tutor can validate that the remediation was successful before proceeding to the next topic."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Incentives, trade-offs, and decision making",
+    "subject": "Economics",
+    "event_type": "plan_milestones",
+    "description": "After confirming mastery of 'opportunity cost', the tutor and learner review the initial study plan. They agree on the next milestone, which is to cover 'marginal analysis' and 'sunk costs', and update the plan with a more detailed timeline for these topics.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "The successful remediation of 'opportunity cost' (confirmed in e_07) marks the completion of the first learning module. This is a natural point to review and refine the study plan, ensuring the pacing and topic sequence are appropriate before starting the next lesson."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Incentives, trade-offs, and decision making",
+    "subject": "Economics",
+    "event_type": "lesson",
+    "description": "Following the updated study plan, the tutor introduces the next core concept: 'marginal analysis'. The lesson covers how to make decisions by comparing marginal benefits and marginal costs, using new examples relevant to the learner's interests. This generates a new set of teaching notes.",
+    "required_artifacts": [
+      "study_plan",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "With the study plan updated in the previous event (e_08) to prioritize 'marginal analysis', the natural next step is to teach this new topic. This lesson directly follows the plan and creates the necessary teaching materials before moving to practice."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Incentives, trade-offs, and decision making",
+    "subject": "Economics",
+    "event_type": "practice",
+    "description": "The tutor provides a set of problems focused on 'marginal analysis'. The learner works through scenarios, such as deciding whether to study for one more hour or purchase an additional item, and their responses and reasoning are recorded.",
+    "required_artifacts": [
+      "teaching_notes",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on 'marginal analysis' (e_09), this practice session is the logical next step to assess the learner's ability to apply the new concept. Creating a `practice_record` is crucial for the subsequent review phase, where the tutor will provide targeted feedback."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Incentives, trade-offs, and decision making",
+    "subject": "Economics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's work on the 'marginal analysis' problems, checking their ability to correctly compare marginal benefits and costs. The analysis aims to identify any misunderstandings before moving to the next topic and produces a summary of feedback.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed practice on 'marginal analysis' (e_10), a review is essential to assess their understanding and provide targeted feedback. Analyzing the `practice_record` allows the tutor to create a `feedback_summary` to correct any mistakes before introducing the next concept from the study plan."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Incentives, trade-offs, and decision making",
+    "subject": "Economics",
+    "event_type": "lesson",
+    "description": "With the successful review of 'marginal analysis', the tutor proceeds to the next topic from the study plan: 'sunk costs'. The lesson explains the sunk cost fallacy and how to ignore past, unrecoverable costs in future decision-making, generating a new set of teaching notes for this concept.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "After a successful review of the previous topic (e_11), the next logical step is to teach the next concept outlined in the `study_plan` (updated in e_08). This lesson on 'sunk costs' continues the curriculum's progression and creates the necessary materials for the next practice and review cycle."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Incentives, trade-offs, and decision making",
+    "subject": "Economics",
+    "event_type": "practice",
+    "description": "The learner is assigned practice problems focused on identifying 'sunk costs' in various decision-making scenarios. The problems require the learner to explain why certain costs should be ignored, and their full responses are recorded for later review.",
+    "required_artifacts": [
+      "teaching_notes",
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the lesson on 'sunk costs' (e_12), a practice session is the essential next step to allow the learner to apply the concept. This creates a `practice_record` which is required to assess comprehension and provide feedback in the upcoming review stage."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Incentives, trade-offs, and decision making",
+    "subject": "Economics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's submissions for the 'sunk costs' practice problems. The analysis focuses on whether the learner correctly identified sunk costs and excluded them from their decision-making process, leading to a new feedback summary.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner practiced applying the concept of 'sunk costs' (e_13), a review is the necessary next step to evaluate their understanding. This allows the tutor to provide targeted feedback and confirm mastery before combining this concept with others or moving to a new topic."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Incentives, trade-offs, and decision making",
+    "subject": "Economics",
+    "event_type": "practice",
+    "description": "The tutor designs a cumulative practice session with case studies that require the learner to apply 'opportunity cost', 'marginal analysis', and 'sunk costs' together. For example, a scenario asks the learner to advise a company on whether to continue a failing project, forcing them to integrate all three concepts to make a sound recommendation. The learner's analysis is recorded.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Having successfully reviewed the individual concepts of opportunity cost, marginal analysis, and sunk costs (e_11, e_14), the next logical step is to assess the learner's ability to synthesize them. This cumulative practice session tests for integrated understanding before concluding the current learning milestone."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Incentives, trade-offs, and decision making",
+    "subject": "Economics",
+    "event_type": "review",
+    "description": "The tutor reviews the learner's solution to the cumulative case study, evaluating their ability to synthesize opportunity cost, marginal analysis, and sunk costs. The analysis confirms the learner can successfully integrate these concepts to make a well-reasoned decision, and a final feedback summary is created.",
+    "required_artifacts": [
+      "practice_record",
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the cumulative practice session (e_15), a final review is necessary to assess the learner's ability to synthesize all the concepts covered in this milestone. This step provides a definitive check on mastery and generates a concluding feedback summary before deciding to end the tutoring or move to a new major topic."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Incentives, trade-offs, and decision making",
+    "subject": "Economics",
+    "event_type": "end",
+    "description": "In the final session, the tutor and learner review the progress made against the original learning objectives. Both agree that the learner has demonstrated consistent and integrated mastery of the core concepts, and the tutoring engagement for this topic is formally concluded.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The previous review (e_16) confirmed the learner's ability to synthesize all taught concepts in a cumulative task. As the core learning objectives have been met and mastery has been demonstrated, this is a natural and appropriate point to conclude the tutoring process for this topic."
+  }
+]

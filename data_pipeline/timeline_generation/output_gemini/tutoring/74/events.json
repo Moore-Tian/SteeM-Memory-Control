@@ -1,0 +1,293 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "tutoring",
+    "topic": "Data documentation and dataset statements",
+    "subject": "DataScience",
+    "event_type": "objective_clarification",
+    "description": "Conducted an initial diagnostic session to understand the learner's goals regarding data documentation. The learner, a junior data analyst, wants to improve their ability to write clear and comprehensive dataset statements for internal projects.",
+    "required_artifacts": [],
+    "generated_artifacts": [
+      "learning_objectives"
+    ],
+    "reason": "This is the first tutoring session, so the primary goal is to establish the learner's background, needs, and specific goals. Clarifying these objectives is the foundational first step required before creating a relevant study plan."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "tutoring",
+    "topic": "Data documentation and dataset statements",
+    "subject": "DataScience",
+    "event_type": "plan_milestones",
+    "description": "Based on the defined learning objectives, the tutor and learner collaborated to create a staged study plan. The plan outlines key milestones, starting with the core components of a dataset statement, followed by hands-on practice and a final review.",
+    "required_artifacts": [
+      "learning_objectives"
+    ],
+    "generated_artifacts": [
+      "study_plan"
+    ],
+    "reason": "With the learner's goals clarified in the previous 'objective_clarification' event, the next logical step is to structure the learning journey. Creating a 'study_plan' provides a clear roadmap and sets expectations for upcoming lessons and activities."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "tutoring",
+    "topic": "Data documentation and dataset statements",
+    "subject": "DataScience",
+    "event_type": "lesson",
+    "description": "The tutor delivered a lesson covering the core components of a dataset statement, as outlined in the study plan. The lesson focused on motivation, composition, collection process, and recommended uses, and introduced a basic template.",
+    "required_artifacts": [
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "Following the 'study_plan' created in the previous event, the next logical step is to begin instruction. This lesson addresses the first milestone by teaching the foundational concepts of dataset statements, preparing the learner for subsequent practice."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "tutoring",
+    "topic": "Data documentation and dataset statements",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "The tutor assigned a practice exercise asking the learner to draft a dataset statement for a provided sample dataset. The learner was instructed to use the template and concepts from the previous lesson to structure their document.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the foundational 'lesson' on dataset statements, this 'practice' event is the natural next step to apply the learned concepts. It allows the learner to translate theoretical knowledge into a practical skill and generates a concrete work product for the upcoming 'review' session."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "tutoring",
+    "topic": "Data documentation and dataset statements",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor reviewed the learner's submitted dataset statement draft. The review identified that while the core sections were present, the 'collection process' and 'potential biases' sections lacked sufficient detail and clarity.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the 'practice' exercise, the next logical step is to 'review' their work. This allows the tutor to assess understanding, identify specific weaknesses, and generate actionable feedback, which is captured in the 'feedback_summary' to guide the next learning activity."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "tutoring",
+    "topic": "Data documentation and dataset statements",
+    "subject": "DataScience",
+    "event_type": "materials_revision",
+    "description": "Based on the review feedback, the tutor revised the teaching notes to provide more detailed guidance. They added specific examples and a checklist for documenting the 'collection process' and identifying 'potential biases'.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous 'review' identified specific weaknesses in the learner's understanding. Before assigning another practice attempt, it is prudent to improve the instructional materials to directly address these gaps, making the concepts clearer and setting the learner up for success on their next try."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "tutoring",
+    "topic": "Data documentation and dataset statements",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "The tutor assigned a second practice task, asking the learner to revise their initial dataset statement. The learner was instructed to specifically focus on improving the 'collection process' and 'potential biases' sections, using the newly revised teaching notes and checklist.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary",
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "After the 'materials_revision' event improved the teaching aids based on prior feedback, the logical next step is for the learner to apply this new guidance. This targeted 'practice' event allows the learner to directly address their previously identified weaknesses and solidify their understanding before moving on."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "tutoring",
+    "topic": "Data documentation and dataset statements",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor reviewed the learner's revised dataset statement. The second draft showed significant improvement, with the 'collection process' and 'potential biases' sections now being much more detailed and specific, successfully incorporating the feedback and revised materials.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the learner's targeted 'practice' revision, a 'review' is the necessary next step to assess whether the provided feedback and revised materials were effective. This step validates the learner's progress on the specific weaknesses identified earlier and determines readiness for the next milestone."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "tutoring",
+    "topic": "Data documentation and dataset statements",
+    "subject": "DataScience",
+    "event_type": "lesson",
+    "description": "Having successfully drafted a basic dataset statement, the tutor introduces the next topic from the study plan: creating a data dictionary. The lesson explains the purpose of a data dictionary and covers essential fields like variable names, data types, descriptions, and acceptable values.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous review confirmed the learner's mastery of the initial task. Following the study plan, it is time to introduce the next topic. This lesson on data dictionaries builds on foundational documentation skills and moves the learner toward the next milestone."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "tutoring",
+    "topic": "Data documentation and dataset statements",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "The tutor assigns a practice exercise for the learner to create a data dictionary for the same sample dataset used in the previous exercises. The task requires applying the concepts from the data dictionary lesson, such as defining variable names, data types, and descriptions.",
+    "required_artifacts": [
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the 'lesson' on data dictionaries, the most logical next step is a 'practice' session. This allows the learner to immediately apply the newly learned concepts, reinforcing their understanding and creating a concrete artifact for the upcoming review cycle."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "tutoring",
+    "topic": "Data documentation and dataset statements",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor reviewed the learner's submitted data dictionary. The review found that while most fields were correctly identified, several descriptions were too brief and the 'acceptable values' for categorical variables were missing.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the 'practice' task of creating a data dictionary, the natural next step is to 'review' their work. This assesses their grasp of the new topic, identifies specific areas for improvement, and generates feedback to guide the next learning activity."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "tutoring",
+    "topic": "Data documentation and dataset statements",
+    "subject": "DataScience",
+    "event_type": "materials_revision",
+    "description": "In response to the review of the data dictionary, the tutor updated the teaching notes. The revised notes now include more robust examples of descriptive text for variables and a specific checklist item for defining 'acceptable values' for categorical data.",
+    "required_artifacts": [
+      "feedback_summary",
+      "teaching_notes"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous 'review' event identified specific, recurring issues in the learner's practice attempt. To better support the learner, this 'materials_revision' step improves the core teaching materials to directly address those weaknesses, setting the learner up for a more successful revision attempt."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "tutoring",
+    "topic": "Data documentation and dataset statements",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "The tutor assigns a revision task, asking the learner to improve their previously submitted data dictionary. The learner is directed to use the updated teaching notes to write more detailed descriptions and to add the 'acceptable values' for all categorical variables.",
+    "required_artifacts": [
+      "teaching_notes",
+      "feedback_summary",
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the 'materials_revision' that improved the teaching notes based on specific feedback, the next logical step is a targeted 'practice' session. This allows the learner to apply the new, more explicit guidance to correct their previous mistakes, reinforcing the concepts before moving on."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "tutoring",
+    "topic": "Data documentation and dataset statements",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor reviewed the learner's revised data dictionary. The learner successfully incorporated the feedback, adding detailed descriptions and specifying the 'acceptable values' for categorical variables as per the revised notes.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "Following the targeted 'practice' revision in the previous event, a 'review' is the necessary next step to confirm that the learner has successfully corrected their mistakes. This validates their understanding of data dictionaries and signals readiness for the next topic in the study plan."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "tutoring",
+    "topic": "Data documentation and dataset statements",
+    "subject": "DataScience",
+    "event_type": "lesson",
+    "description": "With the core components mastered, the tutor introduces the final topic from the study plan: maintenance and versioning of documentation. The lesson covers best practices for updating documentation as data changes and how to track versions of both the dataset and its statement.",
+    "required_artifacts": [
+      "study_plan",
+      "feedback_summary"
+    ],
+    "generated_artifacts": [
+      "teaching_notes"
+    ],
+    "reason": "The previous 'review' confirmed the learner's successful revision of the data dictionary, completing the second milestone. Following the 'study_plan', it is now appropriate to introduce the next, more advanced topic, preparing the learner for a final integrated practice task."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "tutoring",
+    "topic": "Data documentation and dataset statements",
+    "subject": "DataScience",
+    "event_type": "practice",
+    "description": "The tutor assigns a final, comprehensive practice task that integrates all topics covered. The learner is asked to create a complete documentation package (dataset statement and data dictionary) for a new dataset, and then simulate an update by creating a version 2.0 of the documentation to reflect a hypothetical change in the data.",
+    "required_artifacts": [
+      "teaching_notes",
+      "study_plan"
+    ],
+    "generated_artifacts": [
+      "practice_record"
+    ],
+    "reason": "Following the final 'lesson' on maintenance and versioning, this integrated 'practice' task is the logical next step. It allows the learner to apply and combine all the skills acquired during the tutoring into a single, realistic project, providing a final assessment of their abilities before concluding the engagement."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "tutoring",
+    "topic": "Data documentation and dataset statements",
+    "subject": "DataScience",
+    "event_type": "review",
+    "description": "The tutor conducted a final review of the learner's comprehensive documentation package. The review assessed the quality of the dataset statement, the completeness of the data dictionary, and the correctness of the versioning simulation.",
+    "required_artifacts": [
+      "practice_record"
+    ],
+    "generated_artifacts": [
+      "feedback_summary"
+    ],
+    "reason": "After the learner completed the final, integrative 'practice' project, a comprehensive 'review' is the essential next step. This serves as a final evaluation to confirm that the learner has successfully synthesized all the concepts and met the overall learning objectives."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "tutoring",
+    "topic": "Data documentation and dataset statements",
+    "subject": "DataScience",
+    "event_type": "end",
+    "description": "In a final wrap-up session, the tutor and learner reviewed the progress made against the original learning objectives. As the learner successfully completed the final comprehensive project, demonstrating proficiency in creating and maintaining data documentation, the tutoring engagement was formally concluded.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The previous 'review' event confirmed the learner's success on a final, integrative project that covered all topics in the study plan. With the learning objectives demonstrably met and the learner's skills validated, the tutoring process has reached its natural and successful conclusion."
+  }
+]

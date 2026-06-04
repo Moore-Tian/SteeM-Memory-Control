@@ -1,0 +1,317 @@
+[
+  {
+    "event_id": "e_01",
+    "time_index": 1,
+    "domain": "research",
+    "topic": "Visual anomaly detection",
+    "subject": "CS-CV",
+    "event_type": "proposal",
+    "description": "The project starts by defining its initial scope and direction. The team formalizes the vague idea of 'studying visual anomaly detection' into a concrete set of research questions, focusing on unsupervised methods for industrial settings. A high-level plan is also created to guide the initial phases of the research.",
+    "required_artifacts": [
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "As the first step of the project, it is essential to establish a clear set of goals and a roadmap. This event bootstraps the process by taking a conceptual goal as input and producing the first concrete versions of the 'research_goals' and 'research_plan' artifacts, which will guide subsequent work."
+  },
+  {
+    "event_id": "e_02",
+    "time_index": 2,
+    "domain": "research",
+    "topic": "Visual anomaly detection",
+    "subject": "CS-CV",
+    "event_type": "scheme_design",
+    "description": "Based on the research goals, the team designs an initial methodological scheme. They decide to explore a reconstruction-based approach using a variational autoencoder (VAE), as it is well-suited for unsupervised anomaly detection. The initial design specifies the network architecture, the loss function, and the training procedure on anomaly-free industrial images.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "Following the high-level planning in e_01, this event translates the research goals into a concrete technical plan. Designing the method is a necessary prerequisite before any experiments can be conducted. This step uses the established goals to produce the first version of the 'method_scheme' artifact."
+  },
+  {
+    "event_id": "e_03",
+    "time_index": 3,
+    "domain": "research",
+    "topic": "Visual anomaly detection",
+    "subject": "CS-CV",
+    "event_type": "pilot_experiments",
+    "description": "The team conducts pilot experiments to validate the VAE-based reconstruction approach. They use a small subset of a standard industrial inspection dataset (like MVTec AD) to train the model and test its performance on a few sample anomalies. The primary goal is to quickly verify if the chosen method can distinguish between normal and anomalous images based on reconstruction error.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "With a 'method_scheme' defined in e_02, the next logical step is to perform a sanity check before launching full-scale experiments. These pilot experiments serve to quickly validate the feasibility of the proposed VAE approach, generating the first set of 'experiment_results' that will guide subsequent design refinements or a move towards more comprehensive testing."
+  },
+  {
+    "event_id": "e_04",
+    "time_index": 4,
+    "domain": "research",
+    "topic": "Visual anomaly detection",
+    "subject": "CS-CV",
+    "event_type": "analysis",
+    "description": "The team analyzes the preliminary results from the pilot experiments. They observe that while the VAE model successfully detects gross structural anomalies, it struggles with subtle textural defects, as the powerful decoder reconstructs them too accurately. This analysis highlights a key limitation of the simple reconstruction-error approach.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After generating the first 'experiment_results' in the pilot phase (e_03), a detailed analysis is crucial. This step allows the team to interpret the findings, identify the strengths and weaknesses of the current method against the 'research_goals', and make an informed decision on whether to proceed to main experiments or refine the method."
+  },
+  {
+    "event_id": "e_05",
+    "time_index": 5,
+    "domain": "research",
+    "topic": "Visual anomaly detection",
+    "subject": "CS-CV",
+    "event_type": "scheme_design",
+    "description": "In response to the analysis of pilot results, the team revises the methodological scheme. To address the VAE's tendency to reconstruct subtle anomalies, they propose augmenting the model with a memory module that stores feature vectors from normal training samples. The new anomaly score will be a combination of the reconstruction error and the distance to the nearest feature in the memory bank.",
+    "required_artifacts": [
+      "method_scheme",
+      "experiment_results",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "method_scheme"
+    ],
+    "reason": "The previous analysis in e_04 revealed a critical flaw in the initial VAE design. A simple progression to main experiments would be unproductive. Therefore, the logical next step is to return to the design phase to refine the 'method_scheme' based on the insights gained from the 'experiment_results', creating a more robust model before further testing."
+  },
+  {
+    "event_id": "e_06",
+    "time_index": 6,
+    "domain": "research",
+    "topic": "Visual anomaly detection",
+    "subject": "CS-CV",
+    "event_type": "pilot_experiments",
+    "description": "The team implements the revised method with the memory module and runs a second round of pilot experiments. These tests specifically focus on the subtle textural defect images where the original VAE model failed. The goal is to verify if the new combined anomaly score (reconstruction error + memory distance) successfully flags these difficult cases.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After revising the 'method_scheme' in e_05 to address the weaknesses found in the initial analysis (e_04), it is critical to validate the new approach before committing to large-scale experiments. This second pilot study serves as a targeted, low-cost sanity check to confirm that the memory module effectively solves the identified problem, generating new 'experiment_results' for the improved method."
+  },
+  {
+    "event_id": "e_07",
+    "time_index": 7,
+    "domain": "research",
+    "topic": "Visual anomaly detection",
+    "subject": "CS-CV",
+    "event_type": "analysis",
+    "description": "The team analyzes the results from the second pilot study. The analysis confirms that the memory-augmented model significantly improves performance on subtle textural anomalies compared to the simple VAE, as the combined anomaly score is more sensitive to these fine-grained deviations.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "Following the second pilot study (e_06), a formal analysis is required to evaluate the effectiveness of the revised method. This step directly assesses whether the changes made in e_05 have solved the problem identified in e_04, providing the necessary evidence to decide whether to proceed with main experiments."
+  },
+  {
+    "event_id": "e_08",
+    "time_index": 8,
+    "domain": "research",
+    "topic": "Visual anomaly detection",
+    "subject": "CS-CV",
+    "event_type": "main_experiments",
+    "description": "With the memory-augmented VAE proving successful in pilot tests, the team proceeds to run the main experiments. This involves training the final model on the full training set of the MVTec AD benchmark and evaluating it systematically across all categories and anomaly types. The goal is to generate comprehensive quantitative results and compare performance against established baseline methods.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals",
+      "research_plan"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "The previous analysis (e_07) confirmed the effectiveness of the revised method from the second pilot study (e_06). Having validated the approach, the next logical step is to conduct large-scale 'main_experiments' to gather robust, publishable results and perform a comprehensive evaluation against the project's 'research_goals'."
+  },
+  {
+    "event_id": "e_09",
+    "time_index": 9,
+    "domain": "research",
+    "topic": "Visual anomaly detection",
+    "subject": "CS-CV",
+    "event_type": "writing",
+    "description": "With the method now finalized and validated through extensive experiments, the team begins drafting the methodology section of the research paper. This task involves formally describing the memory-augmented VAE architecture, the training procedure, and the formulation of the combined anomaly score. Creating this formal description helps solidify the narrative for the final paper.",
+    "required_artifacts": [
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After the main experiments in e_08 confirmed the viability of the revised method (from e_05), the methodology is now stable. It is an efficient and common practice to begin writing the corresponding section of the paper at this stage, often in parallel with the detailed analysis of results. This step introduces the 'paper_paragraph' artifact, which is crucial for the final publication."
+  },
+  {
+    "event_id": "e_10",
+    "time_index": 10,
+    "domain": "research",
+    "topic": "Visual anomaly detection",
+    "subject": "CS-CV",
+    "event_type": "analysis",
+    "description": "The team performs a comprehensive analysis of the results from the main experiments. This includes calculating performance metrics (e.g., AUROC) for each category in the MVTec AD dataset, comparing the memory-augmented VAE against state-of-the-art baselines, and generating visualizations of anomaly maps to understand where the model succeeds and fails.",
+    "required_artifacts": [
+      "experiment_results",
+      "research_goals",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After completing the main experiments in e_08, a thorough analysis is the critical next step. This event processes the raw quantitative data into meaningful insights, comparing the method's performance against the project's goals and established baselines, which is essential before writing the results section of the paper or planning any follow-up work."
+  },
+  {
+    "event_id": "e_11",
+    "time_index": 11,
+    "domain": "research",
+    "topic": "Visual anomaly detection",
+    "subject": "CS-CV",
+    "event_type": "writing",
+    "description": "Based on the comprehensive analysis of the main experiments, the team drafts the results section of the paper. This includes creating tables to compare the performance of their memory-augmented VAE against baselines on the MVTec AD dataset. They also write paragraphs interpreting these quantitative results and include visualizations of anomaly maps for qualitative support.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With the main experimental results analyzed in e_10, the most direct path toward completing the research paper is to write the 'Results' section. This event translates the structured findings from the 'experiment_results' artifact into a narrative form, building upon the existing methodology draft (e_09) and ensuring the project is moving towards publication."
+  },
+  {
+    "event_id": "e_12",
+    "time_index": 12,
+    "domain": "research",
+    "topic": "Visual anomaly detection",
+    "subject": "CS-CV",
+    "event_type": "main_experiments",
+    "description": "While writing the paper, the team identifies the need for an ablation study to isolate the contributions of the VAE's reconstruction error and the memory module. They design and run new experiments evaluating the performance of each component separately, as well as testing different sizes for the memory bank. This is crucial for strengthening the paper's claims about why the method is effective.",
+    "required_artifacts": [
+      "method_scheme",
+      "paper_paragraph",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After drafting the method and results sections (e_09, e_11), it became clear that a convincing paper needs to dissect the proposed model. An ablation study is a standard and critical step to provide this deeper understanding. This event is triggered by the writing process and aims to generate specific 'experiment_results' that will justify the design choices and strengthen the final publication."
+  },
+  {
+    "event_id": "e_13",
+    "time_index": 13,
+    "domain": "research",
+    "topic": "Visual anomaly detection",
+    "subject": "CS-CV",
+    "event_type": "analysis",
+    "description": "The team analyzes the results of the ablation study. They quantify the performance impact of each component (reconstruction error vs. memory distance) and the effect of varying the memory bank size. The analysis confirms that the combination of both components is superior to either one alone.",
+    "required_artifacts": [
+      "experiment_results",
+      "method_scheme",
+      "research_goals"
+    ],
+    "generated_artifacts": [
+      "experiment_results"
+    ],
+    "reason": "After running the ablation study in e_12, the immediate next step is to analyze the resulting data. This analysis is crucial for understanding why the proposed method works and for providing the evidence needed to justify the model's design in the paper. It directly processes the output of the previous event into actionable insights."
+  },
+  {
+    "event_id": "e_14",
+    "time_index": 14,
+    "domain": "research",
+    "topic": "Visual anomaly detection",
+    "subject": "CS-CV",
+    "event_type": "writing",
+    "description": "The team incorporates the results from the ablation study into the paper. A new subsection is added to the experimental section, including a table that compares the performance of the full model against versions with only the reconstruction error or only the memory distance. This writing solidifies the argument for the synergistic effect of the two components.",
+    "required_artifacts": [
+      "experiment_results",
+      "paper_paragraph",
+      "method_scheme"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After analyzing the ablation study results in e_13, the most logical and productive step is to integrate this new evidence into the research paper. This event directly uses the fresh 'experiment_results' to update the 'paper_paragraph' artifact, significantly strengthening the paper's argument about the novel contributions of the proposed method."
+  },
+  {
+    "event_id": "e_15",
+    "time_index": 15,
+    "domain": "research",
+    "topic": "Visual anomaly detection",
+    "subject": "CS-CV",
+    "event_type": "proposal",
+    "description": "After drafting the core experimental sections, the team revisits the project's high-level narrative. They refine the research goals to more sharply define their contribution, emphasizing not just a new model but the general principle of combining reconstruction with an explicit memory module to handle subtle defects. The research plan is updated to focus the remaining writing on this sharpened narrative, ensuring the introduction and conclusion align with the strongest claims supported by the evidence.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan",
+      "experiment_results",
+      "paper_paragraph"
+    ],
+    "generated_artifacts": [
+      "research_goals",
+      "research_plan"
+    ],
+    "reason": "With the main technical work complete and core sections of the paper drafted (e_14), it is a common and critical step to refine the overall story. This late-stage 'proposal' revision uses the full context of results and existing text to sharpen the project's stated goals and plan, ensuring the final paper presents the most impactful and coherent argument possible before finalizing the introduction and conclusion."
+  },
+  {
+    "event_id": "e_16",
+    "time_index": 16,
+    "domain": "research",
+    "topic": "Visual anomaly detection",
+    "subject": "CS-CV",
+    "event_type": "writing",
+    "description": "With the refined narrative from the previous step, the team drafts the introduction and conclusion sections of the paper. The introduction is written to motivate the problem and clearly state the project's sharpened contributions, while the conclusion summarizes the findings and their implications, aligning with the updated research goals.",
+    "required_artifacts": [
+      "research_goals",
+      "research_plan",
+      "paper_paragraph",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "After sharpening the project's narrative and goals in e_15, the logical next step is to write the framing sections of the paper—the introduction and conclusion. This task directly utilizes the updated 'research_goals' to ensure the paper's story is coherent and impactful from start to finish, moving the project closer to a complete manuscript."
+  },
+  {
+    "event_id": "e_17",
+    "time_index": 17,
+    "domain": "research",
+    "topic": "Visual anomaly detection",
+    "subject": "CS-CV",
+    "event_type": "writing",
+    "description": "The team assembles all drafted sections (introduction, methodology, experiments, conclusion) into a complete first draft of the paper. They perform a comprehensive internal review to ensure consistency in terminology, narrative flow, and argumentation. Missing pieces, such as the abstract and a detailed related work section, are also drafted to create a full manuscript.",
+    "required_artifacts": [
+      "paper_paragraph",
+      "research_goals",
+      "experiment_results"
+    ],
+    "generated_artifacts": [
+      "paper_paragraph"
+    ],
+    "reason": "With all major sections of the paper drafted in previous steps (e_09, e_11, e_14, e_16), the logical next step is to consolidate them into a single, cohesive manuscript. This internal review and assembly process is crucial for identifying inconsistencies and ensuring the narrative is strong and coherent before seeking external feedback or preparing for submission."
+  },
+  {
+    "event_id": "e_18",
+    "time_index": 18,
+    "domain": "research",
+    "topic": "Visual anomaly detection",
+    "subject": "CS-CV",
+    "event_type": "end",
+    "description": "The team finalizes the complete manuscript, incorporating feedback from the internal review. With a stable method, comprehensive results, and a polished paper draft, the primary research objectives have been met. The project is now considered complete and ready for submission to a peer-reviewed venue.",
+    "required_artifacts": [],
+    "generated_artifacts": [],
+    "reason": "The project has progressed through multiple cycles of design, experimentation, analysis, and writing, culminating in a complete first draft of a research paper (e_17) with a well-supported contribution. Since the core research questions have been answered and documented, this marks a natural conclusion to the research and development phase, making 'end' the appropriate final event."
+  }
+]
