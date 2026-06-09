@@ -1,7 +1,7 @@
 <div align="center">
 
 <h2 align="center">
-  <img src="paper/SteeM%20logo.png" alt="SteeM logo" width="72" height="72" align="absmiddle">&nbsp;&nbsp;&thinsp;Controllable Memory Usage: Balancing Anchoring<br>and Innovation in Long-Term Human-Agent Interaction
+  <img src="paper/SteeM%20logo.png" alt="SteeM logo" width="72" height="72" align="absmiddle">&nbsp;&nbsp;&thinsp;Controllable Memory Usage: Balancing<br>Anchoring and Innovation in Long-Term Human-Agent Interaction
 </h2>
 
 <p>
