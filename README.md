@@ -1,8 +1,8 @@
 <div align="center">
 
-<h1 align="center">
+<h2 align="center">
   <img src="paper/SteeM%20logo.png" alt="SteeM logo" width="72" height="72" align="absmiddle">&nbsp;&nbsp;&thinsp;Controllable Memory Usage: Balancing Anchoring<br>and Innovation in Long-Term Human-Agent Interaction
-</h1>
+</h2>
 
 <p>
   <a href="https://arxiv.org/abs/2601.05107"><img src="https://img.shields.io/badge/arXiv-2601.05107-b31b1b.svg?style=for-the-badge" alt="arXiv"></a>
@@ -19,7 +19,7 @@
 </p>
 
 <p>
-  <b>A framework that models memory reliance as an explicit, user-controllable dimension—enabling dynamic regulation from fresh-start innovation to history-adherent personalization in long-term human-agent interaction.</b>
+  <b>Models memory reliance as a user-controllable dimension—enabling regulation from fresh-start innovation to history-adherent personalization.</b>
 </p>
 
 </div>
