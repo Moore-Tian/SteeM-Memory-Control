@@ -1,59 +1,97 @@
-<p align="center">
-	<img src="paper/SteeM%20logo.png" alt="SteeM logo" width="180">
+<div align="center">
+
+<h1 align="center">
+  <img src="paper/SteeM%20logo.png" alt="SteeM logo" width="72" height="72" align="absmiddle">&nbsp;&nbsp;&thinsp;Controllable Memory Usage: Balancing Anchoring<br>and Innovation in Long-Term Human-Agent Interaction
+</h1>
+
+<p>
+  <a href="https://arxiv.org/abs/2601.05107"><img src="https://img.shields.io/badge/arXiv-2601.05107-b31b1b.svg?style=for-the-badge" alt="arXiv"></a>
+  <a href="paper/steem_memory_control_paper.pdf"><img src="https://img.shields.io/badge/Paper-PDF-4f6db8.svg?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Paper PDF"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge" alt="License"></a>
+  <img src="https://img.shields.io/badge/ACL%202026-Main%20Conference-orange.svg?style=for-the-badge" alt="ACL 2026 Main Conference">
 </p>
 
-<h1 align="center">SteeM</h1>
-
-<p align="center"><strong>Controllable Memory Usage: Balancing Anchoring and Innovation in Long-Term Human-Agent Interaction</strong></p>
-
-<p align="center">
-	<a href="https://arxiv.org/abs/2601.05107"><img src="https://img.shields.io/badge/arXiv-2601.05107-b31b1b.svg" alt="arXiv"></a>
-	<a href="paper/steem_memory_control_paper.pdf"><img src="https://img.shields.io/badge/Paper-PDF-4f6db8.svg" alt="Paper PDF"></a>
+<p>
+  <a href="#-overview">Overview</a> |
+  <a href="#-released-assets">Assets</a> |
+  <a href="#-quick-start">Quick Start</a> |
+  <a href="#-citation">Citation</a>
 </p>
 
-This repository is the paper companion release for SteeM. It packages the paper snapshot, the released data-construction pipeline, and a compact code extraction of the controllable memory method used in the paper.
-
-SteeM studies a central tension in long-term human-agent interaction: heavy use of retrieved memory can improve consistency and personalization, but it can also trap the agent in past decisions and styles. The repository accompanies our paper by releasing the data pipeline used to build long-term interaction contexts and the method code used to measure and control memory dependence.
-
-<p align="center">
-	<img src="paper/main.png" alt="Main figure for SteeM" width="100%">
+<p>
+  <b>A framework that models memory reliance as an explicit, user-controllable dimension—enabling dynamic regulation from fresh-start innovation to history-adherent personalization in long-term human-agent interaction.</b>
 </p>
 
-<p align="center"><em>Figure 1: SteeM introduces rubric-based memory-dependence scoring, preference-aligned data generation, training, and controllable generation modes ranging from fresh-start to history-adherent behavior.</em></p>
+</div>
 
-## Paper Links
+## 📖 Overview
 
-- arXiv: [2601.05107](https://arxiv.org/abs/2601.05107)
-- PDF in this repository: [paper/steem_memory_control_paper.pdf](paper/steem_memory_control_paper.pdf)
+As LLM-based agents are increasingly used in long-term interactions, cumulative memory is critical for personalization and stylistic consistency. However, most systems adopt an "all-or-nothing" approach—incorporating all past information can lead to **Memory Anchoring** (the agent is trapped by past interactions), while excluding memory entirely results in under-utilization.
 
-## Repository Overview
+**SteeM** introduces a framework that models memory reliance as an *explicit, user-controllable dimension*, allowing dynamic regulation from a **fresh-start mode** (promoting innovation) to a **high-fidelity mode** (closely following interaction history).
 
-- [data_pipeline](data_pipeline): the released pipeline and selected outputs used to construct timelines, artifacts, concepts, cross-session summaries, and merged contexts
-- [memory_control_method](memory_control_method): a compact method package containing query generation, controlled answer generation, dependence judging, evaluation, SFT rewrite utilities, and released rubrics
+<p align="center">
+  <img src="paper/main.png" alt="SteeM Framework Overview" width="95%">
+</p>
 
-## Released Assets
+<p align="center"><em>SteeM introduces rubric-based memory-dependence scoring, preference-aligned data generation, training, and controllable generation modes ranging from fresh-start to history-adherent behavior.</em></p>
 
-- [data_pipeline/timeline_generation/output_gemini](data_pipeline/timeline_generation/output_gemini): 194 research cases and 194 tutoring cases, each containing `events.json` and `stats.json`
-- [data_pipeline/context_merge/all_contexts.json.gz](data_pipeline/context_merge/all_contexts.json.gz): gzip-compressed release of the 11,541 merged query-context examples
-- [data_pipeline/context_merge/sampled_contexts.json](data_pipeline/context_merge/sampled_contexts.json): 400 sampled context examples
-- [memory_control_method](memory_control_method): compact public-facing code structure for the controllable memory method
+### ✨ Key Contributions
 
-## Quick Start
+- **Memory Dependence Metric** — A behavioral metric to quantify the influence of past interactions on current outputs
+- **Steerable Generation** — Users can dynamically regulate memory reliance at inference time
+- **Data Pipeline** — A complete pipeline for constructing long-term interaction contexts with timelines, artifacts, concepts, and cross-session summaries
+- **Consistent Improvements** — Outperforms conventional prompting and rigid memory masking strategies across scenarios
 
-Run commands from the repository root.
+---
+
+## 📦 Released Assets
+
+| Asset | Description |
+|-------|-------------|
+| [`timeline_generation/output_gemini`](data_pipeline/timeline_generation/output_gemini) | 194 research + 194 tutoring cases (`events.json` & `stats.json`) |
+| [`context_merge/all_contexts.json.gz`](data_pipeline/context_merge/all_contexts.json.gz) | 11,541 merged query-context examples (gzip) |
+| [`context_merge/sampled_contexts.json`](data_pipeline/context_merge/sampled_contexts.json) | 400 sampled context examples |
+| [`memory_control_method/`](memory_control_method) | Complete method code for controllable memory |
+
+---
+
+## 🚀 Quick Start
+
+### Installation
+
+```bash
+git clone https://github.com/Moore-Tian/SteeM-Memory-Control.git
+cd SteeM-Memory-Control
+pip install -r requirements.txt
+```
+
+### Environment Variables
+
+```bash
+export OPENAI_API_KEY="your-api-key"
+export OPENAI_BASE_URL="https://..."  # optional
+```
 
 ### Data Pipeline
 
+Run the stages sequentially from the repository root:
+
 ```bash
+# Step 1: Generate interaction timelines
 bash data_pipeline/timeline_generation/run_generate.sh
+
+# Step 2: Generate artifacts
 bash data_pipeline/artifact_generation/run_generate.sh
+
+# Step 3: Extract concepts
 bash data_pipeline/concept_generation/run_generate.sh
+
+# Step 4: Build cross-session summaries
 bash data_pipeline/cross_session_generation/run_generate.sh
 ```
 
-These entry scripts expect credentials and optional service URLs to be provided through the environment rather than embedded in the repository.
-
-### Method Evaluation
+### Evaluation
 
 ```bash
 MODEL_PATH=/path/to/model \
@@ -63,28 +101,18 @@ RUN_METRIC=1 \
 bash memory_control_method/evaluation/run_evaluation_pipeline.sh
 ```
 
-For the data pipeline, set the environment variables you need before running generation scripts:
+---
 
-- `OPENAI_API_KEY`
-- `OPENAI_BASE_URL` (optional)
+## 📝 Citation
 
-See [memory_control_method/README.md](memory_control_method/README.md) for the method-side directory layout and evaluation flow.
-
-To inspect the full merged-context release locally, decompress it with:
-
-```bash
-gzip -dk data_pipeline/context_merge/all_contexts.json.gz
-```
-
-## Citation
-
-If you find this repository useful, please cite the paper:
+If you find this work useful, please cite our paper:
 
 ```bibtex
 @article{tian2026controllable,
-	title={Controllable Memory Usage: Balancing Anchoring and Innovation in Long-Term Human-Agent Interaction},
-	author={Tian, Muzhao and Huang, Zisu and Wang, Xiaohua and Xu, Jingwen and Guo, Zhengkang and Qian, Qi and Shen, Yuanzhe and Song, Kaitao and Yuan, Jiakang and Lv, Changze and Zheng, Xiaoqing},
-	journal={arXiv preprint arXiv:2601.05107},
-	year={2026}
+  title={Controllable Memory Usage: Balancing Anchoring and Innovation in Long-Term Human-Agent Interaction},
+  author={Tian, Muzhao and Huang, Zisu and Wang, Xiaohua and Xu, Jingwen and Guo, Zhengkang and Qian, Qi and Shen, Yuanzhe and Song, Kaitao and Yuan, Jiakang and Lv, Changze and Zheng, Xiaoqing},
+  journal={arXiv preprint arXiv:2601.05107},
+  year={2026}
 }
 ```
+
